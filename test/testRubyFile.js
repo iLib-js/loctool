@@ -1281,7 +1281,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", {count: 1})');
+        rf.parse('Rb.p({:one => "This is 1 test", :other => "There are %{count} tests"}, {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1308,7 +1308,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(:one => 'This is 1 test', :other => 'There are %{count} tests', {count: 1})");
+        rf.parse("Rb.p({:one => 'This is 1 test', :other => 'There are %{count} tests'}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1335,7 +1335,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse('Rb.p(one: "This is 1 test", other: "There are %{count} tests", {count: 1})');
+        rf.parse('Rb.p({one: "This is 1 test", other: "There are %{count} tests"}, {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1362,7 +1362,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', other: 'There are %{count} tests', {count: 1})");
+        rf.parse("Rb.p({one: 'This is 1 test', other: 'There are %{count} tests'}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1389,7 +1389,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: \"This is 1 test\", :other => 'There are %{count} tests', {count: 1})");
+        rf.parse("Rb.p({one: \"This is 1 test\", :other => 'There are %{count} tests'}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1416,7 +1416,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', :other => \"There are %{count} tests\", {count: 1})");
+        rf.parse("Rb.p({one: 'This is 1 test', :other => \"There are %{count} tests\"}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1443,7 +1443,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(:other => \"There are %{count} tests\", one: 'This is 1 test', {count: 1})");
+        rf.parse("Rb.p({:other => \"There are %{count} tests\", one: 'This is 1 test'}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1470,7 +1470,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(:other => \"There are %{count} tests\", {count: 1})");
+        rf.parse("Rb.p({:other => \"There are %{count} tests\"}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 0);
@@ -1492,7 +1492,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', :three => \"There are %{count} tests\", {count: 1})");
+        rf.parse("Rb.p({one: 'This is 1 test', :three => \"There are %{count} tests\"}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1519,7 +1519,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', two: 'There are a couple tests', zero: 'There are no tests', few: 'There are a few tests', many: 'There are many tests', :other => \"There are %{count} tests\", {count: 1})");
+        rf.parse("Rb.p({one: 'This is 1 test', two: 'There are a couple tests', zero: 'There are no tests', few: 'There are a few tests', many: 'There are many tests', :other => \"There are %{count} tests\"}, {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1550,7 +1550,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 %{thing}', {count: 1, thing: 'test'})");
+        rf.parse("Rb.p({one: 'This is 1 %{thing}'}, {count: 1, thing: 'test'})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1588,6 +1588,305 @@ module.exports = {
         test.equals(r.get('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
-    }
+    },
 
+
+    testRubyFileParseComplicated: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("        = Rb.p({:one => '%{doctor_link}%{doctor_name}%{link_end} + %{question_link}1 doctor%{link_end} weighed in', :other => '%{doctor_link}%{doctor_name}%{link_end} + %{question_link}%{count} doctors%{link_end} weighed in'}, {:doctor_link => \"<a href='#{doctor_url}'>\", :doctor_name => doctor.full_name, :link_end => '</a>', :question_link => \"<a href='#{question_url}'>\", :count => count}).html_safe		");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'%{doctor_link}%{doctor_name}%{link_end} + %{question_link}1 doctor%{link_end} weighed in');
+        test.equals(r.get('other'),'%{doctor_link}%{doctor_name}%{link_end} + %{question_link}%{count} doctors%{link_end} weighed in');
+        test.equals(r.getKey(), 'r999324232');
+        test.done();
+    },
+
+    testRubyFileParseLazyDoublePluralArrow: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", {count: 1})');
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazySinglePluralArrow: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(:one => 'This is 1 test', :other => 'There are %{count} tests', {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyDoublePluralColon: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse('Rb.p(one: "This is 1 test", other: "There are %{count} tests", {count: 1})');
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazySinglePluralColon: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 test', other: 'There are %{count} tests', {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyMixedPluralOne: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: \"This is 1 test\", :other => 'There are %{count} tests', {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyMixedPluralTwo: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 test', :other => \"There are %{count} tests\", {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyOutOfOrder: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(:other => \"There are %{count} tests\", one: 'This is 1 test', {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyPluralMissingRequiredKey: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(:other => \"There are %{count} tests\", {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 0);
+        test.done();
+    },
+
+    testRubyFileParseLazyPluralSkipInvalidKey: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 test', :three => \"There are %{count} tests\", {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('three'),undefined)
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyPluralAllValid: function(test) {
+        test.expect(11);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 test', two: 'There are a couple tests', zero: 'There are no tests', few: 'There are a few tests', many: 'There are many tests', :other => \"There are %{count} tests\", {count: 1})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('two'),'There are a couple tests');
+        test.equals(r.get('zero'),'There are no tests');
+        test.equals(r.get('few'),'There are a few tests');
+        test.equals(r.get('many'),'There are many tests');
+        test.equals(r.get('other'),"There are %{count} tests");
+        test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParseLazyPluralWithoutVariables: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 %{thing}', {count: 1, thing: 'test'})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 %{thing}');
+        test.equals(r.get('thing'),undefined);
+        test.equals(r.getKey(), 'r1006137616');
+        test.done();
+    }
 };
