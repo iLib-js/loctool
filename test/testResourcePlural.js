@@ -7,6 +7,9 @@
 if (!ResourcePlural) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var RegularPseudo = require("../lib/RegularPseudo.js");
+    var PseudoFactory = require("../lib/PseudoFactory.js");
+    var TranslationSet = require("../lib/TranslationSet.js");
+    var WebProject = require("../lib/WebProject.js");
 }
 
 module.exports = {
@@ -400,6 +403,202 @@ module.exports = {
 
         test.ok(!rp2);
 
+        test.done();
+    },
+
+    testResourcePluralGeneratePseudoBritishRightString: function(test) {
+        test.expect(5);
+
+        var rp = new ResourcePlural({
+            key: "asdf",
+            strings: {
+            	"one": "This is estrogen", 
+            	"few": "I color my checkbooks", 
+            	"many": "This is not translated."
+            },
+            pathName: "a/b/c.java"
+        });
+        test.ok(rp);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-GB",
+        	type: "c"
+        });
+
+        var rp2 = rp.generatePseudo("en-GB", rb);
+
+        test.ok(rp2);
+        test.ok(rp2.getLocale(), "en-GB");
+        
+        var t = rp2.getPlurals();
+
+        test.ok(t);
+        test.deepEqual(t, {
+    		"one": "This is oestrogen",
+    		"few": "I colour my chequebooks",
+    		"many": "This is not translated."
+    	});
+
+        test.done();
+    },
+
+    testResourcePluralGeneratePseudoBritishLikeRightString: function(test) {
+        test.expect(5);
+
+        var rp = new ResourcePlural({
+            key: "asdf",
+            strings: {
+            	"one": "This is estrogen", 
+            	"few": "I color my checkbooks", 
+            	"many": "This is not translated."
+            },
+            pathName: "a/b/c.java"
+        });
+        test.ok(rp);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "en-ZA"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-ZA",
+        	type: "c"
+        });
+
+        var rp2 = rp.generatePseudo("en-ZA", rb);
+
+        test.ok(rp2);
+        test.ok(rp2.getLocale(), "en-ZA");
+        
+        var t = rp2.getPlurals();
+
+        test.ok(t);
+        test.deepEqual(t, {
+    		"one": "This is oestrogen",
+    		"few": "I colour my chequebooks",
+    		"many": "This is not translated."
+    	});
+        
+        test.done();
+    },
+
+    testResourcePluralGeneratePseudoCanadianRightString: function(test) {
+        test.expect(5);
+
+        var rp = new ResourcePlural({
+            key: "asdf",
+            strings: {
+            	"one": "This is estrogen", 
+            	"few": "I color my checkbooks", 
+            	"many": "This is not localized."
+            },
+            pathName: "a/b/c.java"
+        });
+        test.ok(rp);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "en-CA"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-CA",
+        	type: "c"
+        });
+
+        var rp2 = rp.generatePseudo("en-CA", rb);
+
+        test.ok(rp2);
+        test.ok(rp2.getLocale(), "en-CA");
+        
+        var t = rp2.getPlurals();
+
+        test.ok(t);
+        test.deepEqual(t, {
+    		"one": "This is estrogen",
+    		"few": "I colour my chequebooks",
+    		"many": "This is not localized."
+    	});
+        
+        test.done();
+    },
+
+    testResourcePluralGeneratePseudoTraditionalChineseRightString: function(test) {
+        test.expect(5);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+            key: "asdf",
+            strings: {
+            	one: "How are you?", 
+            	few: "What is the cruising speed of a swallow?？", 
+            	many: "What? Do you mean a European swallow or an African swallow?"
+            },
+            pathName: "a/b/c.java",
+            locale: "en-US"
+        });
+        test.ok(rp);
+        
+        var p = new WebProject({
+            id: "foo",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
+		});
+
+        var translations = new TranslationSet();
+        translations.add(new ResourcePlural({
+        	project: "foo",
+        	key: 'asdf',
+        	strings: {
+        		one: '你好吗？', 
+        		few: '燕子的巡航速度是多少？', 
+        		many: '什么？ 你是指欧洲的燕子还是非洲的燕子？'
+        	},
+        	pathName: "a/b/c.java",
+            locale: "zh-Hans-CN"
+        }));
+        
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "zh-Hant-TW",
+        	type: "c",
+        	set: translations
+        });
+
+        var rp2 = rp.generatePseudo("zh-Hant-TW", rb);
+
+        test.ok(rp2);
+        test.ok(rp2.getLocale(), "zh-Hant-TW");
+        
+        var t = rp2.getPlurals();
+
+        test.ok(t);
+        test.deepEqual(t, {
+            one: "你好嗎？",
+            few: "燕子的巡航速度是多少？",
+            many: "什麼？ 你是指歐洲的燕子還是非洲的燕子？"
+    	});
+        
         test.done();
     },
 

@@ -445,7 +445,8 @@ module.exports = {
 
         var p = new AndroidProject({
         	id: "webapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+			pseudoLocale: "de-DE"
         }, "./testfiles", {
 			locales:["en-GB"]
 		});
