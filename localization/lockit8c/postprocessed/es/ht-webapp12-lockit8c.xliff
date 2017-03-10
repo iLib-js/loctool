@@ -16818,7 +16818,7 @@
       </trans-unit>
       <trans-unit id="3234" resname="r909371139" restype="string" datatype="ruby">
         <source>Thank you for adding %{expert} to your Care-Team! Now you can easily see %{expert} via video or text chat during the doctor's Virtual Practice hours or send a secure message next time you are in %{states}, or outside the United States, where %{expert} is licensed to see patients.</source>
-        <target state="translated">¡Gracias por añadir a %{expert} a tu Equipo de Atención Médica! Ahora puedes ver fácilmente a %{expert} en chat de video o texto durante el horario del Consultorio Virtual del doctor o enviar un mensaje seguro la siguiente vez que estés fuera de los EE.UU., donde %{expert} está acreditado para ver pacientes.</target>
+        <target state="translated">¡Gracias por añadir a %{expert} a tu Equipo de Atención Médica! Ahora puedes ver fácilmente a %{expert} en chat de video o texto durante el horario del Consultorio Virtual del doctor o enviar un mensaje seguro la siguiente vez que estés en %{states} o fuera de los EE.UU., donde %{expert} está acreditado para ver pacientes.</target>
       </trans-unit>
       <trans-unit id="3235" resname="r38086573" restype="string" datatype="ruby">
         <source>This is a great way to manage your health when you don’t need to physically come into the doctor's office. Here’s a few of the many things you can get help with during a Virtual Consult:</source>
