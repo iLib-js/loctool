@@ -9808,7 +9808,7 @@
     <body>
       <trans-unit id="2025" resname="r7002493" restype="string" datatype="ruby">
         <source>Dear %{first_name},</source>
-        <target>Querido (a) %{experto},</target>
+        <target>Querido (a) %{first_name},</target>
       </trans-unit>
     </body>
   </file>
@@ -10117,7 +10117,7 @@
     <body>
       <trans-unit id="2082" resname="r132352694" restype="string" datatype="ruby">
         <source>Hi %{expert},</source>
-        <target>Hola %{experto},</target>
+        <target>Hola %{expert},</target>
       </trans-unit>
     </body>
   </file>
@@ -11604,7 +11604,7 @@
       </trans-unit>
       <trans-unit id="2426" resname="r1067806297" restype="string" datatype="ruby">
         <source>How effective is %{medicine} for %{condition}?</source>
-        <target>¿Qué tan efectivo es %{medication} para %{indication}?</target>
+        <target>¿Qué tan efectivo es %{medicine} para %{condition}?</target>
       </trans-unit>
     </body>
   </file>
@@ -11648,7 +11648,7 @@
       </trans-unit>
       <trans-unit id="2437" resname="r1054891694" restype="string" datatype="ruby">
         <source>What are the risk factors for %{placeholder}?</source>
-        <target>¿Cuáles son los factores de riesgo?</target>
+        <target>¿Cuáles son los factores de riesgo para %{placeholder}?</target>
       </trans-unit>
       <trans-unit id="2438" resname="r33638286" restype="string" datatype="ruby">
         <source>What are the tests for %{placeholder}?</source>
@@ -11964,7 +11964,7 @@
       </trans-unit>
       <trans-unit id="2510" resname="r69462978" restype="string" datatype="ruby">
         <source>%{person} shared one of your answers with friends!</source>
-        <target>Tus Citas</target>
+        <target>¡%{person} compartió una de tus repuestas con amigos!</target>
       </trans-unit>
     </body>
   </file>

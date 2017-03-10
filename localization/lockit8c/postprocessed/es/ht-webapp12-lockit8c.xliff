@@ -17658,7 +17658,7 @@
     <body>
       <trans-unit id="3399" resname="r7002493" restype="string" datatype="ruby">
         <source>Dear %{first_name},</source>
-        <target state="translated">Querido (a) %{experto},</target>
+        <target state="translated">Querido (a) %{first_name},</target>
       </trans-unit>
       <trans-unit id="3400" resname="r39622555" restype="string" datatype="ruby">
         <source>As the fabulous 2014 is winding down and giving way to a promising 2015, I'd like to send you and your loved ones warm wishes and big smiles for the holidays, and all the best for a super happy New Year!</source>
@@ -20161,7 +20161,7 @@
     <body>
       <trans-unit id="3865" resname="r132352694" restype="string" datatype="ruby">
         <source>Hi %{expert},</source>
-        <target state="translated">Hola %{experto},</target>
+        <target state="translated">Hola %{expert},</target>
       </trans-unit>
     </body>
   </file>
@@ -22372,7 +22372,7 @@
       </trans-unit>
       <trans-unit id="4312" resname="r1067806297" restype="string" datatype="ruby">
         <source>How effective is %{medicine} for %{condition}?</source>
-        <target state="translated">¿Qué tan efectivo es %{medication} para %{indication}?</target>
+        <target state="translated">¿Qué tan efectivo es %{medicine} para %{condition}?</target>
       </trans-unit>
     </body>
   </file>
@@ -22408,7 +22408,7 @@
       </trans-unit>
       <trans-unit id="4319" resname="r1054891694" restype="string" datatype="ruby">
         <source>What are the risk factors for %{placeholder}?</source>
-        <target state="translated">¿Cuáles son los factores de riesgo?</target>
+        <target state="translated">¿Cuáles son los factores de riesgo para %{placeholder}?</target>
       </trans-unit>
       <trans-unit id="4320" resname="r33638286" restype="string" datatype="ruby">
         <source>What are the tests for %{placeholder}?</source>
@@ -23396,7 +23396,7 @@
       </trans-unit>
       <trans-unit id="4554" resname="r69462978" restype="string" datatype="ruby">
         <source>%{person} shared one of your answers with friends!</source>
-        <target state="translated">Tus Citas</target>
+        <target state="translated">¡%{person} compartió una de tus repuestas con amigos!</target>
       </trans-unit>
       <trans-unit id="4555" resname="r121731382" restype="string" datatype="ruby">
         <source>%{fn} %{ln} sent you a secure health file. See the file.</source>
