@@ -333,7 +333,7 @@ module.exports = {
 		test.done();
 	},
 
-    testHamlFileIndentation0: function(test) {
+    testHamlFileIndentationFirstLine: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
@@ -345,7 +345,7 @@ module.exports = {
 		test.done();
 	},
 
-    testHamlFileIndentation20: function(test) {
+    testHamlFileIndentationSecondLine: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
@@ -357,14 +357,48 @@ module.exports = {
 		test.done();
 	},
 
-    testHamlFileIndentation38: function(test) {
+    testHamlFileIndentationMidLine: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         test.equal(h.indentation(
         	"   %foo.bar { {asdf{\n" +
         	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 38), 3);
+        	"   .class.otherclass {asdf} \n", 38), 5);
+
+		test.done();
+	},
+
+    testHamlFileIndentationThirdLine: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        test.equal(h.indentation(
+        	"   %foo.bar { {asdf{\n" +
+        	"     asdf} asdf} asdf} trailing text\n" +
+        	"   .class.otherclass {asdf} \n", 60), 3);
+
+		test.done();
+	},
+
+    testHamlFileIndentationTabs: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        test.equal(h.indentation(
+        	"\t\t%foo.bar { {asdf{\n", 0), 2);
+
+		test.done();
+	},
+
+    testHamlFileIndentationSkipReturn: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        test.equal(h.indentation(
+        	"   %foo.bar { {asdf{\n" +
+        	"     asdf} asdf} asdf} trailing text\n" +
+        	"   .class.otherclass {asdf} \n", 57), 3);
 
 		test.done();
 	},
