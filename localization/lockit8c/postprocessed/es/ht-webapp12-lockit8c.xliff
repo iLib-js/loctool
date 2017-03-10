@@ -1358,7 +1358,7 @@
       </trans-unit>
       <trans-unit id="5475" resname="r738976768" restype="string" datatype="ruby">
         <source>CANCELLED: HealthTap virtual consult on %{time}</source>
-        <target state="translated">CANCELADA: Consulta HealthTap en vivo en</target>
+        <target state="translated">CANCELADA: Consulta HealthTap en vivo a %{time}</target>
       </trans-unit>
       <trans-unit id="5476" resname="r719269944" restype="string" datatype="ruby">
         <source>NO SHOW: %{conciergeappointment} translator didn’t show to consult %{chat_session}</source>
@@ -1811,7 +1811,7 @@
       </trans-unit>
       <trans-unit id="5588" resname="r11819796" restype="string" datatype="ruby">
         <source>%{subject_title}, congratulations! Welcome to HealthTap Concierge</source>
-        <target state="translated">%{subject_name}, ¡felicidades! Bienvenido a HealthTap Concierge</target>
+        <target state="translated">%{subject_title}, ¡felicidades! Bienvenido a HealthTap Concierge</target>
       </trans-unit>
       <trans-unit id="5589" resname="r213915888" restype="string" datatype="ruby">
         <source>%{subject_name}, your HealthTap Concierge application</source>
@@ -1895,7 +1895,7 @@
       </trans-unit>
       <trans-unit id="5609" resname="r275269022" restype="string" datatype="ruby">
         <source>Congrats! You’ve just been rated 5 stars for the %{counter_ordinal} time!</source>
-        <target state="translated">¡Felicidades! ¡Has sido calificado con 5 estrellas por primera vez!</target>
+        <target state="translated">¡Felicidades! ¡Has sido calificado con 5 estrellas por el %{counter_ordinal} vez!</target>
       </trans-unit>
       <trans-unit id="5610" resname="r355616476" restype="string" datatype="ruby">
         <source>A shift just opened up. Can you cover it?</source>
@@ -14859,7 +14859,7 @@
       </trans-unit>
       <trans-unit id="2843" resname="r848718286" restype="string" datatype="ruby">
         <source>Get faster responses with priority status whenever you send a text question to our network of %{num_docs} top doctors</source>
-        <target state="translated">Obtén respuestas más rápidas con estado prioritario cuando sea que envíes una pregunta de texto a nuestra red de ${num_docs} de los mejores doctores</target>
+        <target state="translated">Obtén respuestas más rápidas con estado prioritario cuando sea que envíes una pregunta de texto a nuestra red de %{num_docs} de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="2844" resname="r732956757" restype="string" datatype="ruby">
         <source>Give exclusive discounts to friends and family</source>
@@ -32711,7 +32711,7 @@
     <body>
       <trans-unit id="7793" resname="r170546873" restype="string" datatype="ruby">
         <source>Unable to activate facebook: %{reason}</source>
-        <target state="translated">Incapaz de activar Facebook: Razón:</target>
+        <target state="translated">Incapaz de activar Facebook: %{reason}</target>
       </trans-unit>
     </body>
   </file>

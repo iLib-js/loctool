@@ -15143,7 +15143,7 @@
       </trans-unit>
       <trans-unit id="3331" resname="r738976768" restype="string" datatype="ruby">
         <source>CANCELLED: HealthTap virtual consult on %{time}</source>
-        <target>CANCELADA: Consulta HealthTap en vivo en</target>
+        <target>CANCELADA: Consulta HealthTap en vivo a %{time}</target>
       </trans-unit>
       <trans-unit id="3332" resname="r719269944" restype="string" datatype="ruby">
         <source>NO SHOW: %{conciergeappointment} translator didn’t show to consult %{chat_session}</source>
@@ -15680,7 +15680,7 @@
       </trans-unit>
       <trans-unit id="3465" resname="r11819796" restype="string" datatype="ruby">
         <source>%{subject_title}, congratulations! Welcome to HealthTap Concierge</source>
-        <target>%{subject_name}, ¡felicidades! Bienvenido a HealthTap Concierge</target>
+        <target>%{subject_title}, ¡felicidades! Bienvenido a HealthTap Concierge</target>
       </trans-unit>
       <trans-unit id="3466" resname="r213915888" restype="string" datatype="ruby">
         <source>%{subject_name}, your HealthTap Concierge application</source>
@@ -15764,7 +15764,7 @@
       </trans-unit>
       <trans-unit id="3486" resname="r275269022" restype="string" datatype="ruby">
         <source>Congrats! You’ve just been rated 5 stars for the %{counter_ordinal} time!</source>
-        <target>¡Felicidades! ¡Has sido calificado con 5 estrellas por primera vez!</target>
+        <target>¡Felicidades! ¡Has sido calificado con 5 estrellas por el %{counter_ordinal} vez!</target>
       </trans-unit>
       <trans-unit id="3487" resname="r355616476" restype="string" datatype="ruby">
         <source>A shift just opened up. Can you cover it?</source>
@@ -22425,7 +22425,7 @@
     <body>
       <trans-unit id="5169" resname="r170546873" restype="string" datatype="ruby">
         <source>Unable to activate facebook: %{reason}</source>
-        <target>Incapaz de activar Facebook: Razón:</target>
+        <target>Incapaz de activar Facebook: %{reason}</target>
       </trans-unit>
     </body>
   </file>
