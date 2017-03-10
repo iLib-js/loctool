@@ -5476,7 +5476,7 @@
     <body>
       <trans-unit id="1266" resname="r1036145162" restype="string" datatype="ruby">
         <source>Dear %{expert},</source>
-        <target>Querido (a) %{experto},</target>
+        <target>Querido(a) %{expert},</target>
       </trans-unit>
       <trans-unit id="1267" resname="r268716605" restype="string" datatype="ruby">
         <source>At HealthTap, we care deeply about the safety and security of your account. Please take a moment to set your password so you can log in to HealthTap any time.</source>
