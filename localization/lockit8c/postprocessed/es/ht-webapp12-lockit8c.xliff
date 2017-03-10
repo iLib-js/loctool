@@ -16362,7 +16362,7 @@
       </trans-unit>
       <trans-unit id="3144" resname="r516232657" restype="string" datatype="ruby">
         <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link} &lt;strong&gt;or call us at %{number}&lt;/strong&gt;. We’re here to listen and help :)</source>
-        <target state="translated">Si tienes alguna pregunta o comentarios, por favor, %{open_link}contacta nuestro equipo de Atención de Calidad%{close_link} &lt;strong&gt;o llámanos al %{phone}&lt;/strong&gt;. Estamos aquí para escuchar y ayudar :)</target>
+        <target state="translated">Si tienes alguna pregunta o comentarios, por favor, %{open_link}contacta nuestro equipo de Atención de Calidad%{close_link} &lt;strong&gt;o llámanos al %{number}&lt;/strong&gt;. Estamos aquí para escuchar y ayudar :)</target>
       </trans-unit>
       <trans-unit id="3145" resname="r129797690" restype="string" datatype="ruby">
         <source>phone number</source>
