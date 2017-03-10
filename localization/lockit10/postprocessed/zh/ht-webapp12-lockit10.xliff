@@ -448,7 +448,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/person/third_party.rb" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>

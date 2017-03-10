@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
         <source>%{span_start}Get answers to your health questions%{span_end}&lt;br&gt;%{span_start}from over %{count} top doctors%{span_end}</source>
-        <target state="translated">%{span_start}从超过 %{count} 的顶级医生%{span_end}<br/>%{span_start}获得您健康问题的答案%{span_end}</target>
+        <target state="translated">%{span_start}从超过 %{count} 的顶级医生%{span_end}&lt;br/&gt;%{span_start}获得您健康问题的答案%{span_end}</target>
       </trans-unit>
     </body>
   </file>
