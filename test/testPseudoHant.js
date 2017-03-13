@@ -256,4 +256,81 @@ module.exports = {
         
         test.done();
     },
+    
+    testPseudoHantGetStringTW: function(test) {
+        test.expect(3);
+
+        var translations = new TranslationSet();
+        
+        // test Taiwan specific phrases
+        
+        var ph = new PseudoHant({
+        	set: translations,
+        	locale: "zh-Hant-TW"
+        });
+        
+        // TW specific
+        test.equal(ph.getString('方便麵'), "速食麵");
+        test.equal(ph.getString('蹦極'), "笨豬跳");
+        test.equal(ph.getString('優先級'), "優先順序");
+        
+        test.done();
+    },
+
+    testPseudoHantGetStringTWGeneric: function(test) {
+        test.expect(3);
+
+        var translations = new TranslationSet();
+        
+        var ph = new PseudoHant({
+        	set: translations,
+        	locale: "zh-Hant-TW"
+        });
+        
+        // generic traditional should still work too
+        test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
+        test.equal(ph.getString('东荡西除？'), "東蕩西除？");
+        test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
+        
+        test.done();
+    },
+
+    testPseudoHantGetStringHK: function(test) {
+        test.expect(3);
+
+        var translations = new TranslationSet();
+        
+        // test Hong Kong specific phrases
+        
+        var ph = new PseudoHant({
+        	set: translations,
+        	locale: "zh-Hant-HK"
+        });
+        
+        test.equal(ph.getString('鰂魚涌'), "鰂魚涌");
+        test.equal(ph.getString('深涌'), "深涌");
+        test.equal(ph.getString('繮'), "韁");
+        test.done();
+    },
+
+    testPseudoHantGetStringHKGeneric: function(test) {
+        test.expect(3);
+
+        var translations = new TranslationSet();
+        
+        // test Hong Kong specific phrases
+        
+        var ph = new PseudoHant({
+        	set: translations,
+        	locale: "zh-Hant-HK"
+        });
+        
+        // generic traditional should still work too
+        test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
+        test.equal(ph.getString('东荡西除？'), "東蕩西除？");
+        test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
+        
+        test.done();
+    }  
+    
 };
