@@ -18058,10 +18058,6 @@
   </file>
   <file original="app/views/general_mailer/doctor_test_results_day1.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3463" resname="r1066739754" restype="string" datatype="ruby">
-        <source>The</source>
-        <target state="translated"></target>
-      </trans-unit>
       <trans-unit id="3464" resname="r954262044" restype="string" datatype="ruby">
         <source>Team :)</source>
         <target state="translated">团队 :)</target>
@@ -39966,7 +39962,6 @@
       </trans-unit>
       <trans-unit id="9306" resname="Tip: We recommend you refer patients to doctors who participate in HealthTap Concierge so your patients can get immediate follow-up care. Concierge doctors will be indicated with a small green dot and labeled &quot;Available for Virtual Consults&quot;." restype="string" datatype="javascript">
         <source>Tip: We recommend you refer patients to doctors who participate in HealthTap Concierge so your patients can get immediate follow-up care. Concierge doctors will be indicated with a small green dot and labeled "Available for Virtual Consults".</source>
-        <target state="translated">小贴士：我们建议您将患者转诊参加HealthTap 贵宾台，让您的患者可以立即接受后续护理。贵宾台医生将显示一个小绿点，表示为“可用于在线咨询”。</target>
         <target state="translated">小贴士：我们建议您将患者转诊参加HealthTap 贵宾台，让您的患者可以立即接受后续护理。贵宾台医生将显示一个小绿点，表示为“可用于在线咨询”。</target>
       </trans-unit>
       <trans-unit id="9307" resname="To recommend a checklist, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">

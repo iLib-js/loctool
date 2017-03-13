@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="59" resname="r856013763" restype="string" datatype="ruby">
         <source>N/A</source>
-        <target state="accepted">不适用</target>
+        <target state="accepted">N/A</target>
       </trans-unit>
     </body>
   </file>
@@ -808,7 +808,7 @@
     <body>
       <trans-unit id="198" resname="r1072022560" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors responded</source>
-        <target state="translated">1 doctor contestó</target>
+        <target state="translated">%{count} doctores contestós</target>
       </trans-unit>
     </body>
   </file>
@@ -876,7 +876,7 @@
     <body>
       <trans-unit id="211" resname="r619530839" restype="plural" datatype="ruby" extype="other">
         <source>See %{count} more answers</source>
-        <target state="translated">Ver 1 respuesta más</target>
+        <target state="translated">Ver %{count} respuestas más</target>
       </trans-unit>
     </body>
   </file>
@@ -884,7 +884,7 @@
     <body>
       <trans-unit id="230" resname="r799856089" restype="plural" datatype="ruby" extype="other">
         <source>%{count} checklists</source>
-        <target state="translated">1 listado</target>
+        <target state="translated">%{count} listados</target>
       </trans-unit>
     </body>
   </file>
