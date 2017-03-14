@@ -233,6 +233,201 @@ module.exports = {
 		test.done();
 	},
 	
+	testHamlFileMakeKeyNewLines: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        // makeKey is used for double-quoted strings, which ruby interprets before it is used
+        test.equals(hf.makeKey("A \n B"), "r191336864");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyEscapeN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        // makeKey is used for double-quoted strings, which ruby interprets before it is used
+        test.equals(hf.makeKey("A \\n B"), "r191336864");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyTabs: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("A \t B"), "r191336864");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyEscapeT: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("A \\t B"), "r191336864");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyQuotes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("A \\'B\\' C"), "r935639115");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("\\u00A0 \\u0023"), "r2293235");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyInterpretEscapedOctalChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("A \\40 \\011 B"), "r191336864");
+        
+        test.done();
+	},
+
+	/*
+	testHamlFileMakeKeyJavaEscapeSequences: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
+        
+        test.done();
+	},
+	*/
+	
+	testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
+        test.expect(13);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
+        test.equals(hf.makeKey('This has \\\"double quotes\\\" in it.'), "r487572481");
+        test.equals(hf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
+        test.equals(hf.makeKey('This has \\\'single quotes\\\' in it.'), "r900797640");
+        test.equals(hf.makeKey("This is a double quoted string"), "r494590307");
+        test.equals(hf.makeKey('This is a single quoted string'), "r683276274");
+        test.equals(hf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
+        test.equals(hf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
+        test.equals(hf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
+        test.equals(hf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
+        test.equals(hf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
+        test.equals(hf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
+        
+        test.done();
+	},
+
     testHamlFileFindMatchingOneLine: function(test) {
         test.expect(1);
 
@@ -403,200 +598,7 @@ module.exports = {
 		test.done();
 	},
 
-	/*
-	testHamlFileMakeKeyNewLines: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(jf.makeKey("A \n B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyEscapeN: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(jf.makeKey("A \\n B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyTabs: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("A \t B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyEscapeT: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("A \\t B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyQuotes: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("A \\'B\\' C"), "r935639115");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("\\u00A0 \\u0023"), "r2293235");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyInterpretEscapedOctalChars: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("A \\40 \\011 B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyJavaEscapeSequences: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
-        
-        test.done();
-	},
-
-	testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
-        test.expect(13);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var jf = new HamlFile({
-			project: p
-		});
-        test.ok(jf);
-
-        test.equals(jf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
-        test.equals(jf.makeKey('This has \\\"double quotes\\\" in it.'), "r487572481");
-        test.equals(jf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
-        test.equals(jf.makeKey('This has \\\'single quotes\\\' in it.'), "r900797640");
-        test.equals(jf.makeKey("This is a double quoted string"), "r494590307");
-        test.equals(jf.makeKey('This is a single quoted string'), "r683276274");
-        test.equals(jf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
-        test.equals(jf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
-        test.equals(jf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
-        test.equals(jf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
-        test.equals(jf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
-        test.equals(jf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
-        
-        test.done();
-	},
-	
+/*	
     testHamlFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
