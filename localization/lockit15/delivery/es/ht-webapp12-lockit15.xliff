@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/user_questions/feelGood/_answers.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r999324232" restype="plural" datatype="ruby" extype="one">
+        <source>%{doctor_link}%{doctor_name}%{link_end} + %{question_link}1 doctor%{link_end} weighed in</source><seg-source><mrk mtype="seg" mid="1">%{doctor_link}%{doctor_name}%{link_end} + %{question_link}1 doctor%{link_end} weighed in</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">%{doctor_link}%{doctor_name}%{link_end} + %{question_link}1 doctor%{link_end} opinó</mrk></target>
+      </trans-unit>
+      <trans-unit id="2" resname="r999324232" restype="plural" datatype="ruby" extype="other">
+        <source>%{doctor_link}%{doctor_name}%{link_end} + %{question_link}%{count} doctors%{link_end} weighed in</source><seg-source><mrk mtype="seg" mid="2">%{doctor_link}%{doctor_name}%{link_end} + %{question_link}%{count} doctors%{link_end} weighed in</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="2">%{doctor_link}%{doctor_name}%{link_end} + %{question_link}%{count} doctores%{link_end} opinaron</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r355722615" restype="string" datatype="ruby">
+        <source>Need a doctor? Just ask Alexa</source><seg-source><mrk mtype="seg" mid="3">Need a doctor? Just ask Alexa</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">¿Necesitas un doctor? Sólo pregúntale a Alexa</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="r485351751" restype="string" datatype="ruby">
+        <source>Amazon Alexa Can Now Help Diagnose What Ails You</source><seg-source><mrk mtype="seg" mid="4">Amazon Alexa Can Now Help Diagnose What Ails You</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="4">Amazon Alexa Ahora Puede Diagnosticar Lo Que Te Aflige</mrk></target>
+      </trans-unit>
+      <trans-unit id="5" resname="r799498501" restype="string" datatype="ruby">
+        <source>The system features an AI doctor 'trained in bedside manner to ask intelligible, dynamically generated questions in natural language via an intuitive conversational user interface.'</source><seg-source><mrk mtype="seg" mid="5">The system features an AI doctor 'trained in bedside manner to ask intelligible, dynamically generated questions in natural language via an intuitive conversational user interface.'</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="5">El sistema ofrece un doctor AI 'entrenado en trata de pacientes para hacer inteligentes preguntas generadas dinámicamente en un lenguaje natural a través una interfaz de usuario conversacional intuitiva.'</mrk></target>
+      </trans-unit>
+      <trans-unit id="6" resname="r796957644" restype="string" datatype="ruby">
+        <source>Amazon Echo's Alexa Can Now Answer Your Health Questions</source><seg-source><mrk mtype="seg" mid="6">Amazon Echo's Alexa Can Now Answer Your Health Questions</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="6">Alexa de Amazon Echo Ahora Puede Contestar Tus Preguntas de Salud</mrk></target>
+      </trans-unit>
+      <trans-unit id="7" resname="r830002258" restype="string" datatype="ruby">
+        <source>Dr. A.I. with a little heart emoji</source><seg-source><mrk mtype="seg" mid="7">Dr. A.I. with a little heart emoji</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="7">Dr. A.I. con un pequeño emoji de corazón</mrk></target>
+      </trans-unit>
+      <trans-unit id="8" resname="r530389917" restype="string" datatype="ruby">
+        <source>[Dr. A.I. on Alexa] could be very useful for the elderly and those who are disabled.</source><seg-source><mrk mtype="seg" mid="8">[Dr. A.I. on Alexa] could be very useful for the elderly and those who are disabled.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="8">[Dr. A.I. en Alexa] podría ser muy útil para los ancianos y aquellos con discapacidades.</mrk></target>
+      </trans-unit>
+      <trans-unit id="9" resname="r357489596" restype="string" datatype="ruby">
+        <source>Dr Alexa can diagnose you using artificial intelligence</source><seg-source><mrk mtype="seg" mid="9">Dr Alexa can diagnose you using artificial intelligence</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="9">Dr Alexa puede diagnosticarte usando inteligencia artificial</mrk></target>
+      </trans-unit>
+      <trans-unit id="10" resname="r611410556" restype="string" datatype="ruby">
+        <source>Not feeling well? Patients can ask HealthTap’s Dr. AI, through Amazon Alexa, what to do next</source><seg-source><mrk mtype="seg" mid="10">Not feeling well? Patients can ask HealthTap’s Dr. AI, through Amazon Alexa, what to do next</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="10">¿No te sientes bien? Los pacientes pueden preguntarle al Dr. AI de HealthTap, a través de Amazon Alexa, qué hacer a continuación</mrk></target>
+      </trans-unit>
+      <trans-unit id="11" resname="r296881254" restype="string" datatype="ruby">
+        <source>Alexa just became a virtual doctor</source><seg-source><mrk mtype="seg" mid="11">Alexa just became a virtual doctor</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="11">Alexa se acaba de convertir en un doctor virtual</mrk></target>
+      </trans-unit>
+      <trans-unit id="12" resname="r789871239" restype="string" datatype="ruby">
+        <source>HealthTap Expands Global Health Practice to 1.4 Billion Chinese Speakers</source><seg-source><mrk mtype="seg" mid="12">HealthTap Expands Global Health Practice to 1.4 Billion Chinese Speakers</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="12">HealthTap Expande su Consultorio de Salud Global a 1.4 Billones de Parlantes de Habla China</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="r1025922236" restype="string" datatype="ruby">
+        <source>HealthTap’s advanced services now available in Chinese</source><seg-source><mrk mtype="seg" mid="13">HealthTap’s advanced services now available in Chinese</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="13">Los servicios avanzados de HealthTap ya están disponibles en chino</mrk></target>
+      </trans-unit>
+      <trans-unit id="14" resname="r410168911" restype="string" datatype="ruby">
+        <source>HealthTap Partners With Alexa To Help Those With Limited Mobility</source><seg-source><mrk mtype="seg" mid="14">HealthTap Partners With Alexa To Help Those With Limited Mobility</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="14">HealthTap Se Asocia Con Alexa Para Ayudar A Aquellos Con Movilidad Limitada</mrk></target>
+      </trans-unit>
+      <trans-unit id="15" resname="r254712210" restype="string" datatype="ruby">
+        <source>Amazon Alexa AI is now a doctor with HealthTap</source><seg-source><mrk mtype="seg" mid="15">Amazon Alexa AI is now a doctor with HealthTap</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="15">Amazon Alexa AI ya es un doctor con HealthTap</mrk></target>
+      </trans-unit>
+      <trans-unit id="16" resname="r366014265" restype="string" datatype="ruby">
+        <source>Need a doctor? Just talk to Alexa and its new HealthTap integration</source><seg-source><mrk mtype="seg" mid="16">Need a doctor? Just talk to Alexa and its new HealthTap integration</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="16">¿Necesitas un doctor? Solo habla con Alexa y su nueva integración con HealthTap</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_checklist_todo.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="17" resname="r786318576" restype="string" datatype="ruby">
+        <source>%{author_link_start}%{author_name}'s%{link_end} checklist from your %{private_span_start}Private Consult%{span_end} for %{first_name} %{last_name}</source><seg-source><mrk mtype="seg" mid="17">%{author_link_start}%{author_name}'s%{link_end} checklist from your %{private_span_start}Private Consult%{span_end} for %{first_name} %{last_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="17">El listado de %{author_link_start}%{author_name}%{link_end} de tu %{private_span_start}Consulta Privada%{span_end} para %{first_name} %{last_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/helpers/static_pages_helper.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="18" resname="r659031800" restype="string" datatype="ruby">
+        <source>Feb 2017</source><seg-source><mrk mtype="seg" mid="18">Feb 2017</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="18">Feb 2017</mrk></target>
+      </trans-unit>
+      <trans-unit id="19" resname="r714927351" restype="string" datatype="ruby">
+        <source>Immediate high-quality healthcare is now a simple spoken word away as HealthTap’s Dr. A.I. gains a voice with Amazon’s Alexa.</source><seg-source><mrk mtype="seg" mid="19">Immediate high-quality healthcare is now a simple spoken word away as HealthTap’s Dr. A.I. gains a voice with Amazon’s Alexa.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="19">Atención a la salud inmediata y de alta calidad está ahora a una simple palabra hablada de distancia pues el Dr. A.I. de HealthTap gana una voz con Alexa de Amazon.</mrk></target>
+      </trans-unit>
+      <trans-unit id="20" resname="r312761863" restype="string" datatype="ruby">
+        <source>The first Global Health Practice welcomes more than half a billion Spanish speakers worldwide to immediate high-quality healthcare via text video or voice now in Spanish.</source><seg-source><mrk mtype="seg" mid="20">The first Global Health Practice welcomes more than half a billion Spanish speakers worldwide to immediate high-quality healthcare via text video or voice now in Spanish.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="20">El primer Consultorio de Salud Global le da la bienvenida a más de medio billón de parlantes de habla hispana alrededor del mundo a atención a la salud de alta calidad inmediata a través de texto, video o voz, ahora en español.</mrk></target>
+      </trans-unit>
+      <trans-unit id="21" resname="r193009335" restype="string" datatype="ruby">
+        <source>HealthTap’s Dr. A.I. Meets Amazon’s Alexa — Say “Hello” to Your new “Always-On Physician” Powered by Artificial and Emotional Intelligence</source><seg-source><mrk mtype="seg" mid="21">HealthTap’s Dr. A.I. Meets Amazon’s Alexa — Say “Hello” to Your new “Always-On Physician” Powered by Artificial and Emotional Intelligence</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="21">El Dr. A.I. de HealthTap conoce a Alexa de Amazon — dile “Hola” a Tu nuevo “Médico Siempre Encendido” Propulsado por Inteligencia Artificial y Emocional</mrk></target>
+      </trans-unit>
+      <trans-unit id="22" resname="r959944193" restype="string" datatype="ruby">
+        <source>¡Hola! from HealthTap</source><seg-source><mrk mtype="seg" mid="22">¡Hola! from HealthTap</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="22">¡Hola! de HealthTap</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/invite_colleagues.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="23" resname="Patients&lt;span style=&quot;color:#999;font-weight: normal;font-size: 11px; margin-left: 5px;&quot;&gt;or request from your&lt;a onclick=&quot;App.session.closePanels();&quot; href=&quot;&lt;%App.session.device == 'ipad' ?'':'/'%&gt;expert/patient_directory&quot; style=&quot;font-weight: normal;&quot;&gt;Patient Directory »&lt;/a&gt;&lt;/span&gt;" restype="string" datatype="html">
+        <source>Patients&lt;span style="color:#999;font-weight: normal;font-size: 11px; margin-left: 5px;"&gt;or request from your &lt;a onclick="App.session.closePanels();" href="&lt;%App.session.device == 'ipad' ?'':'/'%&gt;expert/patient_directory" style="font-weight: normal;"&gt;Patient Directory »&lt;/a&gt;&lt;/span&gt;</source><seg-source><mrk mtype="seg" mid="23">Patients&lt;span style="color:#999;font-weight: normal;font-size: 11px; margin-left: 5px;"&gt;or request from your &lt;a onclick="App.session.closePanels();" href="&lt;%App.session.device == 'ipad' ?'':'/'%&gt;expert/patient_directory" style="font-weight: normal;"&gt;Patient Directory »&lt;/a&gt;&lt;/span&gt;</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="23">Pacientes&lt;span style="color:#999;font-weight: normal;font-size: 11px; margin-left: 5px;"&gt;o solicita desde tu &lt;a onclick="App.session.closePanels();" href="&lt;%App.session.device == 'ipad' ?'':'/'%&gt;expert/patient_directory" style="font-weight: normal;"&gt;Directorio de Pacientes »&lt;/a&gt;&lt;/span&gt;</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/prescription_module.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="24" resname="Please fill out both parts of the subsidy code" restype="string" datatype="javascript">
+        <source>Please fill out both parts of the subsidy code</source><seg-source><mrk mtype="seg" mid="24">Please fill out both parts of the subsidy code</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="24">Por favor, llena ambas partes del código de subsidio</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/expert/cme.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="25" resname="Certificate start date must be before the end date" restype="string" datatype="javascript">
+        <source>Certificate start date must be before the end date</source><seg-source><mrk mtype="seg" mid="25">Certificate start date must be before the end date</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="25">La fecha de inicio de la certificación debe de ser antes de la fecha de vencimiento</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="sos.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="27" resname="r770755542" restype="string" datatype="x-haml">
+        <source>Nikhil, VP Total Rewards, at the</source><seg-source><mrk mtype="seg" mid="26">Nikhil, VP Total Rewards, at the</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="26">Nikhil, VP Total Rewards, en el</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_testimonials.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="28" resname="r234372923" restype="string" datatype="x-haml">
+        <source>Nikhil Moorthy</source><seg-source><mrk mtype="seg" mid="27">Nikhil Moorthy</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="27">Nikhil Moorthy</mrk></target>
+      </trans-unit>
+      <trans-unit id="29" resname="r714001851" restype="string" datatype="x-haml">
+        <source>VP Total Rewards, Flex</source><seg-source><mrk mtype="seg" mid="28">VP Total Rewards, Flex</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="28">VP Total Rewards, Flex</mrk></target>
+      </trans-unit>
+      <trans-unit id="30" resname="r598006846" restype="string" datatype="x-haml">
+        <source>VP Total Rewards at Flex</source><seg-source><mrk mtype="seg" mid="29">VP Total Rewards at Flex</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="29">VP Total Rewards, en Flex</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="expert_weekly_digest.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="33" resname="r980310607" restype="string" datatype="x-haml">
+        <source>Answer more questions now</source><seg-source><mrk mtype="seg" mid="30">Answer more questions now</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="30">Contesta más preguntas ahora</mrk></target>
+      </trans-unit>
+      <trans-unit id="34" resname="r367394694" restype="string" datatype="x-haml">
+        <source>Click here to cast your vote</source><seg-source><mrk mtype="seg" mid="31">Click here to cast your vote</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="31">Haz clic aquí para emitir tu voto</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="expert_virtual_care_course_success.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="35" resname="r845287322" restype="string" datatype="x-haml">
+        <source>and becoming Virtual Care Certified with HealthTap! We encourage you to update your C.V. and online profiles to reflect your new certification status.</source><seg-source><mrk mtype="seg" mid="32">and becoming Virtual Care Certified with HealthTap! We encourage you to update your C.V. and online profiles to reflect your new certification status.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="32">y certificarte en Atención Virtual con HealthTap! Te alentamos a actualizar tu C.V. y perfiles en línea para reflejar tu nuevo estado de certificación.</mrk></target>
+      </trans-unit>
+      <trans-unit id="36" resname="r435879188" restype="string" datatype="x-haml">
+        <source>Virtual Care: The Course</source><seg-source><mrk mtype="seg" mid="33">Virtual Care: The Course</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="33">Atención Virtual: El Curso</mrk></target>
+      </trans-unit>
+      <trans-unit id="37" resname="r798079707" restype="string" datatype="x-haml">
+        <source>Thank you and congratulations for completing</source><seg-source><mrk mtype="seg" mid="34">Thank you and congratulations for completing</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="34">¡Gracias y felicidades por completar</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="expert_provider_welcome.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="38" resname="r676120820" restype="string" datatype="x-haml">
+        <source>After claiming your account, you may be prompted to complete a quick tutorial. You need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online consulting etiquette, and tests your PC for video consulting capability.</source><seg-source><mrk mtype="seg" mid="35">After claiming your account, you may be prompted to complete a quick tutorial. You need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online consulting etiquette, and tests your PC for video consulting capability.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="35">Después de reclamar tu cuenta, se te puede pedir que completes un rápido tutorial. Necesitas completar el tutorial antes de realizar cualquier consulta en vivo. El tutorial cubre aspectos importantes de la etiqueta de consulta en línea, y pone a prueba tu PC para capacidad de consulta por video.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="expert_provider_set_password_redirect.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="39" resname="r207528420" restype="string" datatype="x-haml">
+        <source>anywhere, anytime, and from any device.</source><seg-source><mrk mtype="seg" mid="36">anywhere, anytime, and from any device.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="36">a cualquier hora, en cualquier parte y desde cualquier dispositivo.</mrk></target>
+      </trans-unit>
+      <trans-unit id="40" resname="r317436351" restype="string" datatype="x-haml">
+        <source>provide your patients more convenient, effective care</source><seg-source><mrk mtype="seg" mid="37">provide your patients more convenient, effective care</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="37">bríndales atención más efectiva y conveniente a tus pacientes</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_step_one.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="42" resname="r607665739" restype="string" datatype="x-haml">
+        <source>Congratulations, you are on your way to using HealthTap Prime to conduct Virtual Consults. Complete and submit this form to begin your application process.</source><seg-source><mrk mtype="seg" mid="38">Congratulations, you are on your way to using HealthTap Prime to conduct Virtual Consults. Complete and submit this form to begin your application process.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="38">Felicidades, estás en camino a usar HealthTap Prime para realizar Consultas Virtuales. Completa y presenta este formulario para iniciar tu proceso de solicitud.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
