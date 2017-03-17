@@ -9,6 +9,7 @@ if (!CSVFile) {
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
     var ContextResourceString =  require("../lib/ContextResourceString.js");
+    var TranslationSet =  require("../lib/TranslationSet.js");
 }
 
 module.exports = {
@@ -53,6 +54,133 @@ module.exports = {
         test.done();
     },
     
+    testCSVFileConstructorInitWithNames: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	localizable: ["name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+
+        test.deepEqual(j.names, ["id", "name", "description"]);
+
+        test.done();
+    },
+
+    testCSVFileConstructorInitWithContent: function(test) {
+        test.expect(10);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	localizable: ["name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+
+        var record = j.records[0];
+
+        test.equal(record.id, "foo");
+        test.equal(record.name, "bar");
+        test.equal(record.description, "asdf");
+
+        record = j.records[1];
+
+        test.equal(record.id, "foo2");
+        test.equal(record.name, "bar2");
+        test.equal(record.description, "asdf2");
+
+        record = j.records[2];
+
+        test.equal(record.id, "foo3");
+        test.equal(record.name, "bar3");
+        test.equal(record.description, "asdf3");
+
+        test.done();
+    },
+
+    testCSVFileConstructorInitWithLocalizableColumns: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	localizable: ["name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+
+        test.deepEqual(j.localizable, new Set(["name", "description"]));
+        
+        test.done();
+    },
+
     testCSVFileParseGetColumnNames: function(test) {
         test.expect(4);
 
@@ -457,5 +585,228 @@ module.exports = {
         test.equal(j.records.length, 0);
 
         test.done();
-    }
+    },
+    
+    testCSVFileLocalizeText: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	"id,name,description\n" +
+        	"foo,bar,asdf\n" +
+        	"foo2,bar2,asdf2\n" +
+        	"foo3,bar3,asdf3"
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithCommasInIt: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar,asdf",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "comma, comma",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "line3",
+	        		description: "down doo be doo, down down"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	'id,name,description\n' +
+        	'foo,"bar,asdf",asdf\n' +
+        	'foo2,"comma, comma",asdf2\n' +
+        	'foo3,line3,"down doo be doo, down down"'
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithTabs: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	rowSeparator: ':',
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	"id	name	description:" +
+        	"foo	bar	asdf:" +
+        	"foo2	bar2	asdf2:" +
+        	"foo3	bar3	asdf3"
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithTranslations: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "description"],
+        	localizable: ["name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "bar",
+        	source: "le bar",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "asdf",
+        	source: "l'asdf",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "bar2",
+        	source: "le bar2",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "asdf2",
+        	source: "l'asdf2",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "bar3",
+        	source: "le bar3",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "asdf3",
+        	source: "l'asdf3",
+        	locale: "fr-FR",
+        	datatype: "x-csv"
+        }));
+
+        var text = j.localizeText(translations, "fr-FR");
+        
+        test.equal(text,
+        	"id,name,description\n" +
+        	"foo,le bar,l'asdf\n" +
+        	"foo2,le bar2,l'asdf2\n" +
+        	"foo3,le bar3,l'asdf3"
+        );
+        
+        test.done();
+    },
+
 };
