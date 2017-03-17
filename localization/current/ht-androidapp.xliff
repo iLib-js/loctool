@@ -29884,6 +29884,42 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="4" resname="symptom_triage_remove_condition_title" restype="string" datatype="x-android-resource">
+        <source>Remove Condition</source>
+        <target state="translated">Eliminar Condición</target>
+      </trans-unit>
+      <trans-unit id="5" resname="symptom_triage_remove_condition_content" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to remove \"{condition_name}\"?</source>
+        <target state="translated">¿Estás seguro de que quieres eliminar \"{condition_name}\"?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="symptom_triage_remove_medication_title" restype="string" datatype="x-android-resource">
+        <source>Remove Medication</source>
+        <target state="translated">Eliminar Medicamento</target>
+      </trans-unit>
+      <trans-unit id="7" resname="symptom_triage_remove_allergy_title" restype="string" datatype="x-android-resource">
+        <source>Remove Allergy</source>
+        <target state="translated">Eliminar Alergia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="symptom_triage_remove_condition_content" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to remove \"{condition_name}\"?</source>
+        <target>您确定要移除\"{condition_name}\"吗?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="symptom_triage_remove_medication_title" restype="string" datatype="x-android-resource">
+        <source>Remove Medication</source>
+        <target>移除药物</target>
+      </trans-unit>
+      <trans-unit id="7" resname="symptom_triage_remove_allergy_title" restype="string" datatype="x-android-resource">
+        <source>Remove Allergy</source>
+        <target>移除过敏</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="res/xml/settings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="1" resname="title_Billing_Settings" restype="string" datatype="x-android-resource">
