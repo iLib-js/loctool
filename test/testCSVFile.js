@@ -227,6 +227,37 @@ module.exports = {
         test.done();
     },
 
+    testCSVFileParseMissingValues: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p
+        });
+        test.ok(j);
+        
+        j.parse(
+        	'id,name,description,comments,user\n' +
+        	',,description1\n' +
+        	'754432,name2,description2 that has an escaped\\, comma in it\n' +
+        	'26234345,     "name with quotes"  ,     "description with quotes"   \n' +
+        	'2345642, "quoted name with, comma in it", "description with, comma in it"\n'
+        );
+        
+        var record = j.records[0];
+        
+        test.equal(record.id, "");
+        test.equal(record.name, "");
+        test.equal(record.description, "description1");
+        test.equal(record.comments, "");
+        test.equal(record.user, "");
+        
+        test.done();
+    },
+
     testCSVFileParseWithTabSeparator: function(test) {
         test.expect(4);
 
@@ -347,75 +378,84 @@ module.exports = {
         test.done();
     },
 
-    /*
     testCSVFileExtractFile: function(test) {
-        test.expect(8);
+        test.expect(13);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new CSVFile(p, "./CSV/t1.csv");
+        var j = new CSVFile({
+        	project: p, 
+        	pathName: "./csv/t1.tsv",
+        	columnSeparator: '\t'
+        });
         test.ok(j);
         
         // should read the file
         j.extract();
         
-        var set = j.getTranslationSet();
+        test.equal(j.records.length, 10);
         
-        test.equal(set.size(), 2);
+        var record = j.records[3];
         
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "id1", "CSV"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test with a unique id");
-        test.equal(r.getKey(), "id1");
-        
+    	test.equal(record.id, "10006");
+    	
+    	test.equal(record.category, "clinical_finding");
+    	test.equal(record.name, "Alcohol sensitivity");
+		test.equal(record["name translation"], "Sensibilidad al alcohol");
+		test.equal(record.short_text, "Alcohol sensitivity");
+		test.equal(record["short_text translation"], "Sensibilidad al alcohol");
+		test.equal(record.long_text, "Alcohol Sensitivity?");
+		test.equal(record["long_text translation"], "¿Sensibilidad al alcohol?");
+		test.equal(record.description, "");
+		test.equal(record["description translation"], "");
+		test.equal(record["Comments/Questions"], "");
+
         test.done();
     },
     
     testCSVFileExtractUndefinedFile: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new CSVFile(p);
+        var j = new CSVFile({
+        	project: p
+        });
         test.ok(j);
         
         // should attempt to read the file and not fail
         j.extract();
         
-        var set = j.getTranslationSet();
-        
-        test.equal(set.size(), 0);
+        test.ok(j.records);
+        test.equal(j.records.length, 0);
 
         test.done();
     },
 
     testCSVFileExtractBogusFile: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new CSVFile(p, "./CSV/foo.CSV");
+        var j = new CSVFile({
+        	project: p, 
+        	pathName: "./csv/foo.csv"
+        });
+        
         test.ok(j);
         
         // should attempt to read the file and not fail
         j.extract();
         
-        var set = j.getTranslationSet();
-        
-        test.equal(set.size(), 0);
+        test.ok(j.records);
+        test.equal(j.records.length, 0);
 
         test.done();
-    },
-*/
+    }
 };
