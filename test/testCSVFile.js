@@ -809,4 +809,622 @@ module.exports = {
         test.done();
     },
 
+    testCSVFileMergeColumnNamesSameNamesSameLength: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			name: "bar4",
+        			description: "asdf4"
+        		},
+        		{
+        			id: "foo5",
+        			name: "bar5",
+        			description: "asdf5"
+        		},
+        		{
+        			id: "foo6",
+        			name: "bar6",
+        			description: "asdf6"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.equal(csv1.names.length, 3);
+        test.equal(csv2.names.length, 3);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.names.length, 3);
+
+        test.done();
+    },
+
+    testCSVFileMergeColumnNamesAddColumn: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description", "foo"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			name: "bar4",
+        			description: "asdf4",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo5",
+        			name: "bar5",
+        			description: "asdf5",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo6",
+        			name: "bar6",
+        			description: "asdf6",
+        			foo: "asdf"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.equal(csv1.names.length, 3);
+        test.equal(csv2.names.length, 4);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.names.length, 4);
+
+        test.done();
+    },
+
+    testCSVFileMergeColumnNamesAddColumnRightNames: function(test) {
+        test.expect(4);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description", "foo"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			name: "bar4",
+        			description: "asdf4",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo5",
+        			name: "bar5",
+        			description: "asdf5",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo6",
+        			name: "bar6",
+        			description: "asdf6",
+        			foo: "asdf"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.deepEqual(csv1.names, ["id", "name", "description"]);
+        
+        csv1.merge(csv2);
+        
+        test.deepEqual(csv1.names, ["id", "name", "description", "foo"]);
+
+        test.done();
+    },
+
+    testCSVFileMergeColumnNamesAddAndDeleteColumn: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "description", "foo"],
+        	records: [
+        		{
+        			id: "foo4",
+        			description: "asdf4",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo5",
+        			description: "asdf5",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo6",
+        			description: "asdf6",
+        			foo: "asdf"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.equal(csv1.names.length, 3);
+        test.equal(csv2.names.length, 3);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.names.length, 4);
+
+        test.done();
+    },
+
+    testCSVFileMergeColumnNamesAddAndDeleteColumnRightNames: function(test) {
+        test.expect(4);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "description", "foo"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			description: "asdf4",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo5",
+        			description: "asdf5",
+        			foo: "asdf"
+        		},
+        		{
+        			id: "foo6",
+        			description: "asdf6",
+        			foo: "asdf"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.deepEqual(csv1.names, ["id", "name", "description"]);
+        
+        csv1.merge(csv2);
+        
+        test.deepEqual(csv1.names, ["id", "name", "description", "foo"]);
+
+        test.done();
+    },
+
+    testCSVFileMergeRightSize: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+	        records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			name: "bar4",
+        			description: "asdf4"
+        		},
+        		{
+        			id: "foo5",
+        			name: "bar5",
+        			description: "asdf5"
+        		},
+        		{
+        			id: "foo6",
+        			name: "bar6",
+        			description: "asdf6"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        test.equal(csv1.records.length, 3);
+        test.equal(csv2.records.length, 3);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 6);
+        test.equal(csv2.records.length, 3);
+        
+        test.done();
+    },
+
+    testCSVFileMergeRightContent: function(test) {
+        test.expect(21);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo4",
+        			name: "bar4",
+        			description: "asdf4"
+        		},
+        		{
+        			id: "foo5",
+        			name: "bar5",
+        			description: "asdf5"
+        		},
+        		{
+        			id: "foo6",
+        			name: "bar6",
+        			description: "asdf6"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 6);
+        
+        for (var i = 1; i < 7; i++) {
+        	test.equal(csv1.records[i-1].id, "foo" + i);
+        	test.equal(csv1.records[i-1].name, "bar" + i);
+        	test.equal(csv1.records[i-1].description, "asdf" + i);
+        }
+        test.done();
+    },
+
+    testCSVFileMergeWithOverwrites: function(test) {
+        test.expect(12);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo1",
+        			name: "bar4",
+        			description: "asdf4"
+        		},
+        		{
+        			id: "foo2",
+        			name: "bar5",
+        			description: "asdf5"
+        		},
+        		{
+        			id: "foo3",
+        			name: "bar6",
+        			description: "asdf6"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 3);
+        
+        for (var i = 1; i < 4; i++) {
+        	test.equal(csv1.records[i-1].id, "foo" + i);
+        	test.equal(csv1.records[i-1].name, "bar" + (i+3));
+        	test.equal(csv1.records[i-1].description, "asdf" + (i+3));
+        }
+        test.done();
+    },
+    
+    testCSVFileMergeWithSomeOverwritesAndDifferentSchema: function(test) {
+        test.expect(19);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "description", "type"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo1",
+        			description: "asdf4",
+        			type: "foo1"
+        		},
+        		{
+        			id: "foo4",
+        			description: "asdf5",
+        			type: "foo4"
+        		},
+        		{
+        			id: "foo3",
+        			description: "asdf6",
+        			type: "foo3"
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 4);
+        
+        test.equal(csv1.records[0].id, "foo1");
+        test.equal(csv1.records[0].name, "bar1");
+        test.equal(csv1.records[0].description, "asdf4");
+        test.equal(csv1.records[0].type, "foo1");
+        
+        test.equal(csv1.records[1].id, "foo2");
+        test.equal(csv1.records[1].name, "bar2");
+        test.equal(csv1.records[1].description, "asdf2");
+        test.ok(!csv1.records[1].type);
+        
+        test.equal(csv1.records[2].id, "foo3");
+        test.equal(csv1.records[2].name, "bar3");
+        test.equal(csv1.records[2].description, "asdf6");
+        test.equal(csv1.records[2].type, "foo3");
+        
+        test.equal(csv1.records[3].id, "foo4");
+        test.ok(!csv1.records[3].name);
+        test.equal(csv1.records[3].description, "asdf5");
+        test.equal(csv1.records[3].type, "foo4");
+                
+        test.done();
+    }
 };
