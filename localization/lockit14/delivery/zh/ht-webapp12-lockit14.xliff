@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r668145024" restype="string" datatype="ruby">
+        <source>We’ve built the world’s first Health Operating System (HOPES&amp;trade;), powering the delivery of world-class healthcare, from Query-to-Cure</source>
+        <target state="new">我们创建了世界上第一个健康操系统(HOPES&amp;trade;), 推动世界级医疗保健的交付，从查询到治疗</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_checklist_todo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r443876069" restype="string" datatype="ruby">
+        <source>%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}%{for_span_start} for %{first_name} %{last_name}%{span_end}</source>
+        <target state="new">%{author_span_start}%{author_link_start}%{author_name}的%{link_end} 清单，关于 %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}%{for_span_start} 为 %{first_name} %{last_name}%{span_end}</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r65716308" restype="string" datatype="ruby">
+        <source>%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}</source>
+        <target state="new">%{author_span_start}%{author_link_start}%{author_name}的%{link_end} 清单，关于 %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/partials/provider/_member_provider_signup_reminder_7.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4" resname="r191834829" restype="string" datatype="ruby">
+        <source>%{first_name}</source>
+        <target state="new">%{first_name}</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r13009213" restype="string" datatype="ruby">
+        <source>Sign-up Today</source>
+        <target state="new">立即注册</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_concierge_doctor_invitation_3days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="r422194407" restype="string" datatype="ruby">
+        <source>Accept %{expert}'s invitation to join %{expert} virtual practice. Get your health questions answered, prescriptions sent to your local pharmacy, lab tests ordered, and so much more—all from your phone or computer. With %{expert} on your doctor care-team, you'll have access to a doctor whenever you need it, wherever you are.</source>
+        <target state="new">接受%{expert}的邀请，加入%{expert}的在线诊疗。让您的健康问题得到解答，将处方发送到您当地的药店，订购实验室测试，以及更多服务——所有这些都在您的手机或计算机上完成。在您的医生团队中使用%{expert}，无论您身在何处都可以随时访问医生。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/chat/feelgood/chat_history_pdf.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="8" resname="r554363471" restype="string" datatype="ruby">
+        <source>%{date}, started at %{time}</source>
+        <target state="new">%{date}, 开始于 %{time}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="9" resname="r425664130" restype="string" datatype="ruby">
+        <source>patient, %{name}</source>
+        <target state="new">患者, %{name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="10" resname="r842306503" restype="string" datatype="ruby">
+        <source>From %{patient}%{gender}%{subaccount}%{descriptor}</source>
+        <target state="new">从 %{patient}%{gender}%{subaccount}%{descriptor}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="11" resname="r897470155" restype="string" datatype="ruby">
+        <source>Have you signed up with %{cobranded_product} today?</source>
+        <target state="new">您今天注册 %{cobranded_product} 了吗?</target>
+      </trans-unit>
+      <trans-unit id="12" resname="r744027496" restype="string" datatype="ruby">
+        <source>%{greeting}, Get started with your %{cobranded_product}!</source>
+        <target state="new">%{greeting}, 开始您的 %{cobranded_product}!</target>
+      </trans-unit>
+      <trans-unit id="13" resname="r499901157" restype="string" datatype="ruby">
+        <source>%{greeting}, Let’s get you started with %{cobranded_product}!</source>
+        <target state="new">%{greeting}, 让我们开始您的 %{cobranded_product}!</target>
+      </trans-unit>
+      <trans-unit id="14" resname="r758106493" restype="string" datatype="ruby">
+        <source>Reminder: Connect with %{expert}</source>
+        <target state="new">提醒：与 %{expert}连接</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/createTips/createTips.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="15" resname="There has been a problem completing your search. Please refresh the page and try again." restype="string" datatype="javascript">
+        <source>There has been a problem completing your search. Please refresh the page and try again.</source>
+        <target state="new">完成您的搜索时出错。请刷新页面并重新尝试。</target>
+      </trans-unit>
+      <trans-unit id="16" resname="Sorry, no other results were found" restype="string" datatype="javascript">
+        <source>Sorry, no other results were found</source>
+        <target state="new">抱歉，找不到其他结果</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/consultApplication/app_form_2.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="19" resname="am" restype="string" datatype="javascript">
+        <source>am</source>
+        <target state="new">上午</target>
+      </trans-unit>
+      <trans-unit id="20" resname="pm" restype="string" datatype="javascript">
+        <source>pm</source>
+        <target state="new">下午</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/edit_pregnancy_date.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="22" resname="What is {name}&apos;s expected due date?" restype="string" datatype="javascript">
+        <source>What is {name}'s expected due date?</source>
+        <target state="new">{name}的预产期是什么时候?</target>
+      </trans-unit>
+      <trans-unit id="23" resname="What is {name}&apos;s last menstrual period?" restype="string" datatype="javascript">
+        <source>What is {name}'s last menstrual period?</source>
+        <target state="new">{name}最后一次月经是什么时候?</target>
+      </trans-unit>
+      <trans-unit id="24" resname="What is this person&apos;s expected due date?" restype="string" datatype="javascript">
+        <source>What is this person's expected due date?</source>
+        <target state="new">这个人的预产期是什么时候?</target>
+      </trans-unit>
+      <trans-unit id="25" resname="When is this person&apos;s last menstrual period?" restype="string" datatype="javascript">
+        <source>When is this person's last menstrual period?</source>
+        <target state="new">这个人最后一次月经是什么时候?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/consult_list_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="28" resname="{name}&apos;s Private Consult on {date}" restype="string" datatype="javascript">
+        <source>{name}'s Private Consult on {date}</source>
+        <target state="new">{name}于 {date}的私人咨询</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="29" resname="Something went wrong,Please try later!" restype="string" datatype="javascript">
+        <source>Something went wrong,Please try later!</source>
+        <target state="new">出错了，请稍后再试!</target>
+      </trans-unit>
+      <trans-unit id="30" resname="This date is before {first_name}&apos;s birthday." restype="string" datatype="javascript">
+        <source>This date is before {first_name}'s birthday.</source>
+        <target state="new">这个日期早于{first_name}的生日。</target>
+      </trans-unit>
+      <trans-unit id="31" resname="This date is before this person&apos;s birthday." restype="string" datatype="javascript">
+        <source>This date is before this person's birthday.</source>
+        <target state="new">这个日期早于这个人的生日。</target>
+      </trans-unit>
+      <trans-unit id="32" resname="This date is before your birthday." restype="string" datatype="javascript">
+        <source>This date is before your birthday.</source>
+        <target state="new">这个日期早于您的生日。</target>
+      </trans-unit>
+      <trans-unit id="33" resname="This date is too far in the past." restype="string" datatype="javascript">
+        <source>This date is too far in the past.</source>
+        <target state="new">这个日期在太早的过去。</target>
+      </trans-unit>
+      <trans-unit id="34" resname="This date is too far in the future." restype="string" datatype="javascript">
+        <source>This date is too far in the future.</source>
+        <target state="new">这个日期在太远的将来。</target>
+      </trans-unit>
+      <trans-unit id="35" resname="This date is in the future." restype="string" datatype="javascript">
+        <source>This date is in the future.</source>
+        <target state="new">这是未来的日期。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/helpers/compose_consult.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="36" resname="Are you sure you want to remove this translator?" restype="string" datatype="javascript">
+        <source>Are you sure you want to remove this translator?</source>
+        <target state="new">您确定要移除这个翻译吗？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_7.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="39" resname="r519704881" restype="string" datatype="x-haml">
+        <source>All you need to get started is a computer, smartphone, or tablet. Get immediate and personalized health services from a network of top doctors to your fingertips</source>
+        <target>您只需要一台电脑、智能手机、或平板电脑就可以开始。从指尖连线顶级医生，获得即时和个性化的健康服务。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_3.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="40" resname="r347273921" restype="string" datatype="x-haml">
+        <source>All you need is a computer, smartphone, or tablet. Tap into the wisdom of top doctors to help you take control of your health and well-being to feel good every day.</source>
+        <target>您只需要一台电脑、智能手机、或平板电脑就可以开始。轻触顶级医生的智慧，获得帮助来控制健康和福祉，并每天都feel good。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_14.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="41" resname="r567558732" restype="string" datatype="x-haml">
+        <source>Let’s get you signed up today so you can receive the care and support you and your loved ones need from your mobile device or personal computer.</source>
+        <target>让我们今天就为您注册，这样您就能通过手机和个人电脑为您个人和所爱的人获得健康护理和支持。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="email_link_for_admin_exported_content.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="42" resname="r387010333" restype="string" datatype="x-haml">
+        <source>This link will expire in 24 hours and can only be accessed while logged into the account using this email.</source>
+        <target>这个链接会在24小时后失效，并只有在用这个邮箱登录时有效。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prescription.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="45" resname="r25021196" restype="string" datatype="x-haml">
+        <source>Prescribed Medications:</source>
+        <target>处方药物:</target>
+      </trans-unit>
+      <trans-unit id="48" resname="r206156218" restype="string" datatype="x-haml">
+        <source>Pharmacy:</source>
+        <target>药房:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/voice_app_interactions.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="first_time" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting">
+        <source>%TIME_BASED_GREET%. Your voice is music to my ears, but I don't think we've met. I'm Doctor A.I., and I work with more than %DOCTORS_COUNT% top doctors to put our heads together and show you the best path to feeling good.</source>
+        <target state="new">%TIME_BASED_GREET%. Your voice is music to my ears, but I don't think we've met. I'm Doctor A.I., and I work with more than %DOCTORS_COUNT% top doctors to put our heads together and show you the best path to feeling good.</target>
+      </trans-unit>
+      <trans-unit id="2" resname="name_present" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting@returning_user">
+        <source>%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back %LOGGED_IN_USER_NAME%. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</source>
+        <target state="new">%TIME_BASED_GREET%. 这是A.I.医生 ...欢迎回来，%LOGGED_IN_USER_NAME%。 %GREETING_RETURNING%我一直在想您在上一次连接后过得怎样。</target>
+      </trans-unit>
+      <trans-unit id="3" resname="name_missing" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting@returning_user">
+        <source>%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</source>
+        <target state="new">%TIME_BASED_GREET%. 这是A.I.医生 ...欢迎回来。 %GREETING_RETURNING%我一直在想您在上一次连接后过得怎样。</target>
+      </trans-unit>
+      <trans-unit id="4" resname="first_time" restype="string" datatype="x-yaml" x-context="speak_content@ask_link_account_question">
+        <source>I have a great idea: You'll get more accurate advice if I link to your account. Do you have a HealthTap account that you'd like me to link now?</source>
+        <target state="new">我有一个好主意：如果我链接您的账户，您会得到更准确的建议。您有希望我链接的HealthTap账户吗？</target>
+      </trans-unit>
+      <trans-unit id="5" resname="returning_user" restype="string" datatype="x-yaml" x-context="speak_content@ask_link_account_question">
+        <source>Just a quick reminder that I can give you better guidance if we link your account. How about we do it now?</source>
+        <target state="new">快速提醒，如果我链接您的账户，您能得到更好的指导。我们现在就这样做怎么样？</target>
+      </trans-unit>
+      <trans-unit id="6" resname="link_account_question_skipped" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>%OPENER%. We can link it later.</source>
+        <target state="new">%OPENER%。我们可以稍后再链接。</target>
+      </trans-unit>
+      <trans-unit id="7" resname="link_account_question_confirmed" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>I can already tell we're going to get along fabulously. I sent a link to your Alexa app — just tap to log in and link your HealthTap account. When you're done, just start our conversation again. I will be standing by. Talk to you soon!</source>
+        <target state="new">我可以说我们相处得相当好。我发送了一个链接到您的Alexa应用程序 - 只需点击登录并链接您的HealthTap帐户。 当您完成后，再次开始我们的谈话。 我会在这里等您。稍后再聊！</target>
+      </trans-unit>
+      <trans-unit id="8" resname="link_account_failure" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Hmm, it appears your account is still not linked. Tap 'Link Account' in your Alexa app and say 'Done' once you've completed the process. Or just say 'Cancel' if you change your mind.</source>
+        <target state="new">嗯，好像您的账户没有链接。在您的Alexa应用程序上点击“链接账户”并说“完成"(”done“) 来完成程序。或说”取消”（“cancel”）如果您改变主意了。</target>
+      </trans-unit>
+      <trans-unit id="9" resname="link_account_success" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Success! We've got you linked.</source>
+        <target state="new">成功！我们已经链接上您了。</target>
+      </trans-unit>
+      <trans-unit id="10" resname="subaccounts_missing" restype="string" datatype="x-yaml" x-context="speak_content@ask_choose_account_question">
+        <source>%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source>
+        <target state="new">%OPENING_TRANSITION% 我仍然在练习我的沟通技巧。在我们的交谈中的任何时候您都可以让我重复刚才的话。现在，告诉我今天我们要帮助谁 — 我们是要帮助您, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% 还是其他人?</target>
+      </trans-unit>
+      <trans-unit id="11" resname="subaccounts_present" restype="string" datatype="x-yaml" x-context="speak_content@ask_choose_account_question">
+        <source>%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source>
+        <target state="new">%OPENING_TRANSITION% 我仍然在练习我的沟通技巧。在我们的交谈中的任何时候您都可以让我重复刚才的话。现在，告诉我今天我们要帮助谁 — 我们是要帮助您, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% 还是其他人?</target>
+      </trans-unit>
+      <trans-unit id="12" resname="ask_relationship" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Oh, someone new! I love meeting new people. How are they related to you? You can say things like husband, mother, or daughter...</source>
+        <target state="new">噢，新朋友！我喜欢认识新的朋友。他们和您是什么关系？您可以说丈夫，母亲，或女儿等等...</target>
+      </trans-unit>
+      <trans-unit id="13" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@choose_account_confirm">
+        <source>I see. I'm here for you. Let's continue.</source>
+        <target state="new">我知道了。我在这里为您服务。让我们继续吧。</target>
+      </trans-unit>
+      <trans-unit id="14" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@choose_account_confirm">
+        <source>I see. I'm here for %SUBACCOUNT_NAME%. Let's continue.</source>
+        <target state="new">我知道了。我在这里为%SUBACCOUNT_NAME%服务。让我们继续吧。</target>
+      </trans-unit>
+      <trans-unit id="15" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question">
+        <source>For more accurate advice, it helps our doctors to know the year you were born. Your voice is certainly not giving away your age. Please say the birth year, or just approximate it if you're not sure.</source>
+        <target state="new">为了得到更精确的建议，让医生知道您的出生日期会有帮助。从您的声音里可听不出来您的年龄。请说您的出生年份，或者如果您不确定，大约的年份。</target>
+      </trans-unit>
+      <trans-unit id="16" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question">
+        <source>For more accurate advice, it helps our doctors to know the year %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</source>
+        <target state="new">为了得到更精确的建议，让医生知道%SUBACCOUNT_NAME%的出生日期会有帮助。请说出生年份，或者如果您不确定，大约的年份。</target>
+      </trans-unit>
+      <trans-unit id="17" resname="less_than_ten" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years old! Such a wonderful age. We would never have guessed.</source>
+        <target state="new">%AGE_TO_USE%岁! 多美妙的年龄。我们可猜不出来。</target>
+      </trans-unit>
+      <trans-unit id="18" resname="less_than_thirteen" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years old! A growing child. We would never have guessed.</source>
+        <target state="new">%AGE_TO_USE% 岁! 还是正在成长的孩子。我们可猜不出来。</target>
+      </trans-unit>
+      <trans-unit id="19" resname="regular_age" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years young! Splendid. I would never have guessed.</source>
+        <target state="new">%AGE_TO_USE% 岁! 太棒了。我可没猜到。</target>
+      </trans-unit>
+      <trans-unit id="20" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_question">
+        <source>I'm really bad at guessing. Are you a male or a female?</source>
+        <target state="new">我真的不擅长猜。您是男性还是女性？</target>
+      </trans-unit>
+      <trans-unit id="21" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_question">
+        <source>I'm really bad at guessing. Is %SUBACCOUNT_NAME% a male or a female?</source>
+        <target state="new">I我真的不擅长猜。%SUBACCOUNT_NAME% 是男性还是女性？</target>
+      </trans-unit>
+      <trans-unit id="22" resname="male" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_confirm">
+        <source>Male. %GENDER_ACK%</source>
+        <target state="new">男性。 %GENDER_ACK%</target>
+      </trans-unit>
+      <trans-unit id="23" resname="female" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_confirm">
+        <source>Female. %GENDER_ACK%</source>
+        <target state="new">女性。%GENDER_ACK%</target>
+      </trans-unit>
+      <trans-unit id="26" resname="pregnant" restype="string" datatype="x-yaml" x-context="speak_content@ask_pregnancy_confirm">
+        <source>That's great — Congratulations! So glad I asked.</source>
+        <target state="new">太好了——祝贺您！我很高兴我问了。</target>
+      </trans-unit>
+      <trans-unit id="28" resname="first" restype="string" datatype="x-yaml" x-context="speak_content@symptom_question">
+        <source>%SYMPTOMS_INTRO%. So what symptoms do we need to know about? You can say things like fever, rash, headache, and so on.</source>
+        <target state="new">%SYMPTOMS_INTRO%。我们需要知道什么症状？您可以说发烧、皮疹、头痛等等。</target>
+      </trans-unit>
+      <trans-unit id="30" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@single_value">
+        <source>I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source>
+        <target state="new">我会给您说一个选择。重复或这说“继续”。%SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</target>
+      </trans-unit>
+      <trans-unit id="31" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@single_value">
+        <source>I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or say 'continue'. %REFINEMENT_OPTIONS%</source>
+        <target state="new">我会给您说 %REFINEMENT_OPTIONS_COUNT% 个选择。 重复或这说“继续”。 %REFINEMENT_OPTIONS%</target>
+      </trans-unit>
+      <trans-unit id="32" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@multi_value">
+        <source>I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source>
+        <target state="new">我会给您说一个选择。重复或这说“继续”。%SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</target>
+      </trans-unit>
+      <trans-unit id="33" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@multi_value">
+        <source>I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or more, or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source>
+        <target state="new">我会给您说 %REFINEMENT_OPTIONS_COUNT% 个选择。 重复或这说“继续”。%SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</target>
+      </trans-unit>
+      <trans-unit id="34" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_severity">
+        <source>How would you describe your %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</source>
+        <target state="new">您如何描述%SYMPTOM_NAME% 现在的情况？别担心，我们理解这可能时变化的，所以没有正确或错误的回答。</target>
+      </trans-unit>
+      <trans-unit id="35" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_severity">
+        <source>How would you describe %SUBACCOUNT_NAME%’s %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</source>
+        <target state="new">您如何描述%SUBACCOUNT_NAME%’s %SYMPTOM_NAME% 现在的情况？别担心，我们理解这可能时变化的，所以没有正确或错误的回答。</target>
+      </trans-unit>
+      <trans-unit id="38" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_abruptness">
+        <source>So, how quickly did the %SYMPTOM_NAME% develop?</source>
+        <target state="new"> %SYMPTOM_NAME%多快发展起来的？</target>
+      </trans-unit>
+      <trans-unit id="39" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_abruptness">
+        <source>So, how quickly did the %SYMPTOM_NAME% develop?</source>
+        <target state="new">%SYMPTOM_NAME%多快发展起来的？</target>
+      </trans-unit>
+      <trans-unit id="41" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@person">
+        <source>Where do you feel your %SYMPTOM_NAME%? You can pick one or more places.</source>
+        <target state="new">您在哪里感觉%SYMPTOM_NAME%? 您可以选择一个或多个地方。</target>
+      </trans-unit>
+      <trans-unit id="44" resname="male" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@multiple_option">
+        <source>Where does %SUBACCOUNT_NAME% feel his %SYMPTOM_NAME%? You can pick one or more places.</source>
+        <target state="new">%SUBACCOUNT_NAME% 在哪里感觉%SYMPTOM_NAME%? 您可以选择一个或多个地方。</target>
+      </trans-unit>
+      <trans-unit id="45" resname="female" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@multiple_option">
+        <source>Where does %SUBACCOUNT_NAME% feel her %SYMPTOM_NAME%? You can pick one or more places.</source>
+        <target state="new">%SUBACCOUNT_NAME% 在哪里感觉%SYMPTOM_NAME%? 您可以选择一个或多个地方。</target>
+      </trans-unit>
+      <trans-unit id="50" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@person">
+        <source>Ok. Does your %SYMPTOM_NAME% radiate to the %ONLY_OPTION%?</source>
+        <target state="new">好的。您的%SYMPTOM_NAME%会辐射到%ONLY_OPTION%吗？</target>
+      </trans-unit>
+      <trans-unit id="51" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@person">
+        <source>Ok. Does your %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones (if any)</source>
+        <target state="new">好的。您的%SYMPTOM_NAME%会辐射到其他区域吗？告诉我们那些(如果有）</target>
+      </trans-unit>
+      <trans-unit id="52" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@subaccount">
+        <source>Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to the %ONLY_OPTION%</source>
+        <target state="new">好的。%SUBACCOUNT_NAME%的%SYMPTOM_NAME% 会辐射到 %ONLY_OPTION%吗？</target>
+      </trans-unit>
+      <trans-unit id="53" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@subaccount">
+        <source>Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones?</source>
+        <target state="new">好的。%SUBACCOUNT_NAME%的%SYMPTOM_NAME%会辐射到其他区域吗？告诉我们是哪些地方？</target>
+      </trans-unit>
+      <trans-unit id="56" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_worsened@subaccount">
+        <source>Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get worse in this case? %ONLY_OPTION%</source>
+        <target state="new">%SUBACCOUNT_NAME%的 %SYMPTOM_NAME% 会在这种情况下变差吗？ %ONLY_OPTION%</target>
+      </trans-unit>
+      <trans-unit id="62" resname="refinement_answered" restype="string" datatype="x-yaml" x-context="speak_content@refinement_confirm">
+        <source>%REFINEMENT_ACK% %REFINEMENT_MINIMUM_DISTANCE_MATCH%</source>
+        <target state="new">%REFINEMENT_ACK% %REFINEMENT_MINIMUM_DISTANCE_MATCH%</target>
+      </trans-unit>
+      <trans-unit id="63" resname="refinement_prefix_second_or_more" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>%ACK_REFINEMENT% Hang in there. Just a few more questions...</source>
+        <target state="new">%ACK_REFINEMENT% 坚持住。只有几个问题...</target>
+      </trans-unit>
+      <trans-unit id="64" resname="one_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@person">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source>
+        <target state="new">知道了 %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%。我还有最后一个问题，然后我们的医生就可以给您准确的指导。这个适用于您吗？重复一个或多个给我，或者说“继续”%SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</target>
+      </trans-unit>
+      <trans-unit id="65" resname="multi_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@person">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source>
+        <target state="new">知道了 %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%。 我还有最后一个问题，然后我们的医生就可以给您准确的指导。这个适用于您吗？重复一个或多个给我，或者说“继续”%SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</target>
+      </trans-unit>
+      <trans-unit id="66" resname="one_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@subaccount">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source>
+        <target state="new">知道了 %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%。我还有最后一个问题，然后我们的医生就可以给您准确的指导。这个适用于 %SUBACCOUNT_NAME%吗？重复一个或多个给我，或者说“继续”%SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</target>
+      </trans-unit>
+      <trans-unit id="67" resname="multi_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@subaccount">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source>
+        <target state="new">知道了 %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%。我还有最后一个问题，然后我们的医生就可以给您准确的指导。这个适用于 %SUBACCOUNT_NAME%吗？重复一个或多个给我，或者说“继续”%SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</target>
+      </trans-unit>
+      <trans-unit id="68" resname="generating_report" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Now, while we review your symptoms, it's a good time to remind you that I'm only here to help you be better informed. I've been trained by thousands of doctors, but I still don't have my medical school degree. Only a real doctor can give you advice or a diagnosis. I could connect you with a real doctor in just a moment. But If you believe you may be having a medical emergency, please call your doctor, or seek medical emergency care immediately. Thanks for listening. Now let's go over our findings.</source>
+        <target state="new">现在，当我们检查您的症状时，这是一个好时机提醒您，我只是帮助您更好地了解医疗知识。 我已经受过数千名医生的培训，但我还没有医学院学位。 只有真正的医生才能给您建议或诊断。 我可以在短时间内让您与一个真正的医生联系。 但如果您认为您可能有医疗紧急情况，请致电您的医生，或立即寻求医疗急救护理。 感谢收听。 现在让我们来看看我们发现了什么。</target>
+      </trans-unit>
+      <trans-unit id="69" resname="condition_details" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Ok, %EXPERTS_INVOLVED_COUNT% doctors helped me compute these findings. Wow, that's a lot of white coats. %CONDITION_REPORT%.</source>
+        <target state="new">好的，%EXPERTS_INVOLVED_COUNT% 个医生们帮我计算了这些发现。哇，这可是很多白大褂。%CONDITION_REPORT%.</target>
+      </trans-unit>
+      <trans-unit id="70" resname="condition_explanation" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>So, what is it? %CONDITION_DESCRIPTION% ... Many of our doctors believe that %CONDITION_EXPLANATION%. %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</source>
+        <target state="new">所以这到底是什么呢？%CONDITION_DESCRIPTION% ... 我们的很多医生相信这是%CONDITION_EXPLANATION%。 %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% 您想现在和一个医生电话交流吗？可能会有$44美元的收费。</target>
+      </trans-unit>
+      <trans-unit id="71" resname="specific_relationship_male" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is his name?</source>
+        <target state="new">您真善良，帮助您的 %SUBACCOUNT_RELATIONSHIP_TYPE%。他的名字是什么？</target>
+      </trans-unit>
+      <trans-unit id="72" resname="specific_relationship_female" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is her name?</source>
+        <target state="new">您真善良，帮助您的 %SUBACCOUNT_RELATIONSHIP_TYPE%。她的名字是什么？</target>
+      </trans-unit>
+      <trans-unit id="73" resname="other_relationship" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help. What is the name of this person</source>
+        <target state="new">您真善良，帮助他人。这个人的名字是什么</target>
+      </trans-unit>
+      <trans-unit id="74" resname="consult_confirmation" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</source>
+        <target state="new">您想现在和一个医生电话交流吗？可能会有$44美元的收费。</target>
+      </trans-unit>
+      <trans-unit id="75" resname="phone_number_asked" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>OK. Please tell me your phone number where you can receive U.S. calls and text messages and I will call you to connect you with a doctor now. Or just say 'skip'.</source>
+        <target state="new">好的。请告诉我您可以接收美国电话和短信的电话号码，我会给您打电话连线医生。或者说“跳过”。</target>
+      </trans-unit>
+      <trans-unit id="76" resname="phone_number_asked_again" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Oops, sorry about that. I should see an Audiologist to get my hearing checked! Please say your phone number again.</source>
+        <target state="new">哦，很抱歉。我应该看一个声道医生检查我的听力！请再说一遍您的电话号码。</target>
+      </trans-unit>
+      <trans-unit id="77" resname="phone_number_asked_incorrect" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Sorry, that didn't seem like a valid phone number. Can you say a phone number where you can receive calls and text messages? You can always say 'Never mind' if you no longer want to connect with a doctor.</source>
+        <target state="new">抱歉，这好像不是一个有效的电话号码。可以说一个您能接收电话和短信的号码吗？您可以说“不用了”如果您不再需要和医生连线。</target>
+      </trans-unit>
+      <trans-unit id="78" resname="confirm_phone_number_keys" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Got it. I heard %PHONE_NUMBER%. Did I get that right?</source>
+        <target state="new">知道了。我听到 %PHONE_NUMBER%。我听得正确吗？/target>
+      </trans-unit>
+      <trans-unit id="79" resname="begin_call" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Alright, excellent. Now just sit back, relax, and we'll be calling you momentarily!</source>
+        <target state="new">好的，非常棒。现在坐下放松一下，我们很快会给您打电话！</target>
+      </trans-unit>
+      <trans-unit id="80" resname="terminate_session" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Excellent. It was very nice speaking with you. I'm Doctor A.I. and I'm signing off now. From all of us at HealthTap, we wish you the best in health and happiness. Good bye.</source>
+        <target state="new">太好了。很高兴和您通话。我是A.I.医生，我现在退出。HealthTap全体人员祝您健康和快乐。</target>
+      </trans-unit>
+      <trans-unit id="81" resname="final_goodbye" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Alright, it was a pleasure chatting with you. Remember, the doctor is always in at HealthTap. Take good care. This is Doctor A.I. signing off.</source>
+        <target state="new">好的，和您聊天很愉快。记住，医生总在HealthTap。保重。这是A.I.医生退出。</target>
+      </trans-unit>
+      <trans-unit id="82" resname="promo_code_asked_question" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Great, one last question. By any chance, do you have a HealthTap Prime pre-paid access code? If so, please say the five-digit code or or say 'no'.</source>
+        <target state="new">好的，最后一个问题。您会不会恰好有HealthTap Prime预付代码？如果有，请说5位代码或说“不”。</target>
+      </trans-unit>
+      <trans-unit id="83" resname="terminate_reset_account" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Your account has been reset and the current session is ended</source>
+        <target state="new">您的账户已被重置，当前会话结束。</target>
+      </trans-unit>
+      <trans-unit id="84" resname="static" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Doctor A.I. helps you understand your symptoms to show you the best path to feeling good. If you need me to repeat any instructions, simply say Repeat'. You can always say 'Start Over' to go back to the beginning. Or say 'Stop' to end our conversation.</source>
+        <target state="new">A.I.医生帮助您了解症状，指出让您feeling good的最佳方式。如果您需要我重复任何指示，请说“重复”。您也可以说“重新开始”来回到最初。或者说“停止”来结束会话。</target>
+      </trans-unit>
+      <trans-unit id="85" resname="link_account_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>You can say either 'Yes' or 'No' depending on whether you have a HealthTap account and you want to link it to your Alexa device.</source>
+        <target state="new">您可以说“是”或“不是”，依据您是否有HealthTap账户并且您是否希望链接Alexa设备。</target>
+      </trans-unit>
+      <trans-unit id="86" resname="person" restype="string" datatype="x-yaml" x-context="help_content@gender_question_asked">
+        <source>Are you a male or a female?</source>
+        <target state="new">您是男性还是女性？</target>
+      </trans-unit>
+      <trans-unit id="87" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@gender_question_asked">
+        <source>Is %SUBACCOUNT_NAME% a male or a female?</source>
+        <target state="new">%SUBACCOUNT_NAME%是男性还是女性？</target>
+      </trans-unit>
+      <trans-unit id="88" resname="person" restype="string" datatype="x-yaml" x-context="help_content@dob_question_asked">
+        <source>Simply say the year in which you were born. Please say the birth year, or just approximate it if you're not sure.</source>
+        <target state="new">请说您是哪一年生的。请说出生年份，或如果不确定请说大约年份。</target>
+      </trans-unit>
+      <trans-unit id="89" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@dob_question_asked">
+        <source>Simply say the year in which %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</source>
+        <target state="new">请说%SUBACCOUNT_NAME%是哪一年生的。请说出生年份，或如果不确定请说大约年份。</target>
+      </trans-unit>
+      <trans-unit id="90" resname="person" restype="string" datatype="x-yaml" x-context="help_content@pregnancy_question_asked">
+        <source>Are you pregnant? Just say Yes or No or I don't know</source>
+        <target state="new">您怀孕了吗？请说是或否或我不知道。</target>
+      </trans-unit>
+      <trans-unit id="91" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@pregnancy_question_asked">
+        <source>Is %SUBACCOUNT_NAME% pregnant? Just say Yes or No or I don't know</source>
+        <target state="new">%SUBACCOUNT_NAME%怀孕了吗？请说是或否或我不知道。</target>
+      </trans-unit>
+      <trans-unit id="92" resname="symptoms_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say the name of a symptom like 'cough', 'back pain', or 'fever'.</source>
+        <target state="new">请说症状名称，如“咳嗽”，“背痛”，或“发烧”。</target>
+      </trans-unit>
+      <trans-unit id="93" resname="link_account_confirm_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>In your Alexa app, select 'Link accounts' to connect your HealthTap account. When you're done, say 'done.' Or you can always say 'cancel' if you change your mind.</source>
+        <target state="new">在您的Alexa应用程序中，选择“链接账户”来连接您的HealthTap账户。完成后，请说“完成"。或者您可以说”取消“如果您改变主意。</target>
+      </trans-unit>
+      <trans-unit id="94" resname="subaccounts_present" restype="string" datatype="x-yaml" x-context="help_content@choose_account_question_asked_state">
+        <source>Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source>
+        <target state="new">我们今天要帮助谁？说我，%SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG%或其他人?</target>
+      </trans-unit>
+      <trans-unit id="95" resname="subaccounts_missing" restype="string" datatype="x-yaml" x-context="help_content@choose_account_question_asked_state">
+        <source>Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source>
+        <target state="new">我们今天要帮助谁？说我，%SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG%或其他人?</target>
+      </trans-unit>
+      <trans-unit id="96" resname="have_more_symptoms_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say 'yes' if you have other symptoms to report. Otherwise say 'no'. Do you have any more symptoms to tell me?</source>
+        <target state="new">说”是”，如果您有其他症状需要报告。否则说“不”。您有其他任何症状想告诉我吗？</target>
+      </trans-unit>
+      <trans-unit id="97" resname="subaccount_relationship_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>You can say any one of the following: %ALL_RELATIONSHIPS%</source>
+        <target state="new">您可以说以下的任意一个： %ALL_RELATIONSHIPS%</target>
+      </trans-unit>
+      <trans-unit id="98" resname="subaccount_name_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say the name or a nickname for your %SUBACCOUNT_RELATIONSHIP_TYPE% to continue</source>
+        <target state="new">说您的%SUBACCOUNT_RELATIONSHIP_TYPE%的名字或昵称以继续</target>
+      </trans-unit>
+      <trans-unit id="99" resname="phone_number_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Please say your phone number where you can receive calls and text messages. Or say cancel.</source>
+        <target state="new">请说您可以接收到电话和短信的电话号码。或说取消。</target>
+      </trans-unit>
+      <trans-unit id="100" resname="confirm_phone_number_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Did I hear your phone number correctly? Is it %PHONE_NUMBER%? Say 'yes' or 'no'.</source>
+        <target state="new">我听到的电话号码正确吗？是%PHONE_NUMBER%吗？说“是”或“否”。</target>
+      </trans-unit>
+      <trans-unit id="101" resname="consult_confirmation_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>I can arrange for you to talk to a doctor by phone for just 44 dollars. Would you like me to set up a call?</source>
+        <target state="new">我们可以安排您和一位医生电话通话，只需44美元。您希望我设置一个电话吗？</target>
+      </trans-unit>
+      <trans-unit id="102" resname="promo_code_asked_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Do you have a special payment code? Say the five-digit access code you may have or say 'no'</source>
+        <target state="new">您有特殊付款代码吗？说5位代码或者说“不”</target>
+      </trans-unit>
+      <trans-unit id="103" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>Great to hear from you again.</source>
+        <target state="new">很高兴再次听到您的消息。</target>
+      </trans-unit>
+      <trans-unit id="104" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>It's good to hear from you again.</source>
+        <target state="new">真高兴再次听到您的消息。</target>
+      </trans-unit>
+      <trans-unit id="105" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>I missed you.</source>
+        <target state="new">我想念您。</target>
+      </trans-unit>
+      <trans-unit id="106" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>I've had you on my mind.</source>
+        <target state="new">我一直在想您。</target>
+      </trans-unit>
+      <trans-unit id="107" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>They say an apple a day keeps the doctor away, but...</source>
+        <target state="new">他们说一天一个苹果不用看医生，但是...</target>
+      </trans-unit>
+      <trans-unit id="108" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>It's my duty to give you sound advice, and...</source>
+        <target state="new">我的责任是给您声音建议，并且...</target>
+      </trans-unit>
+      <trans-unit id="109" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>I took an oath to give you sound advice, and...</source>
+        <target state="new">我立誓为您提供声音建议，并且...</target>
+      </trans-unit>
+      <trans-unit id="111" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. My feelings aren't hurt.</source>
+        <target state="new">没关系。我没有受到感情伤害。</target>
+      </trans-unit>
+      <trans-unit id="112" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's OK. We've got work to do.</source>
+        <target state="new">没关系。我们有工作要做。</target>
+      </trans-unit>
+      <trans-unit id="113" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's OK. You have other things on your mind.</source>
+        <target state="new">没关系。您的脑子里有其他事情要想。</target>
+      </trans-unit>
+      <trans-unit id="114" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. But you know I'm going to nag you about that next time. Just sayin'.</source>
+        <target state="new">没关系。单您知道我下次还会唠叨您。只是说笑。</target>
+      </trans-unit>
+      <trans-unit id="115" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. I'm happy to remind you about that later.</source>
+        <target state="new">没关系。我很高兴下次再提醒您。 </target>
+      </trans-unit>
+      <trans-unit id="116" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's begin.</source>
+        <target state="new">让我们开始。</target>
+      </trans-unit>
+      <trans-unit id="117" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's get started.</source>
+        <target state="new">让我们开始。</target>
+      </trans-unit>
+      <trans-unit id="118" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's get into it.</source>
+        <target state="new">让我们开始。</target>
+      </trans-unit>
+      <trans-unit id="121" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Very good. Thank you.</source>
+        <target state="new">非常好。谢谢。</target>
+      </trans-unit>
+      <trans-unit id="122" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Got it. Making a note. Thanks.</source>
+        <target state="new">知道了。记个笔记。谢谢。</target>
+      </trans-unit>
+      <trans-unit id="123" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>OK.</source>
+        <target state="new">好。</target>
+      </trans-unit>
+      <trans-unit id="124" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>Alright.</source>
+        <target state="new">好的。</target>
+      </trans-unit>
+      <trans-unit id="125" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>Moving along.</source>
+        <target state="new">继续。</target>
+      </trans-unit>
+      <trans-unit id="126" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>OK, here we go.</source>
+        <target state="new">好，来吧。</target>
+      </trans-unit>
+      <trans-unit id="127" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>OK. You said</source>
+        <target state="new">好。您说</target>
+      </trans-unit>
+      <trans-unit id="128" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Got it. You said</source>
+        <target state="new">知道了。您说</target>
+      </trans-unit>
+      <trans-unit id="129" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Alright. You said</source>
+        <target state="new">好的。您说</target>
+      </trans-unit>
+      <trans-unit id="130" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Got it. I heard</source>
+        <target state="new">知道了。我听见</target>
+      </trans-unit>
+      <trans-unit id="131" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>I got you. You said</source>
+        <target state="new">知道了。您说</target>
+      </trans-unit>
+      <trans-unit id="132" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Gotcha. You said</source>
+        <target state="new">知道了。您说</target>
+      </trans-unit>
+      <trans-unit id="133" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Are there more symptoms you'd like to tell me about? Say yes...or no'</source>
+        <target state="new">还有其他您希望说给我听的症状吗？说是...或不</target>
+      </trans-unit>
+      <trans-unit id="134" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Are there other symptoms I should know about? Say yes...or no'</source>
+        <target state="new">还有其他我应该知道的症状吗？说是...或不</target>
+      </trans-unit>
+      <trans-unit id="135" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Any other symptoms? Say yes...or 'no'</source>
+        <target state="new">有其他症状吗？说是...或不</target>
+      </trans-unit>
+      <trans-unit id="136" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>I'm all ears. Tell me the next symptom.</source>
+        <target state="new">我在听。告诉我下一个症状。</target>
+      </trans-unit>
+      <trans-unit id="137" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>OK, tell me the other symptom.</source>
+        <target state="new">好，告诉我其他症状。</target>
+      </trans-unit>
+      <trans-unit id="138" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>Go ahead, I'm listening.</source>
+        <target state="new">继续。我正在听。</target>
+      </trans-unit>
+      <trans-unit id="139" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>Got it, I heard</source>
+        <target state="new">知道了，我听到了</target>
+      </trans-unit>
+      <trans-unit id="140" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>Alright. You said</source>
+        <target state="new">好的。您说</target>
+      </trans-unit>
+      <trans-unit id="141" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>I see. Sounds like it's</source>
+        <target state="new">我知道了，听上去是</target>
+      </trans-unit>
+      <trans-unit id="142" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Almost done.</source>
+        <target state="new">就快好了。</target>
+      </trans-unit>
+      <trans-unit id="143" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Stay with me now.</source>
+        <target state="new">现在和我在一起。</target>
+      </trans-unit>
+      <trans-unit id="144" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Doing OK?</source>
+        <target state="new">还好吗？</target>
+      </trans-unit>
+      <trans-unit id="145" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>I appreciate your patience.</source>
+        <target state="new">感谢您的耐心。</target>
+      </trans-unit>
+      <trans-unit id="146" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>I see...</source>
+        <target state="new">我知道了...</target>
+      </trans-unit>
+      <trans-unit id="147" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Got it...</source>
+        <target state="new">知道了...</target>
+      </trans-unit>
+      <trans-unit id="148" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Understood.</source>
+        <target state="new">明白。</target>
+      </trans-unit>
+      <trans-unit id="149" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Alright. Let’s see...</source>
+        <target state="new">好的。让我们看看...</target>
+      </trans-unit>
+      <trans-unit id="150" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Let’s keep going</source>
+        <target state="new">让我们继续</target>
+      </trans-unit>
+      <trans-unit id="151" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Thank you — let’s continue</source>
+        <target state="new">谢谢——让我们继续</target>
+      </trans-unit>
+      <trans-unit id="153" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>I see — let’s move on</source>
+        <target state="new">我知道了——让我们继续</target>
+      </trans-unit>
+      <trans-unit id="155" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Alright — let’s continue?</source>
+        <target state="new">好的——让我们继续？</target>
+      </trans-unit>
+      <trans-unit id="156" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Okay — let’s keep going</source>
+        <target state="new">好的——让我们继续</target>
+      </trans-unit>
+      <trans-unit id="159" resname="9" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Got it — let’s proceed</source>
+        <target state="new">知道了——让我们继续</target>
+      </trans-unit>
+      <trans-unit id="162" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>OK, here's what I can tell you about</source>
+        <target state="new">好，这是我能告诉您的关于</target>
+      </trans-unit>
+      <trans-unit id="163" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Alright, here's what I can tell you about</source>
+        <target state="new">好吧，这是我能告诉您的关于</target>
+      </trans-unit>
+      <trans-unit id="164" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>OK, here's what I know about</source>
+        <target state="new">好， 这是我知道的关于</target>
+      </trans-unit>
+      <trans-unit id="165" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Alright, here's what we know about</source>
+        <target state="new">好吧，这是我们知道的关于</target>
+      </trans-unit>
+      <trans-unit id="166" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Let's see. Here's what we know about</source>
+        <target state="new">让我们看看。这是我们知道的关于</target>
+      </trans-unit>
+      <trans-unit id="167" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Let's see. This is what we know about</source>
+        <target state="new">让我们看看。这是我们知道的关于</target>
+      </trans-unit>
+      <trans-unit id="168" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Got it. Here's what I can tell you about</source>
+        <target state="new">知道了。这是我能告诉您的关于</target>
+      </trans-unit>
+      <trans-unit id="169" resname="7" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Got it. Here's what I know about</source>
+        <target state="new">知道了。这是我知道的关于</target>
+      </trans-unit>
+      <trans-unit id="170" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I didn't get that.</source>
+        <target state="new">抱歉，我没听清楚。</target>
+      </trans-unit>
+      <trans-unit id="171" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I didn't understand.</source>
+        <target state="new">抱歉，我不明白。</target>
+      </trans-unit>
+      <trans-unit id="172" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I'm not sure I understood you.</source>
+        <target state="new">抱歉，我不确定我理解您的意思。</target>
+      </trans-unit>
+      <trans-unit id="173" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>My apologies, but I didn't understand that.</source>
+        <target state="new">抱歉，但我不明白这个。</target>
+      </trans-unit>
+      <trans-unit id="174" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>I better get my ears checked.</source>
+        <target state="new">我最好去看看我的耳朵。</target>
+      </trans-unit>
+      <trans-unit id="175" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Sure, happy to repeat myself.</source>
+        <target state="new">当然，我很高兴重复一遍。</target>
+      </trans-unit>
+      <trans-unit id="176" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Okay, I'll repeat.</source>
+        <target state="new">好的，我会重复。</target>
+      </trans-unit>
+      <trans-unit id="177" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>No problem, I'll repeat myself.</source>
+        <target state="new">没问题，我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="178" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Happy to repeat myself.</source>
+        <target state="new">很高兴重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="179" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Of course, I'll repeat myself.</source>
+        <target state="new">当然，我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="180" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>My pleasure. I will repeat myself.</source>
+        <target state="new">我的荣幸。我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="181" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Absolutely. I'll repeat myself now.</source>
+        <target state="new">没问题。我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="182" resname="7" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Alright, I'll repeat myself.</source>
+        <target state="new">好的，我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="183" resname="8" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Yes, will repeat myself now.</source>
+        <target state="new">是的，我会重复我自己。</target>
+      </trans-unit>
+      <trans-unit id="184" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Sorry I didn't hear anything.</source>
+        <target state="new">抱歉我什么都没听到。</target>
+      </trans-unit>
+      <trans-unit id="185" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Are you still there?</source>
+        <target state="new">您还在那里吗？</target>
+      </trans-unit>
+      <trans-unit id="186" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Hello? Still there?</source>
+        <target state="new">嗨，还在吗？</target>
+      </trans-unit>
+      <trans-unit id="187" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>I hear crickets. Are you still there?</source>
+        <target state="new">我什么都听不到。您还在那里吗？</target>
+      </trans-unit>
+      <trans-unit id="188" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Let's try that again.</source>
+        <target state="new">让我们再试一次。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

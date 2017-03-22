@@ -4412,7 +4412,7 @@
     <body>
       <trans-unit id="1300" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4420,7 +4420,7 @@
     <body>
       <trans-unit id="1301" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4428,7 +4428,7 @@
     <body>
       <trans-unit id="1302" resname="agreed with&lt;span class=&quot;actor_text bold&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to:</source>
-        <target state="translated">已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? '医生' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; 对这个问题的回答:</target>
+        <target state="translated">已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? user_answer.actor.last_name + '医生' : user_answer.actor.name %&gt;的&lt;/span&gt; 对这个问题的回答:</target>
       </trans-unit>
     </body>
   </file>
@@ -9564,7 +9564,7 @@
       </trans-unit>
       <trans-unit id="2411" resname="suggests&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;&apos;s answer:" restype="string" datatype="html">
         <source>suggests &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;'s answer:</source>
-        <target state="translated">建议&lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;'s 回答:</target>
+        <target state="translated">建议&lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;的回答:</target>
       </trans-unit>
       <trans-unit id="2412" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
@@ -9832,7 +9832,7 @@
     <body>
       <trans-unit id="2452" resname="agreed with&lt;span class=&quot;bold hyphenated&quot;&gt;&lt;%=user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer:" restype="string" datatype="html">
         <source>agreed with &lt;span class="bold hyphenated"&gt;&lt;%=user_answer.actor.name %&gt;'s&lt;/span&gt; answer:</source>
-        <target state="translated">同意&lt;span class="bold hyphenated"&gt;&lt;%=user_answer.actor.name %&gt;'s&lt;/span&gt;回答：</target>
+        <target state="translated">同意&lt;span class="bold hyphenated"&gt;&lt;%=user_answer.actor.name %&gt;的&lt;/span&gt;回答：</target>
       </trans-unit>
     </body>
   </file>
@@ -9864,7 +9864,7 @@
     <body>
       <trans-unit id="2457" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot;&gt;&lt;span class=&quot;actor_text bold cus_font_size_actor_text&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;&lt;/a&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt;&lt;/a&gt; answer to:</source>
-        <target state="translated">agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 医生' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt;&lt;/a&gt; answer to:</target>
+        <target state="translated">agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 医生' + user_answer.actor.last_name : user_answer.actor.name %&gt;的&lt;/span&gt;&lt;/a&gt; answer to:</target>
       </trans-unit>
     </body>
   </file>
@@ -9972,7 +9972,7 @@
     <body>
       <trans-unit id="2471" resname="suggests&lt;a href=&quot;#expert_vip/&lt;%=user_answer.attributed_user_answer.user_answer.actor.id%&gt;/&quot;&gt;&lt;span class=&quot;bold&quot;&gt;&lt;%=user_answer.attributed_user_answer.user_answer.actor.name%&gt;&lt;/span&gt;&lt;/a&gt;&apos;s answer:" restype="string" datatype="html">
         <source>suggests &lt;a href="#expert_vip/&lt;%=user_answer.attributed_user_answer.user_answer.actor.id%&gt;/"&gt;&lt;span class="bold"&gt;&lt;%=user_answer.attributed_user_answer.user_answer.actor.name%&gt;&lt;/span&gt;&lt;/a&gt;'s answer:</source>
-        <target state="translated">建议 &lt;a href="#expert_vip/&lt;%=user_answer.attributed_user_answer.user_answer.actor.id%&gt;/"&gt;&lt;span class="bold"&gt;&lt;%=user_answer.attributed_user_answer.user_answer.actor.name%&gt;&lt;/span&gt;&lt;/a&gt;'s 回答：</target>
+        <target state="translated">建议 &lt;a href="#expert_vip/&lt;%=user_answer.attributed_user_answer.user_answer.actor.id%&gt;/"&gt;&lt;span class="bold"&gt;&lt;%=user_answer.attributed_user_answer.user_answer.actor.name%&gt;&lt;/span&gt;&lt;/a&gt;的回答：</target>
       </trans-unit>
       <trans-unit id="2472" resname="HealthTap is for informational purposes only. Content on HealthTap (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions on HealthTap do not create a doctor-patient relationship. Never disregard or delay seeking professional medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you think you may have a medical emergency. See&lt;a class=&quot;disclaimer_additional_info_h&quot;&gt;Additional Information &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>HealthTap is for informational purposes only. Content on HealthTap (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions on HealthTap do not create a doctor-patient relationship. Never disregard or delay seeking professional medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you think you may have a medical emergency. See &lt;a class="disclaimer_additional_info_h"&gt;Additional Information &amp;rsaquo;&lt;/a&gt;</source>

@@ -2958,10 +2958,6 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target state="translated">它可能听起来很崇高，但我们归结它为一些非常基本的东西。我们都 - 在心里 – 简单地想要</target>
       </trans-unit>
-      <trans-unit id="2459" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target state="translated">所有这些事情使我们</target>
-      </trans-unit>
       <trans-unit id="2460" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target state="translated">为了让照顾彼此的过程更加丰富，我们与医生一起合作，共同营造一个更美好的世界。</target>

@@ -319,7 +319,7 @@
         <source>tip (%ld of %lu)</source>
         <target>tip (%ld de %lu)</target>
       </trans-unit>
-      <trans-unit id="62" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="62" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>compartió un tip sobre %@</target>
         <note annotates="source">Param: some topic</note>
@@ -798,7 +798,7 @@
     \u00B7 Consultas en idiomas que no sea el inglés\n\
                            \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje (considera consultas por video con doctores disponibles para una atención más rápida)</target>
       </trans-unit>
-      <trans-unit id="129" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="129" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>Términos de Servicio</target>
       </trans-unit>
@@ -1181,7 +1181,7 @@
       </trans-unit>
       <trans-unit id="212" resname="Add a condition or symptom" restype="string" datatype="x-objective-c">
         <source>Add a condition or symptom</source>
-        <target>Añadir una condición o síntoma</target>
+        <target state="ui-fix">Añadir condición o síntoma</target>
       </trans-unit>
       <trans-unit id="213" resname="Add a medication" restype="string" datatype="x-objective-c">
         <source>Add a medication</source>
@@ -1193,7 +1193,7 @@
       </trans-unit>
       <trans-unit id="215" resname="Add a treatment or procedure" restype="string" datatype="x-objective-c">
         <source>Add a treatment or procedure</source>
-        <target>Añadir un tratamiento o procedimiento</target>
+        <target state="ui-fix">Añadir tratamiento</target>
       </trans-unit>
     </body>
   </file>
@@ -1273,7 +1273,7 @@
       </trans-unit>
       <trans-unit id="230" resname="Find a topic (e.g. Lose weight)" restype="string" datatype="x-objective-c">
         <source>Find a topic (e.g. Lose weight)</source>
-        <target state="accepted">Encuentra un tema (p. ej. meditación)</target>
+        <target state="ui-fix">Encuentra un tema</target>
       </trans-unit>
     </body>
   </file>
@@ -1325,7 +1325,7 @@
       </trans-unit>
       <trans-unit id="240" resname="Maybe Later" restype="string" datatype="x-objective-c">
         <source>Maybe Later</source>
-        <target>Tal Vez Después</target>
+        <target state="ui-fix">Después</target>
       </trans-unit>
     </body>
   </file>
@@ -1339,7 +1339,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="242" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="242" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
@@ -2404,7 +2404,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="450" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="450" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
@@ -2883,11 +2883,11 @@
         <source>checklist for</source>
         <target>listado para</target>
       </trans-unit>
-      <trans-unit id="544" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="544" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target state="accepted">aprueban</target>
       </trans-unit>
-      <trans-unit id="545" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="545" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target state="accepted">aprueba</target>
       </trans-unit>
@@ -3115,11 +3115,11 @@
       </trans-unit>
       <trans-unit id="583" resname=" Have this" restype="string" datatype="x-objective-c">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
       </trans-unit>
       <trans-unit id="584" resname=" No longer have this" restype="string" datatype="x-objective-c">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
       </trans-unit>
       <trans-unit id="585" resname="Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)" restype="string" datatype="x-objective-c">
         <source>Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)</source>
@@ -3127,7 +3127,7 @@
       </trans-unit>
       <trans-unit id="586" resname=" Currently taking" restype="string" datatype="x-objective-c">
         <source>Currently taking</source>
-        <target>Actualmente tomo</target>
+        <target state="ui-fix">Lo tomo</target>
       </trans-unit>
       <trans-unit id="587" resname=" Used to take" restype="string" datatype="x-objective-c">
         <source>Used to take</source>
@@ -4068,22 +4068,22 @@
     <body>
       <trans-unit id="731" resname="XoB-sm-Jcb.normalTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="732" resname="XoB-sm-Jcb.selectedTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="733" resname="eXo-Lg-cIZ.normalTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="734" resname="eXo-Lg-cIZ.selectedTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
     </body>

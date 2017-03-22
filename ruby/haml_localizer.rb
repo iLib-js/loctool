@@ -495,7 +495,13 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
   unmapped_for_file = []
   ret = {}
   x = HTParser.new(template, Haml::Options.new)
-  root = x.parse
+  begin
+    root = x.parse
+  rescue => e
+    puts e.backtrace
+    puts "ERROR: Invalid HAML in source #{path_name}"
+    return {}, unmapped_for_file
+  end
   values = []
   accumulate_values(root, values, path_name)
   #puts root
@@ -523,6 +529,7 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
     #process_values(locale_mappings, from_to.keys, unmapped_for_file)
     output_template = replace_with_translations2(template.dup, from_to)
     begin
+      puts "printing #{path_name} #{locale_name}"
       x = HTParser.new(output_template, Haml::Options.new)
       root = x.parse
     rescue => e

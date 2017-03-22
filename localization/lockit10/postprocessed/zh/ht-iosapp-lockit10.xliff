@@ -129,7 +129,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="20" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n" restype="string" datatype="x-objective-c">
         <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n</source>
@@ -170,7 +170,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTSymptomTriageStringsManager.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/HTSymptomTriageStringsManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="29" resname="Hello!" restype="string" datatype="x-objective-c">
         <source>Hello!</source>
@@ -184,7 +184,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="31" resname="Tap and drag" restype="string" datatype="x-objective-c">
         <source>Tap and drag</source>
@@ -192,7 +192,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTAuthorizationViewController.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/HTAuthorizationViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="32" resname="Helping you to live a healthier, happier, longer life!" restype="string" datatype="x-objective-c">
         <source>Helping you to live a healthier, happier, longer life!</source>
@@ -200,7 +200,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTAuthorizationPasswordRecoveryViewController.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/HTAuthorizationPasswordRecoveryViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="33" resname="Password recovery" restype="string" datatype="x-objective-c">
         <source>Password recovery</source>
@@ -208,7 +208,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="34" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
         <source>\n\n%@ approved this translation of %@</source>
@@ -216,7 +216,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="35" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
         <source>In Dr. %@'s referral network</source>
@@ -224,7 +224,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" product-name="ht-iosapp">
+  <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="36" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
         <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>

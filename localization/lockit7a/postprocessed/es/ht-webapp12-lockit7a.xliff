@@ -909,7 +909,7 @@
     <body>
       <trans-unit id="264" resname="r136526775" restype="string" datatype="ruby">
         <source>Do good · Do well · Feel good</source>
-        <target state="translated">Haz el bien, hazlo bien, siéntete bien.</target>
+        <target state="translated">Haz el bien, hazlo bien, sentirse bien.</target>
       </trans-unit>
     </body>
   </file>
@@ -1225,7 +1225,7 @@
     <body>
       <trans-unit id="399" resname="r889535527" restype="string" datatype="ruby">
         <source>Offer more insights</source>
-        <target state="translated">Ofrecer más perspicacias</target>
+        <target state="translated">Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="401" resname="r506855600" restype="string" datatype="ruby">
         <source>Update your profile</source>
@@ -4341,7 +4341,7 @@
     <body>
       <trans-unit id="1487" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target state="translated">estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4357,7 +4357,7 @@
     <body>
       <trans-unit id="1489" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target state="translated">estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4389,7 +4389,7 @@
     <body>
       <trans-unit id="1494" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot;&gt;&lt;span class=&quot;actor_text bold cus_font_size_actor_text&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;&lt;/a&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt;&lt;/a&gt; answer to:</source>
-        <target state="translated">estuvo de acuerdo con la respuesta de &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt;&lt;/a&gt; a:</target>
+        <target state="translated">estuvo de acuerdo con la respuesta de &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/"&gt;&lt;span class="actor_text bold cus_font_size_actor_text"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;的&lt;/span&gt;&lt;/a&gt; a:</target>
       </trans-unit>
     </body>
   </file>
@@ -4437,7 +4437,7 @@
     <body>
       <trans-unit id="1500" resname="agreed with&lt;span class=&quot;actor_text bold&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to:</source>
-        <target state="translated">estuvo de acuerdo con &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; respuesta a:</target>
+        <target state="translated">estuvo de acuerdo con la repuesta de &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;&lt;/span&gt; a:</target>
       </trans-unit>
     </body>
   </file>
@@ -4673,7 +4673,7 @@
     <body>
       <trans-unit id="1533" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt; agree&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; agree&lt;/a&gt;</source>
-        <target state="translated">y &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; de acuerdo&lt;/a&gt;</target>
+        <target state="translated">y &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 'es' : ''%&gt; de acuerdo&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>

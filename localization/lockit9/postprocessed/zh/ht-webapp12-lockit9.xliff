@@ -907,7 +907,7 @@
     <body>
       <trans-unit id="188" resname="r625042656" restype="string" datatype="ruby">
         <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.&gt;br/&lt;&gt;br/&lt;You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
-        <target state="translated">保持健康更容易，当它是您的日常生活的一部分。以下是一些有帮助的小贴士，用于管理和改善健康与保健，以及HealthTap的健康问题的一些最近的答案。<br/><br/>您可以随时访问我的HealthTap在现在很了，在此之前或访问之间，阅读更多的我的健康问题的回答，并发现更多的健康生活小贴士。</target>
+        <target state="translated">保持健康更容易，当它是您的日常生活的一部分。以下是一些有帮助的小贴士，用于管理和改善健康与保健，以及HealthTap的健康问题的一些最近的答案。&lt;br/&gt;&lt;br/&gt;您可以随时访问我的HealthTap在现在很了，在此之前或访问之间，阅读更多的我的健康问题的回答，并发现更多的健康生活小贴士。</target>
       </trans-unit>
     </body>
   </file>
@@ -2112,7 +2112,7 @@
       </trans-unit>
       <trans-unit id="456" resname="r1028567604" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) had something to add to &lt;b&gt;%{other_person}'s&lt;/b&gt; answer to your question &lt;b&gt;"%{q_text} "&lt;/b&gt; &lt;span style='color:#039;'&gt;See the comment.&lt;/span&gt;</source>
-        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt;, (%{specialty})添加评论到&lt;b&gt;%{other_person}'s&lt;/b&gt;对您问题&lt;b&gt;"%{q_text}"的回答。&lt;span style='color:#039;'&gt;查看评论&lt;/span&gt;</target>
+        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt;, (%{specialty})添加评论到&lt;b&gt;%{other_person}的&lt;/b&gt;对您问题&lt;b&gt;"%{q_text}"的回答。&lt;span style='color:#039;'&gt;查看评论&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="457" resname="r309604930" restype="string" datatype="ruby">
         <source>&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/div&gt;[Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;Unlock the %{next_name} medal next. &lt;a href='/#expert/home'&gt;Learn How &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</source>

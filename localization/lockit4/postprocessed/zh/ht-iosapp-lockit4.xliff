@@ -319,7 +319,7 @@
         <source>tip (%ld of %lu)</source>
         <target>小贴士 (%ld of %lu)</target>
       </trans-unit>
-      <trans-unit id="62" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="62" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>分享了关于%@的小贴士</target>
         <note annotates="source">Param: some topic</note>
@@ -788,7 +788,7 @@
     \u00B7除英文外的其他语言咨询\n\
     \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
       </trans-unit>
-      <trans-unit id="129" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="129" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
       </trans-unit>
@@ -798,7 +798,7 @@
       </trans-unit>
       <trans-unit id="131" resname=" %@&apos;s " restype="string" datatype="x-objective-c">
         <source>%@'s</source>
-        <target>%@'s</target>
+        <target>%@的</target>
       </trans-unit>
       <trans-unit id="132" resname=" your " restype="string" datatype="x-objective-c">
         <source>your</source>
@@ -1329,7 +1329,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="242" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="242" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
@@ -2394,7 +2394,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="450" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="450" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
@@ -2873,11 +2873,11 @@
         <source>checklist for</source>
         <target>清单为</target>
       </trans-unit>
-      <trans-unit id="544" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="544" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
       </trans-unit>
-      <trans-unit id="545" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="545" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
       </trans-unit>

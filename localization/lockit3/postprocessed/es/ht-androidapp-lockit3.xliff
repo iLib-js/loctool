@@ -1137,8 +1137,8 @@
         <target>Obtén respuestas a tus preguntas de salud de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="192" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>Obtén respuestas a tus preguntas de salud de los %d mejores doctores</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>Obtén respuestas a tus preguntas de salud de los %s mejores doctores</target>
       </trans-unit>
       <trans-unit id="193" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>

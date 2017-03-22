@@ -1472,7 +1472,7 @@
     <body>
       <trans-unit id="287" resname="r794956291" restype="string" datatype="x-haml">
         <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
-        <target state="translated">), administradores de población reciben perspicacias de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
+        <target state="translated">), administradores de población reciben conocimientos médicos de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
       </trans-unit>
     </body>
   </file>
@@ -1849,6 +1849,74 @@
       <trans-unit id="12" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
         <source>multiselect</source>
         <target state="accepted">multiselect</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r848033169" restype="string" datatype="ruby">
+        <source>&lt;h3&gt;&lt;span&gt;Join the&lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;Feel Good :)&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span&gt;movement&lt;/span&gt;&lt;/h3&gt;</source>
+        <target state="new">&lt;h3&gt;&lt;span&gt;Únete al movimiento &lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;"Sentirse Bien" :)&lt;/span&gt;&lt;/h2&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4361" resname="r887589526" restype="string" datatype="ruby">
+        <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;.</source>
+        <target state="accepted">Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos simplemente queremos &lt;span class="no-break"&gt;Sentirnos Bien&lt;/span&gt;. Ya sea que estemos intentando mejorar nuestra ya robusta salud, manejando una condición crónica, o afrontando una enfermedad seria, queremos vivir mejor - y siempre queremos &lt;span class="no-break"&gt;Sentirnos Bien&lt;/span&gt;.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/pages/feelGood/login.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r333922407" restype="string" datatype="ruby">
+        <source>Welcome back</source>
+        <target state="translated">Bienvenido de vuelta</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r391775707" restype="string" datatype="ruby">
+        <source>Login</source>
+        <target state="translated">Iniciar sesión</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/symptom_checker_session.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="5" resname="r314412560" restype="string" datatype="ruby">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r38074302" restype="string" datatype="ruby">
+        <source>Quick question</source>
+        <target state="translated">Pequeña pregunta</target>
+      </trans-unit>
+      <trans-unit id="7" resname="r777866617" restype="string" datatype="ruby">
+        <source>Add condition</source>
+        <target state="translated">Añade una condición</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r888997785" restype="string" datatype="ruby">
+        <source>Add medication</source>
+        <target state="new">Añade un medicamento</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r319575533" restype="string" datatype="ruby">
+        <source>Add an allergy</source>
+        <target state="new">Añade una alergia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="14" resname="Are you sure you&apos;d like to close this form without submitting?" restype="string" datatype="javascript">
+        <source>Are you sure you'd like to close this form without submitting?</source>
+        <target state="new">¿Estás seguro/a que quiere cerrar este formulario sin enviarlo?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="login.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="209" resname="r35583273" restype="string" datatype="x-haml">
+        <source>Invalid email and password</source>
+        <target>Correo electrónico y contraseña invalidos</target>
       </trans-unit>
     </body>
   </file>

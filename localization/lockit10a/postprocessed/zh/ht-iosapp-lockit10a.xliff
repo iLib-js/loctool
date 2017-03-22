@@ -1057,4 +1057,84 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</source>
+        <target state="accepted">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t急性膀胱炎\n</target>
+        <note annotates="source">Common reasons to use virtual consults bullets full list</note>
+      </trans-unit>
+      <trans-unit id="2" resname="See more\n" restype="string" datatype="x-objective-c">
+        <source>See more\n</source>
+        <target state="accepted">查看更多\n</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Checking location..." restype="string" datatype="x-objective-c">
+        <source>Checking location...</source>
+        <target state="accepted">检测当前地址...</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Testing your connection..." restype="string" datatype="x-objective-c">
+        <source>Testing your connection...</source>
+        <target state="accepted">检测连接状况...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Prime unavailable" restype="string" datatype="x-objective-c">
+        <source>Prime unavailable</source>
+        <target state="accepted">Prime医生不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="2" resname="No Prime doctors are currently available in your area." restype="string" datatype="x-objective-c">
+        <source>No Prime doctors are currently available in your area.</source>
+        <target state="accepted">目前您的所在地没有Prime医生在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="3" resname="Concierge unavailable" restype="string" datatype="x-objective-c">
+        <source>Concierge unavailable</source>
+        <target state="new">贵宾台专科医生不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="4" resname="Concierge is currently unavailable." restype="string" datatype="x-objective-c">
+        <source>Concierge is currently unavailable.</source>
+        <target state="accepted">贵宾台专科医生暂时不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageConditionsPHRViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="We were unable to add the condition. Please try again" restype="string" datatype="x-objective-c">
+        <source>We were unable to add the condition. Please try again</source>
+        <target state="accepted">我们无法添加此病症. 请重试</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Dismiss" restype="string" datatype="x-objective-c">
+        <source>Dismiss</source>
+        <target state="accepted">取消</target>
+        <note annotates="source">Dismiss button</note>
+      </trans-unit>
+      <trans-unit id="3" resname="We were unable to remove the condition. Please try again" restype="string" datatype="x-objective-c">
+        <source>We were unable to remove the condition. Please try again</source>
+        <target state="accepted">我们无法移除病症. 请重试</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Remove condition" restype="string" datatype="x-objective-c">
+        <source>Remove condition</source>
+        <target state="accepted">移除病症</target>
+        <note annotates="source">remove  condition alert title</note>
+      </trans-unit>
+      <trans-unit id="5" resname="Already added" restype="string" datatype="x-objective-c">
+        <source>Already added</source>
+        <target state="accepted">已添加</target>
+        <note annotates="source">condition already added title</note>
+      </trans-unit>
+      <trans-unit id="6" resname="You&apos;ve already added that condition before." restype="string" datatype="x-objective-c">
+        <source>You've already added that condition before.</source>
+        <target state="accepted">您之前已经添加过这个病症</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

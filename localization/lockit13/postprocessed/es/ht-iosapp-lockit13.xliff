@@ -145,7 +145,7 @@
     <body>
       <trans-unit id="26" resname="Back_Body_Part" restype="string" datatype="x-objective-c">
         <source>Back_Body_Part</source>
-        <target state="translated">Back_Body_Part</target>
+        <target state="translated">Espalda</target>
         <note annotates="source">This should be the translation of 'Back' as a part of the body</note>
       </trans-unit>
     </body>
@@ -362,12 +362,12 @@
     <body>
       <trans-unit id="65" resname="Th" restype="string" datatype="x-objective-c">
         <source>Th</source>
-        <target state="translated">Jue</target>
+        <target state="translated">J</target>
         <note annotates="source">Day of the week: Thursday</note>
       </trans-unit>
       <trans-unit id="66" resname="Sa" restype="string" datatype="x-objective-c">
         <source>Sa</source>
-        <target state="translated">Sab</target>
+        <target state="translated">S</target>
         <note annotates="source">Day of the week: Saturday</note>
       </trans-unit>
     </body>

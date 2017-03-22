@@ -182,11 +182,11 @@
       </trans-unit>
       <trans-unit id="7032" resname="r144629454" restype="string" datatype="x-haml">
         <source>becomes more essential to anyone making important decisions about health and well-being.</source>
-        <target>se haga esencial para cualquier persona tomando decisiones importantes sobre salud y bienestar.</target>
+        <target>se vuelve esencial para cualquier persona que esté tomando decisiones importantes sobre salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="7033" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target>Todos los días, los mejores doctores aumenta, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
+        <target>Todos los días, los mejores doctores incrementan, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
       </trans-unit>
       <trans-unit id="7034" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
@@ -194,7 +194,7 @@
       </trans-unit>
       <trans-unit id="7035" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
-        <target>Amo que</target>
+        <target>Me encanta que</target>
       </trans-unit>
       <trans-unit id="7036" resname="r640492638" restype="string" datatype="x-haml">
         <source>that you can connect with your doctor on</source>
@@ -234,15 +234,15 @@
       </trans-unit>
       <trans-unit id="7046" resname="r783765094" restype="string" datatype="x-haml">
         <source>We’ve been working hard and innovating for years to</source>
-        <target>Hemos estado trabajando duro e innovado por años para</target>
+        <target>Hemos estado trabajando duro e innovando por años para</target>
       </trans-unit>
       <trans-unit id="7047" resname="r554844221" restype="string" datatype="x-haml">
         <source>reinvent how the world experiences health</source>
-        <target>reinventar la forma en que el mundo experimenta salud</target>
+        <target>reinventar la forma en que el mundo experimenta la salud</target>
       </trans-unit>
       <trans-unit id="7048" resname="r69119406" restype="string" datatype="x-haml">
         <source>and well-being. We already created the world’s most</source>
-        <target>y bienestar. Ya hemos creado la más</target>
+        <target>y el bienestar. Ya hemos creado la más</target>
       </trans-unit>
       <trans-unit id="7049" resname="r416879559" restype="string" datatype="x-haml">
         <source>trustworthy, comprehensive, and evergreen</source>
@@ -250,11 +250,11 @@
       </trans-unit>
       <trans-unit id="7050" resname="r701047471" restype="string" datatype="x-haml">
         <source>knowledgebase of doctor-created, -curated, and -edited health expertise.</source>
-        <target>base de conocimientos de destreza de salud creada, curada y editada por doctores en el mundo.</target>
+        <target>base de conocimientos de destreza de salud del mundo creada, curada y editada por doctores.</target>
       </trans-unit>
       <trans-unit id="7051" resname="r570962151" restype="string" datatype="x-haml">
         <source>We've given millions of people everywhere</source>
-        <target>Le hemos dado a millones de personas en todas partes</target>
+        <target>Les hemos dado a millones de personas en todas partes</target>
       </trans-unit>
       <trans-unit id="7052" resname="r882859248" restype="string" datatype="x-haml">
         <source>access to the best doctors and their wisdom.</source>
@@ -298,15 +298,15 @@
       </trans-unit>
       <trans-unit id="7062" resname="r319334065" restype="string" datatype="x-haml">
         <source>We asked, what do people really want when it comes to healthcare?</source>
-        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención a la salud?</target>
+        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención de la salud?</target>
       </trans-unit>
       <trans-unit id="7063" resname="r413262416" restype="string" datatype="x-haml">
         <source>We took our aggregate decades of medical and computer science expertise, our business acumen, and the experience we’ve gained from serving and surveying hundreds of millions of people and hundreds of thousands of doctors over the years, and came to three major conclusions:</source>
-        <target>Tomamos nuestros agregados de décadas de destreza médica y de ciencias computacionales, nuestro visión de negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos tres grandes conclusiones:</target>
+        <target>Tomamos el cúmulo de décadas de conocimiento médico y de ciencias de la computación, nuestra visión de los negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos a tres grandes conclusiones:</target>
       </trans-unit>
       <trans-unit id="7064" resname="r802585118" restype="string" datatype="x-haml">
         <source>It has to come from the most knowledgeable and trustworthy experts.</source>
-        <target>Tiene que venir de los expertos más confiables y eruditos.</target>
+        <target>Tiene que venir de los expertos más confiables y conocedores.</target>
       </trans-unit>
       <trans-unit id="7065" resname="r371846410" restype="string" datatype="x-haml">
         <source>That means doctors. Nobody else will do.</source>
@@ -314,7 +314,7 @@
       </trans-unit>
       <trans-unit id="7066" resname="r929547936" restype="string" datatype="x-haml">
         <source>When people want help with their health, they want it immediately</source>
-        <target>Cuando la gente quiere ayuda con su salud, la quieren inmediatamente.</target>
+        <target>Cuando la gente quiere ayuda con su salud, la quieren inmediatamente</target>
       </trans-unit>
       <trans-unit id="7067" resname="r229269543" restype="string" datatype="x-haml">
         <source>That means getting help when you need it—not at someone else’s convenience.</source>
@@ -322,7 +322,7 @@
       </trans-unit>
       <trans-unit id="7068" resname="r721530336" restype="string" datatype="x-haml">
         <source>No waiting.</source>
-        <target>Sin esperar.</target>
+        <target>Sin espera.</target>
       </trans-unit>
       <trans-unit id="7069" resname="r204039599" restype="string" datatype="x-haml">
         <source>No excuses.</source>
@@ -330,15 +330,15 @@
       </trans-unit>
       <trans-unit id="7070" resname="r944687663" restype="string" datatype="x-haml">
         <source>People want health</source>
-        <target>La gente quiere que el consejo</target>
+        <target>La gente quiere consejos</target>
       </trans-unit>
       <trans-unit id="7071" resname="r834122281" restype="string" datatype="x-haml">
         <source>advice to be completely</source>
-        <target>de salud sea completamente</target>
+        <target>de salud completamente</target>
       </trans-unit>
       <trans-unit id="7072" resname="r391183578" restype="string" datatype="x-haml">
         <source>personalized</source>
-        <target>personalizado.</target>
+        <target>personalizados.</target>
       </trans-unit>
       <trans-unit id="7073" resname="r1017426009" restype="string" datatype="x-haml">
         <source>Forget generalized information. You need a doctor to hear</source>
@@ -370,7 +370,7 @@
       </trans-unit>
       <trans-unit id="7080" resname="r98906353" restype="string" datatype="x-haml">
         <source>We’ve invented a new way for you to learn about your health and get useful and trustworthy health information when you need it most.</source>
-        <target>Hemos inventado una nueva forma para que aprendas cerca de tu salud y obtengas información de salud útil y confiable cuando la necesitas más.</target>
+        <target>Hemos inventado una nueva forma para que aprendas cerca de tu salud y obtengas información de salud útil y confiable cuando más la necesitas.</target>
       </trans-unit>
       <trans-unit id="7081" resname="r1011715419" restype="string" datatype="x-haml">
         <source>No more scouring the internet for information that may or may not be reliable and which is most definitely not about you.</source>
@@ -406,7 +406,7 @@
       </trans-unit>
       <trans-unit id="7089" resname="r811858958" restype="string" datatype="x-haml">
         <source>What’s more, with our top-rated mobile apps you can access this rich trove of health resources from anywhere at any time.</source>
-        <target>Es más, con nuestras aplicaciones móviles altamente calificadas puedes acceder a este abundante tesoro de recursos de salud desde cualquier lugar y a cualquier hora.</target>
+        <target>Es más, con nuestras aplicaciones móviles altamente calificadas puedes acceder a este abundante tesoro de recursos de salud a cualquier hora y desde cualquier lugar.</target>
       </trans-unit>
       <trans-unit id="7090" resname="r267919258" restype="string" datatype="x-haml">
         <source>Tap into our extensive pool of medical wisdom from the other side of the world, video chat with doctors in the middle of the night, or even message us (quietly) when you’re in your office cubicle. We’re here, and we’re ready to serve you whenever you need us most.</source>
@@ -418,7 +418,7 @@
       </trans-unit>
       <trans-unit id="7092" resname="r671701737" restype="string" datatype="x-haml">
         <source>billion doctors’ answers to many millions of people around the world. And among the hundreds of thousands of notes in which people thank us for our help, we’ve received more than</source>
-        <target>un billón de respuestas de doctores a muchos millones de personas alrededor del mundo. Y entre las cientos de miles de notas en las cuales la gente nos agradece por nuestra ayuda, hemos recibido más de</target>
+        <target>billón de respuestas de doctores a muchos millones de personas alrededor del mundo. Y entre las cientos de miles de notas en las cuales la gente nos agradece por nuestra ayuda, hemos recibido más de</target>
       </trans-unit>
       <trans-unit id="7093" resname="r34458330" restype="string" datatype="x-haml">
         <source>notes in which members specifically thank us for saving their lives.</source>
@@ -426,7 +426,7 @@
       </trans-unit>
       <trans-unit id="7094" resname="r690591364" restype="string" datatype="x-haml">
         <source>so I know the information I find is validated. I also love</source>
-        <target>así que sé que la información que encuentro es validada. También amo que</target>
+        <target state="accepted">así que sé que la información que encuentro está validada. También amo que</target>
       </trans-unit>
       <trans-unit id="7095" resname="r348586620" restype="string" datatype="x-haml">
         <source>We’re also committed to our amazing doctors.</source>
@@ -442,7 +442,7 @@
       </trans-unit>
       <trans-unit id="7098" resname="r354487710" restype="string" datatype="x-haml">
         <source>Doctors, start doing well by doing good today! Join our Medical Expert Network.</source>
-        <target>¡Doctores, empiecen a hacer bien haciendo el bien hoy! Únete a nuestra Red de Expertos Médicos</target>
+        <target>¡Doctores, empiecen a hacerlo bien haciendo el bien hoy! Únete a nuestra Red de Expertos Médicos</target>
       </trans-unit>
       <trans-unit id="7099" resname="r78362841" restype="string" datatype="x-haml">
         <source>Apply now !</source>
@@ -486,7 +486,7 @@
       </trans-unit>
       <trans-unit id="7109" resname="r127924135" restype="string" datatype="x-haml">
         <source>big problem—to make finding useful, reliable health information fast,</source>
-        <target>gran problema- hacer el encontrar información de salud útil y confiable,  rápido,</target>
+        <target>gran problema—hacer que encontrar información de salud útil y confiable sea rápido,</target>
       </trans-unit>
       <trans-unit id="7110" resname="r122443447" restype="string" datatype="x-haml">
         <source>easy, and free.</source>
@@ -494,7 +494,7 @@
       </trans-unit>
       <trans-unit id="7111" resname="r368530188" restype="string" datatype="x-haml">
         <source>Where we are headed</source>
-        <target>¿A dónde nos estamos dirigiendo?</target>
+        <target>¿A dónde nos dirigimos?</target>
       </trans-unit>
       <trans-unit id="7112" resname="r104941884" restype="string" datatype="x-haml">
         <source>of the world’s population. We’re laying the groundwork for a movement</source>
@@ -638,11 +638,11 @@
       </trans-unit>
       <trans-unit id="8345" resname="r968903568" restype="string" datatype="x-haml">
         <source>Your analytics dashboard allows you to get insight into your employees health plans, increase engagement, and improve employee benefits ecosystem</source>
-        <target>Tu tablero de análisis te permite obtener perspicacias en los planes de salud de tus empleados, y mejorar el ecosistema de beneficios a empleados</target>
+        <target>Tu tablero de análisis te permite obtener conocimientos médicos en los planes de salud de tus empleados, y mejorar el ecosistema de beneficios a empleados</target>
       </trans-unit>
       <trans-unit id="8346" resname="r1036636400" restype="string" datatype="x-haml">
         <source>Triage employees to the right care, at the right time, at the right price</source>
-        <target>Envía a empleados a la atención adecuada en el tiempo adecuado al costo adecuado</target>
+        <target>Envía a empleados a la atención adecuada, en el momento adecuado y al costo adecuado</target>
       </trans-unit>
       <trans-unit id="8347" resname="r84046414" restype="string" datatype="x-haml">
         <source>Employees Start Here</source>
@@ -898,11 +898,11 @@
       </trans-unit>
       <trans-unit id="10901" resname="r463492901" restype="string" datatype="x-haml">
         <source>Display Language</source>
-        <target>Idioma de Visualización</target>
+        <target>Mostrar Idioma</target>
       </trans-unit>
       <trans-unit id="10902" resname="r202123273" restype="string" datatype="x-haml">
         <source>Learn about HealthTap</source>
-        <target>Aprender acerca de HealthTap</target>
+        <target>Aprende acerca de HealthTap</target>
       </trans-unit>
       <trans-unit id="10903" resname="r226763329" restype="string" datatype="x-haml">
         <source>or de-activate account</source>
@@ -1058,7 +1058,7 @@
       </trans-unit>
       <trans-unit id="576" resname="r651513018" restype="string" datatype="ruby">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target>Aprende Más</target>
       </trans-unit>
       <trans-unit id="577" resname="r784084451" restype="string" datatype="ruby">
         <source>Get Help</source>
@@ -1066,7 +1066,7 @@
       </trans-unit>
       <trans-unit id="578" resname="r106917801" restype="string" datatype="ruby">
         <source>Take Action</source>
-        <target>Tomar Acción</target>
+        <target>Toma Acción</target>
       </trans-unit>
       <trans-unit id="581" resname="r510566288" restype="string" datatype="ruby">
         <source>Email address</source>
@@ -1198,15 +1198,15 @@
       </trans-unit>
       <trans-unit id="13395" resname="r777280276" restype="string" datatype="x-haml">
         <source>Send prescriptions automatically to any U.S. retail or mail order pharmacy or a pharmacy network of your choice</source>
-        <target>Envía recetas automáticamente a cualquier farmacia de menudo o por orden de correo en EE.UU. o a una red de farmacia de tu elección</target>
+        <target>Envía recetas automáticamente a cualquier farmacia de menudeo o por orden de correo en EE.UU. o a una red de farmacia de tu elección</target>
       </trans-unit>
       <trans-unit id="13396" resname="r492856713" restype="string" datatype="x-haml">
         <source>Order and interpret results from labs at any Quest Diagnostics facility in the U.S. or a lab of your choice</source>
-        <target>Ordena e interpreta resultados de laboratorio de cualquier instalación Quest Diagnostics en los EE.UU. o un laboratorio de tu elección</target>
+        <target>Ordena e interpreta resultados de laboratorio de cualquier instalación Quest Diagnostics en los EE.UU. o un laboratorio de tu eleccio´n</target>
       </trans-unit>
       <trans-unit id="13397" resname="r575315867" restype="string" datatype="x-haml">
         <source>Establish a Virtual Practice (ViP) for your doctors to enhance visibility, reputation, and accessibility</source>
-        <target>Establece un Consultorio Virtual (ViP) para tus doctores para mejorar la visibilidad, reputación y accesibilidad</target>
+        <target>Establece un Consultorio Virtual (CoV) para tus doctores para mejorar la visibilidad, reputación y accesibilidad</target>
       </trans-unit>
       <trans-unit id="13398" resname="r698198354" restype="string" datatype="x-haml">
         <source>Patients can search providers by topics of expertise (‘Known fors’) or reputation (‘DocScore’)</source>
@@ -1222,7 +1222,7 @@
       </trans-unit>
       <trans-unit id="13401" resname="r329103010" restype="string" datatype="x-haml">
         <source>Automate newsletters and offer personalized feeds of doctor insights’ for each of your patients to build loyalty to your practice</source>
-        <target>Automatiza boletines y ofrece fuentes personalizadas de perspicacias de doctores para cada uno de tus pacientes para construir lealtad a tu consultorio.</target>
+        <target>Automatiza boletines y ofrece fuentes personalizadas de conocimientos médicos de doctores para cada uno de tus pacientes para construir lealtad a tu consultorio.</target>
       </trans-unit>
       <trans-unit id="13402" resname="r851109188" restype="string" datatype="x-haml">
         <source>Payment</source>
@@ -1254,11 +1254,11 @@
       </trans-unit>
       <trans-unit id="13409" resname="r510272480" restype="string" datatype="x-haml">
         <source>HealthTap provides detailed utilization reports, a zeitgeist population health insights, and data analytics tools for historical, current, and predictive analysis that detail trends and insights within the patient population. This data-centric approach enables providers to deliver optimal care at a lower cost.</source>
-        <target>HealthTap brinda reportes de uso detallados, perspicacias de salud del zeitgeist de la población, y herramientas de análisis de datos para análisis histórico, actual, y predictivo que detalla tendencias y perspicacias dentro de la población de pacientes. Este enfoque centrado en datos permite al proveedor brindar atención óptima a un menor costo.</target>
+        <target>HealthTap brinda reportes de uso detallados, conocimientos médicos de salud del zeitgeist de la población, y herramientas de análisis de datos para análisis histórico, actual, y predictivo que detalla tendencias y conocimientos médicos dentro de la población de pacientes. Este enfoque centrado en datos permite al proveedor brindar atención óptima a un menor costo.</target>
       </trans-unit>
       <trans-unit id="13410" resname="r655317160" restype="string" datatype="x-haml">
         <source>Integrates with existing apps or sites so your IT ecosystem can be powered by the same underlying PHR, data, analytics, and technology services</source>
-        <target>Se integra con aplicaciones o sitios existentes para que tu ecosistema IT pueda ser propulsado por los mismos subyacentes RSP, datos, análisis y servicios tecnológicos</target>
+        <target>Se integra con aplicaciones o sitios existentes para que tu ecosistema IT pueda ser impulsado por los mismos subyacentes RSP, datos, análisis y servicios tecnológicos</target>
       </trans-unit>
       <trans-unit id="13411" resname="r518353751" restype="string" datatype="x-haml">
         <source>Easily extensible so you can build custom apps for specific workflows and use cases on top of the same system</source>
@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="6220" resname="r459952160" restype="string" datatype="x-haml">
         <source>Global Health Practice</source>
-        <target>Practica de Salud Global</target>
+        <target>Consultorio de Salud Global</target>
       </trans-unit>
       <trans-unit id="6221" resname="r800913088" restype="string" datatype="x-haml">
         <source>The world’s first</source>
@@ -1358,7 +1358,7 @@
       </trans-unit>
       <trans-unit id="6237" resname="r570277026" restype="string" datatype="x-haml">
         <source>HealthTap is the world’s first and only Global Health Practice</source>
-        <target>HealthTap es la primera y única Practica de Salud Global</target>
+        <target>HealthTap es el primero y único Consultorio de Salud Global</target>
       </trans-unit>
       <trans-unit id="6238" resname="r489044831" restype="string" datatype="x-haml">
         <source>Through video, voice, and text chat on any smartphone, tablet, or personal computer, we connect millions around the world with the</source>
@@ -2010,7 +2010,7 @@
       </trans-unit>
       <trans-unit id="6394" resname="r690908062" restype="string" datatype="x-haml">
         <source>Shift sign up</source>
-        <target>Registro a turno</target>
+        <target>Registro para turnos</target>
       </trans-unit>
       <trans-unit id="6395" resname="r70241105" restype="string" datatype="x-haml">
         <source>You can sign up for three different types of shifts on HealthTap:</source>
@@ -2790,7 +2790,7 @@
       </trans-unit>
       <trans-unit id="6589" resname="r1053628411" restype="string" datatype="x-haml">
         <source>We are looking for primary care doctors trained in internal medicine, family practice, emergency medicine, and pediatrics. You can be a specialist as long as you have the skills, expertise, and knowledge of a primary care physician.</source>
-        <target>Estamos buscando doctores de atención primaria entrenados en medicina interna, medicina familiar, medicina de emergencias, y pediatría. Puedes ser un especialista mientras que tengas las habilidades, destreza y conocimiento de un médico de atención primaria.</target>
+        <target>Estamos buscando doctores de atención primaria entrenados en medicina interna, medicina familiar, medicina de urgencias, y pediatría. Puedes ser un especialista mientras que tengas las habilidades, destreza y conocimiento de un médico de atención primaria.</target>
       </trans-unit>
       <trans-unit id="6590" resname="r124944736" restype="string" datatype="x-haml">
         <source>What types of patients will I see?</source>
@@ -3626,7 +3626,7 @@
       </trans-unit>
       <trans-unit id="8953" resname="r997425048" restype="string" datatype="x-haml">
         <source>10 "Feel Good" moments :)</source>
-        <target>10 momentos "Feel Good" :)</target>
+        <target>10 momentos “Feel Good” :)</target>
       </trans-unit>
       <trans-unit id="8954" resname="r825853732" restype="string" datatype="x-haml">
         <source>Connect to your</source>
@@ -4604,7 +4604,7 @@
       </trans-unit>
       <trans-unit id="9908" resname="r127725292" restype="string" datatype="x-haml">
         <source>Get help immediately 24/7 and feel good!</source>
-        <target>¡Obtén ayuda inmediatamente, 24/7, y siéntete bien!</target>
+        <target>¡Obtén ayuda inmediatamente, 24/7, y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="9909" resname="r38026468" restype="string" datatype="x-haml">
         <source>Enjoy unlimited doctor consults anytime, anywhere!</source>
@@ -4821,7 +4821,7 @@
       </trans-unit>
       <trans-unit id="1093" resname="r752881470" restype="string" datatype="ruby">
         <source>Answers and Insights</source>
-        <target>Respuestas y Perspicacias</target>
+        <target>Respuestas y Conocimientos médicos</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="1094" resname="r326351033" restype="string" datatype="ruby">
@@ -5356,7 +5356,7 @@
       </trans-unit>
       <trans-unit id="13460" resname="r505954421" restype="string" datatype="x-haml">
         <source>Billions of doctor insights served</source>
-        <target>Billones de perspicacias de doctores servidas</target>
+        <target>Billones de conocimientos médicos de doctores servidas</target>
       </trans-unit>
       <trans-unit id="13461" resname="r980695831" restype="string" datatype="x-haml">
         <source>App recommendations</source>
@@ -5576,7 +5576,7 @@
       </trans-unit>
       <trans-unit id="11003" resname="r259196536" restype="string" datatype="x-haml">
         <source>Learn about specific health topics with our topics pages</source>
-        <target>Aprender acerca de temas de salud específicos con nuestras páginas de temas.</target>
+        <target>Aprende acerca de temas de salud específicos con nuestras páginas de temas.</target>
       </trans-unit>
       <trans-unit id="11004" resname="r326584745" restype="string" datatype="x-haml">
         <source>Prepare for in-person doctor’s appointments and consolidate all your important health information into one safe, secure place by filling out your profile</source>
@@ -5688,7 +5688,7 @@
     <body>
       <trans-unit id="1260" resname="r815745762" restype="string" datatype="ruby">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
     </body>
   </file>
@@ -5792,7 +5792,7 @@
       </trans-unit>
       <trans-unit id="6995" resname="r645921645" restype="string" datatype="x-haml">
         <source>HealthTap Concierge is already being used by doctors in 100+ specialties.</source>
-        <target>HealthTap Concierge ya está siendo usado por doctores en más de 100 especialidades.</target>
+        <target>HealthTap Concierge ya está siendo usado por doctores en 100+ especialidades.</target>
       </trans-unit>
       <trans-unit id="6996" resname="r988454511" restype="string" datatype="x-haml">
         <source>Here are examples of how doctors in your specialty are using the service.</source>
@@ -5864,7 +5864,7 @@
       </trans-unit>
       <trans-unit id="9983" resname="r979690396" restype="string" datatype="x-haml">
         <source>Doctor sign up</source>
-        <target>Registro de doctor</target>
+        <target>Registro para doctores</target>
       </trans-unit>
       <trans-unit id="9984" resname="r631074731" restype="string" datatype="x-haml">
         <source>Have a question for doctors now?</source>
@@ -5876,7 +5876,7 @@
       </trans-unit>
       <trans-unit id="9986" resname="r905385200" restype="string" datatype="x-haml">
         <source>Free text questions answered within 24 hours</source>
-        <target>Preguntas de texto gratis contestadas en 24 horas</target>
+        <target>Preguntas por mensaje de texto respondidas en 24 horas, gratis</target>
       </trans-unit>
       <trans-unit id="9987" resname="r477497420" restype="string" datatype="x-haml">
         <source>Goal-based checklists with timely reminders</source>
@@ -5928,11 +5928,11 @@
       </trans-unit>
       <trans-unit id="9999" resname="r1019382599" restype="string" datatype="x-haml">
         <source>Browse feed</source>
-        <target>Navegar fuente</target>
+        <target>Navegar por fuente</target>
       </trans-unit>
       <trans-unit id="13332" resname="r927482855" restype="string" datatype="x-haml">
         <source>Get started—enter your name and email</source>
-        <target>Comenzar—ingresa tu nombre y correo electrónico</target>
+        <target>Empieza—ingresa tu nombre y correo electrónico</target>
       </trans-unit>
       <trans-unit id="13333" resname="r251880696" restype="string" datatype="x-haml">
         <source>An error was encountered</source>
@@ -6061,7 +6061,7 @@
       </trans-unit>
       <trans-unit id="8126" resname="r1023047550" restype="string" datatype="x-haml">
         <source>A live private conversation with your doctor has never been easier</source>
-        <target>Una conversación privada en vivo con tu doctor nunca ha sido más fácil</target>
+        <target>Una conversación privada y en vivo con tu doctor nunca ha sido más fácil</target>
       </trans-unit>
       <trans-unit id="8127" resname="r152034852" restype="string" datatype="x-haml">
         <source>Your doctor is just a HealthTap away</source>
@@ -6093,7 +6093,7 @@
       </trans-unit>
       <trans-unit id="7008" resname="r527137953" restype="string" datatype="x-haml">
         <source>Doctors, become a member of our Medical Expert Network</source>
-        <target>Doctores, háganse miembro de nuestra Red de Expertos Médicos</target>
+        <target>Doctores, háganse miembros de nuestra Red de Expertos Médicos</target>
       </trans-unit>
       <trans-unit id="7009" resname="r72115938" restype="string" datatype="x-haml">
         <source>Become a member and start feeling good now!</source>
@@ -6233,7 +6233,7 @@
       </trans-unit>
       <trans-unit id="1462" resname="r903076345" restype="string" datatype="ruby">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target>Aprende más</target>
       </trans-unit>
     </body>
   </file>
@@ -6386,7 +6386,7 @@
       </trans-unit>
       <trans-unit id="1510" resname="r533725680" restype="string" datatype="ruby">
         <source>Do good, do well, feel good,</source>
-        <target>Haz el bien, hazlo bien, siéntete bien.</target>
+        <target>Haz el bien, hazlo bien, sentirse bien.</target>
       </trans-unit>
     </body>
   </file>
@@ -6394,11 +6394,11 @@
     <body>
       <trans-unit id="1514" resname="r136526775" restype="string" datatype="x-haml">
         <source>Do good · Do well · Feel good</source>
-        <target>Haz el bien, hazlo bien, siéntete bien.</target>
+        <target>Haz el bien, hazlo bien, sentirse bien.</target>
       </trans-unit>
       <trans-unit id="11552" resname="r718730157" restype="string" datatype="x-haml">
         <source>This portal is incredibly easy to use, and will benefit your practice in many ways. Take a moment to login today!</source>
-        <target>Este portal es increíblemente fácil de usar, y beneficiará a tu consultorio en muchas formas. ¡Toma un momento para ingresar hoy!</target>
+        <target>Este portal es increíblemente fácil de usar, y beneficiará a tu consultorio en muchas formas. ¡Toma un momento para iniciar sesión hoy!</target>
       </trans-unit>
       <trans-unit id="11553" resname="r995065089" restype="string" datatype="x-haml">
         <source>You'll reduce your practice's scheduling burdens and ad-hoc questions from patients,</source>
@@ -6590,7 +6590,7 @@
       </trans-unit>
       <trans-unit id="7501" resname="r118629011" restype="string" datatype="x-haml">
         <source>Apply to join the HealthTAp network and claim your Virtual Practice Page (ViP).</source>
-        <target>Aplica a unirte a la red de HealthTap y reclama tu Página de Consultorio Virtual (ViP).</target>
+        <target>Aplica a unirte a la red de HealthTap y reclama tu Página de Consultorio Virtual (CoV).</target>
       </trans-unit>
       <trans-unit id="7502" resname="r613186415" restype="string" datatype="x-haml">
         <source>how patients seek information forever. I am very excited to be part of it!</source>
@@ -7190,7 +7190,7 @@
     <body>
       <trans-unit id="2039" resname="r853190077" restype="string" datatype="ruby">
         <source>Learn more.</source>
-        <target>Aprender más.</target>
+        <target>Aprende más.</target>
       </trans-unit>
     </body>
   </file>
@@ -7226,7 +7226,7 @@
       </trans-unit>
       <trans-unit id="7560" resname="r311229523" restype="string" datatype="x-haml">
         <source>Claim your Virtual Practice page (ViP) today and establish your</source>
-        <target>Reclama tu Página de Consultorio Virtual (ViP) hoy y establece tus</target>
+        <target>Reclama tu Página de Consultorio Virtual (CoV) hoy y establece tus</target>
       </trans-unit>
       <trans-unit id="7561" resname="r270090687" restype="string" datatype="x-haml">
         <source>paid virtual office hours in minutes.</source>
@@ -7912,7 +7912,7 @@
     <body>
       <trans-unit id="2289" resname="r715406547" restype="string" datatype="x-haml">
         <source>billion</source>
-        <target>billón</target>
+        <target>billones</target>
       </trans-unit>
       <trans-unit id="7439" resname="r788418166" restype="string" datatype="x-haml">
         <source>DOING GOOD AT SCALE</source>
@@ -7920,7 +7920,7 @@
       </trans-unit>
       <trans-unit id="7440" resname="r79076407" restype="string" datatype="x-haml">
         <source>Top doctors in network</source>
-        <target>Los mejores doctores en red</target>
+        <target>De los mejores doctores en red</target>
       </trans-unit>
     </body>
   </file>
@@ -8444,7 +8444,7 @@
       </trans-unit>
       <trans-unit id="9149" resname="r567271824" restype="string" datatype="x-haml">
         <source>My answers and insights have</source>
-        <target>Mis respuestas y perspicacias han</target>
+        <target>Mis respuestas y conocimientos médicos han</target>
       </trans-unit>
       <trans-unit id="9150" resname="r212262046" restype="string" datatype="x-haml">
         <source>Here are kind words from others</source>
@@ -8652,11 +8652,11 @@
       </trans-unit>
       <trans-unit id="2983" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target>Perspicacias de doctor</target>
+        <target>Conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="2984" resname="r418831845" restype="string" datatype="ruby">
         <source>Take action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
       </trans-unit>
       <trans-unit id="2986" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
@@ -8885,11 +8885,11 @@
       </trans-unit>
       <trans-unit id="8622" resname="r719535550" restype="string" datatype="x-haml">
         <source>How HealthTap has changed lives</source>
-        <target>¿Cómo HealthTap ha cambiado vidas?</target>
+        <target state="accepted">¿Cómo ha cambiado vidas HealthTap?</target>
       </trans-unit>
       <trans-unit id="8623" resname="r126622825" restype="string" datatype="x-haml">
         <source>So what are you waiting for?</source>
-        <target>¿Así que qué estas esperando?</target>
+        <target state="accepted">Así que ¿qué estás esperando?</target>
       </trans-unit>
     </body>
   </file>
@@ -9073,7 +9073,7 @@
       </trans-unit>
       <trans-unit id="3895" resname="r701853544" restype="string" datatype="ruby">
         <source>Emergency Medicine</source>
-        <target>Medicina de Emergencias</target>
+        <target>Medicina de Urgencias</target>
       </trans-unit>
       <trans-unit id="3897" resname="r630829350" restype="string" datatype="ruby">
         <source>Endocrinology</source>
@@ -9133,7 +9133,7 @@
       </trans-unit>
       <trans-unit id="3967" resname="r1059637385" restype="string" datatype="ruby">
         <source>Infectious Disease</source>
-        <target>Enfermedades Infecciosas</target>
+        <target>Infectología</target>
       </trans-unit>
       <trans-unit id="3973" resname="r28786449" restype="string" datatype="ruby">
         <source>Integrative Medicine</source>
@@ -9189,7 +9189,7 @@
       </trans-unit>
       <trans-unit id="4045" resname="r779107938" restype="string" datatype="ruby">
         <source>Pediatric Infectious Disease</source>
-        <target>Enfermedades Infecciosas Pediátricas</target>
+        <target>Infectología Pediátricas</target>
       </trans-unit>
       <trans-unit id="4049" resname="r674871195" restype="string" datatype="ruby">
         <source>Pediatric Rheumatology</source>
@@ -10137,7 +10137,7 @@
       </trans-unit>
       <trans-unit id="5084" resname="r993306389" restype="string" datatype="ruby">
         <source>Browse Apps</source>
-        <target>Ojear Aplicaciones</target>
+        <target>Navegar Aplicaciones</target>
       </trans-unit>
     </body>
   </file>
@@ -10365,7 +10365,7 @@
     <body>
       <trans-unit id="5359" resname="r903076345" restype="string" datatype="x-haml">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target>Aprende más</target>
       </trans-unit>
       <trans-unit id="9413" resname="r774372552" restype="string" datatype="x-haml">
         <source>Expert ID</source>
@@ -10549,7 +10549,7 @@
       </trans-unit>
       <trans-unit id="6675" resname="r882859413" restype="string" datatype="x-haml">
         <source>We're humbled by all the great things written about us</source>
-        <target>Nos llenan de humildad todas las maravillosas cosas que han sido escritas sobre nosotros</target>
+        <target state="accepted">Nos llenan de humildad todas las cosas maravillosas que han sido escritas sobre nosotros</target>
       </trans-unit>
       <trans-unit id="6676" resname="r713826713" restype="string" datatype="x-haml">
         <source>We're also delighted by what industry experts, professional journalists,</source>
@@ -10641,7 +10641,7 @@
       </trans-unit>
       <trans-unit id="7771" resname="r328831441" restype="string" datatype="x-haml">
         <source>I think searching for information online is great for many things, I just don't think your health is one of them. With</source>
-        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ella. Con</target>
+        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ellas. Con</target>
       </trans-unit>
       <trans-unit id="7772" resname="r1000879257" restype="string" datatype="x-haml">
         <source>Jennifer J.,</source>
@@ -10705,7 +10705,7 @@
     <body>
       <trans-unit id="5593" resname="r815745762" restype="string" datatype="x-haml">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
       <trans-unit id="5594" resname="r681138860" restype="string" datatype="x-haml">
         <source>Your account is deactivated. To re-activate, send a request to</source>
@@ -10713,7 +10713,7 @@
       </trans-unit>
       <trans-unit id="5595" resname="r241346073" restype="string" datatype="x-haml">
         <source>Invalid email and password combination. Try again.</source>
-        <target>Dirección correo electrónico y contraseña inválida. Por favor, intenta otra vez.</target>
+        <target>Dirección de correo electrónico y/o contraseña inválida. Por favor, intenta nuevamente.</target>
       </trans-unit>
       <trans-unit id="5596" resname="r149610645" restype="string" datatype="x-haml">
         <source>Hi, Dr.</source>
@@ -11077,7 +11077,7 @@
       </trans-unit>
       <trans-unit id="5873" resname="r978521659" restype="string" datatype="x-haml">
         <source>In the event that the diagnosis and treatment by the physician associated with HealthTap Medical Group, P.C. does not resolve the medical issue for which you sought a Virtual Consult, you agree to consult with your primary care physician in person for follow-up treatment; and/or seek treatment, if necessary at a local hospital emergency department.</source>
-        <target>En el evento que el diagnóstico y tratamiento por el médico asociado con HealthTap Medical Group, P.C. no resuelva el problema de salud por el cual buscaste una Consulta Virtual, tú aceptas consultar con tu médico de atención primaria en personas para tratamiento de seguimiento, si es necesario en un departamento de emergencias de un hospital local.</target>
+        <target>En el evento que el diagnóstico y tratamiento por el médico asociado con HealthTap Medical Group, P.C. no resuelva el problema de salud por el cual buscaste una Consulta Virtual, tú aceptas consultar con tu médico de atención primaria en personas para tratamiento de seguimiento, si es necesario en un departamento de urgencias de un hospital local.</target>
       </trans-unit>
       <trans-unit id="5874" resname="r941234098" restype="string" datatype="x-haml">
         <source>I understand that, by having my consent to live virtual consults performed by video or telephone or asynchronous inbox consults, my physician associated with HealthTap Medical Group, P.C. may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
@@ -11237,11 +11237,11 @@
       </trans-unit>
       <trans-unit id="5961" resname="r85229537" restype="string" datatype="x-haml">
         <source>Browse topics</source>
-        <target>Ojea temas</target>
+        <target>Navegar temas</target>
       </trans-unit>
       <trans-unit id="5962" resname="r333536583" restype="string" datatype="x-haml">
         <source>Browse other topics</source>
-        <target>Ojea otros temas</target>
+        <target>Navegar otros temas</target>
       </trans-unit>
     </body>
   </file>
@@ -11249,7 +11249,7 @@
     <body>
       <trans-unit id="5963" resname="r757173038" restype="string" datatype="x-haml">
         <source>Doctors know best</source>
-        <target>Los doctores saben lo que es mejor</target>
+        <target>Los doctores saben que es lo mejor</target>
       </trans-unit>
       <trans-unit id="5964" resname="r1006279970" restype="string" datatype="x-haml">
         <source>The world's first large-scale resource for treatment ratings by doctors</source>
@@ -11257,7 +11257,7 @@
       </trans-unit>
       <trans-unit id="5965" resname="r725531736" restype="string" datatype="x-haml">
         <source>The resulting resource:</source>
-        <target>La fuente resultante:</target>
+        <target>El recurso resultante:</target>
       </trans-unit>
       <trans-unit id="5966" resname="r541997007" restype="string" datatype="x-haml">
         <source>With RateRx, our doctors are able to</source>
@@ -11265,19 +11265,19 @@
       </trans-unit>
       <trans-unit id="5967" resname="r3570527" restype="string" datatype="x-haml">
         <source>Educate the doctor community in promoting effective drugs and therapies</source>
-        <target>Educa a la comunidad médica en la promoción de drogas y terapias efectivas.</target>
+        <target>Educar a la comunidad médica en la promoción de drogas y terapias efectivas.</target>
       </trans-unit>
       <trans-unit id="5968" resname="r796389885" restype="string" datatype="x-haml">
         <source>Improve clinical outcomes across the spectrum of indications</source>
-        <target>Mejora los resultados clínicos a través del espectro de indicaciones</target>
+        <target>Mejorar los resultados clínicos a través del espectro de indicaciones</target>
       </trans-unit>
       <trans-unit id="5969" resname="r156238940" restype="string" datatype="x-haml">
         <source>Debunk hype, myths, and misconceptions</source>
-        <target>Refuta el hype, mitos y conceptos erróneos</target>
+        <target>Refutar el hype, mitos y conceptos erróneos</target>
       </trans-unit>
       <trans-unit id="5970" resname="r732573287" restype="string" datatype="x-haml">
         <source>Promote transparency in drug and treatment and effectiveness</source>
-        <target>Promueve la transparencia en drogas y tratamiento y efectividad</target>
+        <target>Promover la transparencia en drogas y tratamiento y efectividad</target>
       </trans-unit>
       <trans-unit id="5971" resname="r499556803" restype="string" datatype="x-haml">
         <source>Our goal:</source>
@@ -11841,7 +11841,7 @@
       </trans-unit>
       <trans-unit id="9566" resname="r395541068" restype="string" datatype="x-haml">
         <source>Personally Identifiable Information is information that identifies specifically who you are. This includes information like your full name and your email address. We keep this information private by not displaying it or sharing it unless you agree. We keep this information secure, using state of the art encryption among other security measures. More information about our security can be found on our</source>
-        <target>Información Personalmente Identificable es información que identifica específicamente quién eres tú. Esto incluye información como tu nombre completo y tu dirección de correo electrónico. Mantenemos esta información privada al no mostrarla o compartirla a menos de que tu aceptes Mantenemos esta información segura usando cifrado de vanguardia entre otras medidas de seguridad. Más información sobre nuestra seguridad puede ser encontrada en nuestra</target>
+        <target>Información Personalmente Identificable es información que identifica específicamente quien eres tú. Esto incluye información como tu nombre completo y tu dirección de correo electrónico. Mantenemos esta información privada al no mostrarla o compartirla a menos de que tu aceptes Mantenemos esta información segura usando cifrado de vanguardia entre otras medidas de seguridad. Más información sobre nuestra seguridad puede ser encontrada en nuestra</target>
       </trans-unit>
       <trans-unit id="9567" resname="r335031872" restype="string" datatype="x-haml">
         <source>Examples of information that are not Personally Identifiable Information, and how we may use that information, are discussed in this Privacy Statement. To help you stay private and safe, we've created tips and suggestions for</source>
@@ -12149,7 +12149,7 @@
     <body>
       <trans-unit id="6617" resname="r761788636" restype="string" datatype="x-haml">
         <source>Learn more »</source>
-        <target>Aprender Más »</target>
+        <target>Aprende Más »</target>
       </trans-unit>
       <trans-unit id="6618" resname="r365660130" restype="string" datatype="x-haml">
         <source>Apply today to see more patients, help more people, and earn more money with the ultimate flexibility!</source>
@@ -12281,7 +12281,7 @@
       </trans-unit>
       <trans-unit id="6651" resname="r1057407580" restype="string" datatype="x-haml">
         <source>Learn about your benefits and compensation</source>
-        <target>Aprender acerca de tus beneficios y compensación</target>
+        <target>Aprende acerca de tus beneficios y compensación</target>
       </trans-unit>
       <trans-unit id="6652" resname="r469604043" restype="string" datatype="x-haml">
         <source>Sign up for your preferred shifts (first-come, first-served)</source>
@@ -12573,7 +12573,7 @@
       </trans-unit>
       <trans-unit id="6771" resname="r348714875" restype="string" datatype="x-haml">
         <source>created a Virtual Care Course and Certification. Medical</source>
-        <target>creamos un Virtual Care Course and Certification. Facultativos</target>
+        <target>creamos un Curso y Certificación de Atención Virtual. Facultativos</target>
       </trans-unit>
       <trans-unit id="6772" resname="r563306208" restype="string" datatype="x-haml">
         <source>practitioners learn from experts the best practices and</source>
@@ -12905,7 +12905,7 @@
       </trans-unit>
       <trans-unit id="6920" resname="r30563468" restype="string" datatype="x-haml">
         <source>HealthTap should not be used to address medical emergencies. If it's a critical situation, patients should call 911 or go to the Emergency Room of their local hospital.</source>
-        <target>HealthTap no debe de ser usada para atender emergencias médicas. Si se trata de una situación crítica, pacientes deben de llamar al 911 o ir a la Sala de Emergencias de su hospital local.</target>
+        <target>HealthTap no debe de ser usada para atender emergencias médicas. Si se trata de una situación crítica, pacientes deben de llamar al 911 o ir a la Sala de Urgencias de su hospital local.</target>
       </trans-unit>
     </body>
   </file>
@@ -13265,7 +13265,7 @@
       </trans-unit>
       <trans-unit id="7126" resname="r141734101" restype="string" datatype="x-haml">
         <source>That same passion and drive can be seen in HealthTap. Under Ron’s leadership, HealthTap has already brought together more than 100 million consumers with tens of thousands of doctors across the country, who provide trusted, high-quality, instant health information to the world, already serving more than a billion health answers to people everywhere.</source>
-        <target>Esa misma pasión e impulso pueden ser vistos en HealthTap. Bajo el liderazgo de Ron, HealthTap ya ha juntado a más de 100 millones de consumidores con decenas de miles de doctores por todo el país, ya sirviendo a más de un billones de respuestas de salud a gente en todas partes.</target>
+        <target>Esa misma pasión e impulso pueden ser vistos en HealthTap. Bajo el liderazgo de Ron, HealthTap ya ha juntado a más de 100 millones de consumidores con decenas de miles de doctores por todo el país, ya sirviendo a más de un billón de respuestas de salud a gente en todas partes.</target>
       </trans-unit>
       <trans-unit id="7127" resname="r557054913" restype="string" datatype="x-haml">
         <source>TED The Untapped Power of Smiling</source>
@@ -13567,13 +13567,9 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos -de corazón- simplemente queremos</target>
       </trans-unit>
-      <trans-unit id="7201" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target>Todas estas cosas nos hacen</target>
-      </trans-unit>
       <trans-unit id="7202" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
-        <target>al cuidarnos y dándonos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer al mundo un mejor lugar.</target>
+        <target>al cuidarnos y dándonos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer del mundo un lugar mejor.</target>
       </trans-unit>
       <trans-unit id="7203" resname="r52930992" restype="string" datatype="x-haml">
         <source>Doctors help us</source>
@@ -13581,11 +13577,11 @@
       </trans-unit>
       <trans-unit id="7204" resname="r628043353" restype="string" datatype="x-haml">
         <source>every day, please join us!</source>
-        <target>todos los días, por favor, únetenos!</target>
+        <target state="accepted">todos los días, por favor únete a nosotros!</target>
       </trans-unit>
       <trans-unit id="7206" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
-        <target>Estamos emocionados de haber reinventado como el mundo experimenta la salud y</target>
+        <target>Estamos entusiasmados de haber reinventado como el mundo experimenta la salud y</target>
       </trans-unit>
       <trans-unit id="7207" resname="r203704905" restype="string" datatype="x-haml">
         <source>...to help everyone</source>
@@ -13641,19 +13637,19 @@
       </trans-unit>
       <trans-unit id="7225" resname="r479404643" restype="string" datatype="x-haml">
         <source>Having a good, hard laugh.</source>
-        <target>Riéndonos bueno y duro.</target>
+        <target state="accepted">Reirse con ganas.</target>
       </trans-unit>
       <trans-unit id="7226" resname="r297407413" restype="string" datatype="x-haml">
         <source>Paying someone a compliment.</source>
-        <target>Hacerle un cumplido a alguien.</target>
+        <target state="accepted">Halagar a alguien.</target>
       </trans-unit>
       <trans-unit id="7227" resname="r728720522" restype="string" datatype="x-haml">
         <source>Sharing a delicious meal with people we care about.</source>
-        <target>Compartir una deliciosa comida con la gente que nos importa.</target>
+        <target state="accepted">Compartir una comida deliciosa con quienes nos importan.</target>
       </trans-unit>
       <trans-unit id="7228" resname="r791261932" restype="string" datatype="x-haml">
         <source>Looking up and noticing the beauty of our surroundings.</source>
-        <target>Observando y notando la belleza de nuestro alrededor.</target>
+        <target state="accepted">Observar y notar la belleza de nuestro alrededor.</target>
       </trans-unit>
       <trans-unit id="7229" resname="r255728008" restype="string" datatype="x-haml">
         <source>Gratitude.</source>
@@ -13709,7 +13705,7 @@
       </trans-unit>
       <trans-unit id="7242" resname="r672694585" restype="string" datatype="x-haml">
         <source>, and to help others do the same. In large and small ways, we strive to help everyone with whom we</source>
-        <target>, y para ayudar a otros a hacer lo mismo. De formas grandes y pequeñas, luchamos para ayudar a todos con quienes nosotros</target>
+        <target>, y para ayudar a otros a hacer lo mismo. De maneras grandes y pequeñas, nos esforzamos para ayudar a todos con quienes</target>
       </trans-unit>
       <trans-unit id="7243" resname="r789467963" restype="string" datatype="x-haml">
         <source>We value sense of adventure</source>
@@ -13737,7 +13733,7 @@
     <body>
       <trans-unit id="7248" resname="r571784735" restype="string" datatype="x-haml">
         <source>Heart-warming stories from millions of members our doctors helped</source>
-        <target>Historias reconfortantes de millones me miembros que nuestros doctores han ayudado</target>
+        <target state="accepted">Historias alentadoras de millones de miembros ayudados por nuestros doctores</target>
       </trans-unit>
     </body>
   </file>
@@ -13917,7 +13913,7 @@
     <body>
       <trans-unit id="7293" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target>es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target>es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
       <trans-unit id="7294" resname="r162156137" restype="string" datatype="x-haml">
         <source>develop, and direct some of the most successful companies of our day.</source>
@@ -13925,7 +13921,7 @@
       </trans-unit>
       <trans-unit id="7295" resname="r895599030" restype="string" datatype="x-haml">
         <source>What our investors have to say</source>
-        <target>Lo que nuestros inversionistas tienen que decir</target>
+        <target>Lo que dicen nuestros inversionistas</target>
       </trans-unit>
     </body>
   </file>
@@ -13973,7 +13969,7 @@
       </trans-unit>
       <trans-unit id="7308" resname="r431371713" restype="string" datatype="x-haml">
         <source>Medical / Health Research / Writing</source>
-        <target>Médica / Investigación en salud / Redacción</target>
+        <target>Médica / Investigación en Salud / Redacción</target>
       </trans-unit>
       <trans-unit id="7309" resname="r426576173" restype="string" datatype="x-haml">
         <source>What our interns are saying</source>
@@ -14097,7 +14093,7 @@
       </trans-unit>
       <trans-unit id="7423" resname="r689982261" restype="string" datatype="x-haml">
         <source>Provides the right care at the right time at the right cost</source>
-        <target>Brinda la atención adecuada, en el tiempo adecuado y al costo adecuado</target>
+        <target>Brinda la atención adecuada, en el momento adecuado y al costo adecuado</target>
       </trans-unit>
     </body>
   </file>
@@ -14105,11 +14101,11 @@
     <body>
       <trans-unit id="7424" resname="r439736920" restype="string" datatype="x-haml">
         <source>A New Healthcare Experience</source>
-        <target>Una Nueva Experiencia de Atención a la Salud</target>
+        <target>Una Nueva Experiencia de Atención de la Salud</target>
       </trans-unit>
       <trans-unit id="7425" resname="r340712015" restype="string" datatype="x-haml">
         <source>HealthTap is the world’s first Global Health Practice</source>
-        <target>HealthTap es el primer Consultorio de Salud Global</target>
+        <target>HealthTap es el primer Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>
@@ -14129,11 +14125,11 @@
     <body>
       <trans-unit id="7428" resname="r580143816" restype="string" datatype="x-haml">
         <source>A personalized engaging health experience</source>
-        <target>Una atractiva experiencia de salud personalizada</target>
+        <target>Una atractiva experiencia médica personalizada</target>
       </trans-unit>
       <trans-unit id="7429" resname="r731765498" restype="string" datatype="x-haml">
         <source>For everyone at any stage of providing or receiving care, from query to cure</source>
-        <target>Para todos en cualquier etapa de brindar o recibir cuidado, de duda a cura</target>
+        <target>Para todos en cualquier etapa de brindar o recibir atención, de duda a cura</target>
       </trans-unit>
     </body>
   </file>
@@ -14161,7 +14157,7 @@
     <body>
       <trans-unit id="7433" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables que son centrados en el consumidor, de aprendizaje constante e inteligentes.</target>
+        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
       <trans-unit id="7434" resname="r317955052" restype="string" datatype="x-haml">
         <source>Connected systems are smarter</source>
@@ -14201,7 +14197,7 @@
     <body>
       <trans-unit id="7441" resname="r903714548" restype="string" datatype="x-haml">
         <source>TRUSTED BY</source>
-        <target>CONFIADO POR</target>
+        <target state="accepted">AVALADO POR</target>
       </trans-unit>
     </body>
   </file>
@@ -14209,7 +14205,7 @@
     <body>
       <trans-unit id="7442" resname="r107388386" restype="string" datatype="x-haml">
         <source>HOPES: Interoperable, engaging, smart</source>
-        <target>HOPES: Interoperable, atractivo, inteligente</target>
+        <target state="accepted">HOPES: Interoperable, atractivo, inteligente</target>
       </trans-unit>
       <trans-unit id="7443" resname="r486641350" restype="string" datatype="x-haml">
         <source>We’ve built the world’s first Health Operating System (HOPES</source>
@@ -14229,11 +14225,11 @@
     <body>
       <trans-unit id="7445" resname="r4022987" restype="string" datatype="x-haml">
         <source>HealthTap instantly connects millions of people</source>
-        <target>HealthTap conecta instantáneamente a millones de personas</target>
+        <target state="accepted">HealthTap proporciona instantáneamente atención de la salud de alta calidad a millones de personas,</target>
       </trans-unit>
       <trans-unit id="7446" resname="r927171372" restype="string" datatype="x-haml">
         <source>to high-quality care anytime, anywhere</source>
-        <target>a atención a la salud de alta calidad, a cualquier hora y en cualquier lugar.</target>
+        <target state="accepted">a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
@@ -14285,7 +14281,7 @@
       </trans-unit>
       <trans-unit id="7463" resname="r208508086" restype="string" datatype="x-haml">
         <source>Actionable health checklists personalized for you by a doctor. Fresh, delightful TipTaps selected just for you. News and research tailored to your special interests.</source>
-        <target>Listados de salud viables personalizados para ti por un doctor. TipTaps frescos y encantadores seleccionados solo para ti. Noticias e investigación ajustadas a tus intereses especiales.</target>
+        <target>Viables listados de salud personalizados para ti por un doctor. TipTaps frescos y encantadores seleccionados solo para ti. Noticias e investigación ajustadas a tus intereses especiales.</target>
       </trans-unit>
       <trans-unit id="7464" resname="r215045600" restype="string" datatype="x-haml">
         <source>Health information you can genuinely trust</source>
@@ -14605,11 +14601,11 @@
       </trans-unit>
       <trans-unit id="7605" resname="r489957734" restype="string" datatype="x-haml">
         <source>Gain valuable insights</source>
-        <target>¡Gana valiosa perspicacia</target>
+        <target>¡Gana valiosa conocimiento médico</target>
       </trans-unit>
       <trans-unit id="7606" resname="r709113876" restype="string" datatype="x-haml">
         <source>and feel good!</source>
-        <target>y siéntete bien!</target>
+        <target>y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="7607" resname="r511436519" restype="string" datatype="x-haml">
         <source>Our doctors will</source>
@@ -14649,7 +14645,7 @@
       </trans-unit>
       <trans-unit id="7616" resname="r681983298" restype="string" datatype="x-haml">
         <source>Gain valuable insights and feel good!</source>
-        <target>¡Gana valiosa perspicacia y siéntete bien!</target>
+        <target>¡Gana valiosa conocimiento médico y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="7617" resname="r531995203" restype="string" datatype="x-haml">
         <source>in 137 specialties are standing by</source>
@@ -14817,7 +14813,7 @@
       </trans-unit>
       <trans-unit id="7658" resname="r593998915" restype="string" datatype="x-haml">
         <source>insights to the question or</source>
-        <target>perspicacias para la pregunta o</target>
+        <target>conocimientos médicos para la pregunta o</target>
       </trans-unit>
       <trans-unit id="7659" resname="r736960072" restype="string" datatype="x-haml">
         <source>case at hand, contributing</source>
@@ -14929,7 +14925,7 @@
     <body>
       <trans-unit id="7724" resname="r353424777" restype="string" datatype="x-haml">
         <source>No worries! Let us know your email and we'll send you a link to reset it.</source>
-        <target>¡No te preocupes! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla.</target>
+        <target>¡Sin preocuparte! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla.</target>
       </trans-unit>
       <trans-unit id="7725" resname="r948901569" restype="string" datatype="x-haml">
         <source>Reset password</source>
@@ -14945,7 +14941,7 @@
       </trans-unit>
       <trans-unit id="7728" resname="r385637418" restype="string" datatype="x-haml">
         <source>We just sent you a link to reset your password. If you don't see it after a few minutes, please check your Spam folder</source>
-        <target>Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu folder de Spam</target>
+        <target state="accepted">Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu carpeta de correo no deseado.</target>
       </trans-unit>
       <trans-unit id="7729" resname="r751548890" restype="string" datatype="x-haml">
         <source>Return to log in</source>
@@ -14989,7 +14985,7 @@
       </trans-unit>
       <trans-unit id="7757" resname="r311916177" restype="string" datatype="x-haml">
         <source>Free personalized, timely doctor insights emailed to you each week!</source>
-        <target>¡Perspicacias gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
+        <target>¡Conocimientos médicos gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
       </trans-unit>
       <trans-unit id="7758" resname="r975855663" restype="string" datatype="x-haml">
         <source>Action-oriented checklists personalized to you</source>
@@ -15057,7 +15053,7 @@
       </trans-unit>
       <trans-unit id="7941" resname="r603913558" restype="string" datatype="x-haml">
         <source>You can differentiate yourself by offering your policy holders tools to browse through in-network doctor profiles, rankings, and answers to</source>
-        <target>Puedes diferenciarte al ofrecer a tus derechohabientes herramientas para ojear a través de los perfiles de médicos en red, además de rankings, y respuestas a</target>
+        <target>Puedes diferenciarte al ofrecer a tus derechohabientes herramientas para navegar a través de los perfiles de médicos en red, además de rankings, y respuestas a</target>
       </trans-unit>
       <trans-unit id="7942" resname="r457920260" restype="string" datatype="x-haml">
         <source>using our robust APIs:</source>
@@ -15485,7 +15481,7 @@
     <body>
       <trans-unit id="8047" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target>Para preguntas o comentarios acerca de usar</target>
+        <target>Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
       <trans-unit id="8048" resname="r998282891" restype="string" datatype="x-haml">
         <source>Come Visit Us!</source>
@@ -15621,7 +15617,7 @@
       </trans-unit>
       <trans-unit id="8064" resname="r628785151" restype="string" datatype="x-haml">
         <source>Save time, money, and feel good faster</source>
-        <target>Ahorra tiempo, dinero y siéntete bien más rápido</target>
+        <target>Ahorra tiempo, dinero y sentirse bien más rápido</target>
       </trans-unit>
       <trans-unit id="8065" resname="r849741692" restype="string" datatype="x-haml">
         <source>Ask your question and we'll connect you to a doctor:</source>
@@ -15793,7 +15789,7 @@
       </trans-unit>
       <trans-unit id="8153" resname="r7086276" restype="string" datatype="x-haml">
         <source>HealthTap Concierge is already used by doctors in 100+ specialties</source>
-        <target>HealthTap Concierge ya es usado por doctores en más de 100 especialidades</target>
+        <target>HealthTap Concierge ya es usado por doctores en 100+ especialidades</target>
       </trans-unit>
       <trans-unit id="8154" resname="r744141743" restype="string" datatype="x-haml">
         <source>Choose your specialty and we’ll show you how:</source>
@@ -16373,7 +16369,7 @@
       </trans-unit>
       <trans-unit id="8295" resname="r334961809" restype="string" datatype="x-haml">
         <source>Enables universal access to the right care at the right time at the right price</source>
-        <target>Hace posible acceso universal a la atención adecuada, en el tiempo adecuado y al costo adecuado</target>
+        <target>Hace posible acceso universal a la atención adecuada, en el momento adecuado y al costo adecuado</target>
       </trans-unit>
       <trans-unit id="8296" resname="r1070182258" restype="string" datatype="x-haml">
         <source>Use video, voice, and text chat on any smartphone, tablet, or personal computer</source>
@@ -17357,19 +17353,19 @@
       </trans-unit>
       <trans-unit id="8647" resname="r885364724" restype="string" datatype="x-haml">
         <source>Or browse top iOS apps by category:</source>
-        <target>U ojea las mejores aplicaciones para iOS por categoría:</target>
+        <target>O navega las mejores aplicaciones para iOS por categoría:</target>
       </trans-unit>
       <trans-unit id="8648" resname="r293565523" restype="string" datatype="x-haml">
         <source>Browse top iOS apps by category:</source>
-        <target>Ojea las mejores aplicaciones para iOS por categoría:</target>
+        <target>Navega las mejores aplicaciones para iOS por categoría:</target>
       </trans-unit>
       <trans-unit id="8649" resname="r132131739" restype="string" datatype="x-haml">
         <source>Or browse top Android apps by category:</source>
-        <target>U ojea las mejores aplicaciones para Android por categoría:</target>
+        <target>O navega las mejores aplicaciones para Android por categoría:</target>
       </trans-unit>
       <trans-unit id="8650" resname="r286862498" restype="string" datatype="x-haml">
         <source>Browse top Android apps by category:</source>
-        <target>Ojea las mejores aplicaciones para Android por categoría:</target>
+        <target>Navega las mejores aplicaciones para Android por categoría:</target>
       </trans-unit>
     </body>
   </file>
@@ -17413,7 +17409,7 @@
       </trans-unit>
       <trans-unit id="8665" resname="r243183111" restype="string" datatype="x-haml">
         <source>Easy, quick connection with thousands of top doctors in 100+ specialties</source>
-        <target>Conexión fácil y rápida con miles de los mejores doctores en más de 100 especialidades</target>
+        <target>Conexión fácil y rápida con miles de los mejores doctores en 100+ especialidades</target>
       </trans-unit>
       <trans-unit id="8666" resname="r232094931" restype="string" datatype="x-haml">
         <source>Steve sees that</source>
@@ -17453,7 +17449,7 @@
       </trans-unit>
       <trans-unit id="8675" resname="r265705778" restype="string" datatype="x-haml">
         <source>Apple’s Health App data helps HealthTap doctors gain insights about you</source>
-        <target>Los datos de la Aplicación de Salud de Apple ayudan a los doctores de HealthTap a ganar perspicacias sobre ti</target>
+        <target>Los datos de la Aplicación de Salud de Apple ayudan a los doctores de HealthTap a ganar conocimientos médicos sobre ti</target>
       </trans-unit>
       <trans-unit id="8676" resname="r885449144" restype="string" datatype="x-haml">
         <source>Steve receives a personalized, actionable checklist from</source>
@@ -17565,7 +17561,7 @@
       </trans-unit>
       <trans-unit id="8704" resname="r475860836" restype="string" datatype="x-haml">
         <source>Health Graph-based custom feed provides doctor created and rated tips, news, checklist and app reviews</source>
-        <target>La fuente personalizada de salud basada en gráficos brinda tips, noticias, listados y críticas de aplicaciones por doctores</target>
+        <target>Fuente personalizada basada en Gráficos de Salud brinda tips, noticias, listados y críticas de aplicaciones por doctores</target>
       </trans-unit>
       <trans-unit id="8705" resname="r487050758" restype="string" datatype="x-haml">
         <source>Jane connects with</source>
@@ -17585,7 +17581,7 @@
       </trans-unit>
       <trans-unit id="8709" resname="r988459126" restype="string" datatype="x-haml">
         <source>Schedule virtual appointments with your own doctor in 100+ specialties via secure video or text chat</source>
-        <target>Agenda citas virtuales con tu propio doctor en más de 100 especialidades a través de chat de texto o video seguro</target>
+        <target>Agenda citas virtuales con tu propio doctor en 100+ especialidades a través de chat de texto o video seguro</target>
       </trans-unit>
       <trans-unit id="8710" resname="r216497473" restype="string" datatype="x-haml">
         <source>In preparation for her</source>
@@ -18841,7 +18837,7 @@
       </trans-unit>
       <trans-unit id="8915" resname="r1067896574" restype="string" datatype="x-haml">
         <source>Browse articles using the “</source>
-        <target>Ojea artículos usando el “</target>
+        <target>Navega artículos usando el “</target>
       </trans-unit>
       <trans-unit id="8916" resname="r584559736" restype="string" datatype="x-haml">
         <source>Select “</source>
@@ -19037,19 +19033,19 @@
       </trans-unit>
       <trans-unit id="12393" resname="r135315173" restype="string" datatype="x-haml">
         <source>100K DOCTOR CAMPAIGN!</source>
-        <target>¡CAMPAÑA DE 100K DOCTORES!</target>
+        <target>¡CAMPAÑA DE 100,000 DOCTORES!</target>
       </trans-unit>
       <trans-unit id="12394" resname="r379782262" restype="string" datatype="x-haml">
         <source>10K</source>
-        <target>10K</target>
+        <target>10,000</target>
       </trans-unit>
       <trans-unit id="12395" resname="r700195252" restype="string" datatype="x-haml">
         <source>70K</source>
-        <target>70K</target>
+        <target>70,000</target>
       </trans-unit>
       <trans-unit id="12396" resname="r879358596" restype="string" datatype="x-haml">
         <source>100K</source>
-        <target>100K</target>
+        <target>100,000</target>
       </trans-unit>
       <trans-unit id="12397" resname="r793695298" restype="string" datatype="x-haml">
         <source>days left!</source>
@@ -19057,7 +19053,7 @@
       </trans-unit>
       <trans-unit id="12398" resname="r654214102" restype="string" datatype="x-haml">
         <source>Help your network grow to 100k doctors!</source>
-        <target>¡Ayuda a tu red a crecer a 100K doctores!</target>
+        <target>¡Ayuda a tu red a crecer a 100,000 doctores!</target>
       </trans-unit>
       <trans-unit id="12399" resname="r681799129" restype="string" datatype="x-haml">
         <source>Tell your colleagues they can get free category 1 CME credit for helping people everywhere!</source>
@@ -19277,7 +19273,7 @@
       </trans-unit>
       <trans-unit id="9023" resname="r404679213" restype="string" datatype="x-haml">
         <source>To see more doctor insights...</source>
-        <target>Para ver más perspicacias de doctores...</target>
+        <target>Para ver más conocimientos médicos de doctores...</target>
       </trans-unit>
       <trans-unit id="9024" resname="r13825231" restype="string" datatype="x-haml">
         <source>Send question to doctors</source>
@@ -19381,7 +19377,7 @@
     <body>
       <trans-unit id="9081" resname="r971162521" restype="string" datatype="x-haml">
         <source>FeelGood Moment :)</source>
-        <target>Momento FeelGood :)</target>
+        <target>Momentos de Sentirse Bien :)</target>
       </trans-unit>
     </body>
   </file>
@@ -19417,7 +19413,7 @@
       </trans-unit>
       <trans-unit id="9097" resname="r299753692" restype="string" datatype="x-haml">
         <source>Share 3 FeelGood moments</source>
-        <target>Comparte 3 momentos FeelGood</target>
+        <target>Comparte 3 momentos de Sentirse Bien</target>
       </trans-unit>
       <trans-unit id="9098" resname="r488057756" restype="string" datatype="x-haml">
         <source>Review 5 news articles</source>
@@ -19589,7 +19585,7 @@
       </trans-unit>
       <trans-unit id="9127" resname="r281284292" restype="string" datatype="x-haml">
         <source>View in App Store</source>
-        <target>Ve en App Store</target>
+        <target>Ver en App Store</target>
       </trans-unit>
       <trans-unit id="9128" resname="r891485340" restype="string" datatype="x-haml">
         <source>recommended this app</source>
@@ -19649,7 +19645,7 @@
       </trans-unit>
       <trans-unit id="9172" resname="r946959817" restype="string" datatype="x-haml">
         <source>Insights</source>
-        <target>Perspicacias</target>
+        <target state="accepted">Conocimientos</target>
       </trans-unit>
       <trans-unit id="9173" resname="r396672595" restype="string" datatype="x-haml">
         <source>Recommend me</source>
@@ -19661,7 +19657,7 @@
       </trans-unit>
       <trans-unit id="9175" resname="r187306068" restype="string" datatype="x-haml">
         <source>Here are some of my top insights</source>
-        <target>Aquí están algunas de mis mejores perspicacias</target>
+        <target>Aquí están algunas de mis mejores conocimientos médicos</target>
       </trans-unit>
     </body>
   </file>
@@ -19833,7 +19829,7 @@
     <body>
       <trans-unit id="9210" resname="r506108837" restype="string" datatype="x-haml">
         <source>To-Do</source>
-        <target>Qué Hacer</target>
+        <target>Por Hacer</target>
       </trans-unit>
       <trans-unit id="13225" resname="r522633534" restype="string" datatype="x-haml">
         <source>No checklist</source>
@@ -20285,7 +20281,7 @@
       </trans-unit>
       <trans-unit id="9334" resname="r21228038" restype="string" datatype="x-haml">
         <source>Browse now ›</source>
-        <target>Ojea ahora ›</target>
+        <target>Navegar ahora ›</target>
       </trans-unit>
     </body>
   </file>
@@ -20329,7 +20325,7 @@
       </trans-unit>
       <trans-unit id="9362" resname="r748669237" restype="string" datatype="x-haml">
         <source>By continuing, you understand the</source>
-        <target>Al continuar, comprendes los</target>
+        <target>Al continuar, comprendes que</target>
       </trans-unit>
       <trans-unit id="9363" resname="r862687964" restype="string" datatype="x-haml">
         <source>for Virtual Consults and agree to the</source>
@@ -20377,7 +20373,7 @@
       </trans-unit>
       <trans-unit id="9374" resname="r409122942" restype="string" datatype="x-haml">
         <source>Feel good :)</source>
-        <target>Siéntete Bien :)</target>
+        <target>Sentirese Bien :)</target>
       </trans-unit>
       <trans-unit id="9375" resname="r172411307" restype="string" datatype="x-haml">
         <source>Suggested goals for you</source>
@@ -21737,7 +21733,7 @@
       </trans-unit>
       <trans-unit id="10042" resname="r561156510" restype="string" datatype="x-haml">
         <source>Feel good faster with helpful doctor-created checklists and reminders!</source>
-        <target>¡Siéntete bien más rápido con útiles listas y recordatorios creados por doctores!</target>
+        <target>¡Sentirse bien más rápido con útiles listas y recordatorios creados por doctores!</target>
       </trans-unit>
       <trans-unit id="10043" resname="r239283721" restype="string" datatype="x-haml">
         <source>How other moms use HealthTap PRIME</source>
@@ -21785,7 +21781,7 @@
       </trans-unit>
       <trans-unit id="10055" resname="r772979060" restype="string" datatype="x-haml">
         <source>— Mark and Sue, couple</source>
-        <target>— Mark and Sue, pareja</target>
+        <target>— Mark y Sue, pareja</target>
       </trans-unit>
       <trans-unit id="10056" resname="r473068241" restype="string" datatype="x-haml">
         <source>— Jake B., father of two</source>
@@ -22605,7 +22601,7 @@
       </trans-unit>
       <trans-unit id="10407" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="10408" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
@@ -22621,7 +22617,7 @@
       </trans-unit>
       <trans-unit id="10411" resname="r144064497" restype="string" datatype="x-haml">
         <source>HealthTap contains Content, and may help you identify services or may offer services. Everything on HealthTap, including Content accessed or Services provided through HealthTap, are for your information, and should be used for informational purposes only. This means that Content and Services are not a substitute for medical advice, diagnosis, treatment, or care from your doctor.</source>
-        <target>HealthTap contiene Contenido, y puede ayudarte a identificar servicios o puede ofrecerte servicios. Todo en HealthTap, incluyendo el Contenido accedido o los Servicios brindados a través de HealthTap, son para tu información, y deberán usados para fines informativos solamente. Esto significa que el Contenido y Servicios no son sustitutos para consejo médico, diagnóstico, tratamiento, o atención de tu doctor.</target>
+        <target>HealthTap contiene Contenido, y puede ayudarte a identificar servicios o puede ofrecerte servicios. Todo en HealthTap, incluyendo el Contenido accedido o los Servicios brindados a través de HealthTap, son para tu información, y deberán usados para fines informativos solamente. Esto significa que el Contenido y Servicios no son sustituto para consejo médico, diagnóstico, tratamiento, o atención de tu doctor.</target>
       </trans-unit>
       <trans-unit id="10413" resname="r534262575" restype="string" datatype="x-haml">
         <source>Accurate and complete registration information is required to use HealthTap. All members are encouraged to use password common sense: safeguard your log in password, pick a password that cannot be guessed by others, keep it private, and periodically change it. You are responsible for the security of your passwords and for any use of your account. Please immediately notify us of any unauthorized use of your password or account. As a part of registration you will create a profile with a Public Profile Name. Like your password, if you wish to remain anonymous, use common sense: safeguard your Public Profile Name, pick a name that cannot be guessed by others, and keep it private. Do not use your real name, or the real name of any one related to you when selecting your Public Profile Name. Allowing any other person or entity to use your identity for posting on or using HealthTap is not permitted. Do not include your real name or any other information that could be used to identify you in anything you post on HealthTap, including questions, comments, or other submissions.</source>
@@ -22641,7 +22637,7 @@
       </trans-unit>
       <trans-unit id="10417" resname="r510916118" restype="string" datatype="x-haml">
         <source>HealthTap is a service for individuals to use to support their personal health decisions. You may use HealthTap for personal, but not for commercial, purposes. Organizations, companies, and businesses may not become registered members or use our Apps through individual members. Licensed doctors and other qualified medical experts (as described on our Medical Experts pages) may apply to participate on HealthTap for educational purposes as Medical Experts. We authorize you to view or download the Content and use the Services solely for your personal, noncommercial use in accordance with all applicable federal, state and local laws. The Content is licensed only for the personal, household, and educational use of a single individual. An individual's noncommercial reuse or redistribution of any portion of the Content is permitted when that use falls within what is permitted by United States Copyright law or the Lanham Act. These laws govern general personal use of copyrighted information. No commercial use or redistribution of any Content is permitted. Any hyperlink or other re-display of the information on another website must display the Content full-screen and not within a "frame" on the linked or other site, unless expressly pre-approved and permitted by us in writing. By using HealthTap, you agree not use any contact information provided by members (for example, in a private message exchange between connected members), or harvest, scrape or otherwise collect any information about our members for any reason, including but not limited to for sending unsolicited communications, including spam.</source>
-        <target state="accepted">HealthTap es un servicio para ser usado como soporte por individuos para apoyar sus decisiones de salud personal. Puedes usar HealthTap para fines personales, pero no comerciales. Organizaciones, compañias y negocios no pueden convertirse en miembros registrados o usar nuestas Aplicaciones a través de miembros individuales. Doctores acreditados y otros expertos médicos calificados (según descritos en nuestra páginas de Expertos Médicos) pueden aplicar para participar enHealthTap para fines educativos como Expertos Médicos. Nosotros te autorizamos a ver o descargar el Contenido y usar los Servicios solo para tu uso personal, no comercial de acuerdo con todas las leyes federales, estatales y locales aplicables. El Contenido esta autorizado solo para el uso personal, de casa y educativo de un solo individuo. El resuso no comercial o redistribución por un individuo de cualquier porción del Contenido está permitido cuando el uso cae dentro de lo que es permitido por United States Copyright Law o el Lanham Act. Estas leyes gobiernan el uso personal genreal de información con derechos de autor. Ningún uso o redistribución comercial de ningún Contenido está permitido. Cualquier hipervínculo u otro forma de visualización de la información en otro sitio web debe mostrar el Contenido en pantalla completa y no dentro de un “marco” en el vínculo u otro sitio, a menos de que sea explícitamente aprobado previamente por nosotros por escrito. Al usar HealthTap, tú aceptas no usar ninguna información de contacto proporcionada por miembros (por ejemplo, en un mensaje privado intercambiado entre miembros conectados)o recolectar, raspar o recopilar cualquier información de otra forma sobre nuestros miembros o doctores por cualquier razón, incluyendo pero no limitando a enviar comunicaciones no solicitadas, incluyendo spam.</target>
+        <target state="accepted">HealthTap es un servicio para ser usado como soporte por individuos para apoyar sus decisiones de salud personal. Puedes usar HealthTap para fines personales, pero no comerciales. Organizaciones, compañias y negocios no pueden convertirse en miembros registrados o usar nuestas Aplicaciones a través de miembros individuales. Doctores acreditados y otros expertos médicos calificados (según descritos en nuestra páginas de Expertos Médicos) pueden aplicar para participar enHealthTap para fines educativos como Expertos Médicos. Nosotros te autorizamos a ver o descargar el Contenido y usar los Servicios solo para tu uso personal, no comercial de acuerdo con todas las leyes federales, estatales y locales aplicables. El Contenido esta autorizado solo para el uso personal, de casa y educativo de un solo individuo. El resuso no comercial o redistribución por un individuo de cualquier porción del Contenido está permitido cuando el uso cae dentro de lo que es permitido por United States Copyright Law o el Lanham Act. Estas leyes gobiernan el uso personal genreal de información con derechos de autor. Ningún uso o redistribución comercial de ningún Contenido está permitido. Cualquier hipervínculo u otro forma de visualización de la información en otro sitio web debe mostrar el Contenido en pantalla completa y no dentro de un “marco” en el vínculo u otro sitio, a menos de que sea explícitamente aprobado previamente por nosotros por escrito. Al usar HealthTap, tu aceptas no usar ninguna información de contacto proporcionada por miembros (por ejemplo, en un mensaje privado intercambiado entre miembros conectados)o recolectar, raspar o recopilar cualquier información de otra forma sobre nuestros miembros o doctores por cualquier razón, incluyendo pero no limitando a enviar comunicaciones no solicitadas, incluyendo spam.</target>
       </trans-unit>
       <trans-unit id="10420" resname="r261611263" restype="string" datatype="x-haml">
         <source>To the extent that any of the Content included on HealthTap is provided by third party content providers or other users, we have no editorial control or responsibility of such content appearing on HealthTap. Therefore, any opinions, statements, products, services or other information expressed or made available by third parties (including Medical Experts) or users on HealthTap are those of such third parties or users, respectively. We make no representations about the accuracy or reliability of any opinion, statement or other information provided by any third party, and do not represent or warrant that your use of the Content displayed on HealthTap or referenced content or service providers will not infringe rights of third parties not owned by or affiliated with HealthTap.</source>
@@ -22649,7 +22645,7 @@
       </trans-unit>
       <trans-unit id="10421" resname="r600585056" restype="string" datatype="x-haml">
         <source>HealthTap does not guarantee the accuracy of Third Party Content.</source>
-        <target>HealthTap no garantiza la certeza del Contenido de Terceras Partes.</target>
+        <target>HealthTap no garantiza la certeza del Contenido de Tercera Parte.</target>
       </trans-unit>
       <trans-unit id="10422" resname="r825028266" restype="string" datatype="x-haml">
         <source>Now or in the future, the Content and Services may link you to other websites, apps, or information, software, data, or other contents, on or off the Internet. These other sites or and contents are not HealthTap, and the information there is outside of our control. What does this mean? It means that we do not control, endorse, or review the content of these sites. We do not review the contents that may be reached by such links, and we are not responsible for such content. Your linking to any other pages on other sites is at your own risk. The information, software, data, or other contents (including opinions, claims, comments) contained in linked references are those of the companies responsible for such sites, and should not be attributed to us. We have not attempted to verify the truth or accuracy of any such opinion, claim, or comment, nor do we endorse or support them. We do not warrant, nor are we in any way responsible for, information, software, data, privacy policies, or other content that is outside of our control.</source>
@@ -22681,7 +22677,7 @@
       </trans-unit>
       <trans-unit id="10429" resname="r746026877" restype="string" datatype="x-haml">
         <source>You agree not to access, attempt to access, request access not authorized by HealthTap or use any HealthTap data without our Permission. This means that you agree not to transmit, download, upload, post, sell, rent, license, transfer, disclose, mirror, frame, reverse engineer, decompile, disassemble, or use any aspect of HealthTap or any Content, in whole or in part, in any form or by any means.</source>
-        <target>Tú aceptas no acceder, intentar acceder, solicitar acceso no autorizado por HealthTap o usar cualquier Contenido de HealthTap o datos sin nuestro Permiso. Esto significa que tú aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licencias, transferir, divulgar, duplicar, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de HealthTap o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
+        <target>Tú aceptas no acceder, intentar acceder, solicitar acceso no autorizado por HealthTap o usar cualquier Contenido de HealthTap o datos sin nuestro Permiso. Esto significa que tu aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licencias, transferir, divulgar, duplicar, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de HealthTap o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
       </trans-unit>
       <trans-unit id="10430" resname="r442610529" restype="string" datatype="x-haml">
         <source>If you believe any materials accessible on or from HealthTap infringe your copyright, you may request removal of those materials (or access thereto) from us by contacting and providing us with information pursuant to our</source>
@@ -24185,11 +24181,11 @@
     <body>
       <trans-unit id="10862" resname="r847637708" restype="string" datatype="x-haml">
         <source>Member Sign Up</source>
-        <target>Registro de Miembro</target>
+        <target>Registro para Miembros</target>
       </trans-unit>
       <trans-unit id="10863" resname="r649986389" restype="string" datatype="x-haml">
         <source>Doctor Sign Up</source>
-        <target>Registro de Doctor</target>
+        <target>Registro para Doctores</target>
       </trans-unit>
     </body>
   </file>
@@ -24413,7 +24409,7 @@
       </trans-unit>
       <trans-unit id="10931" resname="r664103267" restype="string" datatype="x-haml">
         <source>Help and Support</source>
-        <target>Ayuda y Soporte</target>
+        <target>Ayuda y Apoyo</target>
       </trans-unit>
     </body>
   </file>
@@ -24457,7 +24453,7 @@
       </trans-unit>
       <trans-unit id="10945" resname="r1002512052" restype="string" datatype="x-haml">
         <source>Upgrade to Prime to get 24/7 unlimited doctor consults, prescriptions, and personalized care via video and text chat.</source>
-        <target>Cambia a Prime para obtener consultas, recetas y atención personalizada de doctores ilimitada, 24/7, a través de chat de texto y video.</target>
+        <target>Sube de categoría a Prime para obtener consultas, recetas y atención personalizada de doctores ilimitada, 24/7, a través de chat de texto y video.</target>
       </trans-unit>
       <trans-unit id="10946" resname="r76911099" restype="string" datatype="x-haml">
         <source>Get started ›</source>
@@ -24469,7 +24465,7 @@
       </trans-unit>
       <trans-unit id="10948" resname="r589013374" restype="string" datatype="x-haml">
         <source>Upgrade to Prime and get 24/7 unlimited, immediate doctor consults,</source>
-        <target>Cambia a Prime y obtén consultas de doctor inmediatas e ilimitadas, 24/7,</target>
+        <target>Sube de categoría a Prime y obtén consultas de doctor inmediatas e ilimitadas, 24/7,</target>
       </trans-unit>
       <trans-unit id="10949" resname="r1025297994" restype="string" datatype="x-haml">
         <source>prescriptions, personalized reminders, and more via video and text chat.</source>
@@ -25025,7 +25021,7 @@
       </trans-unit>
       <trans-unit id="11087" resname="r1014442925" restype="string" datatype="x-haml">
         <source>You have full control over everything you share on HealthTap and can use your insights in your</source>
-        <target>Tienes control completo sobre todo lo que compartes en HealthTap y puedes usar tus perspicacias en tu</target>
+        <target>Tienes control completo sobre todo lo que compartes en HealthTap y puedes usar tus conocimientos médicos en tu</target>
       </trans-unit>
       <trans-unit id="11088" resname="r61920049" restype="string" datatype="x-haml">
         <source>own blog, website, and in other publications. You can automatically syndicate your posts on other</source>
@@ -25389,7 +25385,7 @@
       </trans-unit>
       <trans-unit id="11169" resname="r370892119" restype="string" datatype="x-haml">
         <source>Your shared insights</source>
-        <target>Tus perspicacias compartidas</target>
+        <target>Tus conocimientos médicos compartidas</target>
       </trans-unit>
     </body>
   </file>
@@ -25425,7 +25421,7 @@
     <body>
       <trans-unit id="11187" resname="r494839752" restype="string" datatype="x-haml">
         <source>You can also access the tutorial anytime by logging into your account on a computer and clicking the tutorial link in the top right:</source>
-        <target>Puedes acceder también al tutorial en cualquier momento ingresando a tu cuenta en una computadora y haciendo clic en el enlace de tutorial en la derecha superior:</target>
+        <target>Puedes acceder también al tutorial en cualquier momento al iniciar sesión en tu cuenta en una computadora y haciendo clic en el enlace de tutorial en la derecha superior:</target>
       </trans-unit>
       <trans-unit id="11188" resname="r207882421" restype="string" datatype="x-haml">
         <source>Darrin</source>
@@ -25933,7 +25929,7 @@
       </trans-unit>
       <trans-unit id="11322" resname="r1038863878" restype="string" datatype="x-haml">
         <source>Get immediate peace of mind even in the middle of the night with immediate access to doctors on call</source>
-        <target>Obtén paz mental inmediata incluso a la mitad de la noche con acceso inmediato a doctore en</target>
+        <target>Obtén paz mental inmediata incluso a la mitad de la noche con acceso inmediato a doctores en</target>
       </trans-unit>
     </body>
   </file>
@@ -26029,7 +26025,7 @@
       </trans-unit>
       <trans-unit id="11342" resname="r124707905" restype="string" datatype="x-haml">
         <source>The right care, at the right time</source>
-        <target>La atención adecuada en el tiempo adecuado</target>
+        <target>La atención adecuada en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="11343" resname="r943592966" restype="string" datatype="x-haml">
         <source>Real-time doctor consults whenever you need them</source>
@@ -26161,7 +26157,7 @@
       </trans-unit>
       <trans-unit id="11370" resname="r173507731" restype="string" datatype="x-haml">
         <source>You can follow any health topic and check your personal news feed for updates—all from your smartphone, tablet, PC, or smartwatch.</source>
-        <target>Puedes seguir cualquier tema de salud y revisar tu fuente de noticias personls para actualizaciones—todo desde tu teléfono inteligente, tableta, PC, o reloj inteligente.</target>
+        <target>Puedes seguir cualquier tema de salud y revisa tus notificaciones personales para actualizaciones—todo desde tu teléfono inteligente, tableta, PC, o reloj inteligente.</target>
       </trans-unit>
     </body>
   </file>
@@ -27313,11 +27309,11 @@
       </trans-unit>
       <trans-unit id="11673" resname="r1072598420" restype="string" datatype="x-haml">
         <source>Empathetic, compassionate, and caring insights</source>
-        <target>Perspicacias empáticas, compasivas y bondadosas</target>
+        <target>Conocimientos médicos empáticas, compasivas y bondadosas</target>
       </trans-unit>
       <trans-unit id="11674" resname="r775307423" restype="string" datatype="x-haml">
         <source>Deeper insights into women's issues</source>
-        <target>Perspicacias más profundas a problemas de la mujer.</target>
+        <target>Conocimientos médicos más profundas a problemas de la mujer.</target>
       </trans-unit>
       <trans-unit id="11675" resname="r40405332" restype="string" datatype="x-haml">
         <source>Are you a parent or parent-to-be? Have you ever had questions about your partner's pregnancy or child's health?</source>
@@ -27889,7 +27885,7 @@
       </trans-unit>
       <trans-unit id="11808" resname="r458596117" restype="string" datatype="x-haml">
         <source>Replies to this email will not reach me. To ask me about a health concern, please accept this invitation and send me a message or schedule a virtual appointment with me on HealthTap. If you believe you may have an emergency, call 911 or immediately go to the ER.</source>
-        <target>No llegarán a mí respuestas a este correo. Para preguntarme acerca de una inquietud sobre salud, por favor, acepta esta invitación y envíame un mensaje o agenda una cita virtual conmigo en HealthTap. Si crees tener una emergencia, llama al 911 o ve inmediatamente a la Sala de Emergencias.</target>
+        <target>No llegarán a mí respuestas a este correo. Para preguntarme acerca de una inquietud sobre salud, por favor, acepta esta invitación y envíame un mensaje o agenda una cita virtual conmigo en HealthTap. Si crees tener una emergencia, llama al 911 o ve inmediatamente a la Sala de Urgencias.</target>
       </trans-unit>
     </body>
   </file>
@@ -28269,7 +28265,7 @@
       </trans-unit>
       <trans-unit id="11921" resname="r397119304" restype="string" datatype="x-haml">
         <source>learn more</source>
-        <target>aprender más</target>
+        <target>aprende más</target>
       </trans-unit>
       <trans-unit id="11922" resname="r148877155" restype="string" datatype="x-haml">
         <source>about becoming a doctor on HealthTap.</source>
@@ -28429,7 +28425,7 @@
       </trans-unit>
       <trans-unit id="11951" resname="r742525095" restype="string" datatype="x-haml">
         <source>who would like to add you to their Care Team.</source>
-        <target>quien quisiera agregarte a su Equipo de Cuidado.</target>
+        <target>quien quisiera agregarte a su Equipo de Atención.</target>
       </trans-unit>
     </body>
   </file>
@@ -29721,7 +29717,7 @@
       </trans-unit>
       <trans-unit id="12330" resname="r217053156" restype="string" datatype="x-haml">
         <source>Browse Categories</source>
-        <target>Ojear Categorías</target>
+        <target>Navegar Categorías</target>
       </trans-unit>
       <trans-unit id="12331" resname="r642598083" restype="string" datatype="x-haml">
         <source>Enter checklist actions</source>
@@ -30565,7 +30561,7 @@
       </trans-unit>
       <trans-unit id="12575" resname="r326099807" restype="string" datatype="x-haml">
         <source>Upgrade to HealthTap Concierge for unlimited earning potential (set your own prices for consults) with a full suite of services and support for you. With just one consult per day, you can earn more than $2,000 per month!</source>
-        <target>Cambia a HealthTap Concierge para un potencial de ganancias ilimitado (establece tus propios precios por consulta) con una completa serie de servicios y ayuda para ti. ¡Con sólo una consulta por día, puedes ganar más de $2,000 al mes!</target>
+        <target>Sube de categoría a HealthTap Concierge para un potencial de ganancias ilimitado (establece tus propios precios por consulta) con una completa serie de servicios y ayuda para ti. ¡Con sólo una consulta por día, puedes ganar más de $2.000 al mes!</target>
       </trans-unit>
       <trans-unit id="12576" resname="r212901420" restype="string" datatype="x-haml">
         <source>UPGRADE</source>
@@ -31129,7 +31125,7 @@
       </trans-unit>
       <trans-unit id="12710" resname="r333921003" restype="string" datatype="x-haml">
         <source>Are you ready to be well compensated for the time you spend helping your patients by email and phone? Many doctors are now consulting their patients virtually and getting paid for responding to previously uncompensated questions, simple problems, and requests for medication refills. You can even order lab tests; then when the lab results are made available to you on HealthTap, you will be able to share your insights to guide your patients. Increase efficiency in your practice by giving virtual consults to patients who do not need to see you in your office. Bonus: your patients will love the flexibility and convenient access to your high-quality care!</source>
-        <target>¿Estás listo para ser bien compensado por el tiempo que dedicas a tus pacientes por correo electrónico o teléfono? Muchos doctores están consultando a sus pacientes virtualmente ahora y están siendo pagados por responder preguntas que antes no eran compensadas, problemas simples y solicitudes para resurtir medicamentos. Puedes incluso ordenar análisis de laboratorio; luego cuando los resultados de laboratorio estén disponibles para ti, podrás ser capaz de compartir tus perspicacias para guiar a tus pacientes. Incrementa la eficiencia en tu consultorio dando consultas virtuales a pacientes que necesitan verte en tu oficina. Bono: ¡tus pacientes amarán el acceso flexible y conveniente de tu atención de alta calidad!</target>
+        <target>¿Estás listo para ser bien compensado por el tiempo que dedicas a tus pacientes por correo electrónico o teléfono? Muchos doctores están consultando a sus pacientes virtualmente ahora y están siendo pagados por responder preguntas que antes no eran compensadas, problemas simples y solicitudes para resurtir medicamentos. Puedes incluso ordenar análisis de laboratorio; luego cuando los resultados de laboratorio estén disponibles para ti, podrás ser capaz de compartir tus conocimientos médicos para guiar a tus pacientes. Incrementa la eficiencia en tu consultorio dando consultas virtuales a pacientes que necesitan verte en tu oficina. Bono: ¡tus pacientes amarán el acceso flexible y conveniente de tu atención de alta calidad!</target>
       </trans-unit>
       <trans-unit id="12711" resname="r309721998" restype="string" datatype="x-haml">
         <source>How much does this cost?</source>
@@ -31261,7 +31257,7 @@
       </trans-unit>
       <trans-unit id="12741" resname="r856013763" restype="string" datatype="x-haml">
         <source>N/A</source>
-        <target state="accepted">不适用</target>
+        <target state="accepted">N/A</target>
       </trans-unit>
       <trans-unit id="12742" resname="r478313490" restype="string" datatype="x-haml">
         <source>Subscription fee(Groups of 5-20 doctors)</source>
@@ -31333,7 +31329,7 @@
       </trans-unit>
       <trans-unit id="12763" resname="r403864224" restype="string" datatype="x-haml">
         <source>x Close</source>
-        <target>X Cerrar</target>
+        <target>x Cerrar</target>
       </trans-unit>
       <trans-unit id="12764" resname="r318995335" restype="string" datatype="x-haml">
         <source>Start by adding your colleagues to your Network</source>
@@ -31601,7 +31597,7 @@
       </trans-unit>
       <trans-unit id="12826" resname="r18823598" restype="string" datatype="x-haml">
         <source>Accomplish your health goals and feel good faster with helpful doctor checklists and reminders</source>
-        <target>Haz realidad tus metas de salud y siéntete bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
+        <target>Haz realidad tus metas de salud y sentirte bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
       </trans-unit>
       <trans-unit id="12827" resname="r757472577" restype="string" datatype="x-haml">
         <source>Choose health topics from the 4 categories below — the more you select the better!</source>
@@ -32877,7 +32873,7 @@
       </trans-unit>
       <trans-unit id="13340" resname="r665608595" restype="string" datatype="x-haml">
         <source>Curated feed of doctor insights in the form of answers to frequently asked questions, tips, and checklists</source>
-        <target>Fuente curada de perspicacias de doctores en la forma de respuestas para preguntas frecuentemente hechas, tips y listados</target>
+        <target>Fuente curada de conocimientos médicos de doctores en la forma de respuestas para preguntas frecuentemente hechas, tips y listados</target>
       </trans-unit>
       <trans-unit id="13341" resname="r28496798" restype="string" datatype="x-haml">
         <source>Two-way empathetic communication</source>
@@ -32905,7 +32901,7 @@
       </trans-unit>
       <trans-unit id="13347" resname="r1052120047" restype="string" datatype="x-haml">
         <source>Customized health checklists (“to-do’s”) created by doctors</source>
-        <target>Listados de salud personalizados (”qué haceres”) creados por doctores</target>
+        <target>Listados de salud personalizados (”por hacer”) creados por doctores</target>
       </trans-unit>
       <trans-unit id="13348" resname="r799464732" restype="string" datatype="x-haml">
         <source>Automated doctor health reminders (sent via email, SMS, push notification)</source>
@@ -33157,7 +33153,7 @@
       </trans-unit>
       <trans-unit id="13435" resname="r353832077" restype="string" datatype="x-haml">
         <source>new virtual health service, powered by HealthTap's HOPESTM, we can deliver the highest-quality</source>
-        <target>nuevo servicio virtual de salud, propulsado por HOPESTM de HealthTap, podemos brindar la más alta calidad</target>
+        <target>nuevo servicio virtual de salud, impulsado por HOPESTM de HealthTap, podemos brindar la más alta calidad</target>
       </trans-unit>
       <trans-unit id="13436" resname="r115852362" restype="string" datatype="x-haml">
         <source>care at a lower cost. This is not incremental software implementation. We are embarking on a</source>
@@ -33173,7 +33169,7 @@
       </trans-unit>
       <trans-unit id="13439" resname="r923400055" restype="string" datatype="x-haml">
         <source>and increased flexibility. With the Waikato-HealthTap partnership, more than one million</source>
-        <target>y flexibilidad aumentada. Con la asosiación Waikato-HealthTap, más de un millón</target>
+        <target>y flexibilidad aumentada. Con la asociación Waikato-HealthTap, más de un millón</target>
       </trans-unit>
       <trans-unit id="13440" resname="r151407339" restype="string" datatype="x-haml">
         <source>New Zealand citizens will be able to live happier and healthier lives.”</source>
@@ -33205,7 +33201,7 @@
       </trans-unit>
       <trans-unit id="13447" resname="r911529267" restype="string" datatype="x-haml">
         <source>implementation</source>
-        <target>implementación</target>
+        <target>de implementación</target>
       </trans-unit>
     </body>
   </file>
@@ -33269,7 +33265,7 @@
     <body>
       <trans-unit id="13475" resname="r458624436" restype="string" datatype="x-haml">
         <source>Get a personalized tour of product features, calculate your ROI, and much more</source>
-        <target>Obtén un tour personalizado de las características del  producto, calcula tu ROI y mucho más</target>
+        <target>Obtén un tour personalizado de las características del  producto, calcula tu ROI, y mucho más</target>
       </trans-unit>
     </body>
   </file>
@@ -33369,7 +33365,7 @@
       </trans-unit>
       <trans-unit id="13497" resname="r157016772" restype="string" datatype="x-haml">
         <source>Expensive</source>
-        <target>Costoso</target>
+        <target>Costosa</target>
       </trans-unit>
       <trans-unit id="13498" resname="r299420975" restype="string" datatype="x-haml">
         <source>Hospital ER ($$$$)</source>
@@ -33377,7 +33373,7 @@
       </trans-unit>
       <trans-unit id="13499" resname="r952329726" restype="string" datatype="x-haml">
         <source>70% of ER visits are unnecessary</source>
-        <target>70% de visitas a la SUson innecesarias</target>
+        <target>70% de las visitas a la SU son innecesarias</target>
       </trans-unit>
       <trans-unit id="13500" resname="r65226759" restype="string" datatype="x-haml">
         <source>(Source: Truven)</source>
@@ -33573,7 +33569,7 @@
     <body>
       <trans-unit id="13568" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
-        <target>Originalmente escrita por &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
+        <target>Originalmente escrita por &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; en respuesta a la pregunta, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -33929,7 +33925,7 @@
     <body>
       <trans-unit id="13619" resname="Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who have first-hand experiences as mothers.&lt;br&gt;&lt;a target=&quot;_blank&quot; class=&quot;mommaDocMeta_h&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who have first-hand experiences as mothers.&lt;br&gt; &lt;a target="_blank" class="mommaDocMeta_h"&gt;Learn more ›&lt;/a&gt;</source>
-        <target>Millones de mujeres embarazadas y mamás están buscando el conocimiento experto y compasión de doctores que tienen experiencias de primera mano como madres. &lt;br&gt; &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprender más ›&lt;/a&gt;</target>
+        <target>Millones de mujeres embarazadas y mamás están buscando el conocimiento experto y compasión de doctores que tienen experiencias de primera mano como madres. &lt;br&gt; &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprende más ›&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -34641,7 +34637,7 @@
     <body>
       <trans-unit id="13748" resname="These terms (the “Free Trial Terms”) govern the offer (the “Prime Free Trial Offer”) by HealthTap to New Qualified Users to access to the HealthTap Prime Service upon signing up and submitting payment information for a new HealthTap Prime account (the “Free Trial Period”). By submitting your payment details, you accept the Prime Free-Trial Offer and: (i) consent to our use of your payment information in accordance with our Payment Details Terms, and (ii) acknowledge and agree to the HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;and these Free Trial Terms. If you decide that you do not want to become a paying user of HealthTap Prime under the standard HealthTap Prime Terms in effect at the end of the Free Trial Period, you must cancel your HealthTap Prime Subscription (in the Billing Settings section of your HealthTap account&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340&quot; target=&quot;_blank&quot;&gt;Settings&lt;/a&gt;) before the end of the Free Trial Period. Subscription fees are not prorated; cancellations after the termination of the Free Trial Period will remain active through the end of the trial length period during which the account is canceled. You may only use this Free Trial Offer once. HealthTap reserves the right, in its absolute discretion, to determine individual eligibility for this Prime Free-Trial Offer and to withdraw or to modify this Prime Trial Offer and/or the Free Trial Terms at any time, without prior notice and with no liability.&lt;br&gt;&lt;br&gt;Payment Details Terms: When you sign up for a trial or any of our Premium Services, or make other purchases through the Apps, your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information, such as your postal code and transaction history details. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits).&lt;br&gt;&lt;br&gt;See the HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime.&lt;br&gt;&lt;br&gt;Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states." restype="string" datatype="html">
         <source>These terms (the “Free Trial Terms”) govern the offer (the “Prime Free Trial Offer”) by HealthTap to New Qualified Users to access to the HealthTap Prime Service upon signing up and submitting payment information for a new HealthTap Prime account (the “Free Trial Period”). By submitting your payment details, you accept the Prime Free-Trial Offer and: (i) consent to our use of your payment information in accordance with our Payment Details Terms, and (ii) acknowledge and agree to the HealthTap &lt;a href="/terms" target="_blank"&gt;Terms of Use&lt;/a&gt; and these Free Trial Terms. If you decide that you do not want to become a paying user of HealthTap Prime under the standard HealthTap Prime Terms in effect at the end of the Free Trial Period, you must cancel your HealthTap Prime Subscription (in the Billing Settings section of your HealthTap account &lt;a href="https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340" target="_blank"&gt;Settings&lt;/a&gt;) before the end of the Free Trial Period. Subscription fees are not prorated; cancellations after the termination of the Free Trial Period will remain active through the end of the trial length period during which the account is canceled. You may only use this Free Trial Offer once. HealthTap reserves the right, in its absolute discretion, to determine individual eligibility for this Prime Free-Trial Offer and to withdraw or to modify this Prime Trial Offer and/or the Free Trial Terms at any time, without prior notice and with no liability.&lt;br&gt;&lt;br&gt; Payment Details Terms: When you sign up for a trial or any of our Premium Services, or make other purchases through the Apps, your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information, such as your postal code and transaction history details. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits). &lt;br&gt;&lt;br&gt; See the HealthTap &lt;a href="/terms" target="_blank"&gt;Terms of Use&lt;/a&gt; for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime. &lt;br&gt;&lt;br&gt; Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states.</source>
-        <target>Estos términos (los “Términos de Prueba Gratis”) rigen la oferta (la “Oferta de Prueba Gratis de Prime”) por HealthTap a Usuarios Nuevos Calificados para acceder al Servicio Premium de HealthTap Prime tras registrarse y presentar información de pago para una nueva cuenta de HealthTap Prime (el “Periodo de Prueba Gratis”). Al presentar tus detalles de pago, tú aceptas la Oferta de Prueba Gratis de Prime y: i) consientes a nuestro uso de tu información de pago en cumplimiento con nuestros Términos de Detalles de Pago, y (ii) reconoces y aceptas los &lt;a href=”/terms” target=”_blank”&gt;Términos de Uso&lt;/a&gt; de HealthTap y estos Términos de Prueba Gratis. Si decides que no quieres convertirte en un usuario que paga de HealthTap Prime bajo los Términos estándar de HealthTap Prime en efecto al final del Periodo de Prueba Gratis, tú debes cancelar tu Suscripción a HealthTap Prime (en la sección de Configuración de Facturación de tu cuenta de HealthTap &lt;a href="https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340" target="_blank"&gt;Settings&lt;/a&gt;) antes del final del Periodo de Prueba Gratis. Cuotas de suscripción no son prorrateadas; cancelaciones después de la terminación del Periodo de Prueba Gratis permanecerán hasta el final de la duración del periodo de prueba duante el cual la cuenta es cancelada. Solo puedes usar esta Oferta de Prueba Gratis una vez. HealthTap se reserva el derecho, en su absoluta discreción, de determinar la elegibilidad individual para esta Oferta de Prueba Gratis de Prime y de retirar o modificar esta Oferta de Prueba de Prime y/o los Términos de Prueba Gratis en cualquier momento, sin previo aviso y sin responsablidad.&lt;br&gt;&lt;br&gt; Términos de detalles de pago: Cuando te registras para una prueba o cualquiera de nuestros Servicios Premium, o haces otras compras a través de las Aplicaciones, tu información de tarjeta de crédito y otros datos financieros necesarios para procesar tu pago son recolectados y almacenados por procesadores de pago de tercera parte, y nosotros podemos recolectar información limitada, como tu código postal y detalles de historial de transacción. El uso de tus datos por tales procesadores de pago de tercera parte está sujeto a sus políticas de privacidad. Estas terceras partes generalmente nos brindan un poco de información limitada (como una ficha única que te permite hacer compras adicionales usando la información que han almacenado, y el tipo de tu tarjeta, fecha de vencimiento, y últimos cuatro dígitos). &lt;br&gt;&lt;br&gt; Ve los &lt;a href=”/terms” target=”_blank”&gt;Términos de Uso&lt;/a&gt; de HealthTap para las definiciones de “HealthTap,” “HealthTap Prime,” “Aplicaciones,” y “Servicios Premium.” “Usuarios Nuevos Calificados” significa los nuevos clientes de HealthTap Prime sin una previa cuenta primaria o subcuenta o cuenta de prueba en HealthTap Prime. &lt;br&gt;&lt;br&gt; Por favor, nota que las siguientes recetas no están actualmente disponisbles a través de HealthTap Prime: narcóticos o sustancias controladas por la DEA (Categoría I, II, III, IV), medicamentos psiquiátricos o de estilo de vido (como drogas dietéticas o de disfución eréctil) o medicamentos restringidos por estados individuales.</target>
+        <target>Estos términos (los “Términos de Prueba Gratis”) rigen la oferta (la “Oferta de Prueba Gratis de Prime”) por HealthTap a Usuarios Nuevos Calificados para acceder al Servicio Premium de HealthTap Prime tras registrarse y presentar información de pago para una nueva cuenta de HealthTap Prime (el “Periodo de Prueba Gratis”). Al presentar tus detalles de pago, tú aceptas la Oferta de Prueba Gratis de Prime y: i) consientes a nuestro uso de tu información de pago en cumplimiento con nuestros Términos de Detalles de Pago, y (ii) reconoces y aceptas los &lt;a href=”/terms” target=”_blank”&gt;Términos de Uso&lt;/a&gt; de HealthTap y estos Términos de Prueba Gratis. Si decides que no quieres convertirte en un usuario que paga de HealthTap Prime bajo los Términos estándar de HealthTap Prime en efecto al final del Periodo de Prueba Gratis, tú debes cancelar tu Suscripción a HealthTap Prime (en la sección de Configuración de Facturación de tu cuenta de HealthTap &lt;a href="https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340" target="_blank"&gt;Settings&lt;/a&gt;) antes del final del Periodo de Prueba Gratis. Cuotas de suscripción no son prorrateadas; cancelaciones después de la terminación del Periodo de Prueba Gratis permanecerán hasta el final de la duración del periodo de prueba duante el cual la cuenta es cancelada. Solo puedes usar esta Oferta de Prueba Gratis una vez. HealthTap se reserva el derecho, en su absoluta discreción, de determinar la elegibilidad individual para esta Oferta de Prueba Gratis de Prime y de retirar o modificar esta Oferta de Prueba de Prime y/o los Términos de Prueba Gratis en cualquier momento, sin previo aviso y sin responsablidad.&lt;br&gt;&lt;br&gt; Términos de detalles de pago: Cuando te registras para una prueba o cualquiera de nuestros Servicios Premium, o haces otras compras a través de las Aplicaciones, tu información de tarjeta de crédito y otros datos financieros necesarios para procesar tu pago son recolectados y almacenados por procesadores de pago de tercera parte, y nosotros podemos recolectar información limitada, como tu código postal y detalles de historial de transacción. El uso de tus datos por tales procesadores de pago de tercera parte está sujeto a sus políticas de privacidad. Estas terceras partes generalmente nos brindan un poco de información limitada (como una ficha única que te permite hacer compras adicionales usando la información que han almacenado, y el tipo de tu tarjeta, fecha de vencimiento, y últimos cuatro dígitos). &lt;br&gt;&lt;br&gt; Ve los &lt;a href=”/terms” target=”_blank”&gt;Términos de Uso&lt;/a&gt; de HealthTap para las definiciones de “HealthTap,” “HealthTap Prime,” “Aplicaciones,” y “Servicios Premium.” “Usuarios Nuevos Calificados” significa los nuevos clientes de HealthTap Prime sin una previa cuenta primaria o subcuenta o cuenta de prueba en HealthTap Prime. &lt;br&gt;&lt;br&gt; Por favor, nota que las siguientes recetas no estan actualmente disponisbles a través de HealthTap Prime: narcóticos o sustancias controladas por la DEA (Categoría I, II, III, IV), medicamentos psiquiátricos o de estilo de vido (como drogas dietéticas o de disfución eréctil) o medicamentos restringidos por estados individuales.</target>
       </trans-unit>
     </body>
   </file>
@@ -34773,7 +34769,7 @@
     <body>
       <trans-unit id="13773" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; })" restype="string" datatype="html">
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: '&lt;b&gt;', bold_tag_end: '&lt;/b&gt;' })</source>
-        <target>RB.getStringJS(Además de consultas virtuales en vivo, también recibirás {bold_tag_start}Consultas por Buzón de Entrada{bold_tag_end}. Estos son mensajes detallados pagados de tus pacientes que aparecen en la parte superior de la fuente de tu página de inicio y deben de ser contestadas en 24 horas.).format({ bold_tag_start: ‘&lt;b&gt;', bold_tag_end: ‘&lt;/b&gt;' })</target>
+        <target>RB.getStringJS(Además de consultas virtuales en vivo, también recibirás {bold_tag_start}Consultas por Buzón de Entrada{bold_tag_end}. Estos son mensajes detallados pagados de tus pacientes que aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24 horas.).format({ bold_tag_start: ‘&lt;b&gt;', bold_tag_end: ‘&lt;/b&gt;' })</target>
       </trans-unit>
     </body>
   </file>
@@ -34989,7 +34985,7 @@
       </trans-unit>
       <trans-unit id="13835" resname=" Learn more › " restype="string" datatype="javascript">
         <source>Learn more ›</source>
-        <target>Aprender más ›</target>
+        <target>Aprende más ›</target>
       </trans-unit>
       <trans-unit id="13836" resname="Connect with women doctors who are also mothers for deeper, experienced-based answers to all your pregnancy and parenting questions. " restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper, experienced-based answers to all your pregnancy and parenting questions.</source>
@@ -35361,7 +35357,7 @@
       </trans-unit>
       <trans-unit id="13923" resname="&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve a health goal or feel better. Patients receive timely reminders for each to-do on the list. You can browse through a wealth of checklists that doctors on HealthTap have created by topic and choose the best one for your patient." restype="string" datatype="javascript">
         <source>&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve a health goal or feel better. Patients receive timely reminders for each to-do on the list. You can browse through a wealth of checklists that doctors on HealthTap have created by topic and choose the best one for your patient.</source>
-        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada elemento en la lista, Puedes ojear a través de una riqueza de listados que doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
+        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada quehacer en la lista, Puedes navegar a través de una riqueza de listados que doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
       </trans-unit>
       <trans-unit id="13924" resname="Patients see the SOAP notes you enter. If you wish to add notes only visible to doctors, please include them in the &lt;b&gt;Additional Chart Notes&lt;/b&gt; section." restype="string" datatype="javascript">
         <source>Patients see the SOAP notes you enter. If you wish to add notes only visible to doctors, please include them in the &lt;b&gt;Additional Chart Notes&lt;/b&gt; section.</source>
@@ -35589,7 +35585,7 @@
     <body>
       <trans-unit id="13990" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>¿tomas algún medicamento de libre venta o de receta?</target>
+        <target>¿tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>
@@ -35645,7 +35641,7 @@
       </trans-unit>
       <trans-unit id="14000" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>Más perspicacias de doctor personalizadas »</target>
+        <target>Más conocimientos médicos de doctores personalizadas »</target>
       </trans-unit>
     </body>
   </file>

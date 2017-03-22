@@ -1137,8 +1137,8 @@
         <target>从顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="192" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>从%d名顶级医生那里获取对您的健康问题的回答</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>从%s名顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="193" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
@@ -1238,7 +1238,7 @@
       </trans-unit>
       <trans-unit id="216" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more actions</source>
-        <target>查看%个行动…</target>
+        <target>查看%d个行动…</target>
       </trans-unit>
       <trans-unit id="217" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>

@@ -2252,19 +2252,19 @@
       </trans-unit>
       <trans-unit id="322" resname="person" restype="string" datatype="x-yaml" x-context="dob@minimum_value">
         <source>130 years ago</source>
-        <target>130年前</target>
+        <target state="accepted">130 years ago</target>
       </trans-unit>
       <trans-unit id="323" resname="subaccount" restype="string" datatype="x-yaml" x-context="dob@minimum_value">
         <source>130 years ago</source>
-        <target>130年前</target>
+        <target state="accepted">130 years ago</target>
       </trans-unit>
       <trans-unit id="324" resname="person" restype="string" datatype="x-yaml" x-context="dob@maximum_value">
         <source>18 years ago</source>
-        <target>18年前</target>
+        <target state="accepted">18 years ago</target>
       </trans-unit>
       <trans-unit id="325" resname="subaccount" restype="string" datatype="x-yaml" x-context="dob@maximum_value">
         <source>today</source>
-        <target>今天</target>
+        <target state="accepted">today</target>
       </trans-unit>
       <trans-unit id="326" resname="person" restype="string" datatype="x-yaml" x-context="first_of_any_type@header">
         <source>Help us understand your %TOPIC_NAME%</source>
@@ -2669,6 +2669,75 @@
       <trans-unit id="12" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
         <source>multiselect</source>
         <target state="accepted">multiselect</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r848033169" restype="string" datatype="ruby">
+        <source>&lt;h3&gt;&lt;span&gt;Join the&lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;Feel Good :)&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span&gt;movement&lt;/span&gt;&lt;/h3&gt;</source>
+        <target state="new">&lt;h3&gt;&lt;span&gt;加入&lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;Feel Good :)&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span&gt;运动&lt;/span&gt;&lt;/h3&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4361" resname="r887589526" restype="string" datatype="ruby">
+        <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;.</source>
+        <target>它可能听起来很崇高，但我们归结它为一些非常基本的东西。我们都-在>心里 – 简单地想要&lt;span class="no-break"&gt;Feel Good&lt;/span&gt;。我们不论是努力尝试进一步强身健体，还是控制慢性疾病的发展，或是>完善治疗各种重大疾病，我们所期望的都是能够生活的更健康更幸福——而这也是我们长久以
+来的愿望&lt;span class="no-break"&gt;Feel Good&lt;/span&gt;。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/pages/feelGood/login.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r333922407" restype="string" datatype="ruby">
+        <source>Welcome back</source>
+        <target state="translated">欢迎回来</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r391775707" restype="string" datatype="ruby">
+        <source>Login</source>
+        <target state="translated">登录</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/symptom_checker_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="5" resname="r314412560" restype="string" datatype="ruby">
+        <source>Update health profile</source>
+        <target state="translated">更新健康档案</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r38074302" restype="string" datatype="ruby">
+        <source>Quick question</source>
+        <target state="translated">简单的问题</target>
+      </trans-unit>
+      <trans-unit id="7" resname="r777866617" restype="string" datatype="ruby">
+        <source>Add condition</source>
+        <target state="translated">增加症状</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r888997785" restype="string" datatype="ruby">
+        <source>Add medication</source>
+        <target state="translated">增加药物</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r319575533" restype="string" datatype="ruby">
+        <source>Add an allergy</source>
+        <target state="translated">增加过敏源</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="14" resname="Are you sure you&apos;d like to close this form without submitting?" restype="string" datatype="javascript">
+        <source>Are you sure you'd like to close this form without submitting?</source>
+        <target state="translated">表单还未提交，您是否确认关闭？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="login.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="209" resname="r35583273" restype="string" datatype="x-haml">
+        <source>Invalid email and password</source>
+        <target state="translated">邮箱地址与密码不匹配</target>
       </trans-unit>
     </body>
   </file>

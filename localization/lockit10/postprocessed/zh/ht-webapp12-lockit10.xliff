@@ -412,7 +412,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
         <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We're standing by!</source>
@@ -420,7 +420,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/people/feelGood/submit_case.html.haml" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/views/people/feelGood/submit_case.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: "What's the diagnosis?"</source>
@@ -440,7 +440,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/doctor_test_results_critical_day1.html.haml" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/doctor_test_results_critical_day1.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat input.</source>
@@ -448,7 +448,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
         <source>page, and select the "Answer Patient" button.</source>
@@ -456,7 +456,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/person/third_party.rb" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
@@ -464,7 +464,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/concierge_application_attestation.rb" source-language="en-US" product-name="ht-webapp12">
+  <file original="app/models/concierge_application_attestation.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
