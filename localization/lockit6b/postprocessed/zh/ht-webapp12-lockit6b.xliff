@@ -91,7 +91,7 @@
       bold_tag_start: '&lt;b&gt;',
       bold_tag_end: '&lt;/b&gt;'
     })</source>
-        <target state="accepted">RB.getStringJS(除了实时在线咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.'&lt;b&gt;',
+        <target state="accepted">RB.getStringJS(除了实时在线咨询，您也会收到 {bold_tag_start}收件箱咨询{bold_tag_end}.'&lt;b&gt;',
       bold_tag_end:'&lt;/b&gt;'
     })</target>
       </trans-unit>
@@ -129,8 +129,8 @@
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
       &lt;br&gt;
       Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
-        <target state="translated">今天，您已经获得 &lt;span class="todays_points_highlight"&gt; 180积分&lt;/span&gt; 为需要帮助的数百万人。&lt;br&gt;
-      解答 &lt;b&gt;X&lt;/b&gt; 更多问题在接下来的&lt;b&gt;X&lt;/b&gt; 时间，可以双倍您的每日积分。</target>
+        <target state="translated">今天，您已经获得 &lt;span class="todays_points_highlight"&gt; 180积分&lt;/span&gt; ，帮助了数百万人。&lt;br&gt;
+      解答 &lt;b&gt;X&lt;/b&gt; 在接下来的&lt;b&gt;X&lt;/b&gt; 个小时里回答更多问题，可以双倍您的每日积分。</target>
       </trans-unit>
       <trans-unit id="1077" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
@@ -143,7 +143,7 @@
     <body>
       <trans-unit id="1105" resname="if &amp;quot;Other&amp;quot;, you may enter a reason" restype="string" datatype="html">
         <source>if &amp;quot;Other&amp;quot;, you may enter a reason</source>
-        <target state="translated">如果&amp;quot;Other&amp;quot;,您可以输入一个理由</target>
+        <target state="translated">如果是&amp;quot;其他&amp;quot;,您可以输入一个理由</target>
       </trans-unit>
     </body>
   </file>
@@ -183,7 +183,7 @@
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
       &lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target state="translated">路边咨询 &lt;span class=”super”&gt;测试版&lt;/span&gt;
-      &lt;span class=”sub_title”&gt;来自您的专家同事的优秀答案。&lt;/span&gt;</target>
+      &lt;span class=”sub_title”&gt;来自您的专家同事的优秀回答。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -223,7 +223,7 @@
         <source>Start a Private Conversation
     &lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">开始一次私人会话
-    &lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPAA安全，一对一的设置下</target>
+    &lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPPA加密，一对一的设置下</target>
       </trans-unit>
     </body>
   </file>
@@ -231,7 +231,7 @@
     <body>
       <trans-unit id="1173" resname="TO:" restype="string" datatype="html">
         <source>TO:</source>
-        <target state="translated">到:</target>
+        <target state="translated">到：</target>
       </trans-unit>
     </body>
   </file>
@@ -286,11 +286,11 @@
     <body>
       <trans-unit id="1269" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  积分和提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="1270" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
-        <target state="translated">当您阐明问题或收到预约请求，或收到患者信息72小时后才答复，或当患者使用您的支付优惠码时，您不会得到HealthTap信用奖励。</target>
+        <target state="translated">当您阐明问题或收到预约请求，或收到患者信息72小时后才回复，或当患者使用您的支付优惠码时，您不会得到HealthTap信用奖励。</target>
       </trans-unit>
     </body>
   </file>
@@ -310,7 +310,15 @@
       </trans-unit>
       <trans-unit id="1273" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">与已育女性医生联系，医生会对你的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
+        <target state="translated">与已育女性医生联系，医生会对您的怀孕和养育问题作出更深层次的，基于经验的回答。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1275" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告。      它还需要一点时间。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -318,7 +326,7 @@
     <body>
       <trans-unit id="1276" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
         <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
+        <target state="translated">1#这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt; 更多解答！|            #这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt;更多解答！</target>
       </trans-unit>
     </body>
   </file>
@@ -326,7 +334,7 @@
     <body>
       <trans-unit id="1277" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
         <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;为了协助，您可以联系我们在                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;如需协助，您可以联系我们                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -334,7 +342,7 @@
     <body>
       <trans-unit id="1359" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">发送您的问题以接收一个或多个信息文本答案           在一天内，我们的{n}医生在137个专业的网络。</target>
+        <target state="translated">发送您的问题，在一天内收到           我们网络内来自137个专科的医生的回答。</target>
       </trans-unit>
     </body>
   </file>
@@ -702,11 +710,11 @@
       </trans-unit>
       <trans-unit id="2047" resname="r463772363" restype="string" datatype="x-haml">
         <source>Now you can get top doctor lists for free from HealthTap.  Rankings are comprehensive, reliable and customizable.  You get the lists you want, when you want them.</source>
-        <target state="translated">现在您可以从HealthTap免费获得顶级医生名单排名是全面，可靠和可定制的。当您需要他们时，您可以得到您想要的名单。</target>
+        <target state="translated">现在您可以从HealthTap免费获得顶级医生名单。排名是全面，可靠和可定制的。当您需要他们时，您可以得到您想要的名单。</target>
       </trans-unit>
       <trans-unit id="2048" resname="r515199732" restype="string" datatype="x-haml">
         <source>Lists can be used in connection with everything from special issues dedicated to best doctors to one-off articles.  Sign up for access today!</source>
-        <target state="translated">列表可以用来连接顶级医生到一次性内容等各种特殊需要。立即注册访问！</target>
+        <target state="translated">名单可以用来连接顶级医生到一次性内容等各种特殊需要。立即注册访问！</target>
       </trans-unit>
     </body>
   </file>
@@ -770,7 +778,7 @@
       </trans-unit>
       <trans-unit id="2061" resname="r284091905" restype="string" datatype="x-haml">
         <source>Read</source>
-        <target state="translated">读取</target>
+        <target state="translated">阅读</target>
       </trans-unit>
     </body>
   </file>
@@ -778,7 +786,7 @@
     <body>
       <trans-unit id="2062" resname="r154397441" restype="string" datatype="x-haml">
         <source>Read more</source>
-        <target state="translated">读更多</target>
+        <target state="translated">阅读更多</target>
       </trans-unit>
       <trans-unit id="2063" resname="r105234301" restype="string" datatype="x-haml">
         <source>Learn about Top Doctor Lists</source>
@@ -802,7 +810,7 @@
       </trans-unit>
       <trans-unit id="2066" resname="r584581670" restype="string" datatype="x-haml">
         <source>Michael is HealthTap's Chief Privacy Officer, General Counsel, and Business Development Director. He is responsible for HealthTap's privacy and legal policies, the company’s legal affairs, and for HealthTap’s business development. For over a dozen years, Michael has provided legal counsel and services to innovative technology companies, from early-stage startups to Fortune 100 companies. Prior to joining HealthTap, Michael served as an attorney with national law firms in Silicon Valley, as general counsel to high technology companies, and as pro-bono counsel to Singularity University. Additionally, Michael has served as a Judge Pro Tem in Santa Clara County, and as a judicial clerk in the Washington D.C. Court of Appeals. At Yale Law School, Michael was an editor of the</source>
-        <target state="translated">Michael是HealthTap的首席隐私保密官、总顾问、业务发展总监。他负责HealthTap的隐私和法律政策、公司的法律事务以及公司的商业发展。十多年了，Michael提供法律顾问和服务来创新驱动科技公司，这些公司包括刚刚创业的公司到一百强公司。在加入HealthTap之前，Michael是硅谷国家事务律师所的律师，是高科技公司的总顾问，也是奇点大学公益法律顾问。除此之外，Michael曾在在圣克拉拉县担任当地的法官一职，也曾在华盛顿上诉法院担任司法书记。在耶鲁法学院，Michael是的编辑</target>
+        <target state="translated">Michael是HealthTap的首席隐私保密官、总顾问、业务发展总监。他负责HealthTap的隐私和法律政策、公司的法律事务以及公司的商业发展。十多年来，Michael提供法律顾问和服务给创新科技公司，这些公司包括刚刚创业的公司到一百强公司。在加入HealthTap之前，Michael是硅谷国家事务律师所的律师，是高科技公司的总顾问，也是奇点大学公益法律顾问。除此之外，Michael曾在在圣克拉拉县担任当地的临时法官一职，也曾在华盛顿上诉法院担任司法书记。在耶鲁法学院，Michael是...的编辑</target>
       </trans-unit>
     </body>
   </file>
@@ -846,7 +854,7 @@
       </trans-unit>
       <trans-unit id="2074" resname="r535954807" restype="string" datatype="x-haml">
         <source>Useful health tips + beautiful images, delivered daily.  Choose from 100 helpful topics.</source>
-        <target state="translated">有帮助的健康小贴士+美丽的图像，每日推送。从100个有帮助的主题中选择</target>
+        <target state="translated">有帮助的健康小贴士+美丽的图像，每日推送。从100个有帮助的话题中选择</target>
       </trans-unit>
     </body>
   </file>
@@ -854,7 +862,7 @@
     <body>
       <trans-unit id="2075" resname="r257567181" restype="string" datatype="x-haml">
         <source>Extend Your Reach</source>
-        <target state="translated">延伸您的研究</target>
+        <target state="translated">延伸您的覆盖面</target>
       </trans-unit>
       <trans-unit id="2076" resname="r611172016" restype="string" datatype="x-haml">
         <source>Go Mobile</source>
@@ -870,7 +878,7 @@
       </trans-unit>
       <trans-unit id="2079" resname="r377926855" restype="string" datatype="x-haml">
         <source>Build Your Reputation</source>
-        <target state="translated">建立你的声誉</target>
+        <target state="translated">建立您的声誉</target>
       </trans-unit>
       <trans-unit id="2080" resname="r437852056" restype="string" datatype="x-haml">
         <source>Customize your patient app</source>
@@ -886,7 +894,7 @@
       </trans-unit>
       <trans-unit id="2082" resname="r496409253" restype="string" datatype="x-haml">
         <source>Share</source>
-        <target state="translated">共享</target>
+        <target state="translated">分享</target>
       </trans-unit>
     </body>
   </file>
@@ -910,7 +918,7 @@
       </trans-unit>
       <trans-unit id="2086" resname="r926132162" restype="string" datatype="x-haml">
         <source>Want to know what other doctors think of the research?  Read the comments posted by medical experts, and learn what they have to say.</source>
-        <target state="translated">想知道什么其他医生认为可以研究？读医学专家发表的评论，并理解他们说了什么。</target>
+        <target state="translated">想要知道其他医生对这项研究的想法？读医学专家发表的评论，并了解他们说了什么。</target>
       </trans-unit>
       <trans-unit id="2087" resname="r485616279" restype="string" datatype="x-haml">
         <source>Want to learn more?  Quickly find other related publications on HealthTap, including similar research or articles by the same authors.</source>
@@ -946,11 +954,11 @@
       </trans-unit>
       <trans-unit id="2093" resname="r724524510" restype="string" datatype="x-haml">
         <source>HealthTap University</source>
-        <target state="translated">healthTap大学</target>
+        <target state="translated">healthTap学院</target>
       </trans-unit>
       <trans-unit id="2094" resname="r512995328" restype="string" datatype="x-haml">
         <source>Download HealthTap Express for Medical Experts on iPhone, Android, and iPad</source>
-        <target state="translated">在iPhone,安卓和iPad上下载为医学专家的HealthTap Express</target>
+        <target state="translated">在iPhone、Android和iPad上下载为医学专家的HealthTap Express</target>
       </trans-unit>
     </body>
   </file>
@@ -1006,7 +1014,7 @@
     <body>
       <trans-unit id="2103" resname="r487952412" restype="string" datatype="x-haml">
         <source>If you wish to answer this private message, just click the Answer button. If you don't wish to or aren't able to respond within 72 hours, you can instead click the "Sorry,  I cannot help you" button below. Responding in a timely fashion will improve your Responsiveness and your DocScore.</source>
-        <target state="translated">如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的反应灵敏和您的医者评分。</target>
+        <target state="translated">如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的响应度和您的医者评分。</target>
       </trans-unit>
       <trans-unit id="2104" resname="r1071266829" restype="string" datatype="x-haml">
         <source>Helpfulness</source>
@@ -1074,11 +1082,11 @@
       </trans-unit>
       <trans-unit id="2556" resname="r516963162" restype="string" datatype="x-haml">
         <source>Doctor recommended health and</source>
-        <target state="translated">医生推荐健康和</target>
+        <target state="translated">医生推荐健康与</target>
       </trans-unit>
       <trans-unit id="2557" resname="r811333675" restype="string" datatype="x-haml">
         <source>wellness iOS and Android apps</source>
-        <target state="translated">福祉iOS和Android应用程序</target>
+        <target state="translated">保健iOS和Android应用程序</target>
       </trans-unit>
       <trans-unit id="2561" resname="r145289408" restype="string" datatype="x-haml">
         <source>Medical Expert Network</source>
@@ -1142,7 +1150,7 @@
     <body>
       <trans-unit id="2115" resname="r648668940" restype="string" datatype="x-haml">
         <source>with recognition, online reputation control, new patients, increased Internet visibility and even monetary compensation. We’ll also help you get your name out into the mobile world with your own free, personalized app for patients to use.</source>
-        <target state="translated">具有识别，在线声誉控制，新患者，增加的互联网可见性甚至金钱补偿。我们还将帮助您使用您自己的免费，专属于您的应用程序让您的名字在移动世界中使用。</target>
+        <target state="translated">具有识别，在线声誉控制，新患者，增加的互联网可见性甚至货币报酬。我们还将帮助您使用您自己的免费，专属于您的应用程序让您的名字在移动世界中使用。</target>
       </trans-unit>
       <trans-unit id="2116" resname="r996199109" restype="string" datatype="x-haml">
         <source>Sign up to make it real</source>
@@ -1162,7 +1170,7 @@
       </trans-unit>
       <trans-unit id="2119" resname="r414051035" restype="string" datatype="x-haml">
         <source>At HealthTap, we value trust and quality.  That’s why we identify select top doctors in every specialty, and highlight them to patients and peers.  We also provide these doctors with special privileges on HealthTap, including membership in ClubMD and status as a HealthTap Scholar.</source>
-        <target state="translated">在HealthTap，我们重视信任和质量这就是为什么我们在每个专业领域挑选最佳医生，并向患者和同行突出显示。我们还向这些医生提供HealthTap的特殊权限，包括ClubMD的会员身份和HealthTap学者身份。</target>
+        <target state="translated">在HealthTap，我们重视信任和质量。这就是为什么我们在每个专业领域挑选最佳医生，并向患者和同行突出显示。我们还向这些医生提供HealthTap的特殊权限，包括ClubMD的会员身份和HealthTap学者身份。</target>
       </trans-unit>
       <trans-unit id="2120" resname="r70001782" restype="string" datatype="x-haml">
         <source>HealthTap Scholars are a highly select group of leading doctors, and include the most engaged, respected, and helpful experts on HealthTap.  The training, career accomplishments, and overall enthusiasm for HealthTap and its mission set these leaders apart.  Members of this invitation-only group, identified by the Scholar badge on their profile, play a key role in curating the world’s best health information online.</source>
@@ -1254,7 +1262,7 @@
     <body>
       <trans-unit id="2135" resname="r912467643" restype="string" datatype="x-haml">
         <source>Specialty</source>
-        <target state="translated">专业</target>
+        <target state="translated">专科</target>
       </trans-unit>
     </body>
   </file>
@@ -1262,7 +1270,7 @@
     <body>
       <trans-unit id="2136" resname="r789310818" restype="string" datatype="x-haml">
         <source>Topic</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
       <trans-unit id="2137" resname="r540548250" restype="string" datatype="x-haml">
         <source>›</source>
@@ -1366,7 +1374,7 @@
     <body>
       <trans-unit id="2149" resname="r615510039" restype="string" datatype="x-haml">
         <source>FREE IMMEDIATE LIVE CONSULTS WITH A DOCTOR 24/7, WHEREVER YOU ARE</source>
-        <target state="translated">无论您在哪里，都可以24/7去天后与医生进行免费立即的实时咨询</target>
+        <target state="translated">无论您在哪里，都可以24/7全天候与医生进行免费立即的实时咨询</target>
       </trans-unit>
       <trans-unit id="2150" resname="r508501262" restype="string" datatype="x-haml">
         <source>TRY HEALTHTAP PRIME FOR FREE NOW</source>
@@ -1426,7 +1434,7 @@
     <body>
       <trans-unit id="2158" resname="r820993430" restype="string" datatype="x-haml">
         <source>treatment for you!</source>
-        <target state="translated">为您治疗</target>
+        <target state="translated">为您治疗！</target>
       </trans-unit>
     </body>
   </file>
@@ -1458,7 +1466,7 @@
       </trans-unit>
       <trans-unit id="2163" resname="r194880084" restype="string" datatype="x-haml">
         <source>Get a</source>
-        <target state="translated">得到</target>
+        <target state="translated">获得一次</target>
       </trans-unit>
     </body>
   </file>
@@ -1526,7 +1534,7 @@
       </trans-unit>
       <trans-unit id="2174" resname="r660903042" restype="string" datatype="x-haml">
         <source>A live doctor</source>
-        <target state="translated">实时在线医生</target>
+        <target state="translated">一位在线医生</target>
       </trans-unit>
       <trans-unit id="2175" resname="r75714244" restype="string" datatype="x-haml">
         <source>0/150</source>
@@ -1538,7 +1546,7 @@
     <body>
       <trans-unit id="2176" resname="r443337929" restype="string" datatype="x-haml">
         <source>is an opportunity to interact with some of the most remarkable people in Silicon Valley every day in a culture that values artisanship, having a large positive impact, and making a difference in people’s lives.</source>
-        <target state="translated">在一个重视手工艺，具有巨大的积极影响，对人们生活造成影响的文化里，每天都有机会与硅谷最杰出人物互动。</target>
+        <target state="translated">在一个重视技能，具有巨大的积极影响，对人们生活造成影响的文化里，每天都有机会与硅谷最杰出人物互动。</target>
       </trans-unit>
       <trans-unit id="2177" resname="r771527209" restype="string" datatype="x-haml">
         <source>Working at</source>
@@ -1546,7 +1554,7 @@
       </trans-unit>
       <trans-unit id="2178" resname="r933237391" restype="string" datatype="x-haml">
         <source>Big dreamers and big doers? You bet. Here at</source>
-        <target state="translated">大梦想家和大实干家？你确信。现在</target>
+        <target state="translated">大梦想家和大实干家？您确信。现在</target>
       </trans-unit>
       <trans-unit id="2179" resname="r5438243" restype="string" datatype="x-haml">
         <source>S</source>
@@ -1634,7 +1642,7 @@
       </trans-unit>
       <trans-unit id="2196" resname="r379982234" restype="string" datatype="x-haml">
         <source>We're sorry to hear you'd like to unsubscribe this email</source>
-        <target state="translated">我们非常抱歉的听到您希望取消此邮箱订购</target>
+        <target state="translated">我们非常抱歉听到您希望取消此邮箱订购</target>
       </trans-unit>
       <trans-unit id="2197" resname="r931258887" restype="string" datatype="x-haml">
         <source>we'll make sure to address your feedback  as best as possible!</source>
@@ -1670,11 +1678,11 @@
       </trans-unit>
       <trans-unit id="2204" resname="r927688850" restype="string" datatype="x-haml">
         <source>No</source>
-        <target state="translated">不是</target>
+        <target state="translated">不能</target>
       </trans-unit>
       <trans-unit id="2205" resname="r266823229" restype="string" datatype="x-haml">
         <source>Yes</source>
-        <target state="translated">是</target>
+        <target state="translated">能</target>
       </trans-unit>
     </body>
   </file>
@@ -1702,7 +1710,7 @@
       </trans-unit>
       <trans-unit id="2209" resname="r721590660" restype="string" datatype="x-haml">
         <source>of Use,</source>
-        <target state="translated">使用的</target>
+        <target state="translated">使用</target>
       </trans-unit>
       <trans-unit id="2210" resname="r615667905" restype="string" datatype="x-haml">
         <source>is officially</source>
@@ -1722,15 +1730,15 @@
       </trans-unit>
       <trans-unit id="2214" resname="r73730147" restype="string" datatype="x-haml">
         <source>apply),</source>
-        <target state="translated">应用），</target>
+        <target state="translated">申请），</target>
       </trans-unit>
       <trans-unit id="2215" resname="r970647533" restype="string" datatype="x-haml">
         <source>apply)</source>
-        <target state="translated">应用），</target>
+        <target state="translated">申请），</target>
       </trans-unit>
       <trans-unit id="2216" resname="r597745879" restype="string" datatype="x-haml">
         <source>apply), HealthTap Concierge (</source>
-        <target state="translated">应用), HealthTap贵宾台 (</target>
+        <target state="translated">申请), HealthTap贵宾台 (</target>
       </trans-unit>
       <trans-unit id="2217" resname="r201491617" restype="string" datatype="x-haml">
         <source>means HealthTap Inc.,</source>
@@ -1758,7 +1766,7 @@
       </trans-unit>
       <trans-unit id="2223" resname="r964216537" restype="string" datatype="x-haml">
         <source>On HealthTap Prime you can obtain care (if you are located in a state where this service is available). This TOU applies to HealthTap.</source>
-        <target state="translated">在HealthTap Prime上，您可以获得护理（如果您位于此服务可用的状态）。本TOU适用于HealthTap。</target>
+        <target state="translated">在HealthTap Prime上，您可以获得医护（如果您位于此服务可用的州）。本TOU适用于HealthTap。</target>
       </trans-unit>
       <trans-unit id="2224" resname="r543085304" restype="string" datatype="x-haml">
         <source>you, see the terms related to our Content and Services (below) and our</source>
@@ -1770,15 +1778,15 @@
       </trans-unit>
       <trans-unit id="2226" resname="r380668570" restype="string" datatype="x-haml">
         <source>Standard virtual consults: In these consults, doctors who have accepted you as a patient (whether for “on call” care, unless you already have an ongoing care relationship with the doctor) can provide care.  You may receive an examination (within the limits of virtual care), provide a medical history, obtain an assessment from a physician, and receive a treatment plan as determined to be medically appropriate by the consulting doctor.</source>
-        <target state="translated">标准在线咨询：在这些咨询中，接受您作为患者的医生（无论是否为“在职”护理，除非您已经与医生有持续的护理关系）可以提供护理。您可以接受检查（在在线护理的限制内），提供病史，获得医生的评估，并接受咨询医生觉得在医学上合适的治疗计划。</target>
+        <target state="translated">标准在线咨询：在这些咨询中，接受您作为患者的医生（无论是否为“随传随到”医护，除非您已经与医生有持续的医护关系）可以提供医护。您可以接受检查（在在线医护的限制内），提供病史，获得医生的评估，并接受咨询医生觉得在医学上合适的治疗计划。</target>
       </trans-unit>
       <trans-unit id="2227" resname="r45826553" restype="string" datatype="x-haml">
         <source>Introductory Consult: this is the first interaction with a new doctor or a doctor who has not yet accepted you as a patient on HealthTap. An introductory consult is not intended for the doctor to give you  care.  Introductory consults are for providing you with information or get to know the doctor and to determine if she or he can help you with your health concern (in person and/or through virtual consults). A doctor may need to invite you to her or his office for an in person appointment in order to accept you as a patient on HealthTap.</source>
-        <target state="translated">介绍性咨询：这是第一次在HealthTap上与一个新医生或尚未接受您作为患者的医生互动。介绍性咨询的目的不是为了医生给您提供照顾。介绍性咨询是为您提供信息或了解医生，并确定她或他是否可以帮助您解决您的健康问题（亲自和/或通过在线咨询）。医生可能会邀请您到她或他的办公室进行个人预约，以接受您作为HealthTap上的患者。</target>
+        <target state="translated">介绍性咨询：这是第一次在HealthTap上与一个新医生或尚未接受您作为患者的医生互动。介绍性咨询的目的不是为了医生给您提供护理。介绍性咨询是为您提供信息或了解医生，并确定她或他是否可以帮助您解决您的健康问题（亲自和/或通过在线咨询）。医生可能会邀请您到她或他的办公室进行个人预约，以接受您作为HealthTap上的患者。</target>
       </trans-unit>
       <trans-unit id="2228" resname="r209490680" restype="string" datatype="x-haml">
         <source>HealthTap is intended to give you easy access to health information (and even care) on your computer or mobile device. As a HealthTap patient (with a HealthTap Prime membership or other access to consulting doctors on HealthTap), you are entitled to receive medically necessary and appropriate care, and you agree not to abuse or overuse the access to doctors provided to you. Overuse includes requests for multiple opinions on single medical condition  HealthTap consults should not be used : to obtain numerous opinions on a single medical condition. In general, doctors may discourage this practice and may be hesitant to provide an assessment to those patients who attempt to seek multiple consults. In cases where there is an absolute medical necessity, it may be appropriate to do more than one consult in a day about a specific health issue, but you may also need to consider seeking in-person care or emergency services if the level of severity truly is at the point where multiple consults are warranted (especially if in-person care is recommended by a consulting doctor on HealthTap).</source>
-        <target state="translated">HealthTap旨在让您轻松访问您计算机或移动设备上的健康信息（甚至护理）。作为HealthTap患者（具有HealthTap Prime或其他访问HealthTap上的咨询医生的资格），您有权获得必要和适当的医疗护理，您同意不会滥用或过度使用医生的访问权。过度使用包括对单一医疗状况的多个意见的请求。HealthTap咨询不会被用于：在单个医疗状况下获得许多意见。一般来说，医生可能不鼓励这种做法，可能会犹豫向那些试图寻求多方咨询的患者提供评估。在有绝对医疗必要性的情况下，在一天内就一个特定的健康问题进行多次咨询是可行的，但如果严重程度的真实性是多方咨询所担保的，您可能需要考虑寻求面对面的护理或紧急服务（特别是如果面对面护理是HealthTap咨询医生推荐的）。</target>
+        <target state="translated">HealthTap旨在让您轻松访问您计算机或移动设备上的健康信息（甚至医护）。作为HealthTap患者（具有HealthTap Prime或其他访问HealthTap上的咨询医生的资格），您有权获得必要和适当的医疗医护，您同意不会滥用或过度使用医生的访问权。过度使用包括对单一医疗状况的多个意见的请求。HealthTap咨询不会被用于：在单个医疗状况下获得许多意见。一般来说，医生可能不鼓励这种做法，可能会犹豫向那些试图寻求多方咨询的患者提供评估。在有绝对医疗必要性的情况下，在一天内就一个特定的健康问题进行多次咨询是可行的，但如果严重程度的真实性是多方咨询所担保的，您可能需要考虑寻求面对面的医护或紧急服务（特别是如果面对面医护是HealthTap咨询医生推荐的）。</target>
       </trans-unit>
       <trans-unit id="2229" resname="r841013822" restype="string" datatype="x-haml">
         <source>If you violate any of these Terms of Use, your permission to use the Content and Services automatically terminates and you must immediately destroy any copies you have made of any portion of the Content. (For more information, see</source>
@@ -1826,7 +1834,7 @@
       </trans-unit>
       <trans-unit id="2240" resname="r518280458" restype="string" datatype="x-haml">
         <source>Do not post name(s), email address(es), or telephone number(s), URLs, or any other confidential or Personally Identifiable Information for you or any other person or entity on HealthTap.</source>
-        <target state="translated">不要发表姓名，电子邮件地址，或电话号码，网址，或任何其他机密或关于你的个人身份信息或其他人或实体在HealthTap上。</target>
+        <target state="translated">不要发表姓名，电子邮件地址，或电话号码，网址，或任何其他机密或关于您的个人身份信息或其他人或实体在HealthTap上。</target>
       </trans-unit>
       <trans-unit id="2241" resname="r193297322" restype="string" datatype="x-haml">
         <source>Do not use HealthTap for any purpose in violation of local, state, federal, or international laws.</source>
@@ -1898,7 +1906,7 @@
       </trans-unit>
       <trans-unit id="2258" resname="r978521659" restype="string" datatype="x-haml">
         <source>In the event that the diagnosis and treatment by the physician associated with HealthTap Medical Group, P.C. does not resolve the medical issue for which you sought a Virtual Consult, you agree to consult with your primary care physician in person for follow-up treatment; and/or seek treatment, if necessary at a local hospital emergency department.</source>
-        <target state="translated">在与HealthTap医疗团队相关的医师的诊断和治疗方法中没有确认您在在线咨询中找到的医疗主题，您同意咨询你的初级护理医师关于接下来的治疗方法，或者寻找治疗方法，如果可以的话，会在当地的一家医院紧急部门。</target>
+        <target state="translated">在与HealthTap医疗团队相关的医师的诊断和治疗方法中没有确认您在在线咨询中找到的医疗主题，您同意咨询您的初级护理医师关于接下来的治疗方法，或者寻找治疗方法，如果可以的话，会在当地的一家医院紧急部门。</target>
       </trans-unit>
       <trans-unit id="2259" resname="r941234098" restype="string" datatype="x-haml">
         <source>I understand that, by having my consent to live virtual consults performed by video or telephone or asynchronous inbox consults, my physician associated with HealthTap Medical Group, P.C. may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
@@ -1914,15 +1922,15 @@
       </trans-unit>
       <trans-unit id="2262" resname="r690434547" restype="string" datatype="x-haml">
         <source>You agree that that all information you provide on HealthTap Prime relates to you and is current, complete, and accurate. Additionally, you agree to update and maintain such information on HealthTap Prime to ensure that it is true, accurate, current and complete at all times.</source>
-        <target state="translated">您同意您所提供给HealthTap Prime的个人信息是准确完整的。另外，你同意更新这些HealthTap Prime的信息并确保一直是完整准确无误的。</target>
+        <target state="translated">您同意您所提供给HealthTap Prime的个人信息是准确完整的。另外，您同意更新这些HealthTap Prime的信息并确保一直是完整准确无误的。</target>
       </trans-unit>
       <trans-unit id="2263" resname="r698629491" restype="string" datatype="x-haml">
         <source>You agree to pay all fees or charges to your account in accordance with the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. You authorize HealthTap to immediately invoice your credit card or other payment account provided for all fees and charges due and payable and agree that no additional notice or consent is required. HealthTap's fees are net of any applicable sales tax and if any services or payments for any goods or services are subject to sales tax in any jurisdiction. You will be responsible for payment of such sales tax and any related penalties or interest and will indemnify HealthTap for any liability or expense incurred in connection with such sales taxes (including any use tax and any other tax measured by sales proceeds that HealthTap is permitted to pass to you) and HealthTap may automatically charge and withhold such taxes for services to be delivered within any jurisdictions that it deems is required. Unless otherwise agreed to by HealthTap in writing, all fees paid are non-refundable. HealthTap reserves the right, without notice, to modify, change, terminate, or suspend service for a subscription plan you are on if, for any reason, payment for such plan is not made or cannot be processed on the due date. This right to modify a subscription plan includes, but is not limited to, the right to change a subscription plan type (for example, from a fixed fee plan without consult co-pays to a lower priced fixed-fee plan with consult co-pays). You may adjust your subscription settings at any time (where applicable, by paying any amounts due).</source>
-        <target state="translated">您同意支付您的账户上的所有值得支付的费用。您授权给HealthTap对您的信用卡或者其他支付费用的账户寄发票。HealthTap的费用是可适用于任意省份的消费税。您将负责支付销售税,赔偿HealthTap任何费用与销售税(包括HealthTap允许传给你的任何使用税收和其他税收)和HealthTap可能在任意省份自动收费和保留它认为是必需的税收服务交付。除非HealthTap明文规定，所有的费用都不归还。HealthTap保护这些权利，如果您已订购，将不会修改，改变，终止，推迟此服务。如无特殊原因，此计划的付款方式不会更改直至到期日。修改订购计划的权利包括修改订购计划的类型，但不是限制（如从一个固定的费用计划没有咨询自费到一个较低的价格固定费与咨询）。您可能随时习惯于你的订购模式（在适用的情况下，支付任何金额）。</target>
+        <target state="translated">您同意支付您的账户上的所有值得支付的费用。您授权给HealthTap对您的信用卡或者其他支付费用的账户寄发票。HealthTap的费用是可适用于任意省份的消费税。您将负责支付销售税，赔偿HealthTap任何费用与销售税(包括HealthTap允许传给您的任何使用税收和其他税收)和HealthTap可能在任意省份自动收费和保留它认为是必需的税收服务交付。除非HealthTap明文规定，所有的费用都不归还。HealthTap保护这些权利，如果您已订购，将不会修改，改变，终止，推迟此服务。如无特殊原因，此计划的付款方式不会更改直至到期日。修改订购计划的权利包括修改订购计划的类型，但不是限制（如从一个固定的费用计划没有咨询自费到一个较低的价格固定费与咨询）。您可能随时习惯于您的订购模式（在适用的情况下，支付任何金额）。</target>
       </trans-unit>
       <trans-unit id="2264" resname="r340073102" restype="string" datatype="x-haml">
         <source>You will agree to seek emergency help when needed or as recommended by doctors on HealthTap Prime and you agree continue to consult with your primary care doctor as recommended by your primary care doctor or the doctors on HealthTap Prime.</source>
-        <target state="translated">您将同意寻求紧急帮助当你需要或者被HealthTap Prime的医生建议，并且您将同意继续咨询你的初级护理医师正如你的初级护理医师或HealthTap Prime的医生所建议。</target>
+        <target state="translated">您将同意寻求紧急帮助当您需要或者被HealthTap Prime的医生建议，并且您将同意继续咨询您的普通门诊医师正如您的普通门诊医师或HealthTap Prime的医生所建议。</target>
       </trans-unit>
       <trans-unit id="2265" resname="r411539575" restype="string" datatype="x-haml">
         <source>Consults:</source>
@@ -1946,7 +1954,7 @@
       </trans-unit>
       <trans-unit id="2270" resname="r736810159" restype="string" datatype="x-haml">
         <source>If you wish to apply your health insurance coverage to virtual consults with eligible doctors (where available), simply select Insurance under Payment Information to confirm coverage and your copay.  A claim will be submitted following the consult.  By requesting to submit this claim under insurance you agree to pay any associated insurance fees (such as copayment and deductible fees) under your insurance plan and to be personally responsible for any costs associated with the care received that are not covered or are denied by your insurance carrier.</source>
-        <target state="translated">如果您希望申请您的在线咨询的健康保险（合适的），挑选在支付信息下的保险索赔将在咨询后提交。通过请求提交这一说法在保险同意支付任何相关保险费用(如共同付费和扣除费用)在您的保险计划和个人负责任何相关费用的照顾不是否认您保险公司。</target>
+        <target state="translated">如果您希望将医疗保险范围应用于与合格医生（如果有的话）的在线咨询，只需选择支付信息下的保险即可确认保险和您的共付。 索赔将在咨询后提交。通过请求在保险下提交此索赔，您同意在您的保险计划下支付任何相关的保险费（如共同支付和可扣除费用），并对与您收到的保险相关的任何费用承担责任，这些费用不包括您的保险公司不担保或拒绝担保的费用。</target>
       </trans-unit>
       <trans-unit id="2271" resname="r721790158" restype="string" datatype="x-haml">
         <source>according to the</source>
@@ -1954,7 +1962,7 @@
       </trans-unit>
       <trans-unit id="2272" resname="r326733502" restype="string" datatype="x-haml">
         <source>and related agreements,</source>
-        <target state="translated">根据</target>
+        <target state="translated">和相关协议，</target>
       </trans-unit>
       <trans-unit id="2273" resname="r266330783" restype="string" datatype="x-haml">
         <source>If you agree to accept health insurance coverage for Concierge virtual consults with eligible patients (where available), you agree that HealthTap may submit the initial claim form on your behalf based on the completed consult SOAP note.  By agreeing to accept this claim under insurance coverage (where available), you agree to assume all responsibility and liability for rejected claims, for collection of amounts due for such consults, and to hold HealthTap harmless from any and all claims, losses or harm related to any such consults or submissions.  Where insurance claims are denied, for any reason, you understand and agree that you are solely responsible for any re-submission or appeal of claim denials, and that HealthTap is not involved in the claims re-submission process.</source>
@@ -2046,7 +2054,7 @@
     <body>
       <trans-unit id="2292" resname="r867865807" restype="string" datatype="x-haml">
         <source>Content on HealthTap (including doctor created content, such as answers or ratings of medications, other treatments, products, or services) is provided for educational and informational purposes only. Always consult with your doctor for advice, diagnosis and treatment and do not disregard or delay following your doctor's medical advice because of Content on HealthTap.  Interactions on HealthTap do not create a doctor-patient relationship (for medical care, please use HealthTap Prime or HealthTap Concierge, as available, or see your own doctor). Call your doctor or 911 (in the U.S.) whenever you think you may have a medical emergency. See</source>
-        <target state="translated">HealthTap上提供的内容（包括医生创建的内容，例如药物明细或排名、其他治疗、产品或者服务）仅仅用于教育和信息目的。谨记应时常向您的医生咨询建议、诊断结果和治疗方法，不要因为HealthTap上的内容而漠视或者拖延您医生的医疗建议。HealthTap上的互动不构成医患关系（如需医疗护理，可以的话请使用HealthTap Prime或者HealthTap贵宾台，或者是向您自己的医生寻求帮助）任何时候当您认为需要紧急治疗时，请联系您的医生或者拨打911（在美国）。查看</target>
+        <target state="translated">HealthTap上提供的内容（包括医生创建的内容，例如药物明细或排名、其他治疗、产品或者服务）仅仅用于教育和信息目的。谨记应时常向您的医生咨询建议、诊断结果和治疗方法，不要因为HealthTap上的内容而漠视或者拖延您医生的医疗建议。HealthTap上的互动不构成医患关系（如需医疗医护，可以的话请使用HealthTap Prime或者HealthTap贵宾台，或者是向您自己的医生寻求帮助）任何时候当您认为需要紧急治疗时，请联系您的医生或者拨打911（在美国）。查看</target>
       </trans-unit>
       <trans-unit id="2293" resname="r278265471" restype="string" datatype="x-haml">
         <source>Condition</source>
@@ -2062,7 +2070,7 @@
     <body>
       <trans-unit id="2295" resname="r491238528" restype="string" datatype="x-haml">
         <source>With more than 65,742 doctors in HealthTap’s Medical Expert Network, we have 1,623,598  years of clinical experience on tap. We have asked our doctors to use this experience to rate the effectiveness and clinical usefulness of thousands of medications for medical conditions and other indications.</source>
-        <target state="translated">HealthTap的医疗专家网络拥有65742名医生，总计1,623,598年的临床经验随时可供您参考使用。我们要求医生根据这些临床经验对数以千计的药物做出有效性和临床帮助度的评分。</target>
+        <target state="translated">HealthTap的医学专家网络拥有65742名医生，总计1623598年的临床经验随时可供您参考使用。我们要求医生根据这些临床经验对数以千计的药物做出有效性和临床帮助度的评分。</target>
       </trans-unit>
     </body>
   </file>
@@ -2070,11 +2078,11 @@
     <body>
       <trans-unit id="2296" resname="r668962001" restype="string" datatype="x-haml">
         <source>RateRx is a living work.  As an open and ongoing feature on the HealthTap platform, any U.S.-licensed doctor in good standing can contribute to this data at any time.  RateRx data reflect the ongoing feedback and ratings provided by doctors based on their real-world use of medications in treating patients, serving as a unique, continuously updated resource for the efficacy of both existing and new treatments.</source>
-        <target state="translated">正是因为HealthTap平台有着开放的并且持续发展的特征，任何有良好声誉的美国持证医生都可以在任何时候完善数据。RateRx的数据反映了医生基于现实中对患者的药物治疗的实时的反馈和评分，这些数据为现有的和新的治疗方式提供了独一无二的，同时也是最新的资源。</target>
+        <target state="translated">RateRx医生评测是一项实时工作。正是因为HealthTap平台有着开放的并且持续发展的特征，任何拥有美国执业执照的声誉良好的医生都可以在任何时候完善数据。RateRx医生评测的数据反映了医生基于现实中对患者的药物治疗的实时的反馈和评分，这些数据为现有的和新的治疗方式提供了独一无二的，同时也是最新的资源。</target>
       </trans-unit>
       <trans-unit id="2297" resname="r88043317" restype="string" datatype="x-haml">
         <source>. Content, including AppRx ratings and report results, may be licensed from HealthTap.  For details contact</source>
-        <target state="translated">.包括AppRx评分和报告的结果在内的内容，可以从HealthTap得到授权。</target>
+        <target state="translated">.包括AppRx医生评测评分和报告的结果在内的内容，可以从HealthTap得到授权。</target>
       </trans-unit>
       <trans-unit id="2298" resname="r377883522" restype="string" datatype="x-haml">
         <source>and our</source>
@@ -2082,7 +2090,7 @@
       </trans-unit>
       <trans-unit id="2299" resname="r448487612" restype="string" datatype="x-haml">
         <source>HealthTap does not recommend or endorse any specific content or other information mentioned on our service.  Please remember, that content on HealthTap (including but not limited to treatment options and ratings listed in RateRx): (i) is provided for informational and educational purposes only, and is designed to be used with common sense, and in connection with the advice of your doctor or healthcare provider; (ii) is for personal, household, educational use of a single individual, and commercial use or commercial distribution of any content is prohibited. For more information please see</source>
-        <target state="translated">HealthTap不推荐任何在我们的服务中提到的特定内容或其他的信息。请记住，HealthTap中的内容（包括但不限于在RateRx中列出的治疗选项和评分）(i)是仅为获取信息和教育的目的提供的，需要与常识，您的医生或者医疗保健提供商的建议相配合；(ii)是为个人，家庭，个人的教育而提供的，内容的商业用途或者商业性传播都是被禁止的。获得更多信息，请查看</target>
+        <target state="translated">HealthTap不推荐任何在我们的服务中提到的特定内容或其他的信息。请记住，HealthTap中的内容（包括但不限于在RateRx医生评测中列出的治疗选项和评分）(i)是仅为获取信息和教育的目的提供的，需要与常识，您的医生或者医疗保健提供商的建议相配合；(ii)是为个人，家庭，个人的教育而提供的，内容的商业用途或者商业性传播都是被禁止的。获得更多信息，请查看</target>
       </trans-unit>
       <trans-unit id="2300" resname="r581520958" restype="string" datatype="x-haml">
         <source>Learn more about our methodology</source>
@@ -2110,7 +2118,7 @@
       </trans-unit>
       <trans-unit id="2305" resname="r715000859" restype="string" datatype="x-haml">
         <source>Hold your appointment in any place you find comfortable, private, and convenient</source>
-        <target state="translated">在您觉得任何舒适，私人和方便的地方举行您的预约</target>
+        <target state="translated">在您觉得任何舒适，私人和方便的地方进行您的预约</target>
       </trans-unit>
       <trans-unit id="2306" resname="r699421527" restype="string" datatype="x-haml">
         <source>found that eight sessions of psychotherapy via the Internet worked better and had longer-lasting effects than eight conventional visits</source>
@@ -2174,7 +2182,7 @@
       </trans-unit>
       <trans-unit id="2320" resname="r338546783" restype="string" datatype="x-haml">
         <source>care</source>
-        <target state="translated">看护</target>
+        <target state="translated">医护</target>
       </trans-unit>
       <trans-unit id="2321" resname="r980046149" restype="string" datatype="x-haml">
         <source>providing</source>
@@ -2226,7 +2234,7 @@
       </trans-unit>
       <trans-unit id="2331" resname="r977975048" restype="string" datatype="x-haml">
         <source>, and other members can never see this information. We do not display this information on HealthTap, except inside of your Profile, which is visible only to you. We keep this information secure by using state of the art encryption and other security measures. More information about our security can be found</source>
-        <target state="translated">我们不会在HealthTap上显示这些信息，除了在只有能看到的个人简述里。我们通过使用最新的加密技术和其他安全错失来保证这些信息的安全。</target>
+        <target state="translated">我们不会在HealthTap上显示这些信息，除了在只有能看到的个人简述里。我们通过使用最新的加密技术和其他安全措施来保证这些信息的安全。</target>
       </trans-unit>
       <trans-unit id="2332" resname="r572344617" restype="string" datatype="x-haml">
         <source>We keep your Personally Identifiable Information private by not displaying it or sharing it without your consent. Your use of HealthTap is</source>
@@ -2242,7 +2250,9 @@
       </trans-unit>
       <trans-unit id="2335" resname="r98116521" restype="string" datatype="x-haml">
         <source>You can add additional health information to your Profile. What you can add, how this information is used, and your ability to modify this information are described</source>
-        <target state="translated">描述了您可以添加什么，这些信息是如何被使用的和您能修改这些信息的能力。</target>
+        <target state="translated">您可以添加其他健康信息到资料中去。关于您可以添加什么，这些信息是如何被使用的和您能修改这些信息的能力，请见描述于此</target>
+      </trans-unit>
+      <trans-unit id="2336" resname="r247342354" restype="string" datatype="x-haml"></target>
       </trans-unit>
       <trans-unit id="2336" resname="r247342354" restype="string" datatype="x-haml">
         <source>Sharing</source>
@@ -2254,7 +2264,7 @@
       </trans-unit>
       <trans-unit id="2338" resname="r1013651164" restype="string" datatype="x-haml">
         <source>You may reach us by contacting our support team via email or you may write to us at our most current address. Please see our</source>
-        <target state="translated">您可以通过电子邮件联系我们的支持团队，或者通过我们最新的地址写信给我们。请参阅我们</target>
+        <target state="translated">您可以通过电子邮件联系我们的支持团队，或者通过我们最新的地址写信给我们。请参阅我们的</target>
       </trans-unit>
       <trans-unit id="2913" resname="r200303536" restype="string" datatype="x-haml">
         <source>We value your privacy. This Privacy Statement describes how we will protect and handle the personal information that you provide to us through our web, mobile and related services. Among other things, the HealthTap Privacy Statement explains:</source>
@@ -2294,7 +2304,7 @@
       </trans-unit>
       <trans-unit id="2922" resname="r1031597812" restype="string" datatype="x-haml">
         <source>about how HealthTap may use your e-mail address to contact you.</source>
-        <target state="translated">关于HealthTap会如何使用您的邮箱地址来联系您</target>
+        <target state="translated">关于HealthTap会如何使用您的邮箱地址来联系您。</target>
       </trans-unit>
       <trans-unit id="2923" resname="r865289454" restype="string" datatype="x-haml">
         <source>No. We have a strict “NO-SPAM” policy. We won’t sell any email address you enter, unless you tell us it’s OK. The email address entered when you log into HealthTap is not visible to anyone but you. We've provided more information</source>
@@ -2426,7 +2436,7 @@
       </trans-unit>
       <trans-unit id="2350" resname="r483485383" restype="string" datatype="x-haml">
         <source>the right care at the right time at the right price. Our mission is to help people live healthier, happier lives</source>
-        <target state="translated">正确的关怀，在正确的时间，花正确的价格！我们的使命是帮助人们生活更健康，更快乐</target>
+        <target state="translated">正确的医护，在合适的时间，用合理的价格！我们的使命是帮助人们生活更健康，更快乐</target>
       </trans-unit>
     </body>
   </file>
@@ -2434,7 +2444,7 @@
     <body>
       <trans-unit id="2351" resname="r142965865" restype="string" datatype="x-haml">
         <source>You guarantee your availability to take consults for the  duration of the shift, and in exchange, are eligible for guaranteed minimum compensation payments for shifts as a function of patient demand. These doctors are preferentially routed patients before On Standby or Try Me doctors.</source>
-        <target state="translated">您保证您可以在轮班期间接受咨询，作为交换，您有资格根据患者的需求确保轮班的最低补偿金。这些医生在待命或Try Me doctors之前优先规定患者。</target>
+        <target state="translated">您保证您可以在轮班期间接受咨询，作为交换，您有资格根据患者的需求确保轮班的最低报酬金。这些医生在待命或Try Me doctors之前优先规定患者。</target>
       </trans-unit>
       <trans-unit id="2352" resname="r805922637" restype="string" datatype="x-haml">
         <source>You will be treating patients with non-emergency clinical care issues. The most common issues include coughs, colds, respiratory problems, abdominal pain, allergies, muscular pains, minor infections, fever, influenza, nausea, rashes, sports injuries, and  strep throat. The patients you will be seeing will be physically located in the states in which you hold active medical licenses. Or they may be patients contacting HealthTap from overseas locations.</source>
@@ -2462,7 +2472,7 @@
       </trans-unit>
       <trans-unit id="2357" resname="r365660130" restype="string" datatype="x-haml">
         <source>Apply today to see more patients, help more people, and earn more money with the ultimate flexibility!</source>
-        <target state="translated">今天申请，看到更多的病人，帮助更多的人，并用极致的灵活性赚取更多的钱！</target>
+        <target state="translated">立刻申请可以查看更多患者，帮助更多的人，在极强的灵活性下即可赚取更多的钱！</target>
       </trans-unit>
       <trans-unit id="2358" resname="r419486985" restype="string" datatype="x-haml">
         <source>log in to your account ›</source>
@@ -2478,7 +2488,7 @@
       </trans-unit>
       <trans-unit id="2361" resname="r1067974145" restype="string" datatype="x-haml">
         <source>Specialties</source>
-        <target state="translated">专业</target>
+        <target state="translated">专科</target>
       </trans-unit>
       <trans-unit id="2362" resname="r34349558" restype="string" datatype="x-haml">
         <source>Part 2</source>
@@ -2502,7 +2512,7 @@
       </trans-unit>
       <trans-unit id="2367" resname="r695762773" restype="string" datatype="x-haml">
         <source>We’ve received  your final application and are currently processing it. Stay tuned — we’ll be in touch soon with a decision.</source>
-        <target state="translated">我们已收到您的最终申请，目前正在处理。敬请关注 - 我们会尽快与您取得联系</target>
+        <target state="translated">我们已收到您的最终申请，目前正在处理。敬请关注 - 我们会尽快与您取得联系。</target>
       </trans-unit>
     </body>
   </file>
@@ -2626,7 +2636,7 @@
       </trans-unit>
       <trans-unit id="2391" resname="r143865797" restype="string" datatype="x-haml">
         <source>insurance?</source>
-        <target state="translated">保险吗？</target>
+        <target state="translated">保险？</target>
       </trans-unit>
       <trans-unit id="2392" resname="r994919907" restype="string" datatype="x-haml">
         <source>pay?</source>
@@ -2634,7 +2644,7 @@
       </trans-unit>
       <trans-unit id="2393" resname="r603998518" restype="string" datatype="x-haml">
         <source>prescription?</source>
-        <target state="translated">处方吗？</target>
+        <target state="translated">处方？</target>
       </trans-unit>
       <trans-unit id="2394" resname="r661433137" restype="string" datatype="x-haml">
         <source>prescriptions?</source>
@@ -2670,7 +2680,7 @@
       </trans-unit>
       <trans-unit id="2402" resname="r389515519" restype="string" datatype="x-haml">
         <source>are actual notes from our members indicating that the advice they received on HealthTap was impactful and saved their life or the life of a loved one. To date, we have received more than 22,000</source>
-        <target state="translated">是我们会员的实际记录，表明他们在HealthTap上收到的建议是有影响力的，挽救了他们的生命或一个亲人的生命。到目前为止，我们已经收到超过22,000份</target>
+        <target state="translated">是我们会员的实际记录，表明他们在HealthTap上收到的建议是有影响力的，挽救了他们的生命或一个亲人的生命。到目前为止，我们已经收到超过22000份</target>
       </trans-unit>
     </body>
   </file>
@@ -2722,7 +2732,7 @@
       </trans-unit>
       <trans-unit id="2412" resname="r587145691" restype="string" datatype="x-haml">
         <source>2014 AppRx Awards</source>
-        <target state="translated">2014 AppRx 奖</target>
+        <target state="translated">2014 AppRx医生评测奖</target>
       </trans-unit>
       <trans-unit id="2413" resname="r961992159" restype="string" datatype="x-haml">
         <source>HealthTap Concierge</source>
@@ -2742,7 +2752,7 @@
       </trans-unit>
       <trans-unit id="2417" resname="r236452357" restype="string" datatype="x-haml">
         <source>Virtual Care</source>
-        <target state="translated">在线护理</target>
+        <target state="translated">在线医护</target>
       </trans-unit>
       <trans-unit id="2418" resname="r961177680" restype="string" datatype="x-haml">
         <source>Apply for Concierge</source>
@@ -2834,7 +2844,7 @@
       </trans-unit>
       <trans-unit id="2435" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target state="translated">每天，顶级医生都会成长，深化和改进这个知识库。当他们这样做了，</target>
+        <target state="translated">每天，顶级医生都会壮大，深化和改进这个知识库。当他们这样做了，</target>
       </trans-unit>
       <trans-unit id="2436" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
@@ -2854,7 +2864,7 @@
       </trans-unit>
       <trans-unit id="2440" resname="r274779593" restype="string" datatype="x-haml">
         <source>Member</source>
-        <target state="translated">成员</target>
+        <target state="translated">会员</target>
       </trans-unit>
       <trans-unit id="2441" resname="r220544231" restype="string" datatype="x-haml">
         <source>began with the realization that it's hard to</source>
@@ -2942,11 +2952,11 @@
       </trans-unit>
       <trans-unit id="2457" resname="r356849928" restype="string" datatype="x-haml">
         <source>. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to</source>
-        <target state="translated">.我们不论是努力尝试进一步强身健体，还是控制慢性疾病的发展，或是完善治疗各种重大疾病，我们所期望的都是能够生活的更健康更幸福——而这也是我们长久以来的愿望。</target>
+        <target state="translated">。我们不论是努力尝试进一步强身健体，还是控制慢性疾病的发展，或是完善治疗各种重大疾病，我们所期望的都是能够生活的更健康更幸福——而这也是我们长久以来的愿望。</target>
       </trans-unit>
       <trans-unit id="2458" resname="r539229476" restype="string" datatype="x-haml">
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
-        <target state="translated">它可能听起来很崇高，但我们归结它为一些非常基本的东西。我们都-在心里 – 简单地想要</target>
+        <target state="translated">它可能听起来很崇高，但我们归结它为一些非常基本的东西。我们都 - 在心里 – 简单地想要</target>
       </trans-unit>
       <trans-unit id="2459" resname="r429307520" restype="string" datatype="x-haml">
         <source>All these things make us</source>
@@ -3086,7 +3096,7 @@
       </trans-unit>
       <trans-unit id="2794" resname="r1045679366" restype="string" datatype="x-haml">
         <source>Twitter</source>
-        <target state="translated">推特</target>
+        <target state="translated">Twitter</target>
       </trans-unit>
       <trans-unit id="2795" resname="r177087889" restype="string" datatype="x-haml">
         <source>Facebook</source>
@@ -3154,7 +3164,7 @@
     <body>
       <trans-unit id="2498" resname="r30868880" restype="string" datatype="x-haml">
         <source>Ask</source>
-        <target state="translated">问</target>
+        <target state="translated">询问</target>
       </trans-unit>
     </body>
   </file>
@@ -3162,7 +3172,7 @@
     <body>
       <trans-unit id="2499" resname="r795977039" restype="string" datatype="x-haml">
         <source>Immediate access to a  compassionate doctor in a consult experience that will delight you</source>
-        <target state="translated">立刻访问并咨询一位富于同情心的医生的过程将会给您带来一份好的心情。</target>
+        <target state="translated">立刻访问并咨询一位专注的医生的过程将会给您带来一份好的心情。</target>
       </trans-unit>
       <trans-unit id="2500" resname="r12657633" restype="string" datatype="x-haml">
         <source>it!</source>
@@ -3170,7 +3180,7 @@
       </trans-unit>
       <trans-unit id="2501" resname="r332972715" restype="string" datatype="x-haml">
         <source>Unlimited access to one of the leading health knowledgebases in the world, the only one created completely by  leading doctors themselves. Have a health question?</source>
-        <target state="translated">无限制的访问在世界上健康卫生知识信息发布的领头羊之一的网站，并且也是唯一一个由顶级医生们自己创建的网站。有健康问题吗？</target>
+        <target state="translated">无限制的访问在世界上健康卫生知识信息发布的领先网站，并且也是唯一一个由顶级医生们自己创建的网站。有健康问题吗？</target>
       </trans-unit>
       <trans-unit id="2502" resname="r231556121" restype="string" datatype="x-haml">
         <source>Our doctor has reviewed your records, and is entirely attuned to your needs, ready to treat just you  when you need it most.</source>
@@ -3178,11 +3188,11 @@
       </trans-unit>
       <trans-unit id="2503" resname="r784682774" restype="string" datatype="x-haml">
         <source>Our doctors  have decades of hands-on experience, knowledge, and expertise. But they’re also so much more than that.  They  are kind and caring, and will patiently listen to your questions and concerns with a compassionate smile.</source>
-        <target state="translated">他们善良且有同情心，并且将面带微笑的耐心聆听您的问题和担忧。</target>
+        <target state="translated">我们的医生有几十年的实践经验，知识和专业知识。但他们还拥有比这些更重要的。他们善良且有充满关爱，并且将面带微笑的耐心聆听您的问题和担忧。</target>
       </trans-unit>
       <trans-unit id="2504" resname="r471093656" restype="string" datatype="x-haml">
         <source>uses the same 128-bit encryption and physical security that the most secure banks use. Our security practices are monitored and verified by TRUSTe and VeriSign, and supported by RSA Security. All of your Personal Health Information will be stored in a secure HIPAA-compliant environment.</source>
-        <target state="translated">使用与安全系数最高的银行相同的以128字符加密的方式和物理安全模式。我们的安全防护工作由TRUSTe和VeriSign进行修改完善，并由RSA安全局提供支持与帮助。所有的个人健康信息将储存在安全的兼容HIPPA运行的环境中。</target>
+        <target state="translated">使用与安全系数最高的银行相同的以128字符加密的方式和物理安全模式。我们的安全防护工作由TRUSTe和VeriSign进行修改完善，并由RSA安全局提供支持与帮助。所有的个人健康信息将储存在安全的HIPPA加密的环境中。</target>
       </trans-unit>
     </body>
   </file>
@@ -3202,7 +3212,7 @@
       </trans-unit>
       <trans-unit id="2508" resname="r676426318" restype="string" datatype="x-haml">
         <source>find is validated. I also love that you can connect with your doctor on</source>
-        <target state="translated">发现已验证的我也很喜欢您可以与您的医生联系</target>
+        <target state="translated">发现被验证。我也很喜欢与医生联系</target>
       </trans-unit>
       <trans-unit id="2509" resname="r828676062" restype="string" datatype="x-haml">
         <source>is such an amazingly complex concept made simple, which will change</source>
@@ -3262,7 +3272,7 @@
       </trans-unit>
       <trans-unit id="2521" resname="r779390225" restype="string" datatype="x-haml">
         <source>your unique Concierge Key code today</source>
-        <target state="translated">唯一的特邀验证码邀请患者查看您</target>
+        <target state="translated">唯一的贵宾台验证码邀请患者查看您</target>
       </trans-unit>
       <trans-unit id="2522" resname="r1039205196" restype="string" datatype="x-haml">
         <source>or mobile device. Get paid immediately with no hassle or overhead costs.</source>
@@ -3294,7 +3304,7 @@
       </trans-unit>
       <trans-unit id="2527" resname="r801965539" restype="string" datatype="x-haml">
         <source>Review</source>
-        <target state="translated">检阅</target>
+        <target state="translated">审查</target>
       </trans-unit>
       <trans-unit id="2528" resname="r492779124" restype="string" datatype="x-haml">
         <source>Respond</source>
@@ -3554,7 +3564,7 @@
       </trans-unit>
       <trans-unit id="2604" resname="r620495158" restype="string" datatype="x-haml">
         <source>about. I feel fortunate to be able to  participate in this way, and</source>
-        <target state="translated">我热爱的医学问题方面帮助人们。我很幸运能够以这种方式参与，并</target>
+        <target state="translated">我很幸运能够以这种方式参与，并</target>
       </trans-unit>
       <trans-unit id="2605" resname="r296681499" restype="string" datatype="x-haml">
         <source>HealthTap Global Rounds</source>
@@ -3822,7 +3832,7 @@
     <body>
       <trans-unit id="2655" resname="r716289679" restype="string" datatype="x-haml">
         <source>Concierge Application Agreement</source>
-        <target state="translated">Concierge申请协议</target>
+        <target state="translated">贵宾台申请协议</target>
       </trans-unit>
     </body>
   </file>
@@ -3878,7 +3888,7 @@
       </trans-unit>
       <trans-unit id="2666" resname="r71019332" restype="string" datatype="x-haml">
         <source>Visit a nearby Quest Diagnostic test center to get screened at no cost to you when you</source>
-        <target state="translated">去最近的Quest Diagnostic测试中心，您无需支付费用即可进行筛选</target>
+        <target state="translated">去最近的Quest Diagnostic测试中心，您无需支付费用即可进行筛查</target>
       </trans-unit>
     </body>
   </file>
@@ -4154,11 +4164,11 @@
       </trans-unit>
       <trans-unit id="2731" resname="r216725944" restype="string" datatype="x-haml">
         <source>We provide the right care when you need it most</source>
-        <target state="translated">当您有需要的时候，我们提供正确的护理</target>
+        <target state="translated">当您有需要的时候，我们提供正确的医护</target>
       </trans-unit>
       <trans-unit id="2732" resname="r231429011" restype="string" datatype="x-haml">
         <source>only immediate knowledge and immediate care</source>
-        <target state="translated">只有直觉感知和即时护理</target>
+        <target state="translated">只有直觉感知和即时医护</target>
       </trans-unit>
       <trans-unit id="2734" resname="r622790197" restype="string" datatype="x-haml">
         <source>Tap-in</source>
@@ -4210,7 +4220,7 @@
     <body>
       <trans-unit id="2742" resname="r239463668" restype="string" datatype="x-haml">
         <source>Actionable reminders</source>
-        <target state="translated">可操作的提示</target>
+        <target state="translated">可操作的提醒</target>
       </trans-unit>
       <trans-unit id="2743" resname="r714371289" restype="string" datatype="x-haml">
         <source>HealthTap to help them conceive</source>
@@ -4334,7 +4344,7 @@
     <body>
       <trans-unit id="2760" resname="r986432510" restype="string" datatype="x-haml">
         <source>HealthTap Prime provides primary care virtual consults with doctors licensed in your state for limited diagnosis, care and prescriptions (as appropriate). HealthTap Concierge lets you connect with your doctor for viritual consults using the HelathTap platform, or with other doctors for second opinions or one-time consults for minor conditions that can be addressed and resolved, in the sole opinion of the doctor, via a virtual consult.  HealthTap Premium Services can be a great resource between doctor visits, but are not a substitute for in person doctor visits, your primary care doctor or your primary care doctor’s independent judgment about any symptom, condition, or the appropriateness or risks of a procedure or treatment for a given person. HealthTap Prime is not health insurance and is not a substitute for health insurance.</source>
-        <target state="translated">HealthTap Prime提供初级保健在线医生咨询,许可在你的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让你与你的医生使用helathtap平台进行在线咨询，或提供其他医生的第二意见或通过在线咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替你的初级保健医生或你的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
+        <target state="translated">HealthTap Prime提供初级保健在线医生咨询,许可在您的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让您与您的医生使用helathtap平台进行在线咨询，或提供其他医生的第二意见或通过在线咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替您的初级保健医生或您的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
       </trans-unit>
       <trans-unit id="2761" resname="r279642634" restype="string" datatype="x-haml">
         <source>The Apps contain health-related or medical-related materials that may be sexually explicit. If you find these materials offensive, you may wish to use the Apps in ways that minimize exposure to such Content. HealthTap Medical Experts  are intended third party beneficiaries with certain rights under the App Terms of Use. The Apps and the Content are provided on an "as is" basis. For additional information, see our</source>
@@ -4370,7 +4380,7 @@
       </trans-unit>
       <trans-unit id="2766" resname="r686334743" restype="string" datatype="x-haml">
         <source>Good evening</source>
-        <target state="translated">晚安</target>
+        <target state="translated">晚上好</target>
       </trans-unit>
     </body>
   </file>
@@ -4426,7 +4436,7 @@
       </trans-unit>
       <trans-unit id="2779" resname="r670740155" restype="string" datatype="x-haml">
         <source>Immunizations</source>
-        <target state="translated">免疫/预防接种</target>
+        <target state="translated">免疫</target>
       </trans-unit>
       <trans-unit id="2780" resname="r970583430" restype="string" datatype="x-haml">
         <source>Here are things you seem interested in that may belong on your profile.  Let us know which ones do to get even better care from your doctors.</source>
@@ -4462,7 +4472,7 @@
     <body>
       <trans-unit id="2784" resname="r432512004" restype="string" datatype="x-haml">
         <source>Post</source>
-        <target state="translated">职位</target>
+        <target state="translated">发布</target>
       </trans-unit>
       <trans-unit id="2785" resname="r7862520" restype="string" datatype="x-haml">
         <source>x</source>
@@ -4514,7 +4524,7 @@
       </trans-unit>
       <trans-unit id="2791" resname="r10930186" restype="string" datatype="x-haml">
         <source>Data saved on HealthTap is HIPAA-secure and encrypted</source>
-        <target state="translated">保存在HealthTap的数据是通过HIPAA安全加密的</target>
+        <target state="translated">保存在HealthTap的数据是通过HIPPA加密的</target>
       </trans-unit>
       <trans-unit id="2792" resname="r247894014" restype="string" datatype="x-haml">
         <source>We will never sell your personally identifiable data</source>
@@ -4642,7 +4652,7 @@
       </trans-unit>
       <trans-unit id="2820" resname="r102785948" restype="string" datatype="x-haml">
         <source>- got it.</source>
-        <target state="translated">- 得到了。</target>
+        <target state="translated">- 知道了。</target>
       </trans-unit>
       <trans-unit id="2821" resname="r1066734361" restype="string" datatype="x-haml">
         <source>doctors helped us</source>
@@ -4770,7 +4780,7 @@
     <body>
       <trans-unit id="2844" resname="r1018347255" restype="string" datatype="x-haml">
         <source>Reputation</source>
-        <target state="translated">名誉</target>
+        <target state="translated">声誉</target>
       </trans-unit>
       <trans-unit id="2845" resname="r853493171" restype="string" datatype="x-haml">
         <source>Distance</source>
@@ -4914,15 +4924,15 @@
       </trans-unit>
       <trans-unit id="2869" resname="r694301964" restype="string" datatype="x-haml">
         <source>advice, prescriptions, and reminders via video or text chat</source>
-        <target state="translated">视频和文本聊天向医生咨询建议和处方。</target>
+        <target state="translated">视频和文字聊天向医生咨询建议和处方。</target>
       </trans-unit>
       <trans-unit id="2870" resname="r543053381" restype="string" datatype="x-haml">
         <source>and get brief text answers from doctors</source>
-        <target state="translated">并得到医生的简短文本答案</target>
+        <target state="translated">并得到医生的简短文本回答</target>
       </trans-unit>
       <trans-unit id="2871" resname="r546151533" restype="string" datatype="x-haml">
         <source>tips, checklists, news and more just for you!</source>
-        <target state="translated">提示，清单，新闻和更多！</target>
+        <target state="translated">只为您的小贴士，清单，新闻和其他！</target>
       </trans-unit>
     </body>
   </file>
@@ -5074,11 +5084,11 @@
       </trans-unit>
       <trans-unit id="2899" resname="r545334267" restype="string" datatype="x-haml">
         <source>today. HealthTap is the world’s leading digital healthcare service, providing patients free access to tens of thousands of the best U.S. licensed doctors through the web or any mobile device. As a member of HealthTap’s Medical Expert Network, I’m able help millions around the world with their health and well-being by answering questions, offering tips, and creating checklists for healthy living.</source>
-        <target state="translated">HealthTap是世界领先的数字医疗服务，通过网络或任何移动设备使患者免费接触到数以万计的美国最优秀的授权医生。作为HealthTap医疗专家网络的成员，我可以通过回答问题、提供建议和创建健康生活检查表的方式，使世界各地数百万的人们过得健康幸福。</target>
+        <target state="translated">HealthTap是世界领先的数字医疗服务，通过网络或任何移动设备使患者免费接触到数以万计的拥有美国执业执照的最优秀的医生。作为HealthTap医疗专家网络的成员，我可以通过回答问题、提供建议和创建健康生活清单的方式，使世界各地数百万的人们过得健康幸福。</target>
       </trans-unit>
       <trans-unit id="2900" resname="r80062028" restype="string" datatype="x-haml">
         <source>, I better serve my existing patients by offering Virtual Consults via HealthTap Concierge. Join my HealthTap professional referral network (doctors) or follow me and make an appointment for a Virtual Consult (patients) by visiting</source>
-        <target state="translated">，我通过HealthTap贵宾台提供模拟诊断，更好地为我现有的患者服务。（医生）可以加入我的HealthTap专业转诊网络或跟随我；（患者）可以通过访问预约模拟咨询</target>
+        <target state="translated">，我通过HealthTap贵宾台提供在线咨询，更好地为我现有的患者服务。（医生）可以加入我的HealthTap专业转诊网络或关注我；（患者）可以通过访问预约在线咨询</target>
       </trans-unit>
       <trans-unit id="2901" resname="r984329181" restype="string" datatype="x-haml">
         <source>Through my Virtual Practice on</source>
@@ -5318,7 +5328,7 @@
       </trans-unit>
       <trans-unit id="2985" resname="r451886133" restype="string" datatype="x-haml">
         <source>The patient will expect empathy from you in a relationship that is warm yet stays in the professional realm.</source>
-        <target state="translated">病人会期望您的共鸣，与您保持一个温暖的关系，并且留在专业领域。</target>
+        <target state="translated">患者会期望您的共鸣，与您保持一个温暖的关系，并且留在专业领域。</target>
       </trans-unit>
       <trans-unit id="2986" resname="r319063750" restype="string" datatype="x-haml">
         <source>A personal connection with appropriate boundaries.</source>
@@ -5522,7 +5532,7 @@
       </trans-unit>
       <trans-unit id="3034" resname="r430788678" restype="string" datatype="x-haml">
         <source>For a limited time, get a</source>
-        <target state="translated">在有限的时间，得到一个</target>
+        <target state="translated">限时获得一次</target>
       </trans-unit>
       <trans-unit id="3035" resname="r1008327760" restype="string" datatype="x-haml">
         <source>We emailed a verification code to</source>
@@ -5582,7 +5592,7 @@
     <body>
       <trans-unit id="3048" resname="r956537950" restype="string" datatype="x-haml">
         <source>The way to visit top doctors 24/7 from anywhere</source>
-        <target state="translated">从任何地方访问顶尖医生的方法</target>
+        <target state="translated">24/7全天候从任何地方访问顶尖医生的方法</target>
       </trans-unit>
     </body>
   </file>
@@ -5606,7 +5616,7 @@
       </trans-unit>
       <trans-unit id="3053" resname="r164908705" restype="string" datatype="x-haml">
         <source>This enables us to tailor answers, tips, and news for</source>
-        <target state="translated">这使我们能够定制答案，小贴士和新闻</target>
+        <target state="translated">这使我们能够定制回答，小贴士和新闻</target>
       </trans-unit>
       <trans-unit id="3054" resname="r151255723" restype="string" datatype="x-haml">
         <source>Change</source>
@@ -5626,7 +5636,7 @@
       </trans-unit>
       <trans-unit id="3058" resname="r647987542" restype="string" datatype="x-haml">
         <source>Personalized answers, tips, news, and more for</source>
-        <target state="translated">专属于您的答案，小贴士，新闻等</target>
+        <target state="translated">专属于您的回答，小贴士，新闻等</target>
       </trans-unit>
     </body>
   </file>
@@ -5650,7 +5660,7 @@
     <body>
       <trans-unit id="3062" resname="r366505783" restype="string" datatype="x-haml">
         <source>Private &amp; HIPAA secure</source>
-        <target state="translated">私人和HIPAA安全</target>
+        <target state="translated">私人和HIPPA加密</target>
       </trans-unit>
     </body>
   </file>
@@ -5798,7 +5808,7 @@
     <body>
       <trans-unit id="3090" resname="r1071899714" restype="string" datatype="x-haml">
         <source>Imagine a world in which you do what you enjoy and you're best at — practicing medicine  — but without the overhead of office rent, equipment purchases, staff, and other practice expenses.</source>
-        <target state="translated">想象一个世界，在这个世界里，您可以做任何您喜欢的您擅长的事——行医——但是又无需担忧高额的租金和设备费用以及员工和其他方面的花费。</target>
+        <target state="translated">想象一个世界，在这个世界里，您可以做任何您喜欢的您擅长的事——医学诊疗——但是又无需担忧高额的租金和设备费用以及员工和其他方面的花费。</target>
       </trans-unit>
       <trans-unit id="3091" resname="r270866394" restype="string" datatype="x-haml">
         <source>or see patients from any desktop or laptop computer using any web browser.</source>
@@ -5982,11 +5992,11 @@
       </trans-unit>
       <trans-unit id="3136" resname="r877611306" restype="string" datatype="x-haml">
         <source>Minors may not create their own profiles on HealthTap and HealthTap does not permit the posting of questions by persons under 13 years of age. Caregivers may post educational questions related to authorized care recipients (such as the mother posting questions about an infant).</source>
-        <target state="translated">未成年人不得在HealthTap上创建自己的配置文件,并且HealthTap不允许问题的发布人在13岁以下。看护人可能发表关于授权照顾户的教育问题(例如母亲发帖质疑一个婴儿)。</target>
+        <target state="translated">未成年人不得在HealthTap上创建自己的资料,并且HealthTap不允许问题的发布人在13岁以下。看护人可能发表关于授权被照顾人的教育问题(例如母亲发帖询问关于一个婴儿)。</target>
       </trans-unit>
       <trans-unit id="3137" resname="r906233849" restype="string" datatype="x-haml">
         <source>Do not post name(s), email address(es), or telephone number(s), URLs, or any other confidential or personally identifiable information for you or any other person or entity on HealthTap.</source>
-        <target state="translated">不要发表姓名，电子邮件地址，或电话号码，网址，或任何其他机密或关于你的个人身份信息或其他人或实体在HealthTap上。</target>
+        <target state="translated">不要发表姓名，电子邮件地址，或电话号码，网址，或任何其他机密或关于您的个人身份信息或其他人或实体在HealthTap上。</target>
       </trans-unit>
       <trans-unit id="3138" resname="r559109255" restype="string" datatype="x-haml">
         <source>Do not post material that is unlawful, obscene, derogatory, defamatory, threatening, harassing, abusive, slanderous, hateful, or embarrassing to any other person or entity as determined by us in our sole discretion.</source>
@@ -6034,7 +6044,7 @@
       </trans-unit>
       <trans-unit id="3149" resname="r269605628" restype="string" datatype="x-haml">
         <source>With the exception of any personal data or information you submit (which shall be maintained in accordance with our Privacy Policy) and other information governed by the Health Insurance Portability and Accountability Act of 1996, Public Law 104-191 ("HIPAA"), if you make any submissions (by email or otherwise) on, to or through HealthTap, including but not limited to data, questions, comments, suggestions, business information, ideas, concepts or inventions, you make such submission without any restrictions or expectation of compensation or of confidentiality, and agree that your submissions may be used without restriction for any purpose whatsoever, and you automatically grant–or warrant that the owner of such content or intellectual property has expressly granted–HealthTap the complete right to freely use such submissions in any way, commercial or otherwise, and for any purpose whatsoever, including the right to use, reproduce, modify, adapt, publish, transmit, translate, create derivative works from, publicly perform or display (in any media or form now known or hereafter developed), or otherwise communicate to the public, in the form of a royalty-free, perpetual, irrevocable, worldwide nonexclusive license. HealthTap may sublicense its rights. Such submissions will be treated as non-confidential and nonproprietary and will become the property of HealthTap, and HealthTap shall be free to use any ideas, concepts, know-how, or techniques contained in any communication you send to HealthTap for any purpose whatsoever, including, without limitation, developing and marketing products using such information.</source>
-        <target state="translated">除了您提交的任何个人数据或信息（根据我们的隐私政策维护）和1996年健康保险携带和责任法案（公法104-191）（“HIPAA”）管辖的其他信息，如果您通过HealthTap提交（通过电子邮件或其他方式），包括但不限于数据、问题、意见、建议、商业信息、想法、概念或发明，您在没有任何限制或期望赔偿的情况下提交或保密，并同意您的提交可无限制地用于任何目的，并且您自动授予或保证此类内容或知识产权的所有者已明确授予 - HealthTap完全权利，在任何情况下自由使用此类提交（包括以任何媒体或现有已知或今后开发的形式）使用、复制、修改、改编、发布、传输、翻译、创作衍生作品、公开表演或展示的任何目的），或以其他方式向公众传播，其形式为免版税、永久、不可撤销、全球非排他性许可。HealthTap可以再授权它的权利。这些提交将被视为非机密和非专有的，并将成为HealthTap的财产，HealthTap可以自由使用您发送到HealthTap的任何通讯中包含的任何想法、概念、技术诀窍或技术、用于任何目的， 包括但不限于使用此类信息开发和营销产品。</target>
+        <target state="translated">除了您提交的任何个人数据或信息（根据我们的隐私政策维护）和1996年健康保险流通和责任法案（公法104-191）（“HIPAA”）管辖的其他信息，如果您通过HealthTap提交（通过电子邮件或其他方式），包括但不限于数据、问题、意见、建议、商业信息、想法、概念或发明，您在没有任何限制或期望赔偿的情况下提交或保密，并同意您的提交可无限制地用于任何目的，并且您自动授予或保证此类内容或知识产权的所有者已明确授予 - HealthTap完全权利，在任何情况下自由使用此类提交（包括以任何媒体或现有已知或今后开发的形式）使用、复制、修改、改编、发布、传输、翻译、创作衍生作品、公开表演或展示的任何目的），或以其他方式向公众传播，其形式为免版税、永久、不可撤销、全球非排他性许可。HealthTap可以再授权它的权利。这些提交将被视为非机密和非专有的，并将成为HealthTap的财产，HealthTap可以自由使用您发送到HealthTap的任何通讯中包含的任何想法、概念、技术诀窍或技术、用于任何目的， 包括但不限于使用此类信息开发和营销产品。</target>
       </trans-unit>
       <trans-unit id="3150" resname="r524800730" restype="string" datatype="x-haml">
         <source>HealthTap’s Medical Experts include respected doctors throughout the United States, including from leading national medical institutions. Only U.S.-licensed doctors may apply to be and participate as Medical Experts on HealthTap. Doctors whose licenses are or become suspended or revoked, for any reason, are not permitted and agree not to participate in any way, including but not limited to submitting Content to HealthTap as a Medical Expert on HealthTap. Supplemental Terms of Use apply to Experts who participate on HealthTap.</source>
@@ -6142,7 +6152,7 @@
       </trans-unit>
       <trans-unit id="3176" resname="r343313264" restype="string" datatype="x-haml">
         <source>Feel Free to share your professional clinical expertise though answers that are evidence-based and consistent with accepted standards in the medical community. HealthTap is for general questions. Refrain from using language that suggests an answer is provided for a single member. Unless you are in a Private Conversation with a user on HealthTap, refrain from answering questions that solicit your individual opinion as a single Medical Expert.  Avoid answering questions or providing answers that suggest a duty of care and a doctor-patient relationship.</source>
-        <target state="translated">自由地分享您的专业临床专业知识，当然那是基于证据和符合医疗界的公认标准内。HealthTap是为一般性问题。避免使用那些能够表明答案是由一个会员提供的语言。除非您是以私人谈话的形式与一个用户在HealthTap交流，否则作为一个医学专家避免回答那些征求您个人意见的问题。避免回答问题或提供关于照顾的义务和医生与患者关系的建议。</target>
+        <target state="translated">自由地分享您的专业临床专业知识，当然那是基于证据和符合医疗界的公认标准内。HealthTap是为一般性问题。避免使用那些能够表明答案是由一个会员提供的语言。除非您是以私人谈话的形式与一个用户在HealthTap交流，否则作为一个医学专家避免回答那些征求您个人意见的问题。避免回答问题或提供回答以暗示医生与患者之间的护理责任关系。</target>
       </trans-unit>
       <trans-unit id="3177" resname="r97195377" restype="string" datatype="x-haml">
         <source>You are allowed to link to external websites that are both appropriate and related to your responses, but answers on HealthTap should be complete and should not be used for primarily promotional purposes. Please do not plagiarize and cite sources where applicable. Using answers as a vehicle to promote a product or service is prohibited. Providing members with useful and beneficial information and attracting new patients through useful Content is permitted, but mere schilling is not.</source>
@@ -6158,19 +6168,19 @@
       </trans-unit>
       <trans-unit id="3180" resname="r563959988" restype="string" datatype="x-haml">
         <source>Avoid other actions that violate board or other rules that apply to you.</source>
-        <target state="translated">避免其他违反董事会的行为或适用于您的其他规则。</target>
+        <target state="translated">避免其他违反医学委员会的行为或适用于您的其他规则。</target>
       </trans-unit>
       <trans-unit id="3181" resname="r487199707" restype="string" datatype="x-haml">
         <source>All other information, including suggestions, feedback, ideas, concepts and any other materials you disclose or offer to us on or in connection with HealthTap or any Content, are governed by the general member submission terms of this Agreement. This means that these submissions are made without any restrictions and without any expectation of confidentiality or compensation. You agree not to assert any property right or moral right of any kind with respect to any such submissions. You agree to our standard terms governing media submissions, except for the prohibition against uploading a facial portrait image of yourself for your Virtual Practice picture.</source>
-        <target state="translated">包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对你自己上传的脸部肖像图像的在线咨询的图片的使用。</target>
+        <target state="translated">包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对您自己上传的脸部肖像图像的在线咨询的图片的使用。</target>
       </trans-unit>
       <trans-unit id="3182" resname="r1071215986" restype="string" datatype="x-haml">
         <source>HealthTap permits Medical Experts to receive questions directly from specific members in Private Conversations.  You will receive compensation for participating in Private Conversations according to the additional terms of the [HealthTap License Agreement and Business Associate Agreement], which are incorporated herein by reference.</source>
-        <target state="translated">HealthTap允许医学专家直接在私人的谈话收到特定会员所提的问题。根据附加条款[HealthTap的许可协议和业务合作协议]，您将收到补偿通过加入私人的谈话，所有这一切都被引入作为参考。</target>
+        <target state="translated">HealthTap允许医学专家直接在私人的谈话收到特定会员所提的问题。根据附加条款[HealthTap的许可协议和业务合作协议]，您将通过加入私人的谈话收到报酬，所有这一切都被引入作为参考。</target>
       </trans-unit>
       <trans-unit id="3183" resname="r1062207531" restype="string" datatype="x-haml">
         <source>Medical Experts may not post Content to Public Areas on HealthTap in exchange for compensation of any kind, including but not limited to as a paid consultant to any entity (including any company or organization) or individual. Medical Experts should ensure that any conflict or potential conflict of interest does not affect or appear to affect his or her contributions of Content to the HealthTap.  Medical Experts may receive compensation for Private Conversations on or through HealthTap.</source>
-        <target state="translated">医疗专家不得将内容发布到HealthTap的公共区域，以换取任何形式的赔偿，包括但不限于作为任何实体（包括任何公司或组织）或个人的付费顾问。医学专家应该确保任何冲突或潜在的利益冲突都不影响或不能影响他/她在HealthTap咨询平台上所贡献的内容。通过在HealthTap的私人对话，医疗专家可以获得补偿。</target>
+        <target state="translated">医疗专家不得将内容发布到HealthTap的公共区域，以换取任何形式的赔偿，包括但不限于作为任何实体（包括任何公司或组织）或个人的付费顾问。医学专家应该确保任何冲突或潜在的利益冲突都不影响或不能影响他/她在HealthTap咨询平台上所贡献的内容。通过在HealthTap的私人对话，医疗专家可以获得报酬。</target>
       </trans-unit>
       <trans-unit id="3184" resname="r14034194" restype="string" datatype="x-haml">
         <source>HealthTap licenses our online and mobile platform to doctors who accept invitations to engage in Private Conversations between doctors and consumers.</source>
@@ -6226,7 +6236,7 @@
       </trans-unit>
       <trans-unit id="3197" resname="r130534316" restype="string" datatype="x-haml">
         <source>Subscriber represents and warrants that the biographical information set forth in the Profile is true, correct and complete, and, Subscriber agrees to update Subscriber’s Profile immediately upon any updates to the information contained therein. In the event of any breach of the provisions of this Article 4, HealthTap and/or any of its parents, subsidiaries and affiliated entities, in addition to any other remedies available to them for such breach, including the recovery of damages, shall be entitled to injunctive relief to change any information in the Profile.</source>
-        <target state="translated">订户声明并保证，个人资料中提供的履历信息是真实，正确和完整的，并且用户同意在其中包含的信息更新后立即更新订户的资料。如果发生任何违反本第4条规定的情况，HealthTap和/或其任何主公司，子公司和附属实体，除了任何其他补救措施可用于这种违约，包括恢复损害赔偿，应有权利得到禁令救济改变任何信息在配置文件。</target>
+        <target state="translated">订户声明并保证，个人资料中提供的履历信息是真实，正确和完整的，并且用户同意在其中包含的信息更新后立即更新订户的资料。如果发生任何违反本第4条规定的情况，HealthTap和/或其任何主公司，子公司和附属实体，除了任何其他补救措施可用于这种违约，包括恢复损害赔偿，应有权利得到禁令救济改变任何信息在资料。</target>
       </trans-unit>
       <trans-unit id="3198" resname="r998614258" restype="string" datatype="x-haml">
         <source>As set forth in Exhibit A, Subscriber shall pay to HealthTap a fee for each Private Conversation as consideration for the license and HealthTap Services described in this Agreement (collectively and as adjusted from time to time, the "License and Subscription Fees"), which amount may be adjusted from time to time. The License and Subscription Fees are immediately due and owning at the time Subscriber accepts a Private Conversation request. The License and Subscription Fees are subject to adjustment pursuant to HealthTap policies and procedures. HealthTap’s fees do not include, and Subscriber is responsible for paying, any direct or indirect local, state, federal or foreign taxes, levies, duties or similar governmental assessments of any nature associated with Subscriber’s activities.</source>
@@ -7082,7 +7092,7 @@
     <body>
       <trans-unit id="3375" resname="r853088416" restype="string" datatype="x-haml">
         <source>Thanks for being a contributor on HealthTap.  Colleagues have indicated that there may be a problem with an answer you agreed with by clicking the AGREE button.</source>
-        <target state="translated">感谢您成为HealthTap的贡献者。同事表示，您通过点击AGREE按钮表示同意的答案可能会存在问题。</target>
+        <target state="translated">感谢您成为HealthTap的贡献者。同事表示，您通过点击同意按钮表示同意的答案可能会存在问题。</target>
       </trans-unit>
     </body>
   </file>
@@ -7186,7 +7196,7 @@
     <body>
       <trans-unit id="3389" resname="r764884692" restype="string" datatype="x-haml">
         <source>Happy ½ Birthday!  Remember this wise saying on your happy day: the more you celebrate your life, the more there is in life to celebrate!</source>
-        <target state="translated">生日 ½  快乐！记住这个“在您的快乐一天”的明智的说法，：您庆祝您的生活越多，那么您的生活中就越会有值得庆祝的事情！</target>
+        <target state="translated"> ½  生日快乐！记住这个“在您的快乐一天”的明智的说法，：您庆祝您的生活越多，那么您的生活中就越会有值得庆祝的事情！</target>
       </trans-unit>
       <trans-unit id="3390" resname="r871396655" restype="string" datatype="x-haml">
         <source>15 days of HealthTap Prime —</source>
@@ -7242,7 +7252,7 @@
     <body>
       <trans-unit id="3401" resname="r827034558" restype="string" datatype="x-haml">
         <source>HealthTap provides health information and answers from thousands of doctors licensed in the United States. Anytime. Anywhere.</source>
-        <target state="translated">任何地点。</target>
+        <target state="translated">HealthTap提供健康信息和来自数千名拥有美国执业执照的医生的回答。任何时间，任何地点。</target>
       </trans-unit>
     </body>
   </file>
@@ -7270,7 +7280,7 @@
     <body>
       <trans-unit id="3405" resname="r557925161" restype="string" datatype="x-haml">
         <source>, you have ultimate flexibility to set up your Virtual Practice and schedule your own Virtual Office Hours whenever most convenient for you.  Practice at your convenience – for as many hours as you like, at anytime, day or night, weekday or weekend, and from anywhere. Deliver efficient, concierge-style care via Virtual Appointments that will delight patients in your practice. You can also grow your practice by accepting new patients who find you on HealthTap.</source>
-        <target state="translated">，您可以极其灵活地设置在线诊疗并为您安排自己的在线办公时间。在您方便的时候练习－任何时间，白天或晚上、工作日或周末，以及任何地方。通过在线预约提供高效的、贵宾台式的医护，这将使您的诊疗中的患者感到高兴。您也可以通过接受在HealthTap上找到您的新患者来促进您的诊疗。</target>
+        <target state="translated">，您可以极其灵活地设置在线诊疗并为您安排自己的在线办公时间。在您方便的时候进行诊疗－任何时间，白天或晚上、工作日或周末，以及任何地方。通过在线预约提供高效的、贵宾台式的医护，这将使您的诊疗中的患者感到高兴。您也可以通过接受在HealthTap上找到您的新患者来壮大您的诊疗。</target>
       </trans-unit>
     </body>
   </file>
@@ -7354,7 +7364,7 @@
     <body>
       <trans-unit id="3423" resname="r839019171" restype="string" datatype="x-haml">
         <source>An Introductory Consult is a "meet and greet" for customers who are not yet your patients. Please provide only advice in these sessions. At your discretion, and as appropriate under applicable medical standards (including following an in-person visit where required), you may accept them as a patients.  With patients, you may provide treatment, write prescriptions, or suggest checklists. Patients will also be able to make additional appointments with you through your Virtual Practice.</source>
-        <target state="translated">对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。你可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线咨询和您做额外的预约。</target>
+        <target state="translated">对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。您可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线咨询和您做额外的预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -7374,7 +7384,7 @@
     <body>
       <trans-unit id="3426" resname="r746638809" restype="string" datatype="x-haml">
         <source>Monthly</source>
-        <target state="translated">月</target>
+        <target state="translated">每月</target>
       </trans-unit>
       <trans-unit id="3427" resname="r56785903" restype="string" datatype="x-haml">
         <source>Show</source>
@@ -7382,7 +7392,7 @@
       </trans-unit>
       <trans-unit id="3428" resname="r627317693" restype="string" datatype="x-haml">
         <source>Grow your Virtual Practice and invite your own patients or connect with new ones on HealthTap</source>
-        <target state="translated">增加您的在线咨询，邀请您自己的患者或联络HealthTap上的新患者</target>
+        <target state="translated">壮大您的在线诊疗，邀请您自己的患者或联络HealthTap上的新患者</target>
       </trans-unit>
     </body>
   </file>
@@ -7658,7 +7668,7 @@
     <body>
       <trans-unit id="3483" resname="r884318117" restype="string" datatype="x-haml">
         <source>Unavailable</source>
-        <target state="translated">不可用</target>
+        <target state="translated">忙碌 </target>
       </trans-unit>
     </body>
   </file>
@@ -7994,7 +8004,7 @@
     <body>
       <trans-unit id="3542" resname="r888649868" restype="string" datatype="x-haml">
         <source>MM/DD/YYYY</source>
-        <target state="translated">月/日/年</target>
+        <target state="translated">月月/日日/年年年年</target>
       </trans-unit>
     </body>
   </file>
@@ -8262,7 +8272,7 @@
       </trans-unit>
       <trans-unit id="3602" resname="r418847890" restype="string" datatype="x-haml">
         <source>Followers</source>
-        <target state="translated">关注</target>
+        <target state="translated">关注者</target>
       </trans-unit>
       <trans-unit id="3603" resname="r973329272" restype="string" datatype="x-haml">
         <source>RESPONSIVENESS</source>
@@ -8282,11 +8292,11 @@
       </trans-unit>
       <trans-unit id="3607" resname="r1073271613" restype="string" datatype="x-haml">
         <source>Specialties/Practice</source>
-        <target state="translated">专业/诊疗</target>
+        <target state="translated">专科/诊疗</target>
       </trans-unit>
       <trans-unit id="3608" resname="r63534640" restype="string" datatype="x-haml">
         <source>Awards</source>
-        <target state="translated">奖品</target>
+        <target state="translated">获奖</target>
       </trans-unit>
       <trans-unit id="3609" resname="r737582778" restype="string" datatype="x-haml">
         <source>Affiliations</source>
@@ -8354,7 +8364,7 @@
       </trans-unit>
       <trans-unit id="3622" resname="Couldn&apos;t find the answer I was looking for" restype="string" datatype="javascript">
         <source>Couldn't find the answer I was looking for</source>
-        <target state="translated">无法找到我正在寻找的回答</target>
+        <target state="translated">无法找到我需要的回答</target>
       </trans-unit>
       <trans-unit id="3623" resname="What were you looking for?" restype="string" datatype="javascript">
         <source>What were you looking for?</source>
@@ -8398,7 +8408,7 @@
       </trans-unit>
       <trans-unit id="3631" resname="Video, voice, or text chat now" restype="string" datatype="javascript">
         <source>Video, voice, or text chat now</source>
-        <target state="translated">立刻进行视频、语音、或文本聊天</target>
+        <target state="translated">立刻进行视频、语音、或文字聊天</target>
       </trans-unit>
       <trans-unit id="3632" resname="Text message" restype="string" datatype="javascript">
         <source>Text message</source>

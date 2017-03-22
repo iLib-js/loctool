@@ -28,19 +28,19 @@
     <body>
       <trans-unit id="58" resname="r641836575" restype="string" datatype="ruby">
         <source>Before we can send your prescription for %{drug_name}, please share your first and last name, date of birth, gender, phone number, and preferred pharmacy. Please let us know by updating your profile!</source>
-        <target state="translated">在我们发送你的 %{drug_name}处方之前，我们还需要您的如下信息：姓名，生日，性别，电话号码，方便取药的药房。请更新您的个人信息。</target>
+        <target state="translated">在我们发送您的 %{drug_name}处方之前，我们还需要您的如下信息：姓名，生日，性别，电话号码，方便取药的药房。请更新您的个人信息。</target>
       </trans-unit>
       <trans-unit id="59" resname="r458220090" restype="string" datatype="ruby">
         <source>Before we can send your prescription for %{drug_name}, please share your first and last name, date of birth, gender, phone number, and preferred pharmacy in %{state_name}. Please let us know by updating your profile!</source>
-        <target state="translated">在我们发送你的 %{drug_name}处方之前，我们还需要您的如下信息：姓名，生日，性别，电话号码，方便您在 %{state_name} 取药的药房。请更新您的个人信息。</target>
+        <target state="translated">在我们发送您的 %{drug_name}处方之前，我们还需要您的如下信息：姓名，生日，性别，电话号码，方便您在 %{state_name} 取药的药房。请更新您的个人信息。</target>
       </trans-unit>
       <trans-unit id="60" resname="r273680426" restype="string" datatype="ruby">
         <source>Before we can send your prescription for %{drug_name}, please share %{person_names}'s first and last name, date of birth, gender, phone number, and preferred pharmacy. Please let us know by updating %{person_names}'s profile!</source>
-        <target state="translated">在我们发送你的 %{drug_name}处方之前，我们还需要 %{person_names}的如下信息：姓名，生日，性别，电话号码，方便取药的药房。请更新 %{person_names}的个人信息。</target>
+        <target state="translated">在我们发送您的 %{drug_name}处方之前，我们还需要 %{person_names}的如下信息：姓名，生日，性别，电话号码，方便取药的药房。请更新 %{person_names}的个人信息。</target>
       </trans-unit>
       <trans-unit id="61" resname="r451490485" restype="string" datatype="ruby">
         <source>Before we can send your prescription for %{drug_name}, please share %{person_names}'s first and last name, date of birth, gender, phone number, and preferred pharmacy in %{state_name}. Please let us know by updating %{person_names}'s profile!</source>
-        <target state="translated">在我们发送你的 %{drug_name}处方之前，我们还需要 %{person_names}的如下信息：姓名，生日，性别，电话号码，方便您在 %{state_name} 取药的药房。请更新 %{person_names}的个人信息。</target>
+        <target state="translated">在我们发送您的 %{drug_name}处方之前，我们还需要 %{person_names}的如下信息：姓名，生日，性别，电话号码，方便您在 %{state_name} 取药的药房。请更新 %{person_names}的个人信息。</target>
       </trans-unit>
     </body>
   </file>
@@ -60,27 +60,27 @@
       </trans-unit>
       <trans-unit id="61" resname="r268716543" restype="string" datatype="ruby">
         <source>&lt;b&gt;Get help&lt;/b&gt; from doctors in live Virtual Consults when I need it most, 24/7</source>
-        <target state="translated">在我最需要的时候&lt;b&gt;获取帮助&lt;/b&gt;，7x24全天候</target>
+        <target state="translated">在我最需要的时候&lt;b&gt;获得帮助&lt;/b&gt;，7x24全天候</target>
       </trans-unit>
       <trans-unit id="62" resname="r722225624" restype="string" datatype="ruby">
         <source>&lt;b&gt;Take action&lt;/b&gt; on my health by following doctor-created checklists.</source>
-        <target state="translated">按照医生创建的检查表&lt;b&gt;采取行动&lt;/b&gt;对我的健康。</target>
+        <target state="translated">按照医生创建的清单&lt;b&gt;采取行动&lt;/b&gt;对我的健康。</target>
       </trans-unit>
       <trans-unit id="63" resname="r258678165" restype="string" datatype="ruby">
         <source>HealthTap is a great way to smile and feel good every day!</source>
-        <target state="translated">HealthTap极力帮助你微笑和Feel Good每一天！</target>
+        <target state="translated">HealthTap极力帮助您微笑和Feel Good每一天！</target>
       </trans-unit>
-      <trans-unit id="64" resname="r884373723" restype="string" datatype="ruby">
+      <trans-unit id="64" resname="r884373723" restype="string" datatype="ruby">	
         <source>Sign-Up Now!</source>
         <target state="translated">立即注册！</target>
       </trans-unit>
       <trans-unit id="65" resname="r674186773" restype="plural" datatype="ruby" extype="one">
         <source>Join me on HealthTap - a place where you can ask a top doctor your questions anytime, anywhere and get free answers.</source>
-        <target state="translated">和我一起来HealthTap吧- 在这儿你你可以随时随地问超过顶级医生问题并得到免费的答案。</target>
+        <target state="translated">和我一起来HealthTap吧- 在这儿您可以随时随地问超过顶级医生问题并得到免费的答案。</target>
       </trans-unit>
       <trans-unit id="66" resname="r674186773" restype="plural" datatype="ruby" extype="other">
         <source>Join me on HealthTap - a place where you can ask more than %{count} top doctors your questions anytime, anywhere and get free answers.</source>
-        <target state="translated">和我一起来HealthTap吧- 在这儿你你可以随时随地问超过%{count}顶级医生问题并得到免费的答案。</target>
+        <target state="translated">和我一起来HealthTap吧- 在这儿您可以随时随地问超过%{count}顶级医生问题并得到免费的答案。</target>
       </trans-unit>
     </body>
   </file>
@@ -100,7 +100,7 @@
     <body>
       <trans-unit id="209" resname="It seems you&apos;re in a different state than your preferred pharmacy. " restype="string" datatype="javascript">
         <source>It seems you're in a different state than your preferred pharmacy.</source>
-        <target state="translated">看起来您选择的药房与您的当前地址不在同一个州。</target>
+        <target state="translated">看起来您选择的药房与您的当前地址不在同一个州</target>
       </trans-unit>
       <trans-unit id="210" resname="Please let us know your preferred pharmacy in {state}" restype="string" datatype="javascript">
         <source>Please let us know your preferred pharmacy in {state}</source>
