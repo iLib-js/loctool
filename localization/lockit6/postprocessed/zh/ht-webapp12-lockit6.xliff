@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="4898" resname="body" restype="string" datatype="x-yaml" x-context="member_answer_thank_follow_up">
         <source>%1 answered your question. Thank the doctor if the answer helped!</source>
-        <target>%1回答了您的问题。谢谢医生，如果回答有帮助！</target>
+        <target>%1回答了您的问题。如果回答有帮助,谢谢医生！</target>
       </trans-unit>
       <trans-unit id="4899" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_answer_thank_follow_up">
         <source>Thank the %1</source>
@@ -72,7 +72,7 @@
       </trans-unit>
       <trans-unit id="4910" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_question_followed_answered">
         <source>%1, %2 has answered a question you’re following</source>
-        <target>%1, %2已回答了您关注的问题！</target>
+        <target>%1, %2已回答了您关注的问题</target>
       </trans-unit>
       <trans-unit id="4911" resname="subject" restype="string" datatype="x-yaml" x-context="member_question_followed_answered">
         <source>%1 %2!</source>
@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="4912" resname="body" restype="string" datatype="x-yaml" x-context="member_question_followed_answered">
         <source>A %1 you’re following has been answered: “%2”!</source>
-        <target>您所关注的%1已经得到回答：“%2”!</target>
+        <target>您所关注的%1已经得到回答：“%2”！</target>
       </trans-unit>
       <trans-unit id="4913" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_question_followed_answered">
         <source>Read the answer»</source>
@@ -320,7 +320,7 @@
       </trans-unit>
       <trans-unit id="4972" resname="subject" restype="string" datatype="x-yaml" x-context="news_item_thanked">
         <source>%1, a  premium member thanked you for your post!</source>
-        <target>%1，一位premium会员感谢您的帖子！</target>
+        <target>%1，一位高级会员感谢您的帖子！</target>
       </trans-unit>
       <trans-unit id="4973" resname="body" restype="string" datatype="x-yaml" x-context="news_item_thanked">
         <source>As an Influencer, you play a very important role at HealthTop--and you’re appreciated!</source>
@@ -372,7 +372,7 @@
       </trans-unit>
       <trans-unit id="4985" resname="body" restype="string" datatype="x-yaml" x-context="welcome_after_sign_in_complete_profile">
         <source>Get personalized health information from HealthTap! Your private profile is only %1% complete. Tell doctors more to get even better answers.</source>
-        <target>从HealthTap获得个性化健康信息！您的私人资料只有%1%完成。告诉医生更多以得到更好的回答。</target>
+        <target>从HealthTap获得专属健康信息！您的私人资料只完成了%1%。告诉医生更多以得到更好的回答。</target>
       </trans-unit>
       <trans-unit id="4986" resname="ctoa" restype="string" datatype="x-yaml" x-context="welcome_after_sign_in_complete_profile">
         <source>Complete profile</source>
@@ -392,11 +392,11 @@
       </trans-unit>
       <trans-unit id="4990" resname="push_data" restype="string" datatype="x-yaml" x-context="member_subscription_charge_error">
         <source>Important: We had trouble charging your credit card. Please update it as soon as possible.</source>
-        <target>重要：我们无法从您的信用卡收费。请尽快更新它</target>
+        <target>重要：我们无法从您的信用卡收费。请尽快更新它。</target>
       </trans-unit>
       <trans-unit id="4991" resname="push_data_paypal" restype="string" datatype="x-yaml" x-context="member_subscription_charge_error">
         <source>Important: We had trouble charging your PayPal account. Please update it as soon as possible.</source>
-        <target>重要：我们无法从您的PayPal帐户收费。请尽快更新它</target>
+        <target>重要：我们无法从您的PayPal帐户收费。请尽快更新它。</target>
       </trans-unit>
       <trans-unit id="4992" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_came_online">
         <source>Good news!</source>
@@ -416,7 +416,7 @@
       </trans-unit>
       <trans-unit id="4996" resname="subject" restype="string" datatype="x-yaml" x-context="feel_good_moment_shared">
         <source>%1,  a HealthTap customer shared your FeelGood:) moment!</source>
-        <target>%1,  一位HealthTap客户分享了您的FeelGood:)瞬间！</target>
+        <target>%1，一位HealthTap客户分享了您的FeelGood:)瞬间！</target>
       </trans-unit>
       <trans-unit id="4997" resname="body" restype="string" datatype="x-yaml" x-context="feel_good_moment_shared">
         <source>HealthTap would  like to thank you for all the important contributions you make as an Influencer!</source>
@@ -428,7 +428,7 @@
       </trans-unit>
       <trans-unit id="4999" resname="subject" restype="string" datatype="x-yaml" x-context="feel_good_moment_thanked">
         <source>%1,  a HealthTap customer thanked you!</source>
-        <target>%1, 一位HealthTap客户感谢了您！</target>
+        <target>%1，一位HealthTap客户感谢了您！</target>
       </trans-unit>
       <trans-unit id="5000" resname="body" restype="string" datatype="x-yaml" x-context="feel_good_moment_thanked">
         <source>We want to thank you for all the important contributions you make as an Influencer--and one of our customers agreed!</source>
@@ -508,7 +508,7 @@
       </trans-unit>
       <trans-unit id="5019" resname="push_data" restype="string" datatype="x-yaml" x-context="member_action_reminder">
         <source>Reminder from %1%2: %3. Have you done this?</source>
-        <target>来自%1%2的提醒：%3.您这样做了吗？</target>
+        <target>来自%1%2的提醒：%3。您这样做了吗？</target>
       </trans-unit>
       <trans-unit id="5020" resname="category" restype="string" datatype="x-yaml" x-context="member_action_reminder">
         <source>r</source>
@@ -536,7 +536,7 @@
       </trans-unit>
       <trans-unit id="5026" resname="body" restype="string" datatype="x-yaml" x-context="doctor_checklist_tried">
         <source>%1, %2 HealthTap member%3 have tried your checklist on %4! Your online reputation as a leading expert in your field increases.</source>
-        <target>%1, %2 HealthTap会员%3已在%4尝试过您的清单！添加在您领域您作为著名专家的在线声誉</target>
+        <target>%1, %2 HealthTap会员%3已在%4尝试过您的清单！添加在您领域您作为著名专家的线上声誉。</target>
       </trans-unit>
       <trans-unit id="5027" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_checklist_tried">
         <source>View checklist</source>
@@ -612,7 +612,7 @@
       </trans-unit>
       <trans-unit id="5045" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_prime_incoming_commited_offline">
         <source>A patient%1, is requesting a Live Consult with %2 right now%3. Please make yourself available</source>
-        <target>患者%1正在请求与%2现在%3的一次实时咨询。请使您自己空闲</target>
+        <target>患者%1正在请求与%2现在%3的一次实时咨询。请将您设置为在线可提供服务</target>
       </trans-unit>
       <trans-unit id="5046" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_prime_incoming_commited_offline">
         <source>A patient%1, is requesting a Live Consult with %2 right now%3.</source>
@@ -952,11 +952,11 @@
       </trans-unit>
       <trans-unit id="5130" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>View FeelGood moment</source>
-        <target>查看FeelGood时刻</target>
+        <target>查看FeelGood瞬间</target>
       </trans-unit>
       <trans-unit id="5131" resname="push_data" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>%1, a follower shared your FeelGood moment! View FeelGood moment</source>
-        <target>%1，一位关注者分享了您的FeelGood:)瞬间！查看FeelGood时刻</target>
+        <target>%1，一位关注者分享了您的FeelGood:)瞬间！查看FeelGood瞬间</target>
       </trans-unit>
       <trans-unit id="5132" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_news_helpful">
         <source>Helpful article!</source>
@@ -1056,7 +1056,7 @@
       </trans-unit>
       <trans-unit id="5156" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_answer_featured">
         <source>A HealthTap Scholar has featured your answer!</source>
-        <target>一位HealthTap学者精选了您的回答！</target>
+        <target>一位HealthTap学者推荐了您的回答！</target>
       </trans-unit>
       <trans-unit id="5157" resname="body" restype="string" datatype="x-yaml" x-context="doctor_answer_featured">
         <source>You answered “%1”</source>
@@ -1516,7 +1516,7 @@
       </trans-unit>
       <trans-unit id="5271" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_docscore_increasing">
         <source>Your HealthTap DocScore just increased to %1! Congrats! Offer more insights</source>
-        <target>您的HealthTap医者评分刚刚增长到%1！恭喜！提供更多见解</target>
+        <target>您的HealthTap医者评分刚刚上升到%1！恭喜！提供更多见解</target>
       </trans-unit>
       <trans-unit id="5272" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_thanked_batch">
         <source>Wow! %1, you’re making a real difference in people’s lives!</source>
@@ -1940,7 +1940,7 @@
       </trans-unit>
       <trans-unit id="5377" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_14days">
         <source>Send secure message</source>
-        <target>发送信息发送</target>
+        <target>发送安全信息</target>
       </trans-unit>
       <trans-unit id="5378" resname="subject" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_7days">
         <source>Send %1 a secure, private message</source>
@@ -1956,7 +1956,7 @@
       </trans-unit>
       <trans-unit id="5381" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_7days">
         <source>Send secure message</source>
-        <target>发送信息发送</target>
+        <target>发送安全信息</target>
       </trans-unit>
       <trans-unit id="5382" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_newsletter_setup_reminder">
         <source>Your Practice Newsletter will be sent in three days</source>
@@ -1992,7 +1992,7 @@
       </trans-unit>
       <trans-unit id="5390" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_3days">
         <source>Send secure message</source>
-        <target>发送信息发送</target>
+        <target>发送安全信息</target>
       </trans-unit>
       <trans-unit id="5391" resname="subject" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_30days">
         <source>%1 is here to help</source>
@@ -2088,7 +2088,7 @@
       </trans-unit>
       <trans-unit id="5414" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_inbox_incoming">
         <source>Respond now</source>
-        <target>现在回应</target>
+        <target>立即回复</target>
       </trans-unit>
       <trans-unit id="5415" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_inbox_incoming">
         <source>%1 sent you a message. Please respond to the Inbox Consult within 24 hours.</source>
@@ -2104,7 +2104,7 @@
       </trans-unit>
       <trans-unit id="5418" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_inbox_incoming_16hrs">
         <source>Respond now</source>
-        <target>现在回应</target>
+        <target>立即回复</target>
       </trans-unit>
       <trans-unit id="5419" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_inbox_incoming_16hrs">
         <source>%1 has been waiting 16 hours for a response to an Inbox Consult. Please respond within 8 hours</source>
@@ -2140,7 +2140,7 @@
       </trans-unit>
       <trans-unit id="5427" resname="push_data" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_campaign">
         <source>Get help today from %1, your doctor on HealthTap! Consult via video or text chat</source>
-        <target>立即从%1获得帮助，在HealthTap上您的医生！通过视频或文本聊天咨询</target>
+        <target>立即从%1获得帮助，在HealthTap上您的医生！通过视频或文字聊天咨询</target>
       </trans-unit>
       <trans-unit id="5428" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_concierge_app_not_complete">
         <source>What are you waiting for?</source>
@@ -2160,7 +2160,7 @@
       </trans-unit>
       <trans-unit id="5432" resname="push_data" restype="string" datatype="x-yaml" x-context="member_topic_followup_v1">
         <source>We have a doctor for you! %1 is an expert in the topics you care about most — consult today</source>
-        <target>我们有为您服务的医生！%1是您最关心话题的专家—立即咨询</target>
+        <target>我们有可以为您服务的医生！%1是您最关心话题的专家—立即咨询</target>
       </trans-unit>
       <trans-unit id="5433" resname="push_data" restype="string" datatype="x-yaml" x-context="member_topic_followup_v2">
         <source>%1, a %2, is an expert in the topics you care about most — ask your question now!</source>
