@@ -534,7 +534,7 @@
       </trans-unit>
       <trans-unit id="9782" resname="r770266280" restype="string" datatype="x-haml">
         <source>&#40;subjective, objective, assessment, plan&#41; report immediately following the consult. Always include instructions for further care in person with a doctor if symptoms persist.</source>
-        <target>&#40;主观、客观、评估、计划&#41；咨询后立即报告。如果症状持续存在，一定要要求患者当面与医生沟通。</target>
+        <target>&#40;主观、客观、评估、计划&#41;咨询后立即报告。如果症状持续存在，一定要要求患者当面与医生沟通。</target>
       </trans-unit>
       <trans-unit id="9784" resname="r34588765" restype="string" datatype="x-haml">
         <source>to ensure that patients requesting consults minutes before shift ends are still helped. Please try not to rush consults even if they extend beyond a few minutes over the end of your shift.</source>

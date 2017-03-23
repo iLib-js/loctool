@@ -2252,8 +2252,6 @@
         <source>You can add additional health information to your Profile. What you can add, how this information is used, and your ability to modify this information are described</source>
         <target state="translated">您可以添加其他健康信息到资料中去。关于您可以添加什么，这些信息是如何被使用的和您能修改这些信息的能力，请见描述于此</target>
       </trans-unit>
-      <trans-unit id="2336" resname="r247342354" restype="string" datatype="x-haml"></target>
-      </trans-unit>
       <trans-unit id="2336" resname="r247342354" restype="string" datatype="x-haml">
         <source>Sharing</source>
         <target state="translated">共享中</target>
