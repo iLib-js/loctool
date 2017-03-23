@@ -3971,8 +3971,8 @@
         <target>正在寻找小贴士&lt;%=user_question.tip_topic_name%&gt;:</target>
       </trans-unit>
       <trans-unit id="871" resname="agreed with&lt;span class=&quot;actor_text bold&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer to:&lt;a class=&quot;question_text feed_item_question_h&quot; style=&quot;display:inline;font-size: 12px;margin-top:0;&quot;&gt;&lt;%= user_answer.question.truncate({length:96}) %&gt;&lt;/a&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? '医生 ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to: &lt;a class="question_text feed_item_question_h" style="display:inline;font-size: 12px;margin-top:0;"&gt;&lt;%= user_answer.question.truncate({length:96}) %&gt;&lt;/a&gt;</source>
-        <target>已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; 对这个问题的回答: &lt;a class="question_text feed_item_question_h" style="display:inline;font-size: 12px;margin-top:0;"&gt;&lt;%= user_answer.question.truncate({length:96}) %&gt;&lt;/a&gt;</target>
+        <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to: &lt;a class="question_text feed_item_question_h" style="display:inline;font-size: 12px;margin-top:0;"&gt;&lt;%= user_answer.question.truncate({length:96}) %&gt;&lt;/a&gt;</source>
+        <target>已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? user_answer.actor.last_name + '医生': user_answer.actor.name %&gt;'s&lt;/span&gt; 对这个问题的回答: &lt;a class="question_text feed_item_question_h" style="display:inline;font-size: 12px;margin-top:0;"&gt;&lt;%= user_answer.question.truncate({length:96}) %&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
