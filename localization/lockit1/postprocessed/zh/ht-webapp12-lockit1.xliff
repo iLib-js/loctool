@@ -804,7 +804,7 @@
       </trans-unit>
       <trans-unit id="170" resname="My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?" restype="string" datatype="html">
         <source>My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?</source>
-        <target>我的儿子5，55，正在发烧。已服用过泰诺但还在发烧。可以服用更多泰诺吗？</target>
+        <target>我的儿子5岁，55磅，正在发烧。已服用过泰诺但还在发烧。可以服用更多泰诺吗？</target>
       </trans-unit>
       <trans-unit id="171" resname="7. Try to avoid questions that set doctors up for YES or NO answers." restype="string" datatype="html">
         <source>7. Try to avoid questions that set doctors up for YES or NO answers.</source>
