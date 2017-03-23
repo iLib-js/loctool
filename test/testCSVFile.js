@@ -1723,5 +1723,74 @@ module.exports = {
         test.equal(csv1.records[3].type, "foo4");
                 
         test.done();
+    },
+    
+    testCSVFileMergeWithOverwritesButDontOverwriteWithEmptyOrNull: function(test) {
+        test.expect(12);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo1",
+        			name: "",
+        			description: ""
+        		},
+        		{
+        			id: "foo2",
+        			name: null,
+        			description: null
+        		},
+        		{
+        			id: "foo3",
+        			name: undefined,
+        			description: undefined
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 3);
+        
+        // none of the fields should be overridden
+        for (var i = 1; i < 4; i++) {
+        	test.equal(csv1.records[i-1].id, "foo" + i);
+        	test.equal(csv1.records[i-1].name, "bar" + i);
+        	test.equal(csv1.records[i-1].description, "asdf" + i);
+        }
+        test.done();
     }
 };
