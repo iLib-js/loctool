@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="Would you like a translator to join you for this Prime consult?" restype="string" datatype="javascript">
         <source>Would you like a translator to join you for this Prime consult?</source>
-        <target state="accepted">您想免费邀请同声翻译来加入这次咨询吗？如果不的话，您的医生可能不会说中文。如果指定医生的话，请确认医生档案里显示医生会说中文</target>
+        <target state="accepted">您想免费邀请翻译来加入这次咨询吗？如果不的话，您的医生可能不会说中文。如果指定医生的话，请确认医生档案里显示医生会说中文</target>
       </trans-unit>
     </body>
   </file>

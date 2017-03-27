@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="47" resname="r471419186" restype="string" datatype="ruby">
         <source>You Can Now Download an Artificial Intelligence Doctor</source>
-        <target state="translated">你现在可以下载一个人工智能医生</target>
+        <target state="translated">您现在可以下载一个人工智能医生</target>
       </trans-unit>
       <trans-unit id="48" resname="r18565305" restype="string" datatype="ruby">
         <source>This AI doctor will help you avoid the waiting room</source>
@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="51" resname="r60049643" restype="string" datatype="ruby">
         <source>&amp;ldquo;Flex is all about helping the world live smarter, and we are dedicated to bringing intelligent solutions to how our employees access healthcare and manage their health and well-being. HealthTap offers a query-to-cure system that &lt;em&gt;provides Flex employees a simple, immediate, and personalized way to tap in and access health services&lt;/em&gt; from a network of top doctors, helping to curb costs.&amp;rdquo;</source>
-        <target state="translated">&amp;ldquo;Flex是帮助生活变得更智能，我们致力于为我们的员工找到获得医疗保健和管理他们的健康和幸福的智能的解决方案。HealthTap提供了一个查询到治疗系统，可以为Flex员工提供一种简单，即时，专属的方式，轻轻滑动即可&lt;/em&gt;从顶级医生网络访问健康服务，从而帮助控制成本。&amp;rdquo;</target>
+        <target state="translated">&amp;ldquo;Flex是帮助生活变得更智能，我们致力于为我们的员工找到获得医疗保健和管理他们的健康和幸福的智能的解决方案。HealthTap提供了一个查询到治疗系统，可以为Flex员工提供一种简单，即时，专属的方式，轻触即可&lt;/em&gt;从顶级医生网络访问健康服务，从而帮助控制成本。&amp;rdquo;</target>
       </trans-unit>
       <trans-unit id="52" resname="r853379367" restype="string" datatype="ruby">
         <source>&lt;em&gt;&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.&lt;/em&gt; We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap's proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
@@ -190,7 +190,7 @@
       </trans-unit>
       <trans-unit id="80" resname="r64812869" restype="string" datatype="ruby">
         <source>Promo code can not be applied to given doctor</source>
-        <target state="translated">优惠码无法应用于给定的医生</target>
+        <target state="translated">优惠码无法应用于该医生</target>
       </trans-unit>
       <trans-unit id="81" resname="r760108251" restype="string" datatype="ruby">
         <source>This promo code has already been used for this credit card. Please try another.</source>
@@ -206,11 +206,11 @@
     <body>
       <trans-unit id="83" resname="r930344070" restype="string" datatype="ruby">
         <source>%{action} %{frequency} for %{duration} for %{until_when}</source>
-        <target state="translated">%{action} %{frequency}为%{duration}%{until_when}</target>
+        <target state="translated">%{action} %{frequency}，%{duration}%{until_when}</target>
       </trans-unit>
       <trans-unit id="84" resname="r876765637" restype="string" datatype="ruby">
         <source>%{action} %{frequency} for %{duration}</source>
-        <target state="translated">%{action} %{frequency}为%{duration}</target>
+        <target state="translated">%{action} %{frequency}，%{duration}</target>
       </trans-unit>
       <trans-unit id="85" resname="r1054967873" restype="string" datatype="ruby">
         <source>%{action} %{frequency}</source>
@@ -222,11 +222,11 @@
       </trans-unit>
       <trans-unit id="87" resname="r999886080" restype="string" datatype="ruby">
         <source>%{frequency} for %{duration} for %{until_when}</source>
-        <target state="translated">%{frequency}为%{duration}%{until_when}</target>
+        <target state="translated">%{frequency}，%{duration}%{until_when}</target>
       </trans-unit>
       <trans-unit id="88" resname="r144076796" restype="string" datatype="ruby">
         <source>%{frequency} for %{duration}</source>
-        <target state="translated">%{frequency}为%{duration}</target>
+        <target state="translated">%{frequency}，%{duration}</target>
       </trans-unit>
       <trans-unit id="89" resname="r828358785" restype="string" datatype="ruby">
         <source>%{frequency}</source>
@@ -234,11 +234,11 @@
       </trans-unit>
       <trans-unit id="90" resname="r964520866" restype="string" datatype="ruby">
         <source>for %{duration} for %{until_when}</source>
-        <target state="translated">为%{duration}%{until_when}</target>
+        <target state="translated">，%{duration}%{until_when}</target>
       </trans-unit>
       <trans-unit id="91" resname="r794130434" restype="string" datatype="ruby">
         <source>for %{duration}</source>
-        <target state="translated">为%{duration}</target>
+        <target state="translated">，%{duration}</target>
       </trans-unit>
     </body>
   </file>
