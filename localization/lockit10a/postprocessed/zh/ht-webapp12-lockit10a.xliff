@@ -164,7 +164,7 @@
     <body>
       <trans-unit id="66" resname="r927688850" restype="string" datatype="x-haml">
         <source>No</source>
-        <target state="translated">不是</target>
+        <target state="translated">否</target>
       </trans-unit>
     </body>
   </file>
@@ -172,7 +172,7 @@
     <body>
       <trans-unit id="87" resname="r864785970" restype="string" datatype="x-haml">
         <source>no</source>
-        <target state="translated">不是</target>
+        <target state="translated">否</target>
       </trans-unit>
     </body>
   </file>
@@ -192,6 +192,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="139" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="public/javascripts/templates/share/share_your_story.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="140" resname="Send your story" restype="string" datatype="javascript">
@@ -204,7 +212,7 @@
     <body>
       <trans-unit id="99" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数		并提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="141" resname="Save »" restype="string" datatype="javascript">
         <source>Save »</source>
@@ -250,6 +258,10 @@
   </file>
   <file original="public/javascripts/templates/people/ipad_forgotPW.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
+      <trans-unit id="105" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告			它还需要一会。当它完成后您会收到一封邮件</target>
+      </trans-unit>
       <trans-unit id="147" resname="Send Reset Email" restype="string" datatype="javascript">
         <source>Send Reset Email</source>
         <target state="translated">发送重置邮件</target>
@@ -316,7 +328,7 @@
     <body>
       <trans-unit id="156" resname="Add all to network" restype="string" datatype="javascript">
         <source>Add all to network</source>
-        <target state="translated">添加到所有网络</target>
+        <target state="translated">添加所有到网络</target>
       </trans-unit>
     </body>
   </file>
@@ -336,7 +348,7 @@
       </trans-unit>
       <trans-unit id="159" resname="I WANT TO ASK THIS ANYWAY" restype="string" datatype="javascript">
         <source>I WANT TO ASK THIS ANYWAY</source>
-        <target state="translated">您想要随时随地询问</target>
+        <target state="translated">我还是想问这个</target>
       </trans-unit>
     </body>
   </file>
@@ -524,7 +536,7 @@
     <body>
       <trans-unit id="185" resname="Ahh, I see!" restype="string" datatype="javascript">
         <source>Ahh, I see!</source>
-        <target state="translated">啊, 我看到了！</target>
+        <target state="translated">啊, 我明白了！</target>
       </trans-unit>
     </body>
   </file>
@@ -564,7 +576,7 @@
     <body>
       <trans-unit id="190" resname="Send Note" restype="string" datatype="javascript">
         <source>Send Note</source>
-        <target state="translated">发送感谢信</target>
+        <target state="translated">发送便条</target>
       </trans-unit>
     </body>
   </file>
@@ -744,6 +756,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="t/vanessa/refinement_questions.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="441" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
+        <source>gender</source>
+        <target state="translated">性别</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
@@ -768,7 +788,7 @@
     <body>
       <trans-unit id="9" resname="r808842909" restype="string" datatype="ruby">
         <source>Curated by doctors to keep you&lt;br/&gt;informed on current events in medicine</source>
-        <target state="translated">医生组织的为了让您保持&lt;br/&gt;了解当前的医学事件</target>
+        <target state="translated">医生编纂，让您&lt;br/&gt;了解当前的医学事件</target>
       </trans-unit>
     </body>
   </file>
@@ -820,7 +840,7 @@
     <body>
       <trans-unit id="51" resname="r845077243" restype="string" datatype="ruby">
         <source>Immunization</source>
-        <target state="translated">免疫/预防接种</target>
+        <target state="translated">免疫</target>
       </trans-unit>
       <trans-unit id="53" resname="r789310818" restype="string" datatype="ruby">
         <source>Topic</source>
@@ -897,6 +917,14 @@
       <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
         <source>Helpful Votes</source>
         <target state="translated">有帮助的投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="114" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1012,7 +1040,7 @@
     <body>
       <trans-unit id="20" resname="r466948495" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}</source>
-        <target state="translated">智能医生</target>
+        <target state="translated">Dr. %{ai_trademark}</target>
       </trans-unit>
     </body>
   </file>
@@ -1029,6 +1057,14 @@
       <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
         <source>Helpful Votes</source>
         <target state="translated">有帮助的投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="114" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1168,7 +1204,7 @@
     <body>
       <trans-unit id="508" resname="r927688850" restype="string" datatype="x-haml">
         <source>No</source>
-        <target state="translated">不是</target>
+        <target state="translated">不</target>
       </trans-unit>
     </body>
   </file>
@@ -1177,6 +1213,14 @@
       <trans-unit id="537" resname="r91472850" restype="string" datatype="x-haml">
         <source>Clinicians</source>
         <target state="translated">临床医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="597" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1224,7 +1268,7 @@
       </trans-unit>
       <trans-unit id="512" resname="r240673246" restype="string" datatype="ruby">
         <source>grandson</source>
-        <target state="translated">外孙</target>
+        <target state="translated">孙子/外孙</target>
       </trans-unit>
       <trans-unit id="513" resname="r866270457" restype="string" datatype="ruby">
         <source>husband</source>
@@ -1264,7 +1308,7 @@
       </trans-unit>
       <trans-unit id="522" resname="r1033810326" restype="string" datatype="ruby">
         <source>granddaughter</source>
-        <target state="translated">外孙女</target>
+        <target state="translated">孙女/外孙女</target>
       </trans-unit>
       <trans-unit id="523" resname="r7055697" restype="string" datatype="ruby">
         <source>wife</source>
@@ -1304,7 +1348,7 @@
       </trans-unit>
       <trans-unit id="608" resname="Wait!" restype="string" datatype="javascript">
         <source>Wait!</source>
-        <target state="translated">等待!</target>
+        <target state="translated">等一等!</target>
       </trans-unit>
       <trans-unit id="609" resname="We don&apos;t have enough information to generate an accurate report" restype="string" datatype="javascript">
         <source>We don't have enough information to generate an accurate report</source>
@@ -1348,11 +1392,19 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="102" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="105" resname="Just one consult" restype="string" datatype="javascript">
         <source>Just one consult</source>
-        <target state="translated">只是咨询</target>
+        <target state="translated">一次咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -1796,11 +1848,11 @@
       </trans-unit>
       <trans-unit id="114" resname="r384026336" restype="string" datatype="ruby">
         <source>Chinese (Simplified)</source>
-        <target state="translated">简体中文</target>
+        <target state="translated">中文（简体）</target>
       </trans-unit>
       <trans-unit id="115" resname="r404364090" restype="string" datatype="ruby">
         <source>Chinese (Traditional)</source>
-        <target state="translated">中国传统的</target>
+        <target state="translated">中文（繁体）</target>
       </trans-unit>
       <trans-unit id="116" resname="r68179021" restype="string" datatype="ruby">
         <source>Guarani</source>
@@ -1912,7 +1964,15 @@
     <body>
       <trans-unit id="135" resname="r82233625" restype="string" datatype="ruby">
         <source>only $10 USD / month</source>
-        <target state="translated">只有10美元/月</target>
+        <target state="translated">只要10美元/月</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="139" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>

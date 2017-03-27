@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="2" resname="r252593186" restype="string" datatype="ruby">
         <source>We sincerely apologize, but there seems to be a technical issue with starting your consult. We've already pinged our top engineers to investigate and resolve the issue. If you need further assistance, please don't hesitate to contact our Quality Care Team at support@healthtap.com. If you cannot start your consult in time, we will fully re-credit your account. (Error code: %{error})</source>
-        <target>我们真诚地向您道歉，但是开始您的咨询似乎遇到了一个问题。我们已经联系了我们的顶尖工程师以调查并解决问题。如需进一步帮助，请联系我们的质量保证团队support@healthtap.com。如果您无法及时开始咨询，我们将完全重新记入您的帐户。（错误代码：%{error})</target>
+        <target>我们真诚地向您道歉，但是开始您的咨询时似乎遇到了一个问题。我们已经联系了我们的顶尖工程师以调查并解决问题。如需进一步帮助，请联系我们的质量保证团队support@healthtap.com。如果您无法及时开始咨询，我们将全额退款到您的帐户。（错误代码：%{error})</target>
       </trans-unit>
       <trans-unit id="3" resname="r418634910" restype="string" datatype="ruby">
         <source>Consult already in progress</source>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="6" resname="r286928163" restype="string" datatype="ruby">
         <source>We're sorry but you must be 18 years or older to start a Virtual Consult with a doctor. We can't start your consult at this time. For questions, please contact our Quality Care Team at support@healthtap.com. If you cannot start your consult in time, we will fully re-credit your account. (Error code: %{error})</source>
-        <target>我们很抱歉但是您必须年满18岁才可以与医生开始在线咨询。我们现在无法开始您的咨询。有关问题，请联系我们的质量保证团队support@healthtap.com。如果您无法及时开始咨询，我们将完全重新记入您的帐户。（错误代码：%{error})</target>
+        <target>我们很抱歉但是您必须年满18岁才可以与医生开始在线咨询。我们现在无法开始您的咨询。有关问题，请联系我们的质量保证团队support@healthtap.com。如果您无法及时开始咨询，我们将全额退款到您的帐户。（错误代码：%{error})</target>
       </trans-unit>
       <trans-unit id="7" resname="r964639321" restype="string" datatype="ruby">
         <source>Payment needed</source>
@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="20" resname="r578763347" restype="string" datatype="ruby">
         <source>We sincerely apologize, but there seems to be a technical issue with starting your consult. We've already pinged our top engineers to investigate and resolve the issue. If you need further assistance, please don't hesitate to contact our Quality Care Team at expertsupport@healthtap.com. (Error code: %{error})</source>
-        <target>我们真诚地向您道歉，但是开始您的咨询似乎遇到了一个问题。我们已经联系了我们的顶尖工程师以调查并解决问题。如需进一步帮助，请联系我们的质量保证团队expertsupport@healthtap.com。（错误代码：%{error})</target>
+        <target>我们真诚地向您道歉，但是开始您的咨询时似乎遇到了一个问题。我们已经联系了我们的顶尖工程师以调查并解决问题。如需进一步帮助，请联系我们的质量保证团队expertsupport@healthtap.com。（错误代码：%{error})</target>
       </trans-unit>
       <trans-unit id="21" resname="r167364116" restype="string" datatype="ruby">
         <source>Cannot answer consult</source>
@@ -92,7 +92,7 @@
       </trans-unit>
       <trans-unit id="23" resname="r827325555" restype="string" datatype="ruby">
         <source>We sincerely apologize, but it seems you are offline potentially due to a missed call. If you need further assistance, please don't hesitate to contact our Quality Care Team at expertsupport@healthtap.com. (Error code: %{error})</source>
-        <target>我们真诚地向您道歉，但是似乎您离线可能是导致未接来电。如需进一步帮助，请联系我们的质量保证团队expertsupport@healthtap.com。（错误代码：%{error})</target>
+        <target>我们真诚地向您道歉，但是似乎您离线可能是由于未接来电。如需进一步帮助，请联系我们的质量保证团队expertsupport@healthtap.com。（错误代码：%{error})</target>
       </trans-unit>
       <trans-unit id="24" resname="r828656307" restype="string" datatype="ruby">
         <source>Trouble Assigning Device</source>
@@ -164,7 +164,7 @@
       </trans-unit>
       <trans-unit id="40" resname="r921026458" restype="string" datatype="ruby">
         <source>Select "Known for" topics by clicking on the "edit" link in the field below your photo and name on the Virtual Practice home page - you can choose up to 5 "Known for" topics that will direct patients and questions to your profile that are related to those topics. (see more about “Known For” topics here)</source>
-        <target>通过点击在线诊疗主页上照片和名称下面的字段中的“编辑”链接，选择“专攻”话题 - 您可以最多选择5个“专攻”话题，这将指导与这些话题相关的患者和问题到您的个人资料。（在这里查看更多关于“专攻”话题）</target>
+        <target>通过点击在线诊疗主页上照片和名称下面的字段中的“编辑”链接，选择“专攻”话题 - 您可以最多选择5个“专攻”话题，这将引导与这些话题相关的患者和问题到您的个人资料。（在这里查看更多关于“专攻”话题）</target>
       </trans-unit>
       <trans-unit id="41" resname="r882562174" restype="string" datatype="ruby">
         <source>Add a professional looking "head and shoulders" photo to your Virtual Practice home page.</source>
@@ -196,7 +196,7 @@
     <body>
       <trans-unit id="47" resname="r544426111" restype="string" datatype="ruby">
         <source>Access trusted health information, all approved by doctors so you can check out symptoms, conditions and treatments.</source>
-        <target>访问值得信任的健康信息，所有医生批准的，以便您可以检查症状，病症和治疗方法。</target>
+        <target>访问值得信任的健康信息，所有医生批准的，以便您可以检查症状，病症和治疗。</target>
       </trans-unit>
       <trans-unit id="48" resname="r259130483" restype="string" datatype="ruby">
         <source>See your hospital specialist without leaving home, book an appointment and see your health record.</source>
@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="56" resname="r770205803" restype="string" datatype="ruby">
         <source>Make it more convenient for patients by preventing long journeys to hospital, give everyone access to timely care, help patients manage their own health more effectively.</source>
-        <target>避免进入医院的长途行程，使患者更加方便，让每个人获得及时的医护，帮助患者更有效地管理自己的健康。</target>
+        <target>避免去医院的长途行程，使患者更加方便，让每个人获得及时的医护，帮助患者更有效地管理自己的健康。</target>
       </trans-unit>
       <trans-unit id="57" resname="r788198062" restype="string" datatype="ruby">
         <source>Earn unlimited free AMA PRA Category 1TM CME credits while sharing knowledge with colleagues and patients.</source>
@@ -244,7 +244,7 @@
       </trans-unit>
       <trans-unit id="58" resname="r488462131" restype="string" datatype="ruby">
         <source>Share HIPAA-compliant secure messages with any doctor, or request Curbside Consult in any of 141 specialties.</source>
-        <target>与任何医生分享HIPAA兼容的安全消息，或从任何141个专科中请求路边咨询。</target>
+        <target>与任何医生分享HIPAA加密的安全消息，或从任何141个专科中请求路边咨询。</target>
       </trans-unit>
     </body>
   </file>
@@ -424,7 +424,7 @@
       </trans-unit>
       <trans-unit id="98" resname="r204607498" restype="string" datatype="ruby">
         <source>A single secure sign-on (SSO) serves as your patients' and doctors' main interface for managing healthcare. Our safe and secure HIPAA-compliant, SOC 2 Type II-certified platform keeps data and consults confidential.</source>
-        <target>唯一的安全登录（SSO）作为您的患者和医生的健康医护管理主界面。我们安全和可靠的HIPAA兼容，SOC 2 II型认证平台可以保持数据和咨询的机密性。</target>
+        <target>唯一的安全登录（SSO）作为您的患者和医生的健康医护管理主界面。我们安全和可靠的HIPAA加密，SOC 2 II型认证平台可以保持数据和咨询的机密性。</target>
       </trans-unit>
       <trans-unit id="99" resname="r267299231" restype="string" datatype="ruby">
         <source>Operated by the provider's doctors and staff, integrating with EMRs and other existing provider services.</source>
@@ -684,7 +684,7 @@
       </trans-unit>
       <trans-unit id="158" resname="r576588458" restype="string" datatype="ruby">
         <source>We help more than %{num_docs} top doctors in our network enhance their reputations,&lt;br&gt;build professional networks, better serve existing patients, grow their practices,&lt;br&gt;and increase their income.</source>
-        <target>我们帮助我们网络中超过%{num_docs}名顶级医生提高他们的声誉，&lt;br&gt;建立专业网络，更好地服务现有患者，成长他们的诊疗&lt;br&gt;以及增加他们的收入。</target>
+        <target>我们帮助我们网络中超过%{num_docs}名顶级医生提高他们的声誉，&lt;br&gt;建立专业网络，更好地服务现有患者，壮大他们的诊疗&lt;br&gt;以及增加他们的收入。</target>
       </trans-unit>
     </body>
   </file>
@@ -696,7 +696,7 @@
       </trans-unit>
       <trans-unit id="160" resname="r423261800" restype="string" datatype="ruby">
         <source>Grow your book of business and make your renewals worry-free.</source>
-        <target>不断发展您的商业书，使您后续无忧。</target>
+        <target>不断发展您的业务，使您后续无忧。</target>
       </trans-unit>
       <trans-unit id="161" resname="r500843284" restype="string" datatype="ruby">
         <source>Earn more while providing your clients with a truly engaging, superior healthcare experience that saves time and money for both you and your clients!</source>
@@ -777,7 +777,7 @@
       </trans-unit>
       <trans-unit id="178" resname="r16182904" restype="string" datatype="ruby">
         <source>Provide individuals at high risk for Hepatitis B with access top doctors when they need it most</source>
-        <target>为乙型肝炎高风险的人群在他们最需要时可接触顶级医生</target>
+        <target>在乙型肝炎高风险的人群在他们最需要时提供顶级医生访问</target>
       </trans-unit>
       <trans-unit id="179" resname="r170304312" restype="string" datatype="ruby">
         <source>Action Against&lt;br/&gt;Hunger</source>
@@ -1329,7 +1329,7 @@
     <body>
       <trans-unit id="281" resname="r148560240" restype="string" datatype="ruby">
         <source>We’ve issued you a refund for your Virtual Consult with %{expert} on %{display_date} in the form of a credit. The next time you talk to a doctor, you will not be charged. We stand behind our guarantee to fully satisfy every HealthTap member with our services.</source>
-        <target>我们已透过信用额表格的方式，透过%{expert}在%{display_date}向您提供在线咨询服务的退款。下次与医生交谈时，不会向您收费。我们支持我们的保证，使我们的服务完全满足每个HealthTap会员。</target>
+        <target>我们已通过信用卡就您与%{expert}在%{display_date}的在线咨询退款。下次与医生交谈时，不会向您收费。我们支持我们的保证，使我们的服务完全满足每个HealthTap会员。</target>
       </trans-unit>
     </body>
   </file>
@@ -1389,7 +1389,7 @@
       </trans-unit>
       <trans-unit id="293" resname="r191325127" restype="string" datatype="ruby">
         <source>Get access to the latest cutting-edge technology and features on HealthTap before anyone else and invitations to exclusive HealthTap events</source>
-        <target>在任何人之前获得体验HealthTap最新的先进技术和特色功能以及HealthTap专属事件的邀请</target>
+        <target>在任何人之前获得体验HealthTap最新的先进技术和精选，并受邀参加HealthTap特别活动</target>
       </trans-unit>
       <trans-unit id="294" resname="r633606109" restype="string" datatype="ruby">
         <source>Check out our helpful articles to get you started »</source>
@@ -1441,7 +1441,7 @@
       </trans-unit>
       <trans-unit id="303" resname="r784290863" restype="string" datatype="ruby">
         <source>Marking actions as “complete” gives doctors important information for your next Virtual Consult. They'll know how to better tailor your treatments based on the actions you’ve taken in the past.</source>
-        <target>标记行动为“完成”可以为您的下一次在线咨询向医生提供重要信息。他们可以根据您过去的行动来更好地调整您的治疗方法</target>
+        <target>标记行动为“完成”可以为您的下一次在线咨询向医生提供重要信息。他们可以根据您过去的行动来更好地调整您的治疗。</target>
       </trans-unit>
       <trans-unit id="304" resname="r25006705" restype="string" datatype="ruby">
         <source>When you subscribe to a checklist, you’ll automatically receive reminders via email and push notification. Of course, you can always opt out of these reminders at any time.</source>
@@ -1693,7 +1693,7 @@
       </trans-unit>
       <trans-unit id="345" resname="r617556726" restype="string" datatype="ruby">
         <source>Give staff access to your Practice Portal to manage and grow your Virtual Practice</source>
-        <target>让员工访问您的诊疗门户，以管理和成长您的在线诊疗</target>
+        <target>让员工访问您的诊疗门户，以管理和壮大您的在线诊疗</target>
       </trans-unit>
       <trans-unit id="346" resname="r690791616" restype="string" datatype="ruby">
         <source>Distribute your personalized handout and display your flyer in your waiting room</source>
@@ -1850,11 +1850,11 @@
       </trans-unit>
       <trans-unit id="374" resname="r786096516" restype="string" datatype="ruby">
         <source>Ensure your members are only referred to in-network doctors and specialists to minimize uncovered costs.</source>
-        <target>确保您的会员仅转诊到网络医生和专科医生，以最小化未包括的费用。</target>
+        <target>确保您的会员仅转诊到网络医生和专科医生，以最小化保险不包括的费用。</target>
       </trans-unit>
       <trans-unit id="375" resname="r718822114" restype="string" datatype="ruby">
         <source>Set your own copay pricing, submit claims to third-party payors, and accept payments by credit card, Apple Pay, or Android Pay.</source>
-        <target>设定您自己的挂号费定价，提交申请给第三方付款人，并接受信用卡支付，苹果支付或安卓支付。</target>
+        <target>设定您自己的挂号费定价，提交申请给第三方付款人，并接受信用卡支付，Apple Pay或安卓支付。</target>
       </trans-unit>
       <trans-unit id="376" resname="r327986706" restype="string" datatype="ruby">
         <source>Our population engagement campaigns have been highly optimized, validated by hundreds of millions of consumers, and are customized for your organization.</source>
@@ -1923,7 +1923,7 @@
       </trans-unit>
       <trans-unit id="389" resname="r862593083" restype="string" datatype="ruby">
         <source>Increase adherence while improving health outcomes with automated reminders from you to your patients with no additional effort.</source>
-        <target>提高依从性，同时从您和患者的自动提醒改善健康结果而不需要额外的努力。</target>
+        <target>提高依从性，同时用您和患者的自动提醒改善健康结果而不需要额外的努力。</target>
       </trans-unit>
       <trans-unit id="390" resname="r650157968" restype="string" datatype="ruby">
         <source>Quickly triage all patients to proper care and provide the right care, at the right time and at the right price.  Offer after hours care and information 24/7, without additional expenses.</source>
@@ -2175,7 +2175,7 @@
       </trans-unit>
       <trans-unit id="446" resname="r224468636" restype="string" datatype="ruby">
         <source>Uninsured</source>
-        <target>未保过险的</target>
+        <target>无保险</target>
       </trans-unit>
       <trans-unit id="447" resname="r560874620" restype="string" datatype="ruby">
         <source>Insurance Company</source>
@@ -2335,7 +2335,7 @@
       </trans-unit>
       <trans-unit id="486" resname="r993249871" restype="string" datatype="ruby">
         <source>Other Pacific Peoples</source>
-        <target>其他太平洋人民</target>
+        <target>其他太平洋民族</target>
       </trans-unit>
       <trans-unit id="487" resname="r504375864" restype="string" datatype="ruby">
         <source>Stepson</source>
@@ -2343,7 +2343,7 @@
       </trans-unit>
       <trans-unit id="488" resname="r950610981" restype="string" datatype="ruby">
         <source>Grandson</source>
-        <target>外孙</target>
+        <target>孙子/外孙</target>
       </trans-unit>
       <trans-unit id="489" resname="r192643962" restype="string" datatype="ruby">
         <source>Nephew</source>
@@ -2355,7 +2355,7 @@
       </trans-unit>
       <trans-unit id="491" resname="r1054716214" restype="string" datatype="ruby">
         <source>Granddaughter</source>
-        <target>外孙女</target>
+        <target>孙女/外孙女</target>
       </trans-unit>
       <trans-unit id="492" resname="r27090358" restype="string" datatype="ruby">
         <source>Niece</source>
@@ -2579,7 +2579,7 @@
       </trans-unit>
       <trans-unit id="541" resname="r7976305" restype="string" datatype="ruby">
         <source>New group %{group} has been created</source>
-        <target>已创建的新的群组%{group}</target>
+        <target>已创建新的群组%{group}</target>
       </trans-unit>
       <trans-unit id="542" resname="r989766554" restype="string" datatype="ruby">
         <source>patient list uploaded by doctor!</source>
@@ -2631,7 +2631,7 @@
       </trans-unit>
       <trans-unit id="554" resname="r471507271" restype="string" datatype="ruby">
         <source>HealthTap HOPES for Practices</source>
-        <target>为诊疗的HealthTap HOPES</target>
+        <target>为诊所设计的HealthTap HOPES</target>
       </trans-unit>
       <trans-unit id="555" resname="r264964148" restype="string" datatype="ruby">
         <source>Here’s your receipt for your consult with %{expert}</source>
@@ -2695,7 +2695,7 @@
       </trans-unit>
       <trans-unit id="570" resname="r508061053" restype="string" datatype="ruby">
         <source>IMPORTANT: Lab test results are back for your patient, with a critical value</source>
-        <target>重要：为您的患者得到的实验室测试结果，具有重要价值</target>
+        <target>重要：您的患者的实验室测试结果已经出来了，具有重要价值</target>
       </trans-unit>
       <trans-unit id="571" resname="r521160229" restype="string" datatype="ruby">
         <source>Your Own Personal Doctors are Now Just a HealthTap Away</source>
@@ -2739,7 +2739,7 @@
       </trans-unit>
       <trans-unit id="581" resname="r990266276" restype="string" datatype="ruby">
         <source>REMINDER: Lab test results are back for your patient, with a critical value</source>
-        <target>提醒：为您的患者得到的实验室测试结果，具有重要价值</target>
+        <target>提醒：您的患者的实验室测试结果已经出来了，具有重要价值</target>
       </trans-unit>
       <trans-unit id="582" resname="r335548656" restype="string" datatype="ruby">
         <source>'HealthTap Quality Care' &lt;support@healthtap.com&gt;</source>
@@ -2855,7 +2855,7 @@
       </trans-unit>
       <trans-unit id="609" resname="r152584352" restype="string" datatype="ruby">
         <source>Questions must include enough detail to be meaningful and answerable. Naming a topic (for example, “headache?”) without asking something specific, doesn’t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
-        <target>问题必须包含足够的细节才是有意义和可回答的。命名一个话题（例如，“头痛？”）而不询问具体的东西，不给医生准确地回答的足够信息。您可以考虑提到有影响的性别，持续时间，年龄范围或身体区域。</target>
+        <target>问题必须包含足够的细节才是有意义和可回答的。命名一个话题（例如，“头痛？”）而不询问具体的东西，这不能为医生的准确回答提供足够信息。您可以考虑提到相关信息如性别，持续时间，年龄范围或身体区域。</target>
       </trans-unit>
       <trans-unit id="610" resname="r223830689" restype="string" datatype="ruby">
         <source>Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
@@ -3031,7 +3031,7 @@
       </trans-unit>
       <trans-unit id="651" resname="r414529181" restype="string" datatype="ruby">
         <source>A typical implementation can be accomplished in a few short days, depending on your requirements, with no software to download or hardware to install. A full-scale deployment at the time of disaster can be accomplish within minutes.</source>
-        <target>根据您的要求，无需下载软件或安装硬件，典型的实现可以在几天或几周内完成。灾难发生时的全面部署可以在几分钟内完成。</target>
+        <target>根据您的要求，无需下载软件或安装硬件，典型的安装启用可以在几天或几周内完成。灾难发生时的全面部署可以在几分钟内完成。</target>
       </trans-unit>
       <trans-unit id="652" resname="r270983321" restype="string" datatype="ruby">
         <source>Instantly deploy doctor knowledge and advice when your population needs it most</source>
@@ -4171,7 +4171,7 @@
       </trans-unit>
       <trans-unit id="939" resname="r135212717" restype="string" datatype="ruby">
         <source>Our doctors truly care about you. Get health questions answered, with no hassle and no judgment.</source>
-        <target>我们的医生真正关心您。获得健康问题的回答，没有麻烦，无需判断。</target>
+        <target>我们的医生真正关心您。获得健康问题的回答，没有麻烦，没有评判。</target>
       </trans-unit>
       <trans-unit id="940" resname="r922702248" restype="string" datatype="ruby">
         <source>No need to make an appointment, fill out forms or deal with student health services. Get help now.</source>
@@ -5102,7 +5102,7 @@
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target='_blank'&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target>真诚地,
           &lt;br&gt;
-          亲爱的 &lt;%= App.user.get(’person’).name %&gt; &lt;%= App.user.get(’person’).last_name %&gt;
+          医生 &lt;%= App.user.get(’person’).name %&gt; &lt;%= App.user.get(’person’).last_name %&gt;
           &lt;br&gt;
           &lt;a href=”&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(’person’).profile_name %&gt;” targete=’_blank’&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -5184,7 +5184,7 @@
     <body>
       <trans-unit id="1107" resname="Send Note" restype="string" datatype="html">
         <source>Send Note</source>
-        <target>发送感谢信</target>
+        <target>发送便条</target>
       </trans-unit>
     </body>
   </file>
@@ -5469,7 +5469,7 @@
         <target>只要是相关的，包括体重、身高以及计量单位。&lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id='ex5' class='guidelineEx hide'&gt;
           &lt;span class="good"&gt;好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄这个身高体重正常吗？&lt;br&gt;
-          &lt;span class="bad"&gt;不太好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄正常吗？&lt;/span&gt;</target>
+          &lt;span class="bad"&gt;不太好：&lt;/span&gt;我儿子3，重27，高34。在他这个年龄正常吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1152" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.&lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?&lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -5705,7 +5705,7 @@
       </trans-unit>
       <trans-unit id="1191" resname="timeframe" restype="string" datatype="html">
         <source>timeframe</source>
-        <target>时间表</target>
+        <target>时间段</target>
       </trans-unit>
     </body>
   </file>
@@ -5785,7 +5785,7 @@
                 and
                 &lt;a class="childBrowser_link" id='privacyLink' href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;</source>
         <target>通过注册，您同意我们的
-                &lt;a class=”childBrowser_link” id=‘termsLink’ href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+                &lt;a class=”childBrowser_link” id=‘termsLink’ href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
                 和
                 &lt;a class=”childBrowser_link” id=’privacyLink‘ href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -6007,7 +6007,7 @@
     <body>
       <trans-unit id="1237" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
+        <target>已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6015,7 +6015,7 @@
     <body>
       <trans-unit id="1238" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
+        <target>已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6023,7 +6023,7 @@
     <body>
       <trans-unit id="1239" resname="agreed with&lt;span class=&quot;actor_text bold&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to:</source>
-        <target>同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ?医生' + user_answer.actor.last_name : user_answer.actor.name %&gt;的&lt;/span&gt; answer to:</target>
+        <target>已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ?user_answer.actor.last_name + '医生' : user_answer.actor.name %&gt;的&lt;/span&gt; 对这个问题的回答:</target>
       </trans-unit>
     </body>
   </file>
@@ -6539,7 +6539,7 @@
       </trans-unit>
       <trans-unit id="1347" resname="Has {name} had any treatments or procedures?" restype="string" datatype="javascript">
         <source>Has {name} had any treatments or procedures?</source>
-        <target>{name}经历过什么治疗方法或临床操作吗？</target>
+        <target>{name}曾经进行过什么治疗或临床操作吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -6627,7 +6627,7 @@
     <body>
       <trans-unit id="2558" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
-        <target>通过高清视频，语音，或文字使用我们的在线咨询。通过网站和移动设备，您可以安全地、隐私地在任何地方得到帮助。分享照片和测验结果，即时获取帮助您Feel Good的回答、治疗和转诊。</target>
+        <target>通过高清视频，语音，或文字使用我们的在线咨询。通过网站和移动设备，您可以安全地、隐私地在任何地方得到帮助。分享照片和测验结果，即时获得帮助您Feel Good的回答、治疗和转诊。</target>
       </trans-unit>
       <trans-unit id="2559" resname="r912871798" restype="string" datatype="x-haml">
         <source>personal physician</source>
@@ -6751,7 +6751,7 @@
     <body>
       <trans-unit id="3408" resname="r840217772" restype="string" datatype="x-haml">
         <source>by name, specialty, reputation, and more. After you add doctors to your Care Team, you’ll receive an email invitation for an introductory call via HD video or text, if they're accepting new patients. Prescriptions and care will be available via Concierge after the doctor accepts you as a patient.</source>
-        <target>按名称，专科，声誉，等等。在向您的医疗团队添加医生后，如果他们接受新患者，您将收到通过高清视频或文字进行介绍性电话的电子邮件邀请。在医生接受您作为患者后，可以通过贵宾台获得处方和医护。</target>
+        <target>按名称，专科，声誉，等等。在向您的医疗团队添加医生后，如果他们接受新患者，您将收到通过高清视频或文字进行介绍性咨询的电子邮件邀请。在医生接受您作为患者后，可以通过贵宾台获得处方和医护。</target>
       </trans-unit>
       <trans-unit id="3409" resname="r982531271" restype="string" datatype="x-haml">
         <source>We make it easy for you to find and meet new doctors. With Concierge, you can search for doctors in your state</source>
