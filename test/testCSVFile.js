@@ -268,6 +268,35 @@ module.exports = {
         test.done();
     },
 
+    testCSVFileParseTrimWhitespace: function(test) {
+        test.expect(4);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p
+        });
+        test.ok(j);
+        
+        j.parse(
+        	'id,name,description\n' +
+        	'    23414  ,   name1  ,   description1\n' +
+        	'754432,name2,description2 that has an escaped\\, comma in it\n' +
+        	'26234345, "name with quotes", "description with quotes"\n' +
+        	'2345642, "quoted name with, comma in it", "description with, comma in it"\n'
+        );
+        
+        var record = j.records[0];
+        
+        test.equal(record.id, "23414");
+        test.equal(record.name, "name1");
+        test.equal(record.description, "description1");
+        
+        test.done();
+    },
+
     testCSVFileParseQuotedValues: function(test) {
         test.expect(4);
 
@@ -322,6 +351,35 @@ module.exports = {
         test.equal(record.id, "2345642");
         test.equal(record.name, "quoted name with, comma in it");
         test.equal(record.description, "description with, comma in it");
+        
+        test.done();
+    },
+
+    testCSVFileParseQuotedValuesWithEmbeddedQuotes: function(test) {
+        test.expect(4);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p
+        });
+        test.ok(j);
+        
+        j.parse(
+        	'id,name,description\n' +
+        	'23414,name1,description1\n' +
+        	'754432,name2,description2 that has an escaped\, comma in it\n' +
+        	'26234345,     "name with quotes"  ,     "description with quotes"   \n' +
+        	'2345642, "quoted ""name"" has quotes", "description with no ""comma"" in it"\n'
+        );
+        
+        var record = j.records[3];
+        
+        test.equal(record.id, "2345642");
+        test.equal(record.name, "quoted \"name\" has quotes");
+        test.equal(record.description, "description with no \"comma\" in it");
         
         test.done();
     },
@@ -416,6 +474,38 @@ module.exports = {
         test.done();
     },
 
+    testCSVFileParseMissingValuesWithTabs: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t'
+        });
+        test.ok(j);
+        
+        j.parse(
+        	'id	name	description	comments	user\n' +
+        	'32342			comments1	\n' +
+        	'754432	name2	description2 that has an escaped\\	 comma in it\n' +
+        	'26234345	     "name with quotes"  	     "description with quotes"   \n' +
+        	'2345642	 "quoted name with, comma in it"	 "description with, comma in it"\n'
+        );
+        
+        var record = j.records[0];
+        
+        test.equal(record.id, "32342");
+        test.equal(record.name, "");
+        test.equal(record.description, "");
+        test.equal(record.comments, "comments1");
+        test.equal(record.user, "");
+        
+        test.done();
+    },
+
     testCSVFileParseEscapedTab: function(test) {
         test.expect(4);
 
@@ -502,6 +592,36 @@ module.exports = {
         test.equal(record.id, "2345642");
         test.equal(record.name, "quoted name with\t tab in it");
         test.equal(record.description, "description with\t tab in it");
+        
+        test.done();
+    },
+
+    testCSVFileParseDOSFile: function(test) {
+        test.expect(4);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        // should work with default options
+        var j = new CSVFile({
+        	project: p
+        });
+        test.ok(j);
+        
+        j.parse(
+        	'id,name,description\r\n' +
+        	'23414,name1,description1\r\n' +
+        	'754432,name2,description2 that has an escaped\\, comma in it\r\n' +
+        	'26234345,     "name with quotes"  ,     "description with quotes"   \r\n' +
+        	'2345642, "quoted name with, comma in it" , "description with, comma in it"\r\n'
+        );
+        
+        var record = j.records[3];
+        
+        test.equal(record.id, "2345642");
+        test.equal(record.name, "quoted name with, comma in it");
+        test.equal(record.description, "description with, comma in it");
         
         test.done();
     },
@@ -675,6 +795,94 @@ module.exports = {
         test.done();
     },
 
+    testCSVFileLocalizeTextWithQuotesInIt: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "bar,asdf",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "comma \"comma\" comma",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "line3",
+	        		description: "down doo be doo, down down"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	'id,name,description\n' +
+        	'foo,"bar,asdf",asdf\n' +
+        	'foo2,"comma ""comma"" comma",asdf2\n' +
+        	'foo3,line3,"down doo be doo, down down"'
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithWhitespace: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		name: "   bar asdf   ",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "    comma \"comma\" comma   ",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "   line3",
+	        		description: "  down doo be doo, down down   "
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	'id,name,description\n' +
+        	'foo,"   bar asdf   ",asdf\n' +
+        	'foo2,"    comma ""comma"" comma   ",asdf2\n' +
+        	'foo3,"   line3","  down doo be doo, down down   "'
+        );
+        
+        test.done();
+    },
+
     testCSVFileLocalizeTextWithTabs: function(test) {
         test.expect(2);
 
@@ -716,6 +924,95 @@ module.exports = {
         	"foo	bar	asdf:" +
         	"foo2	bar2	asdf2:" +
         	"foo3	bar3	asdf3"
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithMissingFields: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "type", "description"],
+	        records: [
+	        	{
+	        		id: "foo",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		type: "noun",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	"id,name,type,description\n" +
+        	"foo,,,asdf\n" +
+        	"foo2,bar2,,asdf2\n" +
+        	"foo3,bar3,noun,asdf3"
+        );
+        
+        test.done();
+    },
+
+    testCSVFileLocalizeTextWithMissingFieldsWithTabs: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new CSVFile({
+        	project: p,
+        	names: ["id", "name", "type", "description"],
+        	columnSeparator: '\t',
+	        records: [
+	        	{
+	        		id: "foo",
+	        		description: "asdf"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		type: "noun",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        test.ok(j);
+                
+        var translations = new TranslationSet();
+        
+        var text = j.localizeText(translations, "en-US");
+        
+        test.equal(text,
+        	"id	name	type	description\n" +
+        	"foo			asdf\n" +
+        	"foo2	bar2		asdf2\n" +
+        	"foo3	bar3	noun	asdf3"
         );
         
         test.done();
@@ -1425,6 +1722,75 @@ module.exports = {
         test.equal(csv1.records[3].description, "asdf5");
         test.equal(csv1.records[3].type, "foo4");
                 
+        test.done();
+    },
+    
+    testCSVFileMergeWithOverwritesButDontOverwriteWithEmptyOrNull: function(test) {
+        test.expect(12);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var csv1 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+	        	{
+	        		id: "foo1",
+	        		name: "bar1",
+	        		description: "asdf1"
+	        	},
+	        	{
+	        		id: "foo2",
+	        		name: "bar2",
+	        		description: "asdf2"
+	        	},
+	        	{
+	        		id: "foo3",
+	        		name: "bar3",
+	        		description: "asdf3"
+	        	}
+	        ]
+        });
+        var csv2 = new CSVFile({
+        	project: p,
+        	columnSeparator: '\t',
+        	names: ["id", "name", "description"],
+        	key: "id",
+        	records: [
+        		{
+        			id: "foo1",
+        			name: "",
+        			description: ""
+        		},
+        		{
+        			id: "foo2",
+        			name: null,
+        			description: null
+        		},
+        		{
+        			id: "foo3",
+        			name: undefined,
+        			description: undefined
+        		}
+        	]
+        });
+        test.ok(csv1);
+        test.ok(csv2);
+        
+        csv1.merge(csv2);
+        
+        test.equal(csv1.records.length, 3);
+        
+        // none of the fields should be overridden
+        for (var i = 1; i < 4; i++) {
+        	test.equal(csv1.records[i-1].id, "foo" + i);
+        	test.equal(csv1.records[i-1].name, "bar" + i);
+        	test.equal(csv1.records[i-1].description, "asdf" + i);
+        }
         test.done();
     }
 };
