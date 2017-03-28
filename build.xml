@@ -278,6 +278,22 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testObjectiveCFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.swiftfile" description="Run only the tests for the Swift file">
+		<run script="${build.test}/testSwiftFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.swiftfile" description="Debug only the tests for the Swift file">
+		<debug script="${build.test}/testSwiftFile.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.swiftfiletype" description="Run only the tests for the Swift file type">
+		<run script="${build.test}/testSwiftFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.swiftfiletype" description="Debug only the tests for the Swift file type">
+		<debug script="${build.test}/testSwiftFileType.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.iosstringsfile" description="Run only the tests for the strings resource file">
 		<run script="${build.test}/testIosStringsFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -382,7 +398,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoBritish.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish">
 	</target>
 
 	<macrodef name="runsql">
