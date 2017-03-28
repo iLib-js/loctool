@@ -6,8 +6,10 @@
 
 if (!ResourceArray) {
     var ResourceArray = require("../lib/ResourceArray.js");
-    var ilib = require("ilib");
-    var ResBundle = require("ilib/lib/ResBundle");
+    var RegularPseudo = require("../lib/RegularPseudo.js");
+    var PseudoFactory = require("../lib/PseudoFactory.js");
+    var TranslationSet = require("../lib/TranslationSet.js");
+    var WebProject = require("../lib/WebProject.js");
 }
 
 module.exports = {
@@ -263,9 +265,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -286,9 +287,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -300,9 +300,9 @@ module.exports = {
         
         test.ok(strings);
         test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à ţëšţ");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ");
-        test.equal(strings[2], "Ťĥíš íš ñõţ");
+        test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
+        test.equal(strings[2], "Ťĥíš íš ñõţ543210");
         
         test.done();
     },
@@ -317,9 +317,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -331,9 +330,9 @@ module.exports = {
         
         test.ok(strings);
         test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ");
-        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d");
+        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ876543210");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ6543210");
+        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d9876543210");
         
         test.done();
     },
@@ -348,9 +347,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo(undefined, rb);
@@ -376,6 +374,178 @@ module.exports = {
         test.done();
     },
     
+    testResourceArrayGeneratePseudoBritishRightString: function(test) {
+        test.expect(8);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            array: ["This is estrogen", "I color my checkbooks", "This is not translated."],
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-GB",
+        	type: "c"
+        });
+
+        var ra2 = ra.generatePseudo("en-GB", rb);
+
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "en-GB");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "This is oestrogen");
+        test.equal(strings[1], "I colour my chequebooks");
+        test.equal(strings[2], "This is not translated.");
+        
+        test.done();
+    },
+
+    testResourceArrayGeneratePseudoBritishLikeRightString: function(test) {
+        test.expect(8);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            array: ["This is estrogen", "I color my checkbooks", "This is not translated."],
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "en-ZA"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-ZA",
+        	type: "c"
+        });
+
+        var ra2 = ra.generatePseudo("en-ZA", rb);
+
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "en-ZA");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "This is oestrogen");
+        test.equal(strings[1], "I colour my chequebooks");
+        test.equal(strings[2], "This is not translated.");
+        
+        test.done();
+    },
+
+    testResourceArrayGeneratePseudoCanadianRightString: function(test) {
+        test.expect(8);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            array: ["This is estrogen", "I color my checkbooks", "This is not localized."],
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "en-CA"]
+		});
+
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "en-CA",
+        	type: "c"
+        });
+
+        var ra2 = ra.generatePseudo("en-CA", rb);
+
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "en-CA");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "This is estrogen");
+        test.equal(strings[1], "I colour my chequebooks");
+        test.equal(strings[2], "This is not localized.");
+        
+        test.done();
+    },
+
+    testResourceArrayGeneratePseudoTraditionalChineseRightString: function(test) {
+        test.expect(8);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+            key: "asdf",
+            array: ["How are you?", "What is the cruising speed of a swallow?？", "What? Do you mean a European swallow or an African swallow?"],
+            pathName: "a/b/c.java",
+            locale: "en-US"
+        });
+        test.ok(ra);
+        
+        var p = new WebProject({
+            id: "foo",
+            sourceLocale: "en-US",
+            pseudoLocale: "ps-DO"
+        }, "./testfiles", {
+			locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
+		});
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceArray({
+        	project: "foo",
+        	key: 'asdf',
+        	array: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
+        	pathName: "a/b/c.java",
+            locale: "zh-Hans-CN"
+        }));
+        
+        var rb = new PseudoFactory({
+        	project: p,
+        	locale: "zh-Hant-TW",
+        	type: "c",
+        	set: translations
+        });
+
+        var ra2 = ra.generatePseudo("zh-Hant-TW", rb);
+
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "zh-Hant-TW");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "你好嗎？");
+        test.equal(strings[1], "燕子的巡航速度是多少？");
+        test.equal(strings[2], "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        
+        test.done();
+    },
+
     testResourceArrayClone: function(test) {
         test.expect(10);
 

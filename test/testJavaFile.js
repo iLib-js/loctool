@@ -26,7 +26,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p, "./testfiles/java/t1.java");
         
@@ -40,7 +42,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -53,7 +57,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -68,7 +74,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -87,7 +95,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -105,7 +115,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -124,7 +136,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -148,7 +162,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -164,7 +180,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -185,7 +203,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -201,7 +221,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -220,7 +242,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -240,7 +264,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -259,7 +285,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -278,7 +306,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -296,7 +326,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -314,7 +346,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -332,7 +366,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -350,7 +386,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -368,7 +406,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -386,7 +426,9 @@ module.exports = {
         var p = new AndroidProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -403,8 +445,11 @@ module.exports = {
 
         var p = new AndroidProject({
         	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
+			sourceLocale: "en-US",
+			pseudoLocale: "de-DE"
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jf = new JavaFile({
 			project: p
@@ -432,7 +477,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -456,7 +503,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -479,7 +528,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -499,7 +550,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -522,7 +575,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -545,7 +600,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -568,7 +625,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -592,7 +651,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -614,7 +675,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -638,7 +701,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -662,7 +727,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -685,7 +752,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -708,7 +777,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -731,7 +802,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -754,7 +827,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -777,7 +852,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -798,7 +875,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -826,7 +905,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -856,7 +937,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -884,7 +967,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -914,7 +999,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -944,7 +1031,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -969,7 +1058,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -997,7 +1088,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1016,7 +1109,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1034,7 +1129,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1052,7 +1149,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1070,7 +1169,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1088,7 +1189,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1106,7 +1209,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p, "./java/t1.java");
         test.ok(j);
@@ -1136,7 +1241,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p);
         test.ok(j);
@@ -1156,7 +1263,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p, "./java/foo.java");
         test.ok(j);

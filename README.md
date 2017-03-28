@@ -12,11 +12,13 @@ To install this, you will need to make sure you have nodejs installed
 on your machine and in your path. (Use 7.0 or later)
 
 Once it is installed, you need to use the package manager "npm" to install
-the necessary libraries. First, make sure your current directory is the
+the necessary libraries that use native code. (Other libraries that do not
+include native code are already checked in to the node_modules subdirectory.)
+First, make sure your current directory is the
 parent of the loctool and your cloned projects. Then, issue the following
 command:
 
-npm install node-expat
+npm install node-expat opencc
 
 If you are localizing a web project, you will also need to make sure 
 ruby 2.1 or later is installed on your machine and is in your path.

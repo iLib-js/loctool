@@ -27,7 +27,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -45,7 +47,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({project: p, pathName: "foo"});
         test.ok(arf);
@@ -58,7 +62,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -95,7 +101,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -137,7 +145,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -178,7 +188,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -216,7 +228,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -256,7 +270,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -292,7 +308,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -321,7 +339,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -354,7 +374,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -389,7 +411,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -412,7 +436,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile(p, "./java/foo.java");
         test.ok(arf);
@@ -433,7 +459,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -485,7 +513,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -529,7 +559,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -590,7 +622,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -642,7 +676,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -662,7 +698,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -682,7 +720,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -700,7 +740,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -719,7 +761,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -738,7 +782,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -757,15 +803,17 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
-        	pathName: "./res/values-zh-sHant-rCN-bar/foo.xml"
+        	pathName: "./res/values-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(arf);
         
-        test.equal(arf.getLocale(), "zh-Hant-CN");
+        test.equal(arf.getLocale(), "zh-Hans-CN");
         test.equal(arf.getContext(), "bar");
 
         test.done();
