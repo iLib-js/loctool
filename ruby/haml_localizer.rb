@@ -7,8 +7,12 @@ require 'json'
 
 PSEUDO_LOCALE = 'de-DE'
 BRITISH_LOCALE = 'en-GB'
+CANADIAN_LOCALE = 'en-CA'
+NEWZEALAND_LOCALE = 'en-NZ'
 BRITISH_DICTIONARY_PATH = '../db/britishSpellings.json'
-SKIP_LOADING_LOCALES = [PSEUDO_LOCALE, BRITISH_LOCALE]
+CANADIAN_DICTIONARY_PATH = '../db/canadianSpellings.json'
+NEWZEALAND_DICTIONARY_PATH = '../db/newzealandSpellings.json'
+SKIP_LOADING_LOCALES = [PSEUDO_LOCALE, BRITISH_LOCALE, CANADIAN_LOCALE, NEWZEALAND_LOCALE]
 # Hash that stores start/end mapping of HTML escape sequences
 # Check spec for details
 HTML_ESCAPE_CHARS = {
@@ -210,7 +214,7 @@ end
 
 #param values - the extracted strings that we want to process
 # return <original string> => <string to replace with>
-def process_british_values(values)
+def process_spelling_values(values, spellings)
   ret = {}
   values.each do |v|
     next if v.strip.length == 0
@@ -237,7 +241,7 @@ def process_british_values(values)
         curr_word << c
       end
       if (!is_letter || last_character)
-        processed << check_for_british(curr_word)
+        processed << check_for_correction(curr_word, spellings)
         processed << c unless (last_character && is_letter)
         curr_word = ''
         if HTML_ESCAPE_CHARS.keys.include?(c) and !skipping
@@ -251,19 +255,29 @@ def process_british_values(values)
   ret
 end
 
-def british_spellings
-  @british_spellings ||= load_british_spellings
-end
-
-def load_british_spellings
-  raise "British dictionary not found at #{BRITISH_DICTIONARY_PATH}" unless File.exists?(BRITISH_DICTIONARY_PATH)
-  f = File.read(BRITISH_DICTIONARY_PATH)
+def load_spellings(path)
+  p = __dir__ + "/" + path
+  raise "Dictionary not found at #{p}" unless File.exists?(p)
+  f = File.read(p)
+  puts "Dictionary loaded"
   JSON.parse(f)
 end
 
-def check_for_british(word)
-  if british_spellings[word.downcase]
-    translated_word = british_spellings[word.downcase]
+def british_spellings
+  @british_spellings ||= load_spellings(BRITISH_DICTIONARY_PATH)
+end
+
+def canadian_spellings
+  @canadian_spellings ||= load_spellings(CANADIAN_DICTIONARY_PATH)
+end
+
+def newzealand_spellings
+  @newzealand_spellings ||= load_spellings(NEWZEALAND_DICTIONARY_PATH)
+end
+
+def check_for_correction(word, spellings)
+  if spellings[word.downcase]
+    translated_word = spellings[word.downcase]
     match_case_for_words(translated_word, word)
   else
     #add as is to string
@@ -520,7 +534,11 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
       from_to = process_pseudo_values(values)
       #unmapped_for_file = values # removing because it makes every string unmapped
     elsif locale_name == BRITISH_LOCALE
-      from_to = process_british_values(values)
+      from_to = process_spelling_values(values, british_spellings)
+    elsif locale_name == NEWZEALAND_LOCALE
+        from_to = process_spelling_values(values, newzealand_spellings)
+    elsif locale_name == CANADIAN_LOCALE
+      from_to = process_spelling_values(values, canadian_spellings)
     else
       from_to = process_values(locale_mappings, values, unmapped_for_file)
     end

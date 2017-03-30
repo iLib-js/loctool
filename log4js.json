@@ -34,6 +34,8 @@
 		"loctool.lib.ObjectiveCFileType": "INFO",
 		"loctool.lib.ObjectiveCProject": "INFO",
 		"loctool.lib.Project": "INFO",
+		"loctool.lib.ProjectFactory": "INFO",
+		"loctool.lib.PseudoFactory": "INFO",
 		"loctool.lib.ResourceArray": "INFO",
 		"loctool.lib.ResourceFactory": "INFO",
 		"loctool.lib.ResourcePlural": "INFO",

@@ -138,8 +138,16 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 
+	<target name="debug.resourcearray" description="Debug only the resource array tests">
+		<debug script="${build.test}/testResourceArray.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.resourceplural" description="Run only the plural resource tests">
 		<run script="${build.test}/testResourcePlural.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+
+	<target name="debug.resourceplural" description="Debug only the plural resource tests">
+		<debug script="${build.test}/testResourcePlural.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.translationset" description="Run only the translation set tests">
@@ -398,7 +406,31 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoBritish.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish">
+	<target name="test.pseudocanadian" description="Run only the tests for the pseudo canadian localizer">
+		<run script="${build.test}/testPseudoCanadian.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudocanadian" description="Debug only the tests for the pseudo canadian localizer">
+		<debug script="${build.test}/testPseudoCanadian.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.pseudonewzealand" description="Run only the tests for the pseudo New Zealand localizer">
+		<run script="${build.test}/testPseudoNewZealand.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudonewzealand" description="Debug only the tests for the pseudo New Zealand localizer">
+		<debug script="${build.test}/testPseudoNewZealand.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.pseudohant" description="Run only the tests for the pseudo Hant localizer">
+		<run script="${build.test}/testPseudoHant.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudohant" description="Debug only the tests for the pseudo Hant localizer">
+		<debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant">
 	</target>
 
 	<macrodef name="runsql">

@@ -545,14 +545,14 @@ describe 'HamlLocalizer' do
   end
 
   describe 'british translation' do
-    describe 'load_british_spellings' do
+    describe 'british_spellings' do
       it 'works' do
         File.should_receive(:exists?).and_return(true)
         File.should_receive(:read).and_return('{}')
-        expect(load_british_spellings).to eq({})
+        expect(british_spellings).to eq({})
       end
     end
-    describe 'process_british_values' do
+    describe 'process_spelling_values british' do
       before :each do
         stub(:load_british_spellings) do
           {'acclimatization' => 'acclimatisation'}
@@ -560,32 +560,32 @@ describe 'HamlLocalizer' do
       end
       it 'works' do
         test_sentence = 'I love acclimatization'
-        res = process_british_values([test_sentence])
+        res = process_spelling_values([test_sentence], british_spellings)
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('I love acclimatisation')
       end
       it 'matches capitalized translation' do
         test_sentence = 'Acclimatization is the best'
-        res = process_british_values([test_sentence])
+        res = process_spelling_values([test_sentence], british_spellings)
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('Acclimatisation is the best')
       end
       it 'skips escape character content' do
         test_sentence = 'acclimatization <span class="acclimatization"> acclimatization </span> &acclimatization;'
-        res = process_british_values([test_sentence])
+        res = process_spelling_values([test_sentence], british_spellings)
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('acclimatisation <span class="acclimatization"> acclimatisation </span> &acclimatization;')
       end
       it 'keeps last punctuation character of string' do
         test_sentence = 'acclimatization)'
-        res = process_british_values([test_sentence])
+        res = process_spelling_values([test_sentence], british_spellings)
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('acclimatisation)')
       end
 
       it 'keeps last digit character of string' do
         test_sentence = 'acclimatization 9'
-        res = process_british_values([test_sentence])
+        res = process_spelling_values([test_sentence], british_spellings)
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('acclimatisation 9')
       end
@@ -603,4 +603,101 @@ describe 'HamlLocalizer' do
 
     end
   end
+
+  describe 'canadian translation' do
+    describe 'canadian_spellings' do
+      it 'works' do
+        File.should_receive(:exists?).and_return(true)
+        File.should_receive(:read).and_return('{}')
+        expect(canadian_spellings).to eq({})
+      end
+    end
+    describe 'process_spelling_values canadian' do
+      before :each do
+        stub(:load_canadian_spellings) do
+          {'acclimatization' => 'acclimatization'}
+        end
+      end
+      it 'works' do
+        test_sentence = 'I love color acclimatization'
+        res = process_spelling_values([test_sentence], canadian_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('I love colour acclimatization')
+      end
+      it 'matches capitalized translation' do
+        test_sentence = 'Acclimatization of Color is the best'
+        res = process_spelling_values([test_sentence], canadian_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('Acclimatization of Colour is the best')
+      end
+      it 'skips escape character content' do
+        test_sentence = 'acclimatization <span class="color acclimatization"> color acclimatization </span> &color; &acclimatization;'
+        res = process_spelling_values([test_sentence], canadian_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatization <span class="color acclimatization"> colour acclimatization </span> &color; &acclimatization;')
+      end
+      it 'keeps last punctuation character of string' do
+        test_sentence = 'color)'
+        res = process_spelling_values([test_sentence], canadian_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('colour)')
+      end
+  
+      it 'keeps last digit character of string' do
+        test_sentence = 'color 9'
+        res = process_spelling_values([test_sentence], canadian_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('colour 9')
+      end
+    end
+  end
+
+  describe 'newzealand translation' do
+    describe 'newzealand_spellings' do
+      it 'works' do
+        File.should_receive(:exists?).and_return(true)
+        File.should_receive(:read).and_return('{}')
+        expect(newzealand_spellings).to eq({})
+      end
+    end
+    describe 'process_spelling_values newzealand' do
+      before :each do
+        stub(:load_newzealand_spellings) do
+          {'acclimatization' => 'acclimatisation'}
+        end
+      end
+      it 'works' do
+        test_sentence = 'I love fjord acclimatization'
+        res = process_spelling_values([test_sentence], newzealand_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('I love fiord acclimatisation')
+      end
+      it 'matches capitalized translation' do
+        test_sentence = 'Acclimatization of fjords is the best'
+        res = process_spelling_values([test_sentence], newzealand_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('Acclimatisation of fiords is the best')
+      end
+      it 'skips escape character content' do
+        test_sentence = 'acclimatization <span class="fjord acclimatization"> fjord acclimatization </span> &fjord; &acclimatization;'
+        res = process_spelling_values([test_sentence], newzealand_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatisation <span class="fjord acclimatization"> fiord acclimatisation </span> &fjord; &acclimatization;')
+      end
+      it 'keeps last punctuation character of string' do
+        test_sentence = 'fjord)'
+        res = process_spelling_values([test_sentence], newzealand_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('fiord)')
+      end
+  
+      it 'keeps last digit character of string' do
+        test_sentence = 'fiord 9'
+        res = process_spelling_values([test_sentence], newzealand_spellings)
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('fiord 9')
+      end
+    end
+  end
+
 end
