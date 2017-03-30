@@ -447,10 +447,10 @@ module.exports = {
         });
         
         test.equal(strings.getContent(),
-        	'/* foo */\n' +
-        	'"source text" = "Quellen\\"text";\n\n' +
         	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n'
+        	'"more source text" = "mehr Quellen\\"text";\n\n' +
+        	'/* foo */\n' +
+        	'"source text" = "Quellen\\"text";\n'
         );
         
         test.done();
@@ -492,10 +492,10 @@ module.exports = {
         });
         
         test.equal(strings.getContent(),
-        	'/* foo */\n' +
-        	'"source text" = "Quellen\\n\\ttext";\n\n' +
         	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n'
+        	'"more source text" = "mehr Quellen\\"text";\n\n' +
+        	'/* foo */\n' +
+        	'"source text" = "Quellen\\n\\ttext";\n'
         );
         
         test.done();
@@ -594,5 +594,5 @@ module.exports = {
         );
         
         test.done();
-    },
+    }
 };
