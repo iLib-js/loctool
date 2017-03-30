@@ -18,7 +18,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
 
@@ -35,7 +37,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -53,7 +57,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -71,7 +77,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -89,7 +97,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -107,7 +117,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -126,7 +138,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -144,7 +158,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -162,7 +178,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -181,7 +199,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -199,7 +219,9 @@ module.exports = {
         	resourceDirs: {
         		"objc": "feelgood"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -217,7 +239,9 @@ module.exports = {
         	"resourceDirs": {
         		"objc": "foo"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -235,7 +259,9 @@ module.exports = {
         	"resourceDirs": {
         		"objc": "foo"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -253,7 +279,9 @@ module.exports = {
         	"resourceDirs": {
         		"objc": "foo"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);

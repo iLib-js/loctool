@@ -24,7 +24,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p, "./testfiles/objc/t1.m");
         
@@ -38,7 +40,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -51,7 +55,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -66,7 +72,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -93,7 +101,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -118,7 +128,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -138,7 +150,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -163,7 +177,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -188,7 +204,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -210,7 +228,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -240,7 +260,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -270,7 +292,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -296,7 +320,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -315,7 +341,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -333,7 +361,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -351,7 +381,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -375,7 +407,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -399,7 +433,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -417,7 +453,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -435,7 +473,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -453,7 +493,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -479,7 +521,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p, "./objc/t1.m");
         test.ok(j);
@@ -559,7 +603,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p);
         test.ok(j);
@@ -579,7 +625,9 @@ module.exports = {
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new ObjectiveCFile(p, "./objc/foo.m");
         test.ok(j);

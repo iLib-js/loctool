@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="37" resname="r76088974" restype="string" datatype="ruby">
         <source>HIPAA-compliant to keep your data and consults safe</source>
-        <target state="translated">HIPAA兼容，以保持您的数据和咨询安全</target>
+        <target state="translated">HIPAA加密，以保证您的数据和咨询安全</target>
       </trans-unit>
     </body>
   </file>
@@ -284,7 +284,7 @@
       </trans-unit>
       <trans-unit id="64" resname="r532428117" restype="string" datatype="ruby">
         <source>Members using HealthTap Prime</source>
-        <target state="translated">会员使用HealthTap Prime,</target>
+        <target state="translated">使用HealthTap Prime的会员,</target>
       </trans-unit>
     </body>
   </file>
@@ -312,7 +312,7 @@
     <body>
       <trans-unit id="69" resname="r665655149" restype="string" datatype="ruby">
         <source>Expiration MM/YYYY</source>
-        <target state="translated">到期日期 月月/日日/年年年年</target>
+        <target state="translated">到期日期 月月/年年年年</target>
       </trans-unit>
     </body>
   </file>
@@ -416,7 +416,7 @@
       </trans-unit>
       <trans-unit id="98" resname="r307372860" restype="string" datatype="ruby">
         <source>Prescriptions and refills sent to your local pharmacy</source>
-        <target state="translated">处方和重新配方发送到您当地的药店</target>
+        <target state="translated">发送处方和重新配方到您当地的药店</target>
       </trans-unit>
       <trans-unit id="99" resname="r227189851" restype="string" datatype="ruby">
         <source>Lab Tests</source>
@@ -592,7 +592,7 @@
     <body>
       <trans-unit id="158" resname="r1054552354" restype="string" datatype="ruby">
         <source>Advice, diagnosis, treatments and referrals to specialists</source>
-        <target state="translated">建议，诊断，治疗和转介给专家</target>
+        <target state="translated">建议，诊断，治疗和转诊给专家</target>
       </trans-unit>
       <trans-unit id="159" resname="r53997637" restype="string" datatype="ruby">
         <source>Prescriptions sent to your local pharmacy or mailed to you</source>
@@ -604,7 +604,7 @@
       </trans-unit>
       <trans-unit id="2164" resname="r366505783" restype="string" datatype="ruby">
         <source>Private &amp; HIPAA secure</source>
-        <target state="translated">私人和HIPAA安全</target>
+        <target state="translated">私人和HIPPA加密</target>
       </trans-unit>
     </body>
   </file>
@@ -1709,7 +1709,7 @@
       </trans-unit>
       <trans-unit id="817" resname="r19972314" restype="string" datatype="ruby">
         <source>A doctor’s DocScore is a measure of their knowledge, trust, compassion and engagement.</source>
-        <target state="translated">医生的医术分用于参与讨论他们的知识、可信度、同情心和参与度。</target>
+        <target state="translated">医生的医者评分用于量化他们的知识、可信度、同情心和参与度。</target>
       </trans-unit>
     </body>
   </file>
@@ -1721,7 +1721,7 @@
       </trans-unit>
       <trans-unit id="819" resname="r499309286" restype="string" datatype="ruby">
         <source>Wrong code. Please try again:</source>
-        <target state="translated">错误代码。请再次尝试。</target>
+        <target state="translated">错误代码。请再次尝试：</target>
       </trans-unit>
     </body>
   </file>
@@ -2165,7 +2165,7 @@
       </trans-unit>
       <trans-unit id="1088" resname="r882038666" restype="string" datatype="ruby">
         <source>This app has improved my life vastly. I've had more questions than answers for a while now. It's unreasonable to call my doctor every 5 minutes. The caring and expert doctors have been a lifesaver and brought me so much peace of mind!</source>
-        <target state="translated">这个应用程序已经极大地改善了我的生活。有那么一小会儿我的问题多过回答。每隔5分钟打电话给我的医生是不合理的。充满关怀和专业的医生一直是救星，让我如此的放心！</target>
+        <target state="translated">这个应用程序已经极大地改善了我的生活。有很长一段时间我的问题多过回答。每隔5分钟打电话给我的医生是不合理的。充满关怀和专业的医生一直是救星，让我如此的放心！</target>
       </trans-unit>
       <trans-unit id="1089" resname="r714752003" restype="string" datatype="ruby">
         <source>Unlimited Peace of Mind</source>
@@ -2173,7 +2173,7 @@
       </trans-unit>
       <trans-unit id="1090" resname="r141798803" restype="string" datatype="ruby">
         <source>A private doctor, anywhere you want to be, video or chat, 24/7</source>
-        <target state="translated">无论何时何地跟您的私人医生视频或聊天</target>
+        <target state="translated">随时随地跟您的私人医生视频或聊天</target>
       </trans-unit>
     </body>
   </file>
@@ -2193,7 +2193,7 @@
       </trans-unit>
       <trans-unit id="1094" resname="r185440369" restype="string" datatype="ruby">
         <source>Grow Your Practice</source>
-        <target state="translated">发展您的诊疗</target>
+        <target state="translated">壮大您的诊疗</target>
       </trans-unit>
       <trans-unit id="1095" resname="r54879399" restype="string" datatype="ruby">
         <source>Create Tips and Checklists</source>
@@ -2225,7 +2225,7 @@
     <body>
       <trans-unit id="1134" resname="N/A" restype="string" datatype="html">
         <source>N/A</source>
-        <target state="translated">N/A</target>
+        <target state="translated">不适用</target>
       </trans-unit>
     </body>
   </file>
@@ -2260,18 +2260,18 @@
   &lt;b&gt;About our doctors&lt;/b&gt;
   &lt;br&gt;
   To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care.</source>
-        <target state="translated">HealthTap重塑了世界各地的人们照顾他们的健康和生活的方式，将它们和数百万无处不在的最可信的健康信息和医生相连接起来。
+        <target state="translated">HealthTap重塑了世界各地的人们照顾他们的健康和生活的方式，将他们和数百万无处不在的最可信的健康信息和医生相连接起来。
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;为什么选择我们&lt;/b&gt;
   &lt;br&gt;
-  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答来自100多个专科我们有最大的医生网络提供回答，个性化的建议和关于护理的任何问题。
+  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答，来自100多个专科，我们有最大的医生网络提供回答，个性化的建议和关于护理的任何问题。
 
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;关于我们的医生&lt;/b&gt;
   &lt;br&gt;
-  要想成为HealthTap的医疗专家网络的会员，医生必须通过美国认证，通过严格的资格认证过程，并接受关于如何使用我们的技术平台提供有帮助的建议的培训。我们密切关注用户反馈，以确保我们的医生提供尽可能高的护理。</target>
+  要想成为HealthTap的医疗专家网络的会员，医生必须通过美国医学委员会认证，通过严格的资格认证过程，并接受关于如何使用我们的技术平台提供有帮助的建议的培训。我们密切关注用户反馈，以确保我们的医生提供尽可能高的护理。</target>
       </trans-unit>
     </body>
   </file>
@@ -2289,8 +2289,19 @@
       To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system.   Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles (which show their education and experience, their specialty training, years in practice, DocScore, and their “Known for” topics).&lt;br&gt; &lt;br&gt;
       Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously  on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition. &lt;br&gt;&lt;br&gt;
     &lt;a class="btn okay"&gt;Okay&lt;/a&gt;</source>
-        <target state="translated">RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。打分是基于药品的通用（仿制药）名称的，但是也会显示品牌名称，准许医生对特定的药品进行评分。该调查不会区分不同品牌的药物对同一种药物治疗方式的评分。&lt;br&gt;&lt;br&gt;
-    &lt;a class="btn okay"&gt;好&lt;/a&gt;</target>
+        <target state="translated">RateRx医生评测对医生和患者来说都是一个新的独立资源，展示药物有效性的评级，该评级成千上万的美国执业医师在覆盖137多个专科的临床诊疗后报告。RateRx医生评测代表各专科经验丰富的临床医生在实际具体情况下医护患者后的一手综合评价。与可能会报告在可控状态下的治疗的临床有效性的其他研究不同的是，RateRx医生评测呼吁深入、长期、真实的顶级医生的经验，来展示医生了解到的哪些治疗计划对患者有效。&lt;br&gt;&lt;br&gt;
+医生被要求对一种治疗一种症状药物的临床疗效进行1到5颗星的评价。
+有贡献的医生给他们的使用的药物评分，评分特别被要求基于他们的知识，并被指示只基于临床经验提供意见。我们总结了每一个治疗的综合评分，得出一个总评分来反映医生的共同经验。所有提供评分的医生文件对用户可见，用户可以审查医生的培训和经验细节，包括他们的专科和协会认证证书。&lt;br&gt;&lt;br&gt;
+
+这项研究对所有美国有良好声誉的执业医生开放。
+在HealthTap上的所有66000名医生
+鼓励HealthTap医学专家网络中的66000名医生参加。此外，HealthTap邀请扩展网络中超过五百万名美国执业医师参与这项研究。医生能够输入在任何情况下该药物的有效评分，并可以输入和添加没有包含在内的任何新的药物。&lt;br&gt;&lt;br&gt;
+
+      RateRx结果根据平均等级从高到低按顺序排列一种适应症的每种治疗方法。当替代疗法的评级之间的差异，在呈现的数据量的基础上，被视为有意义的时候。&lt;br&gt; &lt;br&gt;
+
+      为了确保公正的医生评估，医生们在进入自己的评级之前，看不到他们的同事的现有的贡献。建议一旦提交后便不能修改，但是评级提交后，医生还可以看到其他医生的评级并对此作出评价。患者和医生皆可从RateRx评级系统中了解信息。患者受益于这些医生分享的集体智慧，使他们能够看到不同的治疗方法在相同的条件下是如何评价和审查的。医生受益于同事的评级和评论，能够参照有贡献的医生的诊疗档案来体现他们的能力（例如教育和经验、专科培训、多年诊疗、医者评分和他们“专攻”的话题）&lt;br&gt; &lt;br&gt;
+      评论是可选的，经常被医生用来证明或解释评级，或者分享针对每种适应症该如何用药的细节。评论可读、可审阅，但不能改变评级的数值。评级是基于通用的药物名称，但医生评级特殊药物时是基于品牌名称。每个显示的通用药物名称都有呈现品牌名称。该研究不会让相同药物的不同品牌名称之间的评级有所不同。针对每种症状，他把最常用的药物方法列表评级。但医生们被鼓励给任何症状都增加治疗方法，以确保每种症状都能包含最新疗法。从未出现在标准疗法单中的疗法，只有在医生曾经在此症状下使用过这种疗法，并发现这种疗法对于此症状非常有效的情况下，才能被加入到标准疗法单中。&lt;br&gt;&lt;br&gt;
+    &lt;a class="btn okay"&gt;Okay&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2311,7 +2322,7 @@
         <source>Participants (
         &lt;span class="num-participants"&gt;&lt;/span&gt;
         )</source>
-        <target state="translated">参与 (
+        <target state="translated">参与者 (
         &lt;span class="num-participants"&gt;&lt;/span&gt;
         )</target>
       </trans-unit>
@@ -2351,7 +2362,7 @@
       <trans-unit id="1145" resname="Estimated wait:&lt;span class=&quot;estimated-wait-time&quot;&gt;-- min&lt;/span&gt;" restype="string" datatype="html">
         <source>Estimated wait:
           &lt;span class="estimated-wait-time"&gt;-- min&lt;/span&gt;</source>
-        <target state="translated">&lt;span class="estimated-wait-time"&gt;-- min&lt;/span&gt;</target>
+        <target state="translated">预计等待时间：&lt;span class="estimated-wait-time"&gt;-- min&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1146" resname="Your concern is very important to us.&lt;br&gt;A doctor will be with you as soon as possible.&lt;br&gt;In the meanwhile, would you like to wait or try one of the following?" restype="string" datatype="html">
         <source>Your concern is very important to us. &lt;br&gt;
@@ -2548,7 +2559,7 @@
       </trans-unit>
       <trans-unit id="1803" resname="{name_tag_start}{value}{div_tag_end}{specialty_tag_start}, Board Certified{div_tag_end}" restype="string" datatype="javascript">
         <source>{name_tag_start}{value}{div_tag_end}{specialty_tag_start}, Board Certified{div_tag_end}</source>
-        <target state="translated">{name_tag_start}{value}{div_tag_end}{specialty_tag_start}, 认证医师{div_tag_end}</target>
+        <target state="translated">{name_tag_start}{value}{div_tag_end}{specialty_tag_start}, 美国医学委员会认证医师{div_tag_end}</target>
       </trans-unit>
       <trans-unit id="1804" resname="{name_tag_start}{value}{div_tag_end}{specialty_tag_start}{div_tag_end}" restype="string" datatype="javascript">
         <source>{name_tag_start}{value}{div_tag_end}{specialty_tag_start}{div_tag_end}</source>
@@ -2630,7 +2641,7 @@
   You will be notified if you are confirmed as this doctor's patient or accepted by the doctor for
   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href="/terms/additional_info" target="_blank"&gt;Additional Information&lt;/a&gt;</source>
-        <target state="translated">&lt;br&gt;查看 &lt;a href="/terms/additional_info" target="_blank"&gt;附加信息&lt;/a&gt;</target>
+        <target state="translated">当您请求与医生连接时，我们会通过电子邮件（如果可用）联系医生。在医生确认您是他的病人、或接收您为病人进行在线咨询时，我们会通知您。请注意：医生并不总能接到或回答这类请求，所以不要延迟寻求或接受面对面就诊。&lt;br&gt;查看 &lt;a href="/terms/additional_info" target="_blank"&gt;附加信息&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2664,7 +2675,7 @@
       <trans-unit id="1164" resname="Summary Note&lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
         <source>Summary Note
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;Download PDF&lt;/a&gt;</source>
-        <target state="translated">简要医嘱
+        <target state="translated">总结注释
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;下载PDF&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -2678,7 +2689,7 @@
       &lt;span class="missed-call-copy"&gt;&lt;%= callCopy %&gt;&lt;/span&gt;
 
       . If you cannot see patients at this time, please indicate that you are</source>
-        <target state="translated">, 您错过的
+        <target state="translated">, 您错过了
       &lt;span class="missed-call-count"&gt;&lt;%= num_missed %&gt;&lt;/span&gt;
       患者
       &lt;span class="missed-call-copy"&gt;&lt;%= callCopy %&gt;&lt;/span&gt;
@@ -2713,17 +2724,17 @@
         <source>/month regularly - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
       credits this month</source>
-        <target state="translated">/月固定 - $
+        <target state="translated">/月标价 - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
-      这个月信用</target>
+      本月余额</target>
       </trans-unit>
       <trans-unit id="1168" resname="regularly - $&lt;span class=&quot;remaining-credit&quot;&gt;&lt;/span&gt;in credits" restype="string" datatype="html">
         <source>regularly - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
       in credits</source>
-        <target state="translated">固定 - $
+        <target state="translated">标价 - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
-      信用</target>
+      余额</target>
       </trans-unit>
       <trans-unit id="1754" resname="100% Guarantee!" restype="string" datatype="javascript">
         <source>100% Guarantee!</source>
@@ -2763,8 +2774,11 @@
     See the HealthTap &lt;a href="/terms" target="_blank"&gt;Terms of Use&lt;/a&gt; for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime.
     &lt;br&gt;&lt;br&gt;
     Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states.</source>
-        <target state="translated">&lt;br&gt;&lt;br&gt;
-    参阅HealthTap &lt;a href="/terms" target="_blank"&gt;按专科分类的回答&lt;/a&gt; 对于“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”的定义。</target>
+        <target state="translated">这些条款（“免费试用条款”）管理由HealthTap提供的对新合格的用户的服务（“提供Prime免费试用”），新合格的用户可以通过注册并提交购买新的HealthTap Prime账户（“免费试用期”）支付信息，来访问HealthTap Prime服务。通过提交您的付款细节，您接受Prime免费试用服务和：(i)们按照我们的付款细节条款使用您的付款信息，和(ii)意HealthTap &lt; a href =“/” terms =“_blank”&gt; Terms of Use &lt;/a&gt;和这些免费试用条款。如果您决定在免费试用期时期结束时不想成为一个HealthTap Prime付费用户，依据HealthTap Prime的条款，您必须免费试用期结束前取消订购HealthTap Prime（在您的HealthTap账户的计费设置板块中&lt;a href="https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340" target="_blank"&gt;Settings&lt;/a&gt;）订购费不按比例分摊；免费试用期结束后取消订购仍可使用，直到试用期结束，在此期间账户已被注销。您只能使用一次免费试用优惠。HealthTap保留一切在确定提供免费试用服务的个人资格以及在任何时间撤销或修改此Prime免费使用和/或免费试用的条款的绝对酌情决定权。恕不提前通知并不负相关责任。&lt;br&gt;&lt;br&gt;HealthTap的付款细节条款: 当您注册试用或使用任何我们的高级服务，或通过应用程序进行其他购买时，您的信用卡信息和其他需要用来处理您的付款的财务数据将会被收集并通过第三方支付处理机构的存储，我们也会收集一些有限的信息，例如您的邮政编码和交易历史细节。任何这样的第三方支付处理机构使用您的数据都会受他们的隐私政策限制。这第三方一般为我们提供一些有限的信息（如一个独特的记录，使您能够通过他们所存储的信息进行额外的购买，和您的卡的类型，到期日期，最后四位数字）
+    &lt;br&gt;&lt;br&gt;
+    了解HealthTap &lt;a href="/terms" target="_blank"&gt;使用条款&lt;/a&gt; 对于定义的“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”“新用户”是指新HealthTap Prime客户没有事先在HealthTap Prime注册基础账户、子账户或试用帐户的用户。
+    &lt;br&gt;&lt;br&gt;
+请注意，以下处方药目前不能通过HealthTap Prime获得：麻醉剂或美国特殊药品监督管理局控制的药物（一、二、三、四类药物），精神病治疗药物或改变生活方式的药物（如：针对节食或勃起功能障碍的药物），或各州禁止的药物。</target>
       </trans-unit>
     </body>
   </file>
@@ -2899,7 +2913,7 @@
         and
         &lt;a class="childBrowser_link" href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;</source>
         <target state="translated">通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -2916,7 +2930,7 @@
           &lt;%= user_question.actor.name %&gt;
         &lt;/a&gt;
         asked:</source>
-        <target state="translated">医学学生 &lt;a class="actor_link" href="#experts/&lt;%= user_question.actor.id %&gt;"&gt;
+        <target state="translated">医学院学生 &lt;a class="actor_link" href="#experts/&lt;%= user_question.actor.id %&gt;"&gt;
           &lt;%= user_question.actor.name %&gt;
         &lt;/a&gt;
         询问：</target>
@@ -2945,7 +2959,7 @@
       </trans-unit>
       <trans-unit id="2260" resname="Each answer you author helps millions with the same question. We calculate &quot;people helped&quot; based on the number of times your answers are thanked, agreed, or viewed by people and doctors worldwide." restype="string" datatype="html">
         <source>Each answer you author helps millions with the same question. We calculate "people helped" based on the number of times your answers are thanked, agreed, or viewed by people and doctors worldwide.</source>
-        <target state="translated">每个您的回答帮助数百万有同样的问题人。我们基于您的回答被世界各地的用户和医生感谢、认同、或浏览的次数来计算“被帮助的人”的数量。</target>
+        <target state="translated">每个您的回答帮助数百万有同样的问题人。我们基于您的回答被世界各地的用户和医生感谢、认同、或浏览的次数来计算“帮助了的人”的数量。</target>
       </trans-unit>
       <trans-unit id="2261" resname="Answer&lt;span style=&quot;font-weight: 600;&quot;&gt;&lt;%= (bonus_bar.answers_target - bonus_bar.answers_posted) %&gt;&lt;/span&gt;more questions to" restype="string" datatype="html">
         <source>Answer &lt;span style="font-weight: 600;"&gt;&lt;%= (bonus_bar.answers_target - bonus_bar.answers_posted) %&gt;&lt;/span&gt; more questions to</source>
@@ -3139,7 +3153,7 @@
       <trans-unit id="1199" resname="Referral Network (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referral Network
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</source>
-        <target state="translated">推荐网络
+        <target state="translated">转诊网络
         (&lt;span class="count"&gt;&lt;/span&gt;)</target>
       </trans-unit>
       <trans-unit id="1200" resname="Added This Doctor (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
@@ -3157,13 +3171,13 @@
       <trans-unit id="1202" resname="Referrals (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referrals
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</source>
-        <target state="translated">推荐
+        <target state="translated">转诊
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
       <trans-unit id="1203" resname="Added you (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Added you
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</source>
-        <target state="translated">添加您的
+        <target state="translated">已添加您
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
       <trans-unit id="1204" resname="All (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
@@ -3206,13 +3220,13 @@
       <trans-unit id="1209" resname="Referrals (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referrals
         (&lt;span class="count"&gt;&lt;/span&gt;)</source>
-        <target state="translated">推荐
+        <target state="translated">转诊
         (&lt;span class="count"&gt;&lt;/span&gt;)</target>
       </trans-unit>
       <trans-unit id="1210" resname="Added you (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Added you
         (&lt;span class="count"&gt;&lt;/span&gt;)</source>
-        <target state="translated">添加您的
+        <target state="translated">已添加您
         (&lt;span class="count"&gt;&lt;/span&gt;)</target>
       </trans-unit>
     </body>
@@ -3239,8 +3253,9 @@
         <source>Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.
   &lt;br&gt;
   &lt;a class="btn blue close_layer" style="display: block; width: 100px; float: right;"&gt;Thanks&lt;/a&gt;</source>
-        <target state="translated">&lt;br&gt;
-  &lt;a class="btn blue close_layer" style="display: block; width:100px; float: right;"&gt;谢谢&lt;/a&gt;</target>
+        <target state="translated">医生的定义或描述会显示在这个话题页面，并由数百万用户查看。通过提供这个话题的简单详细的定义或描述，获得对您知识的认可。
+  &lt;br&gt;
+  &lt;a class="btn blue close_layer" style="display: block; width: 100px; float: right;"&gt;感谢&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3259,7 +3274,7 @@
       </trans-unit>
       <trans-unit id="2306" resname="Your Practice Newsletter is&lt;span class=&quot;bold&quot;&gt;ready to go&lt;/span&gt;&amp;mdash; customize or send what&apos;s below." restype="string" datatype="html">
         <source>Your Practice Newsletter is &lt;span class="bold"&gt;ready to go&lt;/span&gt; &amp;mdash; customize or send what's below.</source>
-        <target state="translated">您的诊疗通讯是 &lt;span class="bold"&gt;准备&lt;/span&gt; &amp;mdash; 定制或发送以下内容。</target>
+        <target state="translated">您的诊疗通讯 &lt;span class="bold"&gt;已准备好&lt;/span&gt; &amp;mdash; 定制或发送以下内容。</target>
       </trans-unit>
       <trans-unit id="2307" resname="Hello [&lt;span style=&quot;font-style: italic;&quot;&gt;Patient&apos;s Name Inserted Here&lt;/span&gt;]," restype="string" datatype="html">
         <source>Hello [ &lt;span style="font-style: italic;"&gt;Patient's Name Inserted Here&lt;/span&gt; ],</source>
@@ -3282,7 +3297,7 @@
           &lt;br&gt;
           &lt;br&gt;
           The newsletter will come from my Virtual Practice on HealthTap - a free web and mobile service that allows you to ask health questions, receive daily health tips, and benefit from the world’s most trustworthy and useful health information written by yours truly and some of the best doctors in the US.</source>
-        <target state="translated">我很高兴与您分享,我发现一个伟大的新的简单且免费的方式来帮助您拥有更健康,更快乐的生活,请与我们保持联系。很快，您会开始收到我的每周HealthTap通讯，其中充满了大量的至理名言和美丽的照片，可以帮助您保持健康的生活头脑。
+        <target state="translated">我很高兴与您分享,我发现一个很棒的新的简单且免费的方式来帮助您拥有更健康,更快乐的生活,请与我们保持联系。很快，您会开始收到我的每周HealthTap通讯，其中充满了大量的至理名言和美丽的照片，可以帮助您保持健康的生活头脑。
           &lt;br&gt;
           &lt;br&gt;
          该通讯将来自HealthTap上我的在线咨询——一个免费的网络和移动服务，让您提问健康问题，接收每日健康小贴士，并收益于世界上最可靠和有用的健康信息，这些信息由您忠实的医生所写，其中有一些是美国最好的医生。</target>
@@ -3295,7 +3310,7 @@
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target state="translated">真诚的,
           &lt;br&gt;
-          亲爱的 &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
+          医生 &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -3321,7 +3336,7 @@
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target state="translated">真诚的,
           &lt;br&gt;
-          亲爱的 &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
+          医生 &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -3333,7 +3348,7 @@
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target='_blank'&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target state="translated">真诚地,
           &lt;br&gt;
-          亲爱的 &lt;%= App.user.get(’person’).name %&gt; &lt;%= App.user.get(’person’).last_name %&gt;
+          医生 &lt;%= App.user.get(’person’).name %&gt; &lt;%= App.user.get(’person’).last_name %&gt;
           &lt;br&gt;
           &lt;a href=”&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(’person’).profile_name %&gt;” targete=’_blank’&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -3344,7 +3359,7 @@
       <trans-unit id="1220" resname="Caring&lt;a id=&quot;111058163&quot; topic=&quot;Caring&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Caring
       &lt;a id="111058163" topic="Caring" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
-        <target state="translated">照顾
+        <target state="translated">关爱的
       &lt;a id="111058163" topic="Caring" class="addKnownFor_popup"&gt;+添加&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1221" resname="Knowledgeable&lt;a id=&quot;111058164&quot; topic=&quot;Knowledgeable&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
@@ -3409,7 +3424,8 @@
     &lt;a class="see_full_standings" href="#docscore/competitions/medical_school"&gt;
       See full standings &amp;raquo;
     &lt;/a&gt;</source>
-        <target state="translated">&lt;br&gt;
+        <target state="translated">加入您的母校帮助数百万人！
+	&lt;br&gt;
     &lt;br&gt;
     &lt;a class="see_full_standings" href="#docscore/competitions/medical_school"&gt;
       查看完整排行榜 &amp;raquo;
@@ -3423,12 +3439,12 @@
         <source>Customize your own mobile app and stationary for your practice! &lt;br&gt;
       &lt;a href="/#promote"&gt;Discover more ways to extend your reach »&lt;/a&gt;</source>
         <target state="translated">&lt;br&gt;
-      &lt;a href="/#promote"&gt;探索更多方法扩大涉及范围 »&lt;/a&gt;</target>
+      &lt;a href="/#promote"&gt;探索更多方法扩大覆盖范围 »&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1231" resname="Once patients enter your code, they&apos;ll turn HealthTap&apos;s mobile app into a unique experience with your name, logo, office information and answers prominently displayed. Take a bold leap into the mobile market and give them your code today:" restype="string" datatype="html">
         <source>Once patients enter your code, they'll turn HealthTap's mobile app into a unique experience with your name, logo, office information and answers
       prominently displayed.  Take a bold leap into the mobile market and give them your code today:</source>
-        <target state="translated">一旦患者进入您的编码，他们将HealthTap的移动应用软件转化为有您的姓名、标志、办公室信息和显著回答的一段不寻常的经历大胆的进入移动市场并在今天给出您的编码：</target>
+        <target state="translated">一旦患者进入您的编码，他们将HealthTap的移动应用软件转化为有您的姓名、标志、办公室信息和显著回答的一段不寻常的体验。大胆的进入移动市场并在今天给出您的编码：</target>
       </trans-unit>
     </body>
   </file>
@@ -3474,7 +3490,7 @@
         <source>Medical Student &lt;a class="actor_link" href="&lt;%= user_answer.contributor.url.replace('people', 'experts').toHashFragment() %&gt;"&gt;
                       &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;
   needs an answer to be reviewed:</source>
-        <target state="translated">医学学生 &lt;a class="actor_link" href="&lt;%= user_answer.contributor.url.replace('people', 'experts').toHashFragment() %&gt;"&gt;
+        <target state="translated">医学院学生 &lt;a class="actor_link" href="&lt;%= user_answer.contributor.url.replace('people', 'experts').toHashFragment() %&gt;"&gt;
                       &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;
   需要一个回答来评审：</target>
       </trans-unit>
@@ -3495,9 +3511,9 @@
       &lt;a href="http://itunes.apple.com/us/app/id466079030"&gt;iPhone&lt;/a&gt;,
       &lt;a href="http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress"&gt;Android&lt;/a&gt;, and
       &lt;a href="http://itunes.apple.com/us/app/id466079030"&gt;iPad&lt;/a&gt;</source>
-        <target state="translated">或下载我们的移动应用程序为
+        <target state="translated">或下载我们的移动应用程序
       &lt;a href="http://itunes.apple.com/us/app/id466079030"&gt;iPhone&lt;/a&gt;,
-      &lt;a href="http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress"&gt;Android&lt;/a&gt;, 何
+      &lt;a href="http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress"&gt;Android&lt;/a&gt;, 和
       &lt;a href="http://itunes.apple.com/us/app/id466079030"&gt;iPad&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -3534,7 +3550,7 @@
       </trans-unit>
       <trans-unit id="1538" resname="users are seeking a tip on {tip_topic_name}:" restype="string" datatype="javascript">
         <source>users are seeking a tip on {tip_topic_name}:</source>
-        <target state="translated">用户正在寻找小提示在 {tip_topic_name}:</target>
+        <target state="translated">用户正在寻找小贴士在 {tip_topic_name}:</target>
       </trans-unit>
     </body>
   </file>
@@ -3571,7 +3587,7 @@
       </trans-unit>
       <trans-unit id="1534" resname="By submitting this question, you confirm that you agree to HealthTap’s {terms_link_tag_start}Terms of Use{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end} and you are over 16 years old." restype="string" datatype="javascript">
         <source>By submitting this question, you confirm that you agree to HealthTap’s {terms_link_tag_start}Terms of Use{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end} and you are over 16 years old.</source>
-        <target state="translated">通过提交这个问题，您确定您同意HealthTapde的{terms_link_tag_start}按专科分类的回答{link_tag_end} 和 {privacy_link_tag_start}隐私政策{link_tag_end} 和您16周岁以上。</target>
+        <target state="translated">通过提交这个问题，您确定您同意HealthTapde的{terms_link_tag_start}使用条款{link_tag_end} 和 {privacy_link_tag_start}隐私政策{link_tag_end} 和您16周岁以上。</target>
       </trans-unit>
     </body>
   </file>
@@ -3609,7 +3625,7 @@
       </trans-unit>
       <trans-unit id="1527" resname="By signing up, you agree to our {terms_link_tag_start}Terms of Use{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}." restype="string" datatype="javascript">
         <source>By signing up, you agree to our {terms_link_tag_start}Terms of Use{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}.</source>
-        <target state="translated">通过注册，您同意我们的 {terms_link_tag_start}按专科分类的回答{link_tag_end} 和 {privacy_link_tag_start}隐私政策{link_tag_end}.</target>
+        <target state="translated">通过注册，您同意我们的 {terms_link_tag_start}使用条款{link_tag_end} 和 {privacy_link_tag_start}隐私政策{link_tag_end}.</target>
       </trans-unit>
       <trans-unit id="2339" resname="First and Last Name&lt;span class=&quot;reqField&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;caregiver_label hidden&quot;&gt;(of the person you care for)&lt;/span&gt;" restype="string" datatype="html">
         <source>First and Last Name &lt;span class="reqField"&gt;*&lt;/span&gt; &lt;span class="caregiver_label hidden"&gt;(of the person you care for)&lt;/span&gt;</source>
@@ -3819,7 +3835,7 @@
       </trans-unit>
       <trans-unit id="2351" resname="TO:&amp;nbsp;&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;&amp;nbsp;&lt;a id=&quot;changeTo&quot;&gt;(Change)&lt;/a&gt;" restype="string" datatype="html">
         <source>TO:&amp;nbsp;&amp;nbsp;&lt;span class="to_full_name"&gt;&lt;/span&gt;&amp;nbsp;&lt;a id="changeTo"&gt;(Change)&lt;/a&gt;</source>
-        <target state="translated">TO:&amp;nbsp;&amp;nbsp;&lt;span class="to_full_name"&gt;&lt;/span&gt;&amp;nbsp;&lt;a id="changeTo"&gt;(Change)&lt;/a&gt;</target>
+        <target state="translated">到:&amp;nbsp;&amp;nbsp;&lt;span class="to_full_name"&gt;&lt;/span&gt;&amp;nbsp;&lt;a id="changeTo"&gt;(Change)&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3839,7 +3855,7 @@
         <source>Start a Private Conversation
     &lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">开始一次私人会话
-    &lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPAA安全，一对一的设置下</target>
+    &lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPPA加密，一对一的设置下</target>
       </trans-unit>
     </body>
   </file>
@@ -3913,11 +3929,11 @@
       </trans-unit>
       <trans-unit id="1511" resname="Premier" restype="string" datatype="javascript">
         <source>Premier</source>
-        <target state="translated">最初的</target>
+        <target state="translated">第一的</target>
       </trans-unit>
       <trans-unit id="1512" resname="Elite" restype="string" datatype="javascript">
         <source>Elite</source>
-        <target state="translated">编辑</target>
+        <target state="translated">精英</target>
       </trans-unit>
       <trans-unit id="1513" resname="Distinguished" restype="string" datatype="javascript">
         <source>Distinguished</source>
@@ -3925,7 +3941,7 @@
       </trans-unit>
       <trans-unit id="1514" resname="Exceptional" restype="string" datatype="javascript">
         <source>Exceptional</source>
-        <target state="translated">例外的</target>
+        <target state="translated">优秀的</target>
       </trans-unit>
       <trans-unit id="1515" resname="Prestigious" restype="string" datatype="javascript">
         <source>Prestigious</source>
@@ -3983,10 +3999,10 @@
                 &lt;a class="childBrowser_link" href="/pages/privacy_sharing" target="_blank"&gt;Privacy Policy&lt;/a&gt;,
                 and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-                &lt;a class="childBrowser_link" href="/pages/terms" target="_blank"&gt;按专科分类的回答&lt;/a&gt;
+                &lt;a class="childBrowser_link" href="/pages/terms" target="_blank"&gt;使用条款&lt;/a&gt;
                 和
                 &lt;a class="childBrowser_link" href="/pages/privacy_sharing" target="_blank"&gt;隐私政策&lt;/a&gt;,
-                并确认您已满16岁或以上。</target>
+                 并且您确认您已满16周岁或以上。</target>
       </trans-unit>
       <trans-unit id="2355" resname="Are you a doctor?&lt;a href=&quot;#expert_sign_up&quot;&gt;Sign up here&lt;/a&gt;" restype="string" datatype="html">
         <source>Are you a doctor? &lt;a href="#expert_sign_up"&gt;Sign up here&lt;/a&gt;</source>
@@ -4071,7 +4087,7 @@
             &lt;br&gt;
             &lt;br&gt;
             通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -4095,7 +4111,7 @@
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
         <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
-    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
+    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;医生无国界组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
     &lt;a href=”http://www.directrelief.org” target=”_blank”&gt;国际直接救济&lt;/a&gt;,
@@ -4122,7 +4138,7 @@
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
         <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
-    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
+    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;医生无国界组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
     &lt;a href=”http://www.directrelief.org” target=”_blank”&gt;国际直接救济&lt;/a&gt;,
@@ -4149,7 +4165,7 @@
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
         <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
-    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
+    &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;医生无国界组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
     &lt;a href=”http://www.directrelief.org” target=”_blank”&gt;国际直接救济&lt;/a&gt;,
@@ -4190,7 +4206,7 @@
             &lt;a href="mailto:expertsupport@healthtap.com"&gt;expertsupport@healthtap.com&lt;/a&gt;
             or (650) 644-1833.</source>
         <target state="translated">通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;如果您有任何问题，给我们发送邮件或电话联系我们
             &lt;a href=”mailto:expertsupport@healthtap.com”&gt;expertsupport@healthtap.com&lt;/a&gt;
@@ -4210,7 +4226,7 @@
                 and
                 &lt;a class="childBrowser_link" id='privacyLink' href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;</source>
         <target state="translated">通过注册，您同意我们的
-                &lt;a class=”childBrowser_link” id=‘termsLink’ href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+                &lt;a class=”childBrowser_link” id=‘termsLink’ href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
                 和
                 &lt;a class=”childBrowser_link” id=’privacyLink‘ href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -4243,7 +4259,7 @@
             &lt;a class="childBrowser_link" href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;,
             and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -4311,7 +4327,7 @@
               &lt;a class="childBrowser_link" target="_blank" href="/pages/privacy_sharing"&gt;Privacy Policy&lt;/a&gt;,
               and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;按专科分类的回答&lt;/a&gt;
+              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;使用条款&lt;/a&gt;
               和
               &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/privacy_sharing”&gt;隐私政策&lt;/a&gt;,
               并确认您已满16岁或以上。</target>
@@ -4396,7 +4412,7 @@
     <body>
       <trans-unit id="1300" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
+        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4404,7 +4420,7 @@
     <body>
       <trans-unit id="1301" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target state="translated">同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
+        <target state="translated">已同意&lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;的&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4412,7 +4428,7 @@
     <body>
       <trans-unit id="1302" resname="agreed with&lt;span class=&quot;actor_text bold&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;answer to:" restype="string" datatype="html">
         <source>agreed with &lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? 'Dr. ' + user_answer.actor.last_name : user_answer.actor.name %&gt;'s&lt;/span&gt; answer to:</source>
-        <target state="translated">同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ?医生' + user_answer.actor.last_name : user_answer.actor.name %&gt;的&lt;/span&gt; answer to:</target>
+        <target state="translated">已同意&lt;span class="actor_text bold"&gt;&lt;%=user_answer.actor.last_name ? user_answer.actor.last_name + '医生' : user_answer.actor.name %&gt;的&lt;/span&gt; 对这个问题的回答:</target>
       </trans-unit>
     </body>
   </file>
@@ -4768,7 +4784,7 @@
       </trans-unit>
       <trans-unit id="1367" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">与已育女性医生联系，医生会对你的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
+        <target state="translated">与已育女性医生联系，医生会对您的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
       </trans-unit>
       <trans-unit id="1368" resname="Follow question" restype="string" datatype="javascript">
         <source>Follow question</source>
@@ -4868,7 +4884,7 @@
     <body>
       <trans-unit id="1384" resname="In {name}&apos;s network" restype="string" datatype="javascript">
         <source>In {name}'s network</source>
-        <target state="translated">网络中{name}的</target>
+        <target state="translated">{name}的网络中</target>
       </trans-unit>
     </body>
   </file>
@@ -4992,7 +5008,7 @@
       </trans-unit>
       <trans-unit id="1421" resname="Dr. {name}" restype="string" datatype="javascript">
         <source>Dr. {name}</source>
-        <target state="translated">医生{name}</target>
+        <target state="translated">{name}医生</target>
       </trans-unit>
       <trans-unit id="1422" resname="Login" restype="string" datatype="javascript">
         <source>Login</source>
@@ -5288,6 +5304,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1477" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告      它还需要一会。当它完成后您会收到一封邮件</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="public/javascripts/templates/topic_types.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1478" resname="Personal" restype="string" datatype="javascript">
@@ -5488,7 +5512,7 @@
       </trans-unit>
       <trans-unit id="1522" resname="This information is private and HIPAA-secure. " restype="string" datatype="javascript">
         <source>This information is private and HIPAA-secure.</source>
-        <target state="translated">此信息为私人信息和HIPAA安全信息。</target>
+        <target state="translated">此信息为私人信息和HIPPA加密信息。</target>
       </trans-unit>
     </body>
   </file>
@@ -5716,7 +5740,7 @@
     <body>
       <trans-unit id="1560" resname="Referral network" restype="string" datatype="javascript">
         <source>Referral network</source>
-        <target state="translated">推荐网络</target>
+        <target state="translated">转诊网络</target>
       </trans-unit>
     </body>
   </file>
@@ -5764,7 +5788,7 @@
     <body>
       <trans-unit id="1567" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
         <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
+        <target state="translated">1#这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt; 更多解答！|            #这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt;更多解答！</target>
       </trans-unit>
     </body>
   </file>
@@ -5772,7 +5796,7 @@
     <body>
       <trans-unit id="1568" resname="Unsubscribe" restype="string" datatype="javascript">
         <source>Unsubscribe</source>
-        <target state="translated">未订购</target>
+        <target state="translated">取消订购</target>
       </trans-unit>
     </body>
   </file>
@@ -5800,11 +5824,11 @@
       </trans-unit>
       <trans-unit id="1573" resname="Immunizations" restype="string" datatype="javascript">
         <source>Immunizations</source>
-        <target state="translated">免疫/预防接种</target>
+        <target state="translated">免疫</target>
       </trans-unit>
       <trans-unit id="1574" resname="Pharmacy Information" restype="string" datatype="javascript">
         <source>Pharmacy Information</source>
-        <target state="translated">药学信息</target>
+        <target state="translated">药房信息</target>
       </trans-unit>
     </body>
   </file>
@@ -5824,11 +5848,11 @@
     <body>
       <trans-unit id="1577" resname="&amp;laquo; Previous" restype="string" datatype="javascript">
         <source>&amp;laquo; Previous</source>
-        <target state="translated">&amp;laquo; 先前的</target>
+        <target state="translated">&amp;laquo; 上一步</target>
       </trans-unit>
       <trans-unit id="1578" resname="Next &amp;raquo;" restype="string" datatype="javascript">
         <source>Next &amp;raquo;</source>
-        <target state="translated">接下来  &amp;raquo;</target>
+        <target state="translated">下一步  &amp;raquo;</target>
       </trans-unit>
     </body>
   </file>
@@ -5844,7 +5868,7 @@
     <body>
       <trans-unit id="1580" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
         <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;为了协助，您可以联系我们在                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;如需协助，您可以联系我们                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="1581" resname="Okay" restype="string" datatype="javascript">
         <source>Okay</source>
@@ -5884,7 +5908,7 @@
     <body>
       <trans-unit id="1586" resname="What is your network status with {prefix}{last_name} ?" restype="string" datatype="javascript">
         <source>What is your network status with {prefix}{last_name} ?</source>
-        <target state="translated">您网络与{prefix}{last_name} 的关系是?</target>
+        <target state="translated">您与{prefix}{last_name} 的网络关系是?</target>
       </trans-unit>
     </body>
   </file>
@@ -5892,11 +5916,11 @@
     <body>
       <trans-unit id="1587" resname="Do you need help with {checklist}?" restype="string" datatype="javascript">
         <source>Do you need help with {checklist}?</source>
-        <target state="translated">您需要帮助检查 {checklist}?</target>
+        <target state="translated">关于{checklist}您需要帮助吗?</target>
       </trans-unit>
       <trans-unit id="1588" resname="Do you need help with this {checklist}?" restype="string" datatype="javascript">
         <source>Do you need help with this {checklist}?</source>
-        <target state="translated">您需要帮助检查这个 {checklist}?</target>
+        <target state="translated">关于这个{checklist}您需要帮助吗?</target>
       </trans-unit>
       <trans-unit id="1589" resname="{name}{name_link_tag_end}, a specialist in {specialty}, is available for you:" restype="string" datatype="javascript">
         <source>{name}{name_link_tag_end}, a specialist in {specialty}, is available for you:</source>
@@ -5912,7 +5936,7 @@
     <body>
       <trans-unit id="1591" resname="Uploaded {date}" restype="string" datatype="javascript">
         <source>Uploaded {date}</source>
-        <target state="translated">已更新{date}</target>
+        <target state="translated">已上传{date}</target>
       </trans-unit>
     </body>
   </file>
@@ -5968,7 +5992,7 @@
       </trans-unit>
       <trans-unit id="1605" resname="Living Children" restype="string" datatype="javascript">
         <source>Living Children</source>
-        <target state="translated">存活的孩子</target>
+        <target state="translated">在世的孩子</target>
       </trans-unit>
     </body>
   </file>
@@ -5992,7 +6016,7 @@
       </trans-unit>
       <trans-unit id="1609" resname="Find a pharmacy in {state}:" restype="string" datatype="javascript">
         <source>Find a pharmacy in {state}:</source>
-        <target state="translated">找到一个药店在 {state}:</target>
+        <target state="translated">在 {state}找到一个药店:</target>
       </trans-unit>
     </body>
   </file>
@@ -6232,7 +6256,7 @@
     <body>
       <trans-unit id="1661" resname="At what mobile number can doctors, pharmacists, or HealthTap reach  {first_name} if needed?" restype="string" datatype="javascript">
         <source>At what mobile number can doctors, pharmacists, or HealthTap reach  {first_name} if needed?</source>
-        <target state="translated">如果需要，医生，药剂师或HealthTap可以通过哪个手机号码访问{first_name}？</target>
+        <target state="translated">如果需要，医生，药剂师或HealthTap可以通过哪个手机号码找到{first_name}？</target>
       </trans-unit>
       <trans-unit id="1662" resname="At what mobile number can doctors, pharmacists, or HealthTap reach this person if needed?" restype="string" datatype="javascript">
         <source>At what mobile number can doctors, pharmacists, or HealthTap reach this person if needed?</source>
@@ -6532,7 +6556,7 @@
       </trans-unit>
       <trans-unit id="1715" resname="Talk to a specialist for a more in-depth consultation via live video or text chat" restype="string" datatype="javascript">
         <source>Talk to a specialist for a more in-depth consultation via live video or text chat</source>
-        <target state="translated">通过直播视频或文本聊天与专家进行更深入的咨询</target>
+        <target state="translated">通过实时视频或文本聊天与专家进行更深入的咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -6584,7 +6608,7 @@
     <body>
       <trans-unit id="1725" resname="one#{bold_tag_start}{n}{bold_tag_end} doctor weighed in|#{bold_tag_start}{n}{bold_tag_end} doctors weighed in" restype="string" datatype="javascript">
         <source>one#{bold_tag_start}{n}{bold_tag_end} doctor weighed in|#{bold_tag_start}{n}{bold_tag_end} doctors weighed in</source>
-        <target state="translated">一个#{bold_tag_start}{n}{bold_tag_end} 医生权衡|#{bold_tag_start}{n}{bold_tag_end} 医生权衡</target>
+        <target state="translated">一个#{bold_tag_start}{n}{bold_tag_end} 医生参与讨论|#{bold_tag_start}{n}{bold_tag_end} 医生参与讨论</target>
       </trans-unit>
     </body>
   </file>
@@ -6712,7 +6736,7 @@
       </trans-unit>
       <trans-unit id="1748" resname="Video or text with a top US primary care doctor right now for advice and treatment" restype="string" datatype="javascript">
         <source>Video or text with a top US primary care doctor right now for advice and treatment</source>
-        <target state="translated">现在就与一位知名的美国普通门诊医生视频或文本聊天，以获得建议和治疗方案</target>
+        <target state="translated">现在就与一位顶级美国普通门诊医生视频或文本聊天，以获得建议和治疗方案</target>
       </trans-unit>
       <trans-unit id="1749" resname="Talk or text a top US primary care doctor right now!  Getting taken care of has never been this easy." restype="string" datatype="javascript">
         <source>Talk or text a top US primary care doctor right now!  Getting taken care of has never been this easy.</source>
@@ -6860,7 +6884,7 @@
       </trans-unit>
       <trans-unit id="1784" resname="I love my doc {name}, because... " restype="string" datatype="javascript">
         <source>I love my doc {name}, because...</source>
-        <target state="translated">我爱我的医生{name}, 因为...</target>
+        <target state="translated">我爱我的{name}医生, 因为...</target>
       </trans-unit>
     </body>
   </file>
@@ -6992,7 +7016,7 @@
     <body>
       <trans-unit id="1809" resname="{short_name}, you exited before the end of your walkthrough, would you like to continue where you left off?" restype="string" datatype="javascript">
         <source>{short_name}, you exited before the end of your walkthrough, would you like to continue where you left off?</source>
-        <target state="translated">{short_name}, 您在演练结束前退出，是否在原处继？</target>
+        <target state="translated">{short_name}, 您在演练结束前退出，是否在上次中断处继续？？</target>
       </trans-unit>
     </body>
   </file>
@@ -7008,7 +7032,7 @@
     <body>
       <trans-unit id="1811" resname="Dr. {last_name}, you exited before the end of your walkthrough, would you like to continue where you left off?" restype="string" datatype="javascript">
         <source>Dr. {last_name}, you exited before the end of your walkthrough, would you like to continue where you left off?</source>
-        <target state="translated">医生{last_name}, 您在演练结束前退出，是否在原处继续？</target>
+        <target state="translated">{last_name}医生, 您在演练结束前退出，是否在上次中断处继续？</target>
       </trans-unit>
     </body>
   </file>
@@ -7016,7 +7040,7 @@
     <body>
       <trans-unit id="1812" resname="If you have any questions or concerns, our team is here to help at {bold_tag_start}1-650-376-6010{bold_tag_end} or at {bold_tag_start}concierge@healthtap.com{bold_tag_end}" restype="string" datatype="javascript">
         <source>If you have any questions or concerns, our team is here to help at {bold_tag_start}1-650-376-6010{bold_tag_end} or at {bold_tag_start}concierge@healthtap.com{bold_tag_end}</source>
-        <target state="translated">如果您有任何疑问或关注，我们的团队在这里帮助您{bold_tag_start}1-650-376-6010{bold_tag_end} or 发邮件 {bold_tag_start}concierge@healthtap.com{bold_tag_end}</target>
+        <target state="translated">如果您有任何疑问或关注，我们的团队在这里帮助您{bold_tag_start}1-650-376-6010{bold_tag_end} 或发邮件到 {bold_tag_start}concierge@healthtap.com{bold_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -7024,7 +7048,7 @@
     <body>
       <trans-unit id="1813" resname="Or, {link_tag_start}contact us{link_tag_end} for support or feedback" restype="string" datatype="javascript">
         <source>Or, {link_tag_start}contact us{link_tag_end} for support or feedback</source>
-        <target state="translated">或者, {link_tag_start}联系我们{link_tag_end} 为支持或反馈</target>
+        <target state="translated">或者, 为寻求支持和提供反馈{link_tag_start}联系我们{link_tag_end} </target>
       </trans-unit>
     </body>
   </file>
@@ -7044,7 +7068,7 @@
     <body>
       <trans-unit id="1815" resname="Change the card ending in {bold_tag_start}{cc_last_4}{bold_tag_end}" restype="string" datatype="javascript">
         <source>Change the card ending in {bold_tag_start}{cc_last_4}{bold_tag_end}</source>
-        <target state="translated">更改银行卡尾号{bold_tag_start}{cc_last_4}{bold_tag_end}</target>
+        <target state="translated">更改尾号为{bold_tag_start}{cc_last_4}{bold_tag_end}的银行卡</target>
       </trans-unit>
     </body>
   </file>
@@ -7292,19 +7316,19 @@
       </trans-unit>
       <trans-unit id="1882" resname="Saved {span_tag_start}{n}{span_tag_end} Lives" restype="string" datatype="javascript">
         <source>Saved {span_tag_start}{n}{span_tag_end} Lives</source>
-        <target state="translated">挽救了 {span_tag_start}{n}{span_tag_end} 生活</target>
+        <target state="translated">挽救了 {span_tag_start}{n}{span_tag_end} 条生命</target>
       </trans-unit>
       <trans-unit id="1883" resname="Helped {span_tag_start}{n}{span_tag_end} people" restype="string" datatype="javascript">
         <source>Helped {span_tag_start}{n}{span_tag_end} people</source>
-        <target state="translated">帮助过的 {span_tag_start}{n}{span_tag_end} 人</target>
+        <target state="translated">帮助过 {span_tag_start}{n}{span_tag_end} 人</target>
       </trans-unit>
       <trans-unit id="1884" resname="Recieved {span_tag_start}{n}{span_tag_end} doctor agrees" restype="string" datatype="javascript">
         <source>Recieved {span_tag_start}{n}{span_tag_end} doctor agrees</source>
-        <target state="translated">已收到的 {span_tag_start}{n}{span_tag_end} 医生同意</target>
+        <target state="translated">已收到 {span_tag_start}{n}{span_tag_end} 医生同意</target>
       </trans-unit>
       <trans-unit id="1885" resname="Recieved {span_tag_start}{n}{span_tag_end} thanks" restype="string" datatype="javascript">
         <source>Recieved {span_tag_start}{n}{span_tag_end} thanks</source>
-        <target state="translated">已收到的 {span_tag_start}{n}{span_tag_end} 感谢</target>
+        <target state="translated">已收到 {span_tag_start}{n}{span_tag_end} 感谢</target>
       </trans-unit>
       <trans-unit id="1886" resname="You can consult Dr. {last_name} about:" restype="string" datatype="javascript">
         <source>You can consult Dr. {last_name} about:</source>
@@ -7324,7 +7348,7 @@
       </trans-unit>
       <trans-unit id="1889" resname="{span_tag_start}{n}{span_tag_end} &quot;You saved my life&quot; Thank you notes" restype="string" datatype="javascript">
         <source>{span_tag_start}{n}{span_tag_end} "You saved my life" Thank you notes</source>
-        <target state="translated">{span_tag_start}{n}{span_tag_end}感谢信“您挽救了我的生活”</target>
+        <target state="translated">{span_tag_start}{n}{span_tag_end}感谢信“您挽救了我的生命”</target>
       </trans-unit>
       <trans-unit id="1890" resname="{span_tag_start}{n}{span_tag_end} Peopled helped" restype="string" datatype="javascript">
         <source>{span_tag_start}{n}{span_tag_end} Peopled helped</source>
@@ -7356,7 +7380,7 @@
       </trans-unit>
       <trans-unit id="1896" resname="Consult a doctor on {topic_name}" restype="string" datatype="javascript">
         <source>Consult a doctor on {topic_name}</source>
-        <target state="translated">咨询医生在 {topic_name}</target>
+        <target state="translated">关于{topic_name}咨询医生</target>
       </trans-unit>
     </body>
   </file>
@@ -7372,7 +7396,7 @@
       </trans-unit>
       <trans-unit id="1899" resname="{span_tag_start}{n}{span_tag_end}x" restype="string" datatype="javascript">
         <source>{span_tag_start}{n}{span_tag_end}x</source>
-        <target state="translated">{span_tag_start}{n}{span_tag_end}x</target>
+        <target state="translated">{span_tag_start}{n}{span_tag_end}次</target>
       </trans-unit>
       <trans-unit id="1900" resname="{frequency} in a row" restype="string" datatype="javascript">
         <source>{frequency} in a row</source>
@@ -7384,7 +7408,7 @@
     <body>
       <trans-unit id="1901" resname="Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:" restype="string" datatype="javascript">
         <source>Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:</source>
-        <target state="translated">咨询 {span_tag_start}{value}{span_tag_end}, 一个 {specialist_name} 有{years}年诊疗经验：</target>
+        <target state="translated">咨询 {span_tag_start}{value}{span_tag_end}, 一个 {specialist_name} 有{years}年诊疗经验的医生：</target>
       </trans-unit>
       <trans-unit id="1902" resname="Enroll" restype="string" datatype="javascript">
         <source>Enroll</source>
@@ -7488,11 +7512,11 @@
       </trans-unit>
       <trans-unit id="1927" resname="How old was your grandson?" restype="string" datatype="javascript">
         <source>How old was your grandson?</source>
-        <target state="translated">您孙子当时的年龄？</target>
+        <target state="translated">您孙子/外孙当时的年龄？</target>
       </trans-unit>
       <trans-unit id="1928" resname="How old was your granddaughter?" restype="string" datatype="javascript">
         <source>How old was your granddaughter?</source>
-        <target state="translated">您素女当时的年龄？</target>
+        <target state="translated">您孙女/外孙女当时的年龄？</target>
       </trans-unit>
       <trans-unit id="1929" resname="How old was your stepson?" restype="string" datatype="javascript">
         <source>How old was your stepson?</source>
@@ -7584,11 +7608,11 @@
       </trans-unit>
       <trans-unit id="1951" resname="How old is your grandson?" restype="string" datatype="javascript">
         <source>How old is your grandson?</source>
-        <target state="translated">您孙子的年龄？</target>
+        <target state="translated">您孙子/外孙的年龄？</target>
       </trans-unit>
       <trans-unit id="1952" resname="How old is your granddaughter?" restype="string" datatype="javascript">
         <source>How old is your granddaughter?</source>
-        <target state="translated">您孙女的年龄？</target>
+        <target state="translated">您孙女/外孙女的年龄？</target>
       </trans-unit>
       <trans-unit id="1953" resname="How old is your stepson?" restype="string" datatype="javascript">
         <source>How old is your stepson?</source>
@@ -7888,7 +7912,7 @@
       </trans-unit>
       <trans-unit id="2029" resname="Released {date}" restype="string" datatype="javascript">
         <source>Released {date}</source>
-        <target state="translated">发布的 {date}</target>
+        <target state="translated">发布于 {date}</target>
       </trans-unit>
       <trans-unit id="2030" resname="Available credit until {date}" restype="string" datatype="javascript">
         <source>Available credit until {date}</source>
@@ -7900,7 +7924,7 @@
       </trans-unit>
       <trans-unit id="2032" resname="{span_tag_start}{doc_name}{span_tag_end} and {n} others weighed in" restype="string" datatype="javascript">
         <source>{span_tag_start}{doc_name}{span_tag_end} and {n} others weighed in</source>
-        <target state="translated">{span_tag_start}{doc_name}{span_tag_end} 和 {n} 其他人权衡</target>
+        <target state="translated">{span_tag_start}{doc_name}{span_tag_end} 和 {n} 其他人参与讨论</target>
       </trans-unit>
       <trans-unit id="2033" resname="Credits earned this year: {credits}" restype="string" datatype="javascript">
         <source>Credits earned this year: {credits}</source>
@@ -8376,7 +8400,7 @@
       </trans-unit>
       <trans-unit id="2133" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">发送您的问题以接收一个或多个信息文本答案           在一天内，我们的{n}医生在137个专业的网络。</target>
+        <target state="translated">发送您的问题，在一天内收到           我们网络内来自137个专科的医生的回答。</target>
       </trans-unit>
       <trans-unit id="2134" resname="Got it" restype="string" datatype="javascript">
         <source>Got it</source>
@@ -8584,7 +8608,7 @@
       </trans-unit>
       <trans-unit id="2197" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
-        <target state="translated">通过高清视频，语音，或文字使用我们的在线咨询。通过网站和移动设备，您可以安全地、隐私地在任何地方得到帮助。分享照片和测验结果，即时获取帮助您Feel Good的回答、治疗和转诊。</target>
+        <target state="translated">通过高清视频，语音，或文字使用我们的在线咨询。通过网站和移动设备，您可以安全地、隐私地在任何地方得到帮助。分享照片和测验结果，即时获得帮助您Feel Good的回答、治疗和转诊。</target>
       </trans-unit>
       <trans-unit id="2198" resname="r636341431" restype="string" datatype="x-haml">
         <source>Talk with a top doctor or your</source>
@@ -9132,7 +9156,7 @@
     <body>
       <trans-unit id="2303" resname="Get known! &quot;Known fors&quot; are the areas of your practice you want to highlight. Easily become the top doctor locally, regionally or nationally." restype="string" datatype="html">
         <source>Get known! "Known fors" are the areas of your practice you want to highlight. Easily become the top doctor locally, regionally or nationally.</source>
-        <target state="translated">知道“专攻” 是您想要突出和诊疗的领域轻松成为当地，地区或全国的顶级医生。</target>
+        <target state="translated">扩大知名度！“专攻” 是您想要突出和诊疗的领域。轻松成为当地，地区或全国的顶级医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -9264,7 +9288,7 @@
       </trans-unit>
       <trans-unit id="2335" resname="Your answers should provide information that is useful to others who have a similar question. &quot;Redness without a bump on the PPD Skin test is a negative test&quot; not &quot;You have a negative test&quot;" restype="string" datatype="html">
         <source>Your answers should provide information that is useful to others who have a similar question. "Redness without a bump on the PPD Skin test is a negative test" not "You have a negative test"</source>
-        <target state="translated">您的回答可以帮助给有类似问题人。“PPD皮肤试验中没有肿块的红色是阴性试验”而不是“您有阴性试验”</target>
+        <target state="translated">您的回答可以帮助给有类似问题的人。“PPD皮肤试验中没有肿块的红色是阴性试验”而不是“您有阴性试验”</target>
       </trans-unit>
     </body>
   </file>
@@ -9280,7 +9304,7 @@
     <body>
       <trans-unit id="2338" resname="You will receive an “Agree” each time one of your answers is recognized by a colleague as representing accurate and trustworthy information. This form of peer review is vital to building trust with patients who are turning to you for the highest quality information. Providing up-to-date and succinct answers, as well as building your own network of followers who will see each of your answers are great ways to get more “Agrees.&quot;" restype="string" datatype="html">
         <source>You will receive an “Agree” each time one of your answers is recognized by a colleague as representing accurate and trustworthy information. This form of peer review is vital to building trust with patients who are turning to you for the highest quality information. Providing up-to-date and succinct answers, as well as building your own network of followers who will see each of your answers are great ways to get more “Agrees."</source>
-        <target state="translated">当您的回答呈现精确和值得信任的信息时，您的回答会被同事认可时，您将收到一个“同意”。这种形式的同行评审对于那些正在转向您以获得最高质量信息的患者建立信任至关重要。提供最新的、简明的回答，并建立自己的人脉网，网中人可以看到您的回答，这些都是获得更多“同意”的好方法。</target>
+        <target state="translated">当您的回答呈现精确和值得信任的信息时，您的回答会被同事认可时，您将收到一个“同意”。这种形式的同行评审对于那些正在转向您以获得最高质量信息的患者建立信任至关重要。提供最新的、简明的回答，并建立自己的人脉网，该网络中的人可以看到您的回答，这些都是获得更多“同意”的好方法。</target>
       </trans-unit>
     </body>
   </file>
@@ -9288,7 +9312,7 @@
     <body>
       <trans-unit id="2342" resname="Earn 200,000 points to win an all-expense paid trip to Hawaii or the Caribbean, plus many more rewards! &amp;nbsp; &amp;nbsp;&lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Earn 200,000 points to win an all-expense paid trip to Hawaii or the Caribbean, plus many more rewards! &amp;nbsp; &amp;nbsp; &lt;a href="mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points"&gt;Learn more ›&lt;/a&gt;</source>
-        <target state="translated">获得200000积分可赢得一次夏威夷或加勒比全费用的旅行机会，外加更多的奖励！&amp;nbsp; &amp;nbsp; &lt;a href="mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points"&gt;了解更多 ›&lt;/a&gt;</target>
+        <target state="translated">获得200000积分可赢得一次夏威夷或加勒比费用全免的旅行机会，外加更多的奖励！&amp;nbsp; &amp;nbsp; &lt;a href="mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points"&gt;了解更多 ›&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9316,7 +9340,7 @@
       </trans-unit>
       <trans-unit id="2350" resname="Thanks for referring&lt;span class=&quot;refer_patient&quot;&gt;&lt;/span&gt;to&lt;span class=&quot;refer_doc&quot;&gt;&lt;/span&gt;. That was very kind, responsive and helpful of you." restype="string" datatype="html">
         <source>Thanks for referring &lt;span class="refer_patient"&gt;&lt;/span&gt; to &lt;span class="refer_doc"&gt;&lt;/span&gt;. That was very kind, responsive and helpful of you.</source>
-        <target state="translated">感谢您转诊 &lt;span class="refer_patient"&gt;&lt;/span&gt; to &lt;span class="refer_doc"&gt;&lt;/span&gt;.那是一位您的友好的，有回应的和有帮助的（医生）。</target>
+        <target state="translated">感谢您转诊 &lt;span class="refer_patient"&gt;&lt;/span&gt; to &lt;span class="refer_doc"&gt;&lt;/span&gt;。这是非常友好、回应度高、和有帮助的。</target>
       </trans-unit>
     </body>
   </file>
@@ -9324,7 +9348,7 @@
     <body>
       <trans-unit id="2354" resname="Don&apos;t see your doctor here?&lt;a class=&quot;invite_doctor&quot;&gt;Invite your doctor!&lt;/a&gt;" restype="string" datatype="html">
         <source>Don't see your doctor here? &lt;a class="invite_doctor"&gt;Invite your doctor!&lt;/a&gt;</source>
-        <target state="translated">不在这里会见您的医生？&lt;a class="invite_doctor"&gt;邀请您的医生&lt;/a&gt;</target>
+        <target state="translated">在这里找不到您的医生？&lt;a class="invite_doctor"&gt;邀请您的医生&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9392,7 +9416,7 @@
     <body>
       <trans-unit id="2374" resname="Need help? Email us at&lt;a class=&quot;support-email&quot;&gt;support@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>Need help? Email us at &lt;a class="support-email"&gt;support@healthtap.com&lt;/a&gt;</source>
-        <target state="translated">需要帮助吗？邮件我们在&lt;a class="support-email"&gt;support@healthtap.com&lt;/a&gt;</target>
+        <target state="translated">需要帮助吗？发邮件给我们到&lt;a class="support-email"&gt;support@healthtap.com&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9436,7 +9460,7 @@
     <body>
       <trans-unit id="2383" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our             &lt;a class="childBrowser_link" href="/pages/terms"&gt;Terms of Use&lt;/a&gt;             and             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;Privacy Policy&lt;/a&gt;,             and you confirm that you're 16 years old or over.</source>
-        <target state="translated">通过注册，您同意我们的            &lt;a class="childBrowser_link" href="/pages/terms"&gt;按专科分类的回答&lt;/a&gt;             和             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;隐私政策&lt;/a&gt;,             和您确认您已满16周岁或以上。</target>
+        <target state="translated">通过注册，您同意我们的            &lt;a class="childBrowser_link" href="/pages/terms"&gt;使用条款&lt;/a&gt;             和             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;隐私政策&lt;/a&gt;,             和您确认您已满16周岁或以上。</target>
       </trans-unit>
     </body>
   </file>
@@ -9476,7 +9500,7 @@
       </trans-unit>
       <trans-unit id="2393" resname="(&lt;b&gt;Is this you?&lt;a class=&quot;add_user_as_author&quot; author_name=&quot;&lt;%= author_name %&gt;&quot;&gt;Yes&lt;/a&gt;&lt;/b&gt;)" restype="string" datatype="html">
         <source>(&lt;b&gt;Is this you? &lt;a class="add_user_as_author" author_name="&lt;%= author_name %&gt;"&gt;Yes&lt;/a&gt;&lt;/b&gt;)</source>
-        <target state="translated">(&lt;b&gt;这是您的吗？&lt;a class="add_user_as_author" author_name="&lt;%= author_name %&gt;"&gt;Yes&lt;/a&gt;&lt;/b&gt;)</target>
+        <target state="translated">(&lt;b&gt;HIPPA加密？&lt;a class="add_user_as_author" author_name="&lt;%= author_name %&gt;"&gt;Yes&lt;/a&gt;&lt;/b&gt;)</target>
       </trans-unit>
       <trans-unit id="2394" resname="Are you an author of this publication?&lt;a class=&quot;add_user_as_author&quot;&gt;Yes, add me to the list&lt;/a&gt;" restype="string" datatype="html">
         <source>Are you an author of this publication? &lt;a class="add_user_as_author"&gt;Yes, add me to the list&lt;/a&gt;</source>
@@ -9600,7 +9624,7 @@
     <body>
       <trans-unit id="2421" resname="These files will always be private and HIPAA-secure.&lt;a href=&quot;javascript:void(0)&quot; class=&quot;privacy_link_h&quot;&gt;See our privacy statement.&lt;/a&gt;" restype="string" datatype="html">
         <source>These files will always be private and HIPAA-secure.&lt;a href="javascript:void(0)" class="privacy_link_h"&gt;See our privacy statement.&lt;/a&gt;</source>
-        <target state="translated">这些文件一直会私密的和HIPAA安全加密。&lt;a href="javascript:void(0)" class="privacy_link_h"&gt;查看您的隐私申明&lt;/a&gt;</target>
+        <target state="translated">这些文件一直会私密的和HIPPA加密。&lt;a href="javascript:void(0)" class="privacy_link_h"&gt;查看您的隐私申明&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9992,7 +10016,7 @@
     <body>
       <trans-unit id="2477" resname="By signing up, I agree with the&lt;a style=&quot;padding:4px 0&quot;&gt;&lt;span class=&quot;bold term_of_use_h&quot;&gt;Terms&lt;/span&gt;&lt;/a&gt;&amp;amp;&lt;a style=&quot;padding:4px 0&quot;&gt;&lt;span class=&quot;bold privacy_policy_h&quot;&gt;Privacy&lt;/span&gt;&lt;/a&gt;and I&apos;m 16 years or over." restype="string" datatype="html">
         <source>By signing up, I agree with the &lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;Terms&lt;/span&gt;&lt;/a&gt; &amp;amp; &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;Privacy&lt;/span&gt;&lt;/a&gt; and I'm 16 years or over.</source>
-        <target state="translated">通过签名，您同意我们的&lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;按专科分类的回答&lt;/span&gt;&lt;/a&gt; 和 &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;隐私政策&lt;/span&gt;&lt;/a&gt;，并确认您16周岁以上。</target>
+        <target state="translated">通过签名，您同意我们的&lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;使用条款&lt;/span&gt;&lt;/a&gt; 和 &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;隐私政策&lt;/span&gt;&lt;/a&gt;，并确认您16周岁以上。</target>
       </trans-unit>
     </body>
   </file>
@@ -10024,7 +10048,7 @@
     <body>
       <trans-unit id="2481" resname="Operation Smile, Doctors without Borders, American Red Cross, Susan G. Komen for the Cure,&lt;span class=&quot;hidden_content_h&quot;&gt;Direct Relief International, African Medical &amp;#38; Research Foundation (AMREF), Against Malaria Foundation, Nurse Family Partnership, Naya Health, Schistosomiasis Control Initiative (SCI), MAP International, Global Partners for Development,&lt;/span&gt;" restype="string" datatype="html">
         <source>Operation Smile, Doctors without Borders, American Red Cross, Susan G. Komen for the Cure, &lt;span class="hidden_content_h"&gt;Direct Relief International, African Medical &amp;#38; Research Foundation (AMREF), Against Malaria Foundation, Nurse Family Partnership, Naya Health, Schistosomiasis Control Initiative (SCI), MAP International, Global Partners for Development, &lt;/span&gt;</source>
-        <target state="translated">微笑行动，无国界医生，美国红十字会，苏珊•科门乳腺癌防治基金会，&lt;span class="hidden_content_h"&gt; 国际直接救济组织，非洲医学&amp;#38;研究基金会，疾基金会，护士家庭合作计划，纳亚健康，血吸虫病控制计划，MAP国际，全球发展伙伴&lt;span&gt;</target>
+        <target state="translated">微笑行动，医生无国界，美国红十字会，苏珊•科门乳腺癌防治基金会，&lt;span class="hidden_content_h"&gt; 国际直接救济组织，非洲医学&amp;#38;研究基金会，疾基金会，护士家庭合作计划，纳亚健康，血吸虫病控制计划，MAP国际，全球发展伙伴&lt;span&gt;</target>
       </trans-unit>
       <trans-unit id="2482" resname="Get better answers.&lt;a href=&quot;#&quot; class=&quot;guidelines_h&quot;&gt;How to write good questions ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Get better answers. &lt;a href="#" class="guidelines_h"&gt;How to write good questions ›&lt;/a&gt;</source>
@@ -10032,11 +10056,11 @@
       </trans-unit>
       <trans-unit id="2483" resname="By signing up, you agree to our&lt;a style=&quot;padding:4px 0&quot;&gt;&lt;span class=&quot;bold term_of_use_h&quot;&gt;Terms of Use&lt;/span&gt;&lt;/a&gt;and&lt;a style=&quot;padding:4px 0&quot;&gt;&lt;span class=&quot;bold privacy_policy_h&quot;&gt;Privacy Policy&lt;/span&gt;&lt;/a&gt;, and confirm you are 16 or over." restype="string" datatype="html">
         <source>By signing up, you agree to our &lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;Terms of Use&lt;/span&gt;&lt;/a&gt; and &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;Privacy Policy&lt;/span&gt;&lt;/a&gt;, and confirm you are 16 or over.</source>
-        <target state="translated">通过签名，您同意我们的&lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;按专科分类的回答&lt;/span&gt;&lt;/a&gt; 和 &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;隐私政策&lt;/span&gt;&lt;/a&gt;，并确认您16周岁以上。</target>
+        <target state="translated">通过签名，您同意我们的&lt;a style="padding:4px 0"&gt;&lt;span class="bold term_of_use_h"&gt;使用条款&lt;/span&gt;&lt;/a&gt; 和 &lt;a style="padding:4px 0"&gt;&lt;span class="bold privacy_policy_h"&gt;隐私政策&lt;/span&gt;&lt;/a&gt;，并确认您16周岁以上。</target>
       </trans-unit>
       <trans-unit id="2484" resname="Operation Smile, Doctors without Borders, American Red Cross, Susan G. Komen for the Cure,&lt;span class=&quot;hidden_content_character_h&quot;&gt;Direct Relief International, African Medical &amp;#38; Research Foundation (AMREF), Against Malaria Foundation, Nurse Family Partnership, Naya Health, Schistosomiasis Control Initiative (SCI), MAP International, Global Partners for Development,&lt;/span&gt;" restype="string" datatype="html">
         <source>Operation Smile, Doctors without Borders, American Red Cross, Susan G. Komen for the Cure, &lt;span class="hidden_content_character_h"&gt;Direct Relief International, African Medical &amp;#38; Research Foundation (AMREF), Against Malaria Foundation, Nurse Family Partnership, Naya Health, Schistosomiasis Control Initiative (SCI), MAP International, Global Partners for Development, &lt;/span&gt;</source>
-        <target state="translated">微笑行动，无国界医生，美国红十字会，苏珊•科门乳腺癌防治基金会，&lt;span class="hidden_content_h"&gt; 国际直接救济组织，非洲医学&amp;#38;研究基金会，疾基金会，护士家庭合作计划，纳亚健康，血吸虫病控制计划，MAP国际，全球发展伙伴&lt;span&gt;</target>
+        <target state="translated">微笑行动，医生无国界，美国红十字会，苏珊•科门乳腺癌防治基金会，&lt;span class="hidden_content_h"&gt; 国际直接救济组织，非洲医学&amp;#38;研究基金会，疾基金会，护士家庭合作计划，纳亚健康，血吸虫病控制计划，MAP国际，全球发展伙伴&lt;span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -10112,7 +10136,7 @@
       </trans-unit>
       <trans-unit id="2497" resname="You have now un-subscribed to the &quot;App of the week&quot; notification." restype="string" datatype="javascript">
         <source>You have now un-subscribed to the "App of the week" notification.</source>
-        <target state="translated">您未订购“本周应用程序”通知。</target>
+        <target state="translated">您取消订购了“本周应用程序”通知。</target>
       </trans-unit>
     </body>
   </file>

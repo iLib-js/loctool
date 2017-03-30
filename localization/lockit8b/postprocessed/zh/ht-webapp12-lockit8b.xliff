@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="23" resname="r301114423" restype="string" datatype="ruby">
         <source>Watch video</source>
-        <target state="translated">看录像</target>
+        <target state="translated">看视频</target>
       </trans-unit>
     </body>
   </file>
@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="40" resname="r233052603" restype="string" datatype="ruby">
         <source>You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists</source>
-        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用程序推荐和检查清单。</target>
+        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用程序推荐和清单。</target>
       </trans-unit>
     </body>
   </file>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="66" resname="r951784064" restype="string" datatype="ruby">
         <source>Managing a Condition</source>
-        <target state="translated">管理症状/健康状况</target>
+        <target state="translated">管理健康状况</target>
       </trans-unit>
     </body>
   </file>

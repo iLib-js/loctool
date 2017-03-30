@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="2" resname="r210037132" restype="string" datatype="ruby">
         <source>The first response to an inquiry on HealthTap came from a New Jersey pediatrician, Dr. Anatoloy Belilovsky, who answered the question: "Should I be concerned about my baby's previous vaccinations?"</source>
-        <target state="translated">对HealthTap调查的第一个回复来自新泽西州的儿科医生Anatoloy Belilovsky医生，他回答了这个问题：“我应该关心我宝宝以前接种过的疫苗吗？</target>
+        <target state="translated">对HealthTap问题的第一个回复来自新泽西州的儿科医生Anatoloy Belilovsky医生，他回答了这个问题：“我应该担心我宝宝以前接种过的疫苗吗？</target>
       </trans-unit>
       <trans-unit id="3" resname="r112848820" restype="string" datatype="ruby">
         <source>HealthTap proudly sponsors TEDx Silicon Valley, the most widely viewed TEDx event in the world, with live streaming audiences in 50 countries and over 330,000 global views. The event, themed "Living by Numbers," focused on how numbers can impact and improve our daily lives and featured speakers like Chris Anderson, Mitch Kapor and Tim O'Reilly.</source>
@@ -108,7 +108,7 @@
     <body>
       <trans-unit id="23" resname="r532169394" restype="string" datatype="ruby">
         <source>So where do medical students come in? I'll see a patient question pop up on the website, and I can submit a draft of the answer. A physician will then edit what I submitted and publish it on the site. It has been a fantastic learning experience for me, as I frequently have to do some research in order to answer the question. The physician editing process mirrors what actually happens in real life when I present a patient during morning rounds. In the hospital, some of the physicians in the hospital will tear my presentation apart, correcting me or questioning everything I say, while other docs just let me present and tell me I did a good job after.</source>
-        <target state="translated">那么医学学生进入的地方是什么呢？我会在网站上看到一个突然出现的患者问题，我可以提交回答草稿。然后医生将编辑我提交的内容并在网站上发布。这对我来说是一个奇妙的学习经历，因为我经常需要做一些研究，以回答这个问题。医生编辑过程反映了我在真实生活中给患者查房的经历。在医院，医院里的一些医师会撕掉我的演讲稿，纠正我或质疑我所说的一切，然而这些文件只是让我展示并告诉我，我做得很好。</target>
+        <target state="translated">那么医学院学生的角色是什么呢？我会在网站上看到一个突然出现的患者问题，我可以提交回答草稿。然后医生将编辑我提交的内容并在网站上发布。这对我来说是一个奇妙的学习经历，因为我经常需要做一些研究，以回答这个问题。医生编辑过程反映了我在真实生活中给患者查房的经历。在医院，医院里的一些医师会撕掉我的演讲稿，纠正我或质疑我所说的一切，然而这些文件只是让我展示并告诉我，我做得很好。</target>
       </trans-unit>
     </body>
   </file>
@@ -140,7 +140,7 @@
     <body>
       <trans-unit id="31" resname="r60177276" restype="string" datatype="ruby">
         <source>Asked on %{month} %{day}, %{year}. No responses yet</source>
-        <target state="translated">在%{month}%{day}, %{year}已询问。尚未回应</target>
+        <target state="translated">在%{month}%{day}, %{year}已询问。尚无回应</target>
       </trans-unit>
     </body>
   </file>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r672805040" restype="string" datatype="ruby">
         <source>"What would you like to talk to a doctor about?</source>
-        <target state="translated">“您希望与医生交谈什么？</target>
+        <target state="translated">“您希望与医生谈些什么？</target>
       </trans-unit>
     </body>
   </file>
@@ -322,7 +322,7 @@
       </trans-unit>
       <trans-unit id="65" resname="r745686520" restype="string" datatype="ruby">
         <source>Goodbye doctor's appointments and waiting rooms, hello &lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;.</source>
-        <target>再见医生的预约与候诊室，你好&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;。</target>
+        <target>再见医生的预约与候诊室，您好&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;。</target>
       </trans-unit>
       <trans-unit id="66" resname="r189144575" restype="string" datatype="ruby">
         <source>Mobile health startup &lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; has acquired the health business of Avvo to build out its network of doctors and patients.</source>
@@ -394,7 +394,7 @@
       </trans-unit>
       <trans-unit id="83" resname="r667509670" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; distinguishes itself from other health education websites by having practicing physicians answer the consumers' questions.</source>
-        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;通过诊疗医师回答消费者的问题来与其它健康教育网站区分开来</target>
+        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;通过诊疗医师回答消费者的问题来与其它健康教育网站区分开来。</target>
       </trans-unit>
       <trans-unit id="84" resname="r582487920" restype="string" datatype="ruby">
         <source>Trust is the cornerstone of &lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;.</source>
@@ -406,7 +406,7 @@
       </trans-unit>
       <trans-unit id="86" resname="r1012290290" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; aims to harness the mobile revolution to bring the house calls back into vogue - albeit virtually.</source>
-        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;旨在利用移动革命将出诊变得流行——尽管是在线的</target>
+        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;旨在利用移动革命将出诊变得流行——尽管是在线的。</target>
       </trans-unit>
       <trans-unit id="87" resname="r262153501" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; Adds App Suite, Doctor Consults via Text</source>
@@ -418,11 +418,11 @@
       </trans-unit>
       <trans-unit id="89" resname="r201711711" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; Takes Q&amp;A with Your Physician Mobile.</source>
-        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;用您的医生手机进行Q&amp;A。</target>
+        <target>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;用您的医生手机进行问答。</target>
       </trans-unit>
       <trans-unit id="90" resname="r141935586" restype="string" datatype="ruby">
         <source>When we first heard about &lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;, we were intrigued but thought for sure there must be a catch. But after meeting Gutman, I’m sold.</source>
-        <target>当我们第一次听说&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;时，我们很感兴趣，但是一定要记住。 但在会见Gutman后，我被彻底说服了。</target>
+        <target>当我们第一次听说&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;时，我们很感兴趣，但想它一定不会那么好。 但在会见Gutman后，我被彻底说服了。</target>
       </trans-unit>
       <trans-unit id="91" resname="r824600387" restype="string" datatype="ruby">
         <source>[&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;] brilliantly shows the diversity of the medical community by allowing different physicians to answer the same question.</source>
@@ -558,7 +558,7 @@
       </trans-unit>
       <trans-unit id="121" resname="r134576110" restype="string" datatype="ruby">
         <source>Hi, my name is %{doc_name}, and I'm a Board Certified U.S. doctor. What seems to be the problem?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。似乎是什么问题？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。哪里似乎有问题？</target>
       </trans-unit>
       <trans-unit id="122" resname="r567035796" restype="string" datatype="ruby">
         <source>Hi, welcome to HealthTap. I'm %{doc_name}, a Board Certified U.S. doctor. What can we help you with today?</source>
@@ -606,7 +606,7 @@
       </trans-unit>
       <trans-unit id="133" resname="r780443167" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. What seems to be the problem?</source>
-        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。似乎是什么问题？</target>
+        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。哪里似乎有问题？</target>
       </trans-unit>
       <trans-unit id="134" resname="r812733104" restype="string" datatype="ruby">
         <source>Welcome to HealthTap. I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How are you doing today?</source>
@@ -907,7 +907,7 @@
     <body>
       <trans-unit id="188" resname="r625042656" restype="string" datatype="ruby">
         <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.&gt;br/&lt;&gt;br/&lt;You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
-        <target state="translated">保持健康更容易，当它是您的日常生活的一部分。以下是一些有帮助的小贴士，用于管理和改善健康与保健，以及HealthTap的健康问题的一些最近的答案。<br/><br/>您可以随时访问我的HealthTap在现在很了，在此之前或访问之间，阅读更多的我的健康问题的回答，并发现更多的健康生活小贴士。</target>
+        <target state="translated">保持健康更容易，当它是您的日常生活的一部分。以下是一些有帮助的小贴士，用于管理和改善健康与保健，以及HealthTap的健康问题的一些最近的答案。&lt;br/&gt;&lt;br/&gt;您可以随时访问我的HealthTap在现在很了，在此之前或访问之间，阅读更多的我的健康问题的回答，并发现更多的健康生活小贴士。</target>
       </trans-unit>
     </body>
   </file>
@@ -1048,7 +1048,7 @@
     <body>
       <trans-unit id="211" resname="r719773679" restype="string" datatype="ruby">
         <source>2) Every time your patients need follow-up care that doesn't require a physical examination, let them know they can check in with you for a virtual visit via smartphone, tablet, or computer. Send them a "Suggest appointment" message for their follow-up virtual visit (your office staff can do this on your Practice portal too.)</source>
-        <target state="translated">2) 每次您的患者需要随访但不需要身体检查，告诉他们可以通过智能手机，平板电脑或计算机与您进行在线访问。向他们发送“建议预约”消息（您的办公室工作人员也可以在您的诊疗门户执行此操作）来进行在线预约。</target>
+        <target state="translated">2) 每当您的患者需要随访但不需要身体检查，告诉他们可以通过智能手机，平板电脑或计算机与您进行在线访问。向他们发送“建议预约”消息（您的办公室工作人员也可以在您的诊疗门户执行此操作）来进行在线预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -1168,7 +1168,7 @@
     <body>
       <trans-unit id="228" resname="r705569970" restype="string" datatype="ruby">
         <source>I just got a new recommendation on HealthTap. %{person} said, "%{message}" read it on my Award Wall.</source>
-        <target state="translated">我刚刚在HealthTap得到一个新的推荐。 %{person}说，在我的奖励墙上上读到的“%{message}”。</target>
+        <target state="translated">我刚刚在HealthTap得到一个新的推荐。 %{person}说，查看我的奖励墙“%{message}”。</target>
       </trans-unit>
     </body>
   </file>
@@ -1272,7 +1272,7 @@
       </trans-unit>
       <trans-unit id="249" resname="r354077385" restype="string" datatype="ruby">
         <source>Does {$person} have a fever of more than 100 degrees Farhenheit as measured by mouth or ear?</source>
-        <target state="translated">{$person}通过嘴或耳量的发烧有超过100华氏度吗？</target>
+        <target state="translated">{$person}通过嘴或耳量的体温有超过100华氏度吗？</target>
       </trans-unit>
       <trans-unit id="250" resname="r336826144" restype="string" datatype="ruby">
         <source>Is there any blood in {$person}'s vomit?</source>
@@ -1292,7 +1292,7 @@
       </trans-unit>
       <trans-unit id="254" resname="r357848547" restype="string" datatype="ruby">
         <source>Is {$person} using a form of birth control?</source>
-        <target state="translated">{$person}是用一种避孕方式吗？</target>
+        <target state="translated">{$person}有没有用某种避孕方式？</target>
       </trans-unit>
       <trans-unit id="255" resname="r966894885" restype="string" datatype="ruby">
         <source>Does {$person} have burning with urination?</source>
@@ -1452,7 +1452,7 @@
       </trans-unit>
       <trans-unit id="294" resname="r912725557" restype="string" datatype="ruby">
         <source>Has {$person} recently been exposed to poison oak or poison ivy?</source>
-        <target state="translated">{$person}最近是否暴露在毒栎或毒藤中？</target>
+        <target state="translated">{$person}最近是否接触过毒栎或毒藤？</target>
       </trans-unit>
       <trans-unit id="295" resname="r256395008" restype="string" datatype="ruby">
         <source>Does {$person} have a family history of breast cancer?</source>
@@ -1508,7 +1508,7 @@
       </trans-unit>
       <trans-unit id="308" resname="r11425710" restype="string" datatype="ruby">
         <source>Has {$person} measured a fever more than 100 degrees Farhenheit by mouth or ear?</source>
-        <target state="translated">{$person}通过嘴或耳测量的发烧有超过100华氏度吗？</target>
+        <target state="translated">{$person}通过嘴或耳测量的体温有超过100华氏度吗？</target>
       </trans-unit>
       <trans-unit id="309" resname="r999605543" restype="string" datatype="ruby">
         <source>Does {$person} have pain shooting down one leg or the other?</source>
@@ -1620,7 +1620,7 @@
       </trans-unit>
       <trans-unit id="336" resname="r539290687" restype="string" datatype="ruby">
         <source>Does {$person} feel like you are getting adequate,restful sleep?</source>
-        <target state="translated">{$person}觉得您得到充足的，安静的睡眠吗？</target>
+        <target state="translated">{$person}觉得得到了充足的，安静的睡眠吗？</target>
       </trans-unit>
       <trans-unit id="337" resname="r18664742" restype="string" datatype="ruby">
         <source>Does {$person} have a family history any of the following?</source>
@@ -1664,7 +1664,7 @@
       </trans-unit>
       <trans-unit id="347" resname="r767294344" restype="string" datatype="ruby">
         <source>Does {$person} often have difficulty concentrating or sustaining their attention while doing something for work, school, or a hobby?</source>
-        <target state="translated">{$person}经常在工作，学习或爱好做某事时难以集中或维持您的注意力吗？</target>
+        <target state="translated">{$person}经常在工作，学习或爱好做某事时难以集中或维持注意力吗？</target>
       </trans-unit>
       <trans-unit id="348" resname="r111301006" restype="string" datatype="ruby">
         <source>Is {$person} having sudden throat/mouth swelling or tightness?</source>
@@ -2240,7 +2240,7 @@
       </trans-unit>
       <trans-unit id="487" resname="r945456079" restype="string" datatype="ruby">
         <source>I thought you'd like to know about %{doctor}</source>
-        <target state="translated">我想您希望了解关于%{doctor}</target>
+        <target state="translated">我想您希望了解%{doctor}</target>
       </trans-unit>
       <trans-unit id="488" resname="r318715433" restype="string" datatype="ruby">
         <source>%{doctor}, %{a_an_specialist}, shares trustworthy, caring answers on HealthTap, helping millions of people feel good! You should follow %{doctor} on HealthTap</source>
@@ -2276,7 +2276,7 @@
       </trans-unit>
       <trans-unit id="496" resname="r898014206" restype="string" datatype="ruby">
         <source>Is %{goal} a goal of yours? Top docs help you achieve this goal with checklists and tips on #HealthTap!</source>
-        <target state="translated">%{goal}是您的目标吗？在#HealthTap的热门文档可帮助您通过清单和小贴士实现此目标！</target>
+        <target state="translated">%{goal}是您的目标吗？在#HealthTap的顶级医生可帮助您通过清单和小贴士实现此目标！</target>
       </trans-unit>
       <trans-unit id="497" resname="r798206901" restype="string" datatype="ruby">
         <source>I thought you'd have a better day after experiencing this FeelGood :) moment from HealthTap.</source>
@@ -2345,7 +2345,7 @@
       <trans-unit id="513" resname="r1066714463" restype="string" datatype="ruby">
         <source>&lt;div&gt;&lt;p&gt;I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device.&lt;/p&gt; &lt;p&gt; Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription!&lt;/p&gt;&lt;p&gt; With HealthTap Prime, you also get:&lt;/p&gt;&lt;ul&gt;&lt;li&gt; Total peace of mind, since you can consult a doctor anytime night or day on any issue&lt;/li&gt;&lt;li&gt; Prioritized answers to any health question you ask through HealthTap’s free service&lt;/li&gt;&lt;li&gt; Health checklists and tips customized just for you&lt;/li&gt;&lt;li&gt; Unlimited access to the world’s leading knowledgebase of doctor-created health information&lt;/li&gt;&lt;li&gt; Total confidentiality, with HIPAA-secure systems that safeguard your privacy&lt;/ul&gt;&lt;p&gt;Subscribe today for ultimate peace of mind!&lt;/p&gt;&lt;/div&gt;</source>
         <target state="translated">&lt;div&gt;&lt;p&gt;我想给您一个代码，将给您关于HealthTap Prime订购$%{amount}的减免，这是一个令人兴奋的新的数字健康服务，给您与顶级医生24/7全天候通过视频，语音或文字聊天的无限制的在线咨询&lt;/p&gt; &lt;p&gt; 使用我的优惠码%{promo_code}，并得到$%{amount}的积分来减免您的HealthTap Prime订购费用！
-&lt;/p&gt;&lt;p&gt;使用HealthTap Prime，您还可以获得：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;完全的安心，因为您可以在任何夜间或白天对任何问题随时咨询医生&lt;/li&gt;&lt;li&gt;通过HealthTap的免费服务提出的任何健康问题的优先答案&lt;/li&gt;&lt;li&gt;只为您定制的健康清单和小贴士&lt;/li&gt;&lt;li&gt;无限访问世界领先的医生创建的健康信息的知识库&lt;/li&gt;&lt;li&gt;完全保密，采用HIPAA安全系统，保护您的隐私&lt;/ul&gt;&lt;p&gt;立即订购以获得最终的安心！&lt;/p&gt;&lt;/div&gt;</target>
+&lt;/p&gt;&lt;p&gt;使用HealthTap Prime，您还可以获得：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;完全的安心，因为您可以在任何夜间或白天对任何问题随时咨询医生&lt;/li&gt;&lt;li&gt;通过HealthTap的免费服务提出的任何健康问题的优先答案&lt;/li&gt;&lt;li&gt;只为您定制的健康清单和小贴士&lt;/li&gt;&lt;li&gt;无限访问世界领先的医生创建的健康信息的知识库&lt;/li&gt;&lt;li&gt;完全保密，采用HIPPA加密系统，保护您的隐私&lt;/ul&gt;&lt;p&gt;立即订购以获得最终的安心！&lt;/p&gt;&lt;/div&gt;</target>
       </trans-unit>
       <trans-unit id="514" resname="r501921449" restype="string" datatype="ruby">
         <source>A gift for you: Use code %{promo_code} and get $%{amount} off a subscription to HealthTap Prime for unlimited live doctor consults 24/7!</source>
@@ -2361,7 +2361,7 @@
       </trans-unit>
       <trans-unit id="517" resname="r952148758" restype="string" datatype="ruby">
         <source>Connect with me on HealthTap with my special keycode: %{key_code}! Schedule appointments to video chat, text, or message me during on my Virtual Practice!</source>
-        <target state="translated">使用我的特殊号码：%{key_code}在HealthTap上与我联系！ 在我的在线诊疗期间通过视频聊天，文字或给我发送消息安排预约！</target>
+        <target state="translated">使用我的密钥：%{key_code}在HealthTap上与我联系！ 在我的在线诊疗期间通过视频聊天，文字或给我发送消息安排预约！</target>
       </trans-unit>
       <trans-unit id="518" resname="r569166535" restype="string" datatype="ruby">
         <source>Hi,\n\nI just helped bring healthcare to those in need through HealthTap's Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}.\n\nVirtual doctor consults bring high-quality medical expertise and top doctor knowledge.\n\n*Doctors are immediately available 24/7\n*Get advice and prescriptions sent to your local pharmacy\n*Use a tailored action plan with timely, helpful reminders\n\nHelp yourself while helping others: www.healthtap.com/get_and_give_health</source>
@@ -2389,7 +2389,7 @@
       </trans-unit>
       <trans-unit id="525" resname="r24804746" restype="string" datatype="ruby">
         <source>%{num_docs} top U.S. doctors reviewed treatments for popular conditions and symptoms on HealthTap. The results are amazing. Check them out!</source>
-        <target state="translated">%{num_docs}名美国顶尖医生评论了HealthTap上的流行病症和症状的治疗方法。 结果是惊人的。 去看一下！</target>
+        <target state="translated">%{num_docs}名美国顶尖医生评论了HealthTap上的流行病症和症状的治疗。 结果是惊人的。 去看一下！</target>
       </trans-unit>
       <trans-unit id="526" resname="r786762726" restype="string" datatype="ruby">
         <source>NEW: Top doctors review treatments for %{treatment} on @HealthTap #RateRx!</source>
@@ -3038,11 +3038,11 @@
     <body>
       <trans-unit id="665" resname="r798276311" restype="string" datatype="x-haml">
         <source>Suggest an answer</source>
-        <target state="translated">提出一个回答</target>
+        <target state="translated">做出回答</target>
       </trans-unit>
       <trans-unit id="666" resname="r786366358" restype="string" datatype="x-haml">
         <source>Suggest Answer</source>
-        <target state="translated">提出回答</target>
+        <target state="translated">做出回答</target>
       </trans-unit>
       <trans-unit id="667" resname="r102786026" restype="string" datatype="x-haml">
         <source>This is based on the translation from an English answer on HealthTap</source>
@@ -3186,7 +3186,7 @@
     <body>
       <trans-unit id="696" resname="Write a recommendation for &lt;%= short_name %&gt;" restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= short_name %&gt;</source>
-        <target state="translated">在这里写一条推荐为 &lt;%= expert.full_name %&gt;</target>
+        <target state="translated">在这里写一条推荐给 &lt;%= expert.full_name %&gt;</target>
       </trans-unit>
     </body>
   </file>

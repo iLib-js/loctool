@@ -25,7 +25,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p, 
@@ -43,7 +45,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({project: p, pathName: "foo"});
         test.ok(alf);
@@ -56,7 +60,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({project: p, pathName: "foo"});
         test.ok(alf);
@@ -71,7 +77,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -90,7 +98,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p
@@ -127,7 +137,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -163,7 +175,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -198,7 +212,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p
@@ -236,7 +252,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -279,7 +297,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -319,7 +339,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -372,7 +394,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p, 
@@ -400,7 +424,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -423,7 +449,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile(p, "./java/foo.java");
         test.ok(alf);
@@ -443,7 +471,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -483,7 +513,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -531,7 +563,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
 			project: p,
@@ -580,7 +614,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p, 
@@ -600,7 +636,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -620,7 +658,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -638,7 +678,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -657,7 +699,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -676,7 +720,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p,
@@ -695,15 +741,17 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p, 
-        	pathName: "./res/layout-zh-sHant-rCN-bar/foo.xml"
+        	pathName: "./res/layout-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(alf);
         
-        test.equal(alf.getLocale(), "zh-Hant-CN");
+        test.equal(alf.getLocale(), "zh-Hans-CN");
         test.equal(alf.getContext(), "bar");
 
         test.done();
@@ -714,7 +762,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidLayoutFile({
         	project: p

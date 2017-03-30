@@ -227,7 +227,7 @@
         <target state="translated">只要是相关的，包括体重、身高以及计量单位。&lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex5' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄这个身高体重正常吗？&lt;br&gt;
-					&lt;span class="bad"&gt;不太好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄正常吗？&lt;/span&gt;</target>
+					&lt;span class="bad"&gt;不太好：&lt;/span&gt;我儿子3，重27，高34。在他这个年龄正常吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="732" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.&lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?&lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -345,7 +345,7 @@
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">开始一次私人会话
-		&lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPAA安全，一对一的设置下</target>
+		&lt;span class="sub_title"&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPPA加密，一对一的设置下</target>
       </trans-unit>
     </body>
   </file>
@@ -408,7 +408,15 @@
       </trans-unit>
       <trans-unit id="764" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">与已育女性医生联系，医生会对你的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
+        <target state="translated">与已育女性医生联系，医生会对您的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="768" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告			它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -416,7 +424,7 @@
     <body>
       <trans-unit id="779" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
         <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
+        <target state="translated">1#这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt; 更多解答！|            #这里有 &lt;b&gt;{n}医生对这个问题的&lt;/b&gt;更多解答！</target>
       </trans-unit>
     </body>
   </file>
@@ -424,7 +432,7 @@
     <body>
       <trans-unit id="784" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
         <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;为了协助，您可以联系我们在                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;如需协助，您可以联系我们                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -508,7 +516,7 @@
     <body>
       <trans-unit id="848" resname="Can&apos;t find the right doctor" restype="string" datatype="javascript">
         <source>Can't find the right doctor</source>
-        <target state="translated">没有为您找到合适的医生</target>
+        <target state="translated">没有找到合适的医生</target>
       </trans-unit>
       <trans-unit id="849" resname="Can&apos;t get the prescriptions I want/need" restype="string" datatype="javascript">
         <source>Can't get the prescriptions I want/need</source>
@@ -516,7 +524,7 @@
       </trans-unit>
       <trans-unit id="850" resname="We&apos;re sorry to see you downgrade!" restype="string" datatype="javascript">
         <source>We're sorry to see you downgrade!</source>
-        <target state="translated">我们很抱歉对您的降级！</target>
+        <target state="translated">我们很抱歉看到您降级！</target>
       </trans-unit>
     </body>
   </file>
@@ -544,7 +552,7 @@
     <body>
       <trans-unit id="869" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">发送您的问题以接收一个或多个信息文本答案           在一天内，我们的{n}医生在137个专业的网络。</target>
+        <target state="translated">发送您的问题，在一天内收到           我们网络内来自137个专科的医生的回答。</target>
       </trans-unit>
     </body>
   </file>
@@ -892,7 +900,7 @@
       </trans-unit>
       <trans-unit id="956" resname=":text" restype="string" datatype="x-yaml" x-context="Your Prime Virtual Practice@2">
         <source>Confirming a change in your shift schedule</source>
-        <target state="translated">确认您的轮班安排更改</target>
+        <target state="translated">确认您的轮班时间表变更</target>
       </trans-unit>
       <trans-unit id="957" resname=":text" restype="string" datatype="x-yaml" x-context="Your Prime Virtual Practice@3">
         <source>Alert when you appear to be 'Unavailable' during your Committed shift</source>

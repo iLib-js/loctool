@@ -44,7 +44,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -65,7 +67,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
         	project: p,
@@ -87,7 +91,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -95,13 +101,13 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'Working_at_HealthTap: Working at HealthTap\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
         		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
         		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'  directly from experienced, successful entrepreneurs.\n');
+        		'  directly from experienced, successful entrepreneurs.\n' +
+        		'Working_at_HealthTap: Working at HealthTap\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -127,7 +133,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -204,7 +212,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -283,7 +293,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -350,7 +362,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -385,7 +399,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -413,7 +429,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -441,7 +459,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -492,7 +512,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -518,7 +540,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -545,7 +569,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -574,13 +600,13 @@ module.exports = {
         });
 
         diff(yml.getContent(),
-    		'source_text: Quellen\"text\n' +
-        	'more_source_text: mehr Quellen\"text\n'
+           	'more_source_text: mehr Quellen\"text\n' +
+    		'source_text: Quellen\"text\n'
         );
 
         test.equal(yml.getContent(),
-        	'source_text: Quellen\"text\n' +
-        	'more_source_text: mehr Quellen\"text\n'
+        	'more_source_text: mehr Quellen\"text\n' +
+           	'source_text: Quellen\"text\n'
         );
 
         test.done();
@@ -595,7 +621,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -623,15 +651,13 @@ module.exports = {
         	yml.addResource(res);
         });
 
-        diff(yml.getContent(),
-            	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-            	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
-    	    );
+        var expected = 
+        	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
+        	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n";
+        
+        diff(yml.getContent(), expected);
 
-        test.equal(yml.getContent(),
-        	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-        	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
-        );
+        test.equal(yml.getContent(), expected);
 
         test.done();
     },
@@ -645,7 +671,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -673,19 +701,15 @@ module.exports = {
         	yml.addResource(res);
         });
 
-        diff(yml.getContent(),
+        var expected =
+	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n" +
 	    	"short key: |-\n" +
 	    	"  this is text that is relatively long and can run past the end of the page\n" +
-	    	"  So, we put a new line in the middle of it.\n" +
-	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
-	    );
+	    	"  So, we put a new line in the middle of it.\n";
+        	
+        diff(yml.getContent(), expected);
 
-        test.equal(yml.getContent(),
-	    	"short key: |-\n" +
-	    	"  this is text that is relatively long and can run past the end of the page\n" +
-	    	"  So, we put a new line in the middle of it.\n" +
-	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
-        );
+        test.equal(yml.getContent(), expected);
 
         test.done();
     },
@@ -699,7 +723,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -729,21 +755,16 @@ module.exports = {
         	yml.addResource(res);
         });
 
-        diff(yml.getContent(),
+        var expected =
 	    	"foo:\n" +
 	    	"  bar:\n" +
-	    	"    key1: medium length text that doesn't go beyond one line\n" +
 	    	"    asdf:\n" +
-	    	"      key2: short text\n"
-	    );
+	    	"      key2: short text\n" +
+	    	"    key1: medium length text that doesn't go beyond one line\n";
+        	
+        diff(yml.getContent(), expected);
 
-        test.equal(yml.getContent(),
-	    	"foo:\n" +
-	    	"  bar:\n" +
-	    	"    key1: medium length text that doesn't go beyond one line\n" +
-	    	"    asdf:\n" +
-	    	"      key2: short text\n"
-        );
+        test.equal(yml.getContent(), expected);
 
         test.done();
     },
@@ -757,7 +778,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -780,7 +803,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -812,7 +837,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -846,7 +873,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -880,7 +909,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -911,7 +942,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -972,7 +1005,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1014,7 +1049,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1056,7 +1093,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1098,7 +1137,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1141,7 +1182,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1183,14 +1226,14 @@ module.exports = {
 
         var expected =
 			'doctor_thanked_note_life_saved:\n' +
-			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
-			'  subject: You’ve been thanked for saving a life!\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
-			'  push_data: You’ve saved a life! View %1\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
 			'  global_link: generic_link\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
 			'  setting_name: doctor_thanked_note_life_saved\n' +
-			'  daily_limit_exception_email: true\n';
+			'  subject: You’ve been thanked for saving a life!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -1207,7 +1250,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1279,14 +1324,14 @@ module.exports = {
 
         var expected =
 			'doctor_thanked_note_life_saved:\n' +
-			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
-			'  subject: Vous avez été remercié pour sauver une vie!\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
-			'  push_data: Vous avez sauvé une vie! Voir %1\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
 			'  global_link: generic_link\n' +
+			'  push_data: Vous avez sauvé une vie! Voir %1\n' +
 			'  setting_name: doctor_thanked_note_life_saved\n' +
-			'  daily_limit_exception_email: true\n';
+			'  subject: Vous avez été remercié pour sauver une vie!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -1302,7 +1347,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1323,7 +1370,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p
@@ -1343,7 +1392,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1363,7 +1414,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1384,7 +1437,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1405,7 +1460,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1429,7 +1486,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1462,7 +1521,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1482,7 +1543,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1503,7 +1566,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1525,7 +1590,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1547,7 +1614,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1569,7 +1638,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1589,7 +1660,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1613,7 +1686,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1637,7 +1712,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1664,7 +1741,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
             project: p,
@@ -1691,11 +1770,11 @@ module.exports = {
             yml.addResource(res);
         });
 
-        var expected = "" +
-        "asdf:\n"+
-        "  one: This is singular\n" +
-        "  two: This is double\n" +
-        "  few: This is a different case\n"
+        var expected =
+	        "asdf:\n"+
+	        "  few: This is a different case\n" +
+	        "  one: This is singular\n" +
+	        "  two: This is double\n";
 
         diff(yml.getContent(),expected);
 
