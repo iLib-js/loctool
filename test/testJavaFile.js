@@ -1285,7 +1285,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var j = new JavaFile(p, "./java/AskPickerSearchFragment.java");
         test.ok(j);
@@ -1313,5 +1315,5 @@ module.exports = {
         test.equal(r.getKey(), "r554083360");
 
         test.done();
-    },
+    }
 };
