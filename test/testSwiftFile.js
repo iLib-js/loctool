@@ -61,6 +61,51 @@ module.exports = {
         test.done();
     },
 
+    testSwiftFileMakeKeyCleaned: function(test) {
+        test.expect(2);
+
+        var p = new SwiftProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new SwiftFile(p);
+        test.ok(j);
+        
+        test.equal(j.makeKey("   This\t is\n a test.   "), "This is a test.");
+        
+        test.done();
+    },
+
+    testSwiftFileMakeKeyUnescapeQuotes: function(test) {
+        test.expect(2);
+
+        var p = new SwiftProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new SwiftFile(p);
+        test.ok(j);
+        
+        test.equal(j.makeKey("This \\\"is\\\" \\'a test\\'."), "This \"is\" 'a test'.");
+        
+        test.done();
+    },
+
+    testSwiftFileMakeKeyUnescapeBackslash: function(test) {
+        test.expect(2);
+
+        var p = new SwiftProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new SwiftFile(p);
+        test.ok(j);
+        
+        test.equal(j.makeKey("This \\\\is a test."), "This \\is a test.");
+        
+        test.done();
+    },
+
     testSwiftFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 
@@ -168,7 +213,7 @@ module.exports = {
         var j = new SwiftFile(p);
         test.ok(j);
         
-        j.parse('   NSLocalizedString  (  "This is a test"  ,     "translator\'s comment"   )         ');
+        j.parse('   NSLocalizedString  (  "This is a test"  ,  comment:   "translator\'s comment"   )         ');
         
         var set = j.getTranslationSet();
         test.ok(set);
@@ -475,7 +520,7 @@ module.exports = {
     },
 
     testSwiftFileExtractFile: function(test) {
-        test.expect(42);
+        test.expect(26);
 
         var p = new SwiftProject({
         	sourceLocale: "en-US"
@@ -489,66 +534,42 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 10);
+        test.equal(set.size(), 27);
         
-        var r = set.getBySource("Staff");
+        var r = set.getBySource("Options");
         test.ok(r);
-        test.equal(r.getSource(), "Staff");
-        test.equal(r.getKey(), "Staff");
-        test.ok(!r.getComment());
+        test.equal(r.getSource(), "Options");
+        test.equal(r.getKey(), "Options");
+        test.equal(r.getComment(), "Add Action sheet message");
 
-        r = set.getBySource("Patient");
+        r = set.getBySource("Error logging out");
         test.ok(r);
-        test.equal(r.getSource(), "Patient");
-        test.equal(r.getKey(), "Patient");
-        test.ok(!r.getComment());
+        test.equal(r.getSource(), "Error logging out");
+        test.equal(r.getKey(), "Error logging out");
+        test.equal(r.getComment(), "Error logging out title");
         
-        r = set.getBySource("Left consult");
+        r = set.getBySource("Reason for visit");
         test.ok(r);
-        test.equal(r.getSource(), "Left consult");
-        test.equal(r.getKey(), "Left consult");
-        test.ok(!r.getComment());
+        test.equal(r.getSource(), "Reason for visit");
+        test.equal(r.getKey(), "Reason for visit");
+        test.equal(r.getComment(), "appointment table view section header");
 
-        r = set.getBySource("Owner");
+        r = set.getBySource("You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
         test.ok(r);
-        test.equal(r.getSource(), "Owner");
-        test.equal(r.getKey(), "Owner");
-        test.equal(r.getComment(), "Owner of the consult");
+        test.equal(r.getSource(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
+        test.equal(r.getKey(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
+        test.equal(r.getComment(), "message subheader shown when no appointments in get help feed");
 
-        r = set.getBySource("Inviting ...");
+        r = set.getBySource("Login");
         test.ok(r);
-        test.equal(r.getSource(), "Inviting ...");
-        test.equal(r.getKey(), "Inviting ...");
-        test.ok(!r.getComment());
+        test.equal(r.getSource(), "Login");
+        test.equal(r.getKey(), "Login");
+        test.ok(!r.getComment()); // it's there, but a zero-length string, so it should say there is no comment
 
-        r = set.getBySource("Joined");
+        r = set.getBySource("Save time");
         test.ok(r);
-        test.equal(r.getSource(), "Joined");
-        test.equal(r.getKey(), "Joined");
-        test.ok(!r.getComment());
-
-        r = set.getBySource("Remove");
-        test.ok(r);
-        test.equal(r.getSource(), "Remove");
-        test.equal(r.getKey(), "Remove");
-        test.ok(!r.getComment());
-
-        r = set.getBySource("Make owner");
-        test.ok(r);
-        test.equal(r.getSource(), "Make owner");
-        test.equal(r.getKey(), "Make owner");
-        test.equal(r.getComment(), " ... of the consult");
-
-        r = set.getBySource("Calling ...");
-        test.ok(r);
-        test.equal(r.getSource(), "Calling ...");
-        test.equal(r.getKey(), "Calling ...");
-        test.ok(!r.getComment());
-
-        r = set.getBySource("Call now");
-        test.ok(r);
-        test.equal(r.getSource(), "Call now");
-        test.equal(r.getKey(), "Call now");
+        test.equal(r.getSource(), "Save time");
+        test.equal(r.getKey(), "Save time");
         test.ok(!r.getComment());
 
         test.done();
