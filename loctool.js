@@ -227,8 +227,9 @@ function walk(dir, project) {
 	var pathName, relPath, included, stat;
 	
 	list.forEach(function (file) {
+		var root = project ? project.getRoot() : settings.rootDir;
 		pathName = path.join(dir, file);
-		relPath = path.relative(project.getRoot(), pathName);
+		relPath = path.relative(root, pathName);
 		included = true;
 
 		if (project) {
@@ -256,10 +257,10 @@ function walk(dir, project) {
 				walk(pathName, project);
 			} else {
 				if (project) {
-					logger.info(pathName);
-					project.addPath(pathName);
+					logger.info(relPath);
+					project.addPath(relPath);
 				} else {
-					logger.trace("Ignoring non-project file: " + pathName);
+					logger.trace("Ignoring non-project file: " + relPath);
 				}
 			}
 		} else {
