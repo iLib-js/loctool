@@ -1,7 +1,7 @@
 /*
- * testObjectiveCFileTypeType.js - test the HTML template file type handler object.
+ * testObjectiveCFileTypeType.js - test the Objective C file type handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc. All Rights Reserved.
  */
 
 if (!ObjectiveCFileType) {
