@@ -15,7 +15,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         
@@ -29,7 +31,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
@@ -44,7 +48,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
@@ -59,7 +65,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
@@ -77,7 +85,9 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
@@ -95,7 +105,9 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);

@@ -1381,7 +1381,7 @@
       </trans-unit>
       <trans-unit id="293" resname="r848718286" restype="string" datatype="ruby">
         <source>Get faster responses with priority status whenever you send a text question to our network of %{num_docs} top doctors</source>
-        <target>Obtén respuestas más rápidas con estado prioritario cuando sea que envíes una pregunta de texto a nuestra red de ${num_docs} de los mejores doctores</target>
+        <target>Obtén respuestas más rápidas con estado prioritario cuando sea que envíes una pregunta de texto a nuestra red de %{num_docs} de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="294" resname="r945044374" restype="string" datatype="ruby">
         <source>Enjoy special promotional codes to gift your friends and family: 15 FREE days of HealthTap Prime for them and $30 off for you with each referral</source>

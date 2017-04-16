@@ -28,7 +28,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -50,7 +52,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -98,7 +102,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -133,8 +139,8 @@ module.exports = {
         
         test.equal(jsrf.getContent(),
         	'ilib.data.strings_de_DE = {\n' +
-        	'    "source text": "Quellentext",\n' +
         	'    "more source text": "mehr Quellentext",\n' +
+        	'    "source text": "Quellentext",\n' +
         	'    "yet more source text": "noch mehr Quellentext"\n' +
         	'};\n'
         );
@@ -151,7 +157,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -177,7 +185,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -205,8 +215,8 @@ module.exports = {
         
         test.equal(jsrf.getContent(),
         	'ilib.data.strings_de_DE = {\n' +
-        	'    "source text": "Quellen\\"text",\n' +
-        	'    "more source text": "mehr Quellen\\"text"\n' +
+        	'    "more source text": "mehr Quellen\\"text",\n' +
+        	'    "source text": "Quellen\\"text"\n' +
         	'};\n'
         );
         
@@ -222,7 +232,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -250,8 +262,8 @@ module.exports = {
         
         test.equal(jsrf.getContent(),
         	'ilib.data.strings_de_DE = {\n' +
-        	'    "source text": "Quellen\'text",\n' +
-        	'    "more source text": "mehr Quellen\'text"\n' +
+        	'    "more source text": "mehr Quellen\'text",\n' +
+        	'    "source text": "Quellen\'text"\n' +
         	'};\n'
         );
         

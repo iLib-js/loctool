@@ -12,6 +12,19 @@ if (!AndroidResourceFile) {
     var ResourceArray =  require("../lib/ResourceArray.js");
 }
 
+function diff(a, b) {
+    var min = Math.min(a.length, b.length);
+    
+    for (var i = 0; i < min; i++) {
+            if (a[i] !== b[i]) {
+                    console.log("Found difference at character " + i);
+                    console.log("a: " + a.substring(i));
+                    console.log("b: " + b.substring(i));
+                    break;
+            }
+    }
+}
+
 module.exports = {
     testAndroidResourceFileConstructor: function(test) {
         test.expect(1);
@@ -27,7 +40,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -45,7 +60,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({project: p, pathName: "foo"});
         test.ok(arf);
@@ -58,7 +75,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -95,7 +114,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -137,7 +158,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -178,7 +201,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -216,7 +241,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p
@@ -256,7 +283,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -292,7 +321,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -321,7 +352,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -354,7 +387,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -389,7 +424,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -412,7 +449,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile(p, "./java/foo.java");
         test.ok(arf);
@@ -433,7 +472,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -461,19 +502,21 @@ module.exports = {
         }));
         
         var xml = arf._getXML();
-        
+
+        // output is sorted by key now
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
 			'<resources \n' +
 			'  xmlns:tools="http://schemas.android.com/tools">\n' +
 			'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
-			'  <string name="disclaimer">Disclaimer</string>\n' +
+			'  <string name="asdf">foobar</string>\n' +
 			'  <string name="description_imgVw">imageView</string>\n' +
+			'  <string name="disclaimer">Disclaimer</string>\n' +
+			'  <string name="thanks">Thank you!</string>\n' +
 			'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
 			'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
-			'  <string name="thanks">Thank you!</string>\n' +
-			'  <string name="asdf">foobar</string>\n' +
 			'</resources>';
         
+        diff(xml, expected);
         test.equal(xml, expected);
         
         test.done();
@@ -485,7 +528,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -529,7 +574,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -590,7 +637,9 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US",
         	id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
 			project: p,
@@ -642,7 +691,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
@@ -662,7 +713,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -682,7 +735,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -700,7 +755,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -719,7 +776,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -738,7 +797,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p,
@@ -757,15 +818,17 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var arf = new AndroidResourceFile({
         	project: p, 
-        	pathName: "./res/values-zh-sHant-rCN-bar/foo.xml"
+        	pathName: "./res/values-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(arf);
         
-        test.equal(arf.getLocale(), "zh-Hant-CN");
+        test.equal(arf.getLocale(), "zh-Hans-CN");
         test.equal(arf.getContext(), "bar");
 
         test.done();

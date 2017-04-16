@@ -18,7 +18,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         
@@ -35,7 +37,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -53,7 +57,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -73,7 +79,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -91,7 +99,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -109,7 +119,9 @@ module.exports = {
         	resourceDirs: {	
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -127,7 +139,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -145,7 +159,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	},
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -164,7 +180,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -185,7 +203,9 @@ module.exports = {
         	resourceDirs: {
         		"yml": "config/locales"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);

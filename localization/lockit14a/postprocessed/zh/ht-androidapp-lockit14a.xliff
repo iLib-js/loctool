@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="symptom_triage_update_profile_top_header" restype="string" datatype="x-android-resource">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_triage_update_profile_header" restype="string" datatype="x-android-resource">
+        <source>Quick question</source>
+        <target state="translated">简单的问题</target>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_triage_remove_condition_title" restype="string" datatype="x-android-resource">
+        <source>Remove Condition</source>
+        <target state="translated">移除病症</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

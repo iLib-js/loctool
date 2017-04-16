@@ -15,7 +15,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaFileType(p);
         
@@ -29,7 +31,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaFileType(p);
         test.ok(htf);
@@ -44,7 +48,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaFileType(p);
         test.ok(htf);
@@ -59,7 +65,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaFileType(p);
         test.ok(htf);
@@ -74,7 +82,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaFileType(p);
         test.ok(htf);

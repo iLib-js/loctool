@@ -15,7 +15,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         
@@ -29,7 +31,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -44,7 +48,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -59,7 +65,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -74,7 +82,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -89,7 +99,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -104,7 +116,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -119,7 +133,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -134,7 +150,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -149,7 +167,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -164,7 +184,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);
@@ -179,7 +201,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var rf = new RubyFileType(p);
         test.ok(rf);

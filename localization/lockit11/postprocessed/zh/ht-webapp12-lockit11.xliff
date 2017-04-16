@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
         <source>%{span_start}Get answers to your health questions%{span_end}&lt;br&gt;%{span_start}from over %{count} top doctors%{span_end}</source>
-        <target state="translated">%{span_start}从超过 %{count} 的顶级医生%{span_end}<br/>%{span_start}获得您健康问题的答案%{span_end}</target>
+        <target state="translated">%{span_start}从超过 %{count} 的顶级医生%{span_end}&lt;br/&gt;%{span_start}获得您健康问题的答案%{span_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -60,19 +60,19 @@
     <body>
       <trans-unit id="12" resname="r420577192" restype="string" datatype="ruby">
         <source>Upper Abdomen</source>
-        <target state="translated">上腹部</target>
+        <target state="translated">上腹</target>
       </trans-unit>
       <trans-unit id="13" resname="r569067464" restype="string" datatype="ruby">
         <source>Lower Abdomen</source>
-        <target state="translated">下腹部</target>
+        <target state="translated">下腹</target>
       </trans-unit>
       <trans-unit id="14" resname="r1040580325" restype="string" datatype="ruby">
         <source>Upper Back</source>
-        <target state="translated">背部上方</target>
+        <target state="translated">上背</target>
       </trans-unit>
       <trans-unit id="15" resname="r431798784" restype="string" datatype="ruby">
         <source>Lower Back</source>
-        <target state="translated">背部下方</target>
+        <target state="translated">后腰</target>
       </trans-unit>
     </body>
   </file>
@@ -192,7 +192,7 @@
     <body>
       <trans-unit id="35" resname="r625042656" restype="string" datatype="ruby">
         <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.&lt;br/&gt;&lt;br/&gt;You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
-        <target state="translated">当它成为你的日常生活的一部分时，保持健康更容易。以下是一些有用的提示，用于管理和改善健康和福利，以及HealthTap对健康问题的一些最新解答。&lt;br/&gt;&lt;br/&gt;您可以在访问之前和之间随时访问HealthTap“我的在线诊疗” ，阅读更多的“我的健康问题”的答案，并发现更多的“我的健康生活小贴士”。</target>
+        <target state="translated">当它成为您的日常生活的一部分时，保持健康更容易。以下是一些有用的提示，用于管理和改善健康和福利，以及HealthTap对健康问题的一些最新解答。&lt;br/&gt;&lt;br/&gt;您可以在访问之前和之间随时访问HealthTap“我的在线诊疗” ，阅读更多的“我的健康问题”的答案，并发现更多的“我的健康生活小贴士”。</target>
       </trans-unit>
     </body>
   </file>
@@ -244,7 +244,7 @@
     <body>
       <trans-unit id="43" resname="r493812557" restype="string" datatype="ruby">
         <source>&lt;p&gt;HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!&lt;/p&gt;</source>
-        <target state="translated">&lt;p&gt;HealthTap是一个令人兴奋的新服务，以改善你的健康和福祉。您可以从我和超过63000名同事（他们是美国的顶级医生）那里全天候获得值得信任的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约，通过HealthTap 贵宾台请求在线咨询以获取帮助。 您也可以按照我与同事一起创建的小贴士和清单来采取行动。 所有这些都有助于您更专注于您的健康和福祉，所以您才能总是感觉很好！&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;HealthTap是一个令人兴奋的新服务，以改善您的健康和福祉。您可以从我和超过63000名同事（他们是美国的顶级医生）那里全天候获得值得信任的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约，通过HealthTap 贵宾台请求在线咨询以获得帮助。 您也可以按照我与同事一起创建的小贴士和清单来采取行动。 所有这些都有助于您更专注于您的健康和福祉，所以您才能总是感觉很好！&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="44" resname="r174320118" restype="string" datatype="ruby">
         <source>&lt;b&gt;Join today!&lt;/b&gt;</source>
