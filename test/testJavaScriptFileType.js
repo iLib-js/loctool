@@ -43,6 +43,23 @@ module.exports = {
         test.done();
     },
 
+    testJavaScriptFileTypeHandlesJSXTrue: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("foo.jsx"));
+        
+        test.done();
+    },
+
     testJavaScriptFileTypeHandlesHamlTrue: function(test) {
         test.expect(2);
 
