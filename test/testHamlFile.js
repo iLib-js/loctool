@@ -598,9 +598,8 @@ module.exports = {
 		test.done();
 	},
 
-/*	
-    testHamlFileParseSimpleGetByKey: function(test) {
-        test.expect(5);
+    testHamlFileParseTextSimple: function(test) {
+        test.expect(6);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
@@ -609,12 +608,15 @@ module.exports = {
         var h = new HamlFile(p);
         test.ok(h);
         
-        h.parse('RB.getString("This is a test")');
+        h.parse('  This is a test');
         
         var set = h.getTranslationSet();
         test.ok(set);
+
+        test.equal(set.size(), 1);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "r654479252", "java"));
+        var resources = set.getAll();
+        var r = resources[0];
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -623,6 +625,482 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextMultiLine: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  This is more text at the same indentation level.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test. This is more text at the same indentation level.");
+        test.equal(r.getKey(), "r130670021");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextMultiLineDifferentLevelOutdent: function(test) {
+        test.expect(9);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test\n' +
+        		'This is more text at a different indentation level.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is more text at a different indentation level.");
+        test.equal(r.getKey(), "r464867050");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextMultiLineDifferentLevelIndent: function(test) {
+        test.expect(9);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'    This is more text at a different indentation level.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is more text at a different indentation level.");
+        test.equal(r.getKey(), "r464867050");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextEmbeddedHTML: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is <span class="foo">a test</a> for the ages.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), 'This is <span class="foo">a test</a> for the ages.');
+        test.equal(r.getKey(), "r533194803");
+
+        test.done();
+    },
+
+    testHamlFileParseTextEmbeddedRuby: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  There are #{enterprise.count(:doctor).uniq} doctors.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), 'There are #{enterprise.count(:doctor).uniq} doctors.');
+        test.equal(r.getKey(), "r808325557");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithCSSClasses: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  .fg-bold.fg-test This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  %p This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  %p This is a test\n' +
+        		'  This is more text at the same indentation level.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test. This is more text at the same indentation level.");
+        test.equal(r.getKey(), "r130670021");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLTagsWithAttributes: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  %a{:href=>"/pages/contact_us"} This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLTagsWithNestedAttributes: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('    %a.apply_btn.green.btn{:href=>"#{job[\'url\']}", :target=>\'_blank\'} This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLTagsWithAttributesAndClasses: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  %a.data.icon{:href=>"/pages/contact_us"} This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+    
+    testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  %p This is a test\n' +
+        		'  This is more text at the same indentation level.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test. This is more text at the same indentation level.");
+        test.equal(r.getKey(), "r130670021");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLNonBreakingTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test of\n' +
+        		'  %b bold text\n' + 
+        		'  embedded in the sentence.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test of <b>bold text</b> embedded in the sentence.");
+        test.equal(r.getKey(), "r425499692");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLNonBreakingTagsWithAttributesAndClasses: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test of the \n' +
+        		'  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
+        		'  tags.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), 'This is a test of the <a class="data icon" href="/pages/contact_us"> non-breaking </a> tags.');
+        test.equal(r.getKey(), "r536603365");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLBreakingTags: function(test) {
+        test.expect(9);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  %div A different string.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = set.get("r216287039");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLIndentedStrings: function(test) {
+        test.expect(12);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var h = new HamlFile(p);
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  %p\n' +
+        		'    A different string.\n' + 
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    /*	
     testHamlFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
