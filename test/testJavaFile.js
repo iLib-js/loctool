@@ -6,10 +6,21 @@
 
 if (!JavaFile) {
     var JavaFile = require("../lib/JavaFile.js");
+    var JavaFileType = require("../lib/JavaFileType.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
     var ContextResourceString =  require("../lib/ContextResourceString.js");
 }
+
+var p = new AndroidProject({
+	id: "webapp",
+	sourceLocale: "en-US",
+	pseudoLocale: "de-DE"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var jft = new JavaFileType(p);
 
 module.exports = {
     testJavaFileConstructor: function(test) {
@@ -24,13 +35,7 @@ module.exports = {
     testJavaFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p, "./testfiles/java/t1.java");
+        var j = new JavaFile(p, "./testfiles/java/t1.java", jft);
         
         test.ok(j);
         
@@ -40,13 +45,7 @@ module.exports = {
     testJavaFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         test.done();
@@ -55,13 +54,7 @@ module.exports = {
     testJavaFileMakeKey: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         test.equal(j.makeKey("This is a test"), "r654479252");
@@ -72,13 +65,7 @@ module.exports = {
     testJavaFileMakeKeySimpleTexts1: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Medications in your profile"), "r32020327");
@@ -93,13 +80,7 @@ module.exports = {
     testJavaFileMakeKeyUnescaped: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("foo \\n \\t bar"), "r1056543475");
@@ -112,14 +93,8 @@ module.exports = {
 
 	testJavaFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
-
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
         
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Procedures"), "r807691021");
@@ -134,13 +109,7 @@ module.exports = {
 	testJavaFileMakeKeySimpleTexts3: function(test) {
         test.expect(11);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Private Health Profile"), "r669315500");
@@ -160,13 +129,7 @@ module.exports = {
 	testJavaFileMakeKeyEscapes: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Can\'t find treatment id"), "r926831062");
@@ -178,13 +141,7 @@ module.exports = {
 	testJavaFileMakeKeyPunctuation: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
@@ -201,13 +158,7 @@ module.exports = {
     testJavaFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         test.equal(j.makeKey("This is a test"), "r654479252");
@@ -219,13 +170,7 @@ module.exports = {
     testJavaFileMakeKeyCompressWhiteSpace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
@@ -240,13 +185,7 @@ module.exports = {
     testJavaFileMakeKeyTrimWhiteSpace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
@@ -261,13 +200,6 @@ module.exports = {
 	testJavaFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -282,13 +214,6 @@ module.exports = {
 	testJavaFileMakeKeyEscapeN: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -302,13 +227,6 @@ module.exports = {
 
 	testJavaFileMakeKeyTabs: function(test) {
         test.expect(2);
-
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
         
         var jf = new JavaFile({
 			project: p
@@ -323,13 +241,6 @@ module.exports = {
 	testJavaFileMakeKeyEscapeT: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -343,13 +254,6 @@ module.exports = {
 	testJavaFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -363,13 +267,6 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -383,13 +280,6 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -403,13 +293,6 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -423,13 +306,6 @@ module.exports = {
 	testJavaFileMakeKeyJavaEscapeSequences: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -443,14 +319,6 @@ module.exports = {
 	testJavaFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
-        var p = new AndroidProject({
-        	id: "webapp",
-			sourceLocale: "en-US",
-			pseudoLocale: "de-DE"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var jf = new JavaFile({
 			project: p
 		});
@@ -475,13 +343,7 @@ module.exports = {
     testJavaFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test")');
@@ -489,7 +351,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "r654479252", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "r654479252", "java"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -501,13 +363,7 @@ module.exports = {
     testJavaFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test")');
@@ -526,13 +382,7 @@ module.exports = {
     testJavaFileParseIgnoreEmpty: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("")');
@@ -548,13 +398,7 @@ module.exports = {
     testJavaFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
@@ -573,13 +417,7 @@ module.exports = {
     testJavaFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
@@ -598,13 +436,7 @@ module.exports = {
     testJavaFileParseDoubleEscapedWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
@@ -623,13 +455,7 @@ module.exports = {
     testJavaFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
@@ -649,13 +475,7 @@ module.exports = {
     testJavaFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -673,13 +493,7 @@ module.exports = {
     testJavaFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -699,13 +513,7 @@ module.exports = {
     testJavaFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -713,7 +521,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "foobar", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "foobar", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "foobar");
@@ -725,13 +533,7 @@ module.exports = {
     testJavaFileParseWithEmbeddedDoubleQuotes: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a \\\"test\\\".");');
@@ -750,13 +552,7 @@ module.exports = {
     testJavaFileParseWithEmbeddedEscapedSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a \\\'test\\\'.");');
@@ -775,13 +571,7 @@ module.exports = {
     testJavaFileParseWithEmbeddedUnescapedSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a \'test\'.");');
@@ -800,13 +590,7 @@ module.exports = {
     testJavaFileParseWithKey: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -814,7 +598,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -825,13 +609,7 @@ module.exports = {
     testJavaFileParseWithKeyIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
@@ -839,7 +617,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -850,13 +628,7 @@ module.exports = {
     testJavaFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -873,13 +645,7 @@ module.exports = {
     testJavaFileParseMultiple: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
@@ -903,13 +669,7 @@ module.exports = {
     testJavaFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
@@ -917,13 +677,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "x", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "x", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "x");
         
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "y", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "y", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
@@ -935,13 +695,7 @@ module.exports = {
     testJavaFileParseMultipleOnSameLine: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
@@ -965,13 +719,7 @@ module.exports = {
     testJavaFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
@@ -997,13 +745,7 @@ module.exports = {
     testJavaFileParseMultipleWithUniqueIdsAndComments: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
@@ -1011,13 +753,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "asdf", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "asdf", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "asdf");
         test.equal(r.getComment(), "foo");
         
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "kdkdkd", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "kdkdkd", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "kdkdkd");
@@ -1029,13 +771,7 @@ module.exports = {
     testJavaFileParseWithDups: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
@@ -1056,13 +792,7 @@ module.exports = {
     testJavaFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
@@ -1075,7 +805,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -1086,13 +816,7 @@ module.exports = {
     testJavaFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + " and this isnt");');
@@ -1107,13 +831,7 @@ module.exports = {
     testJavaFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + foobar);');
@@ -1127,13 +845,7 @@ module.exports = {
     testJavaFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString(foobar);');
@@ -1147,13 +859,7 @@ module.exports = {
     testJavaFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('RB.getString();');
@@ -1167,13 +873,7 @@ module.exports = {
     testJavaFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('EPIRB.getString("This is a test");');
@@ -1186,14 +886,8 @@ module.exports = {
 
     testJavaFileParseSubobject: function(test) {
         test.expect(2);
-
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
         
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         j.parse('App.RB.getString("This is a test");');
@@ -1207,13 +901,7 @@ module.exports = {
     testJavaFileExtractFile: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p, "./java/t1.java");
+        var j = new JavaFile(p, "./java/t1.java", jft);
         test.ok(j);
         
         // should read the file
@@ -1228,7 +916,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "id1", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "id1", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
         test.equal(r.getKey(), "id1");
@@ -1239,13 +927,7 @@ module.exports = {
     testJavaFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p);
+        var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -1261,13 +943,7 @@ module.exports = {
     testJavaFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p, "./java/foo.java");
+        var j = new JavaFile(p, "./java/foo.java", jft);
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -1283,13 +959,7 @@ module.exports = {
     testJavaFileExtractFile2: function(test) {
         test.expect(11);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var j = new JavaFile(p, "./java/AskPickerSearchFragment.java");
+        var j = new JavaFile(p, "./java/AskPickerSearchFragment.java", jft);
         test.ok(j);
         
         // should read the file

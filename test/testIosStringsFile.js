@@ -6,9 +6,19 @@
 
 if (!IosStringsFile) {
     var IosStringsFile = require("../lib/IosStringsFile.js");
+    var IosStringsFileType = require("../lib/IosStringsFileType.js");
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
 }
+
+var p = new ObjectiveCProject({
+	id: "ios",
+	sourceLocale: "en-US"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var isft = new IosStringsFileType(p);
 
 module.exports = {
     testIosStringsFileConstructor: function(test) {
@@ -23,14 +33,10 @@ module.exports = {
     testIosStringsFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var strings = new IosStringsFile(p, "./testfiles/objc/Base.lproj/Localizable.strings");
+        var strings = new IosStringsFile({
+        	project: p,
+			type: isft
+        }, "./testfiles/objc/Base.lproj/Localizable.strings");
         
         test.ok(strings);
         
@@ -40,15 +46,9 @@ module.exports = {
     testIosStringsFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -58,15 +58,9 @@ module.exports = {
     testIosStringsFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -91,15 +85,9 @@ module.exports = {
     testIosStringsFileParseWithComment: function(test) {
         test.expect(6);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -124,15 +112,9 @@ module.exports = {
     testIosStringsFileParseWithNonComment: function(test) {
         test.expect(6);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -158,15 +140,9 @@ module.exports = {
     testIosStringsFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(6);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -191,15 +167,9 @@ module.exports = {
     testIosStringsFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
 
@@ -221,15 +191,9 @@ module.exports = {
     testIosStringsFileParseMultiple: function(test) {
         test.expect(10);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -263,15 +227,9 @@ module.exports = {
     testIosStringsFileExtractFile: function(test) {
         test.expect(14);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
         });
         test.ok(strings);
@@ -313,15 +271,9 @@ module.exports = {
     testIosStringsFileExtractFileUnicodeFile: function(test) {
         test.expect(14);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/Localizable.strings"
         });
         test.ok(strings);
@@ -363,15 +315,9 @@ module.exports = {
     testIosStringsFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-			project: p
+			project: p,
+			type: isft
 		});
         test.ok(strings);
         
@@ -388,15 +334,9 @@ module.exports = {
     testIosStringsFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/en-US.lproj/asdf.strings"
         });
         test.ok(strings);
@@ -414,29 +354,23 @@ module.exports = {
     testIosStringsFileGetContent: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
         
         [
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ios",
         		locale: "de-DE",
         		key: "source text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ios",
         		locale: "de-DE",
         		key: "more source text",
         		source: "mehr Quellen\"text",
@@ -459,29 +393,23 @@ module.exports = {
     testIosStringsFileGetContentWithEscapes: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
         
         [
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ios",
         		locale: "de-DE",
         		key: "source text",
         		source: "Quellen\n\ttext",
         		comment: "foo"
         	}),
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ios",
         		locale: "de-DE",
         		key: "more source text",
         		source: "mehr Quellen\"text",
@@ -504,22 +432,16 @@ module.exports = {
     testIosStringsFileGetContentWithMultipleEscapedQuotes: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/es.lproj/asdf.strings"
         });
         test.ok(strings);
         
         [
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ios",
         		locale: "es-US",
         		key: "“The future of medicine is at your fingertips.”",
         		source: '"El futuro de la medicina está al alcance de tus dedos."',
@@ -540,15 +462,9 @@ module.exports = {
     testIosStringsFileGetContentEmpty: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
@@ -561,15 +477,9 @@ module.exports = {
     testIosStringsFileGetContentRoundTrip: function(test) {
         test.expect(2);
 
-        var p = new ObjectiveCProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var strings = new IosStringsFile({
-        	project: p, 
+        	project: p,
+			type: isft, 
         	pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
