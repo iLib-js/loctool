@@ -381,149 +381,145 @@ module.exports = {
 	},
 
     testHamlFileFindMatchingOneLine: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar { {} {{{}}}}  "), 23);
-
+        h.lines = ["   %foo.bar { {} {{{}}}}  "];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatching(11), 23);
+        test.equal(h.currentLine, 0);
+        
 		test.done();
 	},
 	
     testHamlFileFindMatchingMixedBrackets: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar { [] <()>]]}  "), 23);
+        h.lines = ["   %foo.bar { [] <()>]]}  "];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatching(11), 23);
+        test.equal(h.currentLine, 0);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingParens: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar(foo = 'bar')  "), 23);
-
+        h.lines = ["   %foo.bar(foo = 'bar')  "];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatching(11), 23);
+        test.equal(h.currentLine, 0);
+        
 		test.done();
 	},
 
     testHamlFileFindMatchingParensMultiple: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar(foo = ('bar'))  "), 25);
+        h.lines = ["   %foo.bar(foo = ('bar'))  "];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(11), 25);
+        test.equal(h.currentLine, 0);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingSquareBrackets: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar[foo = 'bar']  "), 23);
+        h.lines = ["   %foo.bar[foo = 'bar']  "];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(11), 23);
+        test.equal(h.currentLine, 0);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingSquareBracketsMultiple: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching("   %foo.bar[foo = ['bar']]  "), 25);
+        h.lines = ["   %foo.bar[foo = ['bar']]  "];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(11), 25);
+        test.equal(h.currentLine, 0);
 
 		test.done();
 	},
 
 	testHamlFileFindMatchingMultipleLines: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} \n"), 42);
+        h.lines = [
+        	"   %foo.bar { {asdf{",
+        	"     asdf} asdf} asdf}"
+        ];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(11), 21);
+        test.equal(h.currentLine, 1);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingMultipleLinesTrailingTextIsIgnored: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n"), 42);
+        h.lines = [
+        	"   %foo.bar { {asdf{",
+        	"     asdf} asdf} asdf} trailing text"
+        ];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(11), 21);
+        test.equal(h.currentLine, 1);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingMultipleLinesWithStartIndex0: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 0), 42);
+        h.lines = [
+        	"   %foo.bar { {asdf{",
+        	"     asdf} asdf} asdf} trailing text",
+        	"   .class.otherclass {asdf}"
+        ];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(0), 21);
+        test.equal(h.currentLine, 1);
 
 		test.done();
 	},
 
     testHamlFileFindMatchingMultipleLinesWithStartIndex57: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var h = new HamlFile();
-        test.equal(h.findMatching(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 58), 84);
+        h.lines = [
+        	"   %foo.bar { {asdf{",
+        	"     asdf} asdf} asdf} trailing text",
+        	"   .class.otherclass {asdf}"
+        ];
+        h.currentLine = 2;
 
-		test.done();
-	},
-
-    testHamlFileIndentationFirstLine: function(test) {
-        test.expect(1);
-
-        var h = new HamlFile();
-        test.equal(h.indentation(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 0), 3);
-
-		test.done();
-	},
-
-    testHamlFileIndentationSecondLine: function(test) {
-        test.expect(1);
-
-        var h = new HamlFile();
-        test.equal(h.indentation(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 20), 5);
-
-		test.done();
-	},
-
-    testHamlFileIndentationMidLine: function(test) {
-        test.expect(1);
-
-        var h = new HamlFile();
-        test.equal(h.indentation(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 38), 5);
-
-		test.done();
-	},
-
-    testHamlFileIndentationThirdLine: function(test) {
-        test.expect(1);
-
-        var h = new HamlFile();
-        test.equal(h.indentation(
-        	"   %foo.bar { {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 60), 3);
+        test.equal(h.findMatching(4), 26);
+        test.equal(h.currentLine, 2);
 
 		test.done();
 	},
@@ -550,7 +546,95 @@ module.exports = {
 		test.done();
 	},
 
-    testHamlFileParseTextSimple: function(test) {
+    testHamlFileFindMatchingIndentSame: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"   a",
+        	"     b",
+        	"     c",
+        	"   d",
+        	"   e"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatchingIndent(), 2);
+
+		test.done();
+	},
+
+    testHamlFileFindMatchingIndentLess: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"   a",
+        	"     b",
+        	"     c",
+        	" d",
+        	"   e"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatchingIndent(), 2);
+
+		test.done();
+	},
+
+    testHamlFileFindMatchingIndentMore: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"   a",
+        	"     b",
+        	"     c",
+        	"       d",
+        	"   e"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatchingIndent(), 3);
+
+		test.done();
+	},
+
+    testHamlFileFindMatchingIndentNoneToEnd: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"   a",
+        	"     b",
+        	"     c",
+        	"       d"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatchingIndent(), 3);
+
+		test.done();
+	},
+
+    testHamlFileFindMatchingIndentNone: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"   a",
+        	"   b",
+        	"   c",
+        	"       d"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.findMatchingIndent(), 0);
+
+		test.done();
+	},
+
+	testHamlFileParseTextSimple: function(test) {
         test.expect(6);
 
         var h = new HamlFile({
@@ -637,7 +721,7 @@ module.exports = {
     },
 
     testHamlFileParseTextMultiLineDifferentLevelIndent: function(test) {
-        test.expect(9);
+        test.expect(6);
 
         var h = new HamlFile({
 			project: p,
@@ -651,21 +735,15 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 1);
         
         var resources = set.getAll();
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
+        test.equal(r.getSource(), "This is a test. This is more text at a different indentation level.");
+        test.equal(r.getKey(), "r783876767");
 
-        r = resources[1];
-        test.ok(r);
-        
-        test.equal(r.getSource(), "This is more text at a different indentation level.");
-        test.equal(r.getKey(), "r464867050");
-        
         test.done();
     },
 
@@ -683,7 +761,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 1);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -709,7 +787,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 1);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -782,7 +860,7 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('  %p This is a test\n' +
+        h.parse('  %p This is a test.\n' +
         		'  This is more text at the same indentation level.\n');
         
         var set = h.getTranslationSet();
@@ -887,7 +965,7 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('  %p This is a test\n' +
+        h.parse('  %p This is a test.\n' +
         		'  This is more text at the same indentation level.\n');
         
         var set = h.getTranslationSet();
@@ -1011,7 +1089,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 3);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -1029,6 +1107,160 @@ module.exports = {
         r = resources[2];
         test.ok(r);
         
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLIndentedStringsSameLineContinued: function(test) {
+        test.expect(9);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  %p A different string.\n' + 
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string. Not indented.");
+        test.equal(r.getKey(), "r688946974");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLIndentedStringsContinuedMultiple: function(test) {
+        test.expect(12);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  %p\n' +
+        		'    A different string.\n' + 
+        		'    Another string.\n' +
+        		'    Yet another string.\n' +
+        		'  Not indented.');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string. Another string. Yet another string.");
+        test.equal(r.getKey(), "r983432399");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHTMLIndentedStringsSameLineNotContinued: function(test) {
+        test.expect(12);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  %p A different string.\n' + 
+        		'Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseSkipScriptBlocks: function(test) {
+        test.expect(9);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  :ruby\n' + 
+        		'     Rb.t("Not indented.);\n' +
+        		'     = asdf asdfasdf\n' + 
+        		'     Skip this string.\n' +
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+                
         test.equal(r.getSource(), "Not indented.");
         test.equal(r.getKey(), "r313193297");
 
