@@ -6,8 +6,15 @@
 
 if (!SwiftFile) {
     var SwiftFile = require("../lib/SwiftFile.js");
+    var SwiftFileType = require("../lib/SwiftFileType.js");
     var SwiftProject =  require("../lib/SwiftProject.js");
 }
+
+var p = new SwiftProject({
+	sourceLocale: "en-US"
+}, "./testfiles");
+
+var sft = new SwiftFileType(p);
 
 module.exports = {
     testSwiftFileConstructor: function(test) {
@@ -22,11 +29,7 @@ module.exports = {
     testSwiftFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p, "./testfiles/swift/PNXStrings.swift");
+        var j = new SwiftFile(p, "./testfiles/swift/PNXStrings.swift", sft);
         
         test.ok(j);
         
@@ -36,11 +39,7 @@ module.exports = {
     testSwiftFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         test.done();
@@ -48,12 +47,8 @@ module.exports = {
 
     testSwiftFileMakeKey: function(test) {
         test.expect(2);
-
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
         
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         test.equal(j.makeKey("This is a test"), "This is a test");
@@ -64,11 +59,7 @@ module.exports = {
     testSwiftFileMakeKeyCleaned: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         test.equal(j.makeKey("   This\t is\n a test.   "), "This is a test.");
@@ -79,11 +70,7 @@ module.exports = {
     testSwiftFileMakeKeyUnescapeQuotes: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         test.equal(j.makeKey("This \\\"is\\\" \\'a test\\'."), "This \"is\" 'a test'.");
@@ -94,11 +81,7 @@ module.exports = {
     testSwiftFileMakeKeyUnescapeBackslash: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         test.equal(j.makeKey("This \\\\is a test."), "This \\is a test.");
@@ -109,11 +92,7 @@ module.exports = {
     testSwiftFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", comment: "translator\'s comment")');
@@ -136,11 +115,7 @@ module.exports = {
     testSwiftFileParseSimpleGetBySource: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", comment: "translator\'s comment");');
@@ -161,11 +136,7 @@ module.exports = {
     testSwiftFileParseIgnoreEmptyString: function(test) {
         test.expect(3);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("", comment: "translator\'s comment");');
@@ -181,11 +152,7 @@ module.exports = {
     testSwiftFileParseNoComment: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", nil);');
@@ -206,11 +173,7 @@ module.exports = {
     testSwiftFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('   NSLocalizedString  (  "This is a test"  ,  comment:   "translator\'s comment"   )         ');
@@ -231,11 +194,7 @@ module.exports = {
     testSwiftFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -253,11 +212,7 @@ module.exports = {
     testSwiftFileParseMultiple: function(test) {
         test.expect(10);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", comment: "translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString("This is also a test", comment: "translator\'s comment 2")');
@@ -283,11 +238,7 @@ module.exports = {
     testSwiftFileParseMultipleSameLine: function(test) {
         test.expect(10);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", comment: "translator\'s comment"); a.parse("This is another test."); NSLocalizedString("This is also a test", comment: "translator\'s comment 2")');
@@ -313,11 +264,7 @@ module.exports = {
     testSwiftFileParseWithDups: function(test) {
         test.expect(7);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", comment: "translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString("This is a test", comment: "translator\'s comment")');
@@ -339,11 +286,7 @@ module.exports = {
     testSwiftFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test" + " and this isnt", comment: "translator\'s comment")');
@@ -358,11 +301,7 @@ module.exports = {
     testSwiftFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test" + foobar, comment: "translator\'s comment")');
@@ -376,11 +315,7 @@ module.exports = {
     testSwiftFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString(foobar, comment: "translator\'s comment")');
@@ -394,11 +329,7 @@ module.exports = {
     testSwiftFileParseNonNilComment: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", foobar)');
@@ -418,11 +349,7 @@ module.exports = {
     testSwiftFileParseZeroComment: function(test) {
         test.expect(6);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString("This is a test", 0)');
@@ -442,11 +369,7 @@ module.exports = {
     testSwiftFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('NSLocalizedString()');
@@ -460,11 +383,7 @@ module.exports = {
     testSwiftFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('BANSLocalizedString("This is a test", comment: "translator\'s comment")');
@@ -478,11 +397,7 @@ module.exports = {
     testSwiftFileParseSubobject: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         j.parse('App.NSLocalizedString("This is a test", comment: "translator\'s comment")');
@@ -496,11 +411,7 @@ module.exports = {
     testSwiftFileParseEscapedQuotes: function(test) {
         test.expect(7);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
 
         j.parse('NSLocalizedString("This \\\'is\\\' a \\\"test\\\"", comment: "translator\'s \\\'comment\\\'")');
@@ -522,11 +433,7 @@ module.exports = {
     testSwiftFileExtractFile: function(test) {
         test.expect(26);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p, "./swift/PNXStrings.swift");
+        var j = new SwiftFile(p, "./swift/PNXStrings.swift", sft);
         test.ok(j);
         
         // should read the file
@@ -578,11 +485,7 @@ module.exports = {
     testSwiftFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p);
+        var j = new SwiftFile(p, undefined, sft);
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -598,11 +501,7 @@ module.exports = {
     testSwiftFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new SwiftProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new SwiftFile(p, "./swift/foo.swift");
+        var j = new SwiftFile(p, "./swift/foo.swift", sft);
         test.ok(j);
         
         // should attempt to read the file and not fail
