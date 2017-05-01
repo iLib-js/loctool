@@ -6,9 +6,17 @@
 
 if (!HamlFile) {
     var HamlFile = require("../lib/HamlFile.js");
+    var HamlFileType = require("../lib/HamlFileType.js");
     var WebProject =  require("../lib/WebProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
 }
+
+var p = new WebProject({
+	id: "webapp",
+	sourceLocale: "en-US"
+}, "./testfiles");
+
+var hft = new HamlFileType(p);
 
 module.exports = {
     testHamlFileConstructor: function(test) {
@@ -23,11 +31,11 @@ module.exports = {
     testHamlFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p, "./testfiles/ruby/t2.html.haml");
+        var h = new HamlFile({
+			project: p,
+			pathName: "./testfiles/ruby/t2.html.haml",
+			type: hft
+		});
         
         test.ok(h);
         
@@ -37,11 +45,10 @@ module.exports = {
     testHamlFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         test.done();
@@ -50,11 +57,10 @@ module.exports = {
     testHamlFileMakeKey: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         test.equal(h.makeKey("This is a test"), "r654479252");
@@ -65,11 +71,10 @@ module.exports = {
     testHamlFileMakeKeySimpleTexts1: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("Medications in your profile"), "r32020327");
@@ -84,11 +89,10 @@ module.exports = {
     testHamlFileMakeKeyUnescaped: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("foo \\n \\t bar"), "r1056543475");
@@ -102,11 +106,10 @@ module.exports = {
 	testHamlFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("Procedures"), "r807691021");
@@ -121,11 +124,10 @@ module.exports = {
 	testHamlFileMakeKeySimpleTexts3: function(test) {
         test.expect(11);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("Private Health Profile"), "r669315500");
@@ -145,11 +147,10 @@ module.exports = {
 	testHamlFileMakeKeyEscapes: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("Can\'t find treatment id"), "r926831062");
@@ -161,11 +162,10 @@ module.exports = {
 	testHamlFileMakeKeyPunctuation: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equals(h.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
@@ -182,11 +182,10 @@ module.exports = {
     testHamlFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         test.equal(h.makeKey("This is a test"), "r654479252");
@@ -198,11 +197,10 @@ module.exports = {
     testHamlFileMakeKeyCompressWhiteSpace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
@@ -217,11 +215,10 @@ module.exports = {
     testHamlFileMakeKeyTrimWhiteSpace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
@@ -236,11 +233,6 @@ module.exports = {
 	testHamlFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -255,11 +247,6 @@ module.exports = {
 	testHamlFileMakeKeyEscapeN: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -274,11 +261,6 @@ module.exports = {
 	testHamlFileMakeKeyTabs: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -292,11 +274,6 @@ module.exports = {
 	testHamlFileMakeKeyEscapeT: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -310,11 +287,6 @@ module.exports = {
 	testHamlFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -328,11 +300,6 @@ module.exports = {
 	testHamlFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -346,11 +313,6 @@ module.exports = {
 	testHamlFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -364,11 +326,6 @@ module.exports = {
 	testHamlFileMakeKeyInterpretEscapedOctalChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -402,11 +359,6 @@ module.exports = {
 	testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var hf = new HamlFile({
 			project: p
 		});
@@ -601,11 +553,10 @@ module.exports = {
     testHamlFileParseTextSimple: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test');
@@ -628,11 +579,10 @@ module.exports = {
     testHamlFileParseTextMultiLine: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test.\n' +
@@ -656,11 +606,10 @@ module.exports = {
     testHamlFileParseTextMultiLineDifferentLevelOutdent: function(test) {
         test.expect(9);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test\n' +
@@ -690,11 +639,10 @@ module.exports = {
     testHamlFileParseTextMultiLineDifferentLevelIndent: function(test) {
         test.expect(9);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test.\n' +
@@ -724,11 +672,10 @@ module.exports = {
     testHamlFileParseTextEmbeddedHTML: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is <span class="foo">a test</a> for the ages.\n');
@@ -751,11 +698,10 @@ module.exports = {
     testHamlFileParseTextEmbeddedRuby: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  There are #{enterprise.count(:doctor).uniq} doctors.\n');
@@ -778,11 +724,10 @@ module.exports = {
     testHamlFileParseTextWithCSSClasses: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  .fg-bold.fg-test This is a test\n');
@@ -805,11 +750,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTags: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  %p This is a test\n');
@@ -832,11 +776,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  %p This is a test\n' +
@@ -860,11 +803,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTagsWithAttributes: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  %a{:href=>"/pages/contact_us"} This is a test\n');
@@ -887,11 +829,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTagsWithNestedAttributes: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('    %a.apply_btn.green.btn{:href=>"#{job[\'url\']}", :target=>\'_blank\'} This is a test\n');
@@ -914,11 +855,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTagsWithAttributesAndClasses: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  %a.data.icon{:href=>"/pages/contact_us"} This is a test\n');
@@ -941,11 +881,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  %p This is a test\n' +
@@ -969,11 +908,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLNonBreakingTags: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test of\n' +
@@ -998,11 +936,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLNonBreakingTagsWithAttributesAndClasses: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test of the \n' +
@@ -1027,11 +964,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLBreakingTags: function(test) {
         test.expect(9);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test.\n' +
@@ -1061,11 +997,10 @@ module.exports = {
     testHamlFileParseTextWithHTMLIndentedStrings: function(test) {
         test.expect(12);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('  This is a test.\n' +
@@ -1104,11 +1039,10 @@ module.exports = {
     testHamlFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test")');
@@ -1127,11 +1061,10 @@ module.exports = {
     testHamlFileParseIgnoreEmpty: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("")');
@@ -1147,11 +1080,10 @@ module.exports = {
     testHamlFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('   RB.getString  (    \t "This is a test"    );  ');
@@ -1170,11 +1102,10 @@ module.exports = {
     testHamlFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
@@ -1193,11 +1124,10 @@ module.exports = {
     testHamlFileParseDoubleEscapedWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
@@ -1216,11 +1146,10 @@ module.exports = {
     testHamlFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
@@ -1240,11 +1169,10 @@ module.exports = {
     testHamlFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
 
         var set = h.getTranslationSet();
@@ -1262,11 +1190,10 @@ module.exports = {
     testHamlFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -1286,11 +1213,10 @@ module.exports = {
     testHamlFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -1310,11 +1236,10 @@ module.exports = {
     testHamlFileParseWithEmbeddedDoubleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('\tRB.getString("This is a \\\"test\\\".");');
@@ -1333,11 +1258,10 @@ module.exports = {
     testHamlFileParseWithEmbeddedEscapedSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('\tRB.getString("This is a \\\'test\\\'.");');
@@ -1356,11 +1280,10 @@ module.exports = {
     testHamlFileParseWithEmbeddedUnescapedSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('\tRB.getString("This is a \'test\'.");');
@@ -1379,11 +1302,10 @@ module.exports = {
     testHamlFileParseWithKey: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test", "unique_id")');
@@ -1402,11 +1324,10 @@ module.exports = {
     testHamlFileParseWithKeyIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
@@ -1425,11 +1346,10 @@ module.exports = {
     testHamlFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test", "unique_id")');
@@ -1446,11 +1366,10 @@ module.exports = {
     testHamlFileParseMultiple: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
@@ -1474,11 +1393,10 @@ module.exports = {
     testHamlFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
@@ -1504,11 +1422,10 @@ module.exports = {
     testHamlFileParseMultipleOnSameLine: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
@@ -1532,11 +1449,10 @@ module.exports = {
     testHamlFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
@@ -1562,11 +1478,10 @@ module.exports = {
     testHamlFileParseMultipleWithUniqueIdsAndComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
@@ -1592,11 +1507,10 @@ module.exports = {
     testHamlFileParseWithDups: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
@@ -1617,11 +1531,10 @@ module.exports = {
     testHamlFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
@@ -1645,11 +1558,10 @@ module.exports = {
     testHamlFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test" + " and this isnt");');
@@ -1664,11 +1576,10 @@ module.exports = {
     testHamlFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString("This is a test" + foobar);');
@@ -1682,11 +1593,10 @@ module.exports = {
     testHamlFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString(foobar);');
@@ -1700,11 +1610,10 @@ module.exports = {
     testHamlFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('RB.getString();');
@@ -1718,11 +1627,10 @@ module.exports = {
     testHamlFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('EPIRB.getString("This is a test");');
@@ -1736,11 +1644,10 @@ module.exports = {
     testHamlFileParseSubobject: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         h.parse('App.RB.getString("This is a test");');
@@ -1754,11 +1661,11 @@ module.exports = {
     testHamlFileExtractFile: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p, "./java/t1.java");
+        var h = new HamlFile({
+			project: p,
+			pathName: "./java/t1.java",
+			type: hft
+		});
         test.ok(h);
         
         // should read the file
@@ -1784,11 +1691,10 @@ module.exports = {
     testHamlFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p);
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
         test.ok(h);
         
         // should attempt to read the file and not fail
@@ -1804,11 +1710,11 @@ module.exports = {
     testHamlFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var h = new HamlFile(p, "./java/foo.java");
+        var h = new HamlFile({
+			project: p,
+			pathName: "./java/foo.java",
+			type: hft
+		});
         test.ok(h);
         
         // should attempt to read the file and not fail
