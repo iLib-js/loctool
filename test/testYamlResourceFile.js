@@ -6,6 +6,7 @@
 
 if (!YamlResourceFile) {
 	var YamlResourceFile = require("../lib/YamlResourceFile.js");
+	var YamlResourceFileType = require("../lib/YamlResourceFileType.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -25,6 +26,18 @@ function diff(a, b) {
 	}
 }
 
+var p = new WebProject({
+	id: "ht-webapp12",
+	sourceLocale: "en-US",
+	resourceDirs: {
+		"yml": "a/b"
+	}
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var yft = new YamlResourceFileType(p);
+
 module.exports = {
     testYamlConstructorEmpty: function(test) {
         test.expect(1);
@@ -38,18 +51,10 @@ module.exports = {
     testYamlConstructorFull: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
-        var y = new YamlResourceFile({
+       var y = new YamlResourceFile({
             project: p,
-        	pathName: "a/b/en-US.yml"
+        	pathName: "a/b/en-US.yml",
+        	type: yft
         });
         test.ok(y);
         
@@ -61,18 +66,10 @@ module.exports = {
     testYamlGetPath: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "foo/bar"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var y = new YamlResourceFile({
         	project: p,
-            pathName: "foo/bar/x.yml"
+            pathName: "foo/bar/x.yml",
+        	type: yft
         });
         test.ok(y);
         
@@ -84,18 +81,9 @@ module.exports = {
     testYamlResourceFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
-        var yml = new YamlResourceFile({
-			project: p
+         var yml = new YamlResourceFile({
+			project: p,
+        	type: yft
 		});
         test.ok(yml);
         
@@ -126,18 +114,9 @@ module.exports = {
     testYamlResourceFileParseWithSubkeys: function(test) {
         test.expect(28);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
-			project: p
+			project: p,
+        	type: yft
 		});
         test.ok(yml);
         
@@ -205,18 +184,9 @@ module.exports = {
     testYamlResourceFileParseWithLocaleAndSubkeys: function(test) {
         test.expect(28);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
-			project: p
+			project: p,
+        	type: yft
 		});
         test.ok(yml);
         
@@ -285,18 +255,9 @@ module.exports = {
     testYamlResourceFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
-			project: p
+			project: p,
+        	type: yft
 		});
         test.ok(yml);
 
@@ -323,19 +284,10 @@ module.exports = {
     testYamlResourceFileExtractFile: function(test) {
         test.expect(14);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
-        	pathName: "./test.yml"
+        	pathName: "./test.yml",
+        	type: yft
         });
         test.ok(yml);
         
@@ -376,18 +328,9 @@ module.exports = {
     testYamlResourceFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
-			project: p
+			project: p,
+        	type: yft
 		});
         test.ok(yml);
         
@@ -404,19 +347,10 @@ module.exports = {
     testYamlResourceFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
-        	pathName: "./objc/en.lproj/asdf.yml"
+        	pathName: "./objc/en.lproj/asdf.yml",
+        	type: yft
         });
         test.ok(yml);
         
@@ -433,20 +367,11 @@ module.exports = {
     testYamlResourceFileGetContent: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./asdf.yml",
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	type: yft
         });
         test.ok(yml);
         
@@ -484,20 +409,11 @@ module.exports = {
     testYamlResourceFileGetContentComplicated: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+        	locale: "zh-Hans-CN",
+        	type: yft
         });
         test.ok(yml);
         
@@ -535,20 +451,11 @@ module.exports = {
     testYamlResourceFileGetContentWithNewlines: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+        	locale: "zh-Hans-CN",
+        	type: yft
         });
         test.ok(yml);
         
@@ -588,20 +495,11 @@ module.exports = {
     testYamlResourceFileGetContentEmpty: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./asdf.yml",
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	type: yft
         });
         test.ok(yml);
         
@@ -613,20 +511,11 @@ module.exports = {
     testYamlResourceFileRealContent: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./test.yml",
-        	locale: "en-US"
+        	locale: "en-US",
+        	type: yft
         });
         test.ok(yml);
         
@@ -647,20 +536,11 @@ module.exports = {
     testYamlResourceFileRealContent2: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./test2.yml",
-        	locale: "en-US"
+        	locale: "en-US",
+        	type: yft
         });
         test.ok(yml);
         
@@ -683,20 +563,11 @@ module.exports = {
     testYamlResourceFileAtInKeyName: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./test2.yml",
-        	locale: "en-US"
+        	locale: "en-US",
+        	type: yft
         });
         test.ok(yml);
         
@@ -719,20 +590,11 @@ module.exports = {
     testYamlResourceFileRightResourceType: function(test) {
         test.expect(4);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./test2.yml",
-        	locale: "en-US"
+        	locale: "en-US",
+        	type: yft
         });
         test.ok(yml);
         
@@ -752,20 +614,11 @@ module.exports = {
     testYamlResourceFileGetContentDontUseSourceHash: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
         var yml = new YamlResourceFile({
         	project: p, 
         	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+        	locale: "zh-Hans-CN",
+        	type: yft
         });
         test.ok(yml);
         
@@ -806,19 +659,11 @@ module.exports = {
 
     testYamlResourceFileGetContentResourcePlural: function(test) {
         test.expect(2);
-        var p = new WebProject({
-            id: "ht-webapp12",
-            sourceLocale: "en-US",
-            resourceDirs: {
-                yml: "a/b"
-            }
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
         var yml = new YamlResourceFile({
             project: p,
             pathName: "./zh.yml",
-            locale: "zh-Hans-CN"
+            locale: "zh-Hans-CN",
+        	type: yft
         });
         test.ok(yml);
 
@@ -853,19 +698,11 @@ module.exports = {
 
     testYamlResourceFileGetContentResourcePluralAndString: function(test) {
         test.expect(2);
-        var p = new WebProject({
-            id: "ht-webapp12",
-            sourceLocale: "en-US",
-            resourceDirs: {
-                yml: "a/b"
-            }
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
         var yml = new YamlResourceFile({
             project: p,
             pathName: "./zh.yml",
-            locale: "zh-Hans-CN"
+            locale: "zh-Hans-CN",
+        	type: yft
         });
         test.ok(yml);
 

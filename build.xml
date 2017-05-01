@@ -366,6 +366,14 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testYamlResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.csv" description="Run only the tests for the csv object">
+		<run script="${build.test}/testCSV.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.csv" description="Debug only the tests for the csv object">
+		<debug script="${build.test}/testCSV.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.csvfile" description="Run only the tests for the csv file object">
 		<run script="${build.test}/testCSVFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
