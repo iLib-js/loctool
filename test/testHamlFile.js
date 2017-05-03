@@ -323,39 +323,6 @@ module.exports = {
         test.done();
 	},
 
-	testHamlFileMakeKeyInterpretEscapedOctalChars: function(test) {
-        test.expect(2);
-
-        var hf = new HamlFile({
-			project: p
-		});
-        test.ok(hf);
-
-        test.equals(hf.makeKey("A \\40 \\011 B"), "r191336864");
-        
-        test.done();
-	},
-
-	/*
-	testHamlFileMakeKeyJavaEscapeSequences: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var hf = new HamlFile({
-			project: p
-		});
-        test.ok(hf);
-
-        test.equals(hf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
-        
-        test.done();
-	},
-	*/
-	
 	testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
