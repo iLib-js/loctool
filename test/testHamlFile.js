@@ -601,6 +601,92 @@ module.exports = {
 		test.done();
 	},
 
+
+    testHamlFileConvertTagSimple: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %b testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<b>");
+        
+        test.done();
+    },
+
+    testHamlFileConvertTagOneAttr: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %b{ :class => 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<b class='foo'>");
+        
+        test.done();
+    },
+
+    testHamlFileConvertTagMultipleAttrs2: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %p{ :id => 'newpara2', :class => 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<p id='newpara2' class='foo'>");
+        
+        test.done();
+    },
+
+    testHamlFileConvertTagMultipleAttrs3: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %p{ :id => 'newpara2', :name=>\"asdf\", :class => 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<p id='newpara2' name=\"asdf\" class='foo'>");
+        
+        test.done();
+    },
+
+    testHamlFileConvertTagAttrsAndClass: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ['  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n'];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<a class=\"data icon\" href=\"/pages/contact_us\">");
+        
+        test.done();
+    },
+
 	testHamlFileParseTextSimple: function(test) {
         test.expect(6);
 
@@ -987,7 +1073,7 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('  This is a test of the \n' +
+        h.parse('  This is a test of the\n' +
         		'  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
         		'  tags.\n');
         
@@ -1000,8 +1086,8 @@ module.exports = {
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), 'This is a test of the <a class="data icon" href="/pages/contact_us"> non-breaking </a> tags.');
-        test.equal(r.getKey(), "r536603365");
+        test.equal(r.getSource(), 'This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.');
+        test.equal(r.getKey(), "r198921042");
         
         test.done();
     },
@@ -1030,7 +1116,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test.");
         test.equal(r.getKey(), "r112256965");
         
-        r = set.get("r216287039");
+        r = resources[1];
         test.ok(r);
         
         test.equal(r.getSource(), "A different string.");
@@ -1233,7 +1319,6 @@ module.exports = {
 
         test.done();
     },
-
     /*	
     testHamlFileParseSimpleGetBySource: function(test) {
         test.expect(5);
