@@ -2918,7 +2918,7 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileLocalizeTextIgnoreTags: function(test) {
+    testHTMLTemplateFileLocalizeTextIgnoreScriptTags: function(test) {
         test.expect(3);
 
         var p = new WebProject({
@@ -2934,7 +2934,8 @@ module.exports = {
         htf.parse('<html><body><script type="javascript">\n' +
            	'  foo\n' +
         	'</script>\n' +
-        	'<span class="foo">foo</span>\n' + 
+        	'<span class="foo">foo</span>\n' +
+        	'<div></div><script>foo</script><div></div>\n' + 
         	'</body></html>');
         
         var set = htf.getTranslationSet();
@@ -2949,23 +2950,68 @@ module.exports = {
         	datatype: "html"
         }));
 
-        diff(htf.localizeText(translations, "fr-FR"),
-        		'<html><body><script type="javascript">\n' +
-            	'  foo\n' +
-            	'</script>\n' +
-            	'<span class="foo">asdf</span>\n' + 
-            	'</body></html>');
+        var expected =         		
+        	'<html><body><script type="javascript">\n' +
+	    	'  foo\n' +
+	    	'</script>\n' +
+	    	'<span class="foo">asdf</span>\n' + 
+	    	'<div></div><script>foo</script><div></div>\n' + 
+	    	'</body></html>';
         
-        test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<html><body><script type="javascript">\n' +
-            	'  foo\n' +
-            	'</script>\n' +
-            	'<span class="foo">asdf</span>\n' + 
-            	'</body></html>');
+        diff(htf.localizeText(translations, "fr-FR"), expected);
+        
+        test.equal(htf.localizeText(translations, "fr-FR"), expected);
 
         test.done();
     },
-    
+
+    testHTMLTemplateFileLocalizeTextIgnoreStyleTags: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body><style>\n' +
+           	'  foo\n' +
+        	'</style>\n' +
+        	'<span class="foo">foo</span>\n' + 
+	    	'<div></div><style>foo</style><div></div>\n' + 
+        	'</body></html>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR",
+        	datatype: "html"
+        }));
+
+        var expected =         		
+        	'<html><body><style>\n' +
+	    	'  foo\n' +
+	    	'</style>\n' +
+	    	'<span class="foo">asdf</span>\n' + 
+	    	'<div></div><style>foo</style><div></div>\n' + 
+	    	'</body></html>';
+
+        diff(htf.localizeText(translations, "fr-FR"), expected);
+        
+        test.equal(htf.localizeText(translations, "fr-FR"), expected);
+
+        test.done();
+    },
+
     testHTMLTemplateFileLocalizeTextWithEmbeddedTemplateTag: function(test) {
         test.expect(2);
 
