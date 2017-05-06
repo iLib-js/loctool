@@ -636,6 +636,23 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileConvertTagOneAttrColons: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %b{ class: 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<b class='foo'>");
+        
+        test.done();
+    },
+
     testHamlFileConvertTagMultipleAttrs2: function(test) {
         test.expect(2);
 
@@ -653,6 +670,23 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileConvertTagMultipleAttrs2Colons: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %p{id: 'newpara2', class : 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<p id='newpara2' class='foo'>");
+        
+        test.done();
+    },
+
     testHamlFileConvertTagMultipleAttrs3: function(test) {
         test.expect(2);
 
@@ -663,6 +697,23 @@ module.exports = {
         test.ok(h);
         
         h.lines = ["  %p{ :id => 'newpara2', :name=>\"asdf\", :class => 'foo' } testing"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), "<p id='newpara2' name=\"asdf\" class='foo'>");
+        
+        test.done();
+    },
+
+    testHamlFileConvertTagMultipleAttrs3Colons: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["  %p{id: 'newpara2', name:\"asdf\", class : 'foo' } testing"];
         h.currentLine = 0;
         
         test.equal(h.convertTag(3), "<p id='newpara2' name=\"asdf\" class='foo'>");
@@ -913,20 +964,26 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('  %p This is a test.\n' +
-        		'  This is more text at the same indentation level.\n');
+        h.parse('  %p This is a test.\n' +   // text wrapped in a div
+        		'  This is more text at the same indentation level.\n');  // should be a separate string
         
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), "This is a test. This is more text at the same indentation level.");
-        test.equal(r.getKey(), "r130670021");
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r654479252");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is more text at the same indentation level.");
+        test.equal(r.getKey(), "r467961626");
         
         test.done();
     },
@@ -1681,7 +1738,34 @@ module.exports = {
 
         test.done();
     },
- 
+
+    testHamlFileParseTextTagComplicatedWithMultipleSuffixesAndEquals: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('%p.x.y{:attr => "value", :x => "y"}<>= This is not a string but ruby code instead\n' +
+        		'Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
     testHamlFileParseTextTagWithSuffixSlash: function(test) {
         test.expect(9);
 
