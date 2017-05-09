@@ -9,6 +9,20 @@ if (!HamlFile) {
     var HamlFileType = require("../lib/HamlFileType.js");
     var WebProject =  require("../lib/WebProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
+    var TranslationSet =  require("../lib/TranslationSet.js");
+}
+
+function diff(a, b) {
+	var min = Math.min(a.length, b.length);
+	
+	for (var i = 0; i < min; i++) {
+		if (a[i] !== b[i]) {
+			console.log("Found difference at character " + i);
+			console.log("a: " + a.substring(i));
+			console.log("b: " + b.substring(i));
+			break;
+		}
+	}
 }
 
 var p = new WebProject({
@@ -1988,527 +2002,7 @@ module.exports = {
         test.done();
     },
 
-    /*	
-    testHamlFileParseSimpleGetBySource: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test")');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        test.done();
-    },
-
-    testHamlFileParseIgnoreEmpty: function(test) {
-        test.expect(3);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("")');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        test.equal(set.size(), 0);
-        
-        test.done();
-    },
-
-    testHamlFileParseSimpleIgnoreWhitespace: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('   RB.getString  (    \t "This is a test"    );  ');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        test.done();
-    },
-
-    testHamlFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        test.done();
-    },
-
-    testHamlFileParseDoubleEscapedWhitespace: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("Try a Virtual Consult ›");
-        test.ok(r);
-        test.equal(r.getSource(), "Try a Virtual Consult ›");
-        test.equal(r.getKey(), "r682432029");
-        
-        test.done();
-    },
-
-    testHamlFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        test.done();
-    },
-
-
-    testHamlFileParseSimpleRightSize: function(test) {
-        test.expect(4);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 0);
-
-        h.parse('RB.getString("This is a test")');
-        
-        test.ok(set);
-        
-        test.equal(set.size(), 1);
-        
-        test.done();
-    },
-
-    testHamlFileParseSimpleWithTranslatorComment: function(test) {
-        test.expect(6);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        test.equal(r.getComment(), "this is a translator's comment");
-        
-        test.done();
-    },
-
-    testHamlFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
-        test.expect(6);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "foobar", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "foobar");
-        test.equal(r.getComment(), "this is a translator's comment");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithEmbeddedDoubleQuotes: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('\tRB.getString("This is a \\\"test\\\".");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a \"test\".");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a \"test\".");
-        test.equal(r.getKey(), "r446151779");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithEmbeddedEscapedSingleQuotes: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('\tRB.getString("This is a \\\'test\\\'.");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a 'test'.");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a 'test'.");
-        test.equal(r.getKey(), "r531222461");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithEmbeddedUnescapedSingleQuotes: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('\tRB.getString("This is a \'test\'.");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a 'test'.");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a 'test'.");
-        test.equal(r.getKey(), "r531222461");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithKey: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test", "unique_id")');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "unique_id");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithKeyIgnoreWhitespace: function(test) {
-        test.expect(5);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "unique_id");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithKeyCantGetBySource: function(test) {
-        test.expect(3);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test", "unique_id")');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(!r);
-        
-        test.done();
-    },
-
-    testHamlFileParseMultiple: function(test) {
-        test.expect(8);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        r = set.getBySource("This is also a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "r999080996");
-        
-        test.done();
-    },
-
-    testHamlFileParseMultipleWithKey: function(test) {
-        test.expect(10);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "x", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getAutoKey());
-        test.equal(r.getKey(), "x");
-        
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "y", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getAutoKey());
-        test.equal(r.getKey(), "y");
-        
-        test.done();
-    },
-
-    testHamlFileParseMultipleOnSameLine: function(test) {
-        test.expect(8);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.ok(r.getAutoKey());
-        
-        r = set.getBySource("This is another test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is another test");
-        test.ok(r.getAutoKey());
-        
-        test.done();
-    },
-
-    testHamlFileParseMultipleWithComments: function(test) {
-        test.expect(10);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        test.equal(r.getComment(), "foo");
-        
-        r = set.getBySource("This is also a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "r999080996");
-        test.equal(r.getComment(), "bar");
-        
-        test.done();
-    },
-
-    testHamlFileParseMultipleWithUniqueIdsAndComments: function(test) {
-        test.expect(10);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "asdf", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getComment(), "foo");
-        
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "kdkdkd", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "kdkdkd");
-        test.equal(r.getComment(), "bar");
-        
-        test.done();
-    },
-
-    testHamlFileParseWithDups: function(test) {
-        test.expect(6);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        test.equal(set.size(), 1);
-        
-        test.done();
-    },
-
-    testHamlFileParseDupsDifferingByKeyOnly: function(test) {
-        test.expect(8);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r654479252");
-        
-        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "unique_id");
-        
-        test.done();
-    },
-
-    testHamlFileParseBogusConcatenation: function(test) {
+    testHamlFileLocalizeText: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2517,16 +2011,28 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('RB.getString("This is a test" + " and this isnt");');
+        h.parse('  This is a test.\n' +
+        		'  This should all be in one string.\n');
         
-        var set = h.getTranslationSet();
-
-        test.equal(set.size(), 0);
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test. This should all be in one string."),
+        	source: "Ceci est un essai. Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai. Tout doit etre en une phrase.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
-    testHamlFileParseBogusConcatenation2: function(test) {
+    testHamlFileLocalizeTextLowerIndentLevel: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2535,15 +2041,38 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('RB.getString("This is a test" + foobar);');
+        h.parse('  This is a test.\n' +
+		        'This is more text at a different indentation level.\n');
         
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 0);
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "Ceci est un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is more text at a different indentation level."),
+        	source: "Tout doit etre dans deux phrases.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+                       'Tout doit etre dans deux phrases.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
-    testHamlFileParseBogusNonStringParam: function(test) {
+   
+    testHamlFileLocalizeTextEmbeddedHTML: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2552,15 +2081,27 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('RB.getString(foobar);');
+        h.parse('  This is <span class="foo">a test</span> for the ages.\n');
         
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 0);
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is <span class="foo">a test</span> for the ages.'),
+        	source: 'Ceci est <span class="foo">un essai</span> pour les temps entiere.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est <span class="foo">un essai</span> pour les temps entiere.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
-    testHamlFileParseEmptyParams: function(test) {
+    testHamlFileLocalizeTextWithCSSClasses: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2569,15 +2110,27 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('RB.getString();');
+        h.parse('  .fg-bold.fg-test This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 0);
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  .fg-bold.fg-test Ceci est un essai.\n';
         
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
-    testHamlFileParseWholeWord: function(test) {
+    testHamlFileLocalizeTextWithHTMLTags: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2586,15 +2139,27 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('EPIRB.getString("This is a test");');
+        h.parse('  %p This is a test.\n');
         
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 0);
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %p Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
-    testHamlFileParseSubobject: function(test) {
+    testHamlFileLocalizeTextWithHTMLTagsSameIndent: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
@@ -2603,14 +2168,221 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('App.RB.getString("This is a test");');
+        h.parse('  %p This is a test.\n' +   // text wrapped in a div
+    	        '  This is more text at the same indentation level.\n');  // should be a separate string
         
-        var set = h.getTranslationSet();
-        test.equal(set.size(), 1);
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is more text at the same indentation level.'),
+        	source: 'Ceci est plus texte avec le meme niveau d\'indentation.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
         
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %p Ceci est un essai.\n' +
+                       '  Ceci est plus texte avec le meme niveau d\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
+    testHamlFileLocalizeTextWithHTMLTagsWithAttrs: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %a{:href=>"/pages/contact_us"} This is a test.\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %a{:href=>"/pages/contact_us"} Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+    
+    testHamlFileLocalizeTextWithNonBreakingHTMLTags: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test of\n' +
+        		'  %b bold text\n' + 
+        		'  embedded in the sentence.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test of <b>bold text</b> embedded in the sentence.'),
+        	source: 'Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithNonBreakingHTMLTags: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test of the\n' +
+        		'  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
+        		'  tags.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.'),
+        	source: 'Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithBreakingHTMLTags: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test.\n' +
+    	        '  %div A different string.\n');
+
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+                       '  %div Une autre phrase.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithHTMLIndentedStringsContinuedMultiple: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test.\n' +
+        		'  %p\n' +
+        		'    A different string.\n' + 
+        		'    Another string.\n' +
+        		'    Yet another string.\n' +
+        		'  Not indented.');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string. Another string. Yet another string.'),
+        	source: 'Une autre phrase. Plus une autre. Encore une phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+                       '  %p\n' +
+                       '    Une autre phrase. Plus une autre. Encore une phrase.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+   /*
     testHamlFileExtractFile: function(test) {
         test.expect(8);
 
