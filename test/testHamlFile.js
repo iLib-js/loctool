@@ -600,8 +600,119 @@ module.exports = {
 
 		test.done();
 	},
+	
+    testHamlFileFirstLocalizable: function(test) {
+        test.expect(1);
 
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 5);
 
+		test.done();
+	},
+
+    testHamlFileFirstLocalizableNoIndent: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"%p This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(0), 3);
+
+		test.done();
+	},
+
+    testHamlFileFirstLocalizableSkipSpaces: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p   This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 7);
+
+		test.done();
+	},
+	
+    testHamlFileFirstLocalizableSkipAttr: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p{:a => 'b'} This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 16);
+
+		test.done();
+	},
+
+    testHamlFileFirstLocalizableSkipAttrAndWhitespace: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p{:a => 'b'}   This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 18);
+
+		test.done();
+	},
+
+    testHamlFileFirstLocalizableSkipSuffixes: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p<>/ This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 8);
+
+		test.done();
+	},
+
+	testHamlFileFirstLocalizableSkipSuffixesEqual: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p= This is not a string but ruby code instead\n"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 6);
+
+		test.done();
+	},
+
+    testHamlFileFirstLocalizableSkipAttrsAndSuffixes: function(test) {
+        test.expect(1);
+
+        var h = new HamlFile();
+        h.lines = [
+        	"  %p{:a => 'b'}<>/ This is not a string but ruby code instead"
+        ];
+        h.currentLine = 0;
+        
+        test.equal(h.firstLocalizable(2), 19);
+
+		test.done();
+	},
+	
     testHamlFileConvertTagSimple: function(test) {
         test.expect(2);
 
@@ -956,7 +1067,7 @@ module.exports = {
     },
 
     testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
-        test.expect(6);
+        test.expect(9);
 
         var h = new HamlFile({
 			project: p,
@@ -977,7 +1088,7 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test.");
-        test.equal(r.getKey(), "r654479252");
+        test.equal(r.getKey(), "r112256965");
         
         r = resources[1];
         test.ok(r);
@@ -1066,33 +1177,6 @@ module.exports = {
         test.done();
     },
     
-    testHamlFileParseTextWithHTMLTagsMultiline: function(test) {
-        test.expect(6);
-
-        var h = new HamlFile({
-			project: p,
-			type: hft
-		});
-        test.ok(h);
-        
-        h.parse('  %p This is a test.\n' +
-        		'  This is more text at the same indentation level.\n');
-        
-        var set = h.getTranslationSet();
-        test.ok(set);
-
-        test.equal(set.size(), 1);
-        
-        var resources = set.getAll();
-        var r = resources[0];
-        test.ok(r);
-        
-        test.equal(r.getSource(), "This is a test. This is more text at the same indentation level.");
-        test.equal(r.getKey(), "r130670021");
-        
-        test.done();
-    },
-
     testHamlFileParseTextWithHTMLNonBreakingTags: function(test) {
         test.expect(6);
 
@@ -1224,7 +1308,7 @@ module.exports = {
     },
 
     testHamlFileParseTextWithHTMLIndentedStringsSameLineContinued: function(test) {
-        test.expect(9);
+        test.expect(12);
 
         var h = new HamlFile({
 			project: p,
@@ -1239,7 +1323,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 3);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -1251,8 +1335,14 @@ module.exports = {
         r = resources[1];
         test.ok(r);
         
-        test.equal(r.getSource(), "A different string. Not indented.");
-        test.equal(r.getKey(), "r688946974");
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
 
         test.done();
     },
@@ -1418,7 +1508,7 @@ module.exports = {
     },
 
     testHamlFileParseTextWithClassesSameIndent: function(test) {
-        test.expect(6);
+        test.expect(12);
 
         var h = new HamlFile({
 			project: p,
@@ -1625,7 +1715,7 @@ module.exports = {
         test.done();
     },
 
-    testHamlFileParseTextWithHtmlSafeRubyCode: function(test) {
+    testHamlFileParseTextWithNotHtmlSafeRubyCode: function(test) {
         test.expect(6);
 
         var h = new HamlFile({
@@ -1653,7 +1743,7 @@ module.exports = {
         test.done();
     },
 
-    testHamlFileParseTextWithHtmlSafeRubyCode: function(test) {
+    testHamlFileParseTextWithMultilineRubyCode: function(test) {
         test.expect(6);
 
         var h = new HamlFile({
@@ -1781,7 +1871,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -1814,7 +1904,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -1847,7 +1937,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
@@ -1880,7 +1970,7 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
