@@ -2382,7 +2382,831 @@ module.exports = {
         test.done();
     },
 
-   /*
+    testHamlFileLocalizeTextWithHTMLNotIndentedStrings: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test.\n' +
+        		'  %p A different string.\n' + 
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+                       '  %p Une autre phrase.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipScriptBlocks: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test.\n' +
+        		'  :ruby\n' + 
+        		'     Rb.t("Not indented.);\n' +
+        		'     = asdf asdfasdf\n' + 
+        		'     Skip this string.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+					   '  :ruby\n' + 
+					   '     Rb.t("Not indented.);\n' +
+					   '     = asdf asdfasdf\n' + 
+					   '     Skip this string.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithClasses: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is a test.\n' +
+        		'  .a.b A different string.\n' +   // this is a div
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est un essai.\n' +
+                       '  .a.b Une autre phrase.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipHtmlComments: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  / This is a test.\n' +
+        		'  / A different string.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        // don't need comments in the output
+        var expected = '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipHamlComments: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  -# This is a test.\n' +
+        		'  -# A different string.\n' +    // this is a div
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        // don't need comments in the output
+        var expected = '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipHtmlCommentsIndented: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  / This is a test.\n' +
+        		'    This indented string is still within the comment.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        // don't need comments in the output
+        var expected = '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipHamlCommentsIndented: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  -# This is a test.\n' +
+        		'    This indented string is still within the comment.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        // don't need comments in the output
+        var expected = '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextSkipHamlCommentsIndented: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  = This is a test.\n' +
+        		'  = This indented string is still within the ruby code.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  = This is a test.\n' +
+		               '  = This indented string is still within the ruby code.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithHtmlSafeRubyCode: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  &= This is a test.\n' +
+        		'  &= This indented string is still within the ruby code.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  &= This is a test.\n' +
+		               '  &= This indented string is still within the ruby code.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithNotHtmlSafeRubyCode: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  != This is a test.\n' +
+        		'  != This indented string is still within the ruby code.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  != This is a test.\n' +
+		               '  != This indented string is still within the ruby code.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithMultilineRubyCode: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  = func(                         |\n' +
+        	    '    "I think this might get " +   |\n' +
+        	    '    "pretty long so I should " +  |\n' +
+        	    '    "probably make it " +         |\n' +
+        	    '    "multiline so it doesn\'t " + |\n' +
+        	    '    "look awful.")                |\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  = func(                         |\n' +
+					   '    "I think this might get " +   |\n' +
+					   '    "pretty long so I should " +  |\n' +
+					   '    "probably make it " +         |\n' +
+					   '    "multiline so it doesn\'t " + |\n' +
+					   '    "look awful.")                |\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithSuffixEquals: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %p= This is not a string but ruby code instead\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %p= This is not a string but ruby code instead\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextComplicatedWithSuffixEquals: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %p.x.y{:attr => "value", :x => "y"}= This is not a string but ruby code instead\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %p.x.y{:attr => "value", :x => "y"}= This is not a string but ruby code instead\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextComplicatedWithMultipleSuffixesAndEquals: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %p.x.y{:attr => "value", :x => "y"}<>= This is not a string but ruby code instead\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %p.x.y{:attr => "value", :x => "y"}<>= This is not a string but ruby code instead\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithSuffixSlash: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %meta{:attr => "value", :x => "y"}/ This is a test.\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %meta{:attr => "value", :x => "y"}/ Ceci est un essai.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextTagWithSuffixLT: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %meta{:attr => "value", :x => "y"}< This is a test.\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %meta{:attr => "value", :x => "y"}< Ceci est un essai.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextTagWithSuffixMultiple: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  %meta{:attr => "value", :x => "y"}<> This is a test.\n' +
+ 		        '  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+        	source: 'Une autre phrase.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  %meta{:attr => "value", :x => "y"}<> Ceci est un essai.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    /*
+    
     testHamlFileExtractFile: function(test) {
         test.expect(8);
 
