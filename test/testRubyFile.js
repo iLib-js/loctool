@@ -1495,5 +1495,41 @@ module.exports = {
         test.equals(r.get('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
+    },
+    
+    testRubyFileParseShortStringInHaml: function(test) {
+        test.expect(11);
+
+        var rf = new RubyFile({
+            project: p,
+			type: rft
+        });
+        test.ok(rf);
+
+        rf.parse('%html\n' +
+				 '  %head\n' +
+				 '    %meta{:name=>"pdfkit-page_size", :content => Rb.t("A4")}\n' +
+				 '    %meta{:name=>"pdfkit-margin_top", :content => Rb.t("0.05in")}\n' +
+				 '    %meta{:name=>"pdfkit-margin_right", :content => Rb.t("0.05in")}\n');
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 2);
+        var resources = set.getAll();
+        test.ok(resources);
+        test.equal(resources.length, 2);
+        
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equals(r.getSource(), 'A4');
+        test.equals(r.getKey(), 'r949377406');
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equals(r.getSource(), '0.05in');
+        test.equals(r.getKey(), 'r586828064');
+
+        test.done();
     }
 };
