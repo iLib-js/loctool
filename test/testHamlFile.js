@@ -31,7 +31,9 @@ function diff(a, b) {
 var p = new WebProject({
 	id: "webapp",
 	sourceLocale: "en-US"
-}, "./testfiles");
+}, "./testfiles", {
+	nopseudo: true
+});
 
 var hft = new HamlFileType(p);
 
@@ -4081,6 +4083,85 @@ module.exports = {
         test.done();
     },
     
+    testHamlFileLocalizeTextNewResIsCorrect: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('.compass-pricing\n' +
+                '  .pricing-intro\n' +
+                '    %h2.header-medium.light\n' + 
+                '      Calculate ROI for\n' +
+                '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' + 
+                '\n' +
+        		'    %p\n' +
+        		'      Type your organization\'s own values to estimate your ROI\n' +
+        		'    \n' +
+        		'  .desktop-ui.calc-links\n' +
+        		'    %a.reset Reset values\n' +
+        		'    %span.sep\n' +
+        		'    %a.assumptions Assumptions\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Calculate ROI for'),
+        	source: 'Calculer le ROI pour',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Reset values'),
+        	source: 'Réinitialiser les valeurs',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Assumptions'),
+        	source: "Hypothèses",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '.compass-pricing\n' +
+				       '  .pricing-intro\n' +
+		               '    %h2.header-medium.light\n' + 
+		               '      Calculer le ROI pour\n' +
+		               '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' +
+		               '\n' +
+					   '    %p\n' +
+		        		'      Type your organization\'s own values to estimate your ROI\n' +
+					   '    \n' +
+					   '  .desktop-ui.calc-links\n' +
+					   '    %a.reset Réinitialiser les valeurs\n' +
+					   '    %span.sep\n' +
+					   '    %a.assumptions Hypothèses\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.equal(hft.newres.size(), 2);
+        
+        var resource = hft.newres.getClean(
+			ResourceString.cleanHashKey(
+					p.getProjectId(), "fr-FR", h.makeKey("Type your organization's own values to estimate your ROI"), "x-haml"));
+        
+        test.ok(resource);
+        test.equal(resource.origin, "target");
+        test.equal(resource.getSource(), "Type your organization's own values to estimate your ROI");
+
+        test.done();
+    },
 
 
     testHamlFileExtractFile: function(test) {
