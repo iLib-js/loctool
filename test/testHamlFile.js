@@ -2609,7 +2609,47 @@ module.exports = {
         test.done();
     },
 
-    
+    testHamlFileAssembleTranslationWithEmbeddedEntities: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "This is a test & another test.",
+        	original: 'This is a test &amp; another test.\n'
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test"),
+        	source: "Ceci est un essai",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("another test."),
+        	source: "encore un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "fr-FR");
+        
+        var expected = 'Ceci est un essai & encore un essai.';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+   
     testHamlFileLocalizeText: function(test) {
         test.expect(2);
 
