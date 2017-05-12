@@ -3086,6 +3086,55 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileLocalizeTextDontSkipInsideDashCode: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('- content_for :guest_content do\n' +
+        		'  This is a test.\n' +
+        		'  :ruby\n' + 
+        		'     Rb.t("Not indented.);\n' +
+        		'     = asdf asdfasdf\n' + 
+        		'     Skip this string.\n' +
+        		'  Not indented.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+        	source: "Sans l'indentation.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '- content_for :guest_content do\n' +
+                       '  Ceci est un essai.\n' +
+					   '  :ruby\n' + 
+					   '     Rb.t("Not indented.);\n' +
+					   '     = asdf asdfasdf\n' + 
+					   '     Skip this string.\n' +
+                       '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testHamlFileLocalizeTextWithClasses: function(test) {
         test.expect(2);
 
