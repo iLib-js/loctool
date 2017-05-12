@@ -211,12 +211,16 @@ function walk(dir, project) {
 			
 			if (project.options && project.options.includes) {
 				project.options.includes.forEach(function(p) {
-					var stat = fs.statSync(p);
-					if (stat && stat.isDirectory()) {
-						logger.info(p);
-						walk(p, project);
+					if (fs.existsSync(p)) {
+						var stat = fs.statSync(p);
+						if (stat && stat.isDirectory()) {
+							logger.info(p);
+							walk(p, project);
+						} else {
+							project.addPath(p);
+						}
 					} else {
-						project.addPath(p);
+						logger.warn("File " + p + " which is listed in the includes in the project.json does not exist any more.");
 					}
 				});
 			}
