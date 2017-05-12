@@ -3768,6 +3768,37 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileLocalizeTextWithSuffixSlashNonBreakingTag: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  This is\n' +
+        		'  %br/\n' +
+ 		        '  Spinal Tap.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is <br/> Spinal Tap.'),
+        	source: 'Ceci est <br/> Spinal Tap.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  Ceci est <br/> Spinal Tap.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testHamlFileLocalizeTextTagWithSuffixLT: function(test) {
         test.expect(2);
 
