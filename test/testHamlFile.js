@@ -368,10 +368,10 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile();
-        h.lines = ["   %foo.bar { {} {{{}}}}  "];
+        h.lines = ["   %foo.bar{ {} {{{}}}}  asdf\n"];
         h.currentLine = 0;
         
-        test.equal(h.findMatching(11), 23);
+        test.equal(h.findMatching(11), 22);
         test.equal(h.currentLine, 0);
         
 		test.done();
@@ -381,10 +381,10 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile();
-        h.lines = ["   %foo.bar { [] <()>]]}  "];
+        h.lines = ["   %foo.bar{ [] <()>]]}  asdf"];
         h.currentLine = 0;
         
-        test.equal(h.findMatching(11), 23);
+        test.equal(h.findMatching(11), 22);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -394,7 +394,7 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile();
-        h.lines = ["   %foo.bar(foo = 'bar')  "];
+        h.lines = ["   %foo.bar(foo = 'bar')  asdf"];
         h.currentLine = 0;
         
         test.equal(h.findMatching(11), 23);
@@ -447,7 +447,7 @@ module.exports = {
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar { {asdf{",
+        	"   %foo.bar{ {asdf{",
         	"     asdf} asdf} asdf}"
         ];
         h.currentLine = 0;
@@ -463,7 +463,7 @@ module.exports = {
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar { {asdf{",
+        	"   %foo.bar{ {asdf{",
         	"     asdf} asdf} asdf} trailing text"
         ];
         h.currentLine = 0;
@@ -479,9 +479,9 @@ module.exports = {
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar { {asdf{",
+        	"   %foo.bar{ {asdf{",
         	"     asdf} asdf} asdf} trailing text",
-        	"   .class.otherclass {asdf}"
+        	"   .class.otherclass{asdf}"
         ];
         h.currentLine = 0;
 
@@ -496,14 +496,29 @@ module.exports = {
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar { {asdf{",
+        	"   %foo.bar{ {asdf{",
         	"     asdf} asdf} asdf} trailing text",
-        	"   .class.otherclass {asdf}"
+        	"   .class.otherclass{asdf}"
         ];
         h.currentLine = 2;
 
-        test.equal(h.findMatching(4), 26);
+        test.equal(h.findMatching(4), 25);
         test.equal(h.currentLine, 2);
+
+		test.done();
+	},
+
+	testHamlFileFindMatchingNoSpaces: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile();
+        h.lines = [
+        	'  %span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n'
+        ];
+        h.currentLine = 0;
+
+        test.equal(h.findMatching(2), 27);
+        test.equal(h.currentLine, 0);
 
 		test.done();
 	},
@@ -513,7 +528,7 @@ module.exports = {
 
         var h = new HamlFile();
         test.equal(h.indentation(
-        	"\t\t%foo.bar { {asdf{\n", 0), 2);
+        	"\t\t%foo.bar{ {asdf{\n", 0), 2);
 
 		test.done();
 	},
@@ -523,7 +538,7 @@ module.exports = {
 
         var h = new HamlFile();
         test.equal(h.indentation(
-        	"   %foo.bar { {asdf{\n" +
+        	"   %foo.bar{ {asdf{\n" +
         	"     asdf} asdf} asdf} trailing text\n" +
         	"   .class.otherclass {asdf} \n", 57), 3);
 
@@ -2153,6 +2168,33 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextTagComplicatedWithNoSpaceAndEqualsSuffix: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('%span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n' +
+        		'Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+	
     testHamlFileParseTextTagWithSuffixSlash: function(test) {
         test.expect(9);
 
