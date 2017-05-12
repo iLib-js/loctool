@@ -32,7 +32,8 @@ var p = new WebProject({
 	id: "webapp",
 	sourceLocale: "en-US"
 }, "./testfiles", {
-	nopseudo: true
+	nopseudo: true,
+	locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"]
 });
 
 var hft = new HamlFileType(p);
@@ -362,6 +363,19 @@ module.exports = {
         test.equals(hf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
         test.equals(hf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
         test.equals(hf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
+        
+        test.done();
+	},
+
+	testHamlFileMakeKeyCheckRubyCompatibilitySpecialChars: function(test) {
+        test.expect(2);
+
+        var hf = new HamlFile({
+			project: p
+		});
+        test.ok(hf);
+
+        test.equals(hf.makeKey("Answers and consultations from real, caring doctors across 141 specialties\u2028 24/7 immediate access to physicians via video, voice, and text chat"), "r317136970");
         
         test.done();
 	},
@@ -1909,7 +1923,7 @@ module.exports = {
         test.ok(h);
         
         h.parse('  / This is a test.\n' +
-        		'  / A different string.\n' +    // this is a div
+        		'  / A different string.\n' +    // this is a comment
         		'  Not indented.\n');
         
         var set = h.getTranslationSet();
@@ -1937,7 +1951,35 @@ module.exports = {
         test.ok(h);
         
         h.parse('  -# This is a test.\n' +
-        		'  -# A different string.\n' +    // this is a div
+        		'  -# A different string.\n' +    // this is a comment
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHamlCommentsWithSpaces: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  - # This is a test.\n' +
+        		'  - # A different string.\n' +    // this is a comment
         		'  Not indented.\n');
         
         var set = h.getTranslationSet();
@@ -2704,6 +2746,55 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileAssembleTranslationWithEmbeddedTagsOnTheSameLine: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "This is a test.<b>Bold text.</b>This should all be in one string.",
+        	original: 'This is a test.<b>Bold text.</b>This should all be in one string.\n'
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "Ceci est un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	source: "Texte gras.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	source: "Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "fr-FR");
+        
+        var expected = 'Ceci est un essai. <b>Texte gras.</b> Tout doit etre en une phrase.';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testHamlFileAssembleTranslationModernTranslationIsCorrect: function(test) {
         test.expect(5);
 
@@ -2760,6 +2851,8 @@ module.exports = {
         
         test.done();
     },
+
+
 
     testHamlFileAssembleTranslationWithEmbeddedEntities: function(test) {
         test.expect(2);
