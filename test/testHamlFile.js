@@ -1791,6 +1791,114 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextWithHashIdDiv: function(test) {
+        test.expect(12);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  #abc A different string.\n' +    // this is a div with an id
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHashIdDivWithAttrs: function(test) {
+        test.expect(12);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  #abc{a: "b", c: "d"} A different string.\n' +    // this is a div with an id and attributes
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test.");
+        test.equal(r.getKey(), "r112256965");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "A different string.");
+        test.equal(r.getKey(), "r216287039");
+
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
+    testHamlFileParseTextWithHashSubstitutionAtBeginningOfTheLine: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  #{abc} A different string.\n' +    // this is NOT a div but a hash substitution instead
+        		'  Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test. #{abc} A different string. Not indented.");
+        test.equal(r.getKey(), "r356714989");
+        
+        test.done();
+    },
+
     testHamlFileParseTextWithHtmlComments: function(test) {
         test.expect(6);
 
