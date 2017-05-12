@@ -3799,6 +3799,35 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileLocalizeTextEscapeHTML: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('  A &amp; B\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('A & B'),
+        	source: 'C & D',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  C &amp; D\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testHamlFileLocalizeTextTagWithSuffixLT: function(test) {
         test.expect(2);
 
