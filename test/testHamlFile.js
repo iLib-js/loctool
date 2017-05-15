@@ -2597,7 +2597,7 @@ module.exports = {
     },
 
     testHamlFileParseTextWrapNonBreakingTagContentsProperly: function(test) {
-        test.expect(6);
+        test.expect(9);
 
         var h = new HamlFile({
 			project: p,
@@ -2613,14 +2613,20 @@ module.exports = {
         var set = h.getTranslationSet();
         test.ok(set);
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         var resources = set.getAll();
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), 'Message <a class="btn grey recommend_expert" href="/recommend/#{@expert.id}"><span class="check_icon"></span>Recommend</a>');
-        test.equal(r.getKey(), "r242350119");
+        test.equal(r.getSource(), 'Message');
+        test.equal(r.getKey(), "r727846503");
+
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), 'Recommend');
+        test.equal(r.getKey(), "r108032100");
 
         test.done();
     },
@@ -3181,6 +3187,51 @@ module.exports = {
         test.equal(actual, expected);
         test.done();
     },
+
+    testHamlFileLocalizeTextWithNonBreakingHTMLTagsButNoContentOnSameLine: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+
+        h.parse('          Message\n' +
+        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+        	    '            %span.check_icon\n' +
+        	    '            Recommend\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Message'),
+        	source: 'Méssage',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('Recommend'),
+        	source: 'Recommendez',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = 
+        	'          Méssage\n' +
+	    	'          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+	    	'            %span.check_icon\n' +
+	    	'            Recommendez\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
 
     testHamlFileLocalizeTextWithBreakingHTMLTags: function(test) {
         test.expect(2);
