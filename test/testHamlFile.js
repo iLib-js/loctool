@@ -2946,6 +2946,42 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileAssembleTranslationMissingStringsGivesPartialOutput: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "#{patient_name}'s video is unavailable.<br>Please continue by voice or chat.",
+        	original: "        #{patient_name}'s video is unavailable.<br>\n" +
+			          "        Please continue by voice or chat.\n"
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("Please continue by voice or chat."),
+        	source: "Por favor, continúa por voz o chat.",
+        	locale: "es-US",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "es-US");
+        
+        var expected = "#{patient_name}'s video is unavailable. <br>Por favor, continúa por voz o chat.";
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+
+
     testHamlFileAssembleTranslationModernTranslationsUpdated: function(test) {
         test.expect(3);
 
@@ -3002,13 +3038,15 @@ module.exports = {
     },
 
     testHamlFileAssembleTranslationMissingStringsInModernTranslation: function(test) {
-        test.expect(3);
+        test.expect(4);
 
         var h = new HamlFile({
 			project: p,
 			type: hft
 		});
         test.ok(h);
+        hft.modern.clear();
+        test.equal(hft.modern.size(), 0);
         
         var segment = {
         	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
@@ -3039,7 +3077,9 @@ module.exports = {
         
         var expected = 'Ceci est un essai. <b>Bold text.</b> Tout doit etre en une phrase.';
         
-        var resource = hft.modern.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
+        // because it was not completely translated, it goes into the newres set so that it 
+        // will get retranslated later through the vendor
+        var resource = hft.newres.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
         test.ok(resource);
         
         diff(resource.text, expected);
@@ -4484,13 +4524,15 @@ module.exports = {
     },
     
     testHamlFileLocalizeTextNewResIsCorrect: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var h = new HamlFile({
 			project: p,
 			type: hft
 		});
         test.ok(h);
+        hft.newres.clear();
+        test.equal(hft.newres.size(), 0);
 
         h.parse('.compass-pricing\n' +
                 '  .pricing-intro\n' +
