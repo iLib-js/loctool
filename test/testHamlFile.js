@@ -3749,7 +3749,9 @@ module.exports = {
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
-        var expected = '  Sans l\'indentation.\n';
+        var expected = '  / This is a test.\n' +
+					   '  / A different string.\n' +
+					   '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3797,7 +3799,9 @@ module.exports = {
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
-        var expected = '  Sans l\'indentation.\n';
+        var expected = '  -# This is a test.\n' +
+					   '  -# A different string.\n' +    // this is a div
+					   '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3845,7 +3849,9 @@ module.exports = {
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
-        var expected = '  Sans l\'indentation.\n';
+        var expected = '  / This is a test.\n' +
+					   '    This indented string is still within the comment.\n' +
+					   '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3893,7 +3899,9 @@ module.exports = {
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
-        var expected = '  Sans l\'indentation.\n';
+        var expected = '  -# This is a test.\n' +
+					   '    This indented string is still within the comment.\n' +
+					   '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
