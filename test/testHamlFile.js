@@ -16,6 +16,10 @@ if (!HamlFile) {
 }
 
 function diff(a, b) {
+	if ((!a || !b) && (a || b)) {
+		console.log("a is " + a + ", b is " + b);
+		return;
+	}
 	var min = Math.min(a.length, b.length);
 	
 	for (var i = 0; i < min; i++) {
@@ -2849,7 +2853,7 @@ module.exports = {
         test.equal(actual, expected);
         
         var key = h.makeKey(segment.text);
-        var resource = h.modern.getClean(ResourceString.cleanHashKey("webapp", "fr-FR", key, "x-haml"));
+        var resource = hft.modern.getClean(ResourceString.cleanHashKey("webapp", "fr-FR", key, "x-haml"));
         test.ok(resource);
 
         test.equal(resource.getSource(), expected);
@@ -2857,8 +2861,6 @@ module.exports = {
         
         test.done();
     },
-
-
 
     testHamlFileAssembleTranslationWithEmbeddedEntities: function(test) {
         test.expect(2);
@@ -2900,7 +2902,153 @@ module.exports = {
         test.equal(actual, expected);
         test.done();
     },
-   
+
+    testHamlFileAssembleTranslationWithEmbeddedTagsMissingStrings: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+        	original: 'This is a test.\n' +
+        	          '<b>Bold text.</b>\n' +
+    				  'This should all be in one string.\n'
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "Ceci est un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	source: "Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "fr-FR");
+        
+        var expected = 'Ceci est un essai. <b>Bold text.</b> Tout doit etre en une phrase.';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileAssembleTranslationModernTranslationsUpdated: function(test) {
+        test.expect(3);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+        	original: 'This is a test.\n' +
+        	          '<b>Bold text.</b>\n' +
+    				  'This should all be in one string.\n'
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "Ceci est un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	source: "Texte gras.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	source: "Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "fr-FR");
+        
+        var expected = 'Ceci est un essai. <b>Texte gras.</b> Tout doit etre en une phrase.';
+        
+        var resource = hft.modern.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
+        test.ok(resource);
+        
+        diff(resource.text, expected);
+        test.equal(resource.text, expected);
+        
+        test.done();
+    },
+
+    testHamlFileAssembleTranslationMissingStringsInModernTranslation: function(test) {
+        test.expect(3);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        var segment = {
+        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+        	original: 'This is a test.\n' +
+        	          '<b>Bold text.</b>\n' +
+    				  'This should all be in one string.\n'
+        };
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "Ceci est un essai.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	source: "Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.assembleTranslation(segment, translations, "fr-FR");
+        
+        var expected = 'Ceci est un essai. <b>Bold text.</b> Tout doit etre en une phrase.';
+        
+        var resource = hft.modern.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
+        test.ok(resource);
+        
+        diff(resource.text, expected);
+        test.equal(resource.text, expected);
+        
+        test.done();
+    },
+
+
     testHamlFileLocalizeText: function(test) {
         test.expect(2);
 
