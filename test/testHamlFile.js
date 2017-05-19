@@ -2211,6 +2211,71 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextSkipRubyCommands: function(test) {
+        test.expect(9);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},"] \n' +
+        	    '- if @expert.isActive?\n' +
+        	    '  Positive.\n' +
+        	    '- else\n' +
+        	    '  Negative.\n' +
+        	    '- endif\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Positive.");
+        test.equal(r.getKey(), "r389103942");
+
+        resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Negative.");
+        test.equal(r.getKey(), "r1006126501");
+
+        test.done();
+    },
+
+    testHamlFileParseTextRubyCommandsBracketsNotMatchedAtEOL: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},", \n' +
+        	    '  "Thank you for committing to a HealthTap shift today from #{@expert_shift.range_as_string}.","This is a courtesy notification to inform you that our system does not currently see you logged in with the "Available" status on HealthTap for your shift. If there are any technical issues preventing you from logging on, please consider trying to access HealthTap again after restarting your device or computer. Then, if you would like additional assistance, please contact #{@expert_support_email} (or #{@expert_support_phone})."]\n' +
+        	    'Not indented.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Not indented.");
+        test.equal(r.getKey(), "r313193297");
+
+        test.done();
+    },
+
     testHamlFileParseTextWithMultilineRubyCode: function(test) {
         test.expect(6);
 
