@@ -391,7 +391,7 @@ module.exports = {
         h.lines = ["   %foo.bar{ {} {{{}}}}  asdf\n"];
         h.currentLine = 0;
         
-        test.equal(h.findMatching(11), 22);
+        test.equal(h.findMatchingBrackets(11), 22);
         test.equal(h.currentLine, 0);
         
 		test.done();
@@ -404,7 +404,7 @@ module.exports = {
         h.lines = ["   %foo.bar{ [] <()>]]}  asdf"];
         h.currentLine = 0;
         
-        test.equal(h.findMatching(11), 22);
+        test.equal(h.findMatchingBrackets(11), 22);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -417,7 +417,7 @@ module.exports = {
         h.lines = ["   %foo.bar(foo = 'bar')  asdf"];
         h.currentLine = 0;
         
-        test.equal(h.findMatching(11), 23);
+        test.equal(h.findMatchingBrackets(11), 23);
         test.equal(h.currentLine, 0);
         
 		test.done();
@@ -430,7 +430,7 @@ module.exports = {
         h.lines = ["   %foo.bar(foo = ('bar'))  "];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(11), 25);
+        test.equal(h.findMatchingBrackets(11), 25);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -443,7 +443,7 @@ module.exports = {
         h.lines = ["   %foo.bar[foo = 'bar']  "];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(11), 23);
+        test.equal(h.findMatchingBrackets(11), 23);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -456,7 +456,7 @@ module.exports = {
         h.lines = ["   %foo.bar[foo = ['bar']]  "];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(11), 25);
+        test.equal(h.findMatchingBrackets(11), 25);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -472,7 +472,7 @@ module.exports = {
         ];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(11), 21);
+        test.equal(h.findMatchingBrackets(11), 21);
         test.equal(h.currentLine, 1);
 
 		test.done();
@@ -488,7 +488,7 @@ module.exports = {
         ];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(11), 21);
+        test.equal(h.findMatchingBrackets(11), 21);
         test.equal(h.currentLine, 1);
 
 		test.done();
@@ -505,7 +505,7 @@ module.exports = {
         ];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(0), 21);
+        test.equal(h.findMatchingBrackets(0), 21);
         test.equal(h.currentLine, 1);
 
 		test.done();
@@ -522,7 +522,7 @@ module.exports = {
         ];
         h.currentLine = 2;
 
-        test.equal(h.findMatching(4), 25);
+        test.equal(h.findMatchingBrackets(4), 25);
         test.equal(h.currentLine, 2);
 
 		test.done();
@@ -537,7 +537,7 @@ module.exports = {
         ];
         h.currentLine = 0;
 
-        test.equal(h.findMatching(2), 27);
+        test.equal(h.findMatchingBrackets(2), 27);
         test.equal(h.currentLine, 0);
 
 		test.done();
@@ -2239,7 +2239,7 @@ module.exports = {
         test.equal(r.getSource(), "Positive.");
         test.equal(r.getKey(), "r389103942");
 
-        resources[1];
+        r = resources[1];
         test.ok(r);
         
         test.equal(r.getSource(), "Negative.");
