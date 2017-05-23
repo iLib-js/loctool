@@ -40,6 +40,15 @@ var p = new WebProject({
 	locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"]
 });
 
+var pi = new WebProject({
+	id: "webapp",
+	sourceLocale: "en-US"
+}, "./testfiles", {
+	nopseudo: true,
+	locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
+	identify: true
+});
+
 var hft = new HamlFileType(p);
 
 module.exports = {
@@ -3184,6 +3193,37 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileLocalizeTextWithIdentify: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: pi, // project with identify set to true
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  This is a test.\n' +
+        		'  This should all be in one string.\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey("This is a test. This should all be in one string."),
+        	source: "Ceci est un essai. Tout doit etre en une phrase.",
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  <span loclang="haml" locid="' + h.makeKey("This is a test. This should all be in one string.") + '">Ceci est un essai. Tout doit etre en une phrase.</span>\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+
     testHamlFileLocalizeTextLowerIndentLevel: function(test) {
         test.expect(2);
 
@@ -3276,6 +3316,35 @@ module.exports = {
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  .fg-bold.fg-test Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithCSSClassesAndIdentify: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: pi, // project with identify set to true
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  .fg-bold.fg-test This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = '  .fg-bold.fg-test <span loclang="haml" locid="' + h.makeKey("This is a test.") + '">Ceci est un essai.</span>\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
