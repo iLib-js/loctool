@@ -26,7 +26,7 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [command [command-specific-arguments]]\n" +
+	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
@@ -41,6 +41,9 @@ function usage() {
 		"  run only the parts of the loctool that are needed at the moment.\n" +
 		"-n or --nopseudo\n" +
 		"  Do not pseudo-localize missing strings and do not generate the pseudo-locale.\n" +
+		"-i or --identify\n" +
+		"  Identify resources where possible by marking up the translated files with \n" +
+		"  the resource key.\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
 		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -64,7 +67,8 @@ function usage() {
 var settings = {
 	rootDir: ".",
 	locales: null,
-	pull: false
+	pull: false,
+	identify: false
 };
 
 var options = [];
@@ -81,6 +85,8 @@ for (var i = 0; i < argv.length; i++) {
 		}
 	} else if (val === "-n" || val === "--nopseudo") {
 		settings.nopseudo = true;
+	} else if (val === "-i" || val === "--identify") {
+		settings.identify = true;
 	} else if (val === "-f" || val === "--filetype") {
 		if (i < argv.length && argv[i+1]) {
 			var types = argv[++i].split(",");
