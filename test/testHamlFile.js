@@ -1701,6 +1701,87 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextWithTripleBang: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('!!! Frameset\n' +
+        		'This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithTripleBangAlone: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('!!!\n' +
+        		'This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testHamlFileParseTextWithSingleBang: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('! Frameset\n' +
+        		'This is a test\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "! Frameset This is a test");
+        test.equal(r.getKey(), "r414916314");
+        
+        test.done();
+    },
+
     testHamlFileParseSkipScriptBlocks: function(test) {
         test.expect(9);
 
@@ -3691,6 +3772,132 @@ module.exports = {
         var expected = '  Ceci est un essai.\n' +
                        '  %p Une autre phrase.\n' +
                        '  Sans l\'indentation.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithTripleBang: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('!!! XML\n' +
+        		'This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = 
+        	'!!! XML\n' +
+			'Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithTripleBangAlone: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('!!!\n' +
+        		'This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = 
+        	'!!!\n' +
+			'Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithDoubleBang: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('!! XML\n' +
+        		'This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('!! XML This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = 
+        	'Ceci est un essai.\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testHamlFileLocalizeTextWithSingleBang: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('! XML\n' +
+        		'This is a test.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "webapp",
+        	key: h.makeKey('! XML This is a test.'),
+        	source: 'Ceci est un essai.',
+        	locale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
+        }));
+        
+        var actual = h.localizeText(translations, "fr-FR");
+        var expected = 
+        	'Ceci est un essai.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
