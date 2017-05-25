@@ -1018,6 +1018,23 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileDontConvertTagWithNonAttrs: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.lines = ["    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n"];
+        h.currentLine = 0;
+        
+        test.equal(h.convertTag(3), '');
+        
+        test.done();
+    },
+
 	testHamlFileParseTextSimple: function(test) {
         test.expect(6);
 
@@ -1503,7 +1520,51 @@ module.exports = {
         
         test.done();
     },
+
+    testHamlFileParseTextWithHTMLNonBreakingTagsWithNonAttributes: function(test) {
+        test.expect(12);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        // the code in the attributes disqualifies it from being converted into a <span> tag in line
+        h.parse("    Mission\n" +
+        	    "    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n" +
+        	    "    %span.text{:class=>page=='thanks' ? 'active' : 'hidden'} &#8250; Thanks, Doc!\n");
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), 'Mission');
+        test.equal(r.getKey(), "r642046153");
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equal(r.getSource(), '&#8250; Smile');
+        test.equal(r.getKey(), "r238348915");
+        
+        r = resources[2];
+        test.ok(r);
+        
+        test.equal(r.getSource(), '&#8250; Thanks, Doc!');
+        test.equal(r.getKey(), "r954577644");
+        
+        test.done();
+    },
  
+    
+
+
     testHamlFileParseTextWithHTMLBreakingTags: function(test) {
         test.expect(9);
 
