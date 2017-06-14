@@ -2143,7 +2143,7 @@ module.exports = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <area alt="<span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;>Texte de l&apos;espace réservé</span>"><span loclang="html" locid="This is a test">Ceci est un essai</span></area>\n' +
+            '       <area alt="&lt;span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;"><span loclang="html" locid="This is a test">Ceci est un essai</span></area>\n' +
             '       <div id="foo">\n' +
             '           <span loclang="html" locid="This is also a test">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
@@ -2205,7 +2205,7 @@ module.exports = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <span loclang="html" locid="This<span title=&quot;{title}&quot;>is a test</span>">Ceci <span title="<span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;>Texte de l&apos;espace réservé</span>">est un essai</span></span>\n' +
+            '       <span loclang="html" locid="This&lt;span title=&quot;{title}&quot;&gt;is a test&lt;/span&gt;">Ceci <span title="&lt;span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;">est un essai</span></span>\n' +
             '       <div id="foo">\n' +
             '           <span loclang="html" locid="This is also a test">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +

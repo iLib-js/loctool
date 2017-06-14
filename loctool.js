@@ -41,6 +41,8 @@ function usage() {
 		"  run only the parts of the loctool that are needed at the moment.\n" +
 		"-n or --nopseudo\n" +
 		"  Do not pseudo-localize missing strings and do not generate the pseudo-locale.\n" +
+		"-o or --oldhaml\n" +
+		"  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
 		"-i or --identify\n" +
 		"  Identify resources where possible by marking up the translated files with \n" +
 		"  the resource key.\n" +
@@ -68,7 +70,8 @@ var settings = {
 	rootDir: ".",
 	locales: null,
 	pull: false,
-	identify: false
+	identify: false,
+	oldHamlLoc: false
 };
 
 var options = [];
@@ -85,6 +88,8 @@ for (var i = 0; i < argv.length; i++) {
 		}
 	} else if (val === "-n" || val === "--nopseudo") {
 		settings.nopseudo = true;
+	} else if (val === "-o" || val === "--oldhaml") {
+		settings.oldHamlLoc = true;
 	} else if (val === "-i" || val === "--identify") {
 		settings.identify = true;
 	} else if (val === "-f" || val === "--filetype") {
@@ -217,12 +222,16 @@ function walk(dir, project) {
 			
 			if (project.options && project.options.includes) {
 				project.options.includes.forEach(function(p) {
-					var stat = fs.statSync(p);
-					if (stat && stat.isDirectory()) {
-						logger.info(p);
-						walk(p, project);
+					if (fs.existsSync(p)) {
+						var stat = fs.statSync(p);
+						if (stat && stat.isDirectory()) {
+							logger.info(p);
+							walk(p, project);
+						} else {
+							project.addPath(p);
+						}
 					} else {
-						project.addPath(p);
+						logger.warn("File " + p + " which is listed in the includes in the project.json does not exist any more.");
 					}
 				});
 			}
