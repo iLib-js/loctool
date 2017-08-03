@@ -68,7 +68,7 @@ function usage() {
 // the global settings object that configures how the tool will operate
 var settings = {
 	rootDir: ".",
-	locales: null,
+	locales: [],
 	pull: false,
 	identify: false,
 	oldHamlLoc: false
