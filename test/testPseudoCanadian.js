@@ -7,6 +7,8 @@
 if (!PseudoFactory) {
     var PseudoFactory = require("../lib/PseudoFactory.js");
     var WebProject = require("../lib/WebProject.js");
+    var TranslationSet = require("../lib/TranslationSet.js");
+    var ResourceString = require("../lib/ResourceString.js");
 }
 
 var project = new WebProject({
@@ -263,6 +265,53 @@ module.exports = {
 			type: "text"
 		});
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colourful} supplements.");
+        
+        test.done();
+    },
+    
+    testPseudoBritishGetStringForResourceWithOverrideTranslation: function(test) {
+        test.expect(2);
+
+        var translations = new TranslationSet();
+        var english1 = new ResourceString({
+            key: "foo",
+            autoKey: true,
+            source: "I am enamored by color of your homogenized yogurt.",
+            locale: "en-US",
+            origin: "source"
+        });
+
+        translations.add(english1);
+
+        var english2 = new ResourceString({
+            key: "asdf",
+            autoKey: true,
+            source: "The color of your homogenized yogurt.",
+            locale: "en-US",
+            origin: "source"
+        });
+
+        translations.add(english1);
+
+        res = new ResourceString({
+            key: "foo",
+            autoKey: true,
+            source: "override string",
+            locale: "en-CA",
+            origin: "target"
+        });
+
+        translations.add(res);
+
+        var pb = PseudoFactory({
+        	set: translations,
+        	project: project,
+			locale: "en-CA",
+			type: "text"
+		});
+        
+        test.equal(pb.getStringForResource(english1), "override string");       // looked up
+        test.equal(pb.getStringForResource(english2), "The colour of your homogenized yogurt."); // auto-generated
         
         test.done();
     }

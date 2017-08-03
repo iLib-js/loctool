@@ -366,6 +366,14 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testYamlResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.csv" description="Run only the tests for the csv object">
+		<run script="${build.test}/testCSV.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.csv" description="Debug only the tests for the csv object">
+		<debug script="${build.test}/testCSV.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.csvfile" description="Run only the tests for the csv file object">
 		<run script="${build.test}/testCSVFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -390,12 +398,28 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testRubyFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.hamlfile" description="Run only the haml file tests">
+		<run script="${build.test}/testHamlFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.hamlfile" description="Debug only the haml file tests">
+		<debug script="${build.test}/testHamlFile.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.hamlfiletype" description="Run only the tests for the haml file type">
 		<run script="${build.test}/testHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
 	<target name="debug.hamlfiletype" description="Debug only the tests for the haml file type">
 		<debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.oldhamlfiletype" description="Run only the tests for the old haml file type">
+		<run script="${build.test}/testOldHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.oldhamlfiletype" description="Debug only the tests for the old haml file type">
+		<debug script="${build.test}/testOldHamlFileType.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.pseudobritish" description="Run only the tests for the pseudo british localizer">
@@ -430,7 +454,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
 	</target>
 	
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant">
 	</target>
 
 	<macrodef name="runsql">

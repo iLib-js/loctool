@@ -6,9 +6,19 @@
 
 if (!RubyFile) {
     var RubyFile = require("../lib/RubyFile.js");
+    var RubyFileType = require("../lib/RubyFileType.js");
     var WebProject =  require("../lib/WebProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
 }
+
+var p = new WebProject({
+    id: "webapp",
+    sourceLocale: "en-US"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var rft = new RubyFileType(p);
 
 module.exports = {
     testRubyFileConstructor: function(test) {
@@ -23,13 +33,6 @@ module.exports = {
     testRubyFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile(p, "./ruby/external_user_metric.rb");
 
         test.ok(rf);
@@ -40,15 +43,9 @@ module.exports = {
     testRubyFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -58,15 +55,9 @@ module.exports = {
     testRubyFileMakeKey: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -78,15 +69,9 @@ module.exports = {
     testRubyFileMakeKeyCompressUnderscores: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -98,15 +83,9 @@ module.exports = {
 	testRubyFileMakeKeyCompressUnderscores2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -118,15 +97,9 @@ module.exports = {
 	testRubyFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -139,15 +112,9 @@ module.exports = {
 	testRubyFileMakeKeyTabs: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -159,15 +126,9 @@ module.exports = {
 	testRubyFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -179,15 +140,9 @@ module.exports = {
 	testRubyFileMakeKeyInterpretEscapedNonSpecialChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -199,15 +154,9 @@ module.exports = {
 	testRubyFileMakeKeyInterpretEscapedSpecialChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -219,15 +168,9 @@ module.exports = {
 	testRubyFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -239,15 +182,9 @@ module.exports = {
 	testRubyFileMakeKeyNoSkipHTML: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -259,15 +196,9 @@ module.exports = {
 	testRubyFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(18);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -296,15 +227,9 @@ module.exports = {
 	testRubyFileMakeKeyUnescapedNewLines: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -317,15 +242,9 @@ module.exports = {
 	testRubyFileMakeKeyUnescapedTabs: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -337,15 +256,9 @@ module.exports = {
 	testRubyFileMakeKeyUnescapedQuotes: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -357,15 +270,9 @@ module.exports = {
 	testRubyFileMakeKeyInterpretUnescapedSpecialChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -377,15 +284,9 @@ module.exports = {
     testRubyFileMakeKeyDigits: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -397,15 +298,9 @@ module.exports = {
     testRubyFileMakeKeyNonChars: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -417,15 +312,9 @@ module.exports = {
     testRubyFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -446,15 +335,9 @@ module.exports = {
     testRubyFileParseSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -475,15 +358,9 @@ module.exports = {
     testRubyFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -503,15 +380,9 @@ module.exports = {
     testRubyFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -531,15 +402,9 @@ module.exports = {
     testRubyFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -559,15 +424,9 @@ module.exports = {
     testRubyFileParseSingleQuotesUnescaped: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -588,15 +447,9 @@ module.exports = {
     testRubyFileParseDoubleQuotesEscaped: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -617,15 +470,9 @@ module.exports = {
     testRubyFileParseIgnoreEmpty: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -642,15 +489,9 @@ module.exports = {
     testRubyFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -671,15 +512,9 @@ module.exports = {
     testRubyFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -698,15 +533,9 @@ module.exports = {
     testRubyFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -727,15 +556,9 @@ module.exports = {
     testRubyFileParseMultiple: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -760,15 +583,9 @@ module.exports = {
        testRubyFileParseMultipleSameLine: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -793,15 +610,9 @@ module.exports = {
     testRubyFileParseMultipleSameLineWithQuotes: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -826,15 +637,9 @@ module.exports = {
     testRubyFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -861,15 +666,9 @@ module.exports = {
     testRubyFileParseMultipleWithParametersAndComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -896,15 +695,9 @@ module.exports = {
     testRubyFileParseMultipleOnSameLineWithComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -936,15 +729,9 @@ module.exports = {
     testRubyFileParseWithDups: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -966,15 +753,9 @@ module.exports = {
     testRubyFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -990,15 +771,9 @@ module.exports = {
     testRubyFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1013,15 +788,9 @@ module.exports = {
     testRubyFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1036,15 +805,9 @@ module.exports = {
     testRubyFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1059,15 +822,9 @@ module.exports = {
     testRubyFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1082,15 +839,9 @@ module.exports = {
     testRubyFileParseSubobject: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1105,15 +856,9 @@ module.exports = {
     testRubyFileExtractFile: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
         	project: p,
+			type: rft,
         	pathName: "./ruby/external_user_metric.rb"
         });
         test.ok(rf);
@@ -1141,15 +886,9 @@ module.exports = {
     testRubyFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1166,15 +905,9 @@ module.exports = {
     testRubyFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
         	project: p,
+			type: rft,
         	pathName: "./ruby/foo.rb"
         });
         test.ok(rf);
@@ -1192,15 +925,9 @@ module.exports = {
     testRubyFileParseHamlFile: function(test) {
         test.expect(18);
 
-        var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-			project: p
+			project: p,
+			type: rft
 		});
         test.ok(rf);
 
@@ -1269,15 +996,9 @@ module.exports = {
     testRubyFileParseDoublePluralArrow: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1296,15 +1017,9 @@ module.exports = {
     testRubyFileParseSinglePluralArrow: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1323,15 +1038,9 @@ module.exports = {
     testRubyFileParseDoublePluralColon: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1350,15 +1059,9 @@ module.exports = {
     testRubyFileParseSinglePluralColon: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1377,15 +1080,9 @@ module.exports = {
     testRubyFileParseMixedPluralOne: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1404,15 +1101,9 @@ module.exports = {
     testRubyFileParseMixedPluralTwo: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1431,15 +1122,9 @@ module.exports = {
     testRubyFileParseOutOfOrder: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1458,15 +1143,9 @@ module.exports = {
     testRubyFileParsePluralMissingRequiredKey: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1480,15 +1159,9 @@ module.exports = {
     testRubyFileParsePluralSkipInvalidKey: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1507,15 +1180,9 @@ module.exports = {
     testRubyFileParsePluralAllValid: function(test) {
         test.expect(11);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1538,15 +1205,9 @@ module.exports = {
     testRubyFileParsePluralWithoutVariables: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1565,15 +1226,9 @@ module.exports = {
     testRubyFileParsePluralFullySpecified: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-			locales:["en-GB"]
-		});
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1594,13 +1249,9 @@ module.exports = {
     testRubyFileParseComplicated: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1619,13 +1270,9 @@ module.exports = {
     testRubyFileParseLazyDoublePluralArrow: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1644,13 +1291,9 @@ module.exports = {
     testRubyFileParseLazySinglePluralArrow: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1669,13 +1312,9 @@ module.exports = {
     testRubyFileParseLazyDoublePluralColon: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1694,13 +1333,9 @@ module.exports = {
     testRubyFileParseLazySinglePluralColon: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1719,13 +1354,9 @@ module.exports = {
     testRubyFileParseLazyMixedPluralOne: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1744,13 +1375,9 @@ module.exports = {
     testRubyFileParseLazyMixedPluralTwo: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1769,13 +1396,9 @@ module.exports = {
     testRubyFileParseLazyOutOfOrder: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1794,13 +1417,9 @@ module.exports = {
     testRubyFileParseLazyPluralMissingRequiredKey: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1814,13 +1433,9 @@ module.exports = {
     testRubyFileParseLazyPluralSkipInvalidKey: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1839,13 +1454,9 @@ module.exports = {
     testRubyFileParseLazyPluralAllValid: function(test) {
         test.expect(11);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1868,13 +1479,9 @@ module.exports = {
     testRubyFileParseLazyPluralWithoutVariables: function(test) {
         test.expect(7);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles");
-
         var rf = new RubyFile({
-            project: p
+            project: p,
+			type: rft
         });
         test.ok(rf);
 
@@ -1887,6 +1494,42 @@ module.exports = {
         test.equals(r.get('one'),'This is 1 %{thing}');
         test.equals(r.get('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
+        test.done();
+    },
+    
+    testRubyFileParseShortStringInHaml: function(test) {
+        test.expect(11);
+
+        var rf = new RubyFile({
+            project: p,
+			type: rft
+        });
+        test.ok(rf);
+
+        rf.parse('%html\n' +
+				 '  %head\n' +
+				 '    %meta{:name=>"pdfkit-page_size", :content => Rb.t("A4")}\n' +
+				 '    %meta{:name=>"pdfkit-margin_top", :content => Rb.t("0.05in")}\n' +
+				 '    %meta{:name=>"pdfkit-margin_right", :content => Rb.t("0.05in")}\n');
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 2);
+        var resources = set.getAll();
+        test.ok(resources);
+        test.equal(resources.length, 2);
+        
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equals(r.getSource(), 'A4');
+        test.equals(r.getKey(), 'r949377406');
+        
+        r = resources[1];
+        test.ok(r);
+        
+        test.equals(r.getSource(), '0.05in');
+        test.equals(r.getKey(), 'r586828064');
+
         test.done();
     }
 };
