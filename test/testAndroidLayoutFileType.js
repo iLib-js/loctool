@@ -14,15 +14,15 @@ module.exports = {
         test.expect(1);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
-        
+
         test.ok(alf);
-        
+
         test.done();
     },
 
@@ -30,16 +30,16 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("foo.xml"));
-        
+
         test.done();
     },
 
@@ -47,19 +47,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(alf.handles("android/res/layout/foo.xml"));
-        
+
         test.done();
     },
 
@@ -67,19 +67,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(alf.handles("android/res/menu/foo.xml"));
-        
+
         test.done();
     },
 
@@ -87,19 +87,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(alf.handles("android/res/xml/foo.xml"));
-        
+
         test.done();
     },
 
@@ -107,39 +107,39 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout/foo.html"));
-        
+
         test.done();
     },
-    
+
     testAndroidLayoutFileTypeHandlesWrongDir: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/color/strings.xml"));
-        
+
         test.done();
     },
 
@@ -147,19 +147,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-es/foo.xml"));
-        
+
         test.done();
     },
 
@@ -167,19 +167,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-zh/foobar.xml"));
-        
+
         test.done();
     },
 
@@ -187,19 +187,59 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-en-rGB/foobar.xml"));
-        
+
+        test.done();
+    },
+
+    testAndroidLayoutFileTypeHandlesLayoutAlreadyLocalizedModernFullLocale: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var alf = new AndroidLayoutFileType(p);
+        test.ok(alf);
+
+        test.ok(!alf.handles("android/res/layout-b+zh+Hans+CN/foobar.xml"));
+
+        test.done();
+    },
+
+    testAndroidLayoutFileTypeHandlesLayoutAlreadyLocalizedModernFullLocaleWithContext: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var alf = new AndroidLayoutFileType(p);
+        test.ok(alf);
+
+        test.ok(!alf.handles("android/res/layout-b+zh+Hans+CN-hdmi/foobar.xml"));
+
         test.done();
     },
 
@@ -207,19 +247,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(alf.handles("android/res/layout-foo/bar.xml"));
-        
+
         test.done();
     },
 
@@ -227,19 +267,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-es-foo/bar.xml"));
-        
+
         test.done();
     },
 
@@ -247,19 +287,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-zh-foo/bar.xml"));
-        
+
         test.done();
     },
 
@@ -267,19 +307,19 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"java": "android/res"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var alf = new AndroidLayoutFileType(p);
         test.ok(alf);
-        
+
         test.ok(!alf.handles("android/res/layout-en-rGB-foo/bar.xml"));
-        
+
         test.done();
     }
 };
