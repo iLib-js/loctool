@@ -343,6 +343,127 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseArray: function(test) {
+        test.expect(18);
+
+        var yml = new YamlFile({
+			project: p,
+			type: yft
+		});
+        test.ok(yml);
+
+        var set = yml.getTranslationSet();
+        test.equal(set.size(), 0);
+
+        yml.parse(
+        		'---\n' +
+        		'Jobs:\n' +
+        		'  - one\n' +
+        		'  - two\n' +
+        		'  - three\n' +
+        		'  - four\n');
+
+        test.ok(set);
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 4);
+
+        test.equal(r[0].getSource(), "one");
+        test.equal(r[0].getKey(), "0");
+        test.equal(r[0].getContext(), "Jobs");
+        
+        test.equal(r[1].getSource(), "two");
+        test.equal(r[1].getKey(), "1");
+        test.equal(r[1].getContext(), "Jobs");
+        
+        test.equal(r[2].getSource(), "three");
+        test.equal(r[2].getKey(), "2");
+        test.equal(r[2].getContext(), "Jobs");
+        
+        test.equal(r[3].getSource(), "four");
+        test.equal(r[3].getKey(), "3");
+        test.equal(r[3].getContext(), "Jobs");
+        
+        test.done();
+    },
+
+    testYamlFileParseArrayWithIds: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+			project: p,
+			type: yft
+		});
+        test.ok(yml);
+
+        var set = yml.getTranslationSet();
+        test.equal(set.size(), 0);
+
+        yml.parse(
+        		'---\n' +
+        		'triage_options:\n' +
+        	    '  - name: emergency-attention\n' +
+        	    '    display_value: Usually requires emergency attention\n' +
+        		'    color: red\n' +
+        		'    bars_count: 5\n' +
+        	    '    care_options:\n' +
+        		'    - :emergency\n' +   // should ignore these
+        		'    - :see_specialist\n' +
+        		'    - :find_doctor\n' +
+        		'    - :ask_free_question\n' +
+        		'    - :take_action\n' +
+        		'    - :learn_more\n' +
+        		'  - name: urgent-consult\n' +
+        		'    display_value: Usually requires an immediate doctor consult\n' +
+        		'    color: orange\n' +
+        		'    bars_count: 4\n' +
+        		'    care_options:\n' +
+        		'    - :see_specialist\n' +
+        		'    - :find_doctor\n' +
+        		'    - :learn_more\n' +
+        		'    - :emergency\n' +
+        		'    - :ask_free_question\n' +
+        		'    - :take_action\n' +
+        		'exploring_care_options:\n' +
+        		'  - :learn_more\n' +
+        		'  - :take_action\n' +
+        		'  - :ask_free_question\n' +
+        		'  - :see_specialist\n' +
+        		'  - :find_doctor\n' +
+        		'  - :emergency\n\n' +
+        		'reason_string_relationship:\n' +
+        		'  self: I am experiencing\n');
+
+        test.ok(set);
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 7);
+
+        test.equal(r[0].getSource(), "emergency-attention");
+        test.equal(r[0].getKey(), "name");
+        test.equal(r[0].getContext(), "triage_options@0");
+        
+        test.equal(r[1].getSource(), "Usually requires emergency attention");
+        test.equal(r[1].getKey(), "display_value");
+        test.equal(r[1].getContext(), "triage_options@0");
+        
+        test.equal(r[2].getSource(), "red");
+        test.equal(r[2].getKey(), "color");
+        test.equal(r[2].getContext(), "triage_options@0");
+        
+        test.done();
+    },
+
     testYamlFileParseIgnoreUnderscoreValues: function(test) {
         test.expect(3);
 
@@ -376,6 +497,27 @@ module.exports = {
         yml.parse('---\n' +
         		'a: :foo\n' +
         		'b: :bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreRubyIdsWithQuotes: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+			project: p,
+			type: yft
+		});
+        test.ok(yml);
+
+        yml.parse('---\n' +
+        		'a: ":foo"\n' +
+        		'b: ":bar"\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);

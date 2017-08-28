@@ -14,13 +14,13 @@ module.exports = {
         test.expect(1);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         
@@ -33,13 +33,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -53,13 +53,13 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -75,13 +75,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -95,13 +95,13 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -117,13 +117,13 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -135,17 +135,37 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileTypeHandlesFilesAlmostNamedForALocale: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+
+        test.ok(yft.handles("config/states.yml"));
+
+        test.done();
+    },
+
     testYamlFileTypeHandlesNoResourceFilesInSubdirs: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -159,13 +179,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);
@@ -179,13 +199,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yft = new YamlFileType(p);
         test.ok(yft);

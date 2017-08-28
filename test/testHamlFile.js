@@ -2236,6 +2236,34 @@ module.exports = {
         test.done();
     },
 
+    testHamlFileParseTextWithRubyCodeWithIndentedContents: function(test) {
+        test.expect(6);
+
+        var h = new HamlFile({
+			project: p,
+			type: hft
+		});
+        test.ok(h);
+        
+        h.parse('  = This is a test.\n' +
+        		'  = This indented string is still within the ruby code.\n' +
+        		'    Indented text.\n');
+        
+        var set = h.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var resources = set.getAll();
+        var r = resources[0];
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Indented text.");
+        test.equal(r.getKey(), "r899620093");
+
+        test.done();
+    },
+
     testHamlFileParseTextWithHtmlSafeRubyCode: function(test) {
         test.expect(6);
 
