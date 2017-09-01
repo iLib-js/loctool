@@ -553,6 +553,75 @@ module.exports = {
         test.done();
     },
 
+    testRubyFileParseWithVariables: function(test) {
+        test.expect(5);
+
+        var rf = new RubyFile({
+			project: p,
+			type: rft
+		});
+        test.ok(rf);
+
+        rf.parse("Rb.t('Created at %{date}', variables: {date: @date.localize.to_s})");
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("Created at %{date}");
+        test.ok(r);
+
+        test.equal(r.getSource(), "Created at %{date}");
+        test.equal(r.getKey(), "r783004496");
+
+        test.done();
+    },
+
+    testRubyFileParseWithExplicitResourceIdSingleQuote: function(test) {
+        test.expect(5);
+
+        var rf = new RubyFile({
+			project: p,
+			type: rft
+		});
+        test.ok(rf);
+
+        rf.parse("Rb.t('what', {resource_id: 'vaccination_what'})");
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("what");
+        test.ok(r);
+
+        test.equal(r.getSource(), "what");
+        test.equal(r.getKey(), "vaccination_what");
+
+        test.done();
+    },
+
+    testRubyFileParseWithExplicitResourceIdDoubleQuote: function(test) {
+        test.expect(5);
+
+        var rf = new RubyFile({
+			project: p,
+			type: rft
+		});
+        test.ok(rf);
+
+        rf.parse('Rb.t("what", {resource_id: "vaccination_what"})');
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("what");
+        test.ok(r);
+
+        test.equal(r.getSource(), "what");
+        test.equal(r.getKey(), "vaccination_what");
+
+        test.done();
+    },
+
     testRubyFileParseMultiple: function(test) {
         test.expect(8);
 
