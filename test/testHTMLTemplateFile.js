@@ -1370,6 +1370,47 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextPreserveSelfClosingTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            name: "foo",
+            id: "foo",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '<body>\n' +
+                '     <div class="foo"/>\n' +
+                '     This is a test    \n' +
+                '</body>\n' +
+                '</html>\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "This is a test",
+            source: "Ceci est un essai",
+            locale: "fr-FR",
+            datatype: "html"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+            '<html>\n' +
+            '<body>\n' +
+            '     <div class="foo"/>\n' +
+            '     Ceci est un essai    \n' +
+            '</body>\n' +
+            '</html>\n');
+
+        test.done();
+    },
+
     testHTMLTemplateFileLocalizeTextMultiple: function(test) {
         test.expect(2);
 
@@ -3255,7 +3296,7 @@ module.exports = {
                 '<div class="chat-attachment">\n' +
                 '  <a href="<%= url %>" target="_blank">\n' +
                 '    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
-                '      <img class="uploaded-image" src="<%= url %>">\n' +
+                '      <img class="uploaded-image" src="<%= url %>"/>\n' +
                 '    <% } else { %>\n' +
                 '      <div class="attachment-placeholder">\n' +
                 '        <div class="attachment-icon"></div>\n' +
@@ -3429,7 +3470,7 @@ module.exports = {
                 '      %>\n' +
                 '    \n' +
                 '    </p>\n' +
-                '    <br>\n' +
+                '    <br/>\n' +
                 '    <ul class="fg-list">\n' +
                 '      <li>30% specialist office referrals form virtual consult</li>\n' +
                 '      <li>20% doctor office visits diverted to Q&A</li>\n' +
@@ -3455,7 +3496,7 @@ module.exports = {
                 '      %>\n' +
                 '    \n' +
                 '    </p>\n' +
-                '    <br>\n' +
+                '    <br/>\n' +
                 '    <ul class="fg-list">\n' +
                 '      <li>30% specialist office referrals form virtual consult</li>\n' +
                 '      <li>20% doctor office visits diverted to Q&A</li>\n' +
@@ -3747,7 +3788,7 @@ module.exports = {
             '<div class="chat-attachment">\n' +
             '  <a href="<%= url %>" target="_blank">\n' +
             '    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
-            '      <img class="uploaded-image" src="<%= url %>">\n' +
+            '      <img class="uploaded-image" src="<%= url %>"/>\n' +
             '    <% } else { %>\n' +
             '      <div class="attachment-placeholder">\n' +
             '        <div class="attachment-icon"></div>\n' +
@@ -3895,7 +3936,7 @@ module.exports = {
             '    <div class="expertInfo">\n' +
             '      <div class="portraitContainer">\n' +
             '        <div class="portrait">\n' +
-            '          <img src="<%= photo %>" height="86px" width="86px">\n' +
+            '          <img src="<%= photo %>" height="86px" width="86px"/>\n' +
             '        </div>\n' +
             '        <div class="dot<%= (availability == \'available\') ? \' on\' : \'\' %>"></div>\n' +
             '      </div>\n' +
