@@ -685,5 +685,50 @@ module.exports = {
         test.equal(r.getComment(), "This is a translator comment");
         
         test.done();
+    },
+    
+    testAndroidLayoutFileModifyAndroidTextWithApostrophe: function(test) {
+        test.expect(2);
+
+        var alf = new AndroidLayoutFile({
+        	project: p,
+			type: alft,
+			pathName: "./testfiles/java/res/layout/foo.xml"
+		});
+        test.ok(alf);
+        
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+      		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"' +
+      		  '  android:layout_width="match_parent"' + 
+      		  '  android:title="@string/foo">' + 
+      		  '  <RelativeLayout' + 
+      		  '    android:layout_width="match_parent"' + 
+      		  '    android:text="This is also a \'test\'">' +   // sneaky apostrophe
+      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
+      		  '      android:id="@+id/invalidpassowrdMsg"' + 
+      		  '      android:text="This is a test"' + 
+      		  '      android:textColor="@color/error_red"/>' + 
+      		  '  </RelativeLayout>' + 
+      		  '</FrameLayout>');
+        
+        var xml = alf._getXML();
+        
+        var expected = '<?xml version="1.0" encoding="utf-8"?>' +
+		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"' +
+		  '  android:layout_width="match_parent"' + 
+		  '  android:title="@string/foo">' + 
+		  '  <RelativeLayout' + 
+		  '    android:layout_width="match_parent"' + 
+		  '    android:text="@string/text_This_is_also_a__test_">' + 
+		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
+		  '      android:id="@+id/invalidpassowrdMsg"' + 
+		  '      android:text="@string/text_This_is_a_test"' +
+		  '      android:textColor="@color/error_red"/>' + 
+		  '  </RelativeLayout>' + 
+		  '</FrameLayout>';
+        
+        test.equal(xml, expected);
+        
+        test.done();
     }
 };
