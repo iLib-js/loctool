@@ -296,30 +296,30 @@ module.exports = {
         
         var set = strings.getTranslationSet();
         
-        test.equal(set.size(), 42);
+        test.equal(set.size(), 21);
         
         var r = set.getBy({
-        	reskey: "%@ %@your gratitude :)"
+        	reskey: "%@ (%ld yrs)"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
-        test.equal(r[0].getKey(), "%@ %@your gratitude :)");
+        test.equal(r[0].getSource(), "%1$@ (%2$ld yrs)");
+        test.equal(r[0].getKey(), "%@ (%ld yrs)");
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "%@ added this checklist"
+        	reskey: "$%@ regularly"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%@ added this checklist");
-        test.equal(r[0].getKey(), "%@ added this checklist");
-        test.equal(r[0].getComment(), 'parameter is a person name');
+        test.equal(r[0].getSource(), "$%@ regularly");
+        test.equal(r[0].getKey(), "$%@ regularly");
+        test.ok(!r[0].getComment());
         
         var r = set.getBy({
-        	reskey: "%@ commented on %@'s answer"
+        	reskey: "%@ and "
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
-        test.equal(r[0].getKey(), "%@ commented on %@'s answer");
+        test.equal(r[0].getSource(), "%@ and ");
+        test.equal(r[0].getKey(), "%@ and ");
         test.ok(!r[0].getComment());
 
         test.done();

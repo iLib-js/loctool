@@ -15,7 +15,7 @@
 "F5h-fB-tt5.text" = "Are you a member?";
 
 /* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */
-"MFI-qx-pQf.text" = "Are you a doctor?";
+"MFI-qx-pQf.text" = "Are you an expert?";
 
 /* Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k"; */
 "QCe-xG-x5k.normalTitle" = "Login ›";
@@ -36,10 +36,10 @@
 "cZz-H1-CZg.text" = "Create a";
 
 /* Class = "UIButton"; normalTitle = "For doctors"; ObjectID = "dKU-eT-s3G"; */
-"dKU-eT-s3G.normalTitle" = "For doctors";
+"dKU-eT-s3G.normalTitle" = "For experts";
 
 /* Class = "UIButton"; normalTitle = "Try our doctor app ›"; ObjectID = "grP-vY-oOu"; */
-"grP-vY-oOu.normalTitle" = "Try our doctor app ›";
+"grP-vY-oOu.normalTitle" = "Try our expert app ›";
 
 /* Class = "UILabel"; text = "and"; ObjectID = "guG-tT-3La"; */
 "guG-tT-3La.text" = "and";

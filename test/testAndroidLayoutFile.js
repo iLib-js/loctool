@@ -109,8 +109,8 @@ module.exports = {
         		  'android:layout_width="match_parent">' + 
         		  '  <RelativeLayout ' + 
         		  '      android:layout_width="match_parent">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '    <com.mycompany.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      android:text="This is a test" ' + 
         		  '      android:textColor="@color/error_red"/>' + 
         		  '  </RelativeLayout>' + 
@@ -143,8 +143,8 @@ module.exports = {
       		  'android:layout_width="match_parent">' + 
       		  '  <RelativeLayout ' + 
       		  '      android:layout_width="match_parent">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+      		  '      android:id="@+id/invalidpasswordMsg"  ' + 
       		  '      android:text="This is a test" ' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -179,8 +179,8 @@ module.exports = {
         		  'android:layout_width="match_parent">' + 
         		  '  <RelativeLayout ' + 
         		  '      android:layout_width="match_parent">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      android:text="This is a test" ' + 
         		  '      android:textColor="@color/error_red"/>' + 
         		  '  </RelativeLayout>' + 
@@ -207,8 +207,8 @@ module.exports = {
         		  'android:layout_width="match_parent">' + 
         		  '  <RelativeLayout ' + 
         		  '      android:layout_width="match_parent">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      android:text="This is a test" ' +
         		  '      i18n="This is a translator comment" ' +
         		  '      android:textColor="@color/error_red"/>' + 
@@ -245,8 +245,8 @@ module.exports = {
         		  '  <RelativeLayout ' + 
         		  '    android:layout_width="match_parent"' + 
         		  '    android:text="This is also a test">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      android:text="This is a test" ' + 
         		  '      android:textColor="@color/error_red"/>' + 
         		  '  </RelativeLayout>' + 
@@ -285,8 +285,8 @@ module.exports = {
       		  '  <RelativeLayout ' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:text="This is a test">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+      		  '      android:id="@+id/invalidpasswordMsg"  ' + 
       		  '      android:text="This is a test" ' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -323,8 +323,8 @@ module.exports = {
         		  '    android:layout_width="match_parent"' + 
         		  '    android:text="This is also a test"' +
         		  '    i18n="translator comment 2">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      i18n="translator comment 3" ' + 
         		  '      android:text="This is a test" ' + 
         		  '      android:textColor="@color/error_red"/>' + 
@@ -371,10 +371,10 @@ module.exports = {
         
         test.equal(set.size(), 2);
         
-        var r = set.getBySource("Unlimited Doctor Consults");
+        var r = set.getBySource("Unlimited Gigabytes of Data");
         test.ok(r);
-        test.equal(r.getSource(), "Unlimited Doctor Consults");
-        test.equal(r.getKey(), "text_Unlimited_Doctor_Consults");
+        test.equal(r.getSource(), "Unlimited Gigabytes of Data");
+        test.equal(r.getKey(), "text_Unlimited_Gigabytes_of_Data");
 
         test.done();
     },
@@ -432,8 +432,8 @@ module.exports = {
       		  '  <RelativeLayout ' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:text="@string/text_This_is_a_test">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+      		  '      android:id="@+id/invalidpasswordMsg"  ' + 
       		  '      android:text="This is a test" ' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -469,8 +469,8 @@ module.exports = {
       		  '  <RelativeLayout' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:text="This is also a test">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView' + 
+      		  '      android:id="@+id/invalidpasswordMsg"' + 
       		  '      android:text="This is a test"' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -485,8 +485,8 @@ module.exports = {
 		  '  <RelativeLayout' + 
 		  '    android:layout_width="match_parent"' + 
 		  '    android:text="@string/text_This_is_also_a_test">' + 
-		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
-		  '      android:id="@+id/invalidpassowrdMsg"' + 
+		  '    <com.myproduct.customviews.RobotoRegularTextView' + 
+		  '      android:id="@+id/invalidpasswordMsg"' + 
 		  '      android:text="@string/text_This_is_a_test"' +
 		  '      android:textColor="@color/error_red"/>' + 
 		  '  </RelativeLayout>' + 
@@ -514,8 +514,8 @@ module.exports = {
       		  '  <RelativeLayout ' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:foo="This is also a test">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg" ' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+      		  '      android:id="@+id/invalidpasswordMsg" ' + 
       		  '      android:foo="This is a test" ' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -531,8 +531,8 @@ module.exports = {
   		  '  <RelativeLayout ' + 
   		  '    android:layout_width="match_parent"' + 
   		  '    android:foo="This is also a test">' + 
-  		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-  		  '      android:id="@+id/invalidpassowrdMsg" ' + 
+  		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
+  		  '      android:id="@+id/invalidpasswordMsg" ' + 
   		  '      android:foo="This is a test" ' + 
   		  '      android:textColor="@color/error_red"/>' + 
   		  '  </RelativeLayout>' + 
@@ -670,12 +670,12 @@ module.exports = {
         		  'android:layout_width="match_parent">' + 
         		  '  <RelativeLayout ' + 
         		  '      android:layout_width="match_parent">' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
         		  '      android:id="@+id/invalidpasswordMsg"  ' + 
         		  '      android:text="This is a test" ' +
         		  '      i18n="This is a translator comment" ' +
         		  '      android:textColor="@color/error_red"/>' + 
-        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '    <com.myproduct.customviews.RobotoRegularTextView ' + 
         		  '      android:id="@+id/invalidUseridMsg"  ' + 
         		  '      android:text="This is a test" ' +
         		  '      i18n="This is a translator comment" ' +
@@ -717,8 +717,8 @@ module.exports = {
       		  '  <RelativeLayout' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:text="This is also a \'test\'">' +   // sneaky apostrophe
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"' + 
+      		  '    <com.myproduct.customviews.RobotoRegularTextView' + 
+      		  '      android:id="@+id/invalidpasswordMsg"' + 
       		  '      android:text="This is a test"' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -733,8 +733,8 @@ module.exports = {
 		  '  <RelativeLayout' + 
 		  '    android:layout_width="match_parent"' + 
 		  '    android:text="@string/text_This_is_also_a__test_">' + 
-		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
-		  '      android:id="@+id/invalidpassowrdMsg"' + 
+		  '    <com.myproduct.customviews.RobotoRegularTextView' + 
+		  '      android:id="@+id/invalidpasswordMsg"' + 
 		  '      android:text="@string/text_This_is_a_test"' +
 		  '      android:textColor="@color/error_red"/>' + 
 		  '  </RelativeLayout>' + 

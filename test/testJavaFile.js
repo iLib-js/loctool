@@ -982,20 +982,20 @@ module.exports = {
         
         test.equal(set.size(), 3);
         
-        var r = set.getBySource("Can't find a clinician?");
+        var r = set.getBySource("Can't find a provider?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a clinician?");
-        test.equal(r.getKey(), "r831947664");
+        test.equal(r.getSource(), "Can't find a provider?");
+        test.equal(r.getKey(), "r773917451");
         
-        r = set.getBySource("Can't find a doctor?");
+        r = set.getBySource("Can't find an expert?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a doctor?");
-        test.equal(r.getKey(), "r74563301");
+        test.equal(r.getSource(), "Can't find an expert?");
+        test.equal(r.getKey(), "r750698896");
         
-        r = set.getBySource("Invite them to HealthTap");
+        r = set.getBySource("Invite them to Myproduct");
         test.ok(r);
-        test.equal(r.getSource(), "Invite them to HealthTap");
-        test.equal(r.getKey(), "r554083360");
+        test.equal(r.getSource(), "Invite them to Myproduct");
+        test.equal(r.getKey(), "r245047512");
 
         test.done();
     }
