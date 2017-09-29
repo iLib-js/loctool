@@ -982,15 +982,15 @@ module.exports = {
         
         test.equal(set.size(), 3);
         
-        var r = set.getBySource("Can't find a provider?");
+        var r = set.getBySource("Can't find a group?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a provider?");
-        test.equal(r.getKey(), "r773917451");
+        test.equal(r.getSource(), "Can't find a group?");
+        test.equal(r.getKey(), "r315749545");
         
-        r = set.getBySource("Can't find an expert?");
+        r = set.getBySource("Can't find a friend?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find an expert?");
-        test.equal(r.getKey(), "r750698896");
+        test.equal(r.getSource(), "Can't find a friend?");
+        test.equal(r.getKey(), "r23431269");
         
         r = set.getBySource("Invite them to Myproduct");
         test.ok(r);

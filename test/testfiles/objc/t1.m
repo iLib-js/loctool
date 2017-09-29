@@ -9,7 +9,7 @@
 #import "UIView+MPConstraints.h"
 #import "UIView+ImageNamed.h"
 #import "FGConstants.h"
-#import "MPExpertObject.h"
+#import "MPFriendObject.h"
 #import "UIColor+MPColor.h"
 #import "MPHorizontalHairlineView.h"
 #import "MPSessionInfo.h"
@@ -77,8 +77,8 @@
     self.personObject = object;
     self.viewWidthConstraint.constant = viewWidth;
     
-    self.backgroundViewBottomConstraint.constant = self.shouldShowRoundBottom ? 0:kRoundCornderRadius;
-    self.backgroundViewTopConstraint.constant = self.shouldShowRoundTop ? 0: -kRoundCornderRadius;
+    self.backgroundViewBottomConstraint.constant = self.shouldShowRoundBottom ? 0:kRoundCornerRadius;
+    self.backgroundViewTopConstraint.constant = self.shouldShowRoundTop ? 0: -kRoundCornerRadius;
     
     self.nameLabel.text = [object getFullName];
     if ([object.avataImageUrl isKindOfClass:NSString.class]) {
@@ -87,14 +87,14 @@
     
     self.availableImageView.hidden = YES;
     [self.locationLabel setText:[self.personObject getCityState]];
-    if ([object isKindOfClass:MPExpertObject.class]) {
-        MPExpertObject* experttor = (MPExpertObject *)object;
-        self.specialtyLabel.text = expert.specialty;
-        self.caduceusImageView.hidden = !expert.isexpert;
+    if ([object isKindOfClass:MPFriendObject.class]) {
+        MPFriendObject* friendtor = (MPFriendObject *)object;
+        self.specialtyLabel.text = friend.specialty;
+        self.caduceusImageView.hidden = !friend.isfriend;
         
-        self.availableImageView.hidden =  ![expert.available isEqualToString:@"available"];
+        self.availableImageView.hidden =  ![friend.available isEqualToString:@"available"];
         
-        // experts in active participant array are not available
+        // friends in active participant array are not available
         if ([sessionInfo.activePaticipantIdArray containsObject:object.personId]){
             self.availableImageView.hidden = YES;
         }
@@ -212,14 +212,14 @@
     BOOL amSecondaryMember = !amPrimaryMember;
     
     
-    MPExpertObject * expertPerson = nil;
+    MPFriendObject * friendPerson = nil;
     
-    if ([person isKindOfClass:MPExpertObject.class] ) {
-        expertPerson = (MPExpertObject*) person;
+    if ([person isKindOfClass:MPFriendObject.class] ) {
+        friendPerson = (MPFriendObject*) person;
     }
 
     
-    BOOL isExpert = person.isExpert;
+    BOOL isFriend = person.isFriend;
     
     
     if (sessionInfo.isQuestionEnded || sessionInfo.isMessageQuestion) {
@@ -242,7 +242,7 @@
     }
     
     BOOL isCoordinator = [sessionInfo.coordinatorId isEqualToString:person.personId];
-    if ([sessionInfo isCoordinator] && [sessionInfo.requestedExpertId isEqualToString:person.personId] &&
+    if ([sessionInfo isCoordinator] && [sessionInfo.requestedFriendId isEqualToString:person.personId] &&
         ![sessionInfo.activePaticipantIdArray containsObject:person.personId]) {
         BOOL isCalling = [sessionInfo.invitedNotJoinedPaticipantIdArray containsObject:person.personId];
         [self addCallNowButtonToCommandView:isCalling];
@@ -264,8 +264,8 @@
     
     BOOL hasJoined = [sessionInfo.activePaticipantIdArray containsObject:person.personId];
     
-    // not owner, can not remove or make other expert as owner
-    if (![sessionInfo isSoapOwner] && !hasJoined) {
+    // not owner, can not remove or make other friend as owner
+    if (![sessionInfo isCommentOwner] && !hasJoined) {
         self.commandViewHeightConstraint.constant = 10;
         return;
     }
@@ -273,9 +273,9 @@
     NSMutableArray *viewArray = [NSMutableArray array];
     if (hasJoined) {
         [self addInfoLabelToCommandView:NSLocalizedString(@"Joined", nil)];
-        if (![sessionInfo isSoapOwner] &&
+        if (![sessionInfo isCommentOwner] &&
             (![sessionInfo.CustomerId isEqualToString:sessionInfo.myId] ||
-             (expertPerson &&  isExpert) ||
+             (friendPerson &&  isFriend) ||
               isCoordinator)) {
             [_commandView constrainSubviewToLeft:_commandInfoLabel withMargin:0];
             return;
@@ -289,13 +289,13 @@
     
     // Am primary Customer ... I can remove other (secondary) members
     
-    if (!isExpert && !isCoordinator && ![person.personId isEqualToString:sessionInfo.myId]) {
+    if (!isFriend && !isCoordinator && ![person.personId isEqualToString:sessionInfo.myId]) {
         [self addRemoveButtonToCommandView];
         [viewArray addObject:_removeCommandButton];
     }
     
     /*  disable "make owner " for customer side
-    if ([person isKindOfClass:MPExpertObject.class] && !isCoordinator && hasJoined){
+    if ([person isKindOfClass:MPFriendObject.class] && !isCoordinator && hasJoined){
         [self addMakeOwnerButtonToCommandView];
         [viewArray addObject:_makeOwnerCommandButton];
     }
@@ -479,7 +479,7 @@
 {
     _caduceusImageView = [[UIImageView alloc] init];
     [self.caduceusImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.caduceusImageView setImage:[self imageNamed:@"expert_caduceus_red"]];
+    [self.caduceusImageView setImage:[self imageNamed:@"friend_caduceus_red"]];
     [self addSubview:self.caduceusImageView];
     [self.caduceusImageView constrainViewToSize:CGSizeMake(9, 15)];
     [self.caduceusImageView setContentMode:UIViewContentModeScaleAspectFit];

@@ -252,7 +252,7 @@ module.exports = {
         
         var set = strings.getTranslationSet();
         
-        test.equal(set.size(), 15);
+        test.equal(set.size(), 14);
         
         var r = set.getBy({
         	reskey: "QCe-xG-x5k.normalTitle"

@@ -130,7 +130,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
     @Override
     public boolean onQueryTextSubmit(String query) {
         page = 1;
-        searchexperts();
+        searchfriends();
         return false;
     }
 
@@ -142,12 +142,12 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "expert_view", "", "");
+        MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_view", "", "");
         getBaseActivity().getSupportActionBar().setTitle(R.string.picker_search_title);
         questionText = getArguments().getString(AskPickerFragment.ARG_QUESTION, "");
         locationModel = (DetailLocationModel) getArguments().getSerializable(AskPickerFragment.ARG_LOCATION);
 
-        listView = (ListView) view.findViewById(R.id.experts_list);
+        listView = (ListView) view.findViewById(R.id.friends_list);
         mPickerAdapter = new PickerResultAdapter(itemList);
         if (AccountController.getInstance().getLoggedInUser().getEnterpriseGroupModel() != null) {
             TextView header = new RobotoRegularTextView(getActivity());
@@ -184,15 +184,15 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
         footerInvite.setHighlightColor(Color.TRANSPARENT);
         footerInvite.setLinkTextColor(getResources().getColorStateList(R.color.selector_plain_text));
         SpannableStringBuilder ssb = new SpannableStringBuilder(
-                AccountController.getInstance().getLoggedInUser().isAssociatedToProviderGroup() ?
-                        RB.getString("Can't find a provider? ") : RB.getString("Can't find an expert? "));
+                AccountController.getInstance().getLoggedInUser().isAssociatedToGroup() ?
+                        RB.getString("Can't find a group? ") : RB.getString("Can't find a friend? "));
         int start = ssb.length();
         String cta = RB.getString("Invite them to Myproduct");
         ssb.append(cta);
         ssb.setSpan(new ClickableSpanWithoutUnderline() {
             @Override
             public void onClick(View widget) {
-                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "expert_invite", "", "");
+                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_invite", "", "");
                 getBaseActivity().pushFragment(new InviteFragment());
             }
         }, start, start + cta.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
@@ -203,7 +203,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
         listView.setOnItemClickListener(this);
 
         page = 1;
-        searchexperts();
+        searchfriends();
     }
 
     @Override
@@ -215,7 +215,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
             PickerResultWrapper item = mPickerAdapter.getItem(position - headers);
             if (item instanceof PickerResult) {
                 if (!"out_of_service".equals(((PickerResult) item).getAvailabilityType())) {
-                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "expert_continue",
+                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue",
                             "", ((PickerResult) item).getExpertId() + "");
                     AskPickerServiceFragment frag =
                             AskPickerServiceFragment.newInstance(((PickerResult) item).getExpertId());
@@ -224,22 +224,22 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
                 }
             } else if (item instanceof PickerResultImmediate) {
                 if (((PickerResultImmediate) item).isServiceAvailable()) {
-                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "expert_continue", "", "prime");
+                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue", "", "prime");
                     new ImmediateCheckHandler(getActivity(), questionText).tryGoComposeConsult(locationModel);
                 }
             } else if (item instanceof PickerResultFreeQuestion) {
-                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "expert_continue", "", "free_question");
+                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue", "", "free_question");
                 getBaseActivity().pushFragment(AskQuestionFragment.newInstance(questionText));
             }
         } else {
             if (view == showMore && !showMore.isShowProgress()) {
                 page += 1;
-                searchexperts();
+                searchfriends();
             }
         }
     }
 
-    private void searchexperts() {
+    private void searchfriends() {
         Map<String, String> params = new HashMap<>();
         // TODO add search string
         if (TextUtils.isEmpty(searchText)) {
