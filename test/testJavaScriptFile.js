@@ -739,7 +739,7 @@ module.exports = {
 			"        <%\n" +
 			"        var listsOver4 = false;\n" +
 			"        var seemoreLen = 0;\n" +
-			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Family history')];\n" +
+			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Smart Watches')];\n" +
 			"        _.each(subcats, function(subcat, j){\n" +
 			"            var list = topic.attribute.kb_attribute_relationships[subcat] || [];\n" +
 			"            if (list.length > 0) {\n" +
@@ -755,10 +755,10 @@ module.exports = {
         test.equal(r.getSource(), "Personal");
         test.equal(r.getKey(), "Personal");
         
-        r = set.getBySource("Family history");
+        r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },
@@ -818,22 +818,22 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 11);
+        test.equal(set.size(), 4);
         
-        var r = set.getBySource("Medical Devices");
+        var r = set.getBySource("Hand-held Devices");
         test.ok(r);
-        test.equal(r.getSource(), "Medical Devices");
-        test.equal(r.getKey(), "Medical Devices");
+        test.equal(r.getSource(), "Hand-held Devices");
+        test.equal(r.getKey(), "Hand-held Devices");
 
-        var r = set.getBySource("Medications");
+        var r = set.getBySource("Tablets");
         test.ok(r);
-        test.equal(r.getSource(), "Medications");
-        test.equal(r.getKey(), "Medications");
+        test.equal(r.getSource(), "Tablets");
+        test.equal(r.getKey(), "Tablets");
 
-        var r = set.getBySource("Family history");
+        var r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },
