@@ -1130,7 +1130,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -1214,12 +1214,12 @@ module.exports = {
     },
 
     testHTMLTemplateFileExtractFile2: function(test) {
-        test.expect(14);
+        test.expect(17);
 
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
@@ -1233,7 +1233,7 @@ module.exports = {
 
         var set = htf.getTranslationSet();
 
-        test.equal(set.size(), 4);
+        test.equal(set.size(), 5);
 
         var r = set.getBySource("Description");
         test.ok(r);
@@ -1245,10 +1245,15 @@ module.exports = {
         test.equal(r.getSource(), 'Authored by');
         test.equal(r.getKey(), 'Authored by');
 
-        r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+        r = set.getBySource('Agreed');
         test.ok(r);
-        test.equal(r.getSource(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
-        test.equal(r.getKey(), 'and<a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span>doctor<%=val.desc_agrees.length>1 ? \'s\' : \'\'%> agree</a>');
+        test.equal(r.getSource(), 'Agreed');
+        test.equal(r.getKey(), 'Agreed');
+
+        r = set.getBySource('and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
+        test.ok(r);
+        test.equal(r.getSource(), 'and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
+        test.equal(r.getKey(), 'and<a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span>of your friends agree</a>');
 
         r = set.getBySource("Write a better description &raquo;");
         test.ok(r);
@@ -2363,7 +2368,7 @@ module.exports = {
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
@@ -2377,28 +2382,28 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Get insurance quotes for free!',
             source: 'Obtenez des devis d\'assurance gratuitement!',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Talk',
             source: 'Consultee',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Ask',
             source: 'Poser un question',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Send question',
             source: 'Envoyer la question',
             locale: "fr-FR",
@@ -2406,28 +2411,28 @@ module.exports = {
         }));
 
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Get insurance quotes for free!',
             source: 'Kostenlosen Versicherungs-Angebote erhalten!',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Talk',
             source: 'Beratung',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Ask',
             source: 'Eine Frage stellen',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Send question',
             source: 'Frage abschicken',
             locale: "de-DE",
@@ -2530,7 +2535,7 @@ module.exports = {
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
@@ -2544,14 +2549,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Get insurance quotes for free!',
             source: 'Obtenir des réponses de médecins gratuitement!',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Get insurance quotes for free!',
             source: 'Kostenlosen antworten von Ärzten erhalten!',
             locale: "de-DE",
@@ -2571,7 +2576,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2596,7 +2601,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Dr. <%= family_name %> is not available.',
             source: 'Dr. <%= family_name %> n\'est pas disponible.',
             locale: "fr-FR",
@@ -2617,7 +2622,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2642,7 +2647,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Dr. <%= family_name %> is not available.',
             source: 'Dr. <%= family_name %> n\'est pas disponible.',
             locale: "fr-FR",
@@ -2666,7 +2671,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2689,7 +2694,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Group',
             source: 'Groupe',
             locale: "fr-FR",
@@ -2707,7 +2712,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2731,7 +2736,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2750,7 +2755,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2774,7 +2779,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2793,7 +2798,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2814,7 +2819,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2831,7 +2836,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2877,7 +2882,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2921,7 +2926,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2942,7 +2947,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2959,7 +2964,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2975,7 +2980,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2992,7 +2997,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3014,7 +3019,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3044,7 +3049,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3060,7 +3065,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3080,7 +3085,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3096,7 +3101,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3116,7 +3121,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3132,7 +3137,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3152,7 +3157,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3173,7 +3178,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3199,7 +3204,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3220,7 +3225,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
