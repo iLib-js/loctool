@@ -1,5 +1,5 @@
 <div class="askHeader">
-  <h3>Choose a consult method</h3>
+  <h3>Choose a meeting method</h3>
 </div>
 <div id="chooseMode">
   <div class="askContent">
@@ -17,12 +17,10 @@
       </div>
       <div class="name"><%= name %></div>
       <div class="specialty"><%= specialty %></div>
-      <% if (in_care_team) { %>
-      <div class="care">Care team</div>
-      <% } %>
       <% $.each(supplementary_descriptions, function(index, desc) { %>
       <div class="addInfo"><%= desc %></div>
       <% }); %>
+      Test phrase
     </div>
     <div class="modeSelection">
       <% $.each(modes, function(index, mode) { %>

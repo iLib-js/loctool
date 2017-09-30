@@ -1,5 +1,5 @@
 /*
- * testAndroidResourceFileType.js - test the HTML template file type handler object.
+ * testAndroidResourceFileType.js - test the Android resource file type handler object.
  *
  * Copyright © 2016-2017, HealthTap, Inc.
  *
