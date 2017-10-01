@@ -24,7 +24,7 @@ if (!JavaScriptFile) {
 }
 
 var p = new WebProject({
-	id: "ht-webapp12",
+	id: "webapp",
 	sourceLocale: "en-US"
 }, "./testfiles", {
 	locales:["en-GB"]

@@ -35,8 +35,8 @@
 /* Class = "UILabel"; text = "Create a"; ObjectID = "cZz-H1-CZg"; */
 "cZz-H1-CZg.text" = "Create a";
 
-/* Class = "UIButton"; normalTitle = "For doctors"; ObjectID = "dKU-eT-s3G"; */
-"dKU-eT-s3G.normalTitle" = "For friends";
+/* Class = "UIButton"; normalTitle = "For drivers"; ObjectID = "dKU-eT-s3G"; */
+"dKU-eT-s3G.normalTitle" = "For drivers";
 
 /* Class = "UILabel"; text = "and"; ObjectID = "guG-tT-3La"; */
 "guG-tT-3La.text" = "and";

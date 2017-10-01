@@ -76,15 +76,14 @@ module.exports = {
     },
 
     testJavaFileMakeKeySimpleTexts1: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Medications in your profile"), "r32020327");
-		test.equals(j.makeKey("All medications"), "r835310324");
-		test.equals(j.makeKey("Conditions"), "r103883086");
-		test.equals(j.makeKey("Symptoms"), "r481086103");
+        test.equals(j.makeKey("Preferences in your profile"), "r372802078");
+		test.equals(j.makeKey("All settings"), "r725930887");
+		test.equals(j.makeKey("Colour scheme"), "r734599412");
 		test.equals(j.makeKey("Experts"), "r343852585");
         
         test.done();

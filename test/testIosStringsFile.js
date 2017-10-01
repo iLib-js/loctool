@@ -25,7 +25,7 @@ if (!IosStringsFile) {
 }
 
 var p = new ObjectiveCProject({
-	id: "ios",
+	id: "iosapp",
 	sourceLocale: "en-US"
 }, "./testfiles", {
 	locales:["en-GB"]
@@ -191,8 +191,8 @@ module.exports = {
 
         strings.parse('/* i18n: this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
+				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a driver?";');
         
         test.ok(set);
         
@@ -212,8 +212,8 @@ module.exports = {
         
         strings.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
+				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a driver?";');
        
         var set = strings.getTranslationSet();
         test.ok(set);
@@ -230,9 +230,9 @@ module.exports = {
         	reskey: "MFI-qx-pQf.text"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "Are you a doctor?");
+        test.equal(r[0].getSource(), "Are you a driver?");
         test.equal(r[0].getKey(), "MFI-qx-pQf.text");
-        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf";');
         
         test.done();
     },
@@ -243,7 +243,7 @@ module.exports = {
         var strings = new IosStringsFile({
         	project: p,
 			type: isft, 
-        	pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
+        	pathName: "./objc/en-US.lproj/SignUpViewController.strings"
         });
         test.ok(strings);
         
@@ -376,14 +376,14 @@ module.exports = {
         
         [
         	new ResourceString({
-        		project: "ios",
+        		project: "iosapp",
         		locale: "de-DE",
         		key: "source text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ResourceString({
-        		project: "ios",
+        		project: "iosapp",
         		locale: "de-DE",
         		key: "more source text",
         		source: "mehr Quellen\"text",
@@ -415,14 +415,14 @@ module.exports = {
         
         [
         	new ResourceString({
-        		project: "ios",
+        		project: "iosapp",
         		locale: "de-DE",
         		key: "source text",
         		source: "Quellen\n\ttext",
         		comment: "foo"
         	}),
         	new ResourceString({
-        		project: "ios",
+        		project: "iosapp",
         		locale: "de-DE",
         		key: "more source text",
         		source: "mehr Quellen\"text",
@@ -454,10 +454,10 @@ module.exports = {
         
         [
         	new ResourceString({
-        		project: "ios",
+        		project: "iosapp",
         		locale: "es-US",
-        		key: "“The future of medicine is at your fingertips.”",
-        		source: '"El futuro de la medicina está al alcance de tus dedos."',
+        		key: "“The future of technology is at your fingertips.”",
+        		source: '"El futuro de la tecnología está al alcance de tus dedos."',
         		comment: "bar"
         	})
         ].forEach(function(res) {
@@ -466,7 +466,7 @@ module.exports = {
         
         test.equal(strings.getContent(),
         	'/* bar */\n' +
-        	'"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n'
+        	'"“The future of technology is at your fingertips.”" = "\\\"El futuro de la tecnología está al alcance de tus dedos.\\\"";\n'
         );
         
         test.done();
@@ -499,21 +499,21 @@ module.exports = {
         
         strings.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";\n');
+				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a driver?";\n');
         
         var x = strings.getContent();
         var y = 
     		'/* this is the terms and conditions button label */\n' +
 			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n';
+			'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+			'"MFI-qx-pQf.text" = "Are you a driver?";\n';
         
         test.equal(strings.getContent(),
     		'/* this is the terms and conditions button label */\n' +
 			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n'
+			'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+			'"MFI-qx-pQf.text" = "Are you a driver?";\n'
         );
         
         test.done();
