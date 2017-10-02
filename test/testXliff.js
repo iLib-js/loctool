@@ -1288,6 +1288,56 @@ module.exports = {
         test.done();
     },
 
+    testXliffDeserializeWithEscapedNewLines: function(test) {
+        test.expect(17);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="en-CA" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>a\\nb</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="en-CA" product-name="webapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>e\\nh</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "a\\nb");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+
+        test.equal(reslist[1].getSource(), "e\\nh");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "webapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+      
+        test.done();
+    },
+
     testXliffDeserializeWithPlurals: function(test) {
         test.expect(10);
 

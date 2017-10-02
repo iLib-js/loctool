@@ -59,6 +59,17 @@ module.exports = {
         test.done();
     },
 
+    testObjectiveCFileMakeKeyNewLines: function(test) {
+        test.expect(2);
+
+        var j = new ObjectiveCFile(p, undefined, ocft);
+        test.ok(j);
+
+        test.equal(j.makeKey("This is a\\ntest"), "This is a\\ntest");
+
+        test.done();
+    },
+
     testObjectiveCFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 

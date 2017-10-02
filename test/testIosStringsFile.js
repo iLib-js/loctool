@@ -444,15 +444,25 @@ module.exports = {
                 project: "ios",
                 locale: "de-DE",
                 key: "source\\ntext",
-                source: "Quellen\\n\\ttext",
-                comment: "foo"
+                source: "Quellen text",
+                comment: "foo",
+                datatype: "x-swift"
             }),
             new ResourceString({
                 project: "ios",
                 locale: "de-DE",
                 key: "more source\\ntext",
-                source: "mehr Quellen\\\"text",
-                comment: "bar"
+                source: "mehr Quellen text",
+                comment: "bar",
+                datatype: "x-swift"
+            }),
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "2V9-YN-vxb.normalTitlet",
+                source: "noch mehr Quellen text",
+                comment: "bar",
+                datatype: "x-xib"
             })
         ].forEach(function(res) {
             strings.addResource(res);
@@ -460,9 +470,11 @@ module.exports = {
 
         test.equal(strings.getContent(),
             '/* bar */\n' +
-            '"more source\\ntext" = "mehr Quellen\\"text";\n\n' +
+            '"2V9-YN-vxb.normalTitlet" = "noch mehr Quellen text";\n\n',
+            '/* bar */\n' +
+            '"more source\\ntext" = "mehr Quellen text";\n\n' +
             '/* foo */\n' +
-            '"source\\ntext" = "Quellen\\n\\ttext";\n'
+            '"source\\ntext" = "Quellen text";\n'
         );
 
         test.done();
