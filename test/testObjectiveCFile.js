@@ -25,17 +25,17 @@ module.exports = {
 
         var j = new ObjectiveCFile();
         test.ok(j);
-        
+
         test.done();
     },
-    
+
     testObjectiveCFileConstructorParams: function(test) {
         test.expect(1);
 
         var j = new ObjectiveCFile(p, "./testfiles/objc/t1.m", ocft, ocft);
-        
+
         test.ok(j);
-        
+
         test.done();
     },
 
@@ -44,7 +44,7 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         test.done();
     },
 
@@ -53,9 +53,9 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         test.equal(j.makeKey("This is a test"), "This is a test");
-        
+
         test.done();
     },
 
@@ -64,21 +64,21 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
         	reskey: "This is a test"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "This is a test");
         test.equal(r[0].getKey(), "This is a test");
         test.equal(r[0].getComment(), "translator's comment");
-        
+
         test.done();
     },
 
@@ -87,19 +87,19 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         test.done();
     },
 
@@ -108,14 +108,14 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"", @"translator\'s comment");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -124,19 +124,19 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", nil);');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.ok(!r.getComment());
-        
+
         test.done();
     },
 
@@ -145,19 +145,19 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('   NSLocalizedString  (  @"This is a test"  ,     @"translator\'s comment"   )         ');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         test.done();
     },
 
@@ -171,11 +171,11 @@ module.exports = {
         test.equal(set.size(), 0);
 
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")');
-        
+
         test.ok(set);
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -184,24 +184,24 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString(@"This is also a test", @"translator\'s comment 2")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "This is also a test");
         test.equal(r.getComment(), "translator's comment 2");
-        
+
         test.done();
     },
 
@@ -210,24 +210,24 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment"); a.parse("This is another test."); NSLocalizedString(@"This is also a test", @"translator\'s comment 2")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "This is also a test");
         test.equal(r.getComment(), "translator's comment 2");
-        
+
         test.done();
     },
 
@@ -236,20 +236,20 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString(@"This is a test", @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -258,13 +258,13 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test" + @" and this isnt", @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
 
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -273,12 +273,12 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test" + foobar, @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -287,12 +287,12 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(foobar, @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -301,18 +301,18 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", foobar)');
-        
+
         var set = j.getTranslationSet();
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.ok(!r.getComment());
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -321,18 +321,18 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString(@"This is a test", 0)');
-        
+
         var set = j.getTranslationSet();
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.ok(!r.getComment());
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -341,12 +341,12 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('NSLocalizedString()');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -355,12 +355,12 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('BANSLocalizedString(@"This is a test", @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -369,12 +369,12 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         j.parse('App.NSLocalizedString(@"This is a test", @"translator\'s comment")');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -385,18 +385,18 @@ module.exports = {
         test.ok(j);
 
         j.parse('NSLocalizedString(@"This \\\'is\\\' a \\\"test\\\"", @"translator\'s \\\'comment\\\'")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This 'is' a \"test\"");
         test.ok(r);
         test.equal(r.getSource(), "This 'is' a \"test\"");
         test.equal(r.getKey(), "This 'is' a \"test\"");
         test.equal(r.getComment(), "translator's 'comment'");
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -405,14 +405,14 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, "./objc/t1.m", ocft, ocft);
         test.ok(j);
-        
+
         // should read the file
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 10);
-        
+
         var r = set.getBySource("Staff");
         test.ok(r);
         test.equal(r.getSource(), "Staff");
@@ -424,7 +424,7 @@ module.exports = {
         test.equal(r.getSource(), "Patient");
         test.equal(r.getKey(), "Patient");
         test.ok(!r.getComment());
-        
+
         r = set.getBySource("Left consult");
         test.ok(r);
         test.equal(r.getSource(), "Left consult");
@@ -475,18 +475,18 @@ module.exports = {
 
         test.done();
     },
-    
+
     testObjectiveCFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
         var j = new ObjectiveCFile(p, undefined, ocft);
         test.ok(j);
-        
+
         // should attempt to read the file and not fail
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -497,14 +497,35 @@ module.exports = {
 
         var j = new ObjectiveCFile(p, "./objc/foo.m", ocft);
         test.ok(j);
-        
+
         // should attempt to read the file and not fail
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
-        test.done();   
+        test.done();
+    },
+
+    testObjectiveCFileParsePreserveNewlineChars: function(test) {
+        test.expect(6);
+
+        var j = new ObjectiveCFile(p, undefined, ocft);
+        test.ok(j);
+
+        j.parse('NSLocalizedString(@"This is\\na test", @"translator\'s comment");');
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is\\na test");
+        test.ok(r);
+
+        test.equal(r.getSource(), "This is\\na test");
+        test.equal(r.getKey(), "This is\\na test");
+        test.equal(r.getComment(), "translator's comment");
+
+        test.done();
     }
 };

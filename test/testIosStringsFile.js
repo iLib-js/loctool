@@ -12,10 +12,10 @@ if (!IosStringsFile) {
 }
 
 var p = new ObjectiveCProject({
-	id: "ios",
-	sourceLocale: "en-US"
+    id: "ios",
+    sourceLocale: "en-US"
 }, "./testfiles", {
-	locales:["en-GB"]
+    locales:["en-GB"]
 });
 
 var isft = new IosStringsFileType(p);
@@ -26,20 +26,20 @@ module.exports = {
 
         var strings = new IosStringsFile();
         test.ok(strings);
-        
+
         test.done();
     },
-    
+
     testIosStringsFileConstructorParams: function(test) {
         test.expect(1);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft
+            project: p,
+            type: isft
         }, "./testfiles/objc/Base.lproj/Localizable.strings");
-        
+
         test.ok(strings);
-        
+
         test.done();
     },
 
@@ -47,11 +47,11 @@ module.exports = {
         test.expect(1);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         test.done();
     },
 
@@ -59,26 +59,26 @@ module.exports = {
         test.expect(6);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         strings.parse('/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */\n' +
-        		'"2V9-YN-vxb.normalTitle" = "Terms";\n');
-        
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n');
+
         var set = strings.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
+            reskey: "2V9-YN-vxb.normalTitle"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
         test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb";');
-        
+
         test.done();
     },
 
@@ -86,26 +86,26 @@ module.exports = {
         test.expect(6);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         strings.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
-        
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n');
+
         var set = strings.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
+            reskey: "2V9-YN-vxb.normalTitle"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
         test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
+
         test.done();
     },
 
@@ -113,27 +113,27 @@ module.exports = {
         test.expect(6);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         strings.parse(
-        		'/* No comment provided by engineer. */\n' +
-				'"Terms" = "Terms";\n');
-        
+                '/* No comment provided by engineer. */\n' +
+                '"Terms" = "Terms";\n');
+
         var set = strings.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
-        	reskey: "Terms"
+            reskey: "Terms"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "Terms");
         test.ok(!r[0].getComment());
-        
+
         test.done();
     },
 
@@ -141,50 +141,50 @@ module.exports = {
         test.expect(6);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         strings.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
-				'          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
-        
+                '          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
+
         var set = strings.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
+            reskey: "2V9-YN-vxb.normalTitle"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
         test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
+
         test.done();
     },
-    
+
     testIosStringsFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
 
         var set = strings.getTranslationSet();
         test.equal(set.size(), 0);
 
         strings.parse('/* i18n: this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
-        
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a doctor?";');
+
         test.ok(set);
-        
+
         test.equal(set.size(), 2);
-        
+
         test.done();
     },
 
@@ -192,35 +192,35 @@ module.exports = {
         test.expect(10);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         strings.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
-       
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a doctor?";');
+
         var set = strings.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
+            reskey: "2V9-YN-vxb.normalTitle"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
         test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
+
         r = set.getBy({
-        	reskey: "MFI-qx-pQf.text"
+            reskey: "MFI-qx-pQf.text"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Are you a doctor?");
         test.equal(r[0].getKey(), "MFI-qx-pQf.text");
         test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
-        
+
         test.done();
     },
 
@@ -228,21 +228,21 @@ module.exports = {
         test.expect(14);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
         });
         test.ok(strings);
-        
+
         // should read the file
         strings.extract();
-        
+
         var set = strings.getTranslationSet();
-        
+
         test.equal(set.size(), 15);
-        
+
         var r = set.getBy({
-        	reskey: "QCe-xG-x5k.normalTitle"
+            reskey: "QCe-xG-x5k.normalTitle"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Login ›");
@@ -250,15 +250,15 @@ module.exports = {
         test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k";');
 
         var r = set.getBy({
-        	reskey: "WpN-ro-7NU.placeholder"
+            reskey: "WpN-ro-7NU.placeholder"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Your email");
         test.equal(r[0].getKey(), "WpN-ro-7NU.placeholder");
         test.equal(r[0].getComment(), 'Class = "UITextField"; placeholder = "Your email"; ObjectID = "WpN-ro-7NU";');
-        
+
         var r = set.getBy({
-        	reskey: "DWd-6J-lLt.text"
+            reskey: "DWd-6J-lLt.text"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "free, private");
@@ -272,21 +272,21 @@ module.exports = {
         test.expect(14);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/Localizable.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/Localizable.strings"
         });
         test.ok(strings);
-        
+
         // should read the file
         strings.extract();
-        
+
         var set = strings.getTranslationSet();
-        
+
         test.equal(set.size(), 42);
-        
+
         var r = set.getBy({
-        	reskey: "%@ %@your gratitude :)"
+            reskey: "%@ %@your gratitude :)"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
@@ -294,15 +294,15 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "%@ added this checklist"
+            reskey: "%@ added this checklist"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "%@ added this checklist");
         test.equal(r[0].getKey(), "%@ added this checklist");
         test.equal(r[0].getComment(), 'parameter is a person name');
-        
+
         var r = set.getBy({
-        	reskey: "%@ commented on %@'s answer"
+            reskey: "%@ commented on %@'s answer"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
@@ -311,21 +311,21 @@ module.exports = {
 
         test.done();
     },
-   
+
     testIosStringsFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
         var strings = new IosStringsFile({
-			project: p,
-			type: isft
-		});
+            project: p,
+            type: isft
+        });
         test.ok(strings);
-        
+
         // should attempt to read the file and not fail
         strings.extract();
-        
+
         var set = strings.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -335,58 +335,58 @@ module.exports = {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/en-US.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/en-US.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         // should attempt to read the file and not fail
         strings.extract();
-        
+
         var set = strings.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
-        test.done();   
+        test.done();
     },
-    
+
     testIosStringsFileGetContent: function(test) {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/de.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         [
-        	new ResourceString({
-        		project: "ios",
-        		locale: "de-DE",
-        		key: "source text",
-        		source: "Quellen\"text",
-        		comment: "foo"
-        	}),
-        	new ResourceString({
-        		project: "ios",
-        		locale: "de-DE",
-        		key: "more source text",
-        		source: "mehr Quellen\"text",
-        		comment: "bar"
-        	})
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "source text",
+                source: "Quellen\"text",
+                comment: "foo"
+            }),
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "more source text",
+                source: "mehr Quellen\"text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	strings.addResource(res);
+            strings.addResource(res);
         });
-        
+
         test.equal(strings.getContent(),
-        	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n\n' +
-        	'/* foo */\n' +
-        	'"source text" = "Quellen\\"text";\n'
+            '/* bar */\n' +
+            '"more source text" = "mehr Quellen\\"text";\n\n' +
+            '/* foo */\n' +
+            '"source text" = "Quellen\\"text";\n'
         );
-        
+
         test.done();
     },
 
@@ -394,38 +394,77 @@ module.exports = {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/de.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         [
-        	new ResourceString({
-        		project: "ios",
-        		locale: "de-DE",
-        		key: "source text",
-        		source: "Quellen\n\ttext",
-        		comment: "foo"
-        	}),
-        	new ResourceString({
-        		project: "ios",
-        		locale: "de-DE",
-        		key: "more source text",
-        		source: "mehr Quellen\"text",
-        		comment: "bar"
-        	})
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "source text",
+                source: "Quellen\n\ttext",
+                comment: "foo"
+            }),
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "more source text",
+                source: "mehr Quellen\"text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	strings.addResource(res);
+            strings.addResource(res);
         });
-        
+
         test.equal(strings.getContent(),
-        	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n\n' +
-        	'/* foo */\n' +
-        	'"source text" = "Quellen\\n\\ttext";\n'
+            '/* bar */\n' +
+            '"more source text" = "mehr Quellen\\"text";\n\n' +
+            '/* foo */\n' +
+            '"source text" = "Quellen\\n\\ttext";\n'
         );
-        
+
+        test.done();
+    },
+
+    testIosStringsFileGetContentWithEscapedSourceChars: function(test) {
+        test.expect(2);
+
+        var strings = new IosStringsFile({
+            project: p,
+            type: isft,
+            pathName: "./objc/de.lproj/asdf.strings"
+        });
+        test.ok(strings);
+
+        [
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "source\\ntext",
+                source: "Quellen\\n\\ttext",
+                comment: "foo"
+            }),
+            new ResourceString({
+                project: "ios",
+                locale: "de-DE",
+                key: "more source\\ntext",
+                source: "mehr Quellen\\\"text",
+                comment: "bar"
+            })
+        ].forEach(function(res) {
+            strings.addResource(res);
+        });
+
+        test.equal(strings.getContent(),
+            '/* bar */\n' +
+            '"more source\\ntext" = "mehr Quellen\\"text";\n\n' +
+            '/* foo */\n' +
+            '"source\\ntext" = "Quellen\\n\\ttext";\n'
+        );
+
         test.done();
     },
 
@@ -433,29 +472,29 @@ module.exports = {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/es.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/es.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         [
-        	new ResourceString({
-        		project: "ios",
-        		locale: "es-US",
-        		key: "“The future of medicine is at your fingertips.”",
-        		source: '"El futuro de la medicina está al alcance de tus dedos."',
-        		comment: "bar"
-        	})
+            new ResourceString({
+                project: "ios",
+                locale: "es-US",
+                key: "“The future of medicine is at your fingertips.”",
+                source: '"El futuro de la medicina está al alcance de tus dedos."',
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	strings.addResource(res);
+            strings.addResource(res);
         });
-        
+
         test.equal(strings.getContent(),
-        	'/* bar */\n' +
-        	'"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n'
+            '/* bar */\n' +
+            '"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n'
         );
-        
+
         test.done();
     },
 
@@ -463,46 +502,46 @@ module.exports = {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/de.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         test.equal(strings.getContent(), '');
-        
+
         test.done();
     },
-    
+
     testIosStringsFileGetContentRoundTrip: function(test) {
         test.expect(2);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/de.lproj/asdf.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/de.lproj/asdf.strings"
         });
         test.ok(strings);
-        
+
         strings.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";\n');
-        
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a doctor?";\n');
+
         var x = strings.getContent();
-        var y = 
-    		'/* this is the terms and conditions button label */\n' +
-			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n';
-        
+        var y =
+            '/* this is the terms and conditions button label */\n' +
+            '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+            '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+            '"MFI-qx-pQf.text" = "Are you a doctor?";\n';
+
         test.equal(strings.getContent(),
-    		'/* this is the terms and conditions button label */\n' +
-			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n'
+            '/* this is the terms and conditions button label */\n' +
+            '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+            '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+            '"MFI-qx-pQf.text" = "Are you a doctor?";\n'
         );
-        
+
         test.done();
     }
 };
