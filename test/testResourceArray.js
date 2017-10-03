@@ -46,8 +46,8 @@ module.exports = {
 
         var ra = new ResourceArray({
         	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
+        	sourceArray: ["This is a test", "This is also a test", "This is not"],
+        	sourceLocale: "de-DE",
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -60,26 +60,65 @@ module.exports = {
 
         var ra = new ResourceArray({
         	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
+        	sourceArray: ["This is a test", "This is also a test", "This is not"],
+        	sourceLocale: "de-DE",
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
     
         test.equal(ra.getKey(), "asdf");
-        test.deepEqual(ra.getArray(), ["This is a test", "This is also a test", "This is not"]);
-        test.equal(ra.locale, "de-DE");
+        test.deepEqual(ra.getSourceArray(), ["This is a test", "This is also a test", "This is not"]);
+        test.equal(ra.sourceLocale, "de-DE");
+        test.equal(ra.pathName, "a/b/c.java");
+        
+        test.done();
+    },
+
+    testResourceArrayConstructorFull: function(test) {
+        test.expect(1);
+
+        var ra = new ResourceArray({
+        	key: "asdf",
+        	sourceArray: ["This is a test", "This is also a test", "This is not"],
+        	sourceLocale: "en-US",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE",
+        	pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        test.done();
+    },
+    
+    testResourceArrayConstructorFullRightContents: function(test) {
+        test.expect(7);
+
+        var ra = new ResourceArray({
+        	key: "asdf",
+        	sourceArray: ["This is a test", "This is also a test", "This is not"],
+        	sourceLocale: "de-DE",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE",
+        	pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+    
+        test.equal(ra.getKey(), "asdf");
+        test.deepEqual(ra.getSourceArray(), ["This is a test", "This is also a test", "This is not"]);
+        test.equal(ra.sourceLocale, "en-US");
+        test.deepEqual(ra.getTargetArray(), ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
+        test.equal(ra.targetLocale, "de-DE");
         test.equal(ra.pathName, "a/b/c.java");
         
         test.done();
     },
 
     testResourceArrayConstructorDefaults: function(test) {
-        test.expect(6);
+        test.expect(8);
 
         var ra = new ResourceArray({
         	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
+        	sourceArray: ["This is a test", "This is also a test", "This is not"],
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -88,10 +127,13 @@ module.exports = {
         test.equal(ra.getKey(), "asdf");
         
         // now the defaults
-        test.equal(ra.locale, "en-US");
+        test.equal(ra.sourceLocale, "en-US");
         test.equal(ra.origin, "source");
         test.equal(ra.datatype, "x-android-resource");
         test.equal(ra.resType, "array");
+        
+        test.ok(!ra.targetLocale);
+        test.ok(!ra.target);
         
         test.done();
     },
@@ -101,8 +143,8 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
-            locale: "de-DE",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            sourceLocale: "de-DE",
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -117,9 +159,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.equal(ra.getKey(), "foo");
@@ -142,9 +184,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE",
+            sourceLocale: "de-DE",
             context: "landscape"
         });
         test.ok(ra);
@@ -158,9 +200,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.ok(!ra.getContext());
@@ -173,12 +215,12 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
-        test.deepEqual(ra.getArray(), ["This is a test", "This is also a test", "This is not"]);
+        test.deepEqual(ra.getSourceArray(), ["This is a test", "This is also a test", "This is not"]);
         
         test.done();
     },
@@ -188,7 +230,7 @@ module.exports = {
 
         var ra = new ResourceArray();
         test.ok(ra);
-        test.deepEqual(ra.getArray(), []);
+        test.deepEqual(ra.getSourceArray(), []);
         
         test.done();
     },
@@ -198,9 +240,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.equal(ra.get(0), "This is a test");
@@ -215,9 +257,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.ok(!ra.get(-1));
@@ -230,9 +272,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.ok(!ra.get(6));
@@ -245,9 +287,9 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "foo",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
-            locale: "de-DE"
+            sourceLocale: "de-DE"
         });
         test.ok(ra);
         test.ok(!ra.get(2.6));
@@ -260,7 +302,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a test"],
+            sourceArray: ["This is a test"],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -282,7 +324,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -296,7 +338,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "de-DE");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -312,7 +354,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a %s test", "This is also a %f test", "This is not %4$-2.2d"],
+            sourceArray: ["This is a %s test", "This is also a %f test", "This is not %4$-2.2d"],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -326,7 +368,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "de-DE");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -342,7 +384,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -362,7 +404,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -379,7 +421,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is estrogen", "I color my checkbooks", "This is not translated."],
+            sourceArray: ["This is estrogen", "I color my checkbooks", "This is not translated."],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -394,7 +436,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-GB",
+        	sourceLocale: "en-GB",
         	type: "c"
         });
 
@@ -403,7 +445,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "en-GB");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -419,7 +461,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is estrogen", "I color my checkbooks", "This is not translated."],
+            sourceArray: ["This is estrogen", "I color my checkbooks", "This is not translated."],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -434,7 +476,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-ZA",
+        	sourceLocale: "en-ZA",
         	type: "c"
         });
 
@@ -443,7 +485,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "en-ZA");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -459,7 +501,7 @@ module.exports = {
 
         var ra = new ResourceArray({
             key: "asdf",
-            array: ["This is estrogen", "I color my checkbooks", "This is not localized."],
+            sourceArray: ["This is estrogen", "I color my checkbooks", "This is not localized."],
             pathName: "a/b/c.java"
         });
         test.ok(ra);
@@ -474,7 +516,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-CA",
+        	sourceLocale: "en-CA",
         	type: "c"
         });
 
@@ -483,7 +525,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "en-CA");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -500,9 +542,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
             key: "asdf",
-            array: ["How are you?", "What is the cruising speed of a swallow?？", "What? Do you mean a European swallow or an African swallow?"],
+            sourceArray: ["How are you?", "What is the cruising speed of a swallow?？", "What? Do you mean a European swallow or an African swallow?"],
             pathName: "a/b/c.java",
-            locale: "en-US"
+            sourceLocale: "en-US"
         });
         test.ok(ra);
         
@@ -518,9 +560,9 @@ module.exports = {
         translations.add(new ResourceArray({
         	project: "foo",
         	key: 'asdf',
-        	array: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
+        	sourceArray: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
         	pathName: "a/b/c.java",
-            locale: "zh-Hans-CN"
+            sourceLocale: "zh-Hans-CN"
         }));
         
         var rb = new PseudoFactory({
@@ -535,7 +577,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "zh-Hant-TW");
         
-        var strings = ra2.getArray();
+        var strings = ra2.getSourceArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -552,9 +594,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -566,7 +608,7 @@ module.exports = {
         test.ok(ra2);
         test.equal(ra2.project, ra.project);
         test.equal(ra2.context, ra.context);
-        test.equal(ra2.locale, ra.locale);
+        test.equal(ra2.sourceLocale, ra.sourceLocale);
         test.equal(ra2.reskey, ra.reskey);
         test.deepEqual(ra2.array, ra.array);
         test.equal(ra2.pathName, ra.pathName);
@@ -582,9 +624,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -592,14 +634,14 @@ module.exports = {
         test.ok(ra);
 
         var ra2 = ra.clone({
-        	locale: "fr-FR",
+        	targetLocale: "fr-FR",
         	state: "asdfasdf"
         });
         
         test.ok(ra2);
         test.equal(ra2.project, ra.project);
         test.equal(ra2.context, ra.context);
-        test.equal(ra2.locale, "fr-FR");
+        test.equal(ra2.sourceLocale, "fr-FR");
         test.equal(ra2.reskey, ra.reskey);
         test.deepEqual(ra2.array, ra.array);
         test.equal(ra2.pathName, ra.pathName);
@@ -615,9 +657,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -637,9 +679,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -661,9 +703,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -685,9 +727,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -709,9 +751,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -733,7 +775,7 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             pathName: "a/b/c.java",
             comment: "foobar foo",
@@ -756,7 +798,7 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             pathName: "a/b/c.java",
             comment: "foobar foo",
@@ -779,9 +821,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -806,9 +848,9 @@ module.exports = {
         var ra1 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -817,9 +859,9 @@ module.exports = {
         var ra2 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -839,9 +881,9 @@ module.exports = {
         var ra1 = new ResourceArray({
         	project: "foo",
         	context: "asdf",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -850,9 +892,9 @@ module.exports = {
         var ra2 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -872,9 +914,9 @@ module.exports = {
         var ra1 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -883,9 +925,9 @@ module.exports = {
         var ra2 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "x.java",
             comment: "asdf asdf asdf asdf asdf",
             state: "done"
@@ -905,9 +947,9 @@ module.exports = {
         var ra1 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -916,9 +958,9 @@ module.exports = {
         var ra2 = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "d"],
+            sourceArray: ["a", "b", "d"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -954,9 +996,9 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	locale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
-            array: ["a", "b", "c"],
+            sourceArray: ["a", "b", "c"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"

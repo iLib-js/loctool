@@ -294,7 +294,7 @@ module.exports = {
     },
 
     testResourceStringGeneratePseudoRightString: function(test) {
-        test.expect(3);
+        test.expect(6);
 
         var rs = new ResourceString({
             key: "asdf",
@@ -310,7 +310,10 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš íš à ţëšţ6543210");
+        test.equal(rs2.getSource(), "This is a test");
+        test.equal(rs2.sourceLocale, "en-US");
+        test.equal(rs2.getTarget(), "Ťĥíš íš à ţëšţ6543210");
+        test.equal(rs2.targetLocale, "de-DE");
         
         test.done();
     },
@@ -332,7 +335,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
+        test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
         
         test.done();
     },
@@ -354,7 +357,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
+        test.equal(rs2.getTarget(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
         
         test.done();
     },
@@ -376,7 +379,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
+        test.equal(rs2.getTarget(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
         
         test.done();
     },
@@ -398,7 +401,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
+        test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
         
         test.done();
     },
@@ -470,7 +473,7 @@ module.exports = {
         test.ok(rs2);
         test.ok(rs2.getLocale(), "en-GB");
         
-        test.equal(rs2.getSource(), "I colour my chequebooks and localise them.");
+        test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
 
         test.done();
     },
@@ -504,7 +507,7 @@ module.exports = {
         test.ok(rs2);
         test.ok(rs2.getLocale(), "en-ZA");
         
-        test.equal(rs2.getSource(), "I colour my chequebooks and localise them.");
+        test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
         
         test.done();
     },
@@ -537,7 +540,7 @@ module.exports = {
         test.ok(rs2);
         test.ok(rs2.getLocale(), "en-CA");
         
-        test.equal(rs2.getSource(), "I colour my chequebooks and localize them.");
+        test.equal(rs2.getTarget(), "I colour my chequebooks and localize them.");
         
         test.done();
     },
@@ -585,7 +588,7 @@ module.exports = {
         test.ok(rs2);
         test.ok(rs2.getLocale(), "zh-Hant-TW");
 
-        test.equal(rs2.getSource(), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        test.equal(rs2.getTarget(), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
         
         test.done();
     },
@@ -621,14 +624,16 @@ module.exports = {
     },
     
     testResourceStringCloneWithOverrides: function(test) {
-        test.expect(10);
+        test.expect(12);
 
         var rs = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
-            key: "asdf",
+        	key: "asdf",
         	source: "This is a test",
+        	sourceLocale: "en-US",
+            target: "Dies ist einen Test.",
+        	targetLocale: "de-DE",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -637,18 +642,22 @@ module.exports = {
 
         var rs2 = rs.clone({
         	targetLocale: "fr-FR",
+        	target: "Ceci est une teste.",
         	state: "asdfasdf"
         });
         
         test.ok(rs2);
         test.equal(rs2.project, rs.project);
         test.equal(rs2.context, rs.context);
-        test.equal(rs2.sourceLocale, "fr-FR");
+        test.equal(rs2.sourceLocale, rs.sourceLocale);
         test.equal(rs2.reskey, rs.reskey);
         test.deepEqual(rs2.text, rs.text);
         test.equal(rs2.pathName, rs.pathName);
         test.equal(rs2.comment, rs.comment);
         test.equal(rs2.state, "asdfasdf");
+        
+        test.ok(rs2.targetLocale !== rs.targetLocale);
+        test.ok(rs2.getTarget() !== rs.getTarget());
         
         test.done();
     },
@@ -659,9 +668,11 @@ module.exports = {
         var ra1 = new ResourceString({
         	project: "foo",
         	context: "blah",
+        	sourceLocale: "en-US",
         	targetLocale: "de-DE",
             key: "asdf",
             source: "This is a test",
+            target: "Eine Test",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -670,9 +681,11 @@ module.exports = {
         var ra2 = new ResourceString({
         	project: "foo",
         	context: "blah",
+        	sourceLocale: "en-US",
         	targetLocale: "de-DE",
             key: "asdf",
             source: "This is a test",
+            target: "Eine Test",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -692,7 +705,7 @@ module.exports = {
         var ra1 = new ResourceString({
         	project: "foo",
         	context: "asdf",
-        	targetLocale: "de-DE",
+        	sourceLocale: "en-US",
             key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java",
@@ -703,9 +716,46 @@ module.exports = {
         var ra2 = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
+        	sourceLocale: "en-US",
             key: "asdf",
             source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceStringEqualsNotTarget: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "en-US",
+            key: "asdf",
+            source: "This is a test",
+            targetLocale: "de-DE",
+            target: "Eine Test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "en-US",
+            key: "asdf",
+            source: "This is a test",
+            targetLocale: "de-DE",
+            target: "Einen Test!",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -725,7 +775,7 @@ module.exports = {
         var ra1 = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java",
@@ -736,7 +786,7 @@ module.exports = {
         var ra2 = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             source: "This is a test",
             pathName: "x.java",
@@ -758,7 +808,7 @@ module.exports = {
         var ra1 = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java",
@@ -769,7 +819,7 @@ module.exports = {
         var ra2 = new ResourceString({
         	project: "foo",
         	context: "blah",
-        	targetLocale: "de-DE",
+        	sourceLocale: "de-DE",
             key: "asdf",
             source: "This is not a test",
             pathName: "a/b/c.java",
@@ -785,39 +835,6 @@ module.exports = {
         test.done();
     },
     
-    testResourceStringGetOrigin: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-            key: "foo",
-            source: "source string",
-            pathName: "a/b/c.txt",
-            targetLocale: "de-DE",
-            origin: "target"
-        });
-        
-        test.ok(rs);
-        test.equal(rs.getOrigin(), "target");
-        
-        test.done();
-    },
-
-    testResourceStringGetOriginDefault: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-            key: "foo",
-            source: "source string",
-            pathName: "a/b/c.txt",
-            targetLocale: "de-DE"
-        });
-        
-        test.ok(rs);
-        test.equal(rs.getOrigin(), "source");
-        
-        test.done();
-    },
-
     testResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
@@ -841,6 +858,8 @@ module.exports = {
         	project: "ht-iosapp",
         	key: "This is a test",
         	source: "This is a test",
+        	sourceLocale: "en-US",
+        	target: "Dies ist einen Test.",
         	targetLocale: "de-DE",
         	pathName: "a/b/c.java",
         	datatype: "html"
@@ -852,6 +871,24 @@ module.exports = {
         test.done();
     },
     
+    testResourceStringSourceOnlyHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+        	project: "ht-iosapp",
+        	key: "This is a test",
+        	source: "This is a test",
+        	sourceLocale: "en-US",
+        	pathName: "a/b/c.java",
+        	datatype: "html"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "rs_ht-iosapp_en-US_This is a test_html");
+        
+        test.done();
+    },
+
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
@@ -876,6 +913,8 @@ module.exports = {
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
+        	sourceLocale: "en-US",
+        	target: "Dies ist einen Test.",
         	targetLocale: "de-DE",
         	pathName: "a/b/c.java",
         	datatype: "html"
@@ -883,6 +922,25 @@ module.exports = {
         test.ok(rs);
         
         test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
+        
+        test.done();
+    },
+
+    testContextResourceStringSourceOnlyHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "ht-iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	sourceLocale: "en-US",
+        	pathName: "a/b/c.java",
+        	datatype: "html"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_en-US_This is a test_html");
         
         test.done();
     },
@@ -911,6 +969,8 @@ module.exports = {
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
+        	sourceLocale: "en-US",
+        	target: "Dies ist einen Test.",
         	targetLocale: "de-DE",
         	pathName: "a/b/es.lproj/foo.xib"
         });
@@ -919,5 +979,24 @@ module.exports = {
         test.equal(rs.hashKey(), "irs_ht-iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
         
         test.done();
+    },
+    
+    testIosLayoutResourceStringSourceOnlyHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new IosLayoutResourceString({
+        	project: "ht-iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	sourceLocale: "en-US",
+        	pathName: "a/b/es.lproj/foo.xib"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "irs_ht-iosapp_en-US_a/b/es.lproj/foo.xib_This is a test");
+        
+        test.done();
     }
+
 };
