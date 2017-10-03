@@ -81,13 +81,13 @@ module.exports = {
 				test.equal(resources.length, 2);
 
 				test.equal(resources[0].getKey(), "foobar");
-				test.equal(resources[0].getProject(), "ht-webapp12");
+				test.equal(resources[0].getProject(), "webapp");
 				test.equal(resources[0].getSource(), "Asdf asdf");
 				test.equal(resources[0].getLocale(), "en-US");
 				test.equal(resources[0].getComment(), "foobar is where it's at!");
 
 				test.equal(resources[1].getKey(), "foobar");
-				test.equal(resources[1].getProject(), "ht-webapp12");
+				test.equal(resources[1].getProject(), "webapp");
 				test.equal(resources[1].getSource(), "foobarfoo");
 				test.equal(resources[1].getLocale(), "de-DE");
 

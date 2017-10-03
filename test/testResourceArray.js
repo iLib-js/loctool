@@ -1,5 +1,5 @@
 /*
- * testResourceArray.js - test the resource string object.
+ * testResourceArray.js - test the resource array object.
  *
  * Copyright © 2016-2017, HealthTap, Inc.
  *
@@ -948,7 +948,7 @@ module.exports = {
     testResourceArrayStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourceArray.hashKey("ht-androidapp", "foo", "de-DE", "This is a test"), "ra_ht-androidapp_foo_de-DE_This is a test");
+        test.equal(ResourceArray.hashKey("androidapp", "foo", "de-DE", "This is a test"), "ra_androidapp_foo_de-DE_This is a test");
         
         test.done();
     },

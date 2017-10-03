@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">
+  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">
     <body>
       <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">
         <source>Asdf asdf</source>
@@ -9,7 +9,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">
+  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">
     <body>
       <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">
         <source>baby baby</source>

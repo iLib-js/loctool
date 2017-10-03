@@ -1,5 +1,5 @@
 /*
- * testResourcePlural.js - test the resource string object.
+ * testResourcePlural.js - test the resource plural object.
  *
  * Copyright © 2016-2017, HealthTap, Inc.
  *
@@ -1075,7 +1075,7 @@ module.exports = {
     testResourcePluralStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourcePlural.hashKey("ht-androidapp", "foo", "de-DE", "This is a test"), "rp_ht-androidapp_foo_de-DE_This is a test");
+        test.equal(ResourcePlural.hashKey("androidapp", "foo", "de-DE", "This is a test"), "rp_androidapp_foo_de-DE_This is a test");
 
         test.done();
     },
