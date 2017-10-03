@@ -1,5 +1,5 @@
 /*
- * testResourceArray.js - test the resource string object.
+ * testResourceArray.js - test the resource array object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
@@ -1303,8 +1303,8 @@ module.exports = {
         test.ok(ra);
         
         test.equal(ra.hashKey(), "ra_foo_blah_en-US_asdf");
-        
         test.done();
+        
     },
     
     testResourceArrayHashKeySourceOnly: function(test) {
