@@ -225,7 +225,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceArrayGetArrayEmpty: function(test) {
+    testResourceArrayGetSourceArrayEmpty: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray();
@@ -235,7 +235,17 @@ module.exports = {
         test.done();
     },
 
-    testResourceArrayGet: function(test) {
+    testResourceArrayGetTargetArrayEmpty: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray();
+        test.ok(ra);
+        test.deepEqual(ra.getTargetArray(), []);
+        
+        test.done();
+    },
+
+    testResourceArrayGetSource: function(test) {
         test.expect(4);
 
         var ra = new ResourceArray({
@@ -245,14 +255,33 @@ module.exports = {
             sourceLocale: "de-DE"
         });
         test.ok(ra);
-        test.equal(ra.get(0), "This is a test");
-        test.equal(ra.get(1), "This is also a test");
-        test.equal(ra.get(2), "This is not");
+        test.equal(ra.getSource(0), "This is a test");
+        test.equal(ra.getSource(1), "This is also a test");
+        test.equal(ra.getSource(2), "This is not");
         
         test.done();
     },
 
-    testResourceArrayGetNegativeIndex: function(test) {
+    testResourceArrayGetTarget: function(test) {
+        test.expect(4);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "en-US",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.equal(ra.getTarget(0), "Dies ist einen Test.");
+        test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
+        test.equal(ra.getTarget(2), "Dies ist nicht.");
+        
+        test.done();
+    },
+
+    testResourceArrayGetSourceNegativeIndex: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray({
@@ -262,12 +291,29 @@ module.exports = {
             sourceLocale: "de-DE"
         });
         test.ok(ra);
-        test.ok(!ra.get(-1));
+        test.ok(!ra.getSource(-1));
         
         test.done();
     },
 
-    testResourceArrayGetIndexTooBig: function(test) {
+    testResourceArrayGetTargetNegativeIndex: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "en-US",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.ok(!ra.getTarget(-1));
+        
+        test.done();
+    },
+
+    testResourceArrayGetSourceIndexTooBig: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray({
@@ -277,7 +323,24 @@ module.exports = {
             sourceLocale: "de-DE"
         });
         test.ok(ra);
-        test.ok(!ra.get(6));
+        test.ok(!ra.getSource(6));
+        
+        test.done();
+    },
+
+    testResourceArrayGetTargetIndexTooBig: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE",
+            pathName: "a/b/c.txt",
+            sourceLocale: "en-US"
+        });
+        test.ok(ra);
+        test.ok(!ra.getTarget(6));
         
         test.done();
     },
@@ -292,13 +355,13 @@ module.exports = {
             sourceLocale: "de-DE"
         });
         test.ok(ra);
-        test.ok(!ra.get(2.6));
+        test.ok(!ra.getSource(2.6));
         
         test.done();
     },
     
     testResourceArrayGeneratePseudo: function(test) {
-        test.expect(3);
+        test.expect(4);
 
         var ra = new ResourceArray({
             key: "asdf",
@@ -314,7 +377,8 @@ module.exports = {
         var ra2 = ra.generatePseudo("de-DE", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "de-DE");
+        test.ok(ra2.getSourceLocale(), "en-US");
+        test.ok(ra2.getTargetLocale(), "de-DE");
         
         test.done();
     },
@@ -336,9 +400,9 @@ module.exports = {
         var ra2 = ra.generatePseudo("de-DE", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "de-DE");
+        test.ok(ra2.getTargetLocale(), "de-DE");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -368,7 +432,7 @@ module.exports = {
         test.ok(ra2);
         test.ok(ra2.getLocale(), "de-DE");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -443,9 +507,9 @@ module.exports = {
         var ra2 = ra.generatePseudo("en-GB", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "en-GB");
+        test.ok(ra2.getTargetLocale(), "en-GB");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -483,9 +547,9 @@ module.exports = {
         var ra2 = ra.generatePseudo("en-ZA", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "en-ZA");
+        test.ok(ra2.getTargetLocale(), "en-ZA");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -523,9 +587,9 @@ module.exports = {
         var ra2 = ra.generatePseudo("en-CA", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "en-CA");
+        test.ok(ra2.getTargetLocale(), "en-CA");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -575,9 +639,9 @@ module.exports = {
         var ra2 = ra.generatePseudo("zh-Hant-TW", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "zh-Hant-TW");
+        test.ok(ra2.getTargetLocale(), "zh-Hant-TW");
         
-        var strings = ra2.getSourceArray();
+        var strings = ra2.getTargetArray();
         
         test.ok(strings);
         test.equal(strings.length, 3);
@@ -599,7 +663,9 @@ module.exports = {
             sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
             comment: "foobar foo",
-            state: "accepted"
+            state: "accepted",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE"
         });
         test.ok(ra);
 
@@ -610,10 +676,12 @@ module.exports = {
         test.equal(ra2.context, ra.context);
         test.equal(ra2.sourceLocale, ra.sourceLocale);
         test.equal(ra2.reskey, ra.reskey);
-        test.deepEqual(ra2.array, ra.array);
+        test.deepEqual(ra2.sourceArray, ra.sourceArray);
         test.equal(ra2.pathName, ra.pathName);
         test.equal(ra2.comment, ra.comment);
         test.equal(ra2.state, ra.state);
+        test.equal(ra2.targetLocale, ra.targetLocale);
+        test.deepEqual(ra2.targetArray, ra.targetArray);
         
         test.done();
     },
@@ -634,8 +702,10 @@ module.exports = {
         test.ok(ra);
 
         var ra2 = ra.clone({
-        	targetLocale: "fr-FR",
-        	state: "asdfasdf"
+        	sourceLocale: "fr-FR",
+        	state: "asdfasdf",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE"
         });
         
         test.ok(ra2);
@@ -647,11 +717,13 @@ module.exports = {
         test.equal(ra2.pathName, ra.pathName);
         test.equal(ra2.comment, ra.comment);
         test.equal(ra2.state, "asdfasdf");
+        test.equal(ra2.targetLocale, "de-DE");
+        test.deepEqual(ra2.targetArray, ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
         
         test.done();
     },
     
-    testResourceArrayAddString: function(test) {
+    testResourceArrayAddSourceString: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray({
@@ -666,13 +738,37 @@ module.exports = {
         });
         test.ok(ra);
 
-        ra.addString(3, "This is the third one")
+        ra.addSource(3, "This is the third one")
         
-        test.equal(ra.get(3), "This is the third one");
+        test.equal(ra.getSource(3), "This is the third one");
         
         test.done();
     },
-    
+
+    testResourceArrayAddTargetString: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+        	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+        	targetLocale: "de-DE"
+        });
+        test.ok(ra);
+
+        ra.addTarget(3, "This is the third one")
+        
+        test.equal(ra.getTarget(3), "This is the third one");
+        
+        test.done();
+    },
+
     testResourceArrayAddStringReplace: function(test) {
         test.expect(3);
 
@@ -688,15 +784,41 @@ module.exports = {
         });
         test.ok(ra);
 
-        test.equal(ra.get(2), "This is not");
+        test.equal(ra.getSource(2), "This is not");
 
-        ra.addString(2, "This isn't a test")
+        ra.addSource(2, "This isn't a test")
         
-        test.equal(ra.get(2), "This isn't a test");
+        test.equal(ra.getSource(2), "This isn't a test");
         
         test.done();
     },
-    
+
+    testResourceArrayAddTargetReplace: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+
+        test.equal(ra.getTarget(2), "Dies ist nicht.");
+
+        ra.addTarget(2, "Dies ist nicht einen Test.")
+        
+        test.equal(ra.getTarget(2), "Dies ist nicht einen Test.");
+        
+        test.done();
+    },
+
     testResourceArrayAddStringSize: function(test) {
         test.expect(3);
 
@@ -714,7 +836,33 @@ module.exports = {
 
         test.equal(ra.size(), 3);
         
-        ra.addString(3, "This is the third one")
+        ra.addSource(3, "This is the third one")
+        
+        test.equal(ra.size(), 4);
+        
+        test.done();
+    },
+    
+    testResourceArrayAddTargetSize: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 3);
+        
+        ra.addTarget(3, "This is the third one")
         
         test.equal(ra.size(), 4);
         
@@ -736,11 +884,37 @@ module.exports = {
         });
         test.ok(ra);
 
-        test.equal(ra.get(1), "This is also a test");
+        test.equal(ra.getSource(1), "This is also a test");
 
-        ra.addString(1, undefined)
+        ra.addSource(1, undefined)
         
-        test.equal(ra.get(1), "This is also a test");
+        test.equal(ra.getSource(1), "This is also a test");
+        
+        test.done();
+    },
+    
+    testResourceArrayAddTargetUndefined: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+
+        test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
+
+        ra.addTarget(1, undefined)
+        
+        test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
         
         test.done();
     },
@@ -762,7 +936,33 @@ module.exports = {
 
         test.equal(ra.size(), 3);
 
-        ra.addString(undefined, "foobar")
+        ra.addSource(undefined, "foobar")
+        
+        test.equal(ra.size(), 3);
+        
+        test.done();
+    },
+    
+    testResourceArrayAddTargetNoIndex: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 3);
+
+        ra.addTarget(undefined, "foobar")
         
         test.equal(ra.size(), 3);
         
@@ -785,7 +985,7 @@ module.exports = {
 
         test.equal(ra.size(), 0);
 
-        ra.addString(0, "foobar")
+        ra.addSource(0, "foobar")
         
         test.equal(ra.size(), 1);
         
@@ -806,15 +1006,38 @@ module.exports = {
         });
         test.ok(ra);
 
-        test.ok(!ra.get(0));
+        test.ok(!ra.getSource(0));
 
-        ra.addString(0, "foobar")
+        ra.addSource(0, "foobar")
         
-        test.equal(ra.get(0), "foobar");
+        test.equal(ra.getSource(0), "foobar");
         
         test.done();
     },
-    
+
+    testResourceArrayAddTargetEmptyRightContents: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.ok(!ra.getTarget(0));
+
+        ra.addTarget(0, "foobar")
+        
+        test.ok(!ra.getTarget(0));		// can't add a target without a source string
+        
+        test.done();
+    },
+
     testResourceArrayAddStringMultiple: function(test) {
         test.expect(6);
 
@@ -830,19 +1053,19 @@ module.exports = {
         });
         test.ok(ra);
 
-        ra.addString(3, "This is the third one")
-        ra.addString(4, "This is the fourth one")
+        ra.addSource(3, "This is the third one")
+        ra.addSource(4, "This is the fourth one")
 
-        test.equal(ra.get(0), "This is a test");
-        test.equal(ra.get(1), "This is also a test");
-        test.equal(ra.get(2), "This is not");
-        test.equal(ra.get(3), "This is the third one");
-        test.equal(ra.get(4), "This is the fourth one");
+        test.equal(ra.getSource(0), "This is a test");
+        test.equal(ra.getSource(1), "This is also a test");
+        test.equal(ra.getSource(2), "This is not");
+        test.equal(ra.getSource(3), "This is the third one");
+        test.equal(ra.getSource(4), "This is the fourth one");
         
         test.done();
     },
     
-    testResourceArrayEquals: function(test) {
+    testResourceArrayEqualsSourceOnly: function(test) {
         test.expect(3);
 
         var ra1 = new ResourceArray({
@@ -875,7 +1098,44 @@ module.exports = {
         test.done();
     },
 
-    testResourceArrayEqualsNot: function(test) {
+    testResourceArrayEqualsFull: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["a", "b", "c"],
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["a", "b", "c"],
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceArrayEqualsSourceOnlyNot: function(test) {
         test.expect(3);
 
         var ra1 = new ResourceArray({
@@ -895,6 +1155,43 @@ module.exports = {
         	sourceLocale: "de-DE",
             key: "asdf",
             sourceArray: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceArrayEqualsFullNot: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "asdf",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["a", "b", "c"],
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "asdf",
+        	sourceLocale: "de-DE",
+            key: "asdf",
+            sourceArray: ["a", "b", "c"],
+            targetArray: ["Dies ist einen Test.", "Dies ist auch Test.", "Dies ist nicht."],
+            targetLocale: "de-DE",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -990,15 +1287,37 @@ module.exports = {
         test.done();
     },
 
-    testResourceArrayHashKey: function(test) {
+    testResourceArrayHashKeySourceOnly: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	sourceLocale: "de-DE",
+        	sourceLocale: "en-US",
             key: "asdf",
             sourceArray: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+        
+        test.equal(ra.hashKey(), "ra_foo_blah_en-US_asdf");
+        
+        test.done();
+    },
+    
+    testResourceArrayHashKeySourceOnly: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	sourceLocale: "en-US",
+            key: "asdf",
+            sourceArray: ["a", "b", "c"],
+            targetArray: ["Dies ist einen Test.", "Dies ist auch Test.", "Dies ist nicht."],
+            targetLocale: "de-DE",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
