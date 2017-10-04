@@ -1,21 +1,18 @@
 //
-//  HTParticipantTableCellView.m
+//  MPParticipantTableCellView.m
 //  LiveChat
 //
-//  Created by Sean Xia on 5/20/16.
-//  Copyright © 2016 Healthtap. All rights reserved.
-//
 
-#import "HTParticipantTableCellView.h"
-#import "UIColor+HTColor.h"
-#import "UIFont+HTFont.h"
-#import "UIView+HTConstraints.h"
+#import "MPParticipantTableCellView.h"
+#import "UIColor+MPColor.h"
+#import "UIFont+MPFont.h"
+#import "UIView+MPConstraints.h"
 #import "UIView+ImageNamed.h"
 #import "FGConstants.h"
-#import "HTExpertObject.h"
-#import "UIColor+HTColor.h"
-#import "HTHorizontalHairlineView.h"
-#import "HTSessionInfo.h"
+#import "MPFriendObject.h"
+#import "UIColor+MPColor.h"
+#import "MPHorizontalHairlineView.h"
+#import "MPSessionInfo.h"
 #import "FGPrimaryButton.h"
 //@import AFNetworking;
 #import "FGAccountInfo.h"
@@ -28,7 +25,7 @@
 #define kMakeOwnerButtonWidth         100
 #define kCallNowButtonWidth           60
 
-@interface HTParticipantTableCellView ()
+@interface MPParticipantTableCellView ()
 
 @property (strong, nonatomic) UIImageView* availableImageView;
 @property (strong, nonatomic) UIImageView* avatarImageView;
@@ -52,20 +49,20 @@
 @property (strong, nonatomic) NSLayoutConstraint *backgroundViewTopConstraint;
 @property (strong, nonatomic) NSLayoutConstraint *backgroundViewBottomConstraint;
 
-@property (nonatomic, strong) HTHorizontalHairlineView *rowViewBottomLine;
+@property (nonatomic, strong) MPHorizontalHairlineView *rowViewBottomLine;
 
 @property (nonatomic, strong) UIView* infoView;
 //@property (nonatomic, strong) NSLayoutConstraint* finfoViewWidthConstraint;
 
 @end
 
-@implementation HTParticipantTableCellView
+@implementation MPParticipantTableCellView
 
-+(CGFloat) heightWithPersonObject:(HTPersonObject *)personObject withSessionInfo:(HTSessionInfo *)sessionInfo andViewWidth:(CGFloat)viewWidth {
++(CGFloat) heightWithPersonObject:(MPPersonObject *)personObject withSessionInfo:(MPSessionInfo *)sessionInfo andViewWidth:(CGFloat)viewWidth {
     
-    static HTParticipantTableCellView *protoView = nil;
+    static MPParticipantTableCellView *protoView = nil;
     if (!protoView) {
-        protoView = [[HTParticipantTableCellView alloc] init];
+        protoView = [[MPParticipantTableCellView alloc] init];
     }
     
     [protoView updateWithPersonObject:personObject withSessionInfo:sessionInfo andViewWidth:viewWidth];
@@ -75,13 +72,13 @@
     return size.height;
 }
 
--(void) updateWithPersonObject:(HTPersonObject *)object withSessionInfo:(HTSessionInfo *)sessionInfo andViewWidth:(CGFloat)viewWidth {
+-(void) updateWithPersonObject:(MPPersonObject *)object withSessionInfo:(MPSessionInfo *)sessionInfo andViewWidth:(CGFloat)viewWidth {
     
     self.personObject = object;
     self.viewWidthConstraint.constant = viewWidth;
     
-    self.backgroundViewBottomConstraint.constant = self.shouldShowRoundBottom ? 0:kRoundCornderRadius;
-    self.backgroundViewTopConstraint.constant = self.shouldShowRoundTop ? 0: -kRoundCornderRadius;
+    self.backgroundViewBottomConstraint.constant = self.shouldShowRoundBottom ? 0:kRoundCornerRadius;
+    self.backgroundViewTopConstraint.constant = self.shouldShowRoundTop ? 0: -kRoundCornerRadius;
     
     self.nameLabel.text = [object getFullName];
     if ([object.avataImageUrl isKindOfClass:NSString.class]) {
@@ -90,14 +87,14 @@
     
     self.availableImageView.hidden = YES;
     [self.locationLabel setText:[self.personObject getCityState]];
-    if ([object isKindOfClass:HTExpertObject.class]) {
-        HTExpertObject* doctor = (HTExpertObject *)object;
-        self.specialtyLabel.text = doctor.specialty;
-        self.caduceusImageView.hidden = !doctor.isDoctor;
+    if ([object isKindOfClass:MPFriendObject.class]) {
+        MPFriendObject* friendtor = (MPFriendObject *)object;
+        self.specialtyLabel.text = friend.specialty;
+        self.caduceusImageView.hidden = !friend.isfriend;
         
-        self.availableImageView.hidden =  ![doctor.available isEqualToString:@"available"];
+        self.availableImageView.hidden =  ![friend.available isEqualToString:@"available"];
         
-        // doctors in active participant array are not available
+        // friends in active participant array are not available
         if ([sessionInfo.activePaticipantIdArray containsObject:object.personId]){
             self.availableImageView.hidden = YES;
         }
@@ -111,8 +108,8 @@
         self.caduceusImageView.hidden = YES;
         
         //TODO:
-        if ([sessionInfo.patientId isEqualToString:object.personId]) {
-            self.specialtyLabel.text = NSLocalizedString(@"Patient", nil);
+        if ([sessionInfo.CustomerId isEqualToString:object.personId]) {
+            self.specialtyLabel.text = NSLocalizedString(@"Customer", nil);
             self.locationLabel.text = [object getCityState];
             
             if (self.locationLabel.text.length == 0) {
@@ -191,7 +188,7 @@
     [self.infoView constrainColumnVerticalPositioning:subviewArray withTopPaddingArray:paddingArray];
     
     self.clipsToBounds = YES;
-    self.rowViewBottomLine = [[HTHorizontalHairlineView alloc] init];
+    self.rowViewBottomLine = [[MPHorizontalHairlineView alloc] init];
     [self addSubview:self.rowViewBottomLine];
     [self constrainSubviewToLeftAndRightEdges:self.rowViewBottomLine withMargin:0];
     [self constrainSubviewToBottom:self.rowViewBottomLine withMargin:0];
@@ -208,24 +205,24 @@
     [_infoView constrainSubviewToBottom:_commandView withMargin:0];
 }
 
--(void) updateCommandViewWithPersonObject:(HTPersonObject *)person andSessionInfo:(HTSessionInfo *)sessionInfo {
+-(void) updateCommandViewWithPersonObject:(MPPersonObject *)person andSessionInfo:(MPSessionInfo *)sessionInfo {
     
-    BOOL amPrimaryMember    = [sessionInfo.patientId isEqualToString:sessionInfo.myId];
+    BOOL amPrimaryMember    = [sessionInfo.CustomerId isEqualToString:sessionInfo.myId];
     
     BOOL amSecondaryMember = !amPrimaryMember;
     
     
-    HTExpertObject * expertPerson = nil;
+    MPFriendObject * friendPerson = nil;
     
-    if ([person isKindOfClass:HTExpertObject.class] ) {
-        expertPerson = (HTExpertObject*) person;
+    if ([person isKindOfClass:MPFriendObject.class] ) {
+        friendPerson = (MPFriendObject*) person;
     }
 
     
-    BOOL isExpert = person.isExpert;
+    BOOL isFriend = person.isFriend;
     
     
-    if (sessionInfo.isConsultEnded || sessionInfo.isMessageConsult) {
+    if (sessionInfo.isQuestionEnded || sessionInfo.isMessageQuestion) {
         self.commandViewHeightConstraint.constant = 10;
         return;
     }
@@ -239,13 +236,13 @@
     BOOL isOwner = [sessionInfo.soapOwnerId isEqualToString:person.personId];
     if ([sessionInfo.leftPaticipantIdArray containsObject:person.personId] ||
         [sessionInfo.removedParticipantIdArray containsObject:person.personId]) {
-        [self addInfoLabelToCommandView:NSLocalizedString(@"Left consult", nil)];
+        [self addInfoLabelToCommandView:NSLocalizedString(@"Left question", nil)];
         [_commandView constrainSubviewToLeft:_commandInfoLabel withMargin:0];
         return;
     }
     
     BOOL isCoordinator = [sessionInfo.coordinatorId isEqualToString:person.personId];
-    if ([sessionInfo isCoordinator] && [sessionInfo.requestedExpertId isEqualToString:person.personId] &&
+    if ([sessionInfo isCoordinator] && [sessionInfo.requestedFriendId isEqualToString:person.personId] &&
         ![sessionInfo.activePaticipantIdArray containsObject:person.personId]) {
         BOOL isCalling = [sessionInfo.invitedNotJoinedPaticipantIdArray containsObject:person.personId];
         [self addCallNowButtonToCommandView:isCalling];
@@ -254,7 +251,7 @@
     }
     
     if (isOwner) {
-        [self addInfoLabelToCommandView:NSLocalizedString(@"Owner", @"Owner of the consult")];
+        [self addInfoLabelToCommandView:NSLocalizedString(@"Owner", @"Owner of the question")];
         [_commandView constrainSubviewToLeft:_commandInfoLabel withMargin:0];
         return;
     }
@@ -267,8 +264,8 @@
     
     BOOL hasJoined = [sessionInfo.activePaticipantIdArray containsObject:person.personId];
     
-    // not owner, can not remove or make other doctor as owner
-    if (![sessionInfo isSoapOwner] && !hasJoined) {
+    // not owner, can not remove or make other friend as owner
+    if (![sessionInfo isCommentOwner] && !hasJoined) {
         self.commandViewHeightConstraint.constant = 10;
         return;
     }
@@ -276,9 +273,9 @@
     NSMutableArray *viewArray = [NSMutableArray array];
     if (hasJoined) {
         [self addInfoLabelToCommandView:NSLocalizedString(@"Joined", nil)];
-        if (![sessionInfo isSoapOwner] &&
-            (![sessionInfo.patientId isEqualToString:sessionInfo.myId] ||
-             (expertPerson &&  isExpert) ||
+        if (![sessionInfo isCommentOwner] &&
+            (![sessionInfo.CustomerId isEqualToString:sessionInfo.myId] ||
+             (friendPerson &&  isFriend) ||
               isCoordinator)) {
             [_commandView constrainSubviewToLeft:_commandInfoLabel withMargin:0];
             return;
@@ -290,15 +287,15 @@
     if (amSecondaryMember)
         return;
     
-    // Am primary patient ... I can remove other (secondary) members
+    // Am primary Customer ... I can remove other (secondary) members
     
-    if (!isExpert && !isCoordinator && ![person.personId isEqualToString:sessionInfo.myId]) {
+    if (!isFriend && !isCoordinator && ![person.personId isEqualToString:sessionInfo.myId]) {
         [self addRemoveButtonToCommandView];
         [viewArray addObject:_removeCommandButton];
     }
     
     /*  disable "make owner " for customer side
-    if ([person isKindOfClass:HTExpertObject.class] && !isCoordinator && hasJoined){
+    if ([person isKindOfClass:MPFriendObject.class] && !isCoordinator && hasJoined){
         [self addMakeOwnerButtonToCommandView];
         [viewArray addObject:_makeOwnerCommandButton];
     }
@@ -372,7 +369,7 @@
         _makeOwnerCommandButton = [[UIButton alloc] init];
         _makeOwnerCommandButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_makeOwnerCommandButton setTitleColor:[UIColor htGreenTextColor] forState:UIControlStateNormal];
-        [_makeOwnerCommandButton setTitle:NSLocalizedString(@"Make owner", @" ... of the consult") forState:UIControlStateNormal];
+        [_makeOwnerCommandButton setTitle:NSLocalizedString(@"Make owner", @" ... of the question") forState:UIControlStateNormal];
         [_makeOwnerCommandButton.titleLabel setFont:[UIFont htLight15Font]];
         [_makeOwnerCommandButton constrainToWidth:kMakeOwnerButtonWidth];
         _makeOwnerCommandButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -482,7 +479,7 @@
 {
     _caduceusImageView = [[UIImageView alloc] init];
     [self.caduceusImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.caduceusImageView setImage:[self imageNamed:@"expert_caduceus_red"]];
+    [self.caduceusImageView setImage:[self imageNamed:@"friend_caduceus_red"]];
     [self addSubview:self.caduceusImageView];
     [self.caduceusImageView constrainViewToSize:CGSizeMake(9, 15)];
     [self.caduceusImageView setContentMode:UIViewContentModeScaleAspectFit];

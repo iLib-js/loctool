@@ -1,1 +1,67 @@
-<%_.each(obj.list, function(val, key){%><%if(val.name.toLowerCase() != "definition"){%><%if(val.count> 0){%><div class="navigate_to_h navigate" navigate="<%=key%>"><div style="pointer-events:none"><div class="topic_icon <%=key%>" style="pointer-events:none"></div><div class="topic_name" style="pointer-events:none; margin-top:9px;"><%=val.name%></div><div class="numbers_of_topics" style="pointer-events:none; margin-top:9px;font-size:13px; padding-left:8px"><%=(val.count && val.name != 'Related Apps') ? val.count : ''%></div></div></div><%}%><%}else{%><%if(typeof(val.description) != "undefined" && val.description){%><div class="toggle_description_h toggle_description" style="margin-bottom:5px"><div class="topic_icon description" style="pointer-events:none"></div><div class="topic_name" style="pointer-events:none; margin-top:9px;font-size: 13px;">Description</div></div><div class="decription_box_h" style="padding: 10px 5px 10px 17px;font: 100% Open Sans, Helvetica; color: #333; display: none; "><%- HTMLReg.parse(val.description)%><%if(typeof(val.author.full_name) != "undefined" && val.author.full_name){%><div class="feed_item no_bg" style="border: none;"><div class="feed_item_content" style="padding: 7px 10px 0 54px;"><div class="avatar_wrapper" style="margin: 0 0px 0px -55px;"><div class="avatar_mask_div"></div><img class="person_avatar wrapped" src="<%=val.author.photo_medium_url ? val.author.photo_medium_url.toFullImageUrl() : 'imgs/masks/avatar_no_border.png' %>" alt=""></div><div class="actor_info left" style="width: 93%;margin-top:7px;"><div class="actor_text expert red ellip left" style="width:93%;line-height:16px;">Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a></div><%if(val.desc_agrees.length != 0){%><div style="margin-left:16px;" class="agrees_layer_h"><div class="left" style="margin:2px 6px 0 0 ;"> and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? 's' : ''%> agree</a></div><%if(val.desc_agrees.length == 1){%><div class="image_div" style="background:url('<%=val.desc_agrees[0].vote.actor_avatar%>'), url(imgs/masks/top_bar_avatar.png);"></div><%}else{ var lengthAgree=val.desc_agrees.length || 0; if(lengthAgree> 3) lengthAgree=3; %><%for(var i = 0; i < lengthAgree; i++){%><div class="image_div" style="background:url('<%=val.desc_agrees[i].vote.actor_avatar%>'), url(imgs/masks/top_bar_avatar.png);"></div><%}%><%}%></div><%}%></div></div></div><%if(App.user.isExpert() && val.desc_answer_id != null){%><% var userID=App.user.get("person.id"); var isAgreed=false; _.each(val.desc_agrees, function(doctor){ if(doctor.vote.actor_id == userID) isAgreed=true; }); %><div class="better_discription_con"><div class="btn grey"><span class="agree <%=isAgreed ? 'agreed' : ''%> agree_h" style="color:<%=isAgreed ? '#aaa' : ''%>"><%=isAgreed ? 'Agreed' : 'Agree'%></span></div><div class="better_discription"><a class="write_desc_h">Write a better description &raquo;</a></div></div><%}%><%}%><div class="cb10"></div></div><%}%><%}%><%});%>
+<%_.each(obj.list, function(val, key){%>
+    <%if(val.name.toLowerCase() != "definition"){%>
+        <%if(val.count> 0){%>
+            <div class="navigate_to_h navigate" navigate="<%=key%>">
+                <div style="pointer-events:none">
+                    <div class="topic_icon <%=key%>" style="pointer-events:none"></div>
+                    <div class="topic_name" style="pointer-events:none; margin-top:9px;"><%=val.name%></div>
+                    <div class="numbers_of_topics" style="pointer-events:none; margin-top:9px;font-size:13px; padding-left:8px">
+                        <%=(val.count && val.name != 'Related Apps') ? val.count : ''%>
+                    </div>
+                </div>
+            </div>
+        <%}%>
+    <%}else{%>
+        <%if(typeof(val.description) != "undefined" && val.description){%>
+            <div class="toggle_description_h toggle_description" style="margin-bottom:5px">
+                <div class="topic_icon description" style="pointer-events:none"></div>
+                <div class="topic_name" style="pointer-events:none; margin-top:9px;font-size: 13px;">Description</div>
+            </div>
+            <div class="decription_box_h" style="padding: 10px 5px 10px 17px;font: 100% Open Sans, Helvetica; color: #333; display: none; ">
+                <%- HTMLReg.parse(val.description)%>
+                <%if(typeof(val.author.full_name) != "undefined" && val.author.full_name){%>
+                    <div class="feed_item no_bg" style="border: none;">
+                        <div class="feed_item_content" style="padding: 7px 10px 0 54px;">
+                            <div class="avatar_wrapper" style="margin: 0 0px 0px -55px;">
+                                <div class="avatar_mask_div"></div>
+                                <img class="person_avatar wrapped" src="<%=val.author.photo_medium_url ? val.author.photo_medium_url.toFullImageUrl() : 'imgs/masks/avatar_no_border.png' %>" alt="">
+                            </div>
+                            <div class="actor_info left" style="width: 93%;margin-top:7px;">
+                                <div class="actor_text expert red ellip left" style="width:93%;line-height:16px;">
+                                    Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>
+                                </div>
+                                <%if(val.desc_agrees.length != 0){%>
+                                    <div style="margin-left:16px;" class="agrees_layer_h">
+                                        <div class="left" style="margin:2px 6px 0 0 ;">
+                                            and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>
+                                        </div>
+                                        <%if(val.desc_agrees.length == 1){%>
+                                            <div class="image_div" style="background:url('<%=val.desc_agrees[0].vote.actor_avatar%>'), url(imgs/masks/top_bar_avatar.png);"></div>
+                                        <%}else{ var lengthAgree=val.desc_agrees.length || 0; if(lengthAgree> 3) lengthAgree=3; %>
+                                            <%for(var i = 0; i < lengthAgree; i++){%>
+                                                <div class="image_div" style="background:url('<%=val.desc_agrees[i].vote.actor_avatar%>'), url(imgs/masks/top_bar_avatar.png);"></div>
+                                            <%}%>
+                                        <%}%>
+                                    </div>
+                                <%}%>
+                            </div>
+                        </div>
+                    </div>
+                    <%if(App.user.isExpert() && val.desc_answer_id != null){%>
+                    <% var userID=App.user.get("person.id"); var isAgreed=false; _.each(val.desc_agrees, function(doctor){ if(doctor.vote.actor_id == userID) isAgreed=true; }); %>
+                        <div class="better_discription_con">
+                            <div class="btn grey">
+                                <span class="agree agree_h" style="color:#aaa">Agreed</span>
+                            </div>
+                            <div class="better_discription">
+                                <a class="write_desc_h">Write a better description &raquo;</a>
+                            </div>
+                        </div>
+                    <%}%>
+                <%}%>
+                <div class="cb10"></div>
+            </div>
+        <%}%>
+    <%}%>
+<%}%>                                                                                                                                        <%});%>
+ 

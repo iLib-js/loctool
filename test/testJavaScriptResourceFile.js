@@ -1,7 +1,20 @@
 /*
- * testJavaScriptResourceFile.js - test the Java file handler object.
+ * testJavaScriptResourceFile.js - test the JavaScript file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!JavaScriptResourceFile) {
@@ -39,7 +52,7 @@ module.exports = {
         var p = new WebProject({
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -47,7 +60,7 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/en-US.js",
+            pathName: "localized_js/en-US.js",
             targetLocale: "en-US"
         });
 
@@ -60,10 +73,10 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -71,7 +84,7 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
@@ -80,7 +93,7 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "source text",
                 sourceLocale: "en-US",
@@ -88,7 +101,7 @@ module.exports = {
                 target: "Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "more source text",
                 sourceLocale: "en-US",
@@ -96,7 +109,7 @@ module.exports = {
                 target: "mehr Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "yet more source text",
                 sourceLocale: "en-US",
@@ -116,10 +129,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -127,7 +140,7 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
@@ -135,7 +148,7 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "source text",
                 sourceLocale: "en-US",
@@ -143,7 +156,7 @@ module.exports = {
                 target: "Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "more source text",
                 sourceLocale: "en-US",
@@ -151,7 +164,7 @@ module.exports = {
                 target: "mehr Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "yet more source text",
                 sourceLocale: "en-US",
@@ -177,10 +190,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -188,7 +201,7 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
@@ -205,10 +218,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -216,14 +229,14 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
         [
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "source text",
                 sourceLocale: "en-US",
@@ -231,7 +244,7 @@ module.exports = {
                 target: "Quellen\"text"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "more source text",
                 sourceLocale: "en-US",
@@ -256,10 +269,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"]
@@ -267,14 +280,14 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
         [
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "source text",
                 sourceLocale: "en-US",
@@ -282,7 +295,7 @@ module.exports = {
                 target: "Quellen'text"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "more source text",
                 sourceLocale: "en-US",
@@ -307,10 +320,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
-                "js": "feelGood/localized_js"
+                "js": "localized_js"
             }
         }, "./testfiles", {
             locales:["en-GB"],
@@ -319,7 +332,7 @@ module.exports = {
 
         var jsrf = new JavaScriptResourceFile({
             project: p,
-            pathName: "feelGood/localized_js/de-DE.js",
+            pathName: "localized_js/de-DE.js",
             targetLocale: "de-DE"
         });
 
@@ -327,7 +340,7 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "source text",
                 sourceLocale: "en-US",
@@ -335,7 +348,7 @@ module.exports = {
                 target: "Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "more source text",
                 sourceLocale: "en-US",
@@ -343,7 +356,7 @@ module.exports = {
                 target: "mehr Quellentext"
             }),
             new ResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 targetLocale: "de-DE",
                 key: "yet more source text",
                 sourceLocale: "en-US",

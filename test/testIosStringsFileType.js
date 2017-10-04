@@ -1,7 +1,20 @@
 /*
  * testIosStringsFileType.js - test the ios strings resource file type handler object
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!IosStringsFileType) {
@@ -124,8 +137,8 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(htf.handles("a/b/en-US.lproj/FGSignUpViewController.strings"));
-        test.ok(htf.handles("feelgood/en-US.lproj/FGGetHelpConciergeView.strings"));
+        test.ok(htf.handles("a/b/en-US.lproj/SignUpViewController.strings"));
+        test.ok(htf.handles("feelgood/en-US.lproj/GetHelpView.strings"));
 
         test.done();
     },
@@ -145,7 +158,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/zh-Hans.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/zh-Hans.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -206,7 +219,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/Base.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -226,7 +239,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/de.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/de.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -246,7 +259,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(htf.handles("foo/en-US.lproj/FGSignUpViewController.strings"));
+        test.ok(htf.handles("foo/en-US.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -266,7 +279,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("foo/Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/Base.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -286,7 +299,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("foo/de.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/de.lproj/SignUpViewController.strings"));
 
         test.done();
     }

@@ -1,7 +1,20 @@
 /*
  * testLocalRepository.js - test the Database Translation Set object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!LocalRepository) {
@@ -68,13 +81,13 @@ module.exports = {
 				test.equal(resources.length, 2);
 
 				test.equal(resources[0].getKey(), "foobar");
-				test.equal(resources[0].getProject(), "ht-webapp12");
+				test.equal(resources[0].getProject(), "webapp");
 				test.equal(resources[0].getSource(), "Asdf asdf");
 				test.equal(resources[0].getLocale(), "en-US");
 				test.equal(resources[0].getComment(), "foobar is where it's at!");
 
 				test.equal(resources[1].getKey(), "foobar");
-				test.equal(resources[1].getProject(), "ht-webapp12");
+				test.equal(resources[1].getProject(), "webapp");
 				test.equal(resources[1].getSource(), "foobarfoo");
 				test.equal(resources[1].getLocale(), "de-DE");
 

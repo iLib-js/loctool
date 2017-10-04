@@ -1,7 +1,20 @@
 /*
- * testHamlFile.js - test the Java file handler object.
+ * testHamlFile.js - test the Haml file handler object.
  *
- * Copyright © 2017, HealthTap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!HamlFile) {
@@ -172,7 +185,7 @@ module.exports = {
 		test.equals(h.makeKey("Referral Link"), "r140625167");
 		test.equals(h.makeKey("Questions"), "r256277957");
 		test.equals(h.makeKey("Private consults"), "r18128760");
-		test.equals(h.makeKey("Suggested doctors for you"), "r584966709");
+		test.equals(h.makeKey("Suggested friends for you"), "r959265904");
         
         test.done();
 	},
@@ -202,7 +215,7 @@ module.exports = {
         test.ok(h);
 
         test.equals(h.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(h.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"), "r436261634");
+		test.equals(h.makeKey("{friend_name}, {sharer_name} {start}found this helpful{end}"), "r140591057");
 		test.equals(h.makeKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
 		test.equals(h.makeKey("Grow your Care-Team"), "r522565682");
 		test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
@@ -351,7 +364,7 @@ module.exports = {
 		});
         test.ok(hf);
 
-        test.equals(hf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        test.equals(hf.makeKey("\u00a0 text\u00a0chat"), "r87956021");
         
         test.done();
 	},
@@ -388,7 +401,7 @@ module.exports = {
 		});
         test.ok(hf);
 
-        test.equals(hf.makeKey("Answers and consultations from real, caring doctors across 141 specialties\u2028 24/7 immediate access to physicians via video, voice, and text chat"), "r317136970");
+        test.equals(hf.makeKey("Foo\u2028 24/7 bar"), "r102490768");
         
         test.done();
 	},
@@ -542,7 +555,7 @@ module.exports = {
 
         var h = new HamlFile();
         h.lines = [
-        	'  %span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n'
+        	'  %span{:itemprop=>"author"}= this_friend.friend? ? (link_to(this_friend.to_s,friend_path(this_friend))) : this_friend.profile_name\n'
         ];
         h.currentLine = 0;
 
@@ -1285,7 +1298,7 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('  There are #{enterprise.count(:doctor).uniq} doctors.\n');
+        h.parse('  There are #{group.count(:friend).uniq} friends.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1296,8 +1309,8 @@ module.exports = {
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), 'There are #{enterprise.count(:doctor).uniq} doctors.');
-        test.equal(r.getKey(), "r808325557");
+        test.equal(r.getSource(), 'There are #{group.count(:friend).uniq} friends.');
+        test.equal(r.getKey(), "r858463218");
 
         test.done();
     },
@@ -1533,7 +1546,7 @@ module.exports = {
         // the code in the attributes disqualifies it from being converted into a <span> tag in line
         h.parse("    Mission\n" +
         	    "    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n" +
-        	    "    %span.text{:class=>page=='thanks' ? 'active' : 'hidden'} &#8250; Thanks, Doc!\n");
+        	    "    %span.text{:class=>page=='thanks' ? 'active' : 'hidden'} &#8250; Thanks, Friend!\n");
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1556,8 +1569,8 @@ module.exports = {
         r = resources[2];
         test.ok(r);
         
-        test.equal(r.getSource(), '&#8250; Thanks, Doc!');
-        test.equal(r.getKey(), "r954577644");
+        test.equal(r.getSource(), '&#8250; Thanks, Friend!');
+        test.equal(r.getKey(), "r88865504");
         
         test.done();
     },
@@ -2399,8 +2412,8 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},"] \n' +
-        	    '- if @expert.isActive?\n' +
+        h.parse('- paragraphs = ["Dear #{@friend.to_s(true, true)},"] \n' +
+        	    '- if @friend.isActive?\n' +
         	    '  Positive.\n' +
         	    '- else\n' +
         	    '  Negative.\n' +
@@ -2436,8 +2449,8 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},", \n' +
-        	    '  "Thank you for committing to a HealthTap shift today from #{@expert_shift.range_as_string}.","This is a courtesy notification to inform you that our system does not currently see you logged in with the "Available" status on HealthTap for your shift. If there are any technical issues preventing you from logging on, please consider trying to access HealthTap again after restarting your device or computer. Then, if you would like additional assistance, please contact #{@expert_support_email} (or #{@expert_support_phone})."]\n' +
+        h.parse('- paragraphs = ["Dear #{@friend.to_s(true, true)},", \n' +
+        	    '  "Thank you for committing to volunteer","Your time will help hundreds rebuild their lives after the deadly hurricanes. Call #{@support_phone} for more info."]\n' +
         	    'Not indented.\n');
         
         var set = h.getTranslationSet();
@@ -2577,7 +2590,7 @@ module.exports = {
 		});
         test.ok(h);
         
-        h.parse('%span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n' +
+        h.parse('%span{:itemprop=>"author"}= this_friend.friend? ? (link_to(this_friend.to_s,friend_path(this_friend))) : this_friend.profile_name\n' +
         		'Not indented.\n');
         
         var set = h.getTranslationSet();
@@ -2819,7 +2832,7 @@ module.exports = {
         test.ok(h);
         
         h.parse('            Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+        	    '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
         	    '            %span.check_icon\n' +
         	    '            Recommend\n');
         
@@ -2854,7 +2867,7 @@ module.exports = {
         test.ok(h);
         
         h.parse('          Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+        	    '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
         	    '            %span.check_icon\n' +
         	    '            Recommend\n');
         
@@ -3200,8 +3213,8 @@ module.exports = {
         test.ok(h);
         
         var segment = {
-        	text: "#{patient_name}'s video is unavailable.<br>Please continue by voice or chat.",
-        	original: "        #{patient_name}'s video is unavailable.<br>\n" +
+        	text: "#{friend_name}'s video is unavailable.<br>Please continue by voice or chat.",
+        	original: "        #{friend_name}'s video is unavailable.<br>\n" +
 			          "        Please continue by voice or chat.\n"
         };
         
@@ -3217,7 +3230,7 @@ module.exports = {
         
         var actual = h.assembleTranslation(segment, translations, "es-US");
         
-        var expected = "#{patient_name}'s video is unavailable. <br>Por favor, continúa por voz o chat.";
+        var expected = "#{friend_name}'s video is unavailable. <br>Por favor, continúa por voz o chat.";
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3708,7 +3721,7 @@ module.exports = {
         test.ok(h);
 
         h.parse('          Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+        	    '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
         	    '            %span.check_icon\n' +
         	    '            Recommend\n');
 
@@ -3737,7 +3750,7 @@ module.exports = {
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
         	'          Méssage\n' +
-	    	'          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
+	    	'          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
 	    	'            %span.check_icon\n' +
 	    	'            Recommendez\n';
         

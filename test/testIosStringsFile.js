@@ -1,7 +1,20 @@
 /*
  * testIosStringsFile.js - test the Objective C file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!IosStringsFile) {
@@ -12,8 +25,8 @@ if (!IosStringsFile) {
 }
 
 var p = new ObjectiveCProject({
-    id: "ios",
-    sourceLocale: "en-US"
+	id: "iosapp",
+	sourceLocale: "en-US"
 }, "./testfiles", {
     locales:["en-GB"]
 });
@@ -177,10 +190,10 @@ module.exports = {
         test.equal(set.size(), 0);
 
         strings.parse('/* i18n: this is the terms and conditions button label */\n' +
-                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-                '"MFI-qx-pQf.text" = "Are you a doctor?";');
-
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a driver?";');
+        
         test.ok(set);
 
         test.equal(set.size(), 2);
@@ -198,10 +211,10 @@ module.exports = {
         test.ok(strings);
 
         strings.parse('/* this is the terms and conditions button label */\n' +
-                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-                '"MFI-qx-pQf.text" = "Are you a doctor?";');
-
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a driver?";');
+       
         var set = strings.getTranslationSet();
         test.ok(set);
 
@@ -217,9 +230,9 @@ module.exports = {
             reskey: "MFI-qx-pQf.text"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "Are you a doctor?");
+        test.equal(r[0].getSource(), "Are you a driver?");
         test.equal(r[0].getKey(), "MFI-qx-pQf.text");
-        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf";');
 
         test.done();
     },
@@ -228,9 +241,9 @@ module.exports = {
         test.expect(14);
 
         var strings = new IosStringsFile({
-            project: p,
-            type: isft,
-            pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
+        	project: p,
+			type: isft, 
+        	pathName: "./objc/en-US.lproj/SignUpViewController.strings"
         });
         test.ok(strings);
 
@@ -239,7 +252,7 @@ module.exports = {
 
         var set = strings.getTranslationSet();
 
-        test.equal(set.size(), 15);
+        test.equal(set.size(), 14);
 
         var r = set.getBy({
             reskey: "QCe-xG-x5k.normalTitle"
@@ -283,30 +296,30 @@ module.exports = {
 
         var set = strings.getTranslationSet();
 
-        test.equal(set.size(), 42);
+        test.equal(set.size(), 21);
 
         var r = set.getBy({
-            reskey: "%@ %@your gratitude :)"
+        	reskey: "%@ (%ld yrs)"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
-        test.equal(r[0].getKey(), "%@ %@your gratitude :)");
+        test.equal(r[0].getSource(), "%1$@ (%2$ld yrs)");
+        test.equal(r[0].getKey(), "%@ (%ld yrs)");
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-            reskey: "%@ added this checklist"
+        	reskey: "$%@ regularly"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%@ added this checklist");
-        test.equal(r[0].getKey(), "%@ added this checklist");
-        test.equal(r[0].getComment(), 'parameter is a person name');
+        test.equal(r[0].getSource(), "$%@ regularly");
+        test.equal(r[0].getKey(), "$%@ regularly");
+        test.ok(!r[0].getComment());
 
         var r = set.getBy({
-            reskey: "%@ commented on %@'s answer"
+        	reskey: "%@ and "
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
-        test.equal(r[0].getKey(), "%@ commented on %@'s answer");
+        test.equal(r[0].getSource(), "%@ and ");
+        test.equal(r[0].getKey(), "%@ and ");
         test.ok(!r[0].getComment());
 
         test.done();
@@ -362,24 +375,24 @@ module.exports = {
         test.ok(strings);
 
         [
-            new ResourceString({
-                project: "ios",
-                targetLocale: "de-DE",
-                key: "source text",
+        	new ResourceString({
+        		project: "iosapp",
+        		targetLocale: "de-DE",
+        		key: "source text",
 				source: "source text",
 				sourceLocale: "en-US",
 				target: "Quellen\"text",
-                comment: "foo"
-            }),
-            new ResourceString({
-                project: "ios",
-                targetLocale: "de-DE",
-                key: "more source text",
-				source: "more source text",
-				sourceLocale: "en-US",
-				target: "mehr Quellen\"text",
-                comment: "bar"
-            })
+                        comment: "foo"
+        	}),
+        	new ResourceString({
+        		project: "iosapp",
+        		locale: "de-DE",
+        		key: "more source text",
+			source: "more source text",
+			sourceLocale: "en-US",
+			target: "mehr Quellen\"text",
+                	comment: "bar"
+        	})
         ].forEach(function(res) {
             strings.addResource(res);
         });
@@ -406,7 +419,7 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "de-DE",
                 key: "source text",
 				source: "source text",
@@ -415,7 +428,7 @@ module.exports = {
                 comment: "foo"
             }),
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "de-DE",
                 key: "more source text",
 				source: "more source text",
@@ -506,12 +519,12 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "es-US",
-                key: "“The future of medicine is at your fingertips.”",
-				source: "“The future of medicine is at your fingertips.”",
+                key: "“The future of technology is at your fingertips.”",
+				source: "“The future of technology is at your fingertips.”",
 				sourceLocale: "en-US",
-				target: '"El futuro de la medicina está al alcance de tus dedos."',
+				target: '"El futuro de la tecnología está al alcance de tus dedos."',
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -519,8 +532,8 @@ module.exports = {
         });
 
         test.equal(strings.getContent(),
-            '/* bar */\n' +
-            '"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n'
+        	'/* bar */\n' +
+        	'"“The future of technology is at your fingertips.”" = "\\\"El futuro de la tecnología está al alcance de tus dedos.\\\"";\n'
         );
 
         test.done();
@@ -553,21 +566,21 @@ module.exports = {
 
         strings.parse('/* this is the terms and conditions button label */\n' +
                 '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-                '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-                '"MFI-qx-pQf.text" = "Are you a doctor?";\n');
+                '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a driver?";\n');
 
         var x = strings.getContent();
         var y =
             '/* this is the terms and conditions button label */\n' +
             '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-            '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-            '"MFI-qx-pQf.text" = "Are you a doctor?";\n';
+            '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+            '"MFI-qx-pQf.text" = "Are you a driver?";\n';
 
         test.equal(strings.getContent(),
             '/* this is the terms and conditions button label */\n' +
             '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-            '/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-            '"MFI-qx-pQf.text" = "Are you a doctor?";\n'
+            '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+            '"MFI-qx-pQf.text" = "Are you a driver?";\n'
         );
 
         test.done();

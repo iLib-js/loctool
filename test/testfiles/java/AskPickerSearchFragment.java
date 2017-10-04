@@ -1,4 +1,4 @@
-package com.healthtap.userhtexpress.fragments.main;
+package com.myproduct.fragments.main;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,24 +21,14 @@ import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.healthtap.userhtexpress.R;
-import com.healthtap.userhtexpress.RB;
-import com.healthtap.userhtexpress.adapters.askpicker.PickerResultAdapter;
-import com.healthtap.userhtexpress.adapters.askpicker.PickerResultConcierge;
-import com.healthtap.userhtexpress.adapters.askpicker.PickerResultFreeQuestion;
-import com.healthtap.userhtexpress.adapters.askpicker.PickerResultPrime;
-import com.healthtap.userhtexpress.adapters.askpicker.PickerResultWrapper;
-import com.healthtap.userhtexpress.controllers.AccountController;
-import com.healthtap.userhtexpress.customviews.RobotoRegularTextView;
-import com.healthtap.userhtexpress.customviews.ShowMoreFooter;
-import com.healthtap.userhtexpress.fragments.BaseFragment;
-import com.healthtap.userhtexpress.fragments.concierge.ConciergeInviteFragment;
-import com.healthtap.userhtexpress.model.local.DetailLocationModel;
-import com.healthtap.userhtexpress.span.ClickableSpanWithoutUnderline;
-import com.healthtap.userhtexpress.util.HTEventConstants;
-import com.healthtap.userhtexpress.util.HTEventTrackerUtil;
-import com.healthtap.userhtexpress.util.HealthTapApi;
-import com.healthtap.userhtexpress.util.PrimeCheckHandler;
+import com.myproduct.R;
+import com.myproduct.RB;
+import com.myproduct.controllers.AccountController;
+import com.myproduct.customviews.RobotoRegularTextView;
+import com.myproduct.customviews.ShowMoreFooter;
+import com.myproduct.fragments.BaseFragment;
+import com.myproduct.model.local.DetailLocationModel;
+import com.myproduct.span.ClickableSpanWithoutUnderline;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,10 +38,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-/**
- * Created by wuhaoouyang on 10/31/16.
- */
 
 public class AskPickerSearchFragment extends BaseFragment implements SearchView.OnQueryTextListener,
         AskPickerFiltersFragment.FilterCallback, AbsListView.OnItemClickListener {
@@ -144,7 +130,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
     @Override
     public boolean onQueryTextSubmit(String query) {
         page = 1;
-        searchDoctors();
+        searchfriends();
         return false;
     }
 
@@ -156,12 +142,12 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        HTEventTrackerUtil.logEvent(HTEventConstants.EventCategory.ASK_DOC.getCategory(), "doctor_view", "", "");
+        MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_view", "", "");
         getBaseActivity().getSupportActionBar().setTitle(R.string.picker_search_title);
         questionText = getArguments().getString(AskPickerFragment.ARG_QUESTION, "");
         locationModel = (DetailLocationModel) getArguments().getSerializable(AskPickerFragment.ARG_LOCATION);
 
-        listView = (ListView) view.findViewById(R.id.doctors_list);
+        listView = (ListView) view.findViewById(R.id.friends_list);
         mPickerAdapter = new PickerResultAdapter(itemList);
         if (AccountController.getInstance().getLoggedInUser().getEnterpriseGroupModel() != null) {
             TextView header = new RobotoRegularTextView(getActivity());
@@ -198,16 +184,16 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
         footerInvite.setHighlightColor(Color.TRANSPARENT);
         footerInvite.setLinkTextColor(getResources().getColorStateList(R.color.selector_plain_text));
         SpannableStringBuilder ssb = new SpannableStringBuilder(
-                AccountController.getInstance().getLoggedInUser().isAssociatedToProviderGroup() ?
-                        RB.getString("Can't find a clinician? ") : RB.getString("Can't find a doctor? "));
+                AccountController.getInstance().getLoggedInUser().isAssociatedToGroup() ?
+                        RB.getString("Can't find a group? ") : RB.getString("Can't find a friend? "));
         int start = ssb.length();
-        String cta = RB.getString("Invite them to HealthTap");
+        String cta = RB.getString("Invite them to Myproduct");
         ssb.append(cta);
         ssb.setSpan(new ClickableSpanWithoutUnderline() {
             @Override
             public void onClick(View widget) {
-                HTEventTrackerUtil.logEvent(HTEventConstants.EventCategory.ASK_DOC.getCategory(), "doctor_invite", "", "");
-                getBaseActivity().pushFragment(new ConciergeInviteFragment());
+                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_invite", "", "");
+                getBaseActivity().pushFragment(new InviteFragment());
             }
         }, start, start + cta.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
         footerInvite.setText(ssb);
@@ -217,7 +203,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
         listView.setOnItemClickListener(this);
 
         page = 1;
-        searchDoctors();
+        searchfriends();
     }
 
     @Override
@@ -227,33 +213,33 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
 
         } else if (position < mPickerAdapter.getCount() + headers) {
             PickerResultWrapper item = mPickerAdapter.getItem(position - headers);
-            if (item instanceof PickerResultConcierge) {
-                if (!"out_of_service".equals(((PickerResultConcierge) item).getAvailabilityType())) {
-                    HTEventTrackerUtil.logEvent(HTEventConstants.EventCategory.ASK_DOC.getCategory(), "doctor_continue",
-                            "", ((PickerResultConcierge) item).getExpertId() + "");
+            if (item instanceof PickerResult) {
+                if (!"out_of_service".equals(((PickerResult) item).getAvailabilityType())) {
+                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue",
+                            "", ((PickerResult) item).getExpertId() + "");
                     AskPickerServiceFragment frag =
-                            AskPickerServiceFragment.newInstance(((PickerResultConcierge) item).getExpertId());
+                            AskPickerServiceFragment.newInstance(((PickerResult) item).getExpertId());
                     frag.getArguments().putAll(getArguments());
                     getBaseActivity().pushFragment(frag);
                 }
-            } else if (item instanceof PickerResultPrime) {
-                if (((PickerResultPrime) item).isServiceAvailable()) {
-                    HTEventTrackerUtil.logEvent(HTEventConstants.EventCategory.ASK_DOC.getCategory(), "doctor_continue", "", "prime");
-                    new PrimeCheckHandler(getActivity(), questionText).tryGoComposeConsult(locationModel);
+            } else if (item instanceof PickerResultImmediate) {
+                if (((PickerResultImmediate) item).isServiceAvailable()) {
+                    MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue", "", "prime");
+                    new ImmediateCheckHandler(getActivity(), questionText).tryGoComposeConsult(locationModel);
                 }
             } else if (item instanceof PickerResultFreeQuestion) {
-                HTEventTrackerUtil.logEvent(HTEventConstants.EventCategory.ASK_DOC.getCategory(), "doctor_continue", "", "free_question");
-                getBaseActivity().pushFragment(AskQuestionToDocFragment.newInstance(questionText));
+                MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue", "", "free_question");
+                getBaseActivity().pushFragment(AskQuestionFragment.newInstance(questionText));
             }
         } else {
             if (view == showMore && !showMore.isShowProgress()) {
                 page += 1;
-                searchDoctors();
+                searchfriends();
             }
         }
     }
 
-    private void searchDoctors() {
+    private void searchfriends() {
         Map<String, String> params = new HashMap<>();
         // TODO add search string
         if (TextUtils.isEmpty(searchText)) {
@@ -276,7 +262,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
             }
         }
         showMore.setShowProgress(true);
-        HealthTapApi.getAskDocSuggestedDocs(page, params, new Response.Listener<JSONObject>() {
+        MyproductApi.getAskSuggestedExperts(page, params, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 JSONArray content = response.optJSONArray("content");
@@ -287,12 +273,12 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
                     try {
                         JSONObject item = content.getJSONObject(i);
                         String type = item.getString("type");
-                        if ("OnCallServiceCard".equals(type)) {
-                            itemList.add(new PickerResultPrime(item));
+                        if ("ImmediateServiceCard".equals(type)) {
+                            itemList.add(new PickerResultImmediate(item));
                         } else if ("AskFreeQuestion".equals(type)) {
                             itemList.add(new PickerResultFreeQuestion(item));
-                        } else if ("ConciergeServiceCard".equals(type)) {
-                            itemList.add(new PickerResultConcierge(item));
+                        } else if ("ServiceCard".equals(type)) {
+                            itemList.add(new PickerResultService(item));
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
