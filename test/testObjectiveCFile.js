@@ -414,7 +414,7 @@ module.exports = {
     },
 
     testObjectiveCFileExtractFile: function(test) {
-        test.expect(42);
+        test.expect(34);
 
         var j = new ObjectiveCFile(p, "./objc/t1.m", ocft, ocft);
         test.ok(j);
@@ -432,23 +432,11 @@ module.exports = {
         test.equal(r.getKey(), "Staff");
         test.ok(!r.getComment());
 
-        r = set.getBySource("Patient");
-        test.ok(r);
-        test.equal(r.getSource(), "Patient");
-        test.equal(r.getKey(), "Patient");
-        test.ok(!r.getComment());
-        
-        r = set.getBySource("Left consult");
-        test.ok(r);
-        test.equal(r.getSource(), "Left consult");
-        test.equal(r.getKey(), "Left consult");
-        test.ok(!r.getComment());
-
         r = set.getBySource("Owner");
         test.ok(r);
         test.equal(r.getSource(), "Owner");
         test.equal(r.getKey(), "Owner");
-        test.equal(r.getComment(), "Owner of the consult");
+        test.equal(r.getComment(), "Owner of the question");
 
         r = set.getBySource("Inviting ...");
         test.ok(r);
@@ -472,7 +460,7 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "Make owner");
         test.equal(r.getKey(), "Make owner");
-        test.equal(r.getComment(), " ... of the consult");
+        test.equal(r.getComment(), " ... of the question");
 
         r = set.getBySource("Calling ...");
         test.ok(r);

@@ -76,15 +76,14 @@ module.exports = {
     },
 
     testJavaFileMakeKeySimpleTexts1: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Medications in your profile"), "r32020327");
-		test.equals(j.makeKey("All medications"), "r835310324");
-		test.equals(j.makeKey("Conditions"), "r103883086");
-		test.equals(j.makeKey("Symptoms"), "r481086103");
+        test.equals(j.makeKey("Preferences in your profile"), "r372802078");
+		test.equals(j.makeKey("All settings"), "r725930887");
+		test.equals(j.makeKey("Colour scheme"), "r734599412");
 		test.equals(j.makeKey("Experts"), "r343852585");
         
         test.done();
@@ -982,20 +981,20 @@ module.exports = {
         
         test.equal(set.size(), 3);
         
-        var r = set.getBySource("Can't find a clinician?");
+        var r = set.getBySource("Can't find a group?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a clinician?");
-        test.equal(r.getKey(), "r831947664");
+        test.equal(r.getSource(), "Can't find a group?");
+        test.equal(r.getKey(), "r315749545");
         
-        r = set.getBySource("Can't find a doctor?");
+        r = set.getBySource("Can't find a friend?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a doctor?");
-        test.equal(r.getKey(), "r74563301");
+        test.equal(r.getSource(), "Can't find a friend?");
+        test.equal(r.getKey(), "r23431269");
         
-        r = set.getBySource("Invite them to HealthTap");
+        r = set.getBySource("Invite them to Myproduct");
         test.ok(r);
-        test.equal(r.getSource(), "Invite them to HealthTap");
-        test.equal(r.getKey(), "r554083360");
+        test.equal(r.getSource(), "Invite them to Myproduct");
+        test.equal(r.getKey(), "r245047512");
 
         test.done();
     }

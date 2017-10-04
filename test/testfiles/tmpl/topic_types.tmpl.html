@@ -4,35 +4,30 @@
             <a class="item description" topic_chooser="#description">
                 <div class="iconContainer"><div class="icon"></div></div>
                 <div>Description</div>
-            </a><a class="item conditions" topic_chooser="#conditions">
+            </a>
+            <a class="item conditions" topic_chooser="#participants">
                 <div class="iconContainer"><div class="icon"></div></div>
-                <div>Conditions (<span class="number"></span>)</div>
-            </a><a class="item symptoms" topic_chooser="#symptoms">
+                <div>Participants (<span class="number"></span>)</div>
+            </a>
+            <a class="item symptoms" topic_chooser="#visitors">
                 <div class="iconContainer"><div class="icon"></div></div>
-                <div>Symptoms (<span class="number"></span>)</div>
-            </a><a class="item treatments" topic_chooser="#treatments">
+                <div>Visitors (<span class="number"></span>)</div>
+            </a>
+            <a class="item treatments" topic_chooser="#spectators">
                 <div class="iconContainer"><div class="icon"></div></div>
-                <div>Treatments (<span class="number"></span>)</div>
-            </a><a class="item tests" topic_chooser="#tests">
+                <div>Spectators (<span class="number"></span>)</div>
+            </a>
+            <a class="item tests" topic_chooser="#tests">
                 <div class="iconContainer"><div class="icon"></div></div>
                 <div>Tests (<span class="number"></span>)</div>
-            </a><a class="item riskFactors" topic_chooser="#riskFactors">
-                <div class="iconContainer"><div class="icon"></div></div>
-                <div>Risk Factors (<span class="number"></span>)</div>
-            </a><a class="item sideEffects" topic_chooser="#sideEffects">
-                <div class="iconContainer"><div class="icon"></div></div>
-                <div>Side Effects (<span class="number"></span>)</div>
-            </a><a class="item immunizations" topic_chooser="#immunizations">
-                <div class="iconContainer"><div class="icon"></div></div>
-                <div>Immunizations (<span class="number"></span>)</div>
             </a>
-            <a class="item bodyPart" topic_chooser="#bodyPart">
+            <a class="item riskFactors" topic_chooser="#activities">
                 <div class="iconContainer"><div class="icon"></div></div>
-                <div>Body Part (<span class="number"></span>)</div>
+                <div>Activities (<span class="number"></span>)</div>
             </a>
-            <a class="item resolution" topic_chooser="#resolution">
+            <a class="item resolution" topic_chooser="#solutions">
                 <div class="iconContainer"><div class="icon"></div></div>
-                <div>Resolution (<span class="number"></span>)</div>
+                <div>Solutions (<span class="number"></span>)</div>
             </a>
         </div>
         <a href="#" class="left arrow"></a>
@@ -40,213 +35,11 @@
     </div>
 
     <div class="content">
-        <div class="section description" id="description">
-            <div class="text"></div>
-            <div class="agree_button_wrap">
-              <% if(topic.attribute.desc_answer_id && App.user.isExpert()) { %>
-                <% var alreadyVoted = false; %>
-                <% $.each(topic.attribute.desc_agrees, function(key, val) {
-                    if(val.vote.actor_id == App.user.id){
-                      alreadyVoted = true;
-                    }
-                 }); %>
-                <% if(!alreadyVoted){ %>
-                <a class="btn grey agreeWithTopic">
-                  <%= App.image_tag( "imgs/icons/grey_thumbs_up.png") %>
-                  Agree
-                </a>
-                <% } else { %>
-                <a class="btn grey agreeWithTopic disabled">
-                  <%= App.image_tag( "imgs/icons/grey_thumbs_up.png") %>&nbsp;Agreed
-                </a>
-                <% } %>
-              <% } %>
-              <% if(topic.attribute.desc_question_id && App.user.isExpert()) { %>
-              <a class="betterDesc">
-                Write a better description &raquo;
-              </a>
-              <% } %>
-            </div>
-            <div class="author">
-                <div class="avatar"></div>
-                <span class="authored">
-                  Authored by
-                </span>
-                <a class="doctor" href=""></a>
-                <% if(topic.attribute.desc_agrees && topic.attribute.desc_agrees.length) { %>
-                <a class="agreer_photo">
-                  <% var count_hack = 0; %>
-                  <% _.each(topic.attribute.desc_agrees, function(val, key) { %>
-                    <% if(!(count_hack > 3)) { %>
-                        <%= App.image_tag( val.vote.actor_avatar ) %>
-                        <% count_hack++ %>
-                    <% } %>
-                  <% }) %>
-                </a>
-                <a class="agreers"><span class="agreers_count"><%= topic.attribute.desc_agrees.length %></span> DOCTOR<% if(topic.attribute.desc_agrees.length > 1) { %>S<% } %> AGREE<% if(topic.attribute.desc_agrees.length == 1) { %>S<% } %></a>
-                <% } %>
-
-            </div>
-        </div>
-
-        <div class="section sideEffects" id="sideEffects">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Side effects'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, { 'class' : "topicImg" }) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
-            %>
-        </div>
-
-        <div class="section symptoms" id="symptoms">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Symptoms'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
-            %>
-        </div>
-
-        <div class="section immunizations" id="immunizations">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Immunizations'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
-            %>
-        </div>
-
-        <div class="section riskFactors" id="riskFactors">
+        <div class="section devices" id="devices">
             <%
             var listsOver4 = false;
             var seemoreLen = 0;
-            var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Family history')];
-            _.each(subcats, function(subcat, j){
-                var list = topic.attribute.kb_attribute_relationships[subcat] || [];
-                if (list.length > 0) {
-            %>
-                    <div class="subcatTitle"><div class="icon <%= subcat %>"></div><%= subcat %> risk factors</div>
-                    <%
-                    _.each(list, function(item, i){
-                        var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-                        %>
-                        <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                            <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                            <div class="name"><%= item.name %></div>
-                            <div class="prevalenceContainer">
-                                <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                                <div class="prevalence"><%= item.prevalence %></div>
-                            </div>
-                        </a>
-                    <%
-                    });
-                    %>
-                    <%
-                    if (list.length > 3) {
-                    %>
-                    <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-                    <%
-                    }
-                    %>
-                <%
-                }
-            });
-            %>
-        </div>
-
-        <div class="section conditions" id="condition">
-            <%
-            var listsOver4 = false;
-            var seemoreLen = 0;
-            var subcats = [RB.getStringJS('Has types'), RB.getStringJS('Is a type of'), RB.getStringJS('Associated conditions')];
-            _.each(subcats, function(subcat, j){
-            var list = topic.attribute.kb_attribute_relationships[subcat] || [];
-            if (list.length > 0) {
-
-            var title = subcat;
-            if (subcat == 'Has types') {title = RB.getString('Types of {topic}').format({topic: topic.attribute.name})}
-            else if (subcat == 'Is a type of') {title = topic.attribute.name + RB.getStringJS(' is a type of')}
-            %>
-            <div class="subcatTitle"><div class="icon <%= subcat %>"></div><%= title %></div>
-            <%
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            %>
-            <%
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more</a>
-            <%
-            }
-            %>
-            <%
-            }
-            });
-            %>
-        </div>
-
-
-        <div class="section treatments" id="treatments">
-            <%
-            var listsOver4 = false;
-            var seemoreLen = 0;
-            var subcats = [RB.getStringJS('Medications'), RB.getStringJS('Procedures'), RB.getStringJS('Medical Devices'), RB.getStringJS('Other')];
+            var subcats = [RB.getStringJS('Tablets'), RB.getStringJS('Smart Watches'), RB.getStringJS('Hand-held Devices'), RB.getStringJS('Other')];
             _.each(subcats, function(subcat, j){
                 var list = topic.attribute.kb_attribute_relationships[subcat] || [];
                 if (list.length > 0) {
@@ -259,9 +52,9 @@
                     <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
                         <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
                         <div class="name"><%= item.name %></div>
-                        <div class="prevalenceContainer">
-                            <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                            <div class="prevalence"><%= item.prevalence %></div>
+                        <div class="salesContainer">
+                            <div class="salesBullet <%= item.sales %>"></div>
+                            <div class="sales"><%= item.sales %></div>
                         </div>
                     </a>
                     <%
@@ -277,78 +70,6 @@
             <%
                 }
             });
-            %>
-        </div>
-
-        <div class="section tests" id="tests">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Tests'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg' }) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
-            %>
-        </div>
-
-        <div class="section bodyPart" id="bodyPart">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Body Part'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
-            %>
-        </div>
-
-        <div class="section resolution" id="resolution">
-            <%
-            var list = topic.attribute.kb_attribute_relationships['Resolution'] || [];
-            _.each(list, function(item, i){
-            var more = i > 2 ? 'more m' + Math.floor(i/100) : '';
-            %>
-            <a href="<%= item.url.toHashFragment() %>" class="topicBasic <%= more %>">
-                <%= App.image_tag( item.image_url_low_res, {'class' : 'topicImg'}) %>
-                <div class="name"><%= item.name %></div>
-                <div class="prevalenceContainer">
-                    <div class="prevalenceBullet <%= item.prevalence %>"></div>
-                    <div class="prevalence"><%= item.prevalence %></div>
-                </div>
-            </a>
-            <%
-            });
-            if (list.length > 3) {
-            %>
-            <a href="#" class="seemoreButton">See more (<%= list.length - 3 %>)</a>
-            <%
-            }
             %>
         </div>
 

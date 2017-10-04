@@ -68,7 +68,7 @@ module.exports = {
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("feelGood/localized_js/de-DE.js"));
+        test.ok(!htf.handles("localized_js/de-DE.js"));
         
         test.done();
     },
@@ -96,7 +96,7 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-webapp12",
+        	id: "webapp",
         	sourceLocale: "de-DE"
         }, "./testfiles", {
 			locales:["en-GB"]
@@ -116,7 +116,7 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "ht-webapp12",
+        	id: "webapp",
         	sourceLocale: "de-DE"
         }, "./testfiles", {
 			locales:["en-GB"]

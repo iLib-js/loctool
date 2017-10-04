@@ -137,8 +137,8 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(htf.handles("a/b/en-US.lproj/FGSignUpViewController.strings"));
-        test.ok(htf.handles("feelgood/en-US.lproj/FGGetHelpConciergeView.strings"));
+        test.ok(htf.handles("a/b/en-US.lproj/SignUpViewController.strings"));
+        test.ok(htf.handles("feelgood/en-US.lproj/GetHelpView.strings"));
 
         test.done();
     },
@@ -158,7 +158,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/zh-Hans.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/zh-Hans.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -219,7 +219,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/Base.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -239,7 +239,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/de.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/de.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -259,7 +259,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(htf.handles("foo/en-US.lproj/FGSignUpViewController.strings"));
+        test.ok(htf.handles("foo/en-US.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -279,7 +279,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("foo/Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/Base.lproj/SignUpViewController.strings"));
 
         test.done();
     },
@@ -299,7 +299,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("foo/de.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/de.lproj/SignUpViewController.strings"));
 
         test.done();
     }

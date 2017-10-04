@@ -1,5 +1,5 @@
 /*
- * testHamlFileType.js - test the HTML template file type handler object.
+ * testHamlFileType.js - test the Haml template file type handler object.
  *
  * Copyright © 2016-2017, HealthTap, Inc.
  *
