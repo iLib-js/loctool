@@ -108,9 +108,11 @@ module.exports = {
 		var res = new ResourceString({
 			project: "a",
 			context: "b",
-			locale: "de-DE",
+			targetLocale: "de-DE",
 			key: "asdf",
-			source: "This is a test"
+			sourceLocale: "en-US",
+			source: "asdf",
+			target: "This is a test"
 		});
 
 		repo.add(res, function(err, info) {
@@ -144,9 +146,11 @@ module.exports = {
 		var res = new ResourceString({
 			project: "a",
 			context: "b",
-			locale: "de-DE",
+			targetLocale: "de-DE",
 			key: "asdf",
-			source: "This is yet another test"
+			sourceLocale: "en-US",
+			source: "asdf",
+			target: "This is yet another test"
 		});
 
 		repo.add(res, function(err, info) {
@@ -157,9 +161,11 @@ module.exports = {
 			res = new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "fr-FR",
+				targetLocale: "fr-FR",
 				key: "asdf",
-				source: "Ceci est une teste."
+				sourceLocale: "en-US",
+				source: "asdf",
+				target: "Ceci est une teste."
 			});
 
 			repo.add(res, function(err, info) {
@@ -219,9 +225,11 @@ module.exports = {
 		var res = new ResourceString({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			targetLocale: "nl-NL",
 			key: "foofoo",
-			source: "Dit is noch een test."
+			sourceLocale: "en-US",
+			source: "foofoo",
+			target: "Dit is noch een test."
 		});
 
 		repo.add(res, function(err, info) {
@@ -234,7 +242,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "foofoo",
-				locale: "nl-NL"
+				targetLocale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
 
@@ -254,7 +262,7 @@ module.exports = {
 						project: "a",
 						context: "b",
 						reskey: "foofoo",
-						locale: "nl-NL"
+						targetLocale: "nl-NL"
 					}, function(err, resources) {
 						test.equal(resources.length, 0); // not found
 						repo.close(function() {
@@ -276,7 +284,7 @@ module.exports = {
 			project: "a",
 			context: "b",
 			reskey: "foofoo",
-			locale: "nl-NL",
+			targetLocale: "nl-NL",
 			resType: "string"
 		}, function(err, resources) {
 			test.ok(resources);
@@ -288,7 +296,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "foofoo",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				resType: "string"
 			}, function(err, info) {
 				test.equal(err, null);
@@ -298,7 +306,7 @@ module.exports = {
 					project: "a",
 					context: "b",
 					reskey: "foofoo",
-					locale: "nl-NL",
+					targetLocale: "nl-NL",
 					resType: "string"
 				}, function(err, resources) {
 					test.equal(resources.length, 0); // still not found
@@ -317,9 +325,11 @@ module.exports = {
 		var res = new ResourceString({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			targetLocale: "nl-NL",
 			key: "foofoo",
-			source: "Dit is noch een test."
+			sourceLocale: "en-US",
+			source: "foofoo",
+			target: "Dit is noch een test."
 		});
 
 		repo.add(res, function(err, info) {
@@ -332,7 +342,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "foofoo",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				resType: "string"
 			}, function(err, resources) {
 				test.ok(resources);
@@ -355,7 +365,7 @@ module.exports = {
 						project: "a",
 						context: "b",
 						reskey: "foofoo",
-						locale: "nl-NL",
+						targetLocale: "nl-NL",
 						resType: "string"
 					}, function(err, resources) {
 						test.equal(resources.length, 1); // still there
@@ -377,23 +387,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		]);
 
@@ -442,9 +458,9 @@ module.exports = {
 		var res = new ResourceArray({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			sourceLocale: "nl-NL",
 			key: "sultansofswing",
-			array: ["a one", "a two", "a one two three four", "hit it"]
+			sourceArray: ["a one", "a two", "a one two three four", "hit it"]
 		});
 
 		repo.add(res, function(err, info) {
@@ -457,16 +473,16 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "sultansofswing",
-				locale: "nl-NL"
+				targetLocale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
 
 				test.equal(resources.length, 1);
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "nl-NL");
+				test.equal(resources[0].getSourceLocale(), "nl-NL");
 				test.equal(resources[0].getKey(), "sultansofswing");
-				test.deepEqual(resources[0].getArray(), ["a one", "a two", "a one two three four", "hit it"]);
+				test.deepEqual(resources[0].getSourceArray(), ["a one", "a two", "a one two three four", "hit it"]);
 
 				repo.close(function() {
 					test.done();
@@ -482,7 +498,7 @@ module.exports = {
 		var res = new ResourceArray({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			sourceLocale: "nl-NL",
 			key: "jajajajaja"
 		});
 
@@ -496,7 +512,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "jajajajaja",
-				locale: "nl-NL"
+				targetLocale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
 				test.equal(resources.length, 1);
@@ -516,9 +532,9 @@ module.exports = {
 		var res = new ResourcePlural({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			targetLocale: "nl-NL",
 			key: "jawel",
-			strings: {
+			sourceStrings: {
 				one: "a one", 
 				two: "a two", 
 				few: "a one two three four", 
@@ -536,7 +552,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "jawel",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				resType: "plural"
 			}, function(err, resources) {
 				test.ok(resources);
@@ -547,7 +563,7 @@ module.exports = {
 				test.equal(resources[0].getContext(), "b");
 				test.equal(resources[0].getLocale(), "nl-NL");
 				test.equal(resources[0].getKey(), "jawel");
-				test.deepEqual(resources[0].getPlurals(), {
+				test.deepEqual(resources[0].getSourcePlurals(), {
 					one: "a one", 
 					two: "a two", 
 					few: "a one two three four", 
@@ -568,7 +584,7 @@ module.exports = {
 		var res = new ResourcePlural({
 			project: "a",
 			context: "b",
-			locale: "nl-NL",
+			targetLocale: "nl-NL",
 			key: "gossie"
 		});
 
@@ -582,7 +598,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "gossie",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				resType: "plural"
 			}, function(err, resources) {
 				test.ok(resources);
@@ -603,9 +619,9 @@ module.exports = {
 		var res = new ResourcePlural({
 			project: "a",
 			context: "c",
-			locale: "ja-JP",
+			targetLocale: "ja-JP",
 			key: "katakana",
-			strings: {one: "one", two: "two", few: "few"}
+			sourceStrings: {one: "one", two: "two", few: "few"}
 		});
 
 		repo.add(res, function(err, info) {
@@ -631,9 +647,9 @@ module.exports = {
 		var res = new ResourcePlural({
 			project: "a",
 			context: "c",
-			locale: "ru-RU",
+			targetLocale: "ru-RU",
 			key: "blahblah",
-			strings: {one: "one", two: "two", few: "few"}
+			sourceStrings: {one: "one", two: "two", few: "few"}
 		});
 
 		// make sure it is not there
@@ -655,23 +671,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "b",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "c",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 			]);
 
@@ -704,23 +726,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "a",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "c",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 			]);
 
@@ -753,23 +781,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "a",
-				locale: "en-CA",
+				targetLocale: "en-CA",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "a",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "a",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		]);
 
@@ -802,23 +836,29 @@ module.exports = {
  			new ResourceString({
  				project: "a",
  				context: "b",
- 				locale: "en-US",
+ 				targetLocale: "en-US",
  				key: "barbar",
- 				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target:  "Elephants can fly!"
  			}),
  			new ResourceString({
  				project: "a",
  				context: "b",
- 				locale: "de-DE",
+ 				targetLocale: "de-DE",
  				key: "barbar",
- 				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target:  "Olifanten koennen fliegen!"
  			}),
  			new ResourceString({
  				project: "a",
  				context: "b",
- 				locale: "nl-NL",
+ 				targetLocale: "nl-NL",
  				key: "barbar",
- 				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target:  "Oliefanten kunnen fliegen!"
  			})
  		];
  		set.addAll(resources);
@@ -853,23 +893,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		];
 		set.addAll(resources);
@@ -899,23 +945,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		]);
 
@@ -949,23 +1001,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		]);
 
@@ -993,23 +1051,29 @@ module.exports = {
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "en-US",
+				targetLocale: "en-US",
 				key: "barbar",
-				source: "Elephants can fly!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Elephants can fly!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "de-DE",
+				targetLocale: "de-DE",
 				key: "barbar",
-				source: "Olifanten koennen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Olifanten koennen fliegen!"
 			}),
 			new ResourceString({
 				project: "a",
 				context: "b",
-				locale: "nl-NL",
+				targetLocale: "nl-NL",
 				key: "barbar",
-				source: "Oliefanten kunnen fliegen!"
+				sourceLocale: "en-US",
+				source: "barbar",
+				target: "Oliefanten kunnen fliegen!"
 			})
 		]);
 

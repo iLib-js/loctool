@@ -8,7 +8,6 @@ if (!YamlResourceFile) {
 	var YamlResourceFile = require("../lib/YamlResourceFile.js");
 	var YamlResourceFileType = require("../lib/YamlResourceFileType.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
-    var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
 }
@@ -146,12 +145,12 @@ module.exports = {
         test.equal(r.length, 6);
         
         test.equal(r[0].getSource(), "Jobs");
-        test.equal(r[0].getLocale(), "en-US"); // source locale
+        test.equal(r[0].getSourceLocale(), "en-US"); // source locale
         test.equal(r[0].getKey(), "r9834724545");
         test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
-        test.equal(r[1].getLocale(), "en-US"); // source locale
+        test.equal(r[1].getSourceLocale(), "en-US"); // source locale
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
@@ -159,22 +158,22 @@ module.exports = {
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
-        test.equal(r[2].getLocale(), "en-US"); // source locale
+        test.equal(r[2].getSourceLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[3].getSource(), "Working at HealthTap");
-        test.equal(r[3].getLocale(), "en-US"); // source locale
+        test.equal(r[3].getSourceLocale(), "en-US"); // source locale
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
-        test.equal(r[4].getLocale(), "en-US"); // source locale
+        test.equal(r[4].getSourceLocale(), "en-US"); // source locale
         test.equal(r[4].getKey(), "r3254356823");
         test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
-        test.equal(r[5].getLocale(), "en-US"); // source locale
+        test.equal(r[5].getSourceLocale(), "en-US"); // source locale
         test.equal(r[5].getKey(), "test");
         test.equal(r[5].getContext(), "foo@bar@asdf");
 
@@ -217,12 +216,12 @@ module.exports = {
         test.equal(r.length, 6);
         
         test.equal(r[0].getSource(), "Jobs");
-        test.equal(r[0].getLocale(), "zh-Hans-CN");
+        test.equal(r[0].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[0].getKey(), "r9834724545");
         test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
-        test.equal(r[1].getLocale(), "zh-Hans-CN");
+        test.equal(r[1].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
@@ -230,22 +229,22 @@ module.exports = {
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
-        test.equal(r[2].getLocale(), "zh-Hans-CN");
+        test.equal(r[2].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[3].getSource(), "Working at HealthTap");
-        test.equal(r[3].getLocale(), "zh-Hans-CN");
+        test.equal(r[3].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
-        test.equal(r[4].getLocale(), "zh-Hans-CN");
+        test.equal(r[4].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[4].getKey(), "r3254356823");
         test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
-        test.equal(r[5].getLocale(), "zh-Hans-CN");
+        test.equal(r[5].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[5].getKey(), "test");
         test.equal(r[5].getContext(), "foo@bar@asdf");
 
@@ -378,16 +377,16 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "de-DE",
+        		targetLocale: "de-DE",
         		key: "source_text",
-        		source: "Quellen\"text",
+        		target: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "de-DE",
+        		targetLocale: "de-DE",
         		key: "more_source_text",
-        		source: "mehr Quellen\"text",
+        		target: "mehr Quellen\"text",
         		comment: "bar"
         	})
         ].forEach(function(res) {
@@ -420,14 +419,14 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "• &amp;nbsp; Address a health or healthy living topic",
         		source: "• &amp;nbsp; 解决健康生活相关的话题",
         		comment: " "
         	}),
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
         		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
         		comment: "bar"
@@ -462,14 +461,14 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "short key",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
         		source: "short text",
         		comment: "bar"
@@ -554,7 +553,7 @@ module.exports = {
         
         test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
         test.equal(r.getKey(), "subject");
-        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getSourceLocale(), "en-US");
         test.equal(r.getContext(), "saved_someone_else_life");
         
         test.done();
@@ -581,7 +580,7 @@ module.exports = {
         
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
         test.equal(r.getKey(), "email_subject");
-        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getSourceLocale(), "en-US");
         test.equal(r.getContext(), "member_question_asked\\@answered");
         
         test.done();
@@ -625,7 +624,7 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "r24524524524",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " ",
@@ -633,7 +632,7 @@ module.exports = {
         	}),
         	new ContextResourceString({
         		project: "ht-webapp12",
-        		locale: "zh-Hans-CN",
+        		targetLocale: "zh-Hans-CN",
         		key: "r003425245",
         		source: "short text",
         		comment: "bar",
@@ -670,11 +669,11 @@ module.exports = {
         [
             new ResourcePlural({
                 project: "ht-webapp12",
-                locale: "zh-Hans-CN",
+                targetLocale: "zh-Hans-CN",
                 comment: "",
                 source: 'This is 1 test',
                 key: 'r186608186',
-                strings: {
+                sourceStrings: {
                     'one' : 'This is 1 test',
                     'other' : 'There are %{count} tests'
                 }
@@ -709,18 +708,18 @@ module.exports = {
         [
             new ResourcePlural({
                 project: "ht-webapp12",
-                locale: "zh-Hans-CN",
+                targetLocale: "zh-Hans-CN",
                 comment: "",
                 source: 'This is 1 test',
                 key: 'r186608186',
-                strings: {
+                sourceStrings: {
                     'one' : 'This is 1 test',
                     'other' : 'There are %{count} tests'
                 }
             }),
             new ContextResourceString({
                 project: "ht-webapp12",
-                locale: "zh-Hans-CN",
+                targetLocale: "zh-Hans-CN",
                 key: "r003425245",
                 source: "short text",
                 comment: "bar",

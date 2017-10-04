@@ -267,7 +267,7 @@ module.exports = {
             key: "foo",
             autoKey: true,
             source: "I am enamored by color of your homogenized yogurt.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -277,7 +277,7 @@ module.exports = {
             key: "asdf",
             autoKey: true,
             source: "localization chilis.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -286,8 +286,10 @@ module.exports = {
         res = new ResourceString({
             key: "foo",
             autoKey: true,
-            source: "override string",
-            locale: "en-NZ",
+            source: "I am enamored by color of your homogenized yogurt.",
+            sourceLocale: "en-US",
+            target: "override string",
+            targetLocale: "en-NZ",
             origin: "target"
         });
 

@@ -48,7 +48,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/en-US.js",
-            locale: "en-US"
+            targetLocale: "en-US"
         });
 
         test.ok(jsrf);
@@ -72,7 +72,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -81,21 +81,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -122,7 +128,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -130,21 +136,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -177,7 +189,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -205,22 +217,26 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
         [
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen\"text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen\"text"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen\"text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen\"text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -252,22 +268,26 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
         [
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen'text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen'text"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen'text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen'text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -300,7 +320,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "feelGood/localized_js/de-DE.js",
-            locale: "de-DE"
+            targetLocale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -308,21 +328,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "ht-webapp12",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);

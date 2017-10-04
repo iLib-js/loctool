@@ -8,7 +8,6 @@ if (!YamlFile) {
 	var YamlFile = require("../lib/YamlFile.js");
 	var YamlFileType = require("../lib/YamlFileType.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
-    var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
@@ -624,14 +623,14 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "de-DE",
+        		sourceLocale: "de-DE",
         		key: "source_text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "de-DE",
+        		sourceLocale: "de-DE",
         		key: "more_source_text",
         		source: "mehr Quellen\"text",
         		comment: "bar"
@@ -667,14 +666,14 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "• &amp;nbsp; Address a health or healthy living topic",
         		source: "• &amp;nbsp; 解决健康生活相关的话题",
         		comment: " "
         	}),
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
         		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
         		comment: "bar"
@@ -708,14 +707,14 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "short key",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
         		source: "short text",
         		comment: "bar"
@@ -751,7 +750,7 @@ module.exports = {
         [
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "key1",
         		source: "medium length text that doesn't go beyond one line",
         		context: "foo@bar",
@@ -759,7 +758,7 @@ module.exports = {
         	}),
         	new ContextResourceString({
         		project: "webapp",
-        		locale: "zh-Hans-CN",
+        		sourceLocale: "zh-Hans-CN",
         		key: "key2",
         		source: "short text",
         		context: "foo@bar@asdf",
@@ -1142,8 +1141,9 @@ module.exports = {
         	project: "webapp",
         	context: "doctor_thanked_note_life_saved",
         	key: 'email_subject',
-        	source: '%1, vous sauvez des vides!',
-        	locale: "fr-FR",
+        	source: '%1, you\'re saving lives!',
+        	target: '%1, vous sauvez des vides!',
+        	targetLocale: "fr-FR",
         	datatype: "x-yaml"
         }));
 
@@ -1214,24 +1214,27 @@ module.exports = {
 	        	project: "webapp",
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'email_subject',
-	        	source: '%1, vous sauvez des vies!',
-	        	locale: "fr-FR",
+	        	source: '%1, you’re saving lives!',
+	        	target: '%1, vous sauvez des vies!',
+	        	targetLocale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "webapp",
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'subject',
-	        	source: 'Vous avez été remercié pour sauver une vie!',
-	        	locale: "fr-FR",
+	        	source: 'You’ve been thanked for saving a life!',
+	        	target: 'Vous avez été remercié pour sauver une vie!',
+	        	targetLocale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "webapp",
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'push_data',
-	        	source: 'Vous avez sauvé une vie! Voir %1',
-	        	locale: "fr-FR",
+	        	source: 'You’ve saved a life! View %1',
+	        	target: 'Vous avez sauvé une vie! Voir %1',
+	        	targetLocale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
 	    ]);
@@ -1543,9 +1546,9 @@ module.exports = {
         [
             new ResourcePlural({
                 project: "webapp",
-                locale: "de-DE",
+                sourceLocale: "de-DE",
                 key: "asdf",
-                strings: {
+                sourceStrings: {
                     "one": "This is singular",
                     "two": "This is double",
                     "few": "This is a different case"

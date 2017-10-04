@@ -364,16 +364,20 @@ module.exports = {
         [
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen\"text",
+				source: "source text",
+				sourceLocale: "en-US",
+				target: "Quellen\"text",
                 comment: "foo"
             }),
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen\"text",
+				source: "more source text",
+				sourceLocale: "en-US",
+				target: "mehr Quellen\"text",
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -403,16 +407,20 @@ module.exports = {
         [
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen\n\ttext",
+				source: "source text",
+				sourceLocale: "en-US",
+				target: "Quellen\n\ttext",
                 comment: "foo"
             }),
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen\"text",
+				source: "more source text",
+				sourceLocale: "en-US",
+				target: "mehr Quellen\"text",
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -442,25 +450,31 @@ module.exports = {
         [
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source\\ntext",
-                source: "Quellen text",
+				source: "source\\ntext",
+				sourceLocale: "en-US",
+				target: "Quellen text",
                 comment: "foo",
                 datatype: "x-swift"
             }),
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source\\ntext",
-                source: "mehr Quellen text",
+				source: "more source\\ntext",
+				sourceLocale: "en-US",
+				target: "mehr Quellen text",
                 comment: "bar",
                 datatype: "x-swift"
             }),
             new ResourceString({
                 project: "ios",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "2V9-YN-vxb.normalTitlet",
-                source: "noch mehr Quellen text",
+				source: "2V9-YN-vxb.normalTitlet",
+				sourceLocale: "en-US",
+				target: "noch mehr Quellen text",
                 comment: "bar",
                 datatype: "x-xib"
             })
@@ -493,9 +507,11 @@ module.exports = {
         [
             new ResourceString({
                 project: "ios",
-                locale: "es-US",
+                targetLocale: "es-US",
                 key: "“The future of medicine is at your fingertips.”",
-                source: '"El futuro de la medicina está al alcance de tus dedos."',
+				source: "“The future of medicine is at your fingertips.”",
+				sourceLocale: "en-US",
+				target: '"El futuro de la medicina está al alcance de tus dedos."',
                 comment: "bar"
             })
         ].forEach(function(res) {
