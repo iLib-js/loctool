@@ -499,18 +499,6 @@ module.exports = {
         test.ok(x);
         
         var res = new ContextResourceString({
-            source: "Asdf asdf",
-            sourceLocale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            context: "foobar",
-            origin: "source"
-        });
-        
-        x.addResource(res);
-
-        var res = new ContextResourceString({
         	source: "Asdf asdf",
             sourceLocale: "en-US",
             target: "gutver",
@@ -518,8 +506,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
-            context: "foobar",
-            origin: "target"
+            context: "foobar"
         });
         
         x.addResource(res);
@@ -689,7 +676,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-webapp12",
-            origin: "target"
+            comment: "foobar is where it's at!"
         });
         
         x.addResource(res);
@@ -702,12 +689,12 @@ module.exports = {
             key: "huzzah",
             pathName: "foo/bar/j.java",
             project: "ht-webapp12",
-            origin: "target"
+            comment: "come & enjoy it with us"
         });
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
+        var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
@@ -728,8 +715,13 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
+                '</xliff>';
        
+        var actual = x.serialize();
+        
+        diff(actual, expected);
+        test.equal(actual, expected); 
+                        
         test.done();
     },
 
@@ -1010,7 +1002,7 @@ module.exports = {
     },
 
     testXliffDeserializeWithSourceOnly: function(test) {
-        test.expect(17);
+        test.expect(21);
 
         var x = new Xliff();
         test.ok(x);
@@ -1053,7 +1045,7 @@ module.exports = {
         test.equal(reslist[1].getSource(), "baby baby");
         test.equal(reslist[1].getSourceLocale(), "en-US");
         test.ok(!reslist[1].getTarget());
-        test.equal(reslist[0].getTargetLocale(), "fr-FR");
+        test.equal(reslist[1].getTargetLocale(), "fr-FR");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "ht-webapp12");
@@ -1444,7 +1436,7 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
 
         test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getTargetLocale(), "es-US");
@@ -1496,7 +1488,7 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
 
         test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getTargetLocale(), "es-US");
@@ -1514,7 +1506,7 @@ module.exports = {
         test.equal(items[2], null);
         test.equal(items[3], "This is element 3");
 
-        items = reslist[0].getSourceArray();
+        items = reslist[0].getTargetArray();
         
         test.equal(items.length, 4);
         test.equal(items[0], null);
@@ -1693,8 +1685,8 @@ module.exports = {
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         
-        test.equal(reslist[1].getTarget(), "bebe bebe");
-        test.equal(reslist[1].getTargetLocale(), "fr-FR");
+        test.equal(reslist[0].getTarget(), "bebe bebe");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
       
         test.done();
     },
@@ -1732,7 +1724,7 @@ module.exports = {
         test.equal(reslist.length, 2);
         
         test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "ht-androidapp");
@@ -1741,7 +1733,7 @@ module.exports = {
         test.equal(reslist[0].getOrigin(), "source");
         
         test.equal(reslist[1].getSource(), "baby baby");
-        test.equal(reslist[1].getSourceLocale(a), "en-US");
+        test.equal(reslist[1].getSourceLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "ht-webapp12");
@@ -1774,10 +1766,10 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "baby baby");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
         test.equal(reslist[0].getProject(), "ht-webapp12");
@@ -1785,7 +1777,7 @@ module.exports = {
         test.equal(reslist[0].getId(), "2");
 
         test.equal(reslist[0].getTarget(), "bebe bebe");
-        test.equal(reslist[0].getTargetLocale(a), "fr-FR");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
 
         test.done();
     },
@@ -1815,7 +1807,7 @@ module.exports = {
         test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "baby baby");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
         test.equal(reslist[0].getProject(), "ht-webapp12");
@@ -1848,10 +1840,10 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "baby baby");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
         test.equal(reslist[0].getProject(), "ht-webapp12");
@@ -1859,7 +1851,7 @@ module.exports = {
         test.equal(reslist[0].getId(), "2");
 
         test.equal(reslist[0].getTarget(), "This is segment 1. This is segment 2. This is segment 3.");
-        test.equal(reslist[0].getTargetLocale(a), "fr-FR");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
 
         test.done();
     },
@@ -1886,10 +1878,10 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "baby baby");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
         test.equal(reslist[0].getProject(), "ht-webapp12");
@@ -1897,7 +1889,7 @@ module.exports = {
         test.equal(reslist[0].getId(), "2");
 
         test.equal(reslist[0].getTarget(), "This is segment 1.This is segment 2.This is segment 3.");
-        test.equal(reslist[0].getTargetLocale(a), "zh-Hans-CN");
+        test.equal(reslist[0].getTargetLocale(), "zh-Hans-CN");
 
         test.done();
     },
@@ -1968,7 +1960,7 @@ module.exports = {
     },
 
     testXliffAddTranslationUnit: function(test) {
-        test.expect(11);
+        test.expect(10);
 
         var x = new Xliff();
         test.ok(x);
@@ -1981,7 +1973,6 @@ module.exports = {
     		"project": "ht-iosapp",
     		"id": 2334,
     		"resType":"string",
-    		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
         }));
@@ -1993,19 +1984,18 @@ module.exports = {
         test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "a");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "/a/b/asdf.js");
         test.equal(reslist[0].getProject(), "ht-iosapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), 2334);
-        test.equal(reslist[0].getOrigin(), "source");
-
+        
         test.done();
     },
     
     testXliffAddTranslationUnitMergeResources: function(test) {
-        test.expect(19);
+        test.expect(12);
 
         var x = new Xliff();
         test.ok(x);
@@ -2018,7 +2008,6 @@ module.exports = {
     		"project": "ht-iosapp",
     		"id": 2334,
     		"resType":"string",
-    		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
         }));
@@ -2033,7 +2022,6 @@ module.exports = {
     		"project": "ht-iosapp",
     		"id": 2334,
     		"resType":"string",
-    		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
         }));
@@ -2042,26 +2030,18 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 1);
         
         test.equal(reslist[0].getSource(), "a");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getTarget(), "b");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "/a/b/asdf.js");
         test.equal(reslist[0].getProject(), "ht-iosapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), 2334);
-        test.equal(reslist[0].getOrigin(), "source");
-
-        test.equal(reslist[1].getSource(), "b");
-        test.equal(reslist[1].getSourceLocale(a), "fr-FR");
-        test.equal(reslist[1].getKey(), "foobar");
-        test.equal(reslist[1].getPath(), "/a/b/asdf.js");
-        test.equal(reslist[1].getProject(), "ht-iosapp");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getId(), 2334);
-        test.equal(reslist[1].getOrigin(), "target");
-
+                
         test.done();
     },
     
@@ -2215,7 +2195,7 @@ module.exports = {
     },
 
     testXliffAddTranslationUnitRightResourceTypesRegularString: function(test) {
-        test.expect(5);
+        test.expect(4);
 
         var x = new Xliff();
         test.ok(x);
@@ -2240,16 +2220,15 @@ module.exports = {
         
         test.ok(resources);
         
-        test.equal(resources.length, 2);
+        test.equal(resources.length, 1);
 
         test.ok(resources[0] instanceof ResourceString);
-        test.ok(resources[1] instanceof ResourceString);
 
         test.done();
     },
 
     testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
-        test.expect(7);
+        test.expect(5);
 
         ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
         
@@ -2289,12 +2268,10 @@ module.exports = {
         
         test.ok(resources);
         
-        test.equal(resources.length, 4);
+        test.equal(resources.length, 2);
 
         test.ok(resources[0] instanceof ContextResourceString);
         test.ok(resources[1] instanceof ContextResourceString);
-        test.ok(resources[2] instanceof ContextResourceString);
-        test.ok(resources[3] instanceof ContextResourceString);
 
         test.done();
     },
@@ -2344,7 +2321,7 @@ module.exports = {
     },
     
     testXliffAddTranslationUnitDifferentPathsRightTypes: function(test) {
-        test.expect(7);
+        test.expect(5);
 
         var x = new Xliff();
         test.ok(x);
@@ -2385,18 +2362,16 @@ module.exports = {
         
         test.ok(resources);
         
-        test.equal(resources.length, 4);
+        test.equal(resources.length, 2);
         
         test.ok(resources[0] instanceof IosLayoutResourceString);
         test.ok(resources[1] instanceof IosLayoutResourceString);
-        test.ok(resources[2] instanceof IosLayoutResourceString);
-        test.ok(resources[3] instanceof IosLayoutResourceString);
         
         test.done();
     },
     
     testXliffAddTranslationUnitDifferentPaths: function(test) {
-        test.expect(35);
+        test.expect(23);
 
         var x = new Xliff();
         test.ok(x);
@@ -2413,7 +2388,6 @@ module.exports = {
     		"project": "ht-iosapp",
     		"id": 2334,
     		"resType":"string",
-    		"origin": "target",
     		"comment": "this is a comment",
     		"datatype": "x-xib"
         }));
@@ -2428,7 +2402,6 @@ module.exports = {
     		"project": "ht-iosapp",
     		"id": 2334,
     		"resType":"string",
-    		"origin": "target",
     		"comment": "this is a comment",
     		"datatype": "x-xib"
         }));
@@ -2437,43 +2410,29 @@ module.exports = {
         
         test.ok(reslist);
         
-        test.equal(reslist.length, 4);
+        test.equal(reslist.length, 2);
 
         test.equal(reslist[0].getSource(), "a");
-        test.equal(reslist[0].getSourceLocale(a), "en-US");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getTarget(), "foo");
+        test.equal(reslist[0].getTargetLocale(), "de-DE");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "a/b/asdf.xib");
         test.equal(reslist[0].getProject(), "ht-iosapp");
         test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].datatype, "x-xib");
         test.equal(reslist[0].getId(), 2334);
-        test.equal(reslist[0].getOrigin(), "source");
 
-        test.equal(reslist[1].getSource(), "foo");
-        test.equal(reslist[1].getTargetLocale(a), "de-DE");
+        test.equal(reslist[1].getSource(), "a");
+        test.equal(reslist[1].getSourceLocale(), "en-US");
+        test.equal(reslist[1].getTarget(), "foo");
+        test.equal(reslist[1].getTargetLocale(), "de-DE");
         test.equal(reslist[1].getKey(), "foobar");
-        test.equal(reslist[1].getPath(), "a/b/asdf.xib");
+        test.equal(reslist[1].getPath(), "a/b/asdf~ipad.xib");
         test.equal(reslist[1].getProject(), "ht-iosapp");
         test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].datatype, "x-xib");
         test.equal(reslist[1].getId(), 2334);
-        test.equal(reslist[1].getOrigin(), "target");
-
-        test.equal(reslist[2].getSource(), "a");
-        test.equal(reslist[2].getTargetLocale(a), "en-US");
-        test.equal(reslist[2].getKey(), "foobar");
-        test.equal(reslist[2].getPath(), "a/b/asdf~ipad.xib");
-        test.equal(reslist[2].getProject(), "ht-iosapp");
-        test.equal(reslist[2].resType, "string");
-        test.equal(reslist[2].getId(), 2334);
-        test.equal(reslist[2].getOrigin(), "source");
-
-        test.equal(reslist[3].getSource(), "foo");
-        test.equal(reslist[3].getTargetLocale(a), "de-DE");
-        test.equal(reslist[3].getKey(), "foobar");
-        test.equal(reslist[3].getPath(), "a/b/asdf~ipad.xib");
-        test.equal(reslist[3].getProject(), "ht-iosapp");
-        test.equal(reslist[3].resType, "string");
-        test.equal(reslist[3].getId(), 2334);
-        test.equal(reslist[3].getOrigin(), "target");
         
         test.done();
     },
