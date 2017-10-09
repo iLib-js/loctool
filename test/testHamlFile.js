@@ -115,7 +115,7 @@ module.exports = {
     },
 
     testHamlFileMakeKeySimpleTexts1: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var h = new HamlFile({
 			project: p,
@@ -123,10 +123,9 @@ module.exports = {
 		});
         test.ok(h);
 
-        test.equals(h.makeKey("Medications in your profile"), "r32020327");
-		test.equals(h.makeKey("All medications"), "r835310324");
-		test.equals(h.makeKey("Conditions"), "r103883086");
-		test.equals(h.makeKey("Symptoms"), "r481086103");
+        test.equals(h.makeKey("Preferences in your profile"), "r372802078");
+		test.equals(h.makeKey("All settings"), "r725930887");
+		test.equals(h.makeKey("Colour scheme"), "r734599412");
 		test.equals(h.makeKey("Experts"), "r343852585");
         
         test.done();
@@ -159,16 +158,16 @@ module.exports = {
         test.ok(h);
 
         test.equals(h.makeKey("Procedures"), "r807691021");
-		test.equals(h.makeKey("Health Apps"), "r941505899");
-		test.equals(h.makeKey("Conditions in your profile"), "r240633868");
-		test.equals(h.makeKey("Treatment Reviews"), "r795086964");
-		test.equals(h.makeKey("Answers"), "r221604632");
+        test.equals(h.makeKey("Mobile Apps"), "r898923204");
+        test.equals(h.makeKey("Settings in your profile"), "r618035987");
+        test.equals(h.makeKey("Product Reviews"), "r175350918");
+        test.equals(h.makeKey("Answers"), "r221604632");
         
         test.done();
 	},
 
 	testHamlFileMakeKeySimpleTexts3: function(test) {
-        test.expect(11);
+        test.expect(9);
 
         var h = new HamlFile({
 			project: p,
@@ -176,16 +175,14 @@ module.exports = {
 		});
         test.ok(h);
 
-        test.equals(h.makeKey("Private Health Profile"), "r669315500");
-		test.equals(h.makeKey("People you care for"), "r710774033");
-		test.equals(h.makeKey("Notifications"), "r284964820");
-		test.equals(h.makeKey("News"), "r613036745");
-		test.equals(h.makeKey("More Tips"), "r216617786");
-		test.equals(h.makeKey("Goals"), "r788359072");
-		test.equals(h.makeKey("Referral Link"), "r140625167");
-		test.equals(h.makeKey("Questions"), "r256277957");
-		test.equals(h.makeKey("Private consults"), "r18128760");
-		test.equals(h.makeKey("Suggested friends for you"), "r959265904");
+        test.equals(h.makeKey("Private Profile"), "r314592735");
+        test.equals(h.makeKey("People you are connected to"), "r711926199");
+        test.equals(h.makeKey("Notifications"), "r284964820");
+        test.equals(h.makeKey("News"), "r613036745");
+        test.equals(h.makeKey("More Tips"), "r216617786");
+        test.equals(h.makeKey("Filters"), "r81370429");
+        test.equals(h.makeKey("Referral Link"), "r140625167");
+        test.equals(h.makeKey("Questions"), "r256277957");
         
         test.done();
 	},
@@ -199,7 +196,7 @@ module.exports = {
 		});
         test.ok(h);
 
-        test.equals(h.makeKey("Can\'t find treatment id"), "r926831062");
+        test.equals(h.makeKey("Can\'t find id"), "r743945592");
 		test.equals(h.makeKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
@@ -214,13 +211,13 @@ module.exports = {
 		});
         test.ok(h);
 
-        test.equals(h.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(h.makeKey("{friend_name}, {sharer_name} {start}found this helpful{end}"), "r140591057");
-		test.equals(h.makeKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
-		test.equals(h.makeKey("Grow your Care-Team"), "r522565682");
-		test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
-		test.equals(h.makeKey("{goal_name} Goals"), "r993422001");
-		test.equals(h.makeKey("Referral link copied!"), "r201354363");
+        test.equals(h.makeKey("{name}({generic_name})"), "r300446104");
+        test.equals(h.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+        test.equals(h.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+        test.equals(h.makeKey("Grow your Network"), "r895214324");
+        test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
+        test.equals(h.makeKey("{goal_name} Goals"), "r993422001");
+        test.equals(h.makeKey("Connection link copied!"), "r180897411");
         
         test.done();
 	},
@@ -249,8 +246,8 @@ module.exports = {
 		});
         test.ok(h);
         
-        test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
-		test.equal(h.makeKey("Can\'t    find    treatment           id"), "r926831062");
+        test.equal(h.makeKey("Can\'t find  id"), "r743945592");
+		test.equal(h.makeKey("Can\'t    find               id"), "r743945592");
 		
 		test.equal(h.makeKey("Can\'t find an application for SMS"), "r909283218");
 		test.equal(h.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
@@ -267,8 +264,8 @@ module.exports = {
 		});
         test.ok(h);
 
-        test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
-        test.equal(h.makeKey("      Can\'t find treatment id "), "r926831062");
+        test.equal(h.makeKey("Can\'t find  id"), "r743945592");
+        test.equal(h.makeKey("      Can\'t find  id "), "r743945592");
 		
         test.equal(h.makeKey("Can\'t find an application for SMS"), "r909283218");
         test.equal(h.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");

@@ -293,8 +293,8 @@ module.exports = {
         
         j.parse(
     		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a patient!\').format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'        prefix: detail.expert_name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         
@@ -317,8 +317,8 @@ module.exports = {
         
         j.parse(
     		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a patient!").format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'        prefix: detail.expert_name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         

@@ -135,7 +135,7 @@ module.exports = {
 	testHashKeyEscapes: function(test) {
         test.expect(2);
 
-        test.equals(utils.hashKey("Can\'t find treatment id"), "r926831062");
+        test.equals(utils.hashKey("Can\'t find id"), "r743945592");
 		test.equals(utils.hashKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
