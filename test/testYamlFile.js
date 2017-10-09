@@ -105,11 +105,11 @@ module.exports = {
         yml.parse('---\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'  directly from experienced, successful entrepreneurs.\n' +
-        		'Working_at_HealthTap: Working at HealthTap\n');
+        		'Working_at_MyCompany: Working at My Company, Inc.\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -137,15 +137,15 @@ module.exports = {
 
         yml.parse(
         		'---\n' +
-        		"'feelgood/foo/bar/x.en-US.html.haml':\n" +
+        		"'foo/bar/x.en-US.html.haml':\n" +
         		'  r9834724545: Jobs\n' +
         		'  r9483762220: Our internship program\n' +
         		'  r6782977423: |\n' +
-        		'    Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'    directly from experienced, successful entrepreneurs.\n' +
-				"'feelgood/foo/ssss/asdf.en-US.html.haml':\n" +
-				'  r4524523454: Working at HealthTap\n' +
+				"'foo/ssss/asdf.en-US.html.haml':\n" +
+				'  r4524523454: Working at MyCompany\n' +
 				'  r3254356823: Jobs\n' +
 				'foo:\n' +
 				'  bar:\n' +
@@ -163,30 +163,30 @@ module.exports = {
         test.equal(r[0].getSource(), "Jobs");
         test.equal(r[0].getLocale(), "en-US"); // source locale
         test.equal(r[0].getKey(), "r9834724545");
-        test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[0].getContext(), "foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
         test.equal(r[1].getLocale(), "en-US"); // source locale
         test.equal(r[1].getKey(), "r9483762220");
-        test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[1].getContext(), "foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(),
-        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
-        test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[2].getContext(), "foo/bar/x.en-US.html.haml");
 
-        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getSource(), "Working at MyCompany");
         test.equal(r[3].getLocale(), "en-US"); // source locale
         test.equal(r[3].getKey(), "r4524523454");
-        test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[3].getContext(), "foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
         test.equal(r[4].getLocale(), "en-US"); // source locale
         test.equal(r[4].getKey(), "r3254356823");
-        test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[4].getContext(), "foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
         test.equal(r[5].getLocale(), "en-US"); // source locale
@@ -208,15 +208,15 @@ module.exports = {
         yml.parse(
         		'---\n' +
         		"zh_Hans_CN:\n" +
-        		"  feelgood/foo/bar/x.en-US.html.haml:\n" +
+        		"  foo/bar/x.en-US.html.haml:\n" +
         		'    r9834724545: Jobs\n' +
         		'    r9483762220: Our internship program\n' +
         		'    r6782977423: |\n' +
-        		'      Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'      Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'      directly from experienced, successful entrepreneurs.\n' +
-				"  feelgood/foo/ssss/asdf.en-US.html.haml:\n" +
-				'    r4524523454: Working at HealthTap\n' +
+				"  foo/ssss/asdf.en-US.html.haml:\n" +
+				'    r4524523454: Working at MyCompany\n' +
 				'    r3254356823: Jobs\n' +
 				'  foo:\n' +
 				'    bar:\n' +
@@ -235,30 +235,30 @@ module.exports = {
         test.equal(r[0].getSource(), "Jobs");
         test.equal(r[0].getLocale(), "en-US");
         test.equal(r[0].getKey(), "r9834724545");
-        test.equal(r[0].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[0].getContext(), "zh_Hans_CN@foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
         test.equal(r[1].getLocale(), "en-US");
         test.equal(r[1].getKey(), "r9483762220");
-        test.equal(r[1].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[1].getContext(), "zh_Hans_CN@foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(),
-        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "en-US");
         test.equal(r[2].getKey(), "r6782977423");
-        test.equal(r[2].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[2].getContext(), "zh_Hans_CN@foo/bar/x.en-US.html.haml");
 
-        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getSource(), "Working at MyCompany");
         test.equal(r[3].getLocale(), "en-US");
         test.equal(r[3].getKey(), "r4524523454");
-        test.equal(r[3].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[3].getContext(), "zh_Hans_CN@foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
         test.equal(r[4].getLocale(), "en-US");
         test.equal(r[4].getKey(), "r3254356823");
-        test.equal(r[4].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[4].getContext(), "zh_Hans_CN@foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
         test.equal(r[5].getLocale(), "en-US");
@@ -279,13 +279,13 @@ module.exports = {
 
         yml.parse(
 			'duration:\n' +
-			'  top_header: Refine symptoms\n' +
+			'  top_header: Refine Your Query\n' +
 			'  header:\n' +
-			'    person: "%ACK_BRIDGE_SAMPLE%"\n' +
-			'    subaccount: "%ACK_BRIDGE_SAMPLE%" \n' + 
+			'    person: "%ACK_SAMPLE%"\n' +
+			'    subaccount: "%ACK_SAMPLE%" \n' + 
 			'  variations:\n' +
-			'    person: "Did your %TOPIC_NAME% start recently? Or have you been experiencing it for a while?"\n' +
-			'    subaccount: "Did %SUBACCOUNT_NAME%\'s %TOPIC_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?"\n' + 
+			'    person: "A %NAME% name?"\n' +
+			'    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' + 
 			'    asdf:\n' +
 			'      a: x y z\n' +
 			'      c: a b c\n'
@@ -300,17 +300,17 @@ module.exports = {
         test.equal(r.length, 5);
 
         // locale is not special for this type of yml file, so it should appear in the context
-        test.equal(r[0].getSource(), "Refine symptoms");
+        test.equal(r[0].getSource(), "Refine Your Query");
         test.equal(r[0].getLocale(), "en-US");
         test.equal(r[0].getKey(), "top_header");
         test.equal(r[0].getContext(), "duration");
 
-        test.equal(r[1].getSource(), "Did your %TOPIC_NAME% start recently? Or have you been experiencing it for a while?");
+        test.equal(r[1].getSource(), "A %NAME% name?");
         test.equal(r[1].getLocale(), "en-US");
         test.equal(r[1].getKey(), "person");
         test.equal(r[1].getContext(), "duration@variations");
 
-        test.equal(r[2].getSource(), 'Did %SUBACCOUNT_NAME%\'s %TOPIC_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?');
+        test.equal(r[2].getSource(), 'A %SUBACCOUNT_NAME%\'s name?');
         test.equal(r[2].getLocale(), "en-US");
         test.equal(r[2].getKey(), "subaccount");
         test.equal(r[2].getContext(), "duration@variations");
@@ -341,11 +341,11 @@ module.exports = {
         test.equal(set.size(), 0);
 
         yml.parse(
-        		'Working_at_HealthTap: Working at HealthTap\n' +
+        		'Working_at_MyCompany: Working at MyCompany\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'  directly from experienced, successful entrepreneurs.\n');
 
@@ -419,38 +419,34 @@ module.exports = {
 
         yml.parse(
         		'---\n' +
-        		'triage_options:\n' +
-        	    '  - name: emergency-attention\n' +
-        	    '    display_value: Usually requires emergency attention\n' +
+        		'options:\n' +
+        	    '  - name: attention\n' +
+        	    '    display_value: Usually requires immediate attention\n' +
         		'    color: red\n' +
         		'    bars_count: 5\n' +
-        	    '    care_options:\n' +
+        	    '    action_options:\n' +
         		'    - :emergency\n' +   // should ignore these
-        		'    - :see_specialist\n' +
-        		'    - :find_doctor\n' +
+        		'    - :see_support_rep\n' +
+        		'    - :find_sales_person\n' +
         		'    - :ask_free_question\n' +
-        		'    - :take_action\n' +
         		'    - :learn_more\n' +
         		'  - name: urgent-consult\n' +
-        		'    display_value: Usually requires an immediate doctor consult\n' +
+        		'    display_value: Usually requires an immediate sales person attention\n' +
         		'    color: orange\n' +
         		'    bars_count: 4\n' +
         		'    care_options:\n' +
-        		'    - :see_specialist\n' +
-        		'    - :find_doctor\n' +
+        		'    - :see_support_rep\n' +
+        		'    - :find_sales_persopn\n' +
         		'    - :learn_more\n' +
         		'    - :emergency\n' +
         		'    - :ask_free_question\n' +
-        		'    - :take_action\n' +
-        		'exploring_care_options:\n' +
+        		'exploring_options:\n' +
         		'  - :learn_more\n' +
         		'  - :take_action\n' +
         		'  - :ask_free_question\n' +
-        		'  - :see_specialist\n' +
-        		'  - :find_doctor\n' +
-        		'  - :emergency\n\n' +
-        		'reason_string_relationship:\n' +
-        		'  self: I am experiencing\n');
+        		'  - :see_support_rep\n' +
+        		'  - :find_sales_person\n' +
+        		'  - :emergency\n\n');
 
         test.ok(set);
 
@@ -460,19 +456,19 @@ module.exports = {
         var r = set.getAll();
         test.ok(r);
 
-        test.equal(r.length, 7);
+        test.equal(r.length, 6);
 
-        test.equal(r[0].getSource(), "emergency-attention");
+        test.equal(r[0].getSource(), "attention");
         test.equal(r[0].getKey(), "name");
-        test.equal(r[0].getContext(), "triage_options@0");
+        test.equal(r[0].getContext(), "options@0");
         
-        test.equal(r[1].getSource(), "Usually requires emergency attention");
+        test.equal(r[1].getSource(), "Usually requires immediate attention");
         test.equal(r[1].getKey(), "display_value");
-        test.equal(r[1].getContext(), "triage_options@0");
+        test.equal(r[1].getContext(), "options@0");
         
         test.equal(r[2].getSource(), "red");
         test.equal(r[2].getKey(), "color");
-        test.equal(r[2].getContext(), "triage_options@0");
+        test.equal(r[2].getContext(), "options@0");
         
         test.done();
     },
@@ -487,7 +483,7 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'Working_at_HealthTap: Working_at_HealthTap\n' +
+        		'Working_at_MyCompany: Working_at_MyCompany\n' +
         		'Jobs: Jobs_Report\n');
 
         var set = yml.getTranslationSet();
@@ -555,7 +551,7 @@ module.exports = {
 
         var set = yml.getTranslationSet();
 
-        test.equal(set.size(), 789);
+        test.equal(set.size(), 10);
 
         var r = set.getBy({
         	reskey: "Marketing"
@@ -566,19 +562,19 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
+        	reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "Everyone at HealthTap has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
-        test.equal(r[0].getKey(), "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
+        test.equal(r[0].getSource(), "Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
+        test.equal(r[0].getKey(), "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication."
+        	reskey: "Learn_by_contributing_to_a_venture_that_will_change_the_world"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "is a bright, open environment, filled with great energy, positivity, and dedication.");
-        test.equal(r[0].getKey(), "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication.");
+        test.equal(r[0].getSource(), "Learn by contributing to a venture that will change the world");
+        test.equal(r[0].getKey(), "Learn_by_contributing_to_a_venture_that_will_change_the_world");
         test.ok(!r[0].getComment());
 
         test.done();
@@ -838,11 +834,11 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
 
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "The_perks_of_interning", "x-yaml"));
         test.ok(r);
 
-        test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
-        test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
+        test.equal(r.getSource(), "The perks of interning");
+        test.equal(r.getKey(), "The_perks_of_interning");
 
         test.done();
     },
@@ -863,13 +859,13 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
 
-        var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_time", "en-US", "subject", "x-yaml"));
         test.ok(r);
 
-        test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
+        test.equal(r.getSource(), "Feel good! Someone said a colleague’s answer to your question saved them a lot of time:");
         test.equal(r.getKey(), "subject");
         test.equal(r.getLocale(), "en-US");
-        test.equal(r.getContext(), "saved_someone_else_life");
+        test.equal(r.getContext(), "saved_someone_else_time");
 
         test.done();
     },
@@ -936,14 +932,14 @@ module.exports = {
 
     	yml.parse(
 			'---\n' +
-			'expert_license_expired:\n' +
-			'  subject: "ALERT: Your %1 license has expired"\n' +
-			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
-			'  ctoa: \'Update license info\'\n' +
-			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
-			'  global_link: doctor_settings_prime\n' +
+			'credit_card_expired:\n' +
+			'  subject: "ALERT: Your %1 credit card has expired"\n' +
+			'  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+			'  ctoa: \'Update credit card info\'\n' +
+			'  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+			'  global_link: member_settings\n' +
 			'  sms_data: ""\n' +
-			'  setting_name: expert_license_updates\n' +
+			'  setting_name: credit_card_updates\n' +
 			'  daily_limit_exception_email: true\n' +
 			'  night_blackout: true\n'
     	);
@@ -956,25 +952,25 @@ module.exports = {
 
     	test.equal(r.length, 4);
 
-    	test.equal(r[0].getSource(), "ALERT: Your %1 license has expired");
+    	test.equal(r[0].getSource(), "ALERT: Your %1 credit card has expired");
     	test.equal(r[0].getLocale(), "en-US");
     	test.equal(r[0].getKey(), "subject");
-    	test.equal(r[0].getContext(), "expert_license_expired");
+    	test.equal(r[0].getContext(), "credit_card_expired");
 
-    	test.equal(r[1].getSource(), "Add your updated license information to resume helping patients without further disruption.");
+    	test.equal(r[1].getSource(), "Add your updated credit card information to resume using your account without further disruption.");
     	test.equal(r[1].getLocale(), "en-US");
     	test.equal(r[1].getKey(), "body");
-    	test.equal(r[1].getContext(), "expert_license_expired");
+    	test.equal(r[1].getContext(), "credit_card_expired");
 
-    	test.equal(r[2].getSource(), 'Update license info');
+    	test.equal(r[2].getSource(), 'Update credit card info');
     	test.equal(r[2].getLocale(), "en-US");
     	test.equal(r[2].getKey(), "ctoa");
-    	test.equal(r[2].getContext(), "expert_license_expired");
+    	test.equal(r[2].getContext(), "credit_card_expired");
 
-    	test.equal(r[3].getSource(), "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption");
+    	test.equal(r[3].getSource(), "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption");
     	test.equal(r[3].getLocale(), "en-US");
     	test.equal(r[3].getKey(), "push_data");
-    	test.equal(r[3].getContext(), "expert_license_expired");
+    	test.equal(r[3].getContext(), "credit_card_expired");
 
     	test.done();
     },
@@ -989,17 +985,17 @@ module.exports = {
     	test.ok(yml);
 
     	yml.parse(
-			'---\n' +
-			'expert_license_expired:\n' +
-			'  subject: "ALERT: Your %1 license has expired"\n' +
-			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
-			'  ctoa: \'Update license info\'\n' +
-			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
-			'  global_link: doctor_settings_prime\n' +
-			'  sms_data: ""\n' +
-			'  setting_name: expert_license_updates\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  night_blackout: true\n'
+            '---\n' +
+            'credit_card_expired:\n' +
+            '  subject: "ALERT: Your %1 credit card has expired"\n' +
+            '  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+            '  ctoa: \'Update credit card info\'\n' +
+            '  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+            '  global_link: member_settings\n' +
+            '  sms_data: ""\n' +
+            '  setting_name: credit_card_updates\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  night_blackout: true\n'
     	);
 
     	var set = yml.getTranslationSet();
@@ -1024,17 +1020,17 @@ module.exports = {
     	test.ok(yml);
 
     	yml.parse(
-			'---\n' +
-			'expert_license_expired:\n' +
-			'  subject: "ALERT: Your %1 license has expired"\n' +
-			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
-			'  ctoa: \'Update license info\'\n' +
-			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
-			'  global_link: doctor_settings_prime\n' +
-			'  sms_data: ""\n' +
-			'  setting_name: expert_license_updates\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  night_blackout: true\n'
+            '---\n' +
+            'credit_card_expired:\n' +
+            '  subject: "ALERT: Your %1 credit card has expired"\n' +
+            '  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+            '  ctoa: \'Update credit card info\'\n' +
+            '  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+            '  global_link: member_settings\n' +
+            '  sms_data: ""\n' +
+            '  setting_name: credit_card_updates\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  night_blackout: true\n'
     	);
 
     	var set = yml.getTranslationSet();
@@ -1059,17 +1055,17 @@ module.exports = {
     	test.ok(yml);
 
     	yml.parse(
-			'---\n' +
-			'expert_license_expired:\n' +
-			'  subject: "ALERT: Your %1 license has expired"\n' +
-			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
-			'  ctoa: \'Update license info\'\n' +
-			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
-			'  global_link: doctor_settings_prime\n' +
-			'  sms_data: ""\n' +
-			'  setting_name: expert_license_updates\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  night_blackout: true\n'
+            '---\n' +
+            'credit_card_expired:\n' +
+            '  subject: "ALERT: Your %1 credit card has expired"\n' +
+            '  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+            '  ctoa: \'Update credit card info\'\n' +
+            '  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+            '  global_link: member_settings\n' +
+            '  sms_data: ""\n' +
+            '  setting_name: credit_card_updates\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  night_blackout: true\n'
     	);
 
     	var set = yml.getTranslationSet();
@@ -1094,18 +1090,18 @@ module.exports = {
     	test.ok(yml);
 
     	yml.parse(
-			'---\n' +
-			'expert_license_expired:\n' +
-			'  subject: "ALERT: Your %1 license has expired"\n' +
-			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
-			'  ctoa: \'Update license info\'\n' +
-			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
-			'  global_link: doctor_settings_prime\n' +
-			'  sms_data: ""\n' +
-			'  expert_campaign: 2\n' +
-			'  setting_name: expert_license_updates\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  night_blackout: true\n'
+            '---\n' +
+            'credit_card_expired:\n' +
+            '  subject: "ALERT: Your %1 credit card has expired"\n' +
+            '  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+            '  ctoa: \'Update credit card info\'\n' +
+            '  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+            '  global_link: member_settings\n' +
+            '  sms_data: ""\n' +
+            '  expert_campaign: 2\n' +
+            '  setting_name: credit_card_updates\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  night_blackout: true\n'
     	);
 
     	var set = yml.getTranslationSet();
@@ -1130,32 +1126,32 @@ module.exports = {
     	test.ok(yml);
 
         yml.parse(
-			'doctor_thanked_note_life_saved:\n' +
-			'  email_subject: \'%1, you’re saving lives!\'\n' +
-			'  subject: You’ve been thanked for saving a life!\n' +
+			'thanked_note_time_saved:\n' +
+			'  email_subject: \'%1, you’re saving time!\'\n' +
+			'  subject: You’ve been thanked for saving a colleague\'s time!\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
-			'  push_data: You’ve saved a life! View %1\n' +
+			'  push_data: You’ve saved lots of time! View %1\n' +
 			'  global_link: generic_link\n' +
-			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  setting_name: thanked_note_time_saved\n' +
 			'  daily_limit_exception_email: true\n'
 		);
 
         var set = yml.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        var r = set.getBySource('%1, you’re saving time!', "thanked_note_time_saved");
         test.ok(r);
-        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getSource(), '%1, you’re saving time!');
         test.equal(r.getKey(), 'email_subject');
-        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        test.equal(r.getContext(), "thanked_note_time_saved");
 
         var translations = new TranslationSet();
         translations.add(new ContextResourceString({
         	project: "webapp",
-        	context: "doctor_thanked_note_life_saved",
+        	context: "thanked_note_time_saved",
         	key: 'email_subject',
-        	source: '%1, vous sauvez des vides!',
+        	source: '%1, vous économisez du temps!',
         	locale: "fr-FR",
         	datatype: "x-yaml"
         }));
@@ -1163,15 +1159,15 @@ module.exports = {
         var actual = yml.localizeText(translations, "fr-FR");
 
         var expected =
-			'doctor_thanked_note_life_saved:\n' +
+			'thanked_note_time_saved:\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
 			'  daily_limit_exception_email: true\n' +
-			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
+			'  email_subject: \'%1, vous économisez du temps!\'\n' +
 			'  global_link: generic_link\n' +
-			'  push_data: You’ve saved a life! View %1\n' +
-			'  setting_name: doctor_thanked_note_life_saved\n' +
-			'  subject: You’ve been thanked for saving a life!\n';
+			'  push_data: You’ve saved lots of time! View %1\n' +
+			'  setting_name: thanked_note_time_saved\n' +
+			'  subject: You’ve been thanked for saving a colleague\'s time!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -1189,61 +1185,61 @@ module.exports = {
     	test.ok(yml);
 
         yml.parse(
-			'doctor_thanked_note_life_saved:\n' +
-			'  email_subject: \'%1, you’re saving lives!\'\n' +
-			'  subject: You’ve been thanked for saving a life!\n' +
+			'thanked_note_time_saved:\n' +
+			'  email_subject: "%1, You\'re saving time!"\n' +
+			'  subject: "You’ve been thanked for saving a colleague\'s time!"\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
-			'  push_data: You’ve saved a life! View %1\n' +
+			'  push_data: You\'ve saved time! View %1\n' +
 			'  global_link: generic_link\n' +
-			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  setting_name: thanked_note_time_saved\n' +
 			'  daily_limit_exception_email: true\n'
 		);
 
         var set = yml.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        var r = set.getBySource('%1, You\'re saving time!', "thanked_note_time_saved");
         test.ok(r);
-        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getSource(), '%1, You\'re saving time!');
         test.equal(r.getKey(), 'email_subject');
-        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        test.equal(r.getContext(), "thanked_note_time_saved");
 
-        r = set.getBySource('You’ve been thanked for saving a life!', "doctor_thanked_note_life_saved");
+        r = set.getBySource('You’ve been thanked for saving a colleague\'s time!', "thanked_note_time_saved");
         test.ok(r);
-        test.equal(r.getSource(), 'You’ve been thanked for saving a life!');
+        test.equal(r.getSource(), 'You’ve been thanked for saving a colleague\'s time!');
         test.equal(r.getKey(), 'subject');
-        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        test.equal(r.getContext(), "thanked_note_time_saved");
 
-        r = set.getBySource('You’ve saved a life! View %1', "doctor_thanked_note_life_saved");
+        r = set.getBySource('You\'ve saved time! View %1', "thanked_note_time_saved");
         test.ok(r);
-        test.equal(r.getSource(), 'You’ve saved a life! View %1');
+        test.equal(r.getSource(), 'You\'ve saved time! View %1');
         test.equal(r.getKey(), 'push_data');
-        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        test.equal(r.getContext(), "thanked_note_time_saved");
 
         var translations = new TranslationSet();
         translations.addAll([
         	new ContextResourceString({
 	        	project: "webapp",
-	        	context: "doctor_thanked_note_life_saved",
+	        	context: "thanked_note_time_saved",
 	        	key: 'email_subject',
-	        	source: '%1, vous sauvez des vies!',
+	        	source: '%1, vous économisez du temps!',
 	        	locale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "webapp",
-	        	context: "doctor_thanked_note_life_saved",
+	        	context: "thanked_note_time_saved",
 	        	key: 'subject',
-	        	source: 'Vous avez été remercié pour sauver une vie!',
+	        	source: 'Vous avez été remercié pour économiser du temps!',
 	        	locale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "webapp",
-	        	context: "doctor_thanked_note_life_saved",
+	        	context: "thanked_note_time_saved",
 	        	key: 'push_data',
-	        	source: 'Vous avez sauvé une vie! Voir %1',
+	        	source: 'Vous avez économisé du temps! Voir %1',
 	        	locale: "fr-FR",
 	        	datatype: "x-yaml"
 	        }),
@@ -1252,15 +1248,15 @@ module.exports = {
         var actual = yml.localizeText(translations, "fr-FR");
 
         var expected =
-			'doctor_thanked_note_life_saved:\n' +
+			'thanked_note_time_saved:\n' +
 			'  body: “%1”\n' +
 			'  ctoa: View %1\n' +
 			'  daily_limit_exception_email: true\n' +
-			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
+			'  email_subject: \'%1, vous économisez du temps!\'\n' +
 			'  global_link: generic_link\n' +
-			'  push_data: Vous avez sauvé une vie! Voir %1\n' +
-			'  setting_name: doctor_thanked_note_life_saved\n' +
-			'  subject: Vous avez été remercié pour sauver une vie!\n';
+			'  push_data: Vous avez économisé du temps! Voir %1\n' +
+			'  setting_name: thanked_note_time_saved\n' +
+			'  subject: Vous avez été remercié pour économiser du temps!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
