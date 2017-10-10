@@ -610,7 +610,7 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
-		assertEquals("r705871347", resBundle.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"));
+		assertEquals("r969175354", resBundle.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"));
 	}
 
 	public void testMakeKeyTrimWhiteSpace()
