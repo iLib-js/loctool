@@ -81,7 +81,7 @@ module.exports = {
     
         test.equal(ra.getKey(), "asdf");
         test.deepEqual(ra.getSourceArray(), ["This is a test", "This is also a test", "This is not"]);
-        test.equal(ra.sourceLocale, "de-DE");
+        test.equal(ra.getSourceLocale(), "de-DE");
         test.equal(ra.pathName, "a/b/c.java");
         
         test.done();
@@ -118,9 +118,9 @@ module.exports = {
     
         test.equal(ra.getKey(), "asdf");
         test.deepEqual(ra.getSourceArray(), ["This is a test", "This is also a test", "This is not"]);
-        test.equal(ra.sourceLocale, "en-US");
+        test.equal(ra.getSourceLocale(), "en-US");
         test.deepEqual(ra.getTargetArray(), ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
-        test.equal(ra.targetLocale, "de-DE");
+        test.equal(ra.getTargetLocale(), "de-DE");
         test.equal(ra.pathName, "a/b/c.java");
         
         test.done();
@@ -140,12 +140,12 @@ module.exports = {
         test.equal(ra.getKey(), "asdf");
         
         // now the defaults
-        test.equal(ra.sourceLocale, "en-US");
+        test.equal(ra.getSourceLocale(), "en-US");
         test.equal(ra.origin, "source");
         test.equal(ra.datatype, "x-android-resource");
         test.equal(ra.resType, "array");
         
-        test.ok(!ra.targetLocale);
+        test.ok(!ra.getTargetLocale());
         test.ok(!ra.target);
         
         test.done();
@@ -687,13 +687,13 @@ module.exports = {
         test.ok(ra2);
         test.equal(ra2.project, ra.project);
         test.equal(ra2.context, ra.context);
-        test.equal(ra2.sourceLocale, ra.sourceLocale);
+        test.equal(ra2.getSourceLocale(), ra.getSourceLocale());
         test.equal(ra2.reskey, ra.reskey);
         test.deepEqual(ra2.sourceArray, ra.sourceArray);
         test.equal(ra2.pathName, ra.pathName);
         test.equal(ra2.comment, ra.comment);
         test.equal(ra2.state, ra.state);
-        test.equal(ra2.targetLocale, ra.targetLocale);
+        test.equal(ra2.getTargetLocale(), ra.getTargetLocale());
         test.deepEqual(ra2.targetArray, ra.targetArray);
         
         test.done();
@@ -724,13 +724,13 @@ module.exports = {
         test.ok(ra2);
         test.equal(ra2.project, ra.project);
         test.equal(ra2.context, ra.context);
-        test.equal(ra2.sourceLocale, "fr-FR");
+        test.equal(ra2.getSourceLocale(), "fr-FR");
         test.equal(ra2.reskey, ra.reskey);
         test.deepEqual(ra2.array, ra.array);
         test.equal(ra2.pathName, ra.pathName);
         test.equal(ra2.comment, ra.comment);
         test.equal(ra2.state, "asdfasdf");
-        test.equal(ra2.targetLocale, "de-DE");
+        test.equal(ra2.getTargetLocale(), "de-DE");
         test.deepEqual(ra2.targetArray, ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
         
         test.done();

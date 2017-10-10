@@ -104,10 +104,10 @@ module.exports = {
     
         test.equal(rs.getKey(), "asdf");
         test.equal(rs.getSource(), "This is a test");
-        test.equal(rs.sourceLocale, "de-DE");
+        test.equal(rs.getSourceLocale(), "de-DE");
         test.equal(rs.pathName, "a/b/c.java");
         test.ok(!rs.getTarget()); // source-only string
-        test.ok(!rs.targetLocale);
+        test.ok(!rs.getTargetLocale());
 
         test.done();
     },
@@ -130,7 +130,7 @@ module.exports = {
         test.equal(rs.sourceLocale, "en-US");
         test.equal(rs.pathName, "a/b/c.java");
         test.equal(rs.getTarget(), "Dies ist einen Test.");
-        test.equal(rs.targetLocale, "de-DE");
+        test.equal(rs.getTargetLocale(), "de-DE");
         
         test.done();
     },
@@ -326,7 +326,7 @@ module.exports = {
         test.equal(rs2.getSource(), "This is a test");
         test.equal(rs2.sourceLocale, "en-US");
         test.equal(rs2.getTarget(), "Ťĥíš íš à ţëšţ6543210");
-        test.equal(rs2.targetLocale, "de-DE");
+        test.equal(rs2.getTargetLocale(), "de-DE");
         
         test.done();
     },
@@ -669,7 +669,7 @@ module.exports = {
         test.equal(rs2.comment, rs.comment);
         test.equal(rs2.state, "asdfasdf");
         
-        test.ok(rs2.targetLocale !== rs.targetLocale);
+        test.ok(rs2.getTargetLocale() !== rs.getTargetLocale());
         test.ok(rs2.getTarget() !== rs.getTarget());
         
         test.done();

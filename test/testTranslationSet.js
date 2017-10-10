@@ -61,7 +61,7 @@ module.exports = {
             key: "asdf",
             project: "foo",
             source: "This is a test",
-				target: "Dies ist einen Test.",
+			target: "Dies ist einen Test.",
             datatype: "html"
         });
 
@@ -269,28 +269,28 @@ module.exports = {
         test.expect(6);
 
         var ts = new TranslationSet();
-        var res = new ResourceArray({
+        var res1 = new ResourceArray({
             key: "asdf",
             sourceArray: ["This is a test", "this too"]
         });
 
-        ts.add(res);
+        ts.add(res1);
 
-        res = new ResourceString({
+        var res2 = new ResourceString({
             key: "asdf", // same key
             source: "This is a test"
         });
 
-        ts.add(res);
+        ts.add(res2);
 
         // default type is string
-        var r = ts.get(ResourceString.hashKey(undefined, res.getSourceLocale(), "asdf", "plaintext"));
+        var r = ts.get(ResourceString.hashKey(undefined, res2.getSourceLocale(), "asdf", "plaintext"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.resType, "string");
         test.equal(r.getSource(), "This is a test");
 
-        r = ts.get(ResourceArray.hashKey(undefined, undefined, res.getSourceLocale(), "asdf"));
+        r = ts.get(ResourceArray.hashKey(undefined, undefined, res1.getSourceLocale(), "asdf"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.resType, "array");
@@ -1291,7 +1291,7 @@ module.exports = {
 
         var r = ts.getBy({
         	project: "foo",
-        	locale: "de-DE"
+        	targetLocale: "de-DE"
         });
 
         test.ok(r);
@@ -1401,7 +1401,7 @@ module.exports = {
 
         // should match one or the other
         var r = ts.getBy({
-        	locale: ["en-US", "de-DE"]
+        	targetLocale: ["en-US", "de-DE"]
         });
 
         test.ok(r);
@@ -2574,7 +2574,7 @@ module.exports = {
     },
 
     testTranslationSetDiffRightContents: function(test) {
-        test.expect(12);
+        test.expect(14);
 
         var ts1 = new TranslationSet();
         var ts2 = new TranslationSet();
@@ -2655,15 +2655,20 @@ module.exports = {
         var resources = diff.getAll();
         test.ok(resources);
         test.equal(resources.length, 2);
+        
+        // guarantee the order of the array elements
+        resources = resources.sort(function(left, right) {return left.getTarget() < right.getTarget() ? 1 : (left.getTarget() > right.getTarget() ? -1 : 0)})
 
         test.equal(resources[0].getKey(), "qwerty");
-        test.equal(resources[0].getSource(), "gossie");
+        test.equal(resources[0].getSource(), "This is another test");
         test.equal(resources[0].getProject(), "foo");
         test.equal(resources[0].getContext(), "bar");
         test.equal(resources[0].getTargetLocale(), "nl-NL");
-
+        test.equal(resources[0].getTarget(), "gossie");
+        
         test.equal(resources[1].getKey(), "qwerty");
         test.equal(resources[1].getSource(), "This is another test");
+        test.equal(resources[1].getTarget(), "Dies ist nochmals einen Test");
         test.equal(resources[1].getProject(), "foo");
         test.equal(resources[1].getTargetLocale(), "de-DE");
 
@@ -2671,7 +2676,7 @@ module.exports = {
     },
 
     testTranslationSetDiffNoOverlap: function(test) {
-        test.expect(12);
+        test.expect(14);
 
         var ts1 = new TranslationSet();
         var ts2 = new TranslationSet();
@@ -2729,8 +2734,12 @@ module.exports = {
         test.ok(resources);
         test.equal(resources.length, 2);
 
+        // guarantee the order of the array elements
+        resources = resources.sort(function(left, right) {return left.getTarget() < right.getTarget() ? 1 : (left.getTarget() > right.getTarget() ? -1 : 0)})
+
         test.equal(resources[0].getKey(), "qwerty");
-        test.equal(resources[0].getSource(), "gossie");
+        test.equal(resources[0].getSource(), "This is another test");
+        test.equal(resources[0].getTarget(), "gossie");
         test.equal(resources[0].getProject(), "foo");
         test.equal(resources[0].getContext(), "bar");
         test.equal(resources[0].getTargetLocale(), "nl-NL");
@@ -2738,6 +2747,7 @@ module.exports = {
         test.equal(resources[1].getKey(), "qwerty");
         test.equal(resources[1].getSource(), "This is another test");
         test.equal(resources[1].getProject(), "foo");
+        test.equal(resources[1].getTarget(), "Dies ist nochmals einen Test");
         test.equal(resources[1].getTargetLocale(), "de-DE");
 
         test.done();

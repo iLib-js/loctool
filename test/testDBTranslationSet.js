@@ -225,7 +225,7 @@ module.exports = {
                 		project: "a",
                 		context: "b",
                 		key: "foofoo",
-                		locale: "nl-NL"
+                		sourceLocale: "nl-NL"
                 	}, function(resources) {
                 		test.equal(resources.length, 0); // not found
 	        			ts.close();
@@ -246,7 +246,7 @@ module.exports = {
     		project: "a",
     		context: "b",
     		key: "foofoo",
-    		locale: "nl-NL"
+    		sourceLocale: "nl-NL"
     	}, function(resources) {
     		test.ok(resources);
 
@@ -257,7 +257,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "foofoo",
-        		locale: "nl-NL"    			
+        		sourceLocale: "nl-NL"    			
     		}, function(err, info) {
     			test.equal(err, null);
     			test.ok(info);
@@ -266,7 +266,7 @@ module.exports = {
     				project: "a",
     				context: "b",
     				key: "foofoo",
-    				locale: "nl-NL"
+    				sourceLocale: "nl-NL"
     			}, function(resources) {
     				test.equal(resources.length, 0); // still not found
     				ts.close();
@@ -298,7 +298,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "foofoo",
-        		locale: "nl-NL"
+        		sourceLocale: "nl-NL"
         	}, function(resources) {
         		test.ok(resources);
         		
@@ -321,7 +321,7 @@ module.exports = {
                 		project: "a",
                 		context: "b",
                 		key: "foofoo",
-                		locale: "nl-NL"
+                		sourceLocale: "nl-NL"
                 	}, function(resources) {
                 		test.equal(resources.length, 1); // still there
 	        			ts.close();
@@ -430,7 +430,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "sultansofswing",
-        		locale: "nl-NL"
+        		sourceLocale: "nl-NL"
         	}, function(resources) {
         		test.ok(resources);
         		
@@ -468,7 +468,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "jajajajaja",
-        		locale: "nl-NL"
+        		sourceLocale: "nl-NL"
         	}, function(resources) {
         		test.ok(resources);
         		test.equal(resources.length, 0);
@@ -506,7 +506,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "jawel",
-        		locale: "nl-NL"
+        		sourceLocale: "nl-NL"
         	}, function(resources) {
         		test.ok(resources);
         		
@@ -550,7 +550,7 @@ module.exports = {
         		project: "a",
         		context: "b",
         		key: "gossie",
-        		locale: "nl-NL"
+        		sourceLocale: "nl-NL"
         	}, function(resources) {
         		test.ok(resources);
         		test.equal(resources.length, 0);

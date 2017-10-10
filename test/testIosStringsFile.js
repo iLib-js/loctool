@@ -377,21 +377,21 @@ module.exports = {
         [
         	new ResourceString({
         		project: "iosapp",
-        		targetLocale: "de-DE",
         		key: "source text",
 				source: "source text",
 				sourceLocale: "en-US",
 				target: "Quellen\"text",
-                        comment: "foo"
+				targetLocale: "de-DE",
+                comment: "foo"
         	}),
         	new ResourceString({
         		project: "iosapp",
-        		locale: "de-DE",
         		key: "more source text",
-			source: "more source text",
-			sourceLocale: "en-US",
-			target: "mehr Quellen\"text",
-                	comment: "bar"
+				source: "more source text",
+				sourceLocale: "en-US",
+				target: "mehr Quellen\"text",
+				targetLocale: "de-DE",
+        		comment: "bar"
         	})
         ].forEach(function(res) {
             strings.addResource(res);
