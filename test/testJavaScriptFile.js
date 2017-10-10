@@ -292,8 +292,8 @@ module.exports = {
         test.ok(j);
         
         j.parse(
-    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a patient!\').format({\n' +
-    		'        prefix: detail.expert_name_prefix,\n' +
+    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a friend!\').format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
     		'        last_name: detail.last_name\n' +
     		'    });'
         );
@@ -301,10 +301,10 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a friend!");
         test.ok(r);
-        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
-        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
+        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
         
         test.done();
     },
@@ -316,8 +316,8 @@ module.exports = {
         test.ok(j);
         
         j.parse(
-    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a patient!").format({\n' +
-    		'        prefix: detail.expert_name_prefix,\n' +
+    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a friend!").format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
     		'        last_name: detail.last_name\n' +
     		'    });'
         );
@@ -325,10 +325,10 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         test.ok(r);
-        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
-        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
+        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         
         test.done();
     },
