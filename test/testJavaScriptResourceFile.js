@@ -61,7 +61,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/en-US.js",
-            targetLocale: "en-US"
+            locale: "en-US"
         });
 
         test.ok(jsrf);
@@ -85,7 +85,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -141,7 +141,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -202,7 +202,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -230,7 +230,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -281,7 +281,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
@@ -333,7 +333,7 @@ module.exports = {
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
-            targetLocale: "de-DE"
+            locale: "de-DE"
         });
 
         test.ok(jsrf);
