@@ -677,8 +677,8 @@ module.exports = {
         	new ContextResourceString({
         		project: "webapp",
         		locale: "zh-Hans-CN",
-        		key: "• &amp;nbsp; Address a health or healthy living topic",
-        		source: "• &amp;nbsp; 解决健康生活相关的话题",
+        		key: "• &amp;nbsp; Address a particular topic",
+        		source: "• &amp;nbsp; 解决一个特定的主题",
         		comment: " "
         	}),
         	new ContextResourceString({
@@ -694,7 +694,7 @@ module.exports = {
 
         var expected = 
         	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
-        	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n";
+        	"• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
         
         diff(yml.getContent(), expected);
 

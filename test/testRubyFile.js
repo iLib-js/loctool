@@ -950,7 +950,7 @@ module.exports = {
 
         var set = rf.getTranslationSet();
 
-        test.equal(set.size(), 13);
+        test.equal(set.size(), 11);
 
         var r = set.getBySource("Noted that person %{person_id} has %{source} installed");
         test.ok(r);
