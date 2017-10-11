@@ -192,6 +192,30 @@ module.exports = {
         test.done();
     },
 
+    testObjectiveCFileParseWithHTLocalizedString: function(test) {
+        test.expect(7);
+
+        var j = new ObjectiveCFile(p, undefined, ocft);
+        test.ok(j);
+
+        var set = j.getTranslationSet();
+        test.equal(set.size(), 0);
+
+        j.parse('HTLocalizedString(@"This is a test", @"translator\'s comment")');
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getComment(), "translator's comment");
+        
+        test.done();
+    },
+
     testObjectiveCFileParseMultiple: function(test) {
         test.expect(10);
 
