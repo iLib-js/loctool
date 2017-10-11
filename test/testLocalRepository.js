@@ -64,7 +64,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryConstructorWithPath: function(test) {
-		test.expect(12);
+		test.expect(10);
 
 		var repo = new LocalRepository({
 			sourceLocale: "en-US",
@@ -78,18 +78,15 @@ module.exports = {
 				reskey: "foobar"
 			}, function(err, resources) {
 				test.ok(resources);
-				test.equal(resources.length, 2);
+				test.equal(resources.length, 1);
 
 				test.equal(resources[0].getKey(), "foobar");
 				test.equal(resources[0].getProject(), "webapp");
+				test.equal(resources[0].getSourceLocale(), "en-US");
 				test.equal(resources[0].getSource(), "Asdf asdf");
-				test.equal(resources[0].getLocale(), "en-US");
+				test.equal(resources[0].getTargetLocale(), "de-DE");
+				test.equal(resources[0].getTarget(), "foobarfoo");
 				test.equal(resources[0].getComment(), "foobar is where it's at!");
-
-				test.equal(resources[1].getKey(), "foobar");
-				test.equal(resources[1].getProject(), "webapp");
-				test.equal(resources[1].getSource(), "foobarfoo");
-				test.equal(resources[1].getLocale(), "de-DE");
 
 				repo.close(function() {
 					test.done();
@@ -115,7 +112,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryGet: function(test) {
-		test.expect(10);
+		test.expect(11);
 
 		var repo = new LocalRepository();
 		var res = new ResourceString({
@@ -141,9 +138,10 @@ module.exports = {
 				test.equal(resources.length, 1);
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "de-DE");
+				test.equal(resources[0].getSourceLocale(), "en-US");
+				test.equal(resources[0].getTargetLocale(), "de-DE");
 				test.equal(resources[0].getKey(), "asdf");
-				test.equal(resources[0].getSource(), "This is a test");
+				test.equal(resources[0].getTarget(), "This is a test");
 
 				repo.close(function() {
 					test.done();
@@ -153,7 +151,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryGetComplicated: function(test) {
-		test.expect(18);
+		test.expect(20);
 
 		var repo = new LocalRepository();
 		var res = new ResourceString({
@@ -196,15 +194,17 @@ module.exports = {
 					test.equal(resources.length, 2);
 					test.equal(resources[0].getProject(), "a");
 					test.equal(resources[0].getContext(), "b");
-					test.equal(resources[0].getLocale(), "de-DE");
+					test.equal(resources[0].getTargetLocale(), "de-DE");
 					test.equal(resources[0].getKey(), "asdf");
-					test.equal(resources[0].getSource(), "This is yet another test");
+					test.equal(resources[0].getSource(), "asdf");
+					test.equal(resources[0].getTarget(), "This is yet another test");
 
 					test.equal(resources[1].getProject(), "a");
 					test.equal(resources[1].getContext(), "b");
-					test.equal(resources[1].getLocale(), "fr-FR");
+					test.equal(resources[1].getTargetLocale(), "fr-FR");
 					test.equal(resources[1].getKey(), "asdf");
-					test.equal(resources[1].getSource(), "Ceci est une teste.");
+					test.equal(resources[1].getSource(), "asdf");
+					test.equal(resources[1].getTarget(), "Ceci est une teste.");
 
 					repo.close(function() {
 						test.done();
@@ -262,9 +262,9 @@ module.exports = {
 				test.equal(resources.length, 1);
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "nl-NL");
+				test.equal(resources[0].getTargetLocale(), "nl-NL");
 				test.equal(resources[0].getKey(), "foofoo");
-				test.equal(resources[0].getSource(), "Dit is noch een test.");
+				test.equal(resources[0].getTarget(), "Dit is noch een test.");
 
 				// now remove it and make sure it is no longer there
 				repo.remove(res, function(err, info) {
@@ -363,9 +363,9 @@ module.exports = {
 				test.equal(resources.length, 1);
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "nl-NL");
+				test.equal(resources[0].getTargetLocale(), "nl-NL");
 				test.equal(resources[0].getKey(), "foofoo");
-				test.equal(resources[0].getSource(), "Dit is noch een test.");
+				test.equal(resources[0].getTarget(), "Dit is noch een test.");
 
 				// now remove with bogus params and make sure it didn't ruin the db
 				repo.remove({
@@ -441,21 +441,21 @@ module.exports = {
 				test.equal(resources.length, 3);
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "en-US");
+				test.equal(resources[0].getTargetLocale(), "en-US");
 				test.equal(resources[0].getKey(), "barbar");
-				test.equal(resources[0].getSource(), "Elephants can fly!");
+				test.equal(resources[0].getTarget(), "Elephants can fly!");
 
 				test.equal(resources[1].getProject(), "a");
 				test.equal(resources[1].getContext(), "b");
-				test.equal(resources[1].getLocale(), "de-DE");
+				test.equal(resources[1].getTargetLocale(), "de-DE");
 				test.equal(resources[1].getKey(), "barbar");
-				test.equal(resources[1].getSource(), "Olifanten koennen fliegen!");
+				test.equal(resources[1].getTarget(), "Olifanten koennen fliegen!");
 
 				test.equal(resources[2].getProject(), "a");
 				test.equal(resources[2].getContext(), "b");
-				test.equal(resources[2].getLocale(), "nl-NL");
+				test.equal(resources[2].getTargetLocale(), "nl-NL");
 				test.equal(resources[2].getKey(), "barbar");
-				test.equal(resources[2].getSource(), "Oliefanten kunnen fliegen!");
+				test.equal(resources[2].getTarget(), "Oliefanten kunnen fliegen!");
 
 				repo.close(function() {
 					test.done();
@@ -486,7 +486,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "sultansofswing",
-				targetLocale: "nl-NL"
+				sourceLocale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
 
@@ -525,7 +525,7 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "jajajajaja",
-				targetLocale: "nl-NL"
+				sourceLocale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
 				test.equal(resources.length, 1);
@@ -574,7 +574,7 @@ module.exports = {
 
 				test.equal(resources[0].getProject(), "a");
 				test.equal(resources[0].getContext(), "b");
-				test.equal(resources[0].getLocale(), "nl-NL");
+				test.equal(resources[0].getTargetLocale(), "nl-NL");
 				test.equal(resources[0].getKey(), "jawel");
 				test.deepEqual(resources[0].getSourcePlurals(), {
 					one: "a one", 
@@ -708,7 +708,7 @@ module.exports = {
 				source: "barbar",
 				target: "Oliefanten kunnen fliegen!"
 			})
-			]);
+		]);
 
 		repo.addAll(set, function(err, info) {
 			test.equal(err, null);
@@ -763,7 +763,7 @@ module.exports = {
 				source: "barbar",
 				target: "Oliefanten kunnen fliegen!"
 			})
-			]);
+		]);
 
 		repo.addAll(set, function(err, info) {
 			test.equal(err, null);
@@ -886,9 +886,9 @@ module.exports = {
 
 				test.equal(resource.getProject(), "a");
 				test.equal(resource.getContext(), "b");
-				test.equal(resource.getLocale(), "de-DE");
+				test.equal(resource.getTargetLocale(), "de-DE");
 				test.equal(resource.getKey(), "barbar");
-				test.equal(resource.getSource(), "Olifanten koennen fliegen!");
+				test.equal(resource.getTarget(), "Olifanten koennen fliegen!");
 
 				repo.close(function() {
 					test.done();
@@ -994,9 +994,9 @@ module.exports = {
 
 				test.equal(resource.getProject(), "a");
 				test.equal(resource.getContext(), "b");
-				test.equal(resource.getLocale(), "de-DE");
+				test.equal(resource.getTargetLocale(), "de-DE");
 				test.equal(resource.getKey(), "barbar");
-				test.equal(resource.getSource(), "Olifanten koennen fliegen!");
+				test.equal(resource.getTarget(), "Olifanten koennen fliegen!");
 
 				repo.close(function() {
 					test.done();
