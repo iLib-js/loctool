@@ -454,7 +454,7 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 27);
+        test.equal(set.size(), 14);
         
         var r = set.getBySource("Options");
         test.ok(r);
@@ -468,17 +468,17 @@ module.exports = {
         test.equal(r.getKey(), "Error logging out");
         test.equal(r.getComment(), "Error logging out title");
         
-        r = set.getBySource("Reason for visit");
+        r = set.getBySource("NOTIFICATIONS");
         test.ok(r);
-        test.equal(r.getSource(), "Reason for visit");
-        test.equal(r.getKey(), "Reason for visit");
-        test.equal(r.getComment(), "appointment table view section header");
+        test.equal(r.getSource(), "NOTIFICATIONS");
+        test.equal(r.getKey(), "NOTIFICATIONS");
+        test.equal(r.getComment(), "tab bar title");
 
-        r = set.getBySource("You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
+        r = set.getBySource("An issue occurred trying to log out. Please try again");
         test.ok(r);
-        test.equal(r.getSource(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
-        test.equal(r.getKey(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
-        test.equal(r.getComment(), "message subheader shown when no appointments in get help feed");
+        test.equal(r.getSource(), "An issue occurred trying to log out. Please try again");
+        test.equal(r.getKey(), "An issue occurred trying to log out. Please try again");
+        test.equal(r.getComment(), "Error logging out message");
 
         r = set.getBySource("Login");
         test.ok(r);

@@ -110,31 +110,29 @@ module.exports = {
         test.ok(j);
 
         test.equals(j.makeKey("Procedures"), "r807691021");
-		test.equals(j.makeKey("Health Apps"), "r941505899");
-		test.equals(j.makeKey("Conditions in your profile"), "r240633868");
-		test.equals(j.makeKey("Treatment Reviews"), "r795086964");
+		test.equals(j.makeKey("Mobile Apps"), "r898923204");
+		test.equals(j.makeKey("Settings in your profile"), "r618035987");
+		test.equals(j.makeKey("Product Reviews"), "r175350918");
 		test.equals(j.makeKey("Answers"), "r221604632");
         
         test.done();
 	},
 
 	testJavaFileMakeKeySimpleTexts3: function(test) {
-        test.expect(11);
+        test.expect(9);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Private Health Profile"), "r669315500");
-		test.equals(j.makeKey("People you care for"), "r710774033");
-		test.equals(j.makeKey("Notifications"), "r284964820");
-		test.equals(j.makeKey("News"), "r613036745");
-		test.equals(j.makeKey("More Tips"), "r216617786");
-		test.equals(j.makeKey("Goals"), "r788359072");
-		test.equals(j.makeKey("Referral Link"), "r140625167");
-		test.equals(j.makeKey("Questions"), "r256277957");
-		test.equals(j.makeKey("Private consults"), "r18128760");
-		test.equals(j.makeKey("Suggested doctors for you"), "r584966709");
-        
+        test.equals(j.makeKey("Private Profile"), "r314592735");
+        test.equals(j.makeKey("People you are connected to"), "r711926199");
+        test.equals(j.makeKey("Notifications"), "r284964820");
+        test.equals(j.makeKey("News"), "r613036745");
+        test.equals(j.makeKey("More Tips"), "r216617786");
+        test.equals(j.makeKey("Filters"), "r81370429");
+        test.equals(j.makeKey("Referral Link"), "r140625167");
+        test.equals(j.makeKey("Questions"), "r256277957");
+
         test.done();
 	},
 
@@ -144,7 +142,7 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Can\'t find treatment id"), "r926831062");
+        test.equals(j.makeKey("Can\'t find id"), "r743945592");
 		test.equals(j.makeKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
@@ -156,13 +154,13 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(j.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"), "r436261634");
-		test.equals(j.makeKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
-		test.equals(j.makeKey("Grow your Care-Team"), "r522565682");
+        test.equals(j.makeKey("{name}({generic_name})"), "r300446104");
+		test.equals(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+		test.equals(j.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+		test.equals(j.makeKey("Grow your Network"), "r895214324");
 		test.equals(j.makeKey("Failed to send connection request!"), "r1015770123");
 		test.equals(j.makeKey("{goal_name} Goals"), "r993422001");
-		test.equals(j.makeKey("Referral link copied!"), "r201354363");
+		test.equals(j.makeKey("Connection link copied!"), "r180897411");
         
         test.done();
 	},
@@ -185,8 +183,8 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
-        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
-		test.equal(j.makeKey("Can\'t    find    treatment           id"), "r926831062");
+        test.equal(j.makeKey("Can\'t find  id"), "r743945592");
+		test.equal(j.makeKey("Can\'t    find               id"), "r743945592");
 		
 		test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
 		test.equal(j.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
@@ -200,8 +198,8 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
-        test.equal(j.makeKey("      Can\'t find treatment id "), "r926831062");
+        test.equal(j.makeKey("Can\'t find  id"), "r743945592");
+        test.equal(j.makeKey("      Can\'t find  id "), "r743945592");
 		
         test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
         test.equal(j.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");
@@ -297,7 +295,7 @@ module.exports = {
 		});
         test.ok(jf);
 
-        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        test.equals(jf.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"), "r969175354");
         
         test.done();
 	},
