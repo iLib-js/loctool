@@ -86,7 +86,7 @@ module.exports = {
     		"few": "This is the few case",
     		"many": "This is the many case"
         });
-        test.equal(rp.locale, "de-DE");
+        test.equal(rp.getSourceLocale(), "en-US");
         test.equal(rp.pathName, "a/b/c.java");
 
         test.done();
@@ -119,7 +119,7 @@ module.exports = {
     },
 
     testResourcePluralConstructorRightContentsFull: function(test) {
-        test.expect(5);
+        test.expect(7);
 
         var rp = new ResourcePlural({
         	key: "asdf",
@@ -150,7 +150,7 @@ module.exports = {
         });
         test.equal(rp.getSourceLocale(), "en-US");
         test.equal(rp.pathName, "a/b/c.java");
-        test.equal(rp.getTargetLocale(), "en-US");
+        test.equal(rp.getTargetLocale(), "de-DE");
 	    test.deepEqual(rp.getTargetPlurals(), {
 			"one": "Dies ist einzigartig",
 			"two": "Dies ist doppelt",
@@ -162,7 +162,7 @@ module.exports = {
     },
 
     testResourcePluralConstructorDefaults: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var rp = new ResourcePlural({
         	key: "asdf",
@@ -180,8 +180,7 @@ module.exports = {
         test.equal(rp.getKey(), "asdf");
 
         // now the defaults
-        test.equal(rp.locale, "en-US");
-        test.equal(rp.origin, "source");
+        test.equal(rp.getSourceLocale(), "en-US");
         test.equal(rp.datatype, "x-android-resource");
         test.equal(rp.resType, "plural");
 
@@ -779,7 +778,7 @@ module.exports = {
         test.ok(rp2);
         test.equal(rp2.project, rp.project);
         test.equal(rp2.context, rp.context);
-        test.equal(rp2.locale, rp.locale);
+        test.equal(rp2.getSourceLocale(), rp.getSourceLocale());
         test.equal(rp2.reskey, rp.reskey);
         test.deepEqual(rp2.strings, rp.strings);
         test.equal(rp2.pathName, rp.pathName);
@@ -817,7 +816,7 @@ module.exports = {
         test.ok(rp2);
         test.equal(rp2.project, rp.project);
         test.equal(rp2.context, rp.context);
-        test.equal(rp2.locale, "fr-FR");
+        test.equal(rp2.getSourceLocale(), "fr-FR");
         test.equal(rp2.reskey, rp.reskey);
         test.deepEqual(rp2.strings, rp.strings);
         test.equal(rp2.pathName, rp.pathName);
@@ -847,11 +846,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.ok(!rp.get("zero"));
+        test.ok(!rp.getSource("zero"));
 
         rp.addSource("zero", "This is the zero one")
 
-        test.equal(rp.get("zero"), "This is the zero one");
+        test.equal(rp.getSource("zero"), "This is the zero one");
 
         test.done();
     },
@@ -876,11 +875,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.equal(rp.get("two"), "This is double");
+        test.equal(rp.getSource("two"), "This is double");
 
         rp.addSource("two", "This is two at a time")
 
-        test.equal(rp.get("two"), "This is two at a time");
+        test.equal(rp.getSource("two"), "This is two at a time");
 
         test.done();
     },
@@ -932,11 +931,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.getSource("one"), "This is singular");
 
         rp.addSource("one", undefined)
 
-        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.getSource("one"), "This is singular");
 
         test.done();
     },
@@ -1006,11 +1005,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.ok(!rp.get("one"));
+        test.ok(!rp.getSource("one"));
 
         rp.addSource("one", "foobar")
 
-        test.equal(rp.get("one"), "foobar");
+        test.equal(rp.getSource("one"), "foobar");
 
         test.done();
     },
@@ -1038,11 +1037,11 @@ module.exports = {
         rp.addSource("one", "This is singular");
         rp.addSource("zero", "This is the zero one");
 
-        test.equal(rp.get("zero"), "This is the zero one");
-        test.equal(rp.get("one"), "This is singular");
-        test.equal(rp.get("two"), "This is double");
-        test.equal(rp.get("few"), "This is the few case");
-        test.equal(rp.get("many"), "This is the many case");
+        test.equal(rp.getSource("zero"), "This is the zero one");
+        test.equal(rp.getSource("one"), "This is singular");
+        test.equal(rp.getSource("two"), "This is double");
+        test.equal(rp.getSource("few"), "This is the few case");
+        test.equal(rp.getSource("many"), "This is the many case");
 
         test.done();
     },
@@ -1074,11 +1073,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.ok(!rp.get("zero"));
+        test.ok(!rp.getTarget("zero"));
 
         rp.addTarget("zero", "This is the zero one")
 
-        test.equal(rp.get("zero"), "This is the zero one");
+        test.equal(rp.getTarget("zero"), "This is the zero one");
 
         test.done();
     },
@@ -1110,11 +1109,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.equal(rp.get("two"), "This is double");
+        test.equal(rp.getTarget("two"), "Dies ist doppelt");
 
         rp.addTarget("two", "This is two at a time")
 
-        test.equal(rp.get("two"), "This is two at a time");
+        test.equal(rp.getTarget("two"), "This is two at a time");
 
         test.done();
     },
@@ -1136,8 +1135,7 @@ module.exports = {
         	targetStrings: {
         		"one": "Dies ist einzigartig",
         		"two": "Dies ist doppelt",
-        		"few": "Dies ist der wenige Fall",
-        		"many": "Dies ist der viele Fall"
+        		"few": "Dies ist der wenige Fall"
         	},
             pathName: "a/b/c.java",
             comment: "foobar foo",
@@ -1180,11 +1178,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.getTarget("one"), "Dies ist einzigartig");
 
         rp.addTarget("one", undefined)
 
-        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.getTarget("one"), "Dies ist einzigartig");
 
         test.done();
     },
@@ -1206,8 +1204,7 @@ module.exports = {
         	targetStrings: {
         		"one": "Dies ist einzigartig",
         		"two": "Dies ist doppelt",
-        		"few": "Dies ist der wenige Fall",
-        		"many": "Dies ist der viele Fall"
+        		"few": "Dies ist der wenige Fall"
         	},
             pathName: "a/b/c.java",
             comment: "foobar foo",
@@ -1261,11 +1258,11 @@ module.exports = {
         });
         test.ok(rp);
 
-        test.ok(!rp.get("one"));
+        test.ok(!rp.getTarget("one"));
 
         rp.addTarget("one", "foobar")
 
-        test.ok(!rp.get("one")); // can't add a target without a source first
+        test.equal(rp.getTarget("one"), "foobar");
 
         test.done();
     },
