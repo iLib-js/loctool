@@ -888,7 +888,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	key: "This is a test",
         	source: "This is a test",
         	sourceLocale: "en-US",
@@ -897,7 +897,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "rs_ht-iosapp_en-US_This is a test_html");
+        test.equal(rs.hashKey(), "rs_iosapp_en-US_This is a test_html");
         
         test.done();
     },
@@ -943,7 +943,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ContextResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
@@ -953,7 +953,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_en-US_This is a test_html");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_en-US_This is a test_html");
         
         test.done();
     },
@@ -998,7 +998,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new IosLayoutResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
@@ -1007,7 +1007,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "irs_ht-iosapp_en-US_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(rs.hashKey(), "irs_iosapp_en-US_a/b/es.lproj/foo.xib_This is a test");
         
         test.done();
     }

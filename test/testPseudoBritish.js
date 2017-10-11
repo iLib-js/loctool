@@ -243,6 +243,19 @@ module.exports = {
         test.done();
     },
     
+    testPseudoBritishSkipReplacementsYaml: function(test) {
+        test.expect(1);
+
+        var pb = PseudoFactory({
+			project: project,
+			locale: "en-GB",
+			type: "ruby"
+		});
+        test.equal(pb.getString("Skip the unflavored %ESTROGEN% supplements."), "Skip the unflavoured %ESTROGEN% supplements.");
+        
+        test.done();
+    },
+
     testPseudoBritishInheritedLocaleNZ: function(test) {
         test.expect(1);
 

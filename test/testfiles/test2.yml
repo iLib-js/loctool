@@ -1,14 +1,14 @@
 ---
-saved_someone_else_life:
-  subject:      "Feel good! Someone said a doctor’s answer to your question saved their life:"
+saved_someone_else_time:
+  subject:      "Feel good! Someone said a colleague’s answer to your question saved them a lot of time:"
   body:         "%1"
   ctoa:         "Ask another question"
-  push_data:    "%1, feel good! A HealthTap member says an answer to your question saved their life."
-  global_link:  member_ask_doctors_picker
+  push_data:    "A MyCompany member says an answer to your question saved them a lot of time."
+  global_link:  member_ask_picker
   setting_name: product_announcements
 member_answer_thank_follow_up:
   subject:      "Thank %1 for answering!"
-  body:         "%1 answered your question. Thank the doctor if the answer helped!"
+  body:         "%1 answered your question. Thank your colleague if the answer helped!"
   ctoa:         "Thank the %1"
   push_data:    "Thank %1 for taking the time to answer your question, especially if it helped!"
   global_link:  member_question_auto_thank

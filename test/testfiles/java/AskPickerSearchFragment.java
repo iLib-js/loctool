@@ -216,9 +216,9 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
             if (item instanceof PickerResult) {
                 if (!"out_of_service".equals(((PickerResult) item).getAvailabilityType())) {
                     MPEventTrackerUtil.logEvent(MPEventConstants.EventCategory.ASK.getCategory(), "friend_continue",
-                            "", ((PickerResult) item).getExpertId() + "");
+                            "", ((PickerResult) item).getFriendId() + "");
                     AskPickerServiceFragment frag =
-                            AskPickerServiceFragment.newInstance(((PickerResult) item).getExpertId());
+                            AskPickerServiceFragment.newInstance(((PickerResult) item).getFriendId());
                     frag.getArguments().putAll(getArguments());
                     getBaseActivity().pushFragment(frag);
                 }
@@ -262,7 +262,7 @@ public class AskPickerSearchFragment extends BaseFragment implements SearchView.
             }
         }
         showMore.setShowProgress(true);
-        MyproductApi.getAskSuggestedExperts(page, params, new Response.Listener<JSONObject>() {
+        MyproductApi.getAskSuggestedFriends(page, params, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 JSONArray content = response.optJSONArray("content");

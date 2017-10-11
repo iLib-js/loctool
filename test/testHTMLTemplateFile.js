@@ -1,7 +1,20 @@
 /*
  * testHTMLTemplateFile.js - test the HTML template file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 var path = require("path");
@@ -48,7 +61,7 @@ module.exports = {
             locales:["en-GB"]
         });
 
-        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowTemplate.tmpl.html");
 
         test.ok(htf);
 
@@ -942,10 +955,10 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <% if(doctor){ %>\n' +
+                '       <% if(specialist){ %>\n' +
                 '           Consult\n' +
                 '       <% } else { %>\n' +
-                '           Get doctor answers for free!\n' +
+                '           Get insurance quotes for free!\n' +
                 '       <% } %>\n' +
                 '   </body>\n' +
                 '</html>\n');
@@ -958,10 +971,10 @@ module.exports = {
         test.equal(r.getSource(), 'Consult');
         test.equal(r.getKey(), 'Consult');
 
-        r = set.getBySource("Get doctor answers for free!");
+        r = set.getBySource("Get insurance quotes for free!");
         test.ok(r);
-        test.equal(r.getSource(), "Get doctor answers for free!");
-        test.equal(r.getKey(), "Get doctor answers for free!");
+        test.equal(r.getSource(), "Get insurance quotes for free!");
+        test.equal(r.getKey(), "Get insurance quotes for free!");
 
         test.done();
     },
@@ -1993,7 +2006,7 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <% if(expert){ %>\n' +
+                '       <% if(specialist){ %>\n' +
                 '           Consult\n' +
                 '       <% } else { %>\n' +
                 '           Get insurance quotes for free!\n' +
@@ -2022,7 +2035,7 @@ module.exports = {
         test.equal(htf.localizeText(translations, "fr-FR"),
             '<html>\n' +
             '   <body>\n' +
-            '       <% if(expert){ %>\n' +
+            '       <% if(specialist){ %>\n' +
             '           Une consultation\n' +
             '       <% } else { %>\n' +
             '           Obtenez des devis d\'assurance gratuitement!\n' +
@@ -2498,12 +2511,12 @@ module.exports = {
             '      <div class="upsell-ad-header">\n' +
             '        <div class="big cookie-flow"></div>\n' +
             '        <span class="upsell-header-bold"><%=title%></span>\n' +
-            '          <% if(expert){ %>\n' +
+            '          <% if(specialist){ %>\n' +
             '            <%=\n' +
             '              RB.getString(\'Talk with {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in insurance brokering:\').format({\n' +
-            '                value: expert.name,\n' +
-            '                specialist_name: expert.specialist_name,\n' +
-            '                years: expert.years_experience,\n' +
+            '                value: specialist.name,\n' +
+            '                specialist_name: specialist.specialist_name,\n' +
+            '                years: specialist.years_experience,\n' +
             '                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
             '                span_tag_end: \'</span>\'\n' +
             '              })\n' +
@@ -2513,13 +2526,13 @@ module.exports = {
             '            Obtenez des devis d\'assurance gratuitement!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= expert ? \'\' : \'padding-left: 0\' %>">\n' +
-            '         <% if(expert){ %>\n' +
-            '          <a class="expert-avatar" href="/experts/<%= expert.id %>" style="background-image: url(<%= expert.avatar_transparent_circular %>);"></a>\n' +
+            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '         <% if(specialist){ %>\n' +
+            '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
             '        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
             '        <span class="askSendArea-cookie">\n' +
-            '          <a class="askSendBtn-cookie" href="<%= expert ? \'/experts/\' + expert.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+            '          <a class="askSendBtn-cookie" href="<%= specialist ? \'/specialists/\' + specialist.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
             '            <div class="desktop-btn">Envoyer la question</div>\n' +
             '            <div class="mobile-btn">Poser un question</div>\n' +
             '          </a>\n' +
@@ -2540,12 +2553,12 @@ module.exports = {
             '      <div class="upsell-ad-header">\n' +
             '        <div class="big cookie-flow"></div>\n' +
             '        <span class="upsell-header-bold"><%=title%></span>\n' +
-            '          <% if(expert){ %>\n' +
+            '          <% if(specialist){ %>\n' +
             '            <%=\n' +
             '              RB.getString(\'Talk with {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in insurance brokering:\').format({\n' +
-            '                value: expert.name,\n' +
-            '                specialist_name: expert.specialist_name,\n' +
-            '                years: expert.years_experience,\n' +
+            '                value: specialist.name,\n' +
+            '                specialist_name: specialist.specialist_name,\n' +
+            '                years: specialist.years_experience,\n' +
             '                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
             '                span_tag_end: \'</span>\'\n' +
             '              })\n' +
@@ -2555,13 +2568,13 @@ module.exports = {
             '            Kostenlosen Versicherungs-Angebote erhalten!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= expert ? \'\' : \'padding-left: 0\' %>">\n' +
-            '         <% if(expert){ %>\n' +
-            '          <a class="expert-avatar" href="/experts/<%= expert.id %>" style="background-image: url(<%= expert.avatar_transparent_circular %>);"></a>\n' +
+            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '         <% if(specialist){ %>\n' +
+            '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
             '        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
             '        <span class="askSendArea-cookie">\n' +
-            '          <a class="askSendBtn-cookie" href="<%= expert ? \'/experts/\' + expert.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+            '          <a class="askSendBtn-cookie" href="<%= specialist ? \'/specialists/\' + specialist.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
             '            <div class="desktop-btn">Frage abschicken</div>\n' +
             '            <div class="mobile-btn">Eine Frage stellen</div>\n' +
             '          </a>\n' +
@@ -2730,7 +2743,7 @@ module.exports = {
         test.ok(htf);
 
         htf.parse(
-            '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
+            '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
             '<label for="entity_group" class="radio-label">Group</label>');
 
         var set = htf.getTranslationSet();
@@ -2752,7 +2765,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
+                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
                 '<label for="entity_group" class="radio-label">Groupe</label>');
 
         test.done();
@@ -2859,7 +2872,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
 
-        htf.parse('<a class="expert-name" href=<%= val.expert.url%>>foo</a>\n');
+        htf.parse('<a class="specialist-name" href=<%= val.specialist.url%>>foo</a>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -2880,7 +2893,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<a class="expert-name" href=<%= val.expert.url%>>asdf</a>\n');
+                '<a class="specialist-name" href=<%= val.specialist.url%>>asdf</a>\n');
 
         test.done();
     },
@@ -2899,14 +2912,14 @@ module.exports = {
         test.ok(htf);
 
         htf.parse(
-            '<% _.each(experts, function( val, index ){ %>\n' +
-            '  <div class="expert-review">\n' +
-            '    <div class="expert-item" >\n' +
-            '      <div class="expert-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
-            '      <div class="expert-info">\n' +
+            '<% _.each(specialists, function( val, index ){ %>\n' +
+            '  <div class="specialist-review">\n' +
+            '    <div class="specialist-item" >\n' +
+            '      <div class="specialist-avatar" style="background-image: url(<%= val.specialist.avatar_transparent_circular %>);"></div>\n' +
+            '      <div class="specialist-info">\n' +
             '        <div class="icon"></div>\n' +
-            '        <a class="expert-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
-            '        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+            '        <a class="specialist-name" href=<%= val.specialist.url%>><%= val.specialist.name%></a>\n' +
+            '        <div class ="specialty"><%= val.specialist.intro%></div>\n' +
             '      </div>\n' +
             '    </div>\n' +
             '    <div class="rating-stars">\n' +
@@ -2945,14 +2958,14 @@ module.exports = {
 
         var actual = htf.localizeText(translations, "fr-FR");
         var expected =
-            '<% _.each(experts, function( val, index ){ %>\n' +
-            '  <div class="expert-review">\n' +
-            '    <div class="expert-item">\n' +
-            '      <div class="expert-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
-            '      <div class="expert-info">\n' +
+            '<% _.each(specialists, function( val, index ){ %>\n' +
+            '  <div class="specialist-review">\n' +
+            '    <div class="specialist-item">\n' +
+            '      <div class="specialist-avatar" style="background-image: url(<%= val.specialist.avatar_transparent_circular %>);"></div>\n' +
+            '      <div class="specialist-info">\n' +
             '        <div class="icon"></div>\n' +
-            '        <a class="expert-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
-            '        <div class="specialty"><%= val.expert.intro%></div>\n' +
+            '        <a class="specialist-name" href=<%= val.specialist.url%>><%= val.specialist.name%></a>\n' +
+            '        <div class="specialty"><%= val.specialist.intro%></div>\n' +
             '      </div>\n' +
             '    </div>\n' +
             '    <div class="rating-stars">\n' +
@@ -3569,8 +3582,8 @@ module.exports = {
 
             '<div class="refer-message">\n' +
             '  There are <%= avatar.count ? (\' the following avatars available. As a member of \' + avatars.type + \', your avatar must be unique within your group.\') : \'\' %>:\n' +
-            '  <div class="expert-result clearfix">\n' +
-            '<% var imageStyle = expert.avatar_transparent_circular ? "background-image: url(\'"+expert.avatar_transparent_circular+ "\')" : "" %>\n'
+            '  <div class="specialist-result clearfix">\n' +
+            '<% var imageStyle = specialist.avatar_transparent_circular ? "background-image: url(\'"+specialist.avatar_transparent_circular+ "\')" : "" %>\n'
         );
 
         var translations = new TranslationSet();
@@ -3591,8 +3604,8 @@ module.exports = {
 
                 '<div class="refer-message">\n' +
                 '  Es gibt <%=  avatar.count ? (\' folgende Avatare. Als Mitglied der \' + avatars.type + \', Gruppe muss dein Avatar innerhalb der Gruppe einzigartig sein.\') : \'\' %>:\n' +
-                '  <div class="expert-result clearfix">\n' +
-                '<% var imageStyle = expert.avatar_transparent_circular ? "background-image: url(\'"+expert.avatar_transparent_circular+ "\')" : "" %>\n';
+                '  <div class="specialist-result clearfix">\n' +
+                '<% var imageStyle = specialist.avatar_transparent_circular ? "background-image: url(\'"+specialist.avatar_transparent_circular+ "\')" : "" %>\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3799,7 +3812,7 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "Choose a meeting method",
-			source: "Choose a consult method",
+			source: "Choose a meeting method",
 			sourceLocale: "en-US",
             target: "Choisissez une méthode de réunion d'affaires",
             targetLocale: "fr-FR",
@@ -3813,7 +3826,7 @@ module.exports = {
             '</div>\n' +
             '<div id="chooseMode">\n' +
             '  <div class="askContent">\n' +
-            '    <div class="expertInfo">\n' +
+            '    <div class="specialistInfo">\n' +
             '      <div class="portraitContainer">\n' +
             '        <div class="portrait">\n' +
             '          <img src="<%= photo %>" height="86px" width="86px"/>\n' +

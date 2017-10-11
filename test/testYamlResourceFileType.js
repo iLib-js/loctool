@@ -188,7 +188,7 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-webapp12",
+        	id: "webapp",
         	sourceLocale: "de-DE",
         	resourceDirs: {
         		"yml": "config/locales"
@@ -211,7 +211,7 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "ht-webapp12",
+        	id: "webapp",
         	sourceLocale: "de-DE",
         	resourceDirs: {
         		"yml": "config/locales"
