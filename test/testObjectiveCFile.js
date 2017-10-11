@@ -467,18 +467,6 @@ module.exports = {
         test.equal(r.getKey(), "Staff");
         test.ok(!r.getComment());
 
-        r = set.getBySource("Patient");
-        test.ok(r);
-        test.equal(r.getSource(), "Patient");
-        test.equal(r.getKey(), "Patient");
-        test.ok(!r.getComment());
-        
-        r = set.getBySource("Left consult");
-        test.ok(r);
-        test.equal(r.getSource(), "Left consult");
-        test.equal(r.getKey(), "Left consult");
-        test.ok(!r.getComment());
-
         r = set.getBySource("Owner");
         test.ok(r);
         test.equal(r.getSource(), "Owner");
