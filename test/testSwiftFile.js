@@ -125,6 +125,29 @@ module.exports = {
         test.done();
     },
 
+    testSwiftFileParseSimpleHTLocalizedString: function(test) {
+        test.expect(6);
+
+        var j = new SwiftFile(p, undefined, sft);
+        test.ok(j);
+        
+        j.parse('HTLocalizedString("This is a test", comment: "translator\'s comment")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "This is a test"
+        });
+        test.ok(r);
+        
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "This is a test");
+        test.equal(r[0].getComment(), "translator's comment");
+        
+        test.done();
+    },
+    
     testSwiftFileParseSimpleGetBySource: function(test) {
         test.expect(6);
 
