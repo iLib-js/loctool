@@ -576,7 +576,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-GB",
+        	targetLocale: "en-GB",
         	type: "c"
         });
 
@@ -621,7 +621,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-ZA",
+        	targetLocale: "en-ZA",
         	type: "c"
         });
 
@@ -666,7 +666,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "en-CA",
+        	targetLocale: "en-CA",
         	type: "c"
         });
 
@@ -732,7 +732,7 @@ module.exports = {
         
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "zh-Hant-TW",
+        	targetLocale: "zh-Hant-TW",
         	type: "c",
         	set: translations
         });
