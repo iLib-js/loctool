@@ -92,7 +92,7 @@ module.exports = {
     },
 
     testResourceStringConstructorRightContents: function(test) {
-        test.expect(5);
+        test.expect(7);
 
         var rs = new ResourceString({
         	key: "asdf",
@@ -113,7 +113,7 @@ module.exports = {
     },
     
     testResourceStringConstructorSourceTargetRightContents: function(test) {
-        test.expect(5);
+        test.expect(7);
 
         var rs = new ResourceString({
         	key: "asdf",
@@ -484,7 +484,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("en-GB", rb);
 
         test.ok(rs2);
-        test.ok(rs2.getLocale(), "en-GB");
+        test.ok(rs2.getTargetLocale(), "en-GB");
         
         test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
 
@@ -518,7 +518,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("en-ZA", rb);
 
         test.ok(rs2);
-        test.ok(rs2.getLocale(), "en-ZA");
+        test.ok(rs2.getTargetLocale(), "en-ZA");
         
         test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
         
@@ -551,7 +551,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("en-CA", rb);
 
         test.ok(rs2);
-        test.ok(rs2.getLocale(), "en-CA");
+        test.ok(rs2.getTargetLocale(), "en-CA");
         
         test.equal(rs2.getTarget(), "I colour my chequebooks and localize them.");
         
@@ -599,7 +599,7 @@ module.exports = {
         var rs2 = rs.generatePseudo("zh-Hant-TW", rb);
 
         test.ok(rs2);
-        test.ok(rs2.getLocale(), "zh-Hant-TW");
+        test.ok(rs2.getTargetLocale(), "zh-Hant-TW");
 
         test.equal(rs2.getTarget(), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
         
@@ -755,7 +755,7 @@ module.exports = {
             key: "asdf",
             source: "This is a test",
             targetLocale: "de-DE",
-            target: "Eine Test",
+            target: "Einen Test!",
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
@@ -767,7 +767,7 @@ module.exports = {
         	sourceLocale: "en-US",
             key: "asdf",
             source: "This is a test",
-            targetLocale: "de-DE",
+            targetLocale: "de-AT",
             target: "Einen Test!",
             pathName: "a/b/c.java",
             comment: "foobar foo",
