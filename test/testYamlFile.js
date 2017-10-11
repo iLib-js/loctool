@@ -18,8 +18,8 @@
  */
 
 if (!YamlFile) {
-	var YamlFile = require("../lib/YamlFile.js");
-	var YamlFileType = require("../lib/YamlFileType.js");
+    var YamlFile = require("../lib/YamlFile.js");
+    var YamlFileType = require("../lib/YamlFileType.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -28,27 +28,27 @@ if (!YamlFile) {
 }
 
 function diff(a, b) {
-	var min = Math.min(a.length, b.length);
+    var min = Math.min(a.length, b.length);
 
-	for (var i = 0; i < min; i++) {
-		if (a[i] !== b[i]) {
-			console.log("Found difference at character " + i);
-			console.log("a: " + a.substring(i));
-			console.log("b: " + b.substring(i));
-			break;
-		}
-	}
+    for (var i = 0; i < min; i++) {
+        if (a[i] !== b[i]) {
+            console.log("Found difference at character " + i);
+            console.log("a: " + a.substring(i));
+            console.log("b: " + b.substring(i));
+            break;
+        }
+    }
 }
 
 var p = new WebProject({
-	id: "webapp",
-	sourceLocale: "en-US",
-	resourceDirs: {
-		yml: "a/b"
-	}
+    id: "webapp",
+    sourceLocale: "en-US",
+    resourceDirs: {
+        yml: "a/b"
+    }
 }, "./testfiles", {
-	locales:["en-GB"],
-	nopseudo: true
+    locales:["en-GB"],
+    nopseudo: true
 });
 
 var yft = new YamlFileType(p);
@@ -68,8 +68,8 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
-        	pathName: "x/y/en-US.yml"
+            type: yft,
+            pathName: "x/y/en-US.yml"
         });
         test.ok(y);
 
@@ -82,8 +82,8 @@ module.exports = {
         test.expect(2);
 
         var y = new YamlFile({
-        	project: p,
-			type: yft,
+            project: p,
+            type: yft,
             pathName: "foo/bar/x.yml"
         });
         test.ok(y);
@@ -97,25 +97,25 @@ module.exports = {
         test.expect(6);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'Jobs: Jobs\n' +
-        		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'  directly from experienced, successful entrepreneurs.\n' +
-        		'Working_at_MyCompany: Working at My Company, Inc.\n');
+                'Jobs: Jobs\n' +
+                'Our_internship_program: Our internship program\n' +
+                '? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+                ': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '  directly from experienced, successful entrepreneurs.\n' +
+                'Working_at_MyCompany: Working at My Company, Inc.\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
 
         var r = set.getBy({
-        	reskey: "Jobs"
+            reskey: "Jobs"
         });
         test.ok(r);
 
@@ -130,27 +130,27 @@ module.exports = {
         test.expect(28);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse(
-        		'---\n' +
-        		"'foo/bar/x.en-US.html.haml':\n" +
-        		'  r9834724545: Jobs\n' +
-        		'  r9483762220: Our internship program\n' +
-        		'  r6782977423: |\n' +
-        		'    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'    directly from experienced, successful entrepreneurs.\n' +
-				"'foo/ssss/asdf.en-US.html.haml':\n" +
-				'  r4524523454: Working at MyCompany\n' +
-				'  r3254356823: Jobs\n' +
-				'foo:\n' +
-				'  bar:\n' +
-				'    asdf:\n' +
-				'      test: test of many levels\n');
+                '---\n' +
+                "'foo/bar/x.en-US.html.haml':\n" +
+                '  r9834724545: Jobs\n' +
+                '  r9483762220: Our internship program\n' +
+                '  r6782977423: |\n' +
+                '    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '    directly from experienced, successful entrepreneurs.\n' +
+                "'foo/ssss/asdf.en-US.html.haml':\n" +
+                '  r4524523454: Working at MyCompany\n' +
+                '  r3254356823: Jobs\n' +
+                'foo:\n' +
+                '  bar:\n' +
+                '    asdf:\n' +
+                '      test: test of many levels\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -171,9 +171,9 @@ module.exports = {
         test.equal(r[1].getContext(), "foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(),
-        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'directly from experienced, successful entrepreneurs.\n');
+                'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "foo/bar/x.en-US.html.haml");
@@ -200,28 +200,28 @@ module.exports = {
         test.expect(28);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse(
-        		'---\n' +
-        		"zh_Hans_CN:\n" +
-        		"  foo/bar/x.en-US.html.haml:\n" +
-        		'    r9834724545: Jobs\n' +
-        		'    r9483762220: Our internship program\n' +
-        		'    r6782977423: |\n' +
-        		'      Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'      directly from experienced, successful entrepreneurs.\n' +
-				"  foo/ssss/asdf.en-US.html.haml:\n" +
-				'    r4524523454: Working at MyCompany\n' +
-				'    r3254356823: Jobs\n' +
-				'  foo:\n' +
-				'    bar:\n' +
-				'      asdf:\n' +
-				'        test: test of many levels\n');
+                '---\n' +
+                "zh_Hans_CN:\n" +
+                "  foo/bar/x.en-US.html.haml:\n" +
+                '    r9834724545: Jobs\n' +
+                '    r9483762220: Our internship program\n' +
+                '    r6782977423: |\n' +
+                '      Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '      directly from experienced, successful entrepreneurs.\n' +
+                "  foo/ssss/asdf.en-US.html.haml:\n" +
+                '    r4524523454: Working at MyCompany\n' +
+                '    r3254356823: Jobs\n' +
+                '  foo:\n' +
+                '    bar:\n' +
+                '      asdf:\n' +
+                '        test: test of many levels\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -243,9 +243,9 @@ module.exports = {
         test.equal(r[1].getContext(), "zh_Hans_CN@foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(),
-        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'directly from experienced, successful entrepreneurs.\n');
+                'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "en-US");
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "zh_Hans_CN@foo/bar/x.en-US.html.haml");
@@ -272,23 +272,23 @@ module.exports = {
         test.expect(24);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse(
-			'duration:\n' +
-			'  top_header: Refine Your Query\n' +
-			'  header:\n' +
-			'    person: "%ACK_SAMPLE%"\n' +
-			'    subaccount: "%ACK_SAMPLE%" \n' + 
-			'  variations:\n' +
-			'    person: "A %NAME% name?"\n' +
-			'    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' + 
-			'    asdf:\n' +
-			'      a: x y z\n' +
-			'      c: a b c\n'
+            'duration:\n' +
+            '  top_header: Refine Your Query\n' +
+            '  header:\n' +
+            '    person: "%ACK_SAMPLE%"\n' +
+            '    subaccount: "%ACK_SAMPLE%" \n' + 
+            '  variations:\n' +
+            '    person: "A %NAME% name?"\n' +
+            '    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' + 
+            '    asdf:\n' +
+            '      a: x y z\n' +
+            '      c: a b c\n'
         );
 
         var set = yml.getTranslationSet();
@@ -332,22 +332,22 @@ module.exports = {
         test.expect(4);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
         yml.parse(
-        		'Working_at_MyCompany: Working at MyCompany\n' +
-        		'Jobs: Jobs\n' +
-        		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-        		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'  directly from experienced, successful entrepreneurs.\n');
+                'Working_at_MyCompany: Working at MyCompany\n' +
+                'Jobs: Jobs\n' +
+                'Our_internship_program: Our internship program\n' +
+                '? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+                ': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '  directly from experienced, successful entrepreneurs.\n');
 
         test.ok(set);
 
@@ -360,21 +360,21 @@ module.exports = {
         test.expect(18);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
         yml.parse(
-        		'---\n' +
-        		'Jobs:\n' +
-        		'  - one\n' +
-        		'  - two\n' +
-        		'  - three\n' +
-        		'  - four\n');
+                '---\n' +
+                'Jobs:\n' +
+                '  - one\n' +
+                '  - two\n' +
+                '  - three\n' +
+                '  - four\n');
 
         test.ok(set);
 
@@ -409,44 +409,44 @@ module.exports = {
         test.expect(15);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
         yml.parse(
-        		'---\n' +
-        		'options:\n' +
-        	    '  - name: attention\n' +
-        	    '    display_value: Usually requires immediate attention\n' +
-        		'    color: red\n' +
-        		'    bars_count: 5\n' +
-        	    '    action_options:\n' +
-        		'    - :emergency\n' +   // should ignore these
-        		'    - :see_support_rep\n' +
-        		'    - :find_sales_person\n' +
-        		'    - :ask_free_question\n' +
-        		'    - :learn_more\n' +
-        		'  - name: urgent-consult\n' +
-        		'    display_value: Usually requires an immediate sales person attention\n' +
-        		'    color: orange\n' +
-        		'    bars_count: 4\n' +
-        		'    care_options:\n' +
-        		'    - :see_support_rep\n' +
-        		'    - :find_sales_persopn\n' +
-        		'    - :learn_more\n' +
-        		'    - :emergency\n' +
-        		'    - :ask_free_question\n' +
-        		'exploring_options:\n' +
-        		'  - :learn_more\n' +
-        		'  - :take_action\n' +
-        		'  - :ask_free_question\n' +
-        		'  - :see_support_rep\n' +
-        		'  - :find_sales_person\n' +
-        		'  - :emergency\n\n');
+                '---\n' +
+                'options:\n' +
+                '  - name: attention\n' +
+                '    display_value: Usually requires immediate attention\n' +
+                '    color: red\n' +
+                '    bars_count: 5\n' +
+                '    action_options:\n' +
+                '    - :emergency\n' +   // should ignore these
+                '    - :see_support_rep\n' +
+                '    - :find_sales_person\n' +
+                '    - :ask_free_question\n' +
+                '    - :learn_more\n' +
+                '  - name: urgent-consult\n' +
+                '    display_value: Usually requires an immediate sales person attention\n' +
+                '    color: orange\n' +
+                '    bars_count: 4\n' +
+                '    care_options:\n' +
+                '    - :see_support_rep\n' +
+                '    - :find_sales_persopn\n' +
+                '    - :learn_more\n' +
+                '    - :emergency\n' +
+                '    - :ask_free_question\n' +
+                'exploring_options:\n' +
+                '  - :learn_more\n' +
+                '  - :take_action\n' +
+                '  - :ask_free_question\n' +
+                '  - :see_support_rep\n' +
+                '  - :find_sales_person\n' +
+                '  - :emergency\n\n');
 
         test.ok(set);
 
@@ -477,14 +477,14 @@ module.exports = {
         test.expect(3);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'Working_at_MyCompany: Working_at_MyCompany\n' +
-        		'Jobs: Jobs_Report\n');
+                'Working_at_MyCompany: Working_at_MyCompany\n' +
+                'Jobs: Jobs_Report\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -498,14 +498,14 @@ module.exports = {
         test.expect(3);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'a: :foo\n' +
-        		'b: :bar\n');
+                'a: :foo\n' +
+                'b: :bar\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -519,14 +519,14 @@ module.exports = {
         test.expect(3);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         yml.parse('---\n' +
-        		'a: ":foo"\n' +
-        		'b: ":bar"\n');
+                'a: ":foo"\n' +
+                'b: ":bar"\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -540,9 +540,9 @@ module.exports = {
         test.expect(14);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./test.yml"
+            project: p,
+            type: yft,
+            pathName: "./test.yml"
         });
         test.ok(yml);
 
@@ -554,7 +554,7 @@ module.exports = {
         test.equal(set.size(), 10);
 
         var r = set.getBy({
-        	reskey: "Marketing"
+            reskey: "Marketing"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Marketing");
@@ -562,7 +562,7 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
+            reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
@@ -570,7 +570,7 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "Learn_by_contributing_to_a_venture_that_will_change_the_world"
+            reskey: "Learn_by_contributing_to_a_venture_that_will_change_the_world"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "Learn by contributing to a venture that will change the world");
@@ -584,9 +584,9 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-			project: p,
-			type: yft
-		});
+            project: p,
+            type: yft
+        });
         test.ok(yml);
 
         // should attempt to read the file and not fail
@@ -603,9 +603,9 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./objc/en.lproj/asdf.yml"
+            project: p,
+            type: yft,
+            pathName: "./objc/en.lproj/asdf.yml"
         });
         test.ok(yml);
 
@@ -623,40 +623,40 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./asdf.yml",
-        	locale: "de-DE"
+            project: p,
+            type: yft,
+            pathName: "./asdf.yml",
+            locale: "de-DE"
         });
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "de-DE",
-        		key: "source_text",
-        		source: "Quellen\"text",
-        		comment: "foo"
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "de-DE",
-        		key: "more_source_text",
-        		source: "mehr Quellen\"text",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                locale: "de-DE",
+                key: "source_text",
+                source: "Quellen\"text",
+                comment: "foo"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                locale: "de-DE",
+                key: "more_source_text",
+                source: "mehr Quellen\"text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	yml.addResource(res);
+            yml.addResource(res);
         });
 
         diff(yml.getContent(),
-           	'more_source_text: mehr Quellen\"text\n' +
-    		'source_text: Quellen\"text\n'
+               'more_source_text: mehr Quellen\"text\n' +
+            'source_text: Quellen\"text\n'
         );
 
         test.equal(yml.getContent(),
-        	'more_source_text: mehr Quellen\"text\n' +
-           	'source_text: Quellen\"text\n'
+            'more_source_text: mehr Quellen\"text\n' +
+               'source_text: Quellen\"text\n'
         );
 
         test.done();
@@ -666,35 +666,35 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+            project: p,
+            type: yft,
+            pathName: "./zh.yml",
+            locale: "zh-Hans-CN"
         });
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "• &amp;nbsp; Address a particular topic",
-        		source: "• &amp;nbsp; 解决一个特定的主题",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
-        		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "• &amp;nbsp; Address a particular topic",
+                source: "• &amp;nbsp; 解决一个特定的主题",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
+                source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	yml.addResource(res);
+            yml.addResource(res);
         });
 
         var expected = 
-        	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
-        	"• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
+            "'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
+            "• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
         
         diff(yml.getContent(), expected);
 
@@ -707,38 +707,38 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+            project: p,
+            type: yft,
+            pathName: "./zh.yml",
+            locale: "zh-Hans-CN"
         });
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "short key",
-        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
-        		source: "short text",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "short key",
+                source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
+                source: "short text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	yml.addResource(res);
+            yml.addResource(res);
         });
 
         var expected =
-	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n" +
-	    	"short key: |-\n" +
-	    	"  this is text that is relatively long and can run past the end of the page\n" +
-	    	"  So, we put a new line in the middle of it.\n";
-        	
+            "\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n" +
+            "short key: |-\n" +
+            "  this is text that is relatively long and can run past the end of the page\n" +
+            "  So, we put a new line in the middle of it.\n";
+            
         diff(yml.getContent(), expected);
 
         test.equal(yml.getContent(), expected);
@@ -750,41 +750,41 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./zh.yml",
-        	locale: "zh-Hans-CN"
+            project: p,
+            type: yft,
+            pathName: "./zh.yml",
+            locale: "zh-Hans-CN"
         });
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "key1",
-        		source: "medium length text that doesn't go beyond one line",
-        		context: "foo@bar",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		locale: "zh-Hans-CN",
-        		key: "key2",
-        		source: "short text",
-        		context: "foo@bar@asdf",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "key1",
+                source: "medium length text that doesn't go beyond one line",
+                context: "foo@bar",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                locale: "zh-Hans-CN",
+                key: "key2",
+                source: "short text",
+                context: "foo@bar@asdf",
+                comment: "bar"
+            })
         ].forEach(function(res) {
-        	yml.addResource(res);
+            yml.addResource(res);
         });
 
         var expected =
-	    	"foo:\n" +
-	    	"  bar:\n" +
-	    	"    asdf:\n" +
-	    	"      key2: short text\n" +
-	    	"    key1: medium length text that doesn't go beyond one line\n";
-        	
+            "foo:\n" +
+            "  bar:\n" +
+            "    asdf:\n" +
+            "      key2: short text\n" +
+            "    key1: medium length text that doesn't go beyond one line\n";
+            
         diff(yml.getContent(), expected);
 
         test.equal(yml.getContent(), expected);
@@ -796,10 +796,10 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./asdf.yml",
-        	locale: "de-DE"
+            project: p,
+            type: yft,
+            pathName: "./asdf.yml",
+            locale: "de-DE"
         });
         test.ok(yml);
 
@@ -812,20 +812,20 @@ module.exports = {
         test.expect(5);
 
         var p = new WebProject({
-        	id: "webapp",
-			sourceLocale: "en-US",
-        	resourceDirs: {
-        		yml: "a/b"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./test.yml",
-        	locale: "en-US"
+            project: p,
+            type: yft,
+            pathName: "./test.yml",
+            locale: "en-US"
         });
         test.ok(yml);
 
@@ -847,10 +847,10 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./test2.yml",
-        	locale: "en-US"
+            project: p,
+            type: yft,
+            pathName: "./test2.yml",
+            locale: "en-US"
         });
         test.ok(yml);
 
@@ -874,10 +874,10 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./test2.yml",
-        	locale: "en-US"
+            project: p,
+            type: yft,
+            pathName: "./test2.yml",
+            locale: "en-US"
         });
         test.ok(yml);
 
@@ -901,10 +901,10 @@ module.exports = {
         test.expect(4);
 
         var yml = new YamlFile({
-        	project: p,
-			type: yft,
-        	pathName: "./test2.yml",
-        	locale: "en-US"
+            project: p,
+            type: yft,
+            pathName: "./test2.yml",
+            locale: "en-US"
         });
         test.ok(yml);
 
@@ -922,69 +922,69 @@ module.exports = {
     },
 
     testYamlFileParseIgnoreNonStringValues: function(test) {
-    	test.expect(20);
+        test.expect(20);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
-    	yml.parse(
-			'---\n' +
-			'credit_card_expired:\n' +
-			'  subject: "ALERT: Your %1 credit card has expired"\n' +
-			'  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
-			'  ctoa: \'Update credit card info\'\n' +
-			'  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
-			'  global_link: member_settings\n' +
-			'  sms_data: ""\n' +
-			'  setting_name: credit_card_updates\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  night_blackout: true\n'
-    	);
+        yml.parse(
+            '---\n' +
+            'credit_card_expired:\n' +
+            '  subject: "ALERT: Your %1 credit card has expired"\n' +
+            '  body: \'Add your updated credit card information to resume using your account without further disruption.\'\n' +
+            '  ctoa: \'Update credit card info\'\n' +
+            '  push_data: "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption"\n' +
+            '  global_link: member_settings\n' +
+            '  sms_data: ""\n' +
+            '  setting_name: credit_card_updates\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  night_blackout: true\n'
+        );
 
-    	var set = yml.getTranslationSet();
-    	test.ok(set);
+        var set = yml.getTranslationSet();
+        test.ok(set);
 
-    	var r = set.getAll();
-    	test.ok(r);
+        var r = set.getAll();
+        test.ok(r);
 
-    	test.equal(r.length, 4);
+        test.equal(r.length, 4);
 
-    	test.equal(r[0].getSource(), "ALERT: Your %1 credit card has expired");
-    	test.equal(r[0].getLocale(), "en-US");
-    	test.equal(r[0].getKey(), "subject");
-    	test.equal(r[0].getContext(), "credit_card_expired");
+        test.equal(r[0].getSource(), "ALERT: Your %1 credit card has expired");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "subject");
+        test.equal(r[0].getContext(), "credit_card_expired");
 
-    	test.equal(r[1].getSource(), "Add your updated credit card information to resume using your account without further disruption.");
-    	test.equal(r[1].getLocale(), "en-US");
-    	test.equal(r[1].getKey(), "body");
-    	test.equal(r[1].getContext(), "credit_card_expired");
+        test.equal(r[1].getSource(), "Add your updated credit card information to resume using your account without further disruption.");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "body");
+        test.equal(r[1].getContext(), "credit_card_expired");
 
-    	test.equal(r[2].getSource(), 'Update credit card info');
-    	test.equal(r[2].getLocale(), "en-US");
-    	test.equal(r[2].getKey(), "ctoa");
-    	test.equal(r[2].getContext(), "credit_card_expired");
+        test.equal(r[2].getSource(), 'Update credit card info');
+        test.equal(r[2].getLocale(), "en-US");
+        test.equal(r[2].getKey(), "ctoa");
+        test.equal(r[2].getContext(), "credit_card_expired");
 
-    	test.equal(r[3].getSource(), "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption");
-    	test.equal(r[3].getLocale(), "en-US");
-    	test.equal(r[3].getKey(), "push_data");
-    	test.equal(r[3].getContext(), "credit_card_expired");
+        test.equal(r[3].getSource(), "ALERT: Your %1 credit card has expired. Add your updated credit card information to resume using your account without further disruption");
+        test.equal(r[3].getLocale(), "en-US");
+        test.equal(r[3].getKey(), "push_data");
+        test.equal(r[3].getContext(), "credit_card_expired");
 
-    	test.done();
+        test.done();
     },
 
     testYamlFileParseIgnoreStringLikeIdValues: function(test) {
-    	test.expect(4);
+        test.expect(4);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
-    	yml.parse(
+        yml.parse(
             '---\n' +
             'credit_card_expired:\n' +
             '  subject: "ALERT: Your %1 credit card has expired"\n' +
@@ -996,30 +996,30 @@ module.exports = {
             '  setting_name: credit_card_updates\n' +
             '  daily_limit_exception_email: true\n' +
             '  night_blackout: true\n'
-    	);
+        );
 
-    	var set = yml.getTranslationSet();
-    	test.ok(set);
+        var set = yml.getTranslationSet();
+        test.ok(set);
 
-    	var r = set.getBy({
-    		reskey: "global_link"
-    	});
-    	test.ok(r);
-    	test.equal(r.length, 0);
+        var r = set.getBy({
+            reskey: "global_link"
+        });
+        test.ok(r);
+        test.equal(r.length, 0);
 
-    	test.done();
+        test.done();
     },
 
     testYamlFileParseIgnoreBooleanValues: function(test) {
-    	test.expect(4);
+        test.expect(4);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
-    	yml.parse(
+        yml.parse(
             '---\n' +
             'credit_card_expired:\n' +
             '  subject: "ALERT: Your %1 credit card has expired"\n' +
@@ -1031,30 +1031,30 @@ module.exports = {
             '  setting_name: credit_card_updates\n' +
             '  daily_limit_exception_email: true\n' +
             '  night_blackout: true\n'
-    	);
+        );
 
-    	var set = yml.getTranslationSet();
-    	test.ok(set);
+        var set = yml.getTranslationSet();
+        test.ok(set);
 
-    	var r = set.getBy({
-    		reskey: "night_blackout"
-    	});
-    	test.ok(r);
-    	test.equal(r.length, 0);
+        var r = set.getBy({
+            reskey: "night_blackout"
+        });
+        test.ok(r);
+        test.equal(r.length, 0);
 
-    	test.done();
+        test.done();
     },
 
     testYamlFileParseIgnoreEmptyValues: function(test) {
-    	test.expect(4);
+        test.expect(4);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
-    	yml.parse(
+        yml.parse(
             '---\n' +
             'credit_card_expired:\n' +
             '  subject: "ALERT: Your %1 credit card has expired"\n' +
@@ -1066,30 +1066,30 @@ module.exports = {
             '  setting_name: credit_card_updates\n' +
             '  daily_limit_exception_email: true\n' +
             '  night_blackout: true\n'
-    	);
+        );
 
-    	var set = yml.getTranslationSet();
-    	test.ok(set);
+        var set = yml.getTranslationSet();
+        test.ok(set);
 
-    	var r = set.getBy({
-    		reskey: "sms_data"
-    	});
-    	test.ok(r);
-    	test.equal(r.length, 0);
+        var r = set.getBy({
+            reskey: "sms_data"
+        });
+        test.ok(r);
+        test.equal(r.length, 0);
 
-    	test.done();
+        test.done();
     },
 
     testYamlFileParseIgnoreEmptyValues: function(test) {
-    	test.expect(4);
+        test.expect(4);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
-    	yml.parse(
+        yml.parse(
             '---\n' +
             'credit_card_expired:\n' +
             '  subject: "ALERT: Your %1 credit card has expired"\n' +
@@ -1102,40 +1102,40 @@ module.exports = {
             '  setting_name: credit_card_updates\n' +
             '  daily_limit_exception_email: true\n' +
             '  night_blackout: true\n'
-    	);
+        );
 
-    	var set = yml.getTranslationSet();
-    	test.ok(set);
+        var set = yml.getTranslationSet();
+        test.ok(set);
 
-    	var r = set.getBy({
-    		reskey: "expert_campaign"
-    	});
-    	test.ok(r);
-    	test.equal(r.length, 0);
+        var r = set.getBy({
+            reskey: "expert_campaign"
+        });
+        test.ok(r);
+        test.equal(r.length, 0);
 
-    	test.done();
+        test.done();
     },
 
     testYamlFileLocalizeText: function(test) {
         test.expect(7);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
         yml.parse(
-			'thanked_note_time_saved:\n' +
-			'  email_subject: \'%1, you’re saving time!\'\n' +
-			'  subject: You’ve been thanked for saving a colleague\'s time!\n' +
-			'  body: “%1”\n' +
-			'  ctoa: View %1\n' +
-			'  push_data: You’ve saved lots of time! View %1\n' +
-			'  global_link: generic_link\n' +
-			'  setting_name: thanked_note_time_saved\n' +
-			'  daily_limit_exception_email: true\n'
-		);
+            'thanked_note_time_saved:\n' +
+            '  email_subject: \'%1, you’re saving time!\'\n' +
+            '  subject: You’ve been thanked for saving a colleague\'s time!\n' +
+            '  body: “%1”\n' +
+            '  ctoa: View %1\n' +
+            '  push_data: You’ve saved lots of time! View %1\n' +
+            '  global_link: generic_link\n' +
+            '  setting_name: thanked_note_time_saved\n' +
+            '  daily_limit_exception_email: true\n'
+        );
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -1148,26 +1148,26 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ContextResourceString({
-        	project: "webapp",
-        	context: "thanked_note_time_saved",
-        	key: 'email_subject',
-        	source: '%1, vous économisez du temps!',
-        	locale: "fr-FR",
-        	datatype: "x-yaml"
+            project: "webapp",
+            context: "thanked_note_time_saved",
+            key: 'email_subject',
+            source: '%1, vous économisez du temps!',
+            locale: "fr-FR",
+            datatype: "x-yaml"
         }));
 
         var actual = yml.localizeText(translations, "fr-FR");
 
         var expected =
-			'thanked_note_time_saved:\n' +
-			'  body: “%1”\n' +
-			'  ctoa: View %1\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  email_subject: \'%1, vous économisez du temps!\'\n' +
-			'  global_link: generic_link\n' +
-			'  push_data: You’ve saved lots of time! View %1\n' +
-			'  setting_name: thanked_note_time_saved\n' +
-			'  subject: You’ve been thanked for saving a colleague\'s time!\n';
+            'thanked_note_time_saved:\n' +
+            '  body: “%1”\n' +
+            '  ctoa: View %1\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  email_subject: \'%1, vous économisez du temps!\'\n' +
+            '  global_link: generic_link\n' +
+            '  push_data: You’ve saved lots of time! View %1\n' +
+            '  setting_name: thanked_note_time_saved\n' +
+            '  subject: You’ve been thanked for saving a colleague\'s time!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -1178,23 +1178,23 @@ module.exports = {
     testYamlFileLocalizeTextMultiple: function(test) {
         test.expect(15);
 
-    	var yml = new YamlFile({
-    		project: p,
-			type: yft
-    	});
-    	test.ok(yml);
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
 
         yml.parse(
-			'thanked_note_time_saved:\n' +
-			'  email_subject: "%1, You\'re saving time!"\n' +
-			'  subject: "You’ve been thanked for saving a colleague\'s time!"\n' +
-			'  body: “%1”\n' +
-			'  ctoa: View %1\n' +
-			'  push_data: You\'ve saved time! View %1\n' +
-			'  global_link: generic_link\n' +
-			'  setting_name: thanked_note_time_saved\n' +
-			'  daily_limit_exception_email: true\n'
-		);
+            'thanked_note_time_saved:\n' +
+            '  email_subject: "%1, You\'re saving time!"\n' +
+            '  subject: "You’ve been thanked for saving a colleague\'s time!"\n' +
+            '  body: “%1”\n' +
+            '  ctoa: View %1\n' +
+            '  push_data: You\'ve saved time! View %1\n' +
+            '  global_link: generic_link\n' +
+            '  setting_name: thanked_note_time_saved\n' +
+            '  daily_limit_exception_email: true\n'
+        );
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -1219,44 +1219,44 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.addAll([
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'email_subject',
-	        	source: '%1, vous économisez du temps!',
-	        	locale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'subject',
-	        	source: 'Vous avez été remercié pour économiser du temps!',
-	        	locale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'push_data',
-	        	source: 'Vous avez économisé du temps! Voir %1',
-	        	locale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-	    ]);
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'email_subject',
+                source: '%1, vous économisez du temps!',
+                locale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'subject',
+                source: 'Vous avez été remercié pour économiser du temps!',
+                locale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'push_data',
+                source: 'Vous avez économisé du temps! Voir %1',
+                locale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+        ]);
 
         var actual = yml.localizeText(translations, "fr-FR");
 
         var expected =
-			'thanked_note_time_saved:\n' +
-			'  body: “%1”\n' +
-			'  ctoa: View %1\n' +
-			'  daily_limit_exception_email: true\n' +
-			'  email_subject: \'%1, vous économisez du temps!\'\n' +
-			'  global_link: generic_link\n' +
-			'  push_data: Vous avez économisé du temps! Voir %1\n' +
-			'  setting_name: thanked_note_time_saved\n' +
-			'  subject: Vous avez été remercié pour économiser du temps!\n';
+            'thanked_note_time_saved:\n' +
+            '  body: “%1”\n' +
+            '  ctoa: View %1\n' +
+            '  daily_limit_exception_email: true\n' +
+            '  email_subject: \'%1, vous économisez du temps!\'\n' +
+            '  global_link: generic_link\n' +
+            '  push_data: Vous avez économisé du temps! Voir %1\n' +
+            '  setting_name: thanked_note_time_saved\n' +
+            '  subject: Vous avez été remercié pour économiser du temps!\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -1269,7 +1269,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "foo/bar/x.yml"
         });
         test.ok(y);
@@ -1284,7 +1284,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft
+            type: yft
         });
         test.ok(y);
 
@@ -1298,7 +1298,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1312,7 +1312,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1327,7 +1327,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test.yml"
         });
         test.ok(y);
@@ -1342,7 +1342,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1359,7 +1359,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1385,7 +1385,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
@@ -1399,7 +1399,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1414,7 +1414,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test.yml"
         });
         test.ok(y);
@@ -1429,7 +1429,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1444,7 +1444,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test3.yml"
         });
         test.ok(y);
@@ -1459,7 +1459,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
@@ -1472,7 +1472,7 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
@@ -1489,12 +1489,12 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
         y.schema = {
-        	useLocalizedDirectories: true
+            useLocalizedDirectories: true
         };
         test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test2.yml');
         test.done();
@@ -1505,15 +1505,15 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
         y.schema = {
-        	useLocalizedDirectories: true,
-        	outputFilenameMapping: {
-        		'de-DE': './de.yml'
-        	}
+            useLocalizedDirectories: true,
+            outputFilenameMapping: {
+                'de-DE': './de.yml'
+            }
         };
         test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/de.yml');
         test.done();
@@ -1524,13 +1524,13 @@ module.exports = {
 
         var y = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./test2.yml"
         });
         test.ok(y);
         y.schema = {
             'outputFilenameMapping': {
-            	'de-DE': './de.yml'
+                'de-DE': './de.yml'
             },
             'useLocalizedDirectories': false
         };
@@ -1543,7 +1543,7 @@ module.exports = {
 
         var yml = new YamlFile({
             project: p,
-			type: yft,
+            type: yft,
             pathName: "./asdf.yml",
             locale: "de-DE"
         });
@@ -1568,10 +1568,10 @@ module.exports = {
         });
 
         var expected =
-	        "asdf:\n"+
-	        "  few: This is a different case\n" +
-	        "  one: This is singular\n" +
-	        "  two: This is double\n";
+            "asdf:\n"+
+            "  few: This is a different case\n" +
+            "  one: This is singular\n" +
+            "  two: This is double\n";
 
         diff(yml.getContent(),expected);
 

@@ -146,7 +146,7 @@ module.exports = {
             state: "new",
             context: "asdf",
             comment: "this is a comment",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -165,7 +165,7 @@ module.exports = {
         test.equal(reslist[0].getState(), "new");
         test.equal(reslist[0].getContext(), "asdf");
         test.equal(reslist[0].getComment(), "this is a comment");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
        
         test.done();
     },
@@ -185,7 +185,7 @@ module.exports = {
             state: "new",
             context: "asdf",
             comment: "this is a comment",
-            project: "webapp12"
+            project: "webapp"
         });
         
         test.equal(x.size(), 0);
@@ -208,7 +208,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -218,7 +218,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -234,7 +234,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
        
         test.done();
     },
@@ -251,7 +251,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -261,7 +261,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -282,7 +282,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -295,7 +295,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             comment: "blah blah blah",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -311,7 +311,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].getComment(), "blah blah blah");
        
         test.done();
@@ -330,7 +330,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -345,7 +345,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             comment: "blah blah blah",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -366,7 +366,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -379,7 +379,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             comment: "blah blah blah",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -420,7 +420,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12"
+            project: "webapp"
         });
         
         x.addResource(res);
@@ -431,7 +431,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -453,7 +453,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "source"
         });
         
@@ -464,7 +464,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "origin"
         });
         
@@ -625,7 +625,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "source"
         });
         
@@ -636,7 +636,7 @@ module.exports = {
             locale: "de-DE",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -647,7 +647,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "source"
         });
         
@@ -658,7 +658,7 @@ module.exports = {
             locale: "fr-FR",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -667,7 +667,7 @@ module.exports = {
         diff(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
@@ -675,7 +675,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
@@ -688,7 +688,7 @@ module.exports = {
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
@@ -696,7 +696,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
@@ -720,7 +720,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             comment: "foobar is where it's at!",
             origin: "source"
         });
@@ -732,7 +732,7 @@ module.exports = {
             locale: "de-DE",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -743,7 +743,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             comment: "come & enjoy it with us",
             origin: "source"
         });
@@ -755,7 +755,7 @@ module.exports = {
             locale: "fr-FR",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -764,7 +764,7 @@ module.exports = {
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
@@ -773,7 +773,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
@@ -805,7 +805,7 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "source"
         });
         
@@ -816,7 +816,7 @@ module.exports = {
             locale: "nl-NL",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -826,7 +826,7 @@ module.exports = {
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="webapp">\n' +
                 '    <header>\n' +
             	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
@@ -996,7 +996,7 @@ module.exports = {
             locale: "en-US",
             key: "huzzah &quot;asdf&quot; #(test)",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "source"
         });
         
@@ -1007,7 +1007,7 @@ module.exports = {
             locale: "de-DE",
             key: "huzzah &quot;asdf&quot; #(test)",
             pathName: "foo/bar/j.java",
-            project: "webapp12",
+            project: "webapp",
             origin: "target"
         });
         
@@ -1025,7 +1025,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="de-DE" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah &amp;quot;asdf&amp;quot; #(test)" restype="string" datatype="plaintext">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -1147,7 +1147,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
@@ -1174,7 +1174,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
       
@@ -1198,7 +1198,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -1236,7 +1236,7 @@ module.exports = {
         test.equal(reslist[2].getLocale(), "en-US");
         test.equal(reslist[2].getKey(), "huzzah");
         test.equal(reslist[2].getPath(), "foo/bar/j.java");
-        test.equal(reslist[2].getProject(), "webapp12");
+        test.equal(reslist[2].getProject(), "webapp");
         test.equal(reslist[2].resType, "string");
         test.equal(reslist[2].getId(), "2");
       
@@ -1244,7 +1244,7 @@ module.exports = {
         test.equal(reslist[3].getLocale(), "fr-FR");
         test.equal(reslist[3].getKey(), "huzzah");
         test.equal(reslist[3].getPath(), "foo/bar/j.java");
-        test.equal(reslist[3].getProject(), "webapp12");
+        test.equal(reslist[3].getProject(), "webapp");
         test.equal(reslist[3].resType, "string");
         test.equal(reslist[3].getId(), "2");
 
@@ -1267,7 +1267,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -1294,7 +1294,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
       
@@ -1643,7 +1643,7 @@ module.exports = {
         	    '      </trans-unit>\n' +
         	    '    </body>\n' +
         	    '  </file>\n' + 
-        	    '  <file original="foo/bar/j.java" source-language="en-US" product-name="webapp12">\n' +
+        	    '  <file original="foo/bar/j.java" source-language="en-US" product-name="webapp">\n' +
         	    '    <body>\n' +
         	    '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
         	    '        <source>baby baby</source>\n' +
@@ -1670,7 +1670,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getComment(), "Totally awesome.");
         test.equal(reslist[1].getId(), "2");
@@ -1694,7 +1694,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string" x-context="asdf">\n' +
                 '        <source>baby baby</source>\n' +
@@ -1722,7 +1722,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getContext(), "asdf");
@@ -1770,7 +1770,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -1790,7 +1790,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
@@ -1799,7 +1799,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "fr-FR");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "target");
@@ -1823,7 +1823,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -1852,7 +1852,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "source");
@@ -1869,7 +1869,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">bebe bebe</mrk></target>\n' +
@@ -1888,7 +1888,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
@@ -1897,7 +1897,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "fr-FR");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "target");
@@ -1914,7 +1914,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4"/></target>\n' +
@@ -1933,7 +1933,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
@@ -1950,7 +1950,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">This is segment 1.</mrk> <mrk mtype="seg" mid="5">This is segment 2.</mrk> <mrk mtype="seg" mid="6">This is segment 3.</mrk></target>\n' +
@@ -1969,7 +1969,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
@@ -1978,7 +1978,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "fr-FR");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "target");
@@ -1995,7 +1995,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="zh-Hans-CN" product-name="webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="zh-Hans-CN" product-name="webapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">This is segment 1.</mrk> <mrk mtype="seg" mid="5">This is segment 2.</mrk> <mrk mtype="seg" mid="6">This is segment 3.</mrk></target>\n' +
@@ -2014,7 +2014,7 @@ module.exports = {
         test.equal(reslist[0].getLocale(), "en-US");
         test.equal(reslist[0].getKey(), "huzzah");
         test.equal(reslist[0].getPath(), "foo/bar/j.java");
-        test.equal(reslist[0].getProject(), "webapp12");
+        test.equal(reslist[0].getProject(), "webapp");
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
@@ -2023,7 +2023,7 @@ module.exports = {
         test.equal(reslist[1].getLocale(), "zh-Hans-CN");
         test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "webapp12");
+        test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "target");
