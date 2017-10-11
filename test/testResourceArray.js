@@ -109,7 +109,7 @@ module.exports = {
         var ra = new ResourceArray({
         	key: "asdf",
         	sourceArray: ["This is a test", "This is also a test", "This is not"],
-        	sourceLocale: "de-DE",
+        	sourceLocale: "en-US",
         	targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."],
         	targetLocale: "de-DE",
         	pathName: "a/b/c.java"
@@ -253,7 +253,7 @@ module.exports = {
 
         var ra = new ResourceArray();
         test.ok(ra);
-        test.deepEqual(ra.getTargetArray(), []);
+        test.ok(!ra.getTargetArray());
         
         test.done();
     },
@@ -443,7 +443,7 @@ module.exports = {
         var ra2 = ra.generatePseudo("de-DE", rb);
 
         test.ok(ra2);
-        test.ok(ra2.getLocale(), "de-DE");
+        test.ok(ra2.getTargetLocale(), "de-DE");
         
         var strings = ra2.getTargetArray();
         
@@ -513,7 +513,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	sourceLocale: "en-GB",
+        	targetLocale: "en-GB",
         	type: "c"
         });
 
@@ -553,7 +553,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	sourceLocale: "en-ZA",
+        	targetLocale: "en-ZA",
         	type: "c"
         });
 
@@ -593,7 +593,7 @@ module.exports = {
 
         var rb = new PseudoFactory({
         	project: p,
-        	sourceLocale: "en-CA",
+        	targetLocale: "en-CA",
         	type: "c"
         });
 
@@ -637,14 +637,16 @@ module.exports = {
         translations.add(new ResourceArray({
         	project: "foo",
         	key: 'asdf',
-        	sourceArray: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
+        	sourceArray: ["How are you?", "What is the cruising speed of a swallow?？", "What? Do you mean a European swallow or an African swallow?"],
+            sourceLocale: "en-US",
+        	targetArray: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
         	pathName: "a/b/c.java",
-            sourceLocale: "zh-Hans-CN"
+            targetLocale: "zh-Hans-CN"
         }));
         
         var rb = new PseudoFactory({
         	project: p,
-        	locale: "zh-Hant-TW",
+        	targetLocale: "zh-Hant-TW",
         	type: "c",
         	set: translations
         });
@@ -666,12 +668,12 @@ module.exports = {
     },
 
     testResourceArrayClone: function(test) {
-        test.expect(10);
+        test.expect(12);
 
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	sourceLocale: "de-DE",
+        	sourceLocale: "en-US",
             key: "asdf",
             sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
@@ -700,7 +702,7 @@ module.exports = {
     },
     
     testResourceArrayCloneWithOverrides: function(test) {
-        test.expect(10);
+        test.expect(12);
 
         var ra = new ResourceArray({
         	project: "foo",
@@ -862,7 +864,7 @@ module.exports = {
         var ra = new ResourceArray({
         	project: "foo",
         	context: "blah",
-        	sourceLocale: "de-DE",
+        	sourceLocale: "en-US",
             key: "asdf",
             sourceArray: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java",
@@ -1046,7 +1048,7 @@ module.exports = {
 
         ra.addTarget(0, "foobar")
         
-        test.ok(!ra.getTarget(0));		// can't add a target without a source string
+        test.equal(ra.getTarget(0), "foobar");
         
         test.done();
     },
