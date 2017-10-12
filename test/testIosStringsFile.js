@@ -73,7 +73,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -100,7 +101,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -127,7 +129,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -155,7 +158,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -182,7 +186,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -206,7 +211,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -330,7 +336,8 @@ module.exports = {
 
         var strings = new IosStringsFile({
             project: p,
-            type: isft
+            type: isft,
+            locale: "en-US"
         });
         test.ok(strings);
 
@@ -462,7 +469,7 @@ module.exports = {
 
         [
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "de-DE",
                 key: "source\\ntext",
 				source: "source\\ntext",
@@ -472,7 +479,7 @@ module.exports = {
                 datatype: "x-swift"
             }),
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "de-DE",
                 key: "more source\\ntext",
 				source: "more source\\ntext",
@@ -482,7 +489,7 @@ module.exports = {
                 datatype: "x-swift"
             }),
             new ResourceString({
-                project: "ios",
+                project: "iosapp",
                 targetLocale: "de-DE",
                 key: "2V9-YN-vxb.normalTitlet",
 				source: "2V9-YN-vxb.normalTitlet",
@@ -495,14 +502,15 @@ module.exports = {
             strings.addResource(res);
         });
 
-        test.equal(strings.getContent(),
+        var expected = 
             '/* bar */\n' +
-            '"2V9-YN-vxb.normalTitlet" = "noch mehr Quellen text";\n\n',
+            '"2V9-YN-vxb.normalTitlet" = "noch mehr Quellen text";\n\n' +
             '/* bar */\n' +
             '"more source\\ntext" = "mehr Quellen text";\n\n' +
             '/* foo */\n' +
-            '"source\\ntext" = "Quellen text";\n'
-        );
+            '"source\\ntext" = "Quellen text";\n';
+        var actual = strings.getContent();
+        test.equal(actual, expected);
 
         test.done();
     },
@@ -576,12 +584,7 @@ module.exports = {
             '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
             '"MFI-qx-pQf.text" = "Are you a driver?";\n';
 
-        test.equal(strings.getContent(),
-            '/* this is the terms and conditions button label */\n' +
-            '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-            '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
-            '"MFI-qx-pQf.text" = "Are you a driver?";\n'
-        );
+        test.equal(strings.getContent(), y);
 
         test.done();
     }
