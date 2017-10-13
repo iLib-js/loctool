@@ -3079,6 +3079,7 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "webapp",
         	key: h.makeKey("This is a test."),
+        	source: "This is a test.",
         	target: "Ceci est un essai.",
         	targetLocale: "fr-FR",
         	datatype: hft.datatype,
@@ -3087,6 +3088,7 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "webapp",
         	key: h.makeKey("Bold text."),
+        	source: "Bold text.",
         	target: "Texte gras.",
         	targetLocale: "fr-FR",
         	datatype: hft.datatype,
@@ -3095,6 +3097,7 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "webapp",
         	key: h.makeKey("This should all be in one string."),
+        	source: "This should all be in one string.",
         	target: "Tout doit etre en une phrase.",
         	targetLocale: "fr-FR",
         	datatype: hft.datatype,
@@ -3110,7 +3113,7 @@ module.exports = {
         var resource = hft.modern.getClean(ResourceString.cleanHashKey("webapp", "fr-FR", key, "x-haml"));
         test.ok(resource);
 
-        test.equal(resource.getSource(), expected);
+        test.equal(resource.getTarget(), expected);
         test.equal(resource.reskey, key);
         
         test.done();
@@ -3285,8 +3288,8 @@ module.exports = {
         var resource = hft.modern.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
         test.ok(resource);
         
-        diff(resource.text, expected);
-        test.equal(resource.text, expected);
+        diff(resource.getTarget(), expected);
+        test.equal(resource.getTarget(), expected);
         
         test.done();
     },
@@ -3336,8 +3339,8 @@ module.exports = {
         var resource = hft.newres.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
         test.ok(resource);
         
-        diff(resource.text, expected);
-        test.equal(resource.text, expected);
+        diff(resource.getTarget(), expected);
+        test.equal(resource.getTarget(), expected);
         
         test.done();
     },
@@ -5128,7 +5131,7 @@ module.exports = {
     },
     
     testHamlFileLocalizeTextNewResIsCorrect: function(test) {
-        test.expect(7);
+        test.expect(8);
 
         var h = new HamlFile({
             project: p,
@@ -5202,15 +5205,16 @@ module.exports = {
         diff(actual, expected);
         test.equal(actual, expected);
 
-        test.equal(hft.newres.size(), 2);
+        test.equal(hft.newres.size(), 1);
         
         var resource = hft.newres.getClean(
             ResourceString.cleanHashKey(
                     p.getProjectId(), "fr-FR", h.makeKey("Type your organization's own values to estimate your ROI"), "x-haml"));
         
         test.ok(resource);
-        test.equal(resource.origin, "target");
         test.equal(resource.getSource(), "Type your organization's own values to estimate your ROI");
+        test.equal(resource.getTarget(), "Type your organization's own values to estimate your ROI");
+        test.equal(resource.getTargetLocale(), "fr-FR");
 
         test.done();
     },
