@@ -40,7 +40,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("traveler"), "traveller");
@@ -53,7 +53,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
@@ -66,7 +66,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
@@ -79,7 +79,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler."), "I am a traveller.");
@@ -92,7 +92,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("globalization"), "globalisation");
@@ -105,7 +105,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         // in British English, it is "kilogramme"
@@ -119,7 +119,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         
@@ -134,7 +134,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("Globalization"), "Globalisation");
@@ -147,7 +147,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("GLOBALIZATION"), "GLOBALISATION");
@@ -160,7 +160,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("I'm not about to retire"), "I'm not about to retire"); // no translation
@@ -173,7 +173,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
@@ -186,7 +186,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "java"
 		});
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
@@ -199,7 +199,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "javascript"
 		});
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
@@ -212,7 +212,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "html"
 		});
         test.equal(pb.getString("Skip the unflavored <span name=\"estrogen\">supplements</a>."), "Skip the unflavoured <span name=\"estrogen\">supplements</a>.");
@@ -225,7 +225,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "xml"
 		});
         test.equal(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>."), "Skip the unflavoured <source id=\"estrogen\">supplements</source>.");
@@ -238,7 +238,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "template"
 		});
         test.equal(pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements.");
@@ -251,7 +251,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "ruby"
 		});
         test.equal(pb.getString("Skip the unflavored %{estrogen} #{estrogen} supplements."), "Skip the unflavoured %{estrogen} #{estrogen} supplements.");
@@ -264,7 +264,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {oestrogen} supplements.");
@@ -311,7 +311,7 @@ module.exports = {
         var pb = PseudoFactory({
         	set: translations,
         	project: project,
-			locale: "en-NZ",
+			targetLocale: "en-NZ",
 			type: "text"
 		});
         
