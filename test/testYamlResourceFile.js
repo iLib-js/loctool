@@ -229,17 +229,17 @@ module.exports = {
         
         test.equal(r.length, 6);
         
-        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getTarget(), "Jobs");
         test.equal(r[0].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[0].getKey(), "r9834724545");
         test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getTarget(), "Our internship program");
         test.equal(r[1].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getSource(), 
+        test.equal(r[2].getTarget(), 
         		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
@@ -247,17 +247,17 @@ module.exports = {
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[3].getSource(), "Working at MyCompany");
+        test.equal(r[3].getTarget(), "Working at MyCompany");
         test.equal(r[3].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
-        test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getTarget(), "Jobs");
         test.equal(r[4].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[4].getKey(), "r3254356823");
         test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
-        test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getTarget(), "test of many levels");
         test.equal(r[5].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[5].getKey(), "test");
         test.equal(r[5].getContext(), "foo@bar@asdf");
