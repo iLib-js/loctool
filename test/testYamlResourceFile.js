@@ -95,7 +95,8 @@ module.exports = {
 
          var yml = new YamlResourceFile({
 			project: p,
-        	type: yft
+        	type: yft,
+        	locale: "en-US"
 		});
         test.ok(yml);
         
@@ -476,14 +477,14 @@ module.exports = {
         		project: "webapp",
         		targetLocale: "zh-Hans-CN",
         		key: "short key",
-        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+        		target: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
         	new ContextResourceString({
         		project: "webapp",
         		targetLocale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
-        		source: "short text",
+        		target: "short text",
         		comment: "bar"
         	})
         ].forEach(function(res) {
@@ -639,17 +640,15 @@ module.exports = {
         		project: "webapp",
         		targetLocale: "zh-Hans-CN",
         		key: "r24524524524",
-        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
-        		comment: " ",
-        		sourceHash: "r4352345234"
+        		target: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+        		comment: " "
         	}),
         	new ContextResourceString({
         		project: "webapp",
         		targetLocale: "zh-Hans-CN",
         		key: "r003425245",
-        		source: "short text",
-        		comment: "bar",
-        		sourceHash: "r8437477345"
+        		target: "short text",
+        		comment: "bar"
         	})
         ].forEach(function(res) {
         	yml.addResource(res);
@@ -684,9 +683,8 @@ module.exports = {
                 project: "webapp",
                 targetLocale: "zh-Hans-CN",
                 comment: "",
-                source: 'This is 1 test',
                 key: 'r186608186',
-                sourceStrings: {
+                targetStrings: {
                     'one' : 'This is 1 test',
                     'other' : 'There are %{count} tests'
                 }
@@ -723,9 +721,8 @@ module.exports = {
                 project: "webapp",
                 targetLocale: "zh-Hans-CN",
                 comment: "",
-                source: 'This is 1 test',
                 key: 'r186608186',
-                sourceStrings: {
+                targetStrings: {
                     'one' : 'This is 1 test',
                     'other' : 'There are %{count} tests'
                 }
@@ -734,9 +731,8 @@ module.exports = {
                 project: "webapp",
                 targetLocale: "zh-Hans-CN",
                 key: "r003425245",
-                source: "short text",
-                comment: "bar",
-                sourceHash: "r8437477345"
+                target: "short text",
+                comment: "bar"
             })
         ].forEach(function(res) {
             yml.addResource(res);
