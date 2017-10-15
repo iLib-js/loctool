@@ -302,5 +302,106 @@ module.exports = {
         test.ok(!htf.handles("foo/de.lproj/SignUpViewController.strings"));
 
         test.done();
-    }
+    },
+    
+    testIosStringsFileTypeGetResourceFilePathObjc: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	"resourceDirs": {
+        		"objc": "foo"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+
+        test.equal(htf.getResourceFilePath("de-DE", "asdf/bar/SourceFile.m", "objc"), "testfiles/foo/de.lproj/Localizable.strings");
+
+        test.done();
+    },
+
+    testIosStringsFileTypeGetResourceFilePathObjcSourceLocale: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	"resourceDirs": {
+        		"objc": "foo"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+
+        test.equal(htf.getResourceFilePath("en-US", "asdf/bar/SourceFile.m", "objc"), "testfiles/foo/en.lproj/Localizable.strings");
+
+        test.done();
+    },
+
+    testIosStringsFileTypeGetResourceFilePathXib: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	"resourceDirs": {
+        		"objc": "foo"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+
+        test.equal(htf.getResourceFilePath("de-DE", "asdf/bar/en.lproj/SourceFile.xib", "xib"), "testfiles/asdf/bar/de.lproj/SourceFile.strings");
+
+        test.done();
+    },
+
+    testIosStringsFileTypeGetResourceFilePathXibSourceLocale: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	"resourceDirs": {
+        		"objc": "foo"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+
+        test.equal(htf.getResourceFilePath("en-US", "asdf/bar/en.lproj/SourceFile.xib", "xib"), "testfiles/asdf/bar/en.lproj/SourceFile.strings");
+
+        test.done();
+    },
+
+    testIosStringsFileTypeGetResourceFilePathXibUnknownLocale: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	"resourceDirs": {
+        		"objc": "foo"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+
+        test.equal(htf.getResourceFilePath(undefined, "asdf/bar/en-US.lproj/SourceFile.xib", "xib"), "testfiles/asdf/bar/en.lproj/SourceFile.strings");
+
+        test.done();
+    },
+    
 };
