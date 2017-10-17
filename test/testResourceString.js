@@ -628,7 +628,7 @@ module.exports = {
         test.equal(rs2.context, rs.context);
         test.equal(rs2.sourceLocale, rs.sourceLocale);
         test.equal(rs2.reskey, rs.reskey);
-        test.deepEqual(rs2.text, rs.text);
+        test.deepEqual(rs2.getSource(), rs.getSource());
         test.equal(rs2.pathName, rs.pathName);
         test.equal(rs2.comment, rs.comment);
         test.equal(rs2.state, rs.state);
@@ -637,7 +637,7 @@ module.exports = {
     },
     
     testResourceStringCloneWithOverrides: function(test) {
-        test.expect(12);
+        test.expect(13);
 
         var rs = new ResourceString({
         	project: "foo",
@@ -664,7 +664,8 @@ module.exports = {
         test.equal(rs2.context, rs.context);
         test.equal(rs2.sourceLocale, rs.sourceLocale);
         test.equal(rs2.reskey, rs.reskey);
-        test.deepEqual(rs2.text, rs.text);
+        test.deepEqual(rs2.getSource(), rs.getSource());
+        test.deepEqual(rs2.getTarget(), "Ceci est une teste.");
         test.equal(rs2.pathName, rs.pathName);
         test.equal(rs2.comment, rs.comment);
         test.equal(rs2.state, "asdfasdf");
