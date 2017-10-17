@@ -36,7 +36,7 @@ module.exports = {
             targetLocale: "zh-Hant-HK"
         });
         
-        test.equal(ph.getSourceLocale(), "en-US");
+        test.equal(ph.getSourceLocale(), "zh-Hans-CN");
         test.equal(ph.getTargetLocale(), "zh-Hant-HK");
         
         test.done();
