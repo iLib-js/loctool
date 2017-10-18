@@ -70,6 +70,21 @@ module.exports = {
         test.done();
     },
 
+    testBuildGradleGetFlavorsInSubdir: function(test) {
+        test.expect(2);
+
+        var bg = new BuildGradle({
+        	project: p,
+        	path: "gradle/build1.gradle"
+        });
+
+        test.ok(bg);
+        
+        test.deepEqual(bg.getFlavors(), ["a", "b", "c"]);
+
+        test.done();
+    },
+
     testBuildGradleGetFlavorsMissingSpace: function(test) {
         test.expect(2);
 
@@ -165,6 +180,24 @@ module.exports = {
         test.ok(res);
         test.equal(res.length, 1);
         test.equal(res[0], "flavors/xXx/res");
+
+        test.done();
+    },
+
+    testBuildGradleGetFlavorResInSubdir: function(test) {
+        test.expect(4);
+
+        var bg = new BuildGradle({
+        	project: p,
+        	path: "gradle/build1.gradle"
+        });
+
+        test.ok(bg);
+        
+        var res = bg.getFlavorRes("a");
+        test.ok(res);
+        test.equal(res.length, 1);
+        test.equal(res[0], "gradle/flavors/a/res");
 
         test.done();
     },
