@@ -25,19 +25,19 @@ android {
 	sourceSets {
         a {
             manifest.srcFile 'flavors/a/AndroidManifest.xml'
-            java.srcDirs = ['flavors/a/java']
+            java.srcDirs = ['flavors/a/src']
             res.srcDirs = ['flavors/a/res']
         }
 
         b {
             manifest.srcFile 'flavors/bproj/AndroidManifest.xml'
-            java.srcDirs = ['flavors/bproj/java']
+            java.srcDirs = ['flavors/bproj/src']
             res.srcDirs = ['flavors/bproj/res']
         }
 
         c {
             manifest.srcFile 'flavors/xXx/AndroidManifest.xml'
-            java.srcDirs = ['flavors/xXx/java']
+            java.srcDirs = ['flavors/xXx/src']
             res.srcDirs = ['flavors/xXx/res']
         }
 	}
