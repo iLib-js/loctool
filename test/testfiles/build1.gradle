@@ -1,0 +1,24 @@
+android {
+	productFlavors {
+		"a" {
+            applicationId aApplicationId
+            manifestPlaceholders = [
+                flavorName     : "vanilla"
+            ]
+		}
+		
+		"b" {
+            applicationId cApplicationId
+            manifestPlaceholders = [
+                flavorName     : "chocolate"
+            ]
+		}
+		
+		"c" {
+            applicationId cApplicationId
+            manifestPlaceholders = [
+                flavorName     : "cherry almond fudge"
+            ]
+		}
+	}
+}
