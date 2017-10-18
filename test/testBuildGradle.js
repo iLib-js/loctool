@@ -34,7 +34,9 @@ module.exports = {
     testBuildGradleConstructor: function(test) {
         test.expect(1);
 
-        var bg = new BuildGradle();
+        var bg = new BuildGradle({
+        	path: "testfiles/build1.gradle"
+        });
         test.ok(bg);
 
         test.done();
@@ -144,7 +146,7 @@ module.exports = {
         var res = bg.getFlavorRes("b");
         test.ok(res);
         test.equal(res.length, 1);
-        test.equal(res[0], "testfiles/flavors/b/res");
+        test.equal(res[0], "testfiles/flavors/bproj/res");
 
         test.done();
     },
@@ -162,7 +164,7 @@ module.exports = {
         var res = bg.getFlavorRes("c");
         test.ok(res);
         test.equal(res.length, 1);
-        test.equal(res[0], "testfiles/flavors/c/res");
+        test.equal(res[0], "testfiles/flavors/xXx/res");
 
         test.done();
     },
@@ -179,7 +181,7 @@ module.exports = {
         
         var res = bg.getFlavorRes("a");
         test.ok(res);
-        test.equal(res.length, 0);
+        test.equal(res.length, 1);
         test.equal(res[0], "testfiles/src/a/res");
 
         test.done();
@@ -216,7 +218,7 @@ module.exports = {
         var res = bg.getFlavorSrc("b");
         test.ok(res);
         test.equal(res.length, 1);
-        test.equal(res[0], "testfiles/flavors/b/src");
+        test.equal(res[0], "testfiles/flavors/bproj/src");
 
         test.done();
     },
@@ -234,7 +236,7 @@ module.exports = {
         var res = bg.getFlavorSrc("c");
         test.ok(res);
         test.equal(res.length, 1);
-        test.equal(res[0], "testfiles/flavors/c/src");
+        test.equal(res[0], "testfiles/flavors/xXx/src");
 
         test.done();
     },
@@ -251,7 +253,7 @@ module.exports = {
         
         var res = bg.getFlavorSrc("a");
         test.ok(res);
-        test.equal(res.length, 0);
+        test.equal(res.length, 1);
         test.equal(res[0], "testfiles/src/a/java");
 
         test.done();
