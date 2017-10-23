@@ -19,16 +19,7 @@
 
 if (!BuildGradle) {
     var BuildGradle = require("../lib/BuildGradle.js");
-    var AndroidProject =  require("../lib/AndroidProject.js");
 }
-
-var p = new AndroidProject({
-	id: "androidapp",
-	sourceLocale: "en-US",
-	pseudoLocale: "de-DE"
-}, "./testfiles", {
-	locales:["en-GB"]
-});
 
 module.exports = {
     testBuildGradleConstructor: function(test) {
@@ -46,7 +37,7 @@ module.exports = {
         test.expect(1);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -59,7 +50,7 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -74,7 +65,7 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "gradle/build1.gradle"
         });
 
@@ -89,7 +80,7 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build2.gradle"
         });
 
@@ -104,7 +95,7 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build3.gradle"
         });
 
@@ -119,7 +110,7 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "nonexistent.gradle"
         });
 
@@ -134,7 +125,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -152,7 +143,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -170,7 +161,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -188,7 +179,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "gradle/build1.gradle"
         });
 
@@ -206,7 +197,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build2.gradle"
         });
 
@@ -224,7 +215,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -242,7 +233,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -260,7 +251,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build1.gradle"
         });
 
@@ -278,7 +269,7 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	project: p,
+        	root: "./testfiles",
         	path: "build2.gradle"
         });
 

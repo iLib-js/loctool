@@ -825,7 +825,7 @@ module.exports = {
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html"), "crs_iosapp_foobar_de-DE_This is a test_html");
+        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html", "flavor"), "crs_iosapp_foobar_de-DE_This is a test_html_flavor");
         
         test.done();
     },
@@ -833,7 +833,7 @@ module.exports = {
     testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined), "crs___de-DE__");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined, undefined), "crs___de-DE___");
         
         test.done();
     },
@@ -852,7 +852,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_");
         
         test.done();
     },
