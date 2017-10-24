@@ -857,6 +857,46 @@ module.exports = {
         test.done();
     },
 
+    testContextResourceStringGetFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "a"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.getFlavor(), "a");
+        
+        test.done();
+    },
+
+    testContextResourceStringHashKeyWithFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "chocolate"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_chocolate");
+        
+        test.done();
+    },
+
     testIosLayoutResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
