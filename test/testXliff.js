@@ -539,6 +539,54 @@ module.exports = {
         test.done();
     },
 
+    testXliffSerializeWithFlavors: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            origin: "source",
+            flavor: "chocolate"
+        });
+        
+        x.addResource(res);
+
+        var res = new ContextResourceString({
+            source: "gutver",
+            locale: "nl-NL",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            origin: "target",
+            flavor: "chocolate"
+        });
+        
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+	        '<xliff version="1.2">\n' +
+	        '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="androidapp" x-flavor="chocolate">\n' +
+	        '    <body>\n' +
+	        '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+	        '        <source>Asdf asdf</source>\n' +
+	        '        <target>gutver</target>\n' +
+	        '      </trans-unit>\n' +
+	        '    </body>\n' +
+	        '  </file>\n' +
+	        '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);       
+        test.done();
+    },
+
     testXliffSerializeWithExplicitIds: function(test) {
         test.expect(2);
 
@@ -1729,7 +1777,61 @@ module.exports = {
       
         test.done();
     },
-    
+
+    testXliffDeserializeWithFlavors: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
+
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="androidapp" x-flavor="chocolate">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="x-android-resource" x-context="na na na">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="androidapp" x-flavor="vanilla">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="x-android-resource" x-context="asdf">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+        test.equal(reslist[0].getFlavor(), "chocolate");
+
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "androidapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getFlavor(), "vanilla");
+      
+        test.done();
+    },
+
     /*
     testXliffDeserializeRealFile: function(test) {
         test.expect(3);
@@ -2048,7 +2150,7 @@ module.exports = {
     },
 
     testXliffTranslationUnitConstructorEverythingCopied: function(test) {
-    	test.expect(10);
+    	test.expect(11);
     	
     	var tu = new TranslationUnit({
     		"source": "a", 
@@ -2059,7 +2161,8 @@ module.exports = {
     		"id": 2334,
     		"origin": "source",
     		"context": "asdfasdf",
-    		"comment": "this is a comment"
+    		"comment": "this is a comment",
+    		"flavor": "chocolate"
     	});
     	
     	test.ok(tu);
@@ -2073,6 +2176,7 @@ module.exports = {
     	test.equal(tu.origin, "source");
     	test.equal(tu.context, "asdfasdf");
     	test.equal(tu.comment, "this is a comment");
+    	test.equal(tu.flavor, "chocolate");
 
     	test.done();
     },
@@ -2396,7 +2500,8 @@ module.exports = {
     		"id": 2334,
     		"resType":"string",
     		"comment": "this is a comment",
-    		"datatype": "x-android-resource"
+    		"datatype": "x-android-resource",
+    		"flavor": "chocolate"
         }));
         
         x.addTranslationUnit(new TranslationUnit({
@@ -2411,7 +2516,8 @@ module.exports = {
     		"resType": "string",
     		"context": "x",
     		"comment": "this is a new comment",
-    		"datatype": "x-android-resource"
+    		"datatype": "x-android-resource",
+    		"flavor": "chocolate"
         }));
         
         var resources = x.getResources();
