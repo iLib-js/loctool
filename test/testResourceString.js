@@ -906,7 +906,7 @@ module.exports = {
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html"), "crs_iosapp_foobar_de-DE_This is a test_html");
+        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html", "flavor"), "crs_iosapp_foobar_de-DE_This is a test_html_flavor");
         
         test.done();
     },
@@ -914,7 +914,7 @@ module.exports = {
     testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined), "crs___de-DE__");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined, undefined), "crs___de-DE___");
         
         test.done();
     },
@@ -935,7 +935,47 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_");
+        
+        test.done();
+    },
+
+    testContextResourceStringGetFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "a"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.getFlavor(), "a");
+        
+        test.done();
+    },
+
+    testContextResourceStringHashKeyWithFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "chocolate"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_chocolate");
         
         test.done();
     },

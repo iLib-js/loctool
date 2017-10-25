@@ -467,7 +467,31 @@ limitations under the License.
 		<debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
 	</target>
 	
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant">
+	<target name="test.buildgradle" description="Run only the tests for the build gradle object">
+		<run script="${build.test}/testBuildGradle.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.buildgradle" description="Debug only the tests for the build gradle object">
+		<debug script="${build.test}/testBuildGradle.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.androidproject" description="Run only the tests for the Android project object">
+		<run script="${build.test}/testAndroidProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidproject" description="Debug only the tests for the Android project object">
+		<debug script="${build.test}/testAndroidProject.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.androidflavors" description="Run only the tests for the Android flavors object">
+		<run script="${build.test}/testAndroidFlavors.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidflavors" description="Debug only the tests for the Android flavors object">
+		<debug script="${build.test}/testAndroidFlavors.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors">
 	</target>
 
 	<macrodef name="runsql">

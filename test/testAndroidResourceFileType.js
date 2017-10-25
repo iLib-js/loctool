@@ -22,15 +22,29 @@ if (!AndroidResourceFileType) {
     var AndroidProject =  require("../lib/AndroidProject.js");
 }
 
+var settings = {
+    "locales": ["en-GB"],
+    "AndroidResourceFile": {
+        "alternateDirs": {
+            "zh-Hans-CN": ["-b+zh+Hans+HK"],
+            "zh-Hant-HK": ["-b+zh+Hant+HK", "-zh-rTW"]
+        },
+        "defaultLocales": {
+            "en": "en-US",
+            "es": "es-US",
+            "zh": "zh-Hans-CN"
+        }
+    },
+    "build.gradle": "build1.gradle"
+};
+
 module.exports = {
     testAndroidResourceFileTypeConstructor: function(test) {
         test.expect(1);
 
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
 
@@ -44,9 +58,7 @@ module.exports = {
 
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -64,9 +76,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -84,9 +94,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -104,9 +112,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -124,9 +130,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -144,9 +148,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -164,9 +166,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -184,9 +184,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -204,9 +202,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -224,9 +220,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -244,9 +238,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -264,9 +256,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -284,9 +274,7 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -304,15 +292,412 @@ module.exports = {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
+        }, "./testfiles", settings);
 
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
 
         test.ok(!alf.handles("android/res/values-en-rGB-foo/strings.xml"));
 
+        test.done();
+    },
+    
+    testAndroidResourceFileTypeGetResourceFileStrings: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "es-US", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-es/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFilePlurals: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "es-US", "plurals", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-es/plurals.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileArray: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "es-US", "arrays", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-es/arrays.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileEnglishUS: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "en-US", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileEnglishHK: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "en-HK", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-en-rHK/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileEnglishGB: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "en-GB", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-en-rGB/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileChineseSimp: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "zh-Hans-CN", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-zh/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileChineseTrad: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-zh-rHK/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileNotDefaultLocale: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "es-ES", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-es-rES/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileNoDefaultForLanguage: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("", "ko-KR", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-ko/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileEnglishWithContext: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("context", "en-US", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-context/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileSpanishWithContext: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("context", "es-US", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-es-context/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileChineseTradWithContext: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values-zh-rHK-context/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileInFlavorA: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/flavors/a/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileInFlavorB: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/bproj/src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/flavors/bproj/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileInFlavorC: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/xXx/src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/flavors/xXx/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileInFlavorALayout: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/res/layouts/testlayout.xml");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/flavors/a/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileNotInFlavorA: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/d/src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/android/res/values/strings.xml")
+        
+        test.done();
+    },
+
+    testAndroidResourceFileTypeGetResourceFileInFlavorAWithContextChineseTrad: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "java": "android/res"
+            }
+        }, "./testfiles", settings);
+
+        var alft = new AndroidResourceFileType(p);
+        test.ok(alft);
+
+        var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "testfiles/flavors/a/res/values-zh-rHK-context/strings.xml")
+        
         test.done();
     }
 };
