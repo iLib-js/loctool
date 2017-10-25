@@ -590,23 +590,13 @@ module.exports = {
 
         var res = new ContextResourceString({
             source: "Asdf asdf",
-            locale: "en-US",
+            sourceLocale: "en-US",
+            target: "gutver",
+            targetLocale: "nl-NL",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "androidapp",
             origin: "source",
-            flavor: "chocolate"
-        });
-
-        x.addResource(res);
-
-        var res = new ContextResourceString({
-            source: "gutver",
-            locale: "nl-NL",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "androidapp",
-            origin: "target",
             flavor: "chocolate"
         });
 
@@ -1844,8 +1834,6 @@ module.exports = {
         test.done();
     },
 
-(??)
-    /*
     testXliffDeserializeRealFile: function(test) {
         test.expect(3);
 
@@ -1854,7 +1842,7 @@ module.exports = {
 
         var fs = require("fs");
 
-        var str = fs.readFileSync("/Users/edwinhoogerbeets/src/iosapp/en-US.xliff", "utf-8");
+        var str = fs.readFileSync("testfiles/test.xliff", "utf-8");
 
         x.deserialize(str);
 
@@ -1862,11 +1850,10 @@ module.exports = {
 
         test.ok(reslist);
 
-        test.equal(reslist.length, 3757);
+        test.equal(reslist.length, 2);
 
         test.done();
-    }
-    */
+    },
 
     testXliffDeserializeEmptySource: function(test) {
         test.expect(12);

@@ -994,7 +994,7 @@ module.exports = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_en-US_This is a test_html");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_en-US_This is a test_html_");
 
         test.done();
     },
