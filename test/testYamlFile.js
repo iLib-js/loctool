@@ -388,19 +388,19 @@ module.exports = {
         test.equal(r[0].getSource(), "one");
         test.equal(r[0].getKey(), "0");
         test.equal(r[0].getContext(), "Jobs");
-        
+
         test.equal(r[1].getSource(), "two");
         test.equal(r[1].getKey(), "1");
         test.equal(r[1].getContext(), "Jobs");
-        
+
         test.equal(r[2].getSource(), "three");
         test.equal(r[2].getKey(), "2");
         test.equal(r[2].getContext(), "Jobs");
-        
+
         test.equal(r[3].getSource(), "four");
         test.equal(r[3].getKey(), "3");
         test.equal(r[3].getContext(), "Jobs");
-        
+
         test.done();
     },
 
@@ -460,15 +460,15 @@ module.exports = {
         test.equal(r[0].getSource(), "attention");
         test.equal(r[0].getKey(), "name");
         test.equal(r[0].getContext(), "options@0");
-        
+
         test.equal(r[1].getSource(), "Usually requires immediate attention");
         test.equal(r[1].getKey(), "display_value");
         test.equal(r[1].getContext(), "options@0");
-        
+
         test.equal(r[2].getSource(), "red");
         test.equal(r[2].getKey(), "color");
         test.equal(r[2].getContext(), "options@0");
-        
+
         test.done();
     },
 
@@ -630,20 +630,20 @@ module.exports = {
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "de-DE",
-        		key: "source_text",
-        		source: "Quellen\"text",
-        		comment: "foo"
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "de-DE",
-        		key: "more_source_text",
-        		source: "mehr Quellen\"text",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "de-DE",
+                key: "source_text",
+                source: "Quellen\"text",
+                comment: "foo"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "de-DE",
+                key: "more_source_text",
+                source: "mehr Quellen\"text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
             yml.addResource(res);
         });
@@ -673,20 +673,20 @@ module.exports = {
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "• &amp;nbsp; Address a particular topic",
-        		source: "• &amp;nbsp; 解决一个特定的主题",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
-        		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "• &amp;nbsp; Address a particular topic",
+                source: "• &amp;nbsp; 解决一个特定的主题",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
+                source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
+                comment: "bar"
+            })
         ].forEach(function(res) {
             yml.addResource(res);
         });
@@ -694,7 +694,7 @@ module.exports = {
         var expected = 
             "'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
             "• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
-        
+
         diff(yml.getContent(), expected);
 
         test.equal(yml.getContent(), expected);
@@ -714,20 +714,20 @@ module.exports = {
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "short key",
-        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
-        		source: "short text",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "short key",
+                source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
+                source: "short text",
+                comment: "bar"
+            })
         ].forEach(function(res) {
             yml.addResource(res);
         });
@@ -737,7 +737,7 @@ module.exports = {
             "short key: |-\n" +
             "  this is text that is relatively long and can run past the end of the page\n" +
             "  So, we put a new line in the middle of it.\n";
-            
+
         diff(yml.getContent(), expected);
 
         test.equal(yml.getContent(), expected);
@@ -757,22 +757,22 @@ module.exports = {
         test.ok(yml);
 
         [
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "key1",
-        		source: "medium length text that doesn't go beyond one line",
-        		context: "foo@bar",
-        		comment: " "
-        	}),
-        	new ContextResourceString({
-        		project: "webapp",
-        		sourceLocale: "zh-Hans-CN",
-        		key: "key2",
-        		source: "short text",
-        		context: "foo@bar@asdf",
-        		comment: "bar"
-        	})
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "key1",
+                source: "medium length text that doesn't go beyond one line",
+                context: "foo@bar",
+                comment: " "
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                sourceLocale: "zh-Hans-CN",
+                key: "key2",
+                source: "short text",
+                context: "foo@bar@asdf",
+                comment: "bar"
+            })
         ].forEach(function(res) {
             yml.addResource(res);
         });
@@ -783,7 +783,7 @@ module.exports = {
             "    asdf:\n" +
             "      key2: short text\n" +
             "    key1: medium length text that doesn't go beyond one line\n";
-            
+
         diff(yml.getContent(), expected);
 
         test.equal(yml.getContent(), expected);
@@ -1152,10 +1152,10 @@ module.exports = {
             project: "webapp",
             context: "thanked_note_time_saved",
             key: 'email_subject',
-        	source: '%1, you\'re saving time!',
-        	target: '%1, vous économisez du temps!',
-        	targetLocale: "fr-FR",
-        	datatype: "x-yaml"
+            source: '%1, you\'re saving time!',
+            target: '%1, vous économisez du temps!',
+            targetLocale: "fr-FR",
+            datatype: "x-yaml"
         }));
 
         var actual = yml.localizeText(translations, "fr-FR");
@@ -1173,7 +1173,7 @@ module.exports = {
 
         diff(actual, expected);
         test.equal(actual, expected);
-        
+
         test.done();
     },
 
@@ -1221,34 +1221,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.addAll([
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'email_subject',
-	        	source: '%1, You\'re saving time!',
-	        	target: '%1, vous économisez du temps!',
-	        	targetLocale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'subject',
-	        	source: 'You’ve been thanked for saving a colleague\'s time!',
-	        	target: 'Vous avez été remercié pour économiser du temps!',
-	        	targetLocale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-        	new ContextResourceString({
-	        	project: "webapp",
-	        	context: "thanked_note_time_saved",
-	        	key: 'push_data',
-	        	source: 'You’ve saved time! View %1',
-	        	target: 'Vous avez économisé du temps! Voir %1',
-	        	targetLocale: "fr-FR",
-	        	datatype: "x-yaml"
-	        }),
-	    ]);
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'email_subject',
+                source: '%1, You\'re saving time!',
+                target: '%1, vous économisez du temps!',
+                targetLocale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'subject',
+                source: 'You’ve been thanked for saving a colleague\'s time!',
+                target: 'Vous avez été remercié pour économiser du temps!',
+                targetLocale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+            new ContextResourceString({
+                project: "webapp",
+                context: "thanked_note_time_saved",
+                key: 'push_data',
+                source: 'You’ve saved time! View %1',
+                target: 'Vous avez économisé du temps! Voir %1',
+                targetLocale: "fr-FR",
+                datatype: "x-yaml"
+            }),
+        ]);
 
         var actual = yml.localizeText(translations, "fr-FR");
 

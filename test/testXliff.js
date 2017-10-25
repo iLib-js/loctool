@@ -587,7 +587,7 @@ module.exports = {
 
         var x = new Xliff();
         test.ok(x);
-        
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             locale: "en-US",
@@ -597,7 +597,7 @@ module.exports = {
             origin: "source",
             flavor: "chocolate"
         });
-        
+
         x.addResource(res);
 
         var res = new ContextResourceString({
@@ -609,21 +609,21 @@ module.exports = {
             origin: "target",
             flavor: "chocolate"
         });
-        
+
         x.addResource(res);
 
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-	        '<xliff version="1.2">\n' +
-	        '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="androidapp" x-flavor="chocolate">\n' +
-	        '    <body>\n' +
-	        '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
-	        '        <source>Asdf asdf</source>\n' +
-	        '        <target>gutver</target>\n' +
-	        '      </trans-unit>\n' +
-	        '    </body>\n' +
-	        '  </file>\n' +
-	        '</xliff>';
+            '<xliff version="1.2">\n' +
+            '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="androidapp" x-flavor="chocolate">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '        <target>gutver</target>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
 
         diff(actual, expected);
         test.equal(actual, expected);       
@@ -2218,7 +2218,7 @@ module.exports = {
             "origin": "source",
             "context": "asdfasdf",
             "comment": "this is a comment",
-			"flavor": "chocolate"
+            "flavor": "chocolate"
         });
 
         test.ok(tu);
@@ -2232,7 +2232,7 @@ module.exports = {
         test.equal(tu.origin, "source");
         test.equal(tu.context, "asdfasdf");
         test.equal(tu.comment, "this is a comment");
-		test.equal(tu.flavor, "chocolate");
+        test.equal(tu.flavor, "chocolate");
 
         test.done();
     },
@@ -2544,7 +2544,7 @@ module.exports = {
             "resType":"string",
             "comment": "this is a comment",
             "datatype": "x-android-resource",
-    			"flavor": "chocolate"
+            "flavor": "chocolate"
         }));
 
         x.addTranslationUnit(new TranslationUnit({
@@ -2560,7 +2560,7 @@ module.exports = {
             "context": "x",
             "comment": "this is a new comment",
             "datatype": "x-android-resource",
-    			"flavor": "chocolate"
+            "flavor": "chocolate"
         }));
 
         var resources = x.getResources();
