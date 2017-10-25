@@ -39,7 +39,7 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-i] [command [command-specific-arguments]]\n" +
+	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
@@ -52,10 +52,13 @@ function usage() {
 		"-f or --filetype\n" +
 		"  Restrict operation to only the given list of file types. This allows you to\n" +
 		"  run only the parts of the loctool that are needed at the moment.\n" +
-		"-n or --nopseudo\n" +
-		"  Do not pseudo-localize missing strings and do not generate the pseudo-locale.\n" +
+		"-n or --pseudo\n" +
+		"  Do pseudo-localize missing strings and generate the pseudo-locale. (Default is\n" +
+		"  not to do pseudo-localization.\n" +
 		"-o or --oldhaml\n" +
 		"  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+		"-t or --target\n" +
+		"  Write all output to the given target dir instead of in the source dir.\n" +
 		"-i or --identify\n" +
 		"  Identify resources where possible by marking up the translated files with \n" +
 		"  the resource key.\n" +
@@ -80,11 +83,13 @@ function usage() {
 
 // the global settings object that configures how the tool will operate
 var settings = {
-	rootDir: ".",
+	rootDir: ".",			// source directory where all localizable files reside
 	locales: [],
 	pull: false,
 	identify: false,
-	oldHamlLoc: false
+	oldHamlLoc: false,
+	nopseudo: true,
+	targetDir: "."			// target directory for all output files
 };
 
 var options = [];
@@ -99,19 +104,26 @@ for (var i = 0; i < argv.length; i++) {
 		if (i < argv.length && argv[i+1]) {
 			settings.locales = argv[++i].split(",");
 		}
-	} else if (val === "-n" || val === "--nopseudo") {
-		settings.nopseudo = true;
+	} else if (val === "-n" || val === "--pseudo") {
+		settings.nopseudo = false;
 	} else if (val === "-o" || val === "--oldhaml") {
 		settings.oldHamlLoc = true;
 	} else if (val === "-i" || val === "--identify") {
 		settings.identify = true;
 	} else if (val === "-f" || val === "--filetype") {
-		if (i < argv.length && argv[i+1]) {
+		if (i+1 < argv.length && argv[i+1]) {
 			var types = argv[++i].split(",");
 			settings.fileTypes = {};
 			types.forEach(function(type) {
 				settings.fileTypes[type] = true;
 			});
+		}
+	} else if (val === "-t" || val === "--target") {
+		if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
+			settings.targetDir = argv[++i];
+		} else {
+			console.error("Error: -t (--target) option requires a directory name argument to follow it.");
+			usage();
 		}
 	} else {
 		options.push(val);
