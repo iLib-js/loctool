@@ -2759,7 +2759,7 @@ module.exports = {
     },
 
     testTranslationSetAddToClean: function(test) {
-        test.expect(5)
+        test.expect(6);
         var ts = new TranslationSet();
         test.ok(ts);
 
@@ -2783,7 +2783,8 @@ module.exports = {
         test.equal(allRes.length,2);
         test.equal(orig, ts.get(orig.hashKey()));
         test.equal(squished, ts.get(squished.hashKey()));
-        test.equal(ts.getClean(orig.cleanHashKey()), ts.getClean(squished.cleanHashKey()));
+        test.equal(orig, ts.getClean(orig.cleanHashKey()));
+        test.equal(squished, ts.getClean(squished.cleanHashKey()));
         test.done();
     }
 };

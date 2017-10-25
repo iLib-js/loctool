@@ -1,0 +1,14 @@
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    targetCompatibility = '1.7'
+    sourceCompatibility = '1.7'
+
+    dexOptions {
+        javaMaxHeapSize "6g"
+        preDexLibraries true
+    }
+    dataBinding {
+        enabled = true
+    }
+}
