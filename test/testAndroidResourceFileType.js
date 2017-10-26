@@ -318,7 +318,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "es-US", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-es/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-es/strings.xml")
         
         test.done();
     },
@@ -339,7 +339,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "es-US", "plurals", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-es/plurals.xml")
+        test.equal(rf.getPath(), "android/res/values-es/plurals.xml")
         
         test.done();
     },
@@ -360,7 +360,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "es-US", "arrays", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-es/arrays.xml")
+        test.equal(rf.getPath(), "android/res/values-es/arrays.xml")
         
         test.done();
     },
@@ -381,7 +381,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "en-US", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values/strings.xml")
+        test.equal(rf.getPath(), "android/res/values/strings.xml")
         
         test.done();
     },
@@ -402,7 +402,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "en-HK", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-en-rHK/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-en-rHK/strings.xml")
         
         test.done();
     },
@@ -423,7 +423,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "en-GB", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-en-rGB/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-en-rGB/strings.xml")
         
         test.done();
     },
@@ -444,7 +444,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "zh-Hans-CN", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-zh/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-zh/strings.xml")
         
         test.done();
     },
@@ -465,7 +465,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-zh-rHK/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-zh-rHK/strings.xml")
         
         test.done();
     },
@@ -486,7 +486,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "es-ES", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-es-rES/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-es-rES/strings.xml")
         
         test.done();
     },
@@ -507,7 +507,7 @@ module.exports = {
         var rf = alft.getResourceFile("", "ko-KR", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-ko/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-ko/strings.xml")
         
         test.done();
     },
@@ -528,7 +528,7 @@ module.exports = {
         var rf = alft.getResourceFile("context", "en-US", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-context/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-context/strings.xml")
         
         test.done();
     },
@@ -549,7 +549,7 @@ module.exports = {
         var rf = alft.getResourceFile("context", "es-US", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-es-context/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-es-context/strings.xml")
         
         test.done();
     },
@@ -570,7 +570,7 @@ module.exports = {
         var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values-zh-rHK-context/strings.xml")
+        test.equal(rf.getPath(), "android/res/values-zh-rHK-context/strings.xml")
         
         test.done();
     },
@@ -591,7 +591,7 @@ module.exports = {
         var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/flavors/a/res/values/strings.xml")
+        test.equal(rf.getPath(), "flavors/a/res/values/strings.xml")
         
         test.done();
     },
@@ -612,7 +612,7 @@ module.exports = {
         var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/bproj/src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/flavors/bproj/res/values/strings.xml")
+        test.equal(rf.getPath(), "flavors/bproj/res/values/strings.xml")
         
         test.done();
     },
@@ -633,7 +633,7 @@ module.exports = {
         var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/xXx/src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/flavors/xXx/res/values/strings.xml")
+        test.equal(rf.getPath(), "flavors/xXx/res/values/strings.xml")
         
         test.done();
     },
@@ -654,7 +654,7 @@ module.exports = {
         var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/res/layouts/testlayout.xml");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/flavors/a/res/values/strings.xml")
+        test.equal(rf.getPath(), "flavors/a/res/values/strings.xml")
         
         test.done();
     },
@@ -675,7 +675,7 @@ module.exports = {
         var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/d/src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/android/res/values/strings.xml")
+        test.equal(rf.getPath(), "android/res/values/strings.xml")
         
         test.done();
     },
@@ -696,7 +696,7 @@ module.exports = {
         var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
         test.ok(rf);
         
-        test.equal(rf.getPath(), "testfiles/flavors/a/res/values-zh-rHK-context/strings.xml")
+        test.equal(rf.getPath(), "flavors/a/res/values-zh-rHK-context/strings.xml")
         
         test.done();
     }
