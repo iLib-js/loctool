@@ -2285,7 +2285,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "simple.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "simple.fr-FR.tmpl.html");
 
         test.done();
     },
@@ -2303,7 +2303,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.tmpl.html");
 
         test.done();
     },
@@ -2321,7 +2321,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.html");
 
         test.done();
     },
@@ -2339,7 +2339,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR");
 
         test.done();
     },
@@ -2357,7 +2357,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.en-US.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.tmpl.html");
 
         test.done();
     },

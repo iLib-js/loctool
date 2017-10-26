@@ -48,7 +48,8 @@ var p = new WebProject({
     }
 }, "./testfiles", {
     locales:["en-GB"],
-    nopseudo: true
+    nopseudo: true,
+    targetDir: "testfiles"
 });
 
 var yft = new YamlFileType(p);
@@ -1390,7 +1391,7 @@ module.exports = {
         });
         test.ok(y);
         y.extract();
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test2.yml');
+        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test2.yml');
         test.done();
     },
 
@@ -1435,7 +1436,7 @@ module.exports = {
         test.ok(y);
         y.extract();
         y.schema['useLocalizedDirectories'] = true;
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test3.yml');
+        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test3.yml');
         test.done();
     },
 
@@ -1450,7 +1451,7 @@ module.exports = {
         test.ok(y);
         y.extract();
         y.schema['useLocalizedDirectories'] = false;
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/test3.yml');
+        test.equals(y.getLocalizedPath('de-DE'), 'test3.yml');
         test.done();
     },
 
@@ -1463,7 +1464,7 @@ module.exports = {
             pathName: "./test2.yml"
         });
         test.ok(y);
-        test.equals(y.getOutputFilenameForLocale('de-DE'), './test2.yml');
+        test.equals(y.getOutputFilenameForLocale('de-DE'), 'test2.yml');
         test.done();
     },
 
@@ -1496,7 +1497,7 @@ module.exports = {
         y.schema = {
             useLocalizedDirectories: true
         };
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test2.yml');
+        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test2.yml');
         test.done();
     },
 
@@ -1515,7 +1516,7 @@ module.exports = {
                 'de-DE': './de.yml'
             }
         };
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/de.yml');
+        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/de.yml');
         test.done();
     },
 
@@ -1534,7 +1535,7 @@ module.exports = {
             },
             'useLocalizedDirectories': false
         };
-        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de.yml');
+        test.equals(y.getLocalizedPath('de-DE'), './de.yml');
         test.done();
     },
 
