@@ -5166,7 +5166,7 @@ module.exports = {
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/foo.fr-FR.html.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "foo.fr-FR.html.haml");
 
         test.done();
     },
@@ -5182,7 +5182,7 @@ module.exports = {
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/ruby/foo.fr-FR.html.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr-FR.html.haml");
 
         test.done();
     },
@@ -5198,7 +5198,7 @@ module.exports = {
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/ruby/foo.fr-FR.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr-FR.haml");
 
         test.done();
     },
@@ -5262,7 +5262,7 @@ module.exports = {
         
         // now make sure the file was written out
         
-        test.ok(fs.existsSync("testfiles/ruby/t2.fr-FR.html.haml"));
+        test.ok(fs.existsSync("ruby/t2.fr-FR.html.haml"));
         
         test.done();
     }
