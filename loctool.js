@@ -39,7 +39,9 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir] [-i] [command [command-specific-arguments]]\n" +
+	console.log(
+		"Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir]\n" +
+		"               [-x dir] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
@@ -62,6 +64,8 @@ function usage() {
 		"-i or --identify\n" +
 		"  Identify resources where possible by marking up the translated files with \n" +
 		"  the resource key.\n" +
+		"-x or --xliffs\n" +
+		"  Specify the dir where the xliffs files live. Default: \".\"\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
 		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -89,7 +93,8 @@ var settings = {
 	identify: false,
 	oldHamlLoc: false,
 	nopseudo: true,
-	targetDir: "."			// target directory for all output files
+	targetDir: ".",			// target directory for all output files
+	xliffsDir: "."
 };
 
 var options = [];
@@ -123,6 +128,13 @@ for (var i = 0; i < argv.length; i++) {
 			settings.targetDir = argv[++i];
 		} else {
 			console.error("Error: -t (--target) option requires a directory name argument to follow it.");
+			usage();
+		}
+	} else if (val === "-x" || val === "--xliffs") {
+		if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
+			settings.xliffsDir = argv[++i];
+		} else {
+			console.error("Error: -x (--xliffs) option requires a directory name argument to follow it.");
 			usage();
 		}
 	} else {
