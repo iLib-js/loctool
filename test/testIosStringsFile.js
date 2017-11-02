@@ -28,7 +28,8 @@ var p = new ObjectiveCProject({
 	id: "iosapp",
 	sourceLocale: "en-US"
 }, "./testfiles", {
-    locales:["en-GB"]
+	locales:["en-GB"],
+	flavors: ["chocolate", "vanilla"]
 });
 
 var isft = new IosStringsFileType(p);
@@ -584,8 +585,46 @@ module.exports = {
             '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
             '"MFI-qx-pQf.text" = "Are you a driver?";\n';
 
-        test.equal(strings.getContent(), y);
+        test.equal(x, y);
+        test.done();
+    },
 
+    testIosStringsFileReadFlavorFile: function(test) {
+        test.expect(17);
+
+        var strings = new IosStringsFile({
+        	project: p,
+			type: isft, 
+        	pathName: "./objc/en-US.lproj/chocolate.strings"
+        });
+        
+        test.ok(strings);
+        
+        strings.extract();
+        
+        var set = strings.getTranslationSet();
+        
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+        
+        test.equal(r[0].getSource(), "Are you an existing customer?");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.ok(!r[0].getTargetLocale());
+        test.equal(r[0].getKey(), "F5h-fB-tt5.text");
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a member?"; ObjectID = "F5h-fB-tt5";');
+        test.equal(r[0].getFlavor(), "chocolate");
+        test.equal(r[0].getPath(), "./objc/en-US.lproj/chocolate.strings");
+
+        test.equal(r[1].getSource(), "Are you connected to a customer?");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.ok(!r[1].getTargetLocale());
+        test.equal(r[1].getKey(), "MFI-qx-pQf.text");
+        test.equal(r[1].getComment(), 'Class = "UILabel"; text = "Are you a friend?"; ObjectID = "MFI-qx-pQf";');
+        test.equal(r[1].getFlavor(), "chocolate");
+        test.equal(r[1].getPath(), "./objc/en-US.lproj/chocolate.strings");
+        
         test.done();
     }
 };
