@@ -19,6 +19,8 @@
 
 if (!IosStringsFileType) {
     var IosStringsFileType = require("../lib/IosStringsFileType.js");
+    var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
+    var ResourceString = require("../lib/ResourceString.js");
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
 }
 
@@ -27,13 +29,13 @@ module.exports = {
         test.expect(1);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
 
@@ -46,13 +48,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -66,13 +68,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -86,13 +88,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -106,13 +108,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -126,13 +128,13 @@ module.exports = {
         test.expect(3);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -147,13 +149,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -167,13 +169,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -187,13 +189,13 @@ module.exports = {
         test.expect(3);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -208,13 +210,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -228,13 +230,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"objc": "feelgood"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "objc": "feelgood"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -248,13 +250,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"objc": "foo"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -268,13 +270,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"objc": "foo"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
@@ -288,19 +290,410 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US",
-        	"resourceDirs": {
-        		"objc": "foo"
-        	}
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
 
         var htf = new IosStringsFileType(p);
         test.ok(htf);
 
         test.ok(!htf.handles("foo/de.lproj/SignUpViewController.strings"));
 
+        test.done();
+    },
+
+    testIosStringsFileTypeGetResourceFileEnglishGBXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "en-GB",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/en-001.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileEnglishUSXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "en-US",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/en-US.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileChineseCNXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "zh-Hans-CN",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/zh-Hans.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileChineseHKXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+        
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "zh-Hant-HK",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/zh-Hant.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileSpanishUSXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "es-US",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/es.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileEnglishNZXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "en-NZ",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/en-NZ.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileUnknownLocaleXIB: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "sv-SE",
+            pathName: "src/myproduct/Base.lproj/Test.xib",
+            datatype: istf.datatype
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "src/myproduct/sv.lproj/Test.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileEnglishUSObjc: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new ResourceString({
+            project: p,
+            locale: "en-US",
+            pathName: "src/myproduct/Test.m",
+            datatype: "x-objective-c"
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/en-US.lproj/Localizable.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileEnglishGBObjc: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new ResourceString({
+            project: p,
+            locale: "en-GB",
+            pathName: "src/myproduct/Test.m",
+            datatype: "x-objective-c"
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/en-001.lproj/Localizable.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileChineseCNObjc: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new ResourceString({
+            project: p,
+            locale: "zh-Hans-CN",
+            pathName: "src/myproduct/Test.m",
+            datatype: "x-objective-c"
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/zh-Hans.lproj/Localizable.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileSpanishUSObjc: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new ResourceString({
+            project: p,
+            locale: "es-US",
+            pathName: "src/myproduct/Test.m",
+            datatype: "x-objective-c"
+        })
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/es.lproj/Localizable.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileEnglishGBFlavor: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "en-GB",
+            pathName: "foo/en-US.lproj/QHC.strings",
+            datatype: istf.datatype,
+            flavor: "chocolate"
+        });
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/en-001.lproj/chocolate.strings")
+        
+        test.done();
+    },
+    
+    testIosStringsFileTypeGetResourceFileChineseCNFlavor: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+            sourceLocale: "en-US",
+            "resourceDirs": {
+                "objc": "foo"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var istf = new IosStringsFileType(p);
+        test.ok(istf);
+
+        var res = new IosLayoutResourceString({
+            project: p,
+            locale: "zh-Hans-CN",
+            pathName: "foo/en-US.lproj/QHC.strings",
+            datatype: istf.datatype,
+            flavor: "chocolate"
+        });
+
+        var rf = istf.getResourceFile(res);
+        test.ok(rf);
+        
+        test.equal(rf.getPath(), "foo/zh-Hans.lproj/chocolate.strings")
+        
         test.done();
     }
 };
