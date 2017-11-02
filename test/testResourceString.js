@@ -1002,7 +1002,15 @@ module.exports = {
     testIosLayoutResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_");
+        
+        test.done();
+    },
+
+    testIosLayoutResourceStringStaticHashKeyWithFlavor: function(test) {
+        test.expect(1);
+
+        test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test", "chocolate"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_chocolate");
 
         test.done();
     },
@@ -1010,7 +1018,7 @@ module.exports = {
     testIosLayoutResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(IosLayoutResourceString.hashKey(undefined, undefined, "de-DE", undefined), "irs___de-DE_");
+        test.equal(IosLayoutResourceString.hashKey(undefined, undefined, "de-DE", undefined), "irs___de-DE__");
 
         test.done();
     },
@@ -1026,11 +1034,12 @@ module.exports = {
             sourceLocale: "en-US",
             target: "Dies ist einen Test.",
             targetLocale: "de-DE",
-            pathName: "a/b/es.lproj/foo.xib"
+            pathName: "a/b/es.lproj/foo.xib",
+            flavor: "chocolate"
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(rs.hashKey(), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_chocolate");
 
         test.done();
     },
@@ -1048,7 +1057,7 @@ module.exports = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "irs_iosapp_en-US_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(rs.hashKey(), "irs_iosapp_en-US_a/b/es.lproj/foo.xib_This is a test_");
 
         test.done();
     }
