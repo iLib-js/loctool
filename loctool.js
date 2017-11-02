@@ -39,7 +39,9 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir] [-i] [command [command-specific-arguments]]\n" +
+	console.log(
+		"Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir]\n" +
+		"               [-x dir] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
