@@ -47,11 +47,11 @@
   <%= 
     window.templates['colleague_list']({
       header_text: RB.getStringJS('Suggested colleagues for you'),
-      arrow_header_text: App.defaults.user_json.person.concierge_allowed ? RB.getStringJS('Connect with your colleagues to find answers to your questions.') : null,
+      arrow_header_text: App.defaults.user_json.person.allowed ? RB.getStringJS('Connect with your colleagues to find answers to your questions.') : null,
       experts: suggested_colleagues,
       per_page: null,
       colleague_options: {
-        show_concierge_buttons: true,
+        show_buttons: true,
         show_message_input: false,
         show_connect_button: true
       }
