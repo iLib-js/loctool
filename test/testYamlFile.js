@@ -49,7 +49,8 @@ var p = new WebProject({
 }, "./testfiles", {
     locales:["en-GB"],
     nopseudo: true,
-    targetDir: "testfiles"
+    targetDir: "testfiles",
+	flavors: ["CHOCOLATE", "VANILLA"]
 });
 
 var yft = new YamlFileType(p);
@@ -60,6 +61,16 @@ module.exports = {
 
         var y = new YamlFile();
         test.ok(y);
+
+        test.done();
+    },
+
+    testYamlConstructorEmptyNoFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile();
+        test.ok(y);
+        test.ok(!y.getFlavor());
 
         test.done();
     },
@@ -90,6 +101,36 @@ module.exports = {
         test.ok(y);
 
         test.equal(y.getPath(), "foo/bar/x.yml");
+
+        test.done();
+    },
+
+    testYamlWithFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile({
+            project: p,
+            type: yft,
+            pathName: "foo/customized/en-VANILLA.yml"
+        });
+        test.ok(y);
+
+        test.equal(y.getFlavor(), "VANILLA");
+
+        test.done();
+    },
+
+    testYamlWithNonFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile({
+            project: p,
+            type: yft,
+            pathName: "foo/customized/en-PEACH.yml"
+        });
+        test.ok(y);
+
+        test.ok(!y.getFlavor());
 
         test.done();
     },
