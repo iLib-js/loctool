@@ -40,7 +40,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("traveler"), "traveller");
@@ -53,7 +53,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
@@ -66,7 +66,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
@@ -79,7 +79,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("I am a traveler."), "I am a traveller.");
@@ -92,7 +92,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("color"), "colour");
@@ -105,7 +105,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("Color"), "Colour");
@@ -118,7 +118,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("COLOR"), "COLOUR");
@@ -131,7 +131,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("globalization"), "globalization");
@@ -144,7 +144,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("Globalization"), "Globalization");
@@ -157,7 +157,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("GLOBALIZATION"), "GLOBALIZATION");
@@ -170,7 +170,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("I'm not about to avuncolor"), "I'm not about to avuncolor"); // no translation
@@ -183,7 +183,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
@@ -196,7 +196,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "java"
 		});
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colorful} supplements.");
@@ -209,7 +209,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "javascript"
 		});
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colorful} supplements.");
@@ -222,7 +222,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "html"
 		});
         test.equal(pb.getString("Skip the unflavored <span name=\"colorful\">supplements</a>."), "Skip the unflavoured <span name=\"colorful\">supplements</a>.");
@@ -235,7 +235,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "xml"
 		});
         test.equal(pb.getString("Skip the unflavored <source id=\"colorful\">supplements</source>."), "Skip the unflavoured <source id=\"colorful\">supplements</source>.");
@@ -248,7 +248,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "template"
 		});
         test.equal(pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"colorful\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"colorful\") : RB.getString(\"%\") %> supplements.");
@@ -261,7 +261,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "ruby"
 		});
         test.equal(pb.getString("Skip the unflavored %{colorful} #{colorful} supplements."), "Skip the unflavoured %{colorful} #{colorful} supplements.");
@@ -274,7 +274,7 @@ module.exports = {
 
         var pb = PseudoFactory({
 			project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colourful} supplements.");
@@ -290,7 +290,7 @@ module.exports = {
             key: "foo",
             autoKey: true,
             source: "I am enamored by color of your homogenized yogurt.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -300,7 +300,7 @@ module.exports = {
             key: "asdf",
             autoKey: true,
             source: "The color of your homogenized yogurt.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -309,8 +309,10 @@ module.exports = {
         res = new ResourceString({
             key: "foo",
             autoKey: true,
-            source: "override string",
-            locale: "en-CA",
+            source: "I am enamored by color of your homogenized yogurt.",
+            sourceLocale: "en-US",
+            target: "override string",
+            targetLocale: "en-CA",
             origin: "target"
         });
 
@@ -319,7 +321,7 @@ module.exports = {
         var pb = PseudoFactory({
         	set: translations,
         	project: project,
-			locale: "en-CA",
+			targetLocale: "en-CA",
 			type: "text"
 		});
         

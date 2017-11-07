@@ -1331,8 +1331,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1368,8 +1370,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1408,8 +1412,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1450,15 +1456,19 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: "This is also a test",
-            source: "Ceci est aussi un essai",
-            locale: "fr-FR",
+			source: "This is also a test",
+			sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1502,15 +1512,19 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: "This is also a test",
-            source: "Ceci est aussi un essai",
-            locale: "fr-FR",
+			source: "This is also a test",
+			sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1559,8 +1573,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1605,8 +1621,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a<em>test</em>of the emergency parsing system.",
-            source: "Ceci est un <em>essai</em> du système d'analyse syntaxique de l'urgence.",
-            locale: "fr-FR",
+			source: "This is a<em>test</em>of the emergency parsing system.",
+			sourceLocale: "en-US",
+            target: "Ceci est un <em>essai</em> du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1643,8 +1661,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test of the emergency parsing system.",
-            source: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
-            locale: "fr-FR",
+			source: "This is a test of the emergency parsing system.",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1681,8 +1701,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.',
-            source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>',
-            locale: "fr-FR",
+            source: 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.',
+            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1719,8 +1740,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.',
-            source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>',
-            locale: "fr-FR",
+            source: 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.',
+            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1757,8 +1779,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.',
-            source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>',
-            locale: "fr-FR",
+            source: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.',
+            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1795,8 +1818,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing',
-            source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique',
-            locale: "fr-FR",
+            source: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing',
+            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1835,15 +1859,17 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This value is localizable',
-            source: 'Cette valeur est localisable',
-            locale: "fr-FR",
+            source: 'This value is localizable',
+            target: 'Cette valeur est localisable',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is a test',
-            source: 'Ceci est un essai',
-            locale: "fr-FR",
+            source: 'This is a test',
+            target: 'Ceci est un essai',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1884,22 +1910,25 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Alternate text',
-            source: 'Texte alternative',
-            locale: "fr-FR",
+            source: 'Alternate text',
+            target: 'Texte alternative',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is a test',
-            source: 'Ceci est un essai',
-            locale: "fr-FR",
+            source: 'This is a test',
+            target: 'Ceci est un essai',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'localizable placeholder here',
-            source: 'espace réservé localisable ici',
-            locale: "fr-FR",
+            source: 'localizable placeholder here',
+            target: 'espace réservé localisable ici',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1938,15 +1967,17 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.',
-            source: 'Ceci est <a href="foo.html" title="{title}">un essai</a> des balises non-ruptures.',
-            locale: "fr-FR",
+            source: 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.',
+            target: 'Ceci est <a href="foo.html" title="{title}">un essai</a> des balises non-ruptures.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'localizable title',
-            source: 'titre localisable',
-            locale: "fr-FR",
+            source: 'localizable title',
+            target: 'titre localisable',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -1987,15 +2018,17 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Consult',
-            source: 'Une consultation',
-            locale: "fr-FR",
+            source: 'Consult',
+            target: 'Une consultation',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'Get insurance quotes for free!',
-            source: 'Obtenez des devis d\'assurance gratuitement!',
-            locale: "fr-FR",
+            source: 'Get insurance quotes for free!',
+            target: 'Obtenez des devis d\'assurance gratuitement!',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2036,8 +2069,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Mr. <%= family_name %> is not available.',
-            source: 'Mr. <%= family_name %> n\'est pas disponibles.',
-            locale: "fr-FR",
+            source: 'Mr. <%= family_name %> is not available.',
+            target: 'Mr. <%= family_name %> n\'est pas disponibles.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2075,8 +2109,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is a test of the emergency parsing system.',
-            source: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
-            locale: "fr-FR",
+            source: 'This is a test of the emergency parsing system.',
+            target: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2119,15 +2154,19 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "This is a test",
-            source: "Ceci est un essai",
-            locale: "fr-FR",
+			source: "This is a test",
+			sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: "This is also a test",
-            source: "Ceci est aussi un essai",
-            locale: "fr-FR",
+			source: "This is also a test",
+			sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2175,22 +2214,27 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "placeholder text",
-            source: "Texte de l'espace réservé",
-            locale: "fr-FR",
+			source: "placeholder text",
+			sourceLocale: "en-US",
+            target: "Texte de l'espace réservé",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'This is a test',
-            source: 'Ceci est un essai',
-            locale: "fr-FR",
+            source: 'This is a test',
+            target: 'Ceci est un essai',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: "This is also a test",
-            source: "Ceci est aussi un essai",
-            locale: "fr-FR",
+			source: "This is also a test",
+			sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2237,22 +2281,28 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "placeholder text",
-            source: "Texte de l'espace réservé",
-            locale: "fr-FR",
+			source: "placeholder text",
+			sourceLocale: "en-US",
+            target: "Texte de l'espace réservé",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: 'This<span title="{title}">is a test</span>',
-            source: 'Ceci <span title="{title}">est un essai</span>',
-            locale: "fr-FR",
+            source: 'This<span title="{title}">is a test</span>',
+            sourceLocale: "en-US",
+            target: 'Ceci <span title="{title}">est un essai</span>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
             key: "This is also a test",
-            source: "Ceci est aussi un essai",
-            locale: "fr-FR",
+			source: "This is also a test",
+			sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2384,58 +2434,66 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Get insurance quotes for free!',
-            source: 'Obtenez des devis d\'assurance gratuitement!',
-            locale: "fr-FR",
+            source: 'Get insurance quotes for free!',
+            target: 'Obtenez des devis d\'assurance gratuitement!',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Talk',
-            source: 'Consultee',
-            locale: "fr-FR",
+            source: 'Talk',
+            target: 'Consultee',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Ask',
-            source: 'Poser un question',
-            locale: "fr-FR",
+            source: 'Ask',
+            target: 'Poser un question',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Send question',
-            source: 'Envoyer la question',
-            locale: "fr-FR",
+            source: 'Send question',
+            target: 'Envoyer la question',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Get insurance quotes for free!',
-            source: 'Kostenlosen Versicherungs-Angebote erhalten!',
-            locale: "de-DE",
+            source: 'Get insurance quotes for free!',
+            target: 'Kostenlosen Versicherungs-Angebote erhalten!',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Talk',
-            source: 'Beratung',
-            locale: "de-DE",
+            source: 'Talk',
+            target: 'Beratung',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Ask',
-            source: 'Eine Frage stellen',
-            locale: "de-DE",
+            source: 'Ask',
+            target: 'Eine Frage stellen',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Send question',
-            source: 'Frage abschicken',
-            locale: "de-DE",
+            source: 'Send question',
+            target: 'Frage abschicken',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
 
@@ -2551,15 +2609,17 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Get insurance quotes for free!',
-            source: 'Obtenez des devis d\'assurance gratuitement!',
-            locale: "fr-FR",
+            source: 'Get insurance quotes for free!',
+            target: 'Obtenez des devis d\'assurance gratuitement!',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Get insurance quotes for free!',
-            source: 'Kostenlosen Versicherungs-Angebote erhalten!',
-            locale: "de-DE",
+            source: 'Get insurance quotes for free!',
+            target: 'Kostenlosen Versicherungs-Angebote erhalten!',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
 
@@ -2603,8 +2663,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Mr. <%= family_name %> is not available.',
-            source: 'Mssr. <%= family_name %> n\'est pas disponible.',
-            locale: "fr-FR",
+            source: 'Mr. <%= family_name %> is not available.',
+            target: 'Mssr. <%= family_name %> n\'est pas disponible.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2649,8 +2710,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Mr. <%= family_name %> is not available.',
-            source: 'Mssr. <%= family_name %> n\'est pas disponible.',
-            locale: "fr-FR",
+            source: 'Mr. <%= family_name %> is not available.',
+            target: 'Mssr. <%= family_name %> n\'est pas disponible.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2696,8 +2758,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'Group',
-            source: 'Groupe',
-            locale: "fr-FR",
+            source: 'Group',
+            target: 'Groupe',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2738,8 +2801,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2781,8 +2845,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2821,8 +2886,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2884,8 +2950,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2949,8 +3016,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -2982,8 +3050,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3021,8 +3090,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3067,8 +3137,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3103,8 +3174,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3139,8 +3211,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3180,8 +3253,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3227,8 +3301,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3294,8 +3369,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Uploaded <%= dateString %>',
-            source: 'Téléchargé sur <%= dateString %>',
-            locale: "fr-FR",
+            source: 'Uploaded <%= dateString %>',
+            target: 'Téléchargé sur <%= dateString %>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3431,8 +3507,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Assumptions',
-            source: 'Téléchargé sur <%= dateString %>',
-            locale: "fr-FR",
+            source: 'Assumptions',
+            target: 'Téléchargé sur <%= dateString %>',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3513,8 +3590,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'There are <%= avatar.count ? (\' the following avatars available. As a member of \' + avatars.type + \', your avatar must be unique within your group.\') : \'\' %>:',
-            source: 'Es gibt <%=  avatar.count ? (\' folgende Avatare. Als Mitglied der \' + avatars.type + \', Gruppe muss dein Avatar innerhalb der Gruppe einzigartig sein.\') : \'\' %>:',
-            locale: "de-DE",
+            source: 'There are <%= avatar.count ? (\' the following avatars available. As a member of \' + avatars.type + \', your avatar must be unique within your group.\') : \'\' %>:',
+            target: 'Es gibt <%=  avatar.count ? (\' folgende Avatare. Als Mitglied der \' + avatars.type + \', Gruppe muss dein Avatar innerhalb der Gruppe einzigartig sein.\') : \'\' %>:',
+            targetLocale: "de-DE",
             datatype: "html"
         }));
 
@@ -3583,8 +3661,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Uploaded',
-            source: 'Cargada',
-            locale: "es-US",
+            source: 'Uploaded',
+            target: 'Cargada',
+            targetLocale: "es-US",
             datatype: "html"
         }));
 
@@ -3710,7 +3789,7 @@ module.exports = {
     },
 
     testHTMLTemplateFileExtractFileNewResources: function(test) {
-        test.expect(11);
+        test.expect(10);
 
         var base = path.dirname(module.id);
 
@@ -3733,8 +3812,10 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: "Choose a meeting method",
-            source: "Choisissez une méthode de réunion d'affaires",
-            locale: "fr-FR",
+			source: "Choose a meeting method",
+			sourceLocale: "en-US",
+            target: "Choisissez une méthode de réunion d'affaires",
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3790,22 +3871,19 @@ module.exports = {
         var set = t.newres;
         var resources = set.getAll();
 
-        test.equal(resources.length, 2);
+        test.equal(resources.length, 1);
 
         var r = set.getBySource("Choose a meeting method");
         test.ok(!r);
 
         r = set.getBySource("Test phrase");
         test.ok(r);
-        test.equal(resources[0].getSource(), "Test phrase");
         test.equal(resources[0].getKey(), "Test phrase");
-        test.equal(resources[0].getLocale(), "en-US");
-
-        test.equal(resources[1].getSource(), "Test phrase");
-        test.equal(resources[1].getKey(), "Test phrase");
-        test.equal(resources[1].getLocale(), "fr-FR");
+        test.equal(resources[0].getSource(), "Test phrase");
+        test.equal(resources[0].getSourceLocale(), "en-US");
+        test.equal(resources[0].getTarget(), "Test phrase");
+        test.equal(resources[0].getTargetLocale(), "fr-FR");
 
         test.done();
     }
-
 };

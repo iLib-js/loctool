@@ -1089,8 +1089,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1110,8 +1110,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1131,8 +1131,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1152,8 +1152,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1173,8 +1173,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1194,8 +1194,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1215,8 +1215,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1252,8 +1252,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('three'),undefined)
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('three'),undefined)
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1273,12 +1273,12 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('two'),'There are a couple tests');
-        test.equals(r.get('zero'),'There are no tests');
-        test.equals(r.get('few'),'There are a few tests');
-        test.equals(r.get('many'),'There are many tests');
-        test.equals(r.get('other'),"There are %{count} tests");
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('two'),'There are a couple tests');
+        test.equals(r.getSource('zero'),'There are no tests');
+        test.equals(r.getSource('few'),'There are a few tests');
+        test.equals(r.getSource('many'),'There are many tests');
+        test.equals(r.getSource('other'),"There are %{count} tests");
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1298,8 +1298,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
@@ -1319,9 +1319,9 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('other'),'There are %{count} %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('other'),'There are %{count} %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
@@ -1342,8 +1342,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in');
-        test.equals(r.get('other'),'%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in');
+        test.equals(r.getSource('one'),'%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in');
+        test.equals(r.getSource('other'),'%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in');
         test.equals(r.getKey(), 'r747576181');
         test.done();
     },
@@ -1363,8 +1363,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1384,8 +1384,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1405,8 +1405,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1426,8 +1426,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1447,8 +1447,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1468,8 +1468,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1489,8 +1489,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1526,8 +1526,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('three'),undefined)
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('three'),undefined)
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1547,12 +1547,12 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('two'),'There are a couple tests');
-        test.equals(r.get('zero'),'There are no tests');
-        test.equals(r.get('few'),'There are a few tests');
-        test.equals(r.get('many'),'There are many tests');
-        test.equals(r.get('other'),"There are %{count} tests");
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('two'),'There are a couple tests');
+        test.equals(r.getSource('zero'),'There are no tests');
+        test.equals(r.getSource('few'),'There are a few tests');
+        test.equals(r.getSource('many'),'There are many tests');
+        test.equals(r.getSource('other'),"There are %{count} tests");
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1572,8 +1572,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
