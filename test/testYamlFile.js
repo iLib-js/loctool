@@ -1654,13 +1654,13 @@ module.exports = {
         test.equal(r.length, 2);
 
         test.equal(r[0].getSource(), "foo");
-        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
         
         test.equal(r[1].getSource(), "bar");
-        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
         test.equal(r[1].getFlavor(), "CHOCOLATE");
@@ -1693,13 +1693,54 @@ module.exports = {
         test.equal(r.length, 2);
 
         test.equal(r[0].getSource(), "foo");
-        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
         
         test.equal(r[1].getSource(), "bar");
-        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
+
+        test.done();
+    },
+    
+    testYamlFileParseTargetWithNoFlavor: function(test) {
+        test.expect(17);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "es-US",
+            type: yft
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTargetLocale(), "es-US");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+        
+        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTargetLocale(), "es-US");
+        test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
         test.ok(!r[1].getFlavor());
@@ -1733,13 +1774,13 @@ module.exports = {
         test.equal(r.length, 2);
 
         test.equal(r[0].getSource(), "foo");
-        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
         
         test.equal(r[1].getSource(), "bar");
-        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
         test.equal(r[1].getFlavor(), "CHOCOLATE");
@@ -1748,7 +1789,7 @@ module.exports = {
     },
     
     testYamlFileParseWithNoGleanedFlavor: function(test) {
-        test.expect(15);
+        test.expect(17);
 
         var yml = new YamlFile({
             project: p,
@@ -1772,14 +1813,16 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getSource(), "foo");
-        test.equal(r[0].getLocale(), "en-ZA");
+        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTargetLocale(), "en-ZA");
+        test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
         
-        test.equal(r[1].getSource(), "bar");
-        test.equal(r[1].getLocale(), "en-ZA");
+        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTargetLocale(), "en-ZA");
+        test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
         test.ok(!r[1].getFlavor());
