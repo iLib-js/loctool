@@ -1620,5 +1620,164 @@ module.exports = {
         test.equal(yml.getContent(), expected);
 
         test.done();
+    },
+    
+    testYamlFileParseWithFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft,
+            flavor: "CHOCOLATE"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+        
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.done();
+    },
+    
+    testYamlFileParseWithNoFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+        
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
+
+        test.done();
+    },
+    
+    testYamlFileParseWithGleanedFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft,
+            pathName: "customization/en-CHOCOLATE.yml"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+        
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.done();
+    },
+    
+    testYamlFileParseWithNoGleanedFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-ZA",
+            type: yft,
+            pathName: "customization/en-ZA.yml"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+        
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getLocale(), "en-ZA");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+        
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getLocale(), "en-ZA");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
+
+        test.done();
     }
 };
