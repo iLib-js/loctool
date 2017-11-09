@@ -1,7 +1,20 @@
 /*
  * testSwiftFile.js - test the Swift file handler object.
  *
- * Copyright © 2017, HealthTap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!SwiftFile) {
@@ -29,7 +42,7 @@ module.exports = {
     testSwiftFileConstructorParams: function(test) {
         test.expect(1);
 
-        var j = new SwiftFile(p, "./testfiles/swift/PNXStrings.swift", sft);
+        var j = new SwiftFile(p, "./testfiles/swift/MyproductStrings.swift", sft);
         
         test.ok(j);
         
@@ -112,6 +125,29 @@ module.exports = {
         test.done();
     },
 
+    testSwiftFileParseSimpleHTLocalizedString: function(test) {
+        test.expect(6);
+
+        var j = new SwiftFile(p, undefined, sft);
+        test.ok(j);
+        
+        j.parse('HTLocalizedString("This is a test", comment: "translator\'s comment")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "This is a test"
+        });
+        test.ok(r);
+        
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "This is a test");
+        test.equal(r[0].getComment(), "translator's comment");
+        
+        test.done();
+    },
+    
     testSwiftFileParseSimpleGetBySource: function(test) {
         test.expect(6);
 
@@ -433,7 +469,7 @@ module.exports = {
     testSwiftFileExtractFile: function(test) {
         test.expect(26);
 
-        var j = new SwiftFile(p, "./swift/PNXStrings.swift", sft);
+        var j = new SwiftFile(p, "./swift/MyproductStrings.swift", sft);
         test.ok(j);
         
         // should read the file
@@ -441,7 +477,7 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 27);
+        test.equal(set.size(), 14);
         
         var r = set.getBySource("Options");
         test.ok(r);
@@ -455,17 +491,17 @@ module.exports = {
         test.equal(r.getKey(), "Error logging out");
         test.equal(r.getComment(), "Error logging out title");
         
-        r = set.getBySource("Reason for visit");
+        r = set.getBySource("NOTIFICATIONS");
         test.ok(r);
-        test.equal(r.getSource(), "Reason for visit");
-        test.equal(r.getKey(), "Reason for visit");
-        test.equal(r.getComment(), "appointment table view section header");
+        test.equal(r.getSource(), "NOTIFICATIONS");
+        test.equal(r.getKey(), "NOTIFICATIONS");
+        test.equal(r.getComment(), "tab bar title");
 
-        r = set.getBySource("You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
+        r = set.getBySource("An issue occurred trying to log out. Please try again");
         test.ok(r);
-        test.equal(r.getSource(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
-        test.equal(r.getKey(), "You have no upcoming appointments right now. Consider spending your free time sharing a smile with someone.");
-        test.equal(r.getComment(), "message subheader shown when no appointments in get help feed");
+        test.equal(r.getSource(), "An issue occurred trying to log out. Please try again");
+        test.equal(r.getKey(), "An issue occurred trying to log out. Please try again");
+        test.equal(r.getComment(), "Error logging out message");
 
         r = set.getBySource("Login");
         test.ok(r);

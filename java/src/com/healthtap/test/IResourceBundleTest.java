@@ -1,5 +1,18 @@
 /**
- * Copyright 2016, HealthTap, Inc., All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 package com.healthtap.test;
 
@@ -508,10 +521,9 @@ public class IResourceBundleTest extends TestCase
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		assertNotNull(resBundle);
 		
-		assertEquals("r32020327", resBundle.makeKey("Medications in your profile"));
-		assertEquals("r835310324", resBundle.makeKey("All medications"));
-		assertEquals("r103883086", resBundle.makeKey("Conditions"));
-		assertEquals("r481086103", resBundle.makeKey("Symptoms"));
+        assertEquals("r372802078", resBundle.makeKey("Preferences in your profile"));
+		assertEquals("r725930887", resBundle.makeKey("All settings"));
+		assertEquals("r734599412", resBundle.makeKey("Colour scheme"));
 		assertEquals("r343852585", resBundle.makeKey("Experts"));
 	}
 
@@ -524,10 +536,10 @@ public class IResourceBundleTest extends TestCase
 		assertNotNull(resBundle);
 		
 		assertEquals("r807691021", resBundle.makeKey("Procedures"));
-		assertEquals("r941505899", resBundle.makeKey("Health Apps"));
-		assertEquals("r240633868", resBundle.makeKey("Conditions in your profile"));
-		assertEquals("r795086964", resBundle.makeKey("Treatment Reviews"));
-		assertEquals("r221604632", resBundle.makeKey("Answers"));
+        assertEquals("r898923204", resBundle.makeKey("Mobile Apps"));
+        assertEquals("r618035987", resBundle.makeKey("Settings in your profile"));
+        assertEquals("r175350918", resBundle.makeKey("Product Reviews"));
+        assertEquals("r221604632", resBundle.makeKey("Answers"));
 	}
 
 	public void testMakeKeySimpleTexts3()
@@ -537,17 +549,15 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		assertNotNull(resBundle);
-		
-		assertEquals("r669315500", resBundle.makeKey("Private Health Profile"));
-		assertEquals("r710774033", resBundle.makeKey("People you care for"));
-		assertEquals("r284964820", resBundle.makeKey("Notifications"));
-		assertEquals("r613036745", resBundle.makeKey("News"));
-		assertEquals("r216617786", resBundle.makeKey("More Tips"));
-		assertEquals("r788359072", resBundle.makeKey("Goals"));
-		assertEquals("r140625167", resBundle.makeKey("Referral Link"));
-		assertEquals("r256277957", resBundle.makeKey("Questions"));
-		assertEquals("r18128760", resBundle.makeKey("Private consults"));
-		assertEquals("r584966709", resBundle.makeKey("Suggested doctors for you"));
+				
+        assertEquals("r314592735", resBundle.makeKey("Private Profile"));
+        assertEquals("r711926199", resBundle.makeKey("People you are connected to"));
+        assertEquals("r284964820", resBundle.makeKey("Notifications"));
+        assertEquals("r613036745", resBundle.makeKey("News"));
+        assertEquals("r216617786", resBundle.makeKey("More Tips"));
+        assertEquals("r81370429", resBundle.makeKey("Filters"));
+        assertEquals("r140625167", resBundle.makeKey("Referral Link"));
+        assertEquals("r256277957", resBundle.makeKey("Questions"));
 	}
 
 	public void testMakeKeyEscapes()
@@ -557,7 +567,7 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
-		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
+		assertEquals("r743945592", resBundle.makeKey("Can\'t find id"));
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 	}
 	
@@ -569,13 +579,14 @@ public class IResourceBundleTest extends TestCase
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
 		assertEquals("r382554039", resBundle.makeKey("{topic_name}({topic_generic_name})"));
-		
-		assertEquals("r436261634", resBundle.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"));
-		assertEquals("r858107784", resBundle.makeKey("{sharer_name} {start}found this helpful{end}"));
-		assertEquals("r522565682", resBundle.makeKey("Grow your Care-Team"));
+
+        assertEquals("r300446104", resBundle.makeKey("{name}({generic_name})"));
+		assertEquals("r8321889", resBundle.makeKey("{name}, {sharer_name} {start}found this interesting{end}"));
+		assertEquals("r639868344", resBundle.makeKey("{sharer_name} {start}found this interesting{end}"));
+		assertEquals("r895214324", resBundle.makeKey("Grow your Network"));
 		assertEquals("r1015770123", resBundle.makeKey("Failed to send connection request!"));
 		assertEquals("r993422001", resBundle.makeKey("{goal_name} Goals"));
-		assertEquals("r201354363", resBundle.makeKey("Referral link copied!"));
+		assertEquals("r180897411", resBundle.makeKey("Connection link copied!"));
 	}
 	
 	public void testMakeKeyCompressWhiteSpace()
@@ -585,8 +596,8 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
-		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
-		assertEquals("r926831062", resBundle.makeKey("Can\'t    find    treatment           id"));
+		assertEquals("r743945592", resBundle.makeKey("Can\'t find  id"));
+		assertEquals("r743945592", resBundle.makeKey("Can\'t    find               id"));
 		
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"));
@@ -599,7 +610,7 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
-		assertEquals("r705871347", resBundle.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"));
+		assertEquals("r969175354", resBundle.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"));
 	}
 
 	public void testMakeKeyTrimWhiteSpace()
@@ -609,8 +620,8 @@ public class IResourceBundleTest extends TestCase
 		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		
-		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
-		assertEquals("r926831062", resBundle.makeKey("      Can\'t find treatment id "));
+		assertEquals("r743945592", resBundle.makeKey("Can\'t find  id"));
+		assertEquals("r743945592", resBundle.makeKey("      Can\'t find  id "));
 		
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"));

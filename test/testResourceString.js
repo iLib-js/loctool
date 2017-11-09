@@ -1,7 +1,20 @@
 /*
  * testResourceString.js - test the resource string object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!ResourceString) {
@@ -778,7 +791,7 @@ module.exports = {
     testResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test", "html"), "rs_ht-iosapp_de-DE_This is a test_html");
+        test.equal(ResourceString.hashKey("iosapp", "de-DE", "This is a test", "html"), "rs_iosapp_de-DE_This is a test_html");
         
         test.done();
     },
@@ -795,7 +808,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
@@ -804,7 +817,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "rs_iosapp_de-DE_This is a test_html");
         
         test.done();
     },
@@ -812,7 +825,7 @@ module.exports = {
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test", "html"), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
+        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html", "flavor"), "crs_iosapp_foobar_de-DE_This is a test_html_flavor");
         
         test.done();
     },
@@ -820,7 +833,7 @@ module.exports = {
     testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined), "crs___de-DE__");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined, undefined), "crs___de-DE___");
         
         test.done();
     },
@@ -829,7 +842,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ContextResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
@@ -839,7 +852,47 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_");
+        
+        test.done();
+    },
+
+    testContextResourceStringGetFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "a"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.getFlavor(), "a");
+        
+        test.done();
+    },
+
+    testContextResourceStringHashKeyWithFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+        	project: "iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java",
+        	datatype: "html",
+        	flavor: "chocolate"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_chocolate");
         
         test.done();
     },
@@ -847,7 +900,15 @@ module.exports = {
     testIosLayoutResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(IosLayoutResourceString.hashKey("ht-iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_ht-iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_");
+        
+        test.done();
+    },
+
+    testIosLayoutResourceStringStaticHashKeyWithFlavor: function(test) {
+        test.expect(1);
+
+        test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test", "chocolate"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_chocolate");
         
         test.done();
     },
@@ -855,7 +916,7 @@ module.exports = {
     testIosLayoutResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(IosLayoutResourceString.hashKey(undefined, undefined, "de-DE", undefined), "irs___de-DE_");
+        test.equal(IosLayoutResourceString.hashKey(undefined, undefined, "de-DE", undefined), "irs___de-DE__");
         
         test.done();
     },
@@ -864,16 +925,17 @@ module.exports = {
         test.expect(2);
 
         var rs = new IosLayoutResourceString({
-        	project: "ht-iosapp",
+        	project: "iosapp",
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/es.lproj/foo.xib"
+        	pathName: "a/b/es.lproj/foo.xib",
+        	flavor: "chocolate"
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "irs_ht-iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
+        test.equal(rs.hashKey(), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_chocolate");
         
         test.done();
     }

@@ -1,7 +1,20 @@
 	/*
  * testJavaScriptFile.js - test the JavaScript file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!JavaScriptFile) {
@@ -11,7 +24,7 @@ if (!JavaScriptFile) {
 }
 
 var p = new WebProject({
-	id: "ht-webapp12",
+	id: "webapp",
 	sourceLocale: "en-US"
 }, "./testfiles", {
 	locales:["en-GB"]
@@ -279,19 +292,19 @@ module.exports = {
         test.ok(j);
         
         j.parse(
-    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a patient!\').format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a friend!\').format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a friend!");
         test.ok(r);
-        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
-        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
+        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
         
         test.done();
     },
@@ -303,19 +316,19 @@ module.exports = {
         test.ok(j);
         
         j.parse(
-    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a patient!").format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a friend!").format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         test.ok(r);
-        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
-        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
+        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         
         test.done();
     },
@@ -726,7 +739,7 @@ module.exports = {
 			"        <%\n" +
 			"        var listsOver4 = false;\n" +
 			"        var seemoreLen = 0;\n" +
-			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Family history')];\n" +
+			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Smart Watches')];\n" +
 			"        _.each(subcats, function(subcat, j){\n" +
 			"            var list = topic.attribute.kb_attribute_relationships[subcat] || [];\n" +
 			"            if (list.length > 0) {\n" +
@@ -742,10 +755,10 @@ module.exports = {
         test.equal(r.getSource(), "Personal");
         test.equal(r.getKey(), "Personal");
         
-        r = set.getBySource("Family history");
+        r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },
@@ -805,22 +818,22 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 11);
+        test.equal(set.size(), 4);
         
-        var r = set.getBySource("Medical Devices");
+        var r = set.getBySource("Hand-held Devices");
         test.ok(r);
-        test.equal(r.getSource(), "Medical Devices");
-        test.equal(r.getKey(), "Medical Devices");
+        test.equal(r.getSource(), "Hand-held Devices");
+        test.equal(r.getKey(), "Hand-held Devices");
 
-        var r = set.getBySource("Medications");
+        var r = set.getBySource("Tablets");
         test.ok(r);
-        test.equal(r.getSource(), "Medications");
-        test.equal(r.getKey(), "Medications");
+        test.equal(r.getSource(), "Tablets");
+        test.equal(r.getKey(), "Tablets");
 
-        var r = set.getBySource("Family history");
+        var r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },

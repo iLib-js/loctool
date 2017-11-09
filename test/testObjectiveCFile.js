@@ -1,7 +1,20 @@
 /*
  * testObjectiveCFile.js - test the Objective C file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!ObjectiveCFile) {
@@ -175,6 +188,30 @@ module.exports = {
         test.ok(set);
         
         test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseWithHTLocalizedString: function(test) {
+        test.expect(7);
+
+        var j = new ObjectiveCFile(p, undefined, ocft);
+        test.ok(j);
+
+        var set = j.getTranslationSet();
+        test.equal(set.size(), 0);
+
+        j.parse('HTLocalizedString(@"This is a test", @"translator\'s comment")');
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getComment(), "translator's comment");
         
         test.done();
     },
@@ -401,7 +438,7 @@ module.exports = {
     },
 
     testObjectiveCFileExtractFile: function(test) {
-        test.expect(42);
+        test.expect(34);
 
         var j = new ObjectiveCFile(p, "./objc/t1.m", ocft, ocft);
         test.ok(j);
@@ -419,23 +456,11 @@ module.exports = {
         test.equal(r.getKey(), "Staff");
         test.ok(!r.getComment());
 
-        r = set.getBySource("Patient");
-        test.ok(r);
-        test.equal(r.getSource(), "Patient");
-        test.equal(r.getKey(), "Patient");
-        test.ok(!r.getComment());
-        
-        r = set.getBySource("Left consult");
-        test.ok(r);
-        test.equal(r.getSource(), "Left consult");
-        test.equal(r.getKey(), "Left consult");
-        test.ok(!r.getComment());
-
         r = set.getBySource("Owner");
         test.ok(r);
         test.equal(r.getSource(), "Owner");
         test.equal(r.getKey(), "Owner");
-        test.equal(r.getComment(), "Owner of the consult");
+        test.equal(r.getComment(), "Owner of the question");
 
         r = set.getBySource("Inviting ...");
         test.ok(r);
@@ -459,7 +484,7 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "Make owner");
         test.equal(r.getKey(), "Make owner");
-        test.equal(r.getComment(), " ... of the consult");
+        test.equal(r.getComment(), " ... of the question");
 
         r = set.getBySource("Calling ...");
         test.ok(r);

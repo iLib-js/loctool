@@ -1,0 +1,105 @@
+<% if( upcoming_meetings.length ){ %>
+  <div class="meeting-list generic-list-module">
+    <div class="module-header" >
+      <div class="sprite-icon calendar-icon-black"></div>
+      Upcoming Appointments
+      <span class="number"> <%= upcoming_meetings.length %> </span>
+   </div>
+    <div class="module-content">
+      <div class="list-container">
+        <% _.each(upcoming_meetings, function( val, index ){ %>
+          <% if( index >= per_page ){ val.hidden = true; } %>
+          <%= window.templates['meeting_list_item']({ item: val, index: index }) %>
+        <% }) %>
+        <% if( per_page && upcoming_meetings.length > per_page ){ %>
+          <div class="arrow-wrap" style="border-top: none;">
+            <div class="down-arrow view-all"></div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+<% } %>
+<% if( completed_meetings.length ){ %>
+  <div class="meeting-list generic-list-module">
+    <div class="module-header" >
+      <div class="sprite-icon video-icon-black"></div>
+      Completed Meetings
+    </div>
+    <div class="module-content">
+      <div class="list-container">
+        <% _.each(completed_meetings, function( val, index ){ %>
+          <% if( index >= per_page ){ val.hidden = true; } %>
+          <%= window.templates['meeting_list_item']({ item: val, index: index }) %>
+        <% }) %>
+        <% if( per_page && completed_meetings.length > per_page ){ %>
+          <div class="arrow-wrap" style="border-top: none;">
+            <div class="down-arrow view-all"></div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+<% } %>
+
+<% if( suggested_colleagues.length ){ %>
+  <div class="suggested-colleagues-container">
+  <%= 
+    window.templates['colleague_list']({
+      header_text: RB.getStringJS('Suggested colleagues for you'),
+      arrow_header_text: App.defaults.user_json.person.allowed ? RB.getStringJS('Connect with your colleagues to find answers to your questions.') : null,
+      experts: suggested_colleagues,
+      per_page: null,
+      colleague_options: {
+        show_buttons: true,
+        show_message_input: false,
+        show_connect_button: true
+      }
+    })
+  %>
+  </div>
+<% } %>
+
+<div class="get-help-container" style="display: block;">
+  <div class="header">
+    <div class="get-help">
+      Get help
+    </div>
+    <div class="explanation">
+      <% if (App.defaults.outsider_expert_meetings_enable) { %>
+        <%=
+          RB.getString('{span_tag_start}Get answers to your technical questions{span_tag_end}{break_tag}{span_tag_start}from over {n} colleagues{span_tag_end}').format({
+            span_tag_start: '<span>',
+            span_tag_end: '</span>',
+            break_tag: '<br>',
+            n: App.defaults.total_expert_display_count
+
+          })
+        %>
+      <% } else { %>
+        <%=
+          RB.getString('{span_tag_start}Get answers to your technical questions{span_tag_end}{break_tag}{span_tag_start}from colleagues{span_tag_end}').format({
+            span_tag_start: '<span>',
+            span_tag_end: '</span>',
+            break_tag: '<br>'
+          })
+        %>
+      <% } %>
+    </div>
+  </div>
+  <div class="content">
+    <div class="doc-icon-huge"></div>
+    <div class="online-now">
+      <% if (App.defaults.outsider_expert_meetings_enable) { %>
+        <%=
+          RB.getString('{n} colleagues available for you').format({
+            n: App.defaults.total_expert_display_count
+          })
+        %>
+      <% } else { %>
+        Colleagues are standing by to help
+      <% } %>
+    </div>
+    <a class="btn wide" href="/ask_colleagues" track_event='menu_meetings_talk_ad' track_data='{"type": "in_app_referrer"}' ><i class="askcolleagues-icon"></i> Ask your co-workers now</a>
+  </div>
+</div>

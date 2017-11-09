@@ -1,7 +1,20 @@
 /*
  * testPseudoBritish.js - test the US to British English spell-corrector
  *
- * Copyright © 2017, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!PseudoFactory) {
@@ -230,6 +243,19 @@ module.exports = {
         test.done();
     },
     
+    testPseudoBritishSkipReplacementsYaml: function(test) {
+        test.expect(1);
+
+        var pb = PseudoFactory({
+			project: project,
+			locale: "en-GB",
+			type: "ruby"
+		});
+        test.equal(pb.getString("Skip the unflavored %ESTROGEN% supplements."), "Skip the unflavoured %ESTROGEN% supplements.");
+        
+        test.done();
+    },
+
     testPseudoBritishInheritedLocaleNZ: function(test) {
         test.expect(1);
 

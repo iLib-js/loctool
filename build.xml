@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-build.xml - build the translation circle app 
+build.xml - build the localization tool app 
 
-Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
+Copyright © 2016-2017, JEDLSoft
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+limitations under the License.
 -->
 
 <project name="loctool" default="test">
@@ -454,7 +467,31 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
 	</target>
 	
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant">
+	<target name="test.buildgradle" description="Run only the tests for the build gradle object">
+		<run script="${build.test}/testBuildGradle.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.buildgradle" description="Debug only the tests for the build gradle object">
+		<debug script="${build.test}/testBuildGradle.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.androidproject" description="Run only the tests for the Android project object">
+		<run script="${build.test}/testAndroidProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidproject" description="Debug only the tests for the Android project object">
+		<debug script="${build.test}/testAndroidProject.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.androidflavors" description="Run only the tests for the Android flavors object">
+		<run script="${build.test}/testAndroidFlavors.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidflavors" description="Debug only the tests for the Android flavors object">
+		<debug script="${build.test}/testAndroidFlavors.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors">
 	</target>
 
 	<macrodef name="runsql">

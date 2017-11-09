@@ -1,7 +1,20 @@
 /*
- * testHamlFile.js - test the Java file handler object.
+ * testHamlFile.js - test the Haml file handler object.
  *
- * Copyright © 2017, HealthTap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!HamlFile) {
@@ -16,37 +29,37 @@ if (!HamlFile) {
 }
 
 function diff(a, b) {
-	if ((!a || !b) && (a || b)) {
-		console.log("a is " + a + ", b is " + b);
-		return;
-	}
-	var min = Math.min(a.length, b.length);
-	
-	for (var i = 0; i < min; i++) {
-		if (a[i] !== b[i]) {
-			console.log("Found difference at character " + i);
-			console.log("a: " + a.substring(i));
-			console.log("b: " + b.substring(i));
-			break;
-		}
-	}
+    if ((!a || !b) && (a || b)) {
+        console.log("a is " + a + ", b is " + b);
+        return;
+    }
+    var min = Math.min(a.length, b.length);
+    
+    for (var i = 0; i < min; i++) {
+        if (a[i] !== b[i]) {
+            console.log("Found difference at character " + i);
+            console.log("a: " + a.substring(i));
+            console.log("b: " + b.substring(i));
+            break;
+        }
+    }
 }
 
 var p = new WebProject({
-	id: "webapp",
-	sourceLocale: "en-US"
+    id: "webapp",
+    sourceLocale: "en-US"
 }, "./testfiles", {
-	nopseudo: true,
-	locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"]
+    nopseudo: true,
+    locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"]
 });
 
 var pi = new WebProject({
-	id: "webapp",
-	sourceLocale: "en-US"
+    id: "webapp",
+    sourceLocale: "en-US"
 }, "./testfiles", {
-	nopseudo: true,
-	locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
-	identify: true
+    nopseudo: true,
+    locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
+    identify: true
 });
 
 var hft = new HamlFileType(p);
@@ -65,10 +78,10 @@ module.exports = {
         test.expect(1);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./testfiles/ruby/t2.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./testfiles/ruby/t2.html.haml",
+            type: hft
+        });
         
         test.ok(h);
         
@@ -79,9 +92,9 @@ module.exports = {
         test.expect(1);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         test.done();
@@ -91,9 +104,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         test.equal(h.makeKey("This is a test"), "r654479252");
@@ -102,123 +115,120 @@ module.exports = {
     },
 
     testHamlFileMakeKeySimpleTexts1: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        test.equals(h.makeKey("Medications in your profile"), "r32020327");
-		test.equals(h.makeKey("All medications"), "r835310324");
-		test.equals(h.makeKey("Conditions"), "r103883086");
-		test.equals(h.makeKey("Symptoms"), "r481086103");
-		test.equals(h.makeKey("Experts"), "r343852585");
+        test.equals(h.makeKey("Preferences in your profile"), "r372802078");
+        test.equals(h.makeKey("All settings"), "r725930887");
+        test.equals(h.makeKey("Colour scheme"), "r734599412");
+        test.equals(h.makeKey("Experts"), "r343852585");
         
         test.done();
-	},
+    },
 
     testHamlFileMakeKeyUnescaped: function(test) {
         test.expect(5);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         test.equals(h.makeKey("foo \\n \\t bar"), "r1056543475");
         test.equals(h.makeKey("\\n \\t bar"), "r755240053");
-		test.equals(h.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
-		test.equals(h.makeKey("\\'Dude\\'"), "r6259609");
-		
+        test.equals(h.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
+        test.equals(h.makeKey("\\'Dude\\'"), "r6259609");
+        
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeySimpleTexts2: function(test) {
+    testHamlFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         test.equals(h.makeKey("Procedures"), "r807691021");
-		test.equals(h.makeKey("Health Apps"), "r941505899");
-		test.equals(h.makeKey("Conditions in your profile"), "r240633868");
-		test.equals(h.makeKey("Treatment Reviews"), "r795086964");
-		test.equals(h.makeKey("Answers"), "r221604632");
+        test.equals(h.makeKey("Mobile Apps"), "r898923204");
+        test.equals(h.makeKey("Settings in your profile"), "r618035987");
+        test.equals(h.makeKey("Product Reviews"), "r175350918");
+        test.equals(h.makeKey("Answers"), "r221604632");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeySimpleTexts3: function(test) {
-        test.expect(11);
+    testHamlFileMakeKeySimpleTexts3: function(test) {
+        test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        test.equals(h.makeKey("Private Health Profile"), "r669315500");
-		test.equals(h.makeKey("People you care for"), "r710774033");
-		test.equals(h.makeKey("Notifications"), "r284964820");
-		test.equals(h.makeKey("News"), "r613036745");
-		test.equals(h.makeKey("More Tips"), "r216617786");
-		test.equals(h.makeKey("Goals"), "r788359072");
-		test.equals(h.makeKey("Referral Link"), "r140625167");
-		test.equals(h.makeKey("Questions"), "r256277957");
-		test.equals(h.makeKey("Private consults"), "r18128760");
-		test.equals(h.makeKey("Suggested doctors for you"), "r584966709");
+        test.equals(h.makeKey("Private Profile"), "r314592735");
+        test.equals(h.makeKey("People you are connected to"), "r711926199");
+        test.equals(h.makeKey("Notifications"), "r284964820");
+        test.equals(h.makeKey("News"), "r613036745");
+        test.equals(h.makeKey("More Tips"), "r216617786");
+        test.equals(h.makeKey("Filters"), "r81370429");
+        test.equals(h.makeKey("Referral Link"), "r140625167");
+        test.equals(h.makeKey("Questions"), "r256277957");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyEscapes: function(test) {
+    testHamlFileMakeKeyEscapes: function(test) {
         test.expect(3);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        test.equals(h.makeKey("Can\'t find treatment id"), "r926831062");
-		test.equals(h.makeKey("Can\'t find an application for SMS"), "r909283218");
+        test.equals(h.makeKey("Can\'t find id"), "r743945592");
+        test.equals(h.makeKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
-	},
-	
-	testHamlFileMakeKeyPunctuation: function(test) {
+    },
+    
+    testHamlFileMakeKeyPunctuation: function(test) {
         test.expect(8);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        test.equals(h.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(h.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"), "r436261634");
-		test.equals(h.makeKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
-		test.equals(h.makeKey("Grow your Care-Team"), "r522565682");
-		test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
-		test.equals(h.makeKey("{goal_name} Goals"), "r993422001");
-		test.equals(h.makeKey("Referral link copied!"), "r201354363");
+        test.equals(h.makeKey("{name}({generic_name})"), "r300446104");
+        test.equals(h.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+        test.equals(h.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+        test.equals(h.makeKey("Grow your Network"), "r895214324");
+        test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
+        test.equals(h.makeKey("{goal_name} Goals"), "r993422001");
+        test.equals(h.makeKey("Connection link copied!"), "r180897411");
         
         test.done();
-	},
+    },
 
     testHamlFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         test.equal(h.makeKey("This is a test"), "r654479252");
@@ -231,137 +241,137 @@ module.exports = {
         test.expect(5);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
-        test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
-		test.equal(h.makeKey("Can\'t    find    treatment           id"), "r926831062");
-		
-		test.equal(h.makeKey("Can\'t find an application for SMS"), "r909283218");
-		test.equal(h.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
+        test.equal(h.makeKey("Can\'t find  id"), "r743945592");
+        test.equal(h.makeKey("Can\'t    find               id"), "r743945592");
+        
+        test.equal(h.makeKey("Can\'t find an application for SMS"), "r909283218");
+        test.equal(h.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
         
         test.done();
-	},
-	
+    },
+    
     testHamlFileMakeKeyTrimWhiteSpace: function(test) {
         test.expect(5);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        test.equal(h.makeKey("Can\'t find treatment id"), "r926831062");
-        test.equal(h.makeKey("      Can\'t find treatment id "), "r926831062");
-		
+        test.equal(h.makeKey("Can\'t find  id"), "r743945592");
+        test.equal(h.makeKey("      Can\'t find  id "), "r743945592");
+        
         test.equal(h.makeKey("Can\'t find an application for SMS"), "r909283218");
         test.equal(h.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");
 
-		test.done();
-	},
-	
-	testHamlFileMakeKeyNewLines: function(test) {
+        test.done();
+    },
+    
+    testHamlFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(hf.makeKey("A \n B"), "r191336864");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyEscapeN: function(test) {
+    testHamlFileMakeKeyEscapeN: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(hf.makeKey("A \\n B"), "r191336864");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyTabs: function(test) {
+    testHamlFileMakeKeyTabs: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         test.equals(hf.makeKey("A \t B"), "r191336864");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyEscapeT: function(test) {
+    testHamlFileMakeKeyEscapeT: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         test.equals(hf.makeKey("A \\t B"), "r191336864");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyQuotes: function(test) {
+    testHamlFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         test.equals(hf.makeKey("A \\'B\\' C"), "r935639115");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
+    testHamlFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         test.equals(hf.makeKey("\\u00A0 \\u0023"), "r2293235");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+    testHamlFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
-        test.equals(hf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        test.equals(hf.makeKey("\u00a0 text\u00a0chat"), "r87956021");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
+    testHamlFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
         test.equals(hf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
@@ -378,20 +388,20 @@ module.exports = {
         test.equals(hf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
         
         test.done();
-	},
+    },
 
-	testHamlFileMakeKeyCheckRubyCompatibilitySpecialChars: function(test) {
+    testHamlFileMakeKeyCheckRubyCompatibilitySpecialChars: function(test) {
         test.expect(2);
 
         var hf = new HamlFile({
-			project: p
-		});
+            project: p
+        });
         test.ok(hf);
 
-        test.equals(hf.makeKey("Answers and consultations from real, caring doctors across 141 specialties\u2028 24/7 immediate access to physicians via video, voice, and text chat"), "r317136970");
+        test.equals(hf.makeKey("Foo\u2028 24/7 bar"), "r102490768");
         
         test.done();
-	},
+    },
 
     testHamlFileFindMatchingOneLine: function(test) {
         test.expect(2);
@@ -403,9 +413,9 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 22);
         test.equal(h.currentLine, 0);
         
-		test.done();
-	},
-	
+        test.done();
+    },
+    
     testHamlFileFindMatchingMixedBrackets: function(test) {
         test.expect(2);
 
@@ -416,8 +426,8 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 22);
         test.equal(h.currentLine, 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingParens: function(test) {
         test.expect(2);
@@ -429,8 +439,8 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 23);
         test.equal(h.currentLine, 0);
         
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingParensMultiple: function(test) {
         test.expect(2);
@@ -442,8 +452,8 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 25);
         test.equal(h.currentLine, 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingSquareBrackets: function(test) {
         test.expect(2);
@@ -455,8 +465,8 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 23);
         test.equal(h.currentLine, 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingSquareBracketsMultiple: function(test) {
         test.expect(2);
@@ -468,359 +478,359 @@ module.exports = {
         test.equal(h.findMatchingBrackets(11), 25);
         test.equal(h.currentLine, 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
-	testHamlFileFindMatchingMultipleLines: function(test) {
+    testHamlFileFindMatchingMultipleLines: function(test) {
         test.expect(2);
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar{ {asdf{",
-        	"     asdf} asdf} asdf}"
+            "   %foo.bar{ {asdf{",
+            "     asdf} asdf} asdf}"
         ];
         h.currentLine = 0;
 
         test.equal(h.findMatchingBrackets(11), 21);
         test.equal(h.currentLine, 1);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingMultipleLinesTrailingTextIsIgnored: function(test) {
         test.expect(2);
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar{ {asdf{",
-        	"     asdf} asdf} asdf} trailing text"
+            "   %foo.bar{ {asdf{",
+            "     asdf} asdf} asdf} trailing text"
         ];
         h.currentLine = 0;
 
         test.equal(h.findMatchingBrackets(11), 21);
         test.equal(h.currentLine, 1);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingMultipleLinesWithStartIndex0: function(test) {
         test.expect(2);
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar{ {asdf{",
-        	"     asdf} asdf} asdf} trailing text",
-        	"   .class.otherclass{asdf}"
+            "   %foo.bar{ {asdf{",
+            "     asdf} asdf} asdf} trailing text",
+            "   .class.otherclass{asdf}"
         ];
         h.currentLine = 0;
 
         test.equal(h.findMatchingBrackets(0), 21);
         test.equal(h.currentLine, 1);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingMultipleLinesWithStartIndex57: function(test) {
         test.expect(2);
 
         var h = new HamlFile();
         h.lines = [
-        	"   %foo.bar{ {asdf{",
-        	"     asdf} asdf} asdf} trailing text",
-        	"   .class.otherclass{asdf}"
+            "   %foo.bar{ {asdf{",
+            "     asdf} asdf} asdf} trailing text",
+            "   .class.otherclass{asdf}"
         ];
         h.currentLine = 2;
 
         test.equal(h.findMatchingBrackets(4), 25);
         test.equal(h.currentLine, 2);
 
-		test.done();
-	},
+        test.done();
+    },
 
-	testHamlFileFindMatchingNoSpaces: function(test) {
+    testHamlFileFindMatchingNoSpaces: function(test) {
         test.expect(2);
 
         var h = new HamlFile();
         h.lines = [
-        	'  %span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n'
+            '  %span{:itemprop=>"author"}= this_friend.friend? ? (link_to(this_friend.to_s,friend_path(this_friend))) : this_friend.profile_name\n'
         ];
         h.currentLine = 0;
 
         test.equal(h.findMatchingBrackets(2), 27);
         test.equal(h.currentLine, 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileIndentationTabs: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         test.equal(h.indentation(
-        	"\t\t%foo.bar{ {asdf{\n", 0), 2);
+            "\t\t%foo.bar{ {asdf{\n", 0), 2);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileIndentationSkipReturn: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         test.equal(h.indentation(
-        	"   %foo.bar{ {asdf{\n" +
-        	"     asdf} asdf} asdf} trailing text\n" +
-        	"   .class.otherclass {asdf} \n", 57), 3);
+            "   %foo.bar{ {asdf{\n" +
+            "     asdf} asdf} asdf} trailing text\n" +
+            "   .class.otherclass {asdf} \n", 57), 3);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentSame: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"   a",
-        	"     b",
-        	"     c",
-        	"   d",
-        	"   e"
+            "   a",
+            "     b",
+            "     c",
+            "   d",
+            "   e"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 2);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentLess: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"   a",
-        	"     b",
-        	"     c",
-        	" d",
-        	"   e"
+            "   a",
+            "     b",
+            "     c",
+            " d",
+            "   e"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 2);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentMore: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"   a",
-        	"     b",
-        	"     c",
-        	"       d",
-        	"   e"
+            "   a",
+            "     b",
+            "     c",
+            "       d",
+            "   e"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 3);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentNoneToEnd: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"   a",
-        	"     b",
-        	"     c",
-        	"       d"
+            "   a",
+            "     b",
+            "     c",
+            "       d"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 3);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentNone: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"   a",
-        	"   b",
-        	"   c",
-        	"       d"
+            "   a",
+            "   b",
+            "   c",
+            "       d"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 0);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentSkipBlankLines: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	":a",
-        	"  b",
-        	"",
-        	"  c",
-        	"        ",
-        	"    d",
-        	"e"
+            ":a",
+            "  b",
+            "",
+            "  c",
+            "        ",
+            "    d",
+            "e"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 5);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFindMatchingIndentIncludeBlankLinesAtTheEnd: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	":a",
-        	"  b",
-        	"",
-        	"  c",
-        	"        ",
-        	"d",
-        	"e"
+            ":a",
+            "  b",
+            "",
+            "  c",
+            "        ",
+            "d",
+            "e"
         ];
         h.currentLine = 0;
         
         test.equal(h.findMatchingIndent(), 4);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizable: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p This is not a string but ruby code instead"
+            "  %p This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 5);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizableNoIndent: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"%p This is not a string but ruby code instead"
+            "%p This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(0), 3);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizableSkipSpaces: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p   This is not a string but ruby code instead"
+            "  %p   This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 7);
 
-		test.done();
-	},
-	
+        test.done();
+    },
+    
     testHamlFileFirstLocalizableSkipAttr: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p{:a => 'b'} This is not a string but ruby code instead"
+            "  %p{:a => 'b'} This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 16);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizableSkipAttrAndWhitespace: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p{:a => 'b'}   This is not a string but ruby code instead"
+            "  %p{:a => 'b'}   This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 18);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizableSkipSuffixes: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p<>/ This is not a string but ruby code instead"
+            "  %p<>/ This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 8);
 
-		test.done();
-	},
+        test.done();
+    },
 
-	testHamlFileFirstLocalizableSkipSuffixesEqual: function(test) {
+    testHamlFileFirstLocalizableSkipSuffixesEqual: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p= This is not a string but ruby code instead\n"
+            "  %p= This is not a string but ruby code instead\n"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 6);
 
-		test.done();
-	},
+        test.done();
+    },
 
     testHamlFileFirstLocalizableSkipAttrsAndSuffixes: function(test) {
         test.expect(1);
 
         var h = new HamlFile();
         h.lines = [
-        	"  %p{:a => 'b'}<>/ This is not a string but ruby code instead"
+            "  %p{:a => 'b'}<>/ This is not a string but ruby code instead"
         ];
         h.currentLine = 0;
         
         test.equal(h.firstLocalizable(2), 19);
 
-		test.done();
-	},
-	
+        test.done();
+    },
+    
     testHamlFileConvertTagSimple: function(test) {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %b testing"];
@@ -835,9 +845,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %b{ :class => 'foo' } testing"];
@@ -852,9 +862,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %b{ class: 'foo' } testing"];
@@ -869,9 +879,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %br/ testing"];
@@ -886,9 +896,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %p{ :id => 'newpara2', :class => 'foo' } testing"];
@@ -903,9 +913,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %p{id: 'newpara2', class : 'foo' } testing"];
@@ -920,9 +930,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %p{ :id => 'newpara2', :name=>\"asdf\", :class => 'foo' } testing"];
@@ -937,9 +947,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["  %p{id: 'newpara2', name:\"asdf\", class : 'foo' } testing"];
@@ -954,9 +964,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ['  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n'];
@@ -971,9 +981,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ['  %span#data-part non-breaking\n'];
@@ -988,9 +998,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ['  %span#data-part.foo.bar non-breaking\n'];
@@ -1005,9 +1015,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ['  %span#data-asdf.foo.bar{:precision => "2"} non-breaking\n'];
@@ -1022,9 +1032,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.lines = ["    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n"];
@@ -1035,13 +1045,13 @@ module.exports = {
         test.done();
     },
 
-	testHamlFileParseTextSimple: function(test) {
+    testHamlFileParseTextSimple: function(test) {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test');
@@ -1065,13 +1075,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  This is more text at the same indentation level.\n');
+                '  This is more text at the same indentation level.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1092,13 +1102,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test\n' +
-        		'This is more text at a different indentation level.\n');
+                'This is more text at a different indentation level.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1125,13 +1135,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'    This is more text at a different indentation level.\n');
+                '    This is more text at a different indentation level.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1148,18 +1158,18 @@ module.exports = {
         test.done();
     },
 
-	testHamlFileParseTextBlankIndentedLineSeparatesResources: function(test) {
+    testHamlFileParseTextBlankIndentedLineSeparatesResources: function(test) {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test\n' +
-        		'  \n' +
-        		'  This is another test.\n');
+                '  \n' +
+                '  This is another test.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1182,18 +1192,18 @@ module.exports = {
         test.done();
     },
 
-	testHamlFileParseTextCompletelyBlankLineSeparatesResources: function(test) {
+    testHamlFileParseTextCompletelyBlankLineSeparatesResources: function(test) {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test\n' +
-        		'\n' +
-        		'  This is another test.\n');
+                '\n' +
+                '  This is another test.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1216,18 +1226,18 @@ module.exports = {
         test.done();
     },
 
-	testHamlFileParseTextBlankMoreIndentedLineAlsoSeparatesResources: function(test) {
+    testHamlFileParseTextBlankMoreIndentedLineAlsoSeparatesResources: function(test) {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test\n' +
-        		'    \n' +
-        		'    This is another test.\n');
+                '    \n' +
+                '    This is another test.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1254,9 +1264,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is <span class="foo">a test</a> for the ages.\n');
@@ -1280,12 +1290,12 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
-        h.parse('  There are #{enterprise.count(:doctor).uniq} doctors.\n');
+        h.parse('  There are #{group.count(:friend).uniq} friends.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1296,8 +1306,8 @@ module.exports = {
         var r = resources[0];
         test.ok(r);
         
-        test.equal(r.getSource(), 'There are #{enterprise.count(:doctor).uniq} doctors.');
-        test.equal(r.getKey(), "r808325557");
+        test.equal(r.getSource(), 'There are #{group.count(:friend).uniq} friends.');
+        test.equal(r.getKey(), "r858463218");
 
         test.done();
     },
@@ -1306,9 +1316,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  .fg-bold.fg-test This is a test\n');
@@ -1332,9 +1342,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %p This is a test\n');
@@ -1358,13 +1368,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %p This is a test.\n' +   // text wrapped in a div
-        		'  This is more text at the same indentation level.\n');  // should be a separate string
+                '  This is more text at the same indentation level.\n');  // should be a separate string
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1391,9 +1401,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %a{:href=>"/pages/contact_us"} This is a test\n');
@@ -1417,9 +1427,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('    %a.apply_btn.green.btn{:href=>"#{job[\'url\']}", :target=>\'_blank\'} This is a test\n');
@@ -1443,9 +1453,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %a.data.icon{:href=>"/pages/contact_us"} This is a test\n');
@@ -1469,14 +1479,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test of\n' +
-        		'  %b bold text\n' + 
-        		'  embedded in the sentence.\n');
+                '  %b bold text\n' + 
+                '  embedded in the sentence.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1497,14 +1507,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test of the\n' +
-        		'  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
-        		'  tags.\n');
+                '  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
+                '  tags.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1525,15 +1535,15 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         // the code in the attributes disqualifies it from being converted into a <span> tag in line
         h.parse("    Mission\n" +
-        	    "    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n" +
-        	    "    %span.text{:class=>page=='thanks' ? 'active' : 'hidden'} &#8250; Thanks, Doc!\n");
+                "    %span.text{:class=>page=='smile' ? 'active' : 'hidden'} &#8250; Smile\n" +
+                "    %span.text{:class=>page=='thanks' ? 'active' : 'hidden'} &#8250; Thanks, Friend!\n");
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1556,8 +1566,8 @@ module.exports = {
         r = resources[2];
         test.ok(r);
         
-        test.equal(r.getSource(), '&#8250; Thanks, Doc!');
-        test.equal(r.getKey(), "r954577644");
+        test.equal(r.getSource(), '&#8250; Thanks, Friend!');
+        test.equal(r.getKey(), "r88865504");
         
         test.done();
     },
@@ -1569,13 +1579,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  %div A different string.\n');
+                '  %div A different string.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1602,15 +1612,15 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  %p\n' +
-        		'    A different string.\n' + 
-        		'  Not indented.\n');
+                '  %p\n' +
+                '    A different string.\n' + 
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1643,14 +1653,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  %p A different string.\n' + 
-        		'  Not indented.\n');
+                '  %p A different string.\n' + 
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1683,17 +1693,17 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  %p\n' +
-        		'    A different string.\n' + 
-        		'    Another string.\n' +
-        		'    Yet another string.\n' +
-        		'  Not indented.');
+                '  %p\n' +
+                '    A different string.\n' + 
+                '    Another string.\n' +
+                '    Yet another string.\n' +
+                '  Not indented.');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1726,14 +1736,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  %p A different string.\n' + 
-        		'Not indented.\n');
+                '  %p A different string.\n' + 
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1766,13 +1776,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('!!! Frameset\n' +
-        		'This is a test\n');
+                'This is a test\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1793,13 +1803,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('!!!\n' +
-        		'This is a test\n');
+                'This is a test\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1820,13 +1830,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('! Frameset\n' +
-        		'This is a test\n');
+                'This is a test\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1847,17 +1857,17 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  :ruby\n' + 
-        		'     Rb.t("Not indented.);\n' +
-        		'     = asdf asdfasdf\n' + 
-        		'     Skip this string.\n' +
-        		'  Not indented.\n');
+                '  :ruby\n' + 
+                '     Rb.t("Not indented.);\n' +
+                '     = asdf asdfasdf\n' + 
+                '     Skip this string.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1884,14 +1894,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'    .a.b A different string.\n' +   // this is a div
-        		'  Not indented.\n');
+                '    .a.b A different string.\n' +   // this is a div
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1924,14 +1934,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  .a.b A different string.\n' +    // this is a div
-        		'  Not indented.\n');
+                '  .a.b A different string.\n' +    // this is a div
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -1964,14 +1974,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  #abc A different string.\n' +    // this is a div with an id
-        		'  Not indented.\n');
+                '  #abc A different string.\n' +    // this is a div with an id
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2004,14 +2014,14 @@ module.exports = {
         test.expect(12);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  #abc{a: "b", c: "d"} A different string.\n' +    // this is a div with an id and attributes
-        		'  Not indented.\n');
+                '  #abc{a: "b", c: "d"} A different string.\n' +    // this is a div with an id and attributes
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2044,14 +2054,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  #{abc} A different string.\n' +    // this is NOT a div but a hash substitution instead
-        		'  Not indented.\n');
+                '  #{abc} A different string.\n' +    // this is NOT a div but a hash substitution instead
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2072,14 +2082,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  / This is a test.\n' +
-        		'  / A different string.\n' +    // this is a comment
-        		'  Not indented.\n');
+                '  / A different string.\n' +    // this is a comment
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2100,14 +2110,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  -# This is a test.\n' +
-        		'  -# A different string.\n' +    // this is a comment
-        		'  Not indented.\n');
+                '  -# A different string.\n' +    // this is a comment
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2128,14 +2138,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  - # This is a test.\n' +
-        		'  - # A different string.\n' +    // this is a comment
-        		'  Not indented.\n');
+                '  - # A different string.\n' +    // this is a comment
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2156,14 +2166,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  / This is a test.\n' +
-        		'    This indented string is still within the comment.\n' +
-        		'  Not indented.\n');
+                '    This indented string is still within the comment.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2184,14 +2194,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  -# This is a test.\n' +
-        		'    This indented string is still within the comment.\n' +
-        		'  Not indented.\n');
+                '    This indented string is still within the comment.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2212,14 +2222,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  = This is a test.\n' +
-        		'  = This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  = This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2240,14 +2250,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  = This is a test.\n' +
-        		'  = This indented string is still within the ruby code.\n' +
-        		'    Indented text.\n');
+                '  = This indented string is still within the ruby code.\n' +
+                '    Indented text.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2268,14 +2278,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  &= This is a test.\n' +
-        		'  &= This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  &= This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2296,15 +2306,15 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         // do not treat this as a html-safe ruby code
         h.parse('  &amp; This is a test.\n' +
-        		'  &= This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  &= This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2331,15 +2341,15 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         // do not treat this as a html-safe ruby code
         h.parse('  ! This is a test.\n' +
-        		'  &= This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  &= This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2366,14 +2376,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  != This is a test.\n' +
-        		'  != This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  != This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2394,17 +2404,17 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
-        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},"] \n' +
-        	    '- if @expert.isActive?\n' +
-        	    '  Positive.\n' +
-        	    '- else\n' +
-        	    '  Negative.\n' +
-        	    '- endif\n');
+        h.parse('- paragraphs = ["Dear #{@friend.to_s(true, true)},"] \n' +
+                '- if @friend.isActive?\n' +
+                '  Positive.\n' +
+                '- else\n' +
+                '  Negative.\n' +
+                '- endif\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2431,14 +2441,14 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
-        h.parse('- paragraphs = ["Dear #{@expert.to_s(true, true)},", \n' +
-        	    '  "Thank you for committing to a HealthTap shift today from #{@expert_shift.range_as_string}.","This is a courtesy notification to inform you that our system does not currently see you logged in with the "Available" status on HealthTap for your shift. If there are any technical issues preventing you from logging on, please consider trying to access HealthTap again after restarting your device or computer. Then, if you would like additional assistance, please contact #{@expert_support_email} (or #{@expert_support_phone})."]\n' +
-        	    'Not indented.\n');
+        h.parse('- paragraphs = ["Dear #{@friend.to_s(true, true)},", \n' +
+                '  "Thank you for committing to volunteer","Your time will help hundreds rebuild their lives after the deadly hurricanes. Call #{@support_phone} for more info."]\n' +
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2459,18 +2469,18 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('= func(                         |\n' +
-        	    '  "I think this might get " +   |\n' +
-        	    '  "pretty long so I should " +  |\n' +
-        	    '  "probably make it " +         |\n' +
-        	    '  "multiline so it doesn\'t " + |\n' +
-        	    '  "look awful.")                |\n' +
-        		'Not indented.\n');
+                '  "I think this might get " +   |\n' +
+                '  "pretty long so I should " +  |\n' +
+                '  "probably make it " +         |\n' +
+                '  "multiline so it doesn\'t " + |\n' +
+                '  "look awful.")                |\n' +
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2491,13 +2501,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%p= This is not a string but ruby code instead\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2518,13 +2528,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%p.x.y{:attr => "value", :x => "y"}= This is not a string but ruby code instead\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2545,13 +2555,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%p.x.y{:attr => "value", :x => "y"}<>= This is not a string but ruby code instead\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2572,13 +2582,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
-        h.parse('%span{:itemprop=>"author"}= this_expert.expert? ? (link_to(this_expert.to_s,expert_path(this_expert))) : this_expert.profile_name\n' +
-        		'Not indented.\n');
+        h.parse('%span{:itemprop=>"author"}= this_friend.friend? ? (link_to(this_friend.to_s,friend_path(this_friend))) : this_friend.profile_name\n' +
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2594,18 +2604,18 @@ module.exports = {
 
         test.done();
     },
-	
+    
     testHamlFileParseTextTagWithSuffixSlash: function(test) {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%meta{:attr => "value", :x => "y"}/ This is a test.\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2632,13 +2642,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%meta{:attr => "value", :x => "y"}< This is a test.\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2665,13 +2675,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%meta{:attr => "value", :x => "y"}> This is a test.\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2698,13 +2708,13 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('%meta{:attr => "value", :x => "y"}<> This is a test.\n' +
-        		'Not indented.\n');
+                'Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2731,13 +2741,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %div{:attr => "value"} #{this should be ignored}\n' +
-        		'  Not indented.\n');
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2758,13 +2768,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %div{:attr => "value"} <img src="http://some.com/url/here" />\n' +
-        		'  Not indented.\n');
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2785,13 +2795,13 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %div{:attr => "value"} .,$#$@%\n' +
-        		'  Not indented.\n');
+                '  Not indented.\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2813,15 +2823,15 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('            Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
-        	    '            %span.check_icon\n' +
-        	    '            Recommend\n');
+                '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
+                '            %span.check_icon\n' +
+                '            Recommend\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2848,15 +2858,15 @@ module.exports = {
         test.expect(9);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('          Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
-        	    '            %span.check_icon\n' +
-        	    '            Recommend\n');
+                '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
+                '            %span.check_icon\n' +
+                '            Recommend\n');
         
         var set = h.getTranslationSet();
         test.ok(set);
@@ -2883,9 +2893,9 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  Read more&nbsp;&rsaquo;\n');
@@ -2911,33 +2921,33 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test. This should all be in one string.",
-        	original: '  This is a test.\n' +
-    				  '  This should all be in one string.\n'
+            text: "This is a test. This should all be in one string.",
+            original: '  This is a test.\n' +
+                      '  This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -2953,42 +2963,42 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
-        	original: 'This is a test.\n' +
-        	          '<b>Bold text.</b>\n' +
-    				  'This should all be in one string.\n'
+            text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+            original: 'This is a test.\n' +
+                      '<b>Bold text.</b>\n' +
+                      'This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("Bold text."),
-        	source: "Texte gras.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("Bold text."),
+            source: "Texte gras.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3004,40 +3014,40 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test.<b>Bold text.</b>This should all be in one string.",
-        	original: 'This is a test.<b>Bold text.</b>This should all be in one string.\n'
+            text: "This is a test.<b>Bold text.</b>This should all be in one string.",
+            original: 'This is a test.<b>Bold text.</b>This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("Bold text."),
-        	source: "Texte gras.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("Bold text."),
+            source: "Texte gras.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3053,42 +3063,42 @@ module.exports = {
         test.expect(5);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
-        	original: 'This is a test.\n' +
-        	          '<b>Bold text.</b>\n' +
-    				  'This should all be in one string.\n'
+            text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+            original: 'This is a test.\n' +
+                      '<b>Bold text.</b>\n' +
+                      'This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("Bold text."),
-        	source: "Texte gras.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("Bold text."),
+            source: "Texte gras.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3110,32 +3120,32 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test & another test.",
-        	original: 'This is a test &amp; another test.\n'
+            text: "This is a test & another test.",
+            original: 'This is a test &amp; another test.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test"),
-        	source: "Ceci est un essai",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test"),
+            source: "Ceci est un essai",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("another test."),
-        	source: "encore un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("another test."),
+            source: "encore un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3151,34 +3161,34 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
-        	original: 'This is a test.\n' +
-        	          '<b>Bold text.</b>\n' +
-    				  'This should all be in one string.\n'
+            text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+            original: 'This is a test.\n' +
+                      '<b>Bold text.</b>\n' +
+                      'This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3194,30 +3204,30 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "#{patient_name}'s video is unavailable.<br>Please continue by voice or chat.",
-        	original: "        #{patient_name}'s video is unavailable.<br>\n" +
-			          "        Please continue by voice or chat.\n"
+            text: "#{friend_name}'s video is unavailable.<br>Please continue by voice or chat.",
+            original: "        #{friend_name}'s video is unavailable.<br>\n" +
+                      "        Please continue by voice or chat.\n"
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("Please continue by voice or chat."),
-        	source: "Por favor, continúa por voz o chat.",
-        	locale: "es-US",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("Please continue by voice or chat."),
+            source: "Por favor, continúa por voz o chat.",
+            locale: "es-US",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "es-US");
         
-        var expected = "#{patient_name}'s video is unavailable. <br>Por favor, continúa por voz o chat.";
+        var expected = "#{friend_name}'s video is unavailable. <br>Por favor, continúa por voz o chat.";
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3230,42 +3240,42 @@ module.exports = {
         test.expect(3);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         var segment = {
-        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
-        	original: 'This is a test.\n' +
-        	          '<b>Bold text.</b>\n' +
-    				  'This should all be in one string.\n'
+            text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+            original: 'This is a test.\n' +
+                      '<b>Bold text.</b>\n' +
+                      'This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("Bold text."),
-        	source: "Texte gras.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("Bold text."),
+            source: "Texte gras.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3285,36 +3295,36 @@ module.exports = {
         test.expect(4);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         hft.modern.clear();
         test.equal(hft.modern.size(), 0);
         
         var segment = {
-        	text: "This is a test. <b>Bold text.</b> This should all be in one string.",
-        	original: 'This is a test.\n' +
-        	          '<b>Bold text.</b>\n' +
-    				  'This should all be in one string.\n'
+            text: "This is a test. <b>Bold text.</b> This should all be in one string.",
+            original: 'This is a test.\n' +
+                      '<b>Bold text.</b>\n' +
+                      'This should all be in one string.\n'
         };
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This should all be in one string."),
-        	source: "Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This should all be in one string."),
+            source: "Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3337,22 +3347,22 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  This should all be in one string.\n');
+                '  This should all be in one string.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test. This should all be in one string."),
-        	source: "Ceci est un essai. Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test. This should all be in one string."),
+            source: "Ceci est un essai. Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3367,22 +3377,22 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: pi, // project with identify set to true
-			type: hft
-		});
+            project: pi, // project with identify set to true
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-        		'  This should all be in one string.\n');
+                '  This should all be in one string.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test. This should all be in one string."),
-        	source: "Ceci est un essai. Tout doit etre en une phrase.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test. This should all be in one string."),
+            source: "Ceci est un essai. Tout doit etre en une phrase.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3398,30 +3408,30 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is a test.\n' +
-		        'This is more text at a different indentation level.\n');
+                'This is more text at a different indentation level.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is a test."),
-        	source: "Ceci est un essai.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is a test."),
+            source: "Ceci est un essai.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey("This is more text at a different indentation level."),
-        	source: "Tout doit etre dans deux phrases.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey("This is more text at a different indentation level."),
+            source: "Tout doit etre dans deux phrases.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3438,21 +3448,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  This is <span class="foo">a test</span> for the ages.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is <span class="foo">a test</span> for the ages.'),
-        	source: 'Ceci est <span class="foo">un essai</span> pour les temps entiere.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is <span class="foo">a test</span> for the ages.'),
+            source: 'Ceci est <span class="foo">un essai</span> pour les temps entiere.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3467,21 +3477,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  .fg-bold.fg-test This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3496,21 +3506,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: pi, // project with identify set to true
-			type: hft
-		});
+            project: pi, // project with identify set to true
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  .fg-bold.fg-test This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3525,21 +3535,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %p This is a test.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3554,30 +3564,30 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('  %p This is a test.\n' +   // text wrapped in a div
-    	        '  This is more text at the same indentation level.\n');  // should be a separate string
+                '  This is more text at the same indentation level.\n');  // should be a separate string
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is more text at the same indentation level.'),
-        	source: 'Ceci est plus texte avec le meme niveau d\'indentation.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is more text at the same indentation level.'),
+            source: 'Ceci est plus texte avec le meme niveau d\'indentation.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3593,21 +3603,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %a{:href=>"/pages/contact_us"} This is a test.\n');
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3622,23 +3632,23 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test of\n' +
-        		'  %b bold text\n' + 
-        		'  embedded in the sentence.\n');
+                '  %b bold text\n' + 
+                '  embedded in the sentence.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test of <b>bold text</b> embedded in the sentence.'),
-        	source: 'Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test of <b>bold text</b> embedded in the sentence.'),
+            source: 'Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3653,23 +3663,23 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test of the\n' +
-        		'  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
-        		'  tags.\n');
+                '  %a.data.icon{:href=>"/pages/contact_us"} non-breaking\n' +
+                '  tags.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.'),
-        	source: 'Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.'),
+            source: 'Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3684,40 +3694,40 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('          Message\n' +
-        	    '          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
-        	    '            %span.check_icon\n' +
-        	    '            Recommend\n');
+                '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
+                '            %span.check_icon\n' +
+                '            Recommend\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Message'),
-        	source: 'Méssage',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Message'),
+            source: 'Méssage',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Recommend'),
-        	source: 'Recommendez',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Recommend'),
+            source: 'Recommendez',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
-        	'          Méssage\n' +
-	    	'          %a.btn.grey.recommend_expert{:href=>"/recommend/#{@expert.id}"}\n' +
-	    	'            %span.check_icon\n' +
-	    	'            Recommendez\n';
+            '          Méssage\n' +
+            '          %a.btn.grey.recommend_friend{:href=>"/recommend/#{@friend.id}"}\n' +
+            '            %span.check_icon\n' +
+            '            Recommendez\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3729,31 +3739,31 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test.\n' +
-    	        '  %div A different string.\n');
+                '  %div A different string.\n');
 
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3769,42 +3779,42 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test.\n' +
-        		'  %p\n' +
-        		'    A different string.\n' + 
-        		'    Another string.\n' +
-        		'    Yet another string.\n' +
-        		'  Not indented.');
+                '  %p\n' +
+                '    A different string.\n' + 
+                '    Another string.\n' +
+                '    Yet another string.\n' +
+                '  Not indented.');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string. Another string. Yet another string.'),
-        	source: 'Une autre phrase. Plus une autre. Encore une phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string. Another string. Yet another string.'),
+            source: 'Une autre phrase. Plus une autre. Encore une phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3822,39 +3832,39 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test.\n' +
-        		'  %p A different string.\n' + 
-        		'  Not indented.\n');
+                '  %p A different string.\n' + 
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3871,28 +3881,28 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('!!! XML\n' +
-        		'This is a test.\n');
+                'This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
-        	'!!! XML\n' +
-			'Ceci est un essai.\n';
+            '!!! XML\n' +
+            'Ceci est un essai.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3903,28 +3913,28 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('!!!\n' +
-        		'This is a test.\n');
+                'This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
-        	'!!!\n' +
-			'Ceci est un essai.\n';
+            '!!!\n' +
+            'Ceci est un essai.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3935,27 +3945,27 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('!! XML\n' +
-        		'This is a test.\n');
+                'This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('!! XML This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('!! XML This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
-        	'Ceci est un essai.\n';
+            'Ceci est un essai.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3966,27 +3976,27 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         h.parse('! XML\n' +
-        		'This is a test.\n');
+                'This is a test.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('! XML This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('! XML This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = 
-        	'Ceci est un essai.\n';
+            'Ceci est un essai.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3997,42 +4007,42 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test.\n' +
-        		'  :ruby\n' + 
-        		'     Rb.t("Not indented.);\n' +
-        		'     = asdf asdfasdf\n' + 
-        		'     Skip this string.\n' +
-        		'  Not indented.\n');
+                '  :ruby\n' + 
+                '     Rb.t("Not indented.);\n' +
+                '     = asdf asdfasdf\n' + 
+                '     Skip this string.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  Ceci est un essai.\n' +
-					   '  :ruby\n' + 
-					   '     Rb.t("Not indented.);\n' +
-					   '     = asdf asdfasdf\n' + 
-					   '     Skip this string.\n' +
+                       '  :ruby\n' + 
+                       '     Rb.t("Not indented.);\n' +
+                       '     = asdf asdfasdf\n' + 
+                       '     Skip this string.\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4044,44 +4054,44 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('- content_for :guest_content do\n' +
-        		'  This is a test.\n' +
-        		'  :ruby\n' + 
-        		'     Rb.t("Not indented.);\n' +
-        		'     = asdf asdfasdf\n' + 
-        		'     Skip this string.\n' +
-        		'  Not indented.\n');
+                '  This is a test.\n' +
+                '  :ruby\n' + 
+                '     Rb.t("Not indented.);\n' +
+                '     = asdf asdfasdf\n' + 
+                '     Skip this string.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '- content_for :guest_content do\n' +
                        '  Ceci est un essai.\n' +
-					   '  :ruby\n' + 
-					   '     Rb.t("Not indented.);\n' +
-					   '     = asdf asdfasdf\n' + 
-					   '     Skip this string.\n' +
+                       '  :ruby\n' + 
+                       '     Rb.t("Not indented.);\n' +
+                       '     = asdf asdfasdf\n' + 
+                       '     Skip this string.\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4093,39 +4103,39 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is a test.\n' +
-        		'  .a.b A different string.\n' +   // this is a div
-        		'  Not indented.\n');
+                '  .a.b A different string.\n' +   // this is a div
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4142,46 +4152,46 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  / This is a test.\n' +
-        		'  / A different string.\n' +
-        		'  Not indented.\n');
+                '  / A different string.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
         var expected = '  / This is a test.\n' +
-					   '  / A different string.\n' +
-					   '  Sans l\'indentation.\n';
+                       '  / A different string.\n' +
+                       '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -4192,46 +4202,46 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  -# This is a test.\n' +
-        		'  -# A different string.\n' +    // this is a div
-        		'  Not indented.\n');
+                '  -# A different string.\n' +    // this is a div
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
         var expected = '  -# This is a test.\n' +
-					   '  -# A different string.\n' +    // this is a div
-					   '  Sans l\'indentation.\n';
+                       '  -# A different string.\n' +    // this is a div
+                       '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -4242,46 +4252,46 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  / This is a test.\n' +
-        		'    This indented string is still within the comment.\n' +
-        		'  Not indented.\n');
+                '    This indented string is still within the comment.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
         var expected = '  / This is a test.\n' +
-					   '    This indented string is still within the comment.\n' +
-					   '  Sans l\'indentation.\n';
+                       '    This indented string is still within the comment.\n' +
+                       '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -4292,46 +4302,46 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  -# This is a test.\n' +
-        		'    This indented string is still within the comment.\n' +
-        		'  Not indented.\n');
+                '    This indented string is still within the comment.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         // don't need comments in the output
         var expected = '  -# This is a test.\n' +
-					   '    This indented string is still within the comment.\n' +
-					   '  Sans l\'indentation.\n';
+                       '    This indented string is still within the comment.\n' +
+                       '  Sans l\'indentation.\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -4342,44 +4352,44 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  = This is a test.\n' +
-        		'  = This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  = This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  = This is a test.\n' +
-		               '  = This indented string is still within the ruby code.\n' +
+                       '  = This indented string is still within the ruby code.\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4391,44 +4401,44 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  &= This is a test.\n' +
-        		'  &= This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  &= This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  &= This is a test.\n' +
-		               '  &= This indented string is still within the ruby code.\n' +
+                       '  &= This indented string is still within the ruby code.\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4440,44 +4450,44 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  != This is a test.\n' +
-        		'  != This indented string is still within the ruby code.\n' +
-        		'  Not indented.\n');
+                '  != This indented string is still within the ruby code.\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  != This is a test.\n' +
-		               '  != This indented string is still within the ruby code.\n' +
+                       '  != This indented string is still within the ruby code.\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4489,52 +4499,52 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  = func(                         |\n' +
-        	    '    "I think this might get " +   |\n' +
-        	    '    "pretty long so I should " +  |\n' +
-        	    '    "probably make it " +         |\n' +
-        	    '    "multiline so it doesn\'t " + |\n' +
-        	    '    "look awful.")                |\n' +
-        		'  Not indented.\n');
+                '    "I think this might get " +   |\n' +
+                '    "pretty long so I should " +  |\n' +
+                '    "probably make it " +         |\n' +
+                '    "multiline so it doesn\'t " + |\n' +
+                '    "look awful.")                |\n' +
+                '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
         var expected = '  = func(                         |\n' +
-					   '    "I think this might get " +   |\n' +
-					   '    "pretty long so I should " +  |\n' +
-					   '    "probably make it " +         |\n' +
-					   '    "multiline so it doesn\'t " + |\n' +
-					   '    "look awful.")                |\n' +
+                       '    "I think this might get " +   |\n' +
+                       '    "pretty long so I should " +  |\n' +
+                       '    "probably make it " +         |\n' +
+                       '    "multiline so it doesn\'t " + |\n' +
+                       '    "look awful.")                |\n' +
                        '  Sans l\'indentation.\n';
         
         diff(actual, expected);
@@ -4546,38 +4556,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %p= This is not a string but ruby code instead\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4593,38 +4603,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %p.x.y{:attr => "value", :x => "y"}= This is not a string but ruby code instead\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4640,38 +4650,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %p.x.y{:attr => "value", :x => "y"}<>= This is not a string but ruby code instead\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4687,38 +4697,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %meta{:attr => "value", :x => "y"}/ This is a test.\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4734,23 +4744,23 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  This is\n' +
-        		'  %br/\n' +
- 		        '  Spinal Tap.\n');
+                '  %br/\n' +
+                 '  Spinal Tap.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is <br/> Spinal Tap.'),
-        	source: 'Ceci est <br/> Spinal Tap.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is <br/> Spinal Tap.'),
+            source: 'Ceci est <br/> Spinal Tap.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4765,21 +4775,21 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  A &amp; B\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A & B'),
-        	source: 'C & D',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A & B'),
+            source: 'C & D',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4794,38 +4804,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %meta{:attr => "value", :x => "y"}< This is a test.\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4841,38 +4851,38 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
         h.parse('  %meta{:attr => "value", :x => "y"}<> This is a test.\n' +
- 		        '  Not indented.\n');
+                 '  Not indented.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('This is a test.'),
-        	source: 'Ceci est un essai.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('This is a test.'),
+            source: 'Ceci est un essai.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('A different string.'),
-        	source: 'Une autre phrase.',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('A different string.'),
+            source: 'Une autre phrase.',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Not indented.'),
-        	source: "Sans l'indentation.",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Not indented.'),
+            source: "Sans l'indentation.",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4888,73 +4898,73 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
 
-        h.parse('.compass-pricing\n' +
+        h.parse('.pricing\n' +
                 '  .pricing-intro\n' +
                 '    %h2.header-medium.light\n' + 
                 '      Calculate ROI for\n' +
                 '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' + 
                 '\n' +
-        		'    %p\n' +
-        		'      Type your organization\'s own values to estimate your ROI\n' +
-        		'    \n' +
-        		'  .desktop-ui.calc-links\n' +
-        		'    %a.reset Reset values\n' +
-        		'    %span.sep\n' +
-        		'    %a.assumptions Assumptions\n');
+                '    %p\n' +
+                '      Type your organization\'s own values to estimate your ROI\n' +
+                '    \n' +
+                '  .desktop-ui.calc-links\n' +
+                '    %a.reset Reset values\n' +
+                '    %span.sep\n' +
+                '    %a.assumptions Assumptions\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
-        	source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
+            source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Calculate ROI for'),
-        	source: 'Calculer le ROI pour',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Calculate ROI for'),
+            source: 'Calculer le ROI pour',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Reset values'),
-        	source: 'Réinitialiser les valeurs',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Reset values'),
+            source: 'Réinitialiser les valeurs',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Assumptions'),
-        	source: "Hypothèses",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Assumptions'),
+            source: "Hypothèses",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
-        var expected = '.compass-pricing\n' +
-				       '  .pricing-intro\n' +
-		               '    %h2.header-medium.light\n' + 
-		               '      Calculer le ROI pour\n' +
-		               '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' +
-		               '\n' +
-					   '    %p\n' +
-					   '      Tapez les valeurs propres de votre organisation pour estimer votre ROI\n' +
-					   '    \n' +
-					   '  .desktop-ui.calc-links\n' +
-					   '    %a.reset Réinitialiser les valeurs\n' +
-					   '    %span.sep\n' +
-					   '    %a.assumptions Hypothèses\n';
+        var expected = '.pricing\n' +
+                       '  .pricing-intro\n' +
+                       '    %h2.header-medium.light\n' + 
+                       '      Calculer le ROI pour\n' +
+                       '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' +
+                       '\n' +
+                       '    %p\n' +
+                       '      Tapez les valeurs propres de votre organisation pour estimer votre ROI\n' +
+                       '    \n' +
+                       '  .desktop-ui.calc-links\n' +
+                       '    %a.reset Réinitialiser les valeurs\n' +
+                       '    %span.sep\n' +
+                       '    %a.assumptions Hypothèses\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -4965,67 +4975,67 @@ module.exports = {
         test.expect(7);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         hft.newres.clear();
         test.equal(hft.newres.size(), 0);
 
-        h.parse('.compass-pricing\n' +
+        h.parse('.pricing\n' +
                 '  .pricing-intro\n' +
                 '    %h2.header-medium.light\n' + 
                 '      Calculate ROI for\n' +
                 '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' + 
                 '\n' +
-        		'    %p\n' +
-        		'      Type your organization\'s own values to estimate your ROI\n' +
-        		'    \n' +
-        		'  .desktop-ui.calc-links\n' +
-        		'    %a.reset Reset values\n' +
-        		'    %span.sep\n' +
-        		'    %a.assumptions Assumptions\n');
+                '    %p\n' +
+                '      Type your organization\'s own values to estimate your ROI\n' +
+                '    \n' +
+                '  .desktop-ui.calc-links\n' +
+                '    %a.reset Reset values\n' +
+                '    %span.sep\n' +
+                '    %a.assumptions Assumptions\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Calculate ROI for'),
-        	source: 'Calculer le ROI pour',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Calculate ROI for'),
+            source: 'Calculer le ROI pour',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Reset values'),
-        	source: 'Réinitialiser les valeurs',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Reset values'),
+            source: 'Réinitialiser les valeurs',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Assumptions'),
-        	source: "Hypothèses",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Assumptions'),
+            source: "Hypothèses",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
-        var expected = '.compass-pricing\n' +
-				       '  .pricing-intro\n' +
-		               '    %h2.header-medium.light\n' + 
-		               '      Calculer le ROI pour\n' +
-		               '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' +
-		               '\n' +
-					   '    %p\n' +
-		        		'      Type your organization\'s own values to estimate your ROI\n' +
-					   '    \n' +
-					   '  .desktop-ui.calc-links\n' +
-					   '    %a.reset Réinitialiser les valeurs\n' +
-					   '    %span.sep\n' +
-					   '    %a.assumptions Hypothèses\n';
+        var expected = '.pricing\n' +
+                       '  .pricing-intro\n' +
+                       '    %h2.header-medium.light\n' + 
+                       '      Calculer le ROI pour\n' +
+                       '      = render :partial  =>  \'b2b/partial/organization_logo_name\'\n' +
+                       '\n' +
+                       '    %p\n' +
+                        '      Type your organization\'s own values to estimate your ROI\n' +
+                       '    \n' +
+                       '  .desktop-ui.calc-links\n' +
+                       '    %a.reset Réinitialiser les valeurs\n' +
+                       '    %span.sep\n' +
+                       '    %a.assumptions Hypothèses\n';
         
         diff(actual, expected);
         test.equal(actual, expected);
@@ -5033,8 +5043,8 @@ module.exports = {
         test.equal(hft.newres.size(), 2);
         
         var resource = hft.newres.getClean(
-			ResourceString.cleanHashKey(
-					p.getProjectId(), "fr-FR", h.makeKey("Type your organization's own values to estimate your ROI"), "x-haml"));
+            ResourceString.cleanHashKey(
+                    p.getProjectId(), "fr-FR", h.makeKey("Type your organization's own values to estimate your ROI"), "x-haml"));
         
         test.ok(resource);
         test.equal(resource.origin, "target");
@@ -5048,10 +5058,10 @@ module.exports = {
         test.expect(8);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/t2.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/t2.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should read the file
@@ -5078,10 +5088,10 @@ module.exports = {
         test.expect(6);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/t2.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/t2.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should read the file
@@ -5110,9 +5120,9 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			type: hft
-		});
+            project: p,
+            type: hft
+        });
         test.ok(h);
         
         // should attempt to read the file and not fail
@@ -5129,10 +5139,10 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/foo.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/foo.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should attempt to read the file and not fail
@@ -5149,14 +5159,14 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "foo.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "foo.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/foo.fr-FR.html.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "foo.fr-FR.html.haml");
 
         test.done();
     },
@@ -5165,14 +5175,14 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/foo.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/foo.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/ruby/foo.fr-FR.html.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr-FR.html.haml");
 
         test.done();
     },
@@ -5181,14 +5191,14 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/foo.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/foo.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should attempt to read the file and not fail
-        test.equal(h.getLocalizedPath("fr-FR"), "testfiles/ruby/foo.fr-FR.haml");
+        test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr-FR.haml");
 
         test.done();
     },
@@ -5197,10 +5207,10 @@ module.exports = {
         test.expect(2);
 
         var h = new HamlFile({
-			project: p,
-			pathName: "./ruby/t2.html.haml",
-			type: hft
-		});
+            project: p,
+            pathName: "./ruby/t2.html.haml",
+            type: hft
+        });
         test.ok(h);
         
         // should read the file
@@ -5208,51 +5218,51 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Calculate ROI for'),
-        	source: 'Calculer le ROI pour',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Calculate ROI for'),
+            source: 'Calculer le ROI pour',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
-        	source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
+            source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Reset values'),
-        	source: "Réinitialiser les valeurs",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Reset values'),
+            source: "Réinitialiser les valeurs",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Assumptions'),
-        	source: "Hypothèses",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Assumptions'),
+            source: "Hypothèses",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         translations.add(new ResourceString({
-        	project: "webapp",
-        	key: h.makeKey('Return on investment'),
-        	source: "Retour sur investissement",
-        	locale: "fr-FR",
-        	datatype: hft.datatype,
-        	origin: "target"
+            project: "webapp",
+            key: h.makeKey('Return on investment'),
+            source: "Retour sur investissement",
+            locale: "fr-FR",
+            datatype: hft.datatype,
+            origin: "target"
         }));
         
         h.localize(translations, ["fr-FR"]);
         
         // now make sure the file was written out
         
-        test.ok(fs.existsSync("testfiles/ruby/t2.fr-FR.html.haml"));
+        test.ok(fs.existsSync("ruby/t2.fr-FR.html.haml"));
         
         test.done();
     }

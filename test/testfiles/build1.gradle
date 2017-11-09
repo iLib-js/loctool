@@ -1,0 +1,44 @@
+android {
+	productFlavors {
+		a {
+            applicationId aApplicationId
+            manifestPlaceholders = [
+                flavorName     : "vanilla"
+            ]
+		}
+		
+		b {
+            applicationId cApplicationId
+            manifestPlaceholders = [
+                flavorName     : "chocolate"
+            ]
+		}
+		
+		c {
+            applicationId cApplicationId
+            manifestPlaceholders = [
+                flavorName     : "cherry almond fudge"
+            ]
+		}
+	}
+	
+	sourceSets {
+        a {
+            manifest.srcFile 'flavors/a/AndroidManifest.xml'
+            java.srcDirs = ['flavors/a/src']
+            res.srcDirs = ['flavors/a/res']
+        }
+
+        b {
+            manifest.srcFile 'flavors/bproj/AndroidManifest.xml'
+            java.srcDirs = ['flavors/bproj/src']
+            res.srcDirs = ['flavors/bproj/res']
+        }
+
+        c {
+            manifest.srcFile 'flavors/xXx/AndroidManifest.xml'
+            java.srcDirs = ['flavors/xXx/src']
+            res.srcDirs = ['flavors/xXx/res']
+        }
+	}
+}

@@ -1,7 +1,20 @@
 /*
  * testCSVFile.js - test the CSV file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!CSVFile) {
@@ -11,6 +24,13 @@ if (!CSVFile) {
     var ContextResourceString =  require("../lib/ContextResourceString.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
 }
+
+var p = new AndroidProject({
+	id: "foo",
+    sourceLocale: "en-US"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
 
 module.exports = {
     testCSVFileConstructor: function(test) {
@@ -25,10 +45,6 @@ module.exports = {
     testCSVFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p, 
         	pathName: "./testfiles/CSV/t1.csv"
@@ -42,10 +58,6 @@ module.exports = {
     testCSVFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -57,10 +69,6 @@ module.exports = {
     testCSVFileConstructorInitWithNames: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -94,10 +102,6 @@ module.exports = {
     testCSVFileConstructorInitWithContent: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -147,10 +151,6 @@ module.exports = {
     testCSVFileConstructorInitWithLocalizableColumns: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -184,10 +184,6 @@ module.exports = {
     testCSVFileParseGetColumnNames: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -213,10 +209,6 @@ module.exports = {
     testCSVFileParseRightRecords: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -242,10 +234,6 @@ module.exports = {
     testCSVFileParseEscapedComma: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -271,10 +259,6 @@ module.exports = {
     testCSVFileParseTrimWhitespace: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -300,10 +284,6 @@ module.exports = {
     testCSVFileParseQuotedValues: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -329,10 +309,6 @@ module.exports = {
     testCSVFileParseQuotedValuesWithCommas: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -358,10 +334,6 @@ module.exports = {
     testCSVFileParseQuotedValuesWithEmbeddedQuotes: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -387,10 +359,6 @@ module.exports = {
     testCSVFileParseEmptyValues: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -416,10 +384,6 @@ module.exports = {
     testCSVFileParseMissingValues: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -447,10 +411,6 @@ module.exports = {
     testCSVFileParseWithTabSeparator: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t'
@@ -477,10 +437,6 @@ module.exports = {
     testCSVFileParseMissingValuesWithTabs: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t'
@@ -509,10 +465,6 @@ module.exports = {
     testCSVFileParseEscapedTab: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t'
@@ -539,10 +491,6 @@ module.exports = {
     testCSVFileParseQuotedValuesTabSeparator: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t'
@@ -569,10 +517,6 @@ module.exports = {
     testCSVFileParseWithTabSeparatorQuotedTabs: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	columnSeparator: '\t'
@@ -599,10 +543,6 @@ module.exports = {
     testCSVFileParseDOSFile: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         // should work with default options
         var j = new CSVFile({
         	project: p
@@ -627,12 +567,8 @@ module.exports = {
     },
 
     testCSVFileExtractFile: function(test) {
-        test.expect(13);
+        test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p, 
         	pathName: "./csv/t1.tsv",
@@ -643,22 +579,14 @@ module.exports = {
         // should read the file
         j.extract();
         
-        test.equal(j.records.length, 10);
+        test.equal(j.records.length, 3);
         
-        var record = j.records[3];
+        var record = j.records[2];
         
-    	test.equal(record.id, "10006");
-    	
-    	test.equal(record.category, "clinical_finding");
-    	test.equal(record.name, "Alcohol sensitivity");
-		test.equal(record["name translation"], "Sensibilidad al alcohol");
-		test.equal(record.short_text, "Alcohol sensitivity");
-		test.equal(record["short_text translation"], "Sensibilidad al alcohol");
-		test.equal(record.long_text, "Alcohol Sensitivity?");
-		test.equal(record["long_text translation"], "¿Sensibilidad al alcohol?");
-		test.equal(record.description, "");
-		test.equal(record["description translation"], "");
-		test.equal(record["Comments/Questions"], "");
+    	test.equal(record.id, "10003");
+    	test.equal(record.category, "flavor");
+    	test.equal(record.name, "strawberry");
+		test.equal(record["name translation"], "fraisa");
 
         test.done();
     },
@@ -666,10 +594,6 @@ module.exports = {
     testCSVFileExtractUndefinedFile: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p
         });
@@ -687,10 +611,6 @@ module.exports = {
     testCSVFileExtractBogusFile: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p, 
         	pathName: "./csv/foo.csv"
@@ -710,10 +630,6 @@ module.exports = {
     testCSVFileLocalizeText: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "description"],
@@ -754,10 +670,6 @@ module.exports = {
     testCSVFileLocalizeTextWithCommasInIt: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "description"],
@@ -798,10 +710,6 @@ module.exports = {
     testCSVFileLocalizeTextWithQuotesInIt: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "description"],
@@ -842,10 +750,6 @@ module.exports = {
     testCSVFileLocalizeTextWithWhitespace: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "description"],
@@ -886,10 +790,6 @@ module.exports = {
     testCSVFileLocalizeTextWithTabs: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	rowSeparator: ':',
@@ -932,10 +832,6 @@ module.exports = {
     testCSVFileLocalizeTextWithMissingFields: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "type", "description"],
@@ -976,10 +872,6 @@ module.exports = {
     testCSVFileLocalizeTextWithMissingFieldsWithTabs: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "type", "description"],
@@ -1021,11 +913,6 @@ module.exports = {
     testCSVFileLocalizeTextWithTranslations: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "foo",
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var j = new CSVFile({
         	project: p,
         	names: ["id", "name", "description"],
@@ -1109,10 +996,6 @@ module.exports = {
     testCSVFileMergeColumnNamesSameNamesSameLength: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1175,10 +1058,6 @@ module.exports = {
     testCSVFileMergeColumnNamesAddColumn: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1244,10 +1123,6 @@ module.exports = {
     testCSVFileMergeColumnNamesAddColumnRightNames: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1312,10 +1187,6 @@ module.exports = {
     testCSVFileMergeColumnNamesAddAndDeleteColumn: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1377,10 +1248,6 @@ module.exports = {
     testCSVFileMergeColumnNamesAddAndDeleteColumnRightNames: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1442,10 +1309,6 @@ module.exports = {
     testCSVFileMergeRightSize: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1509,10 +1372,6 @@ module.exports = {
     testCSVFileMergeRightContent: function(test) {
         test.expect(21);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1577,10 +1436,6 @@ module.exports = {
     testCSVFileMergeWithOverwrites: function(test) {
         test.expect(12);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1645,10 +1500,6 @@ module.exports = {
     testCSVFileMergeWithSomeOverwritesAndDifferentSchema: function(test) {
         test.expect(19);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',
@@ -1728,10 +1579,6 @@ module.exports = {
     testCSVFileMergeWithOverwritesButDontOverwriteWithEmptyOrNull: function(test) {
         test.expect(12);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var csv1 = new CSVFile({
         	project: p,
         	columnSeparator: '\t',

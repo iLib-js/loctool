@@ -1,7 +1,20 @@
 /*
- * testYaml.js - test the Yaml object.
+ * testYaml.js - test the Yaml resource file object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!YamlResourceFile) {
@@ -27,7 +40,7 @@ function diff(a, b) {
 }
 
 var p = new WebProject({
-	id: "ht-webapp12",
+	id: "webapp",
 	sourceLocale: "en-US",
 	resourceDirs: {
 		"yml": "a/b"
@@ -88,11 +101,11 @@ module.exports = {
         test.ok(yml);
         
         yml.parse('---\n' +
-        		'Working_at_HealthTap: Working at HealthTap\n' +
+        		'Working_at_MyCompany: Working at MyCompany\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		': Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'  directly from experienced, successful entrepreneurs.\n');
         
@@ -126,11 +139,11 @@ module.exports = {
         		'  r9834724545: Jobs\n' +
         		'  r9483762220: Our internship program\n' +
         		'  r6782977423: |\n' +
-        		'    Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'    directly from experienced, successful entrepreneurs.\n' +
 				"'feelgood/foo/ssss/asdf.en-US.html.haml':\n" +
-				'  r4524523454: Working at HealthTap\n' +
+				'  r4524523454: Working at MyCompany\n' +
 				'  r3254356823: Jobs\n' +
 				'foo:\n' +
 				'  bar:\n' +
@@ -156,14 +169,14 @@ module.exports = {
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(), 
-        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getSource(), "Working at MyCompany");
         test.equal(r[3].getLocale(), "en-US"); // source locale
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
@@ -197,11 +210,11 @@ module.exports = {
         		'    r9834724545: Jobs\n' +
         		'    r9483762220: Our internship program\n' +
         		'    r6782977423: |\n' +
-        		'      Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'      Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'      directly from experienced, successful entrepreneurs.\n' +
 				"  feelgood/foo/ssss/asdf.en-US.html.haml:\n" +
-				'    r4524523454: Working at HealthTap\n' +
+				'    r4524523454: Working at MyCompany\n' +
 				'    r3254356823: Jobs\n' +
 				'  foo:\n' +
 				'    bar:\n' +
@@ -227,14 +240,14 @@ module.exports = {
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(), 
-        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
         test.equal(r[2].getLocale(), "zh-Hans-CN");
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getSource(), "Working at MyCompany");
         test.equal(r[3].getLocale(), "zh-Hans-CN");
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
@@ -266,11 +279,11 @@ module.exports = {
 
         yml.parse('---\n' +
         		'es-US:\n' +
-        		'  Working_at_HealthTap: Working at HealthTap\n' +
+        		'  Working_at_MyCompany: Working at MyCompany\n' +
         		'  Jobs: Jobs\n' +
         		'  Our_internship_program: Our internship program\n' +
-        		'  ? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		'  : Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'  ? Completing_an_internship_at_MyCompany_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		'  : Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
         		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'    directly from experienced, successful entrepreneurs.\n');
         
@@ -296,7 +309,7 @@ module.exports = {
         
         var set = yml.getTranslationSet();
         
-        test.equal(set.size(), 789);
+        test.equal(set.size(), 10);
         
         var r = set.getBy({
         	reskey: "Marketing"
@@ -307,19 +320,19 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
+        	reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "Everyone at HealthTap has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
-        test.equal(r[0].getKey(), "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
+        test.equal(r[0].getSource(), "Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
+        test.equal(r[0].getKey(), "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
         test.ok(!r[0].getComment());
         
         var r = set.getBy({
-        	reskey: "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication."
+        	reskey: "Learn_by_contributing_to_a_venture_that_will_change_the_world"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "is a bright, open environment, filled with great energy, positivity, and dedication.");
-        test.equal(r[0].getKey(), "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication.");
+        test.equal(r[0].getSource(), "Learn by contributing to a venture that will change the world");
+        test.equal(r[0].getKey(), "Learn_by_contributing_to_a_venture_that_will_change_the_world");
         test.ok(!r[0].getComment());
 
         test.done();
@@ -377,14 +390,14 @@ module.exports = {
         
         [
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "de-DE",
         		key: "source_text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "de-DE",
         		key: "more_source_text",
         		source: "mehr Quellen\"text",
@@ -419,14 +432,14 @@ module.exports = {
         
         [
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
-        		key: "• &amp;nbsp; Address a health or healthy living topic",
-        		source: "• &amp;nbsp; 解决健康生活相关的话题",
+        		key: "• &amp;nbsp; Hello, how are you",
+        		source: "• &amp;nbsp; 你好吗",
         		comment: " "
         	}),
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
         		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
         		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
@@ -439,7 +452,7 @@ module.exports = {
         var expected =
         	"zh-Hans-CN:\n" +
         	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
-        	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n";
+        	"  '• &amp;nbsp; Hello, how are you': • &amp;nbsp; 你好吗\n";
         	
         diff(yml.getContent(), expected);
 
@@ -461,14 +474,14 @@ module.exports = {
         
         [
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
         		key: "short key",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
         		source: "short text",
@@ -524,11 +537,11 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "The_perks_of_interning", "x-yaml"));
         test.ok(r);
         
-        test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
-        test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
+        test.equal(r.getSource(), "The perks of interning");
+        test.equal(r.getKey(), "The_perks_of_interning");
         
         test.done();
     },
@@ -549,13 +562,13 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_time", "en-US", "subject", "x-yaml"));
         test.ok(r);
         
-        test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
+        test.equal(r.getSource(), "Someone said a colleague’s answer to your question saved them a lot of time:");
         test.equal(r.getKey(), "subject");
         test.equal(r.getLocale(), "en-US");
-        test.equal(r.getContext(), "saved_someone_else_life");
+        test.equal(r.getContext(), "saved_someone_else_time");
         
         test.done();
     },
@@ -576,7 +589,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
@@ -603,7 +616,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
+        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.ok(r instanceof ContextResourceString);
@@ -624,7 +637,7 @@ module.exports = {
         
         [
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
         		key: "r24524524524",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
@@ -632,7 +645,7 @@ module.exports = {
         		sourceHash: "r4352345234"
         	}),
         	new ContextResourceString({
-        		project: "ht-webapp12",
+        		project: "webapp",
         		locale: "zh-Hans-CN",
         		key: "r003425245",
         		source: "short text",
@@ -669,7 +682,7 @@ module.exports = {
 
         [
             new ResourcePlural({
-                project: "ht-webapp12",
+                project: "webapp",
                 locale: "zh-Hans-CN",
                 comment: "",
                 source: 'This is 1 test',
@@ -708,7 +721,7 @@ module.exports = {
 
         [
             new ResourcePlural({
-                project: "ht-webapp12",
+                project: "webapp",
                 locale: "zh-Hans-CN",
                 comment: "",
                 source: 'This is 1 test',
@@ -719,7 +732,7 @@ module.exports = {
                 }
             }),
             new ContextResourceString({
-                project: "ht-webapp12",
+                project: "webapp",
                 locale: "zh-Hans-CN",
                 key: "r003425245",
                 source: "short text",

@@ -1,7 +1,20 @@
 /*
  * testHTMLTemplateFile.js - test the HTML template file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 var path = require("path");
@@ -48,7 +61,7 @@ module.exports = {
             locales:["en-GB"]
         });
 
-        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowTemplate.tmpl.html");
 
         test.ok(htf);
 
@@ -942,10 +955,10 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <% if(doctor){ %>\n' +
+                '       <% if(specialist){ %>\n' +
                 '           Consult\n' +
                 '       <% } else { %>\n' +
-                '           Get doctor answers for free!\n' +
+                '           Get insurance quotes for free!\n' +
                 '       <% } %>\n' +
                 '   </body>\n' +
                 '</html>\n');
@@ -958,10 +971,10 @@ module.exports = {
         test.equal(r.getSource(), 'Consult');
         test.equal(r.getKey(), 'Consult');
 
-        r = set.getBySource("Get doctor answers for free!");
+        r = set.getBySource("Get insurance quotes for free!");
         test.ok(r);
-        test.equal(r.getSource(), "Get doctor answers for free!");
-        test.equal(r.getKey(), "Get doctor answers for free!");
+        test.equal(r.getSource(), "Get insurance quotes for free!");
+        test.equal(r.getKey(), "Get insurance quotes for free!");
 
         test.done();
     },
@@ -980,17 +993,17 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       Dr. <%= family_name %> is not available.\n' +
+                '       Mr. <%= family_name %> is not available.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        var r = set.getBySource('Mr. <%= family_name %> is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
-        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getSource(), 'Mr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%= family_name %> is not available.');
 
         test.done();
     },
@@ -1009,17 +1022,17 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <%= greeting %> The doctor is not available.\n' +
+                '       <%= greeting %> Your friend is not available.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('The doctor is not available.');
+        var r = set.getBySource('Your friend is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'The doctor is not available.');
-        test.equal(r.getKey(), 'The doctor is not available.');
+        test.equal(r.getSource(), 'Your friend is not available.');
+        test.equal(r.getKey(), 'Your friend is not available.');
 
         test.done();
     },
@@ -1038,17 +1051,17 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       The doctor is not available. <%= until_when %>\n' +
+                '       Your friend is not available. <%= until_when %>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('The doctor is not available.');
+        var r = set.getBySource('Your friend is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'The doctor is not available.');
-        test.equal(r.getKey(), 'The doctor is not available.');
+        test.equal(r.getSource(), 'Your friend is not available.');
+        test.equal(r.getKey(), 'Your friend is not available.');
 
         test.done();
     },
@@ -1067,17 +1080,17 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+                '       <span <% if (condition) { %>class="foo"<% } %>> Mr. <%= family_name %> is not available.</span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        var r = set.getBySource('Mr. <%= family_name %> is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
-        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getSource(), 'Mr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%= family_name %> is not available.');
 
         test.done();
     },
@@ -1117,7 +1130,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -1157,7 +1170,7 @@ module.exports = {
     },
 
     testHTMLTemplateFileExtractFile: function(test) {
-        test.expect(17);
+        test.expect(14);
 
         var base = path.dirname(module.id);
 
@@ -1167,7 +1180,7 @@ module.exports = {
             locales:["en-GB"]
         });
 
-        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowTemplate.tmpl.html");
         test.ok(htf);
 
         // should read the file
@@ -1177,15 +1190,15 @@ module.exports = {
 
         test.equal(set.size(), 4);
 
-        var r = set.getBySource("Get doctor answers for free!");
+        var r = set.getBySource("Get insurance quotes for free!");
         test.ok(r);
-        test.equal(r.getSource(), "Get doctor answers for free!");
-        test.equal(r.getKey(), "Get doctor answers for free!");
+        test.equal(r.getSource(), "Get insurance quotes for free!");
+        test.equal(r.getKey(), "Get insurance quotes for free!");
 
-        r = set.getBySource("Consult");
+        r = set.getBySource("Talk");
         test.ok(r);
-        test.equal(r.getSource(), "Consult");
-        test.equal(r.getKey(), "Consult");
+        test.equal(r.getSource(), "Talk");
+        test.equal(r.getKey(), "Talk");
 
         r = set.getBySource("Send question");
         test.ok(r);
@@ -1197,21 +1210,16 @@ module.exports = {
         test.equal(r.getSource(), "Ask");
         test.equal(r.getKey(), "Ask");
 
-        r = set.getBySource("Ask");
-        test.ok(r);
-        test.equal(r.getSource(), "Ask");
-        test.equal(r.getKey(), "Ask");
-
         test.done();
     },
 
     testHTMLTemplateFileExtractFile2: function(test) {
-        test.expect(14);
+        test.expect(17);
 
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
@@ -1225,7 +1233,7 @@ module.exports = {
 
         var set = htf.getTranslationSet();
 
-        test.equal(set.size(), 4);
+        test.equal(set.size(), 5);
 
         var r = set.getBySource("Description");
         test.ok(r);
@@ -1237,10 +1245,15 @@ module.exports = {
         test.equal(r.getSource(), 'Authored by');
         test.equal(r.getKey(), 'Authored by');
 
-        r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+        r = set.getBySource('Agreed');
         test.ok(r);
-        test.equal(r.getSource(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
-        test.equal(r.getKey(), 'and<a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span>doctor<%=val.desc_agrees.length>1 ? \'s\' : \'\'%> agree</a>');
+        test.equal(r.getSource(), 'Agreed');
+        test.equal(r.getKey(), 'Agreed');
+
+        r = set.getBySource('and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
+        test.ok(r);
+        test.equal(r.getSource(), 'and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
+        test.equal(r.getKey(), 'and<a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span>of your friends agree</a>');
 
         r = set.getBySource("Write a better description &raquo;");
         test.ok(r);
@@ -1962,10 +1975,10 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <% if(doctor){ %>\n' +
+                '       <% if(specialist){ %>\n' +
                 '           Consult\n' +
                 '       <% } else { %>\n' +
-                '           Get doctor answers for free!\n' +
+                '           Get insurance quotes for free!\n' +
                 '       <% } %>\n' +
                 '   </body>\n' +
                 '</html>\n');
@@ -1980,8 +1993,8 @@ module.exports = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'Get doctor answers for free!',
-            source: 'Obtenez des réponses de médecins gratuitement!',
+            key: 'Get insurance quotes for free!',
+            source: 'Obtenez des devis d\'assurance gratuitement!',
             locale: "fr-FR",
             datatype: "html"
         }));
@@ -1989,10 +2002,10 @@ module.exports = {
         test.equal(htf.localizeText(translations, "fr-FR"),
             '<html>\n' +
             '   <body>\n' +
-            '       <% if(doctor){ %>\n' +
+            '       <% if(specialist){ %>\n' +
             '           Une consultation\n' +
             '       <% } else { %>\n' +
-            '           Obtenez des réponses de médecins gratuitement!\n' +
+            '           Obtenez des devis d\'assurance gratuitement!\n' +
             '       <% } %>\n' +
             '   </body>\n' +
             '</html>\n');
@@ -2015,15 +2028,15 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       Dr. <%= family_name %> is not available.\n' +
+                '       Mr. <%= family_name %> is not available.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'Dr. <%= family_name %> is not available.',
-            source: 'Dr. <%= family_name %> n\'est pas disponibles.',
+            key: 'Mr. <%= family_name %> is not available.',
+            source: 'Mr. <%= family_name %> n\'est pas disponibles.',
             locale: "fr-FR",
             datatype: "html"
         }));
@@ -2031,7 +2044,7 @@ module.exports = {
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<html>\n' +
                 '   <body>\n' +
-                '       Dr. <%= family_name %> n\'est pas disponibles.\n' +
+                '       Mr. <%= family_name %> n\'est pas disponibles.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -2272,7 +2285,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "simple.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "simple.fr-FR.tmpl.html");
 
         test.done();
     },
@@ -2290,7 +2303,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.tmpl.html");
 
         test.done();
     },
@@ -2308,7 +2321,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.html");
 
         test.done();
     },
@@ -2326,7 +2339,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR");
 
         test.done();
     },
@@ -2344,7 +2357,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.en-US.tmpl.html");
         test.ok(htf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr-FR.tmpl.html");
 
         test.done();
     },
@@ -2355,13 +2368,13 @@ module.exports = {
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
         });
 
-        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowTemplate.tmpl.html");
         test.ok(htf);
 
         // should read the file
@@ -2369,28 +2382,28 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Get doctor answers for free!',
-            source: 'Obtenir des réponses de médecins gratuitement!',
+            project: "webapp",
+            key: 'Get insurance quotes for free!',
+            source: 'Obtenez des devis d\'assurance gratuitement!',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Consult',
-            source: 'Consultation',
+            project: "webapp",
+            key: 'Talk',
+            source: 'Consultee',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Ask',
             source: 'Poser un question',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Send question',
             source: 'Envoyer la question',
             locale: "fr-FR",
@@ -2398,28 +2411,28 @@ module.exports = {
         }));
 
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Get doctor answers for free!',
-            source: 'Kostenlosen antworten von Ärzten erhalten!',
+            project: "webapp",
+            key: 'Get insurance quotes for free!',
+            source: 'Kostenlosen Versicherungs-Angebote erhalten!',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Consult',
+            project: "webapp",
+            key: 'Talk',
             source: 'Beratung',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Ask',
             source: 'Eine Frage stellen',
             locale: "de-DE",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Send question',
             source: 'Frage abschicken',
             locale: "de-DE",
@@ -2428,40 +2441,40 @@ module.exports = {
 
         htf.localize(translations, ["fr-FR", "de-DE"]);
 
-        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.fr-FR.tmpl.html")));
-        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.de-DE.tmpl.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowTemplate.fr-FR.tmpl.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowTemplate.de-DE.tmpl.html")));
 
-        var content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.fr-FR.tmpl.html"), "utf-8");
+        var content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowTemplate.fr-FR.tmpl.html"), "utf-8");
 
         var expected =
             '<div class="upsell-ad-item clearfix">  \n' +
             '    <div class="modal_x"></div>\n' +
             '    <div class="upsell-ad-content">\n' +
             '      <div class="upsell-ad-header">\n' +
-            '        <div class="caduceus-big cookie-flow"></div>\n' +
+            '        <div class="big cookie-flow"></div>\n' +
             '        <span class="upsell-header-bold"><%=title%></span>\n' +
-            '          <% if(doctor){ %>\n' +
+            '          <% if(specialist){ %>\n' +
             '            <%=\n' +
-            '              RB.getString(\'Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:\').format({\n' +
-            '                value: doctor.value,\n' +
-            '                specialist_name: doctor.specialist_name,\n' +
-            '                years: doctor.years_in_practice,\n' +
+            '              RB.getString(\'Talk with {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in insurance brokering:\').format({\n' +
+            '                value: specialist.name,\n' +
+            '                specialist_name: specialist.specialist_name,\n' +
+            '                years: specialist.years_experience,\n' +
             '                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
             '                span_tag_end: \'</span>\'\n' +
             '              })\n' +
             '            %>\n' +
-            '            Consultation\n' +
+            '            Consultee\n' +
             '          <% } else { %>\n' +
-            '            Obtenir des réponses de médecins gratuitement!\n' +
+            '            Obtenez des devis d\'assurance gratuitement!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= doctor ? \'\' : \'padding-left: 0\' %>">\n' +
-            '         <% if(doctor){ %>\n' +
-            '          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
+            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '         <% if(specialist){ %>\n' +
+            '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
             '        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
             '        <span class="askSendArea-cookie">\n' +
-            '          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+            '          <a class="askSendBtn-cookie" href="<%= specialist ? \'/specialists/\' + specialist.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
             '            <div class="desktop-btn">Envoyer la question</div>\n' +
             '            <div class="mobile-btn">Poser un question</div>\n' +
             '          </a>\n' +
@@ -2473,37 +2486,37 @@ module.exports = {
         diff(content, expected);
         test.equal(content, expected);
 
-        content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.de-DE.tmpl.html"), "utf-8");
+        content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowTemplate.de-DE.tmpl.html"), "utf-8");
 
         test.equal(content,
             '<div class="upsell-ad-item clearfix">  \n' +
             '    <div class="modal_x"></div>\n' +
             '    <div class="upsell-ad-content">\n' +
             '      <div class="upsell-ad-header">\n' +
-            '        <div class="caduceus-big cookie-flow"></div>\n' +
+            '        <div class="big cookie-flow"></div>\n' +
             '        <span class="upsell-header-bold"><%=title%></span>\n' +
-            '          <% if(doctor){ %>\n' +
+            '          <% if(specialist){ %>\n' +
             '            <%=\n' +
-            '              RB.getString(\'Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:\').format({\n' +
-            '                value: doctor.value,\n' +
-            '                specialist_name: doctor.specialist_name,\n' +
-            '                years: doctor.years_in_practice,\n' +
+            '              RB.getString(\'Talk with {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in insurance brokering:\').format({\n' +
+            '                value: specialist.name,\n' +
+            '                specialist_name: specialist.specialist_name,\n' +
+            '                years: specialist.years_experience,\n' +
             '                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
             '                span_tag_end: \'</span>\'\n' +
             '              })\n' +
             '            %>\n' +
             '            Beratung\n' +
             '          <% } else { %>\n' +
-            '            Kostenlosen antworten von Ärzten erhalten!\n' +
+            '            Kostenlosen Versicherungs-Angebote erhalten!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= doctor ? \'\' : \'padding-left: 0\' %>">\n' +
-            '         <% if(doctor){ %>\n' +
-            '          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
+            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '         <% if(specialist){ %>\n' +
+            '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
             '        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
             '        <span class="askSendArea-cookie">\n' +
-            '          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+            '          <a class="askSendBtn-cookie" href="<%= specialist ? \'/specialists/\' + specialist.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
             '            <div class="desktop-btn">Frage abschicken</div>\n' +
             '            <div class="mobile-btn">Eine Frage stellen</div>\n' +
             '          </a>\n' +
@@ -2522,7 +2535,7 @@ module.exports = {
         var base = path.dirname(module.id);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
@@ -2536,16 +2549,16 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Get doctor answers for free!',
-            source: 'Obtenir des réponses de médecins gratuitement!',
+            project: "webapp",
+            key: 'Get insurance quotes for free!',
+            source: 'Obtenez des devis d\'assurance gratuitement!',
             locale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Get doctor answers for free!',
-            source: 'Kostenlosen antworten von Ärzten erhalten!',
+            project: "webapp",
+            key: 'Get insurance quotes for free!',
+            source: 'Kostenlosen Versicherungs-Angebote erhalten!',
             locale: "de-DE",
             datatype: "html"
         }));
@@ -2563,7 +2576,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2574,23 +2587,23 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+                '       <span <% if (condition) { %>class="foo"<% } %>> Mr. <%= family_name %> is not available.</span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        var r = set.getBySource('Mr. <%= family_name %> is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
-        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getSource(), 'Mr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%= family_name %> is not available.');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Dr. <%= family_name %> is not available.',
-            source: 'Dr. <%= family_name %> n\'est pas disponible.',
+            project: "webapp",
+            key: 'Mr. <%= family_name %> is not available.',
+            source: 'Mssr. <%= family_name %> n\'est pas disponible.',
             locale: "fr-FR",
             datatype: "html"
         }));
@@ -2598,7 +2611,7 @@ module.exports = {
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<html>\n' +
                 '   <body>\n' +
-                '       <span <% if (condition) { %> class="foo" <% } %>> Dr. <%= family_name %> n\'est pas disponible.</span>\n' +
+                '       <span <% if (condition) { %> class="foo" <% } %>> Mssr. <%= family_name %> n\'est pas disponible.</span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -2609,7 +2622,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2620,23 +2633,23 @@ module.exports = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <span class="foo" <span class="bar"> Dr. <%= family_name %> is not available.</span></span>\n' +
+                '       <span class="foo" <span class="bar"> Mr. <%= family_name %> is not available.</span></span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        var r = set.getBySource('Mr. <%= family_name %> is not available.');
         test.ok(r);
-        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
-        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getSource(), 'Mr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%= family_name %> is not available.');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
-            key: 'Dr. <%= family_name %> is not available.',
-            source: 'Dr. <%= family_name %> n\'est pas disponible.',
+            project: "webapp",
+            key: 'Mr. <%= family_name %> is not available.',
+            source: 'Mssr. <%= family_name %> n\'est pas disponible.',
             locale: "fr-FR",
             datatype: "html"
         }));
@@ -2645,7 +2658,7 @@ module.exports = {
         var expected =
                 '<html>\n' +
                 '   <body>\n' +
-                '       <span class="foo" span="" class="bar"> Dr. <%= family_name %> n\'est pas disponible.</span></span>\n' +
+                '       <span class="foo" span="" class="bar"> Mssr. <%= family_name %> n\'est pas disponible.</span></span>\n' +
                 '   </body>\n' +
                 '</html>\n';
 
@@ -2658,7 +2671,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2668,7 +2681,7 @@ module.exports = {
         test.ok(htf);
 
         htf.parse(
-            '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
+            '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
             '<label for="entity_group" class="radio-label">Group</label>');
 
         var set = htf.getTranslationSet();
@@ -2681,7 +2694,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'Group',
             source: 'Groupe',
             locale: "fr-FR",
@@ -2689,7 +2702,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
+                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
                 '<label for="entity_group" class="radio-label">Groupe</label>');
 
         test.done();
@@ -2699,7 +2712,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2723,7 +2736,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2742,7 +2755,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2766,7 +2779,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2785,7 +2798,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2794,7 +2807,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
 
-        htf.parse('<a class="doctor-name" href=<%= val.expert.url%>>foo</a>\n');
+        htf.parse('<a class="specialist-name" href=<%= val.specialist.url%>>foo</a>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -2806,7 +2819,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2814,7 +2827,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<a class="doctor-name" href=<%= val.expert.url%>>asdf</a>\n');
+                '<a class="specialist-name" href=<%= val.specialist.url%>>asdf</a>\n');
 
         test.done();
     },
@@ -2823,7 +2836,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2833,14 +2846,14 @@ module.exports = {
         test.ok(htf);
 
         htf.parse(
-            '<% _.each(experts, function( val, index ){ %>\n' +
-            '  <div class="expert-review">\n' +
-            '    <div class="doctor-item" >\n' +
-            '      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
-            '      <div class="doctor-info">\n' +
-            '        <div class="caduceus"></div>\n' +
-            '        <a class="doctor-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
-            '        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+            '<% _.each(specialists, function( val, index ){ %>\n' +
+            '  <div class="specialist-review">\n' +
+            '    <div class="specialist-item" >\n' +
+            '      <div class="specialist-avatar" style="background-image: url(<%= val.specialist.avatar_transparent_circular %>);"></div>\n' +
+            '      <div class="specialist-info">\n' +
+            '        <div class="icon"></div>\n' +
+            '        <a class="specialist-name" href=<%= val.specialist.url%>><%= val.specialist.name%></a>\n' +
+            '        <div class ="specialty"><%= val.specialist.intro%></div>\n' +
             '      </div>\n' +
             '    </div>\n' +
             '    <div class="rating-stars">\n' +
@@ -2869,7 +2882,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2878,14 +2891,14 @@ module.exports = {
 
         var actual = htf.localizeText(translations, "fr-FR");
         var expected =
-            '<% _.each(experts, function( val, index ){ %>\n' +
-            '  <div class="expert-review">\n' +
-            '    <div class="doctor-item">\n' +
-            '      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
-            '      <div class="doctor-info">\n' +
-            '        <div class="caduceus"></div>\n' +
-            '        <a class="doctor-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
-            '        <div class="specialty"><%= val.expert.intro%></div>\n' +
+            '<% _.each(specialists, function( val, index ){ %>\n' +
+            '  <div class="specialist-review">\n' +
+            '    <div class="specialist-item">\n' +
+            '      <div class="specialist-avatar" style="background-image: url(<%= val.specialist.avatar_transparent_circular %>);"></div>\n' +
+            '      <div class="specialist-info">\n' +
+            '        <div class="icon"></div>\n' +
+            '        <a class="specialist-name" href=<%= val.specialist.url%>><%= val.specialist.name%></a>\n' +
+            '        <div class="specialty"><%= val.specialist.intro%></div>\n' +
             '      </div>\n' +
             '    </div>\n' +
             '    <div class="rating-stars">\n' +
@@ -2913,7 +2926,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2934,7 +2947,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2951,7 +2964,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -2960,14 +2973,14 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
 
-        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">foo</div>');
+        htf.parse('<div class="star <%= (score > 30) ? "filled-star" : (score > 20) ? "half-star" : "empty-star"%>">foo</div>');
 
         var set = htf.getTranslationSet();
         test.ok(set);
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -2975,7 +2988,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">asdf</div>');
+                '<div class="star <%= (score > 30) ? "filled-star" : (score > 20) ? "half-star" : "empty-star"%>">asdf</div>');
 
         test.done();
     },
@@ -2984,7 +2997,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3006,7 +3019,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3036,7 +3049,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3052,7 +3065,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3072,7 +3085,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3088,7 +3101,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3108,7 +3121,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3124,7 +3137,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3144,7 +3157,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3165,7 +3178,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3191,7 +3204,7 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-            id: "ht-webapp12",
+            id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
@@ -3212,7 +3225,7 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "ht-webapp12",
+            project: "webapp",
             key: 'foo',
             source: 'asdf',
             locale: "fr-FR",
@@ -3286,7 +3299,7 @@ module.exports = {
             datatype: "html"
         }));
 
-        diff(htf.localizeText(translations, "fr-FR"),
+        expected = 
                 '<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
                 '<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
                 '<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
@@ -3314,37 +3327,10 @@ module.exports = {
                 '  <div class="attachment-size">\n' +
                 '    <%= fileSize + \' \' + measurement %> \n' +
                 '  </div>\n' +
-                '</div>    \n');
+                '</div>    \n';
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
-                '<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
-                '<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
-                '<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
-                '<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
-                '<% fileSize = fileSize.toString(); %>\n' +
-                '<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
-                '<div class="chat-attachment">\n' +
-                '  <a href="<%= url %>" target="_blank">\n' +
-                '    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
-                '      <img class="uploaded-image" src="<%= url %>">\n' +
-                '    <% } else { %>\n' +
-                '      <div class="attachment-placeholder">\n' +
-                '        <div class="attachment-icon"></div>\n' +
-                '      </div>\n' +
-                '    <% } %>\n' +
-                '  </a>\n' +
-                '  <% if (caption) { %>\n' +
-                '    <div class="attachment-caption">\n' +
-                '      <%= caption %>\n' +
-                '    </div>\n' +
-                '  <% } %>\n' +
-                '  <div class="attachment-timestamp">\n' +
-                '    Téléchargé sur <%= dateString %>\n' +
-                '  </div>\n' +
-                '  <div class="attachment-size">\n' +
-                '    <%= fileSize + \' \' + measurement %> \n' +
-                '  </div>\n' +
-                '</div>    \n');
+        diff(htf.localizeText(translations, "fr-FR"), expected);
+        test.equal(htf.localizeText(translations, "fr-FR"), expected);
 
         test.done();
     },
@@ -3377,13 +3363,10 @@ module.exports = {
                 '    </p>\n' +
                 '    <br/>\n' +
                 '    <ul class="fg-list" >\n' +
-                '      <li>30% specialist office referrals form virtual consult</li>\n' +
-                '      <li>20% doctor office visits diverted to Q&A</li>\n' +
-                '      <li>20% virtual consult utilization, post-Q&A</li>\n' +
-                '      <li>75% lab cost as percent of doctor office visit</li>\n' +
-                '      <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
-                '      <li>10% ER visits diverted to virtual consult only</li>\n' +
-                '      <li>30% ER visits diverted to urgent care</li> \n' +
+                '      <li>30% more customer interest</li>\n' +
+                '      <li>20% more customer emails</li>\n' +
+                '      <li>20% more customer tweets/social messages</li>\n' +
+                '      <li>75% cost reduction for acquiring new customers</li>\n' +
                 '    </ul>         \n' +
                 '</div>\n');
 
@@ -3395,15 +3378,15 @@ module.exports = {
         test.equal(r.getSource(), "Assumptions");
         test.equal(r.getKey(), "Assumptions");
 
-        r = set.getBySource('30% specialist office referrals form virtual consult');
+        r = set.getBySource('30% more customer interest');
         test.ok(r);
-        test.equal(r.getSource(), '30% specialist office referrals form virtual consult');
-        test.equal(r.getKey(), '30% specialist office referrals form virtual consult');
+        test.equal(r.getSource(), '30% more customer interest');
+        test.equal(r.getKey(), '30% more customer interest');
 
-        r = set.getBySource('30% ER visits diverted to urgent care');
+        r = set.getBySource('75% cost reduction for acquiring new customers');
         test.ok(r);
-        test.equal(r.getSource(), '30% ER visits diverted to urgent care');
-        test.equal(r.getKey(), '30% ER visits diverted to urgent care');
+        test.equal(r.getSource(), '75% cost reduction for acquiring new customers');
+        test.equal(r.getKey(), '75% cost reduction for acquiring new customers');
 
         test.done();
     },
@@ -3437,13 +3420,10 @@ module.exports = {
             '    </p>\n' +
             '    <br/>\n' +
             '    <ul class="fg-list" >\n' +
-            '      <li>30% specialist office referrals form virtual consult</li>\n' +
-            '      <li>20% doctor office visits diverted to Q&A</li>\n' +
-            '      <li>20% virtual consult utilization, post-Q&A</li>\n' +
-            '      <li>75% lab cost as percent of doctor office visit</li>\n' +
-            '      <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
-            '      <li>10% ER visits diverted to virtual consult only</li>\n' +
-            '      <li>30% ER visits diverted to urgent care</li> \n' +
+            '      <li>30% more customer interest</li>\n' +
+            '      <li>20% more customer emails</li>\n' +
+            '      <li>20% more customer tweets/social messages</li>\n' +
+            '      <li>75% cost reduction for acquiring new customers</li>\n' +
             '    </ul>         \n' +
             '</div>\n');
 
@@ -3472,13 +3452,10 @@ module.exports = {
                 '    </p>\n' +
                 '    <br/>\n' +
                 '    <ul class="fg-list">\n' +
-                '      <li>30% specialist office referrals form virtual consult</li>\n' +
-                '      <li>20% doctor office visits diverted to Q&A</li>\n' +
-                '      <li>20% virtual consult utilization, post-Q&A</li>\n' +
-                '      <li>75% lab cost as percent of doctor office visit</li>\n' +
-                '      <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
-                '      <li>10% ER visits diverted to virtual consult only</li>\n' +
-                '      <li>30% ER visits diverted to urgent care</li> \n' +
+                '      <li>30% more customer interest</li>\n' +
+                '      <li>20% more customer emails</li>\n' +
+                '      <li>20% more customer tweets/social messages</li>\n' +
+                '      <li>75% cost reduction for acquiring new customers</li>\n' +
                 '    </ul>         \n' +
                 '</div>\n');
 
@@ -3498,13 +3475,10 @@ module.exports = {
                 '    </p>\n' +
                 '    <br/>\n' +
                 '    <ul class="fg-list">\n' +
-                '      <li>30% specialist office referrals form virtual consult</li>\n' +
-                '      <li>20% doctor office visits diverted to Q&A</li>\n' +
-                '      <li>20% virtual consult utilization, post-Q&A</li>\n' +
-                '      <li>75% lab cost as percent of doctor office visit</li>\n' +
-                '      <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
-                '      <li>10% ER visits diverted to virtual consult only</li>\n' +
-                '      <li>30% ER visits diverted to urgent care</li> \n' +
+                '      <li>30% more customer interest</li>\n' +
+                '      <li>20% more customer emails</li>\n' +
+                '      <li>20% more customer tweets/social messages</li>\n' +
+                '      <li>75% cost reduction for acquiring new customers</li>\n' +
                 '    </ul>         \n' +
                 '</div>\n');
 
@@ -3526,101 +3500,20 @@ module.exports = {
 
         htf.parse(
             '<%\n' +
-            '  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
             '  var person_obj = person_obj || {};\n' +
-
-            '  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
-
-            '  concierge_hidden = !person_obj.concierge_allowed;\n' +
-
-            '  if (ht_expert.provider_groups) {\n' +
-            '    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
-            '    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
-            '  }\n' +
-
-            '  if (member_group.is_hmo) {\n' +
-            '    HMO_provider = member_group.name;\n' +
-            '  }\n' +
-
-            '  accepts_insurance = accepts_insurance || false;\n' +
-            '  concierge_hidden = concierge_hidden || false;\n' +
-            '  HMO_provider = HMO_provider || false;\n' +
             '%>\n' +
 
-            '<div class="refer-doc-message">\n' +
-            '  I\'d like to refer you to<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
-            '  <div class="doctor-result clearfix">\n' +
-            '<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
-            '<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
-            '<div class="caduceus left"></div>\n' +
-            '<div class="doctor-info">\n' +
-            '  <% if (ht_expert) { %>\n' +
-            '    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
-            '      <%= ht_expert.value %>\n' +
-            '    </a>\n' +
-            '    <div class="specialty" >\n' +
-            '      <%= ht_expert.intro %>\n' +
-            '    </div>\n' +
-            '    <%= window.templates[\'_ratings\']({\n' +
-            '      doc_score: ht_expert.doc_score,\n' +
-            '      hide_5th_star: false\n' +
-            '    }) %>\n' +
-            '    <% if (ht_expert.display_location) { %>\n' +
-            '      <div class="location">\n' +
-            '        <div class="small-location-icon"></div>\n' +
-            '        <%= ht_expert.display_location %>\n' +
-            '      </div>\n' +
-            '    <% } %>\n' +
-            '    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
-            '      <div class="concierge-buttons">\n' +
-            '        <div class="accepts-insurance">\n' +
-            '          <div class="green_check"></div>\n' +
-            '          <%= ht_expert.in_network_display_string %>\n' +
-            '        </div>\n' +
-            '      </div>\n' +
-            '    <% } %>\n' +
-            '    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
-            '      <div class="concierge-buttons">\n' +
-            '      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data=\'{"type": "transcript"}\'>\n' +
-            '        <div class="concierge-btn-icon-msg"></div>\n' +
-            '        <div class="tooltip-info"> Send Message </div>\n' +
-            '      </a>\n' +
-            '      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data=\'{"type": "transcript"}\'>\n' +
-            '        <div class="concierge-btn-icon-appt"></div>\n' +
-            '        <div class="tooltip-info"> Virtual Appointment</div>\n' +
-            '      </a>\n' +
-            '      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data=\'{"type": "transcript"}\'>\n' +
-            '        <div class="concierge-btn-icon-video"></div>\n' +
-            '        <div class="tooltip-info"> Video/Chat</div>\n' +
-            '      </a>\n' +
-            '      </div>\n' +
-            '    <% } %>\n' +
-            '  <% } else { %>\n' +
-            '    <div class="doctor-name emphasis">\n' +
-            '      <%= non_ht_expert_name %>\n' +
-            '    </div>\n' +
-            '    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
-            '      <div class="specialty">\n' +
-            '        Call: <%= non_ht_tel %>\n' +
-            '      </div>\n' +
-            '    <% } %>\n' +
-            '    <% if (non_ht_expert_email ) { %>\n' +
-            '      <div class="specialty">\n' +
-            '            Email: <%= non_ht_expert_email %>\n' +
-            '          </div>\n' +
-            '        <% } %>\n' +
-
-            '      <% } %>\n' +
-            '    </div>\n' +
-            '  </div>\n' +
-            '</div>\n'
+            '<div class="refer-message">\n' +
+            '  There are <%= avatar.count ? (\' the following avatars available. As a member of \' + avatars.type + \', your avatar must be unique within your group.\') : \'\' %>:\n' +
+            '  <div class="specialist-result clearfix">\n' +
+            '<% var imageStyle = specialist.avatar_transparent_circular ? "background-image: url(\'"+specialist.avatar_transparent_circular+ "\')" : "" %>\n'
         );
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'I\'d like to refer you to<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
-            source: 'Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
+            key: 'There are <%= avatar.count ? (\' the following avatars available. As a member of \' + avatars.type + \', your avatar must be unique within your group.\') : \'\' %>:',
+            source: 'Es gibt <%=  avatar.count ? (\' folgende Avatare. Als Mitglied der \' + avatars.type + \', Gruppe muss dein Avatar innerhalb der Gruppe einzigartig sein.\') : \'\' %>:',
             locale: "de-DE",
             datatype: "html"
         }));
@@ -3628,94 +3521,13 @@ module.exports = {
         var actual = htf.localizeText(translations, "de-DE");
         var expected =
                 '<%\n' +
-                '  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
                 '  var person_obj = person_obj || {};\n' +
-
-                '  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
-
-                '  concierge_hidden = !person_obj.concierge_allowed;\n' +
-
-                '  if (ht_expert.provider_groups) {\n' +
-                '    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
-                '    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
-                '  }\n' +
-
-                '  if (member_group.is_hmo) {\n' +
-                '    HMO_provider = member_group.name;\n' +
-                '  }\n' +
-
-                '  accepts_insurance = accepts_insurance || false;\n' +
-                '  concierge_hidden = concierge_hidden || false;\n' +
-                '  HMO_provider = HMO_provider || false;\n' +
                 '%>\n' +
 
-                '<div class="refer-doc-message">\n' +
-                '  Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
-                '  <div class="doctor-result clearfix">\n' +
-                '<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
-                '<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
-                '<div class="caduceus left"></div>\n' +
-                '<div class="doctor-info">\n' +
-                '  <% if (ht_expert) { %>\n' +
-                '    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
-                '      <%= ht_expert.value %>\n' +
-                '    </a>\n' +
-                '    <div class="specialty">\n' +
-                '      <%= ht_expert.intro %>\n' +
-                '    </div>\n' +
-                '    <%= window.templates[\'_ratings\']({\n' +
-                '      doc_score: ht_expert.doc_score,\n' +
-                '      hide_5th_star: false\n' +
-                '    }) %>\n' +
-                '    <% if (ht_expert.display_location) { %>\n' +
-                '      <div class="location">\n' +
-                '        <div class="small-location-icon"></div>\n' +
-                '        <%= ht_expert.display_location %>\n' +
-                '      </div>\n' +
-                '    <% } %>\n' +
-                '    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
-                '      <div class="concierge-buttons">\n' +
-                '        <div class="accepts-insurance">\n' +
-                '          <div class="green_check"></div>\n' +
-                '          <%= ht_expert.in_network_display_string %>\n' +
-                '        </div>\n' +
-                '      </div>\n' +
-                '    <% } %>\n' +
-                '    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
-                '      <div class="concierge-buttons">\n' +
-                '      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
-                '        <div class="concierge-btn-icon-msg"></div>\n' +
-                '        <div class="tooltip-info"> Send Message </div>\n' +
-                '      </a>\n' +
-                '      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
-                '        <div class="concierge-btn-icon-appt"></div>\n' +
-                '        <div class="tooltip-info"> Virtual Appointment</div>\n' +
-                '      </a>\n' +
-                '      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
-                '        <div class="concierge-btn-icon-video"></div>\n' +
-                '        <div class="tooltip-info"> Video/Chat</div>\n' +
-                '      </a>\n' +
-                '      </div>\n' +
-                '    <% } %>\n' +
-                '  <% } else { %>\n' +
-                '    <div class="doctor-name emphasis">\n' +
-                '      <%= non_ht_expert_name %>\n' +
-                '    </div>\n' +
-                '    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
-                '      <div class="specialty">\n' +
-                '        Call: <%= non_ht_tel %>\n' +
-                '      </div>\n' +
-                '    <% } %>\n' +
-                '    <% if (non_ht_expert_email ) { %>\n' +
-                '      <div class="specialty">\n' +
-                '            Email: <%= non_ht_expert_email %>\n' +
-                '          </div>\n' +
-                '        <% } %>\n' +
-
-                '      <% } %>\n' +
-                '    </div>\n' +
-                '  </div>\n' +
-                '</div>\n';
+                '<div class="refer-message">\n' +
+                '  Es gibt <%=  avatar.count ? (\' folgende Avatare. Als Mitglied der \' + avatars.type + \', Gruppe muss dein Avatar innerhalb der Gruppe einzigartig sein.\') : \'\' %>:\n' +
+                '  <div class="specialist-result clearfix">\n' +
+                '<% var imageStyle = specialist.avatar_transparent_circular ? "background-image: url(\'"+specialist.avatar_transparent_circular+ "\')" : "" %>\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -3825,7 +3637,7 @@ module.exports = {
             locales:["en-GB"]
         });
 
-        var htf = new HTMLTemplateFile(p, "./tmpl/consult_panel.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./tmpl/meeting_panel.tmpl.html");
         test.ok(htf);
 
         // should read the file
@@ -3840,25 +3652,25 @@ module.exports = {
         test.equal(r.getSource(), "Upcoming Appointments");
         test.equal(r.getKey(), "Upcoming Appointments");
 
-        r = set.getBySource("Private Consults");
+        r = set.getBySource("Completed Meetings");
         test.ok(r);
-        test.equal(r.getSource(), "Private Consults");
-        test.equal(r.getKey(), "Private Consults");
+        test.equal(r.getSource(), "Completed Meetings");
+        test.equal(r.getKey(), "Completed Meetings");
 
         r = set.getBySource("Get help");
         test.ok(r);
         test.equal(r.getSource(), "Get help");
         test.equal(r.getKey(), "Get help");
 
-        r = set.getBySource("Doctors are standing by to help");
+        r = set.getBySource("Colleagues are standing by to help");
         test.ok(r);
-        test.equal(r.getSource(), "Doctors are standing by to help");
-        test.equal(r.getKey(), "Doctors are standing by to help");
+        test.equal(r.getSource(), "Colleagues are standing by to help");
+        test.equal(r.getKey(), "Colleagues are standing by to help");
 
-        r = set.getBySource("Get help now");
+        r = set.getBySource("Ask your co-workers now");
         test.ok(r);
-        test.equal(r.getSource(), "Get help now");
-        test.equal(r.getKey(), "Get help now");
+        test.equal(r.getSource(), "Ask your co-workers now");
+        test.equal(r.getKey(), "Ask your co-workers now");
 
         test.done();
     },
@@ -3884,15 +3696,15 @@ module.exports = {
 
         test.equal(set.size(), 2);
 
-        var r = set.getBySource("Choose a consult method");
+        var r = set.getBySource("Choose a meeting method");
         test.ok(r);
-        test.equal(r.getSource(), "Choose a consult method");
-        test.equal(r.getKey(), "Choose a consult method");
+        test.equal(r.getSource(), "Choose a meeting method");
+        test.equal(r.getKey(), "Choose a meeting method");
 
-        r = set.getBySource("Care team");
+        r = set.getBySource("Test phrase");
         test.ok(r);
-        test.equal(r.getSource(), "Care team");
-        test.equal(r.getKey(), "Care team");
+        test.equal(r.getSource(), "Test phrase");
+        test.equal(r.getKey(), "Test phrase");
 
         test.done();
     },
@@ -3920,8 +3732,8 @@ module.exports = {
 
         translations.add(new ResourceString({
             project: "foo",
-            key: "Choose a consult method",
-            source: "Choicissez une methode de consultation",
+            key: "Choose a meeting method",
+            source: "Choisissez une méthode de réunion d'affaires",
             locale: "fr-FR",
             datatype: "html"
         }));
@@ -3929,11 +3741,11 @@ module.exports = {
         var actual = htf.localizeText(translations, "fr-FR");
         var expected =
             '<div class="askHeader">\n' +
-            '  <h3>Choicissez une methode de consultation</h3>\n' +
+            '  <h3>Choisissez une méthode de réunion d\'affaires</h3>\n' +
             '</div>\n' +
             '<div id="chooseMode">\n' +
             '  <div class="askContent">\n' +
-            '    <div class="expertInfo">\n' +
+            '    <div class="specialistInfo">\n' +
             '      <div class="portraitContainer">\n' +
             '        <div class="portrait">\n' +
             '          <img src="<%= photo %>" height="86px" width="86px"/>\n' +
@@ -3947,12 +3759,10 @@ module.exports = {
             '      </div>\n' +
             '      <div class="name"><%= name %></div>\n' +
             '      <div class="specialty"><%= specialty %></div>\n' +
-            '      <% if (in_care_team) { %>\n' +
-            '      <div class="care">Çàŕë ţëàm43210</div>\n' +
-            '      <% } %>\n' +
             '      <% $.each(supplementary_descriptions, function(index, desc) { %>\n' +
             '      <div class="addInfo"><%= desc %></div>\n' +
             '      <% }); %>\n' +
+            '      Ťëšţ þĥŕàšë543210\n' +
             '    </div>\n' +
             '    <div class="modeSelection">\n' +
             '      <% $.each(modes, function(index, mode) { %>\n' +
@@ -3982,17 +3792,17 @@ module.exports = {
 
         test.equal(resources.length, 2);
 
-        var r = set.getBySource("Choose a consult method");
+        var r = set.getBySource("Choose a meeting method");
         test.ok(!r);
 
-        r = set.getBySource("Care team");
+        r = set.getBySource("Test phrase");
         test.ok(r);
-        test.equal(resources[0].getSource(), "Care team");
-        test.equal(resources[0].getKey(), "Care team");
+        test.equal(resources[0].getSource(), "Test phrase");
+        test.equal(resources[0].getKey(), "Test phrase");
         test.equal(resources[0].getLocale(), "en-US");
 
-        test.equal(resources[1].getSource(), "Care team");
-        test.equal(resources[1].getKey(), "Care team");
+        test.equal(resources[1].getSource(), "Test phrase");
+        test.equal(resources[1].getKey(), "Test phrase");
         test.equal(resources[1].getLocale(), "fr-FR");
 
         test.done();

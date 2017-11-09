@@ -1,7 +1,20 @@
 /*
  * testJavaFile.js - test the Java file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!JavaFile) {
@@ -26,7 +39,7 @@ module.exports = {
     testJavaFileConstructor: function(test) {
         test.expect(1);
 
-        var j = new JavaFile();
+        var j = new JavaFile(p);
         test.ok(j);
         
         test.done();
@@ -63,15 +76,14 @@ module.exports = {
     },
 
     testJavaFileMakeKeySimpleTexts1: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Medications in your profile"), "r32020327");
-		test.equals(j.makeKey("All medications"), "r835310324");
-		test.equals(j.makeKey("Conditions"), "r103883086");
-		test.equals(j.makeKey("Symptoms"), "r481086103");
+        test.equals(j.makeKey("Preferences in your profile"), "r372802078");
+		test.equals(j.makeKey("All settings"), "r725930887");
+		test.equals(j.makeKey("Colour scheme"), "r734599412");
 		test.equals(j.makeKey("Experts"), "r343852585");
         
         test.done();
@@ -98,31 +110,29 @@ module.exports = {
         test.ok(j);
 
         test.equals(j.makeKey("Procedures"), "r807691021");
-		test.equals(j.makeKey("Health Apps"), "r941505899");
-		test.equals(j.makeKey("Conditions in your profile"), "r240633868");
-		test.equals(j.makeKey("Treatment Reviews"), "r795086964");
+		test.equals(j.makeKey("Mobile Apps"), "r898923204");
+		test.equals(j.makeKey("Settings in your profile"), "r618035987");
+		test.equals(j.makeKey("Product Reviews"), "r175350918");
 		test.equals(j.makeKey("Answers"), "r221604632");
         
         test.done();
 	},
 
 	testJavaFileMakeKeySimpleTexts3: function(test) {
-        test.expect(11);
+        test.expect(9);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Private Health Profile"), "r669315500");
-		test.equals(j.makeKey("People you care for"), "r710774033");
-		test.equals(j.makeKey("Notifications"), "r284964820");
-		test.equals(j.makeKey("News"), "r613036745");
-		test.equals(j.makeKey("More Tips"), "r216617786");
-		test.equals(j.makeKey("Goals"), "r788359072");
-		test.equals(j.makeKey("Referral Link"), "r140625167");
-		test.equals(j.makeKey("Questions"), "r256277957");
-		test.equals(j.makeKey("Private consults"), "r18128760");
-		test.equals(j.makeKey("Suggested doctors for you"), "r584966709");
-        
+        test.equals(j.makeKey("Private Profile"), "r314592735");
+        test.equals(j.makeKey("People you are connected to"), "r711926199");
+        test.equals(j.makeKey("Notifications"), "r284964820");
+        test.equals(j.makeKey("News"), "r613036745");
+        test.equals(j.makeKey("More Tips"), "r216617786");
+        test.equals(j.makeKey("Filters"), "r81370429");
+        test.equals(j.makeKey("Referral Link"), "r140625167");
+        test.equals(j.makeKey("Questions"), "r256277957");
+
         test.done();
 	},
 
@@ -132,7 +142,7 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("Can\'t find treatment id"), "r926831062");
+        test.equals(j.makeKey("Can\'t find id"), "r743945592");
 		test.equals(j.makeKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
@@ -144,13 +154,13 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equals(j.makeKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(j.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"), "r436261634");
-		test.equals(j.makeKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
-		test.equals(j.makeKey("Grow your Care-Team"), "r522565682");
+        test.equals(j.makeKey("{name}({generic_name})"), "r300446104");
+		test.equals(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+		test.equals(j.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+		test.equals(j.makeKey("Grow your Network"), "r895214324");
 		test.equals(j.makeKey("Failed to send connection request!"), "r1015770123");
 		test.equals(j.makeKey("{goal_name} Goals"), "r993422001");
-		test.equals(j.makeKey("Referral link copied!"), "r201354363");
+		test.equals(j.makeKey("Connection link copied!"), "r180897411");
         
         test.done();
 	},
@@ -173,8 +183,8 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
         
-        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
-		test.equal(j.makeKey("Can\'t    find    treatment           id"), "r926831062");
+        test.equal(j.makeKey("Can\'t find  id"), "r743945592");
+		test.equal(j.makeKey("Can\'t    find               id"), "r743945592");
 		
 		test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
 		test.equal(j.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
@@ -188,8 +198,8 @@ module.exports = {
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
-        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
-        test.equal(j.makeKey("      Can\'t find treatment id "), "r926831062");
+        test.equal(j.makeKey("Can\'t find  id"), "r743945592");
+        test.equal(j.makeKey("      Can\'t find  id "), "r743945592");
 		
         test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
         test.equal(j.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");
@@ -200,9 +210,7 @@ module.exports = {
 	testJavaFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
@@ -214,9 +222,7 @@ module.exports = {
 	testJavaFileMakeKeyEscapeN: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
@@ -228,9 +234,7 @@ module.exports = {
 	testJavaFileMakeKeyTabs: function(test) {
         test.expect(2);
         
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \t B"), "r191336864");
@@ -241,9 +245,7 @@ module.exports = {
 	testJavaFileMakeKeyEscapeT: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\t B"), "r191336864");
@@ -254,9 +256,7 @@ module.exports = {
 	testJavaFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\'B\\' C"), "r935639115");
@@ -267,9 +267,7 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("\\u00A0 \\u0023"), "r2293235");
@@ -280,12 +278,10 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
-        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        test.equals(jf.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"), "r969175354");
         
         test.done();
 	},
@@ -293,9 +289,7 @@ module.exports = {
 	testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\40 \\011 B"), "r191336864");
@@ -306,9 +300,7 @@ module.exports = {
 	testJavaFileMakeKeyJavaEscapeSequences: function(test) {
         test.expect(2);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
@@ -319,9 +311,7 @@ module.exports = {
 	testJavaFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
-        var jf = new JavaFile({
-			project: p
-		});
+        var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
@@ -969,20 +959,20 @@ module.exports = {
         
         test.equal(set.size(), 3);
         
-        var r = set.getBySource("Can't find a clinician?");
+        var r = set.getBySource("Can't find a group?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a clinician?");
-        test.equal(r.getKey(), "r831947664");
+        test.equal(r.getSource(), "Can't find a group?");
+        test.equal(r.getKey(), "r315749545");
         
-        r = set.getBySource("Can't find a doctor?");
+        r = set.getBySource("Can't find a friend?");
         test.ok(r);
-        test.equal(r.getSource(), "Can't find a doctor?");
-        test.equal(r.getKey(), "r74563301");
+        test.equal(r.getSource(), "Can't find a friend?");
+        test.equal(r.getKey(), "r23431269");
         
-        r = set.getBySource("Invite them to HealthTap");
+        r = set.getBySource("Invite them to Myproduct");
         test.ok(r);
-        test.equal(r.getSource(), "Invite them to HealthTap");
-        test.equal(r.getKey(), "r554083360");
+        test.equal(r.getSource(), "Invite them to Myproduct");
+        test.equal(r.getKey(), "r245047512");
 
         test.done();
     }

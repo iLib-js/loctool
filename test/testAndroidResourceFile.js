@@ -1,7 +1,20 @@
 /*
- * testAndroidResourceFile.js - test the Java file handler object.
+ * testAndroidResourceFile.js - test the Android resource file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!AndroidResourceFile) {
@@ -85,8 +98,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -94,11 +107,11 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
-        test.equal(r.getKey(), "thanks_doc_pre");
+        test.equal(r.getKey(), "thanks_friend_pre");
         
         test.done();
     },
@@ -116,12 +129,12 @@ module.exports = {
         		'<?xml version="1.0" encoding="utf-8"?>\n' +
         		'<resources \n' +
         		'  xmlns:tools="http://schemas.android.com/tools">\n' +
-        	    '  <plurals name="doctor_comment">\n' +
+        	    '  <plurals name="friend_comment">\n' +
                 '    <item quantity="one">\n' +
-                '      {start}1 doctor{end} commented\n' +
+                '      {start}1 friend{end} commented\n' +
                 '    </item>\n' +
                 '    <item quantity="other">\n' +
-                '      {start}%d doctors{end} commented\n' +
+                '      {start}%d friends{end} commented\n' +
                 '    </item>\n' +
                 '  </plurals>\n' +
         		'</resources>\n');
@@ -130,14 +143,14 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "doctor_comment"));
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "friend_comment"));
         test.ok(r);
         
-        test.equal(r.getKey(), "doctor_comment");
+        test.equal(r.getKey(), "friend_comment");
         var plurals = r.getPlurals();
         test.ok(plurals);
-        test.equal(plurals.one, "{start}1 doctor{end} commented");
-        test.equal(plurals.other, "{start}%d doctors{end} commented");
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
         
         test.done();
     },
@@ -196,8 +209,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -231,8 +244,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -240,12 +253,12 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
-        test.equal(r.getKey(), "thanks_doc_pre");
-        test.equal(r.getComment(), "name is name of a doctor");
+        test.equal(r.getKey(), "thanks_friend_pre");
+        test.equal(r.getComment(), "name is name of your friend");
         test.ok(!r.dnt);
         
         test.done();
@@ -272,8 +285,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
@@ -303,7 +316,7 @@ module.exports = {
         
         var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "ask_question", "x-android-resource"));
         test.ok(r);
-        test.equal(r.getSource(), "Ask doctors");
+        test.equal(r.getSource(), "Ask friends");
         test.equal(r.getKey(), "ask_question");
         test.ok(!r.getContext());
 
@@ -328,14 +341,14 @@ module.exports = {
         test.ok(set);
         test.equal(set.size(), 3);
 
-        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "doctor_comment"));
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "friend_comment"));
         test.ok(r);
         
-        test.equal(r.getKey(), "doctor_comment");
+        test.equal(r.getKey(), "friend_comment");
         var plurals = r.getPlurals();
         test.ok(plurals);
-        test.equal(plurals.one, "{start}1 doctor{end} commented");
-        test.equal(plurals.other, "{start}%d doctors{end} commented");
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
         
         test.done();
     },
@@ -425,8 +438,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
@@ -448,8 +461,8 @@ module.exports = {
 			'  <string name="description_imgVw">imageView</string>\n' +
 			'  <string name="disclaimer">Disclaimer</string>\n' +
 			'  <string name="thanks">Thank you!</string>\n' +
-			'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-			'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+			'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+			'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
 			'</resources>';
         
         diff(xml, expected);
@@ -475,8 +488,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
@@ -488,8 +501,8 @@ module.exports = {
 			'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
 			'  <string name="disclaimer">Disclaimer</string>\n' +
 			'  <string name="description_imgVw">imageView</string>\n' +
-			'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-			'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+			'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+			'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
 			'  <string name="thanks">Thank you!</string>\n' +
 			'</resources>\n';
         
