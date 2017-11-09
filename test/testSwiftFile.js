@@ -42,7 +42,7 @@ module.exports = {
     testSwiftFileConstructorParams: function(test) {
         test.expect(1);
 
-        var j = new SwiftFile(p, "./testfiles/swift/PNXStrings.swift", sft);
+        var j = new SwiftFile(p, "./testfiles/swift/MyproductStrings.swift", sft);
         
         test.ok(j);
         
@@ -469,7 +469,7 @@ module.exports = {
     testSwiftFileExtractFile: function(test) {
         test.expect(26);
 
-        var j = new SwiftFile(p, "./swift/PNXStrings.swift", sft);
+        var j = new SwiftFile(p, "./swift/MyproductStrings.swift", sft);
         test.ok(j);
         
         // should read the file
