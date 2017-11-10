@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_twenty"
+    android:paddingRight="@dimen/margin_twenty"
+    android:paddingTop="@dimen/margin_fifteen">
+
+    <ImageView
+        android:id="@+id/ask_picker_logo"
+        android:layout_width="@dimen/ask_picker_logo_width"
+        android:layout_height="@dimen/ask_picker_logo_height"
+        android:layout_marginBottom="@dimen/margin_ten"
+        android:visibility="gone"/>
+
+    <com.myproduct.customviews.RobotoRegularTextView
+        android:id="@+id/ask_picker_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ask_picker_title_marginBottom"
+        android:gravity="center_horizontal"
+        android:text="Unlimited Gigabytes of Data"
+        android:textSize="17sp"/>
+
+    <com.myproduct.customviews.RobotoLightTextView
+        android:id="@+id/ask_picker_item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_ten"
+        android:gravity="center_horizontal"
+        android:text="@string/ask_picker_item_subtitle_text"/>
+
+    <com.myproduct.customviews.RobotoLightTextView
+        android:id="@+id/ask_picker_item_payment_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_ten"
+        android:gravity="center_horizontal"/>
+
+    <com.myproduct.customviews.RobotoRegularTextView
+        android:id="@+id/ask_picker_action_button"
+        style="@style/AskPickerChooseButton"
+        android:layout_marginBottom="@dimen/ask_picker_row_button_marginBottom"
+        android:layout_marginTop="@dimen/ask_picker_row_button_marginTop"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Choose"/>
+</LinearLayout>

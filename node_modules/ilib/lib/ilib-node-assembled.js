@@ -1,0 +1,1 @@
+var NodeLoader=require("../lib/NodeLoader.js");var ilib=require("../lib/ilib-full-dyn-compiled.js").ilib;ilib.setLoaderCallback(NodeLoader(ilib));module.exports=ilib;

@@ -17,9 +17,9 @@
     ],
     "email": "marketing@jedlsoft.com",
     "author": {
-    	"name": "Edwin Hoogerbeets",
-    	"web": "http://www.healthtap.com/",
-    	"email": "edwin.hoogerbeets@healthtap.com"
+        "name": "Edwin Hoogerbeets",
+        "web": "http://www.healthtap.com/",
+        "email": "edwin.hoogerbeets@healthtap.com"
     },
     "contributors": [
         {
@@ -35,13 +35,18 @@
         "type": "git",
         "url": ""
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": ""
-        }
-    ],
     "engines": {
         "nodejs": "<= 0.10.*"
-    }
+    },
+    "dependencies": [
+        "ilib",
+        "xml2json",
+        "nodeunit",
+        "log4js",
+        "mysql2",
+        "pretty-data",
+        "xml2json",
+        "yamljs",
+        "js-stl"
+    ]
 }

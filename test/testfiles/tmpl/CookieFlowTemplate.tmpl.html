@@ -1,0 +1,35 @@
+<div class="upsell-ad-item clearfix">  
+    <div class="modal_x"></div>
+    <div class="upsell-ad-content">
+      <div class="upsell-ad-header">
+        <div class="big cookie-flow"></div>
+        <span class="upsell-header-bold"><%=title%></span>
+          <% if(specialist){ %>
+            <%=
+              RB.getString('Talk with {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in insurance brokering:').format({
+                value: specialist.name,
+                specialist_name: specialist.specialist_name,
+                years: specialist.years_experience,
+                span_tag_start: '<span class="upsell-header-bold">',
+                span_tag_end: '</span>'
+              })
+            %>
+            Talk
+          <% } else { %>
+            Get insurance quotes for free!
+          <% } %>
+      </div>
+      <div class="upsell-ad-wrapper" style="<%= specialist ? '' : 'padding-left: 0' %>">
+         <% if(specialist){ %>
+          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>
+        <% } %>
+        <input class="askInputArea-cookie desktop" maxlength="150" placeholder='<%= placeholder %>'>
+        <span class="askSendArea-cookie">
+          <a class="askSendBtn-cookie" href="<%= specialist ? '/specialists/' + specialist.id + '/message?from_seo=1' : '/send_question' %>">
+            <div class="desktop-btn">Send question</div>
+            <div class="mobile-btn">Ask</div>
+          </a>
+        </span>
+      </div>
+    </div>
+</div>

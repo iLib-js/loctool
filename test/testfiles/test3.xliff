@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">
+    <body>
+      <trans-unit id="1" resname="xxx" restype="string">
+        <source>xxx xxx xx</source>
+        <target>xx xx xx</target>
+        <note annotates="source">got three turntables and a microphone</note>
+      </trans-unit>
+      <trans-unit id="3" resname="asdf" restype="plural" extype="few">
+        <source>Asdf asdf few</source>
+        <target>foobarfoo few</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">
+    <body>
+      <trans-unit id="2" resname="huzzah" restype="string">
+        <source>baby baby</source>
+        <target>bebe bebe</target>
+        <note annotates="source">come &amp; enjoy it with us</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

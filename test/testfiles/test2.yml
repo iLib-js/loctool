@@ -1,0 +1,11 @@
+---
+saved_someone_else_time:
+  subject:      "Someone said a colleague’s answer to your question saved them a lot of time:"
+member_answer_thank_follow_up:
+  subject:      "Thank %1 for answering!"
+member_question_asked:
+  email_subject: "%1, %2 has answered a question you asked!"
+  category: "a"
+'member_question_asked@answered':
+  email_subject: "%1, %2 has answered a question you asked!"
+  
