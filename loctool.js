@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
  * loctool.js - tool to extract resources from source code
  *
