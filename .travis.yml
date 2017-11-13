@@ -1,18 +1,26 @@
 language: node_js
-matrix:
-  include:
-    # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-5
-      env:
-        - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
-before_install:
-    - eval "${MATRIX_EVAL}"
+# matrix:
+#   include:
+#     # works on Precise and Trusty
+#     - os: linux
+#       addons:
+#         apt:
+#           sources:
+#             - ubuntu-toolchain-r-test
+#           packages:
+#             - g++-5
+#       env:
+#         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
+# before_install:
+#     - eval "${MATRIX_EVAL}"
+# env:
+#   - CXX=g++-4.8
+# addons:
+#   apt:
+#     sources:
+#       - ubuntu-toolchain-r-test
+#     packages:
+#       - g++-4.8
 node_js:
   - "4"
   - "6"
@@ -27,4 +35,4 @@ branches:
     - master
     - development
 sudo: required
-dist: precise
+dist: trusty
