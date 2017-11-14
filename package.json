@@ -4,6 +4,7 @@
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
+    "license": "Apache-2.0",
     "keywords": [
         "internationalization", 
         "i18n", 
@@ -32,6 +33,7 @@
         "db",
         "lib",
         "node_modules/html-parser",
+        "log4js.json",
         "README.md",
 	"LICENSE.txt"
     ],
@@ -53,7 +55,7 @@
     "dependencies": {
         "ilib": ">=12.0.0",
         "xml2json": ">=0.11.0",
-        "log4js": ">=2.0.0",
+        "log4js": "^2.0.0",
         "mysql2": ">=1.5.0",
         "pretty-data": ">=0.40.0",
         "js-yaml": ">=3.10.0",
@@ -61,6 +63,7 @@
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
 	"build-gradle-reader": "*",
-	"html-parser": "0.10.1"
+	"micromatch": ">=3.1.0",
+	"html-parser": "0.11.0"
     }
 }
