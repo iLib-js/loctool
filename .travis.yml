@@ -16,7 +16,7 @@ install:
   - npm install node-expat opencc
 script:
   - NODE=$(dirname $(dirname $(which node)))
-  - sed "s/XXXX/$NODE/" build.properties.travis > build.properties
+  - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
   - ant test
 branches:
   only:
