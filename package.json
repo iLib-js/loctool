@@ -35,7 +35,7 @@
         "node_modules/html-parser",
         "log4js.json",
         "README.md",
-	"LICENSE.txt"
+        "LICENSE.txt"
     ],
     "directories": {
         "doc": "./doc",
@@ -62,8 +62,8 @@
         "js-stl": ">=0.0.6",
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
-	"build-gradle-reader": "*",
-	"micromatch": ">=3.1.0",
-	"html-parser": "0.11.0"
-    }
+        "build-gradle-reader": "*",
+        "micromatch": ">=3.1.0"
+    },
+    "bundledDependencies": ["html-parser"]
 }

@@ -2702,7 +2702,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
+                '<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %> checked="yes" <% } %>>\n' +
                 '<label for="entity_group" class="radio-label">Groupe</label>');
 
         test.done();
@@ -2744,7 +2744,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '    <select class=\'end_hour\' value=<%=end_hour%>>\n' +
+                '    <select class=\'end_hour\' value="<%=end_hour%>">\n' +
                 '      asdf\n' +
                 '    </select>\n');
 
@@ -2787,7 +2787,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<span has-sub-options=<%= option.sub_options.length > 0 %> data-tracking-value="<%= option.tracking_value%>">\n' +
+                '<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>">\n' +
                 '    asdf\n' +
                 '</span>\n');
 
@@ -2827,7 +2827,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-                '<a class="specialist-name" href=<%= val.specialist.url%>>asdf</a>\n');
+                '<a class="specialist-name" href="<%= val.specialist.url%>">asdf</a>\n');
 
         test.done();
     },
@@ -2897,7 +2897,7 @@ module.exports = {
             '      <div class="specialist-avatar" style="background-image: url(<%= val.specialist.avatar_transparent_circular %>);"></div>\n' +
             '      <div class="specialist-info">\n' +
             '        <div class="icon"></div>\n' +
-            '        <a class="specialist-name" href=<%= val.specialist.url%>><%= val.specialist.name%></a>\n' +
+            '        <a class="specialist-name" href="<%= val.specialist.url%>"><%= val.specialist.name%></a>\n' +
             '        <div class="specialty"><%= val.specialist.intro%></div>\n' +
             '      </div>\n' +
             '    </div>\n' +
