@@ -6,5 +6,5 @@
 
 JSDOCDIR=tools/jsdoc_toolkit-2.4.0/jsdoc-toolkit
 nodeunit=${basedir}/../node_modules/nodeunit
-node=/usr/local/Cellar/node/6.3.0/bin/node
+node=/usr/local/Cellar/node/7.2.1
 nodeinspector=${basedir}/node_modules/node-inspector
