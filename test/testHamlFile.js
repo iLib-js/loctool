@@ -5438,7 +5438,7 @@ module.exports = {
         
         // now make sure the file was written out
         
-        test.ok(fs.existsSync("ruby/t2.fr-FR.html.haml"));
+        test.ok(fs.existsSync("./testfiles/ruby/t2.fr-FR.html.haml"));
         
         test.done();
     }
