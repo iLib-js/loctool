@@ -5054,7 +5054,7 @@ module.exports = {
         });
         test.ok(h);
 
-        h.parse('.compass-pricing\n' +
+        h.parse('.pricing\n' +
                 '  .pricing-intro\n' +
                 '    %h2.header-medium.light\n' + 
                 '      Calculate ROI for\n' +
@@ -5111,7 +5111,7 @@ module.exports = {
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
-        var expected = '.compass-pricing\n' +
+        var expected = '.pricing\n' +
                        '  .pricing-intro\n' +
                        '    %h2.header-medium.light\n' + 
                        '      Calculer le ROI pour\n' +
@@ -5141,7 +5141,7 @@ module.exports = {
         hft.newres.clear();
         test.equal(hft.newres.size(), 0);
 
-        h.parse('.compass-pricing\n' +
+        h.parse('.pricing\n' +
                 '  .pricing-intro\n' +
                 '    %h2.header-medium.light\n' + 
                 '      Calculate ROI for\n' +
@@ -5188,7 +5188,7 @@ module.exports = {
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
-        var expected = '.compass-pricing\n' +
+        var expected = '.pricing\n' +
                        '  .pricing-intro\n' +
                        '    %h2.header-medium.light\n' + 
                        '      Calculer le ROI pour\n' +

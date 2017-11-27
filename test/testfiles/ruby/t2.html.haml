@@ -13,7 +13,7 @@
     :member_visits_per_year=>{:title=>Rb.t('Visits per member per year')},
     :avg_cost_visit=>{:title=>Rb.t('Average cost of visit'),:currency=>1}
   }
-.compass-pricing
+.pricing
   .pricing-intro
     %h2.header-medium.light 
       Calculate ROI for
@@ -63,7 +63,7 @@
                 %p.title #{val[:title]}
   
   .mobile-ui
-    %a.btn.btn-small.btn-outline-teal.jump-link{:href=>'#compass_pricing',:data=>{:jump_link_page=>1}}
+    %a.btn.btn-small.btn-outline-teal.jump-link{:href=>'#pricing',:data=>{:jump_link_page=>1}}
       View your ROI
   .mobile-ui.calc-links
     %a.reset Reset values

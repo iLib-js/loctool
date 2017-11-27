@@ -862,7 +862,7 @@ module.exports = {
         var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_time", "en-US", "subject", "x-yaml"));
         test.ok(r);
 
-        test.equal(r.getSource(), "Feel good! Someone said a colleague’s answer to your question saved them a lot of time:");
+        test.equal(r.getSource(), "Someone said a colleague’s answer to your question saved them a lot of time:");
         test.equal(r.getKey(), "subject");
         test.equal(r.getSourceLocale(), "en-US");
         test.equal(r.getContext(), "saved_someone_else_time");
