@@ -47,7 +47,7 @@
         "url": "https://github.com/iLib-js/loctool.git"
     },
     "engines": {
-        "nodejs": "<= 0.10.*"
+        "node": ">=0.12 <=7.2.1"
     },
     "scripts": {
         "test": "ant test"
