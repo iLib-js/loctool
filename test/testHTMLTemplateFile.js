@@ -540,6 +540,61 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseSkipTemplateEchoEscapedTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse(
+            '<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+            '<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+            '<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+            '<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+            '<% fileSize = fileSize.toString(); %>\n' +
+            '<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+            '\n' +
+            '<div class="chat-attachment">\n' +
+            '  <a href="<%- url %>" target="_blank">\n' +
+            '    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+            '      <img class="uploaded-image" src="<%- url %>" />\n' +
+            '    <% } else { %>\n' +
+            '      <div class="attachment-placeholder">\n' +
+            '        <div class="attachment-icon"></div>\n' +
+            '      </div>\n' +
+            '    <% } %>\n' +
+            '  </a>\n' +
+            '  <% if (caption) { %>\n' +
+            '    <div class="attachment-caption">\n' +
+            '      <%- caption %>\n' +
+            '    </div>\n' +
+            '  <% } %>\n' +
+            '  <div class="attachment-timestamp">\n' +
+            '    Uploaded <%- dateString %>\n' +
+            '  </div>\n' +
+            '  <div class="attachment-size">\n' +
+            '    <%- fileSize + \' \' + measurement %> \n' +
+            '  </div>\n' +
+            '</div>');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "Uploaded", "html"));
+        test.ok(r);
+
+        test.equal(r.getSource(), "Uploaded");
+        test.equal(r.getKey(), "Uploaded");
+
+        test.done();
+    },
+
     testHTMLTemplateFileSkipScript: function(test) {
         test.expect(8);
 
@@ -1066,7 +1121,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileParseTemplateTagsInsideTags: function(test) {
+    testHTMLTemplateFileParseTemplateEchoTagsInsideTags: function(test) {
         test.expect(5);
 
         var p = new WebProject({
@@ -1091,6 +1146,122 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), 'Mr. <%= family_name %> is not available.');
         test.equal(r.getKey(), 'Mr. <%= family_name %> is not available.');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontBreakBetweenTemplateEchoEscapedTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       Mr. <%- family_name %> is not available.\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('Mr. <%- family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Mr. <%- family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%- family_name %> is not available.');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontIncludeStartingTemplateEchoEscapedTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <%- greeting %> Your friend is not available.\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('Your friend is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Your friend is not available.');
+        test.equal(r.getKey(), 'Your friend is not available.');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontIncludeEndingTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       Your friend is not available. <%- until_when %>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('Your friend is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Your friend is not available.');
+        test.equal(r.getKey(), 'Your friend is not available.');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseTemplateEchoEscapedTagsInsideTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <span <% if (condition) { %>class="foo"<% } %>> Mr. <%- family_name %> is not available.</span>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('Mr. <%- family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Mr. <%- family_name %> is not available.');
+        test.equal(r.getKey(), 'Mr. <%- family_name %> is not available.');
 
         test.done();
     },
@@ -2051,6 +2222,44 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextDontBreakBetweenTemplateEchoEscapedTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       Mr. <%- family_name %> is not available.\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'Mr. <%- family_name %> is not available.',
+            source: 'Mr. <%- family_name %> n\'est pas disponibles.',
+            locale: "fr-FR",
+            datatype: "html"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+                '<html>\n' +
+                '   <body>\n' +
+                '       Mr. <%- family_name %> n\'est pas disponibles.\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        test.done();
+    },
+
     testHTMLTemplateFileLocalizeTextI18NComments: function(test) {
         test.expect(2);
 
@@ -2371,7 +2580,8 @@ module.exports = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"]
+            locales:["en-GB"],
+            targetDir: "testfiles"
         });
 
         var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowTemplate.tmpl.html");
@@ -2468,7 +2678,7 @@ module.exports = {
             '            Obtenez des devis d\'assurance gratuitement!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '      <div class="upsell-ad-wrapper" style="<%- specialist ? \'\' : \'padding-left: 0\' %>">\n' +
             '         <% if(specialist){ %>\n' +
             '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
@@ -2510,7 +2720,7 @@ module.exports = {
             '            Kostenlosen Versicherungs-Angebote erhalten!\n' +
             '          <% } %>\n' +
             '      </div>\n' +
-            '      <div class="upsell-ad-wrapper" style="<%= specialist ? \'\' : \'padding-left: 0\' %>">\n' +
+            '      <div class="upsell-ad-wrapper" style="<%- specialist ? \'\' : \'padding-left: 0\' %>">\n' +
             '         <% if(specialist){ %>\n' +
             '          <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>\n' +
             '        <% } %>\n' +
@@ -2538,7 +2748,8 @@ module.exports = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"]
+            locales:["en-GB"],
+            targetDir: "testfiles"
         });
 
         var htf = new HTMLTemplateFile(p, "./tmpl/nostrings.tmpl.html");
@@ -2828,6 +3039,44 @@ module.exports = {
 
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<a class="specialist-name" href=<%= val.specialist.url%>>asdf</a>\n');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags5a: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<a class="specialist-name" href=<%- val.specialist.url%>>foo</a>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "webapp",
+            key: 'foo',
+            source: 'asdf',
+            locale: "fr-FR",
+            datatype: "html"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+                '<a class="specialist-name" href=<%- val.specialist.url%>>asdf</a>\n');
 
         test.done();
     },
