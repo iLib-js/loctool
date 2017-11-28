@@ -13,7 +13,7 @@ node_js:
 compiler:
   - gcc
 install:
-  - npm install node-expat opencc
+  - npm install
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
