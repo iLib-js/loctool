@@ -1,0 +1,10 @@
+android {
+	productFlavors {
+		a{
+            applicationId aApplicationId
+            manifestPlaceholders = [
+                flavorName     : "vanilla"
+            ]
+		}
+	}
+}

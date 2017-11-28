@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="app_recommend" i18n="Make sure {start} and {end} are surrounding the translated words of '1 friend' or '%d friends'.">
+        <item quantity="one">
+            {start}1{end} friend recommends
+        </item>
+        <item quantity="other">
+            {start}%d{end} friends recommend
+        </item>
+
+    </plurals>
+    <plurals name="app_recommend2" i18n="Make sure {start} and {end} are surrounding the translated words of '1 friend' or '%d friends'.">
+        <item quantity="one">
+            {start}1 friend{end} recommends this app
+        </item>
+        <item quantity="other">
+            {start}%d friends{end} recommend this app
+        </item>
+    </plurals>
+    <plurals name="friend_comment">
+        <item quantity="one">
+            {start}1 friend{end} commented
+        </item>
+        <item quantity="other">
+            {start}%d friends{end} commented
+        </item>
+    </plurals>
+</resources>

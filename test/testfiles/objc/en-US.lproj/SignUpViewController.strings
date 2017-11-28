@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */
+"2V9-YN-vxb.normalTitle" = "Terms";
+
+/* Class = "UITextField"; placeholder = "Password (6+ characters)"; ObjectID = "D5U-uX-f0O"; */
+"D5U-uX-f0O.placeholder" = "Password (6+ characters)";
+
+/* Class = "UILabel"; text = "free, private"; ObjectID = "DWd-6J-lLt"; */
+"DWd-6J-lLt.text" = "free, private";
+
+/* Class = "UILabel"; text = "account or login"; ObjectID = "EtU-AP-x2I"; */
+"EtU-AP-x2I.text" = "account or login";
+
+/* Class = "UILabel"; text = "Are you a member?"; ObjectID = "F5h-fB-tt5"; */
+"F5h-fB-tt5.text" = "Are you a member?";
+
+/* Class = "UILabel"; text = "Are you a friend?"; ObjectID = "MFI-qx-pQf"; */
+"MFI-qx-pQf.text" = "Are you a friend?";
+
+/* Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k"; */
+"QCe-xG-x5k.normalTitle" = "Login ›";
+
+/* Class = "UIButton"; normalTitle = "For members"; ObjectID = "QlM-MR-bhO"; */
+"QlM-MR-bhO.normalTitle" = "For members";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "Rog-N0-yiM"; */
+"Rog-N0-yiM.normalTitle" = "Privacy Policy";
+
+/* Class = "UITextField"; placeholder = "Your email"; ObjectID = "WpN-ro-7NU"; */
+"WpN-ro-7NU.placeholder" = "Your email";
+
+/* Class = "UILabel"; text = "You agree to our"; ObjectID = "aOn-rY-Luu"; */
+"aOn-rY-Luu.text" = "You agree to our";
+
+/* Class = "UILabel"; text = "Create a"; ObjectID = "cZz-H1-CZg"; */
+"cZz-H1-CZg.text" = "Create a";
+
+/* Class = "UIButton"; normalTitle = "For drivers"; ObjectID = "dKU-eT-s3G"; */
+"dKU-eT-s3G.normalTitle" = "For drivers";
+
+/* Class = "UILabel"; text = "and"; ObjectID = "guG-tT-3La"; */
+"guG-tT-3La.text" = "and";

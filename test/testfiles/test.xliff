@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">
+    <body>
+      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">
+        <source>Asdf asdf</source>
+        <target>foobarfoo</target>
+        <note annotates="source">foobar is where it&apos;s at!</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">
+    <body>
+      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">
+        <source>baby baby</source>
+        <target>bebe bebe</target>
+        <note annotates="source">come &amp; enjoy it with us</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,8 +1,10 @@
 {
     "name": "loctool",
     "version": "1.0.0",
-    "main": "loctool.js",
+    "main": "./loctool.js",
+    "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
+    "license": "Apache-2.0",
     "keywords": [
         "internationalization", 
         "i18n", 
@@ -15,33 +17,52 @@
         "locale",
         "translation"
     ],
-    "email": "marketing@jedlsoft.com",
+    "email": "edwin.hoogerbeets@healthtap.com",
     "author": {
-    	"name": "Edwin Hoogerbeets",
-    	"web": "http://www.healthtap.com/",
-    	"email": "edwin.hoogerbeets@healthtap.com"
+        "name": "Edwin Hoogerbeets",
+        "web": "http://www.healthtap.com/",
+        "email": "edwin.hoogerbeets@healthtap.com"
     },
     "contributors": [
         {
             "name": "Edwin Hoogerbeets",
             "email": "edwin.hoogerbeets@healthtap.com" 
-        } 
-    ],
-    "files": [
-        "lib",
-        "README.md"
-    ],
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": ""
         }
     ],
+    "files": [
+        "db",
+        "lib",
+        "node_modules/html-parser",
+        "log4js.json",
+        "README.md",
+        "LICENSE.txt"
+    ],
+    "directories": {
+        "doc": "./doc",
+        "lib": "./lib",
+        "test": "./test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iLib-js/loctool.git"
+    },
     "engines": {
-        "nodejs": "<= 0.10.*"
-    }
+        "node": ">=0.12 <=7.2.1"
+    },
+    "scripts": {
+        "test": "ant test"
+    },
+    "dependencies": {
+        "ilib": ">=12.0.0",
+        "log4js": "^2.0.0",
+        "mysql2": ">=1.5.0",
+        "pretty-data": ">=0.40.0",
+        "js-yaml": ">=3.10.0",
+        "js-stl": ">=0.0.6",
+        "node-expat": ">=2.3.0",
+        "opencc": ">=1.0.5",
+        "build-gradle-reader": "*",
+        "micromatch": ">=3.1.0"
+    },
+    "bundledDependencies": ["html-parser", "xml2json"]
 }

@@ -1,0 +1,10 @@
+##
+# Copy this file to build.properties in the root of your checkout,
+# and edit all these settings to be appropriate for your environment.
+# When this template changes, you need to re-edit the build.properties
+# on your machine to match the changes.
+
+JSDOCDIR=tools/jsdoc_toolkit-2.4.0/jsdoc-toolkit
+nodeunit=${basedir}/../node_modules/nodeunit
+node=/usr/local/Cellar/node/7.2.1
+nodeinspector=${basedir}/node_modules/node-inspector
