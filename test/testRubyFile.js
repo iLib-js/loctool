@@ -1015,15 +1015,15 @@ module.exports = {
 
         rf.parse(
     		'.contain-width\n' +
-    		'  .hopes-for-everyone\n' +
+    		'  .for-everyone\n' +
     		'    %p.big-text.montserrat-regular\n' +
-    		'      WE HAVE HOPES FOR EVERYONE\n' +
+    		'      WE HAVE INSURANCE FOR EVERYONE\n' +
     		'    .items\n' +
     		'      :ruby\n' +
     		'        data=[\n' +
     		'          {:links=>[{:href=>"/what_we_make/members",:caption=>Rb.t("Learn more about members")}],:img=>"members-mobile@3x.png",:title=>Rb.t("Members"),:caption=>Rb.t("Immediate access to other CEOs and their expertise, anytime, anywhere")},\n' +
     		'          {:links=>[{:href=>"/enterprise/providers",:caption=>Rb.t("Learn about business service providers")},{:href=>"/enterprise/practices",:caption=>Rb.t("Learn about best practices")}],:img=>"providers-and-data-warehouse-systems-mobile@3x.png",:title=>Rb.t("Providers & Data Warehouse Systems"))},\n' +
-    		'          {:links=>[{:href=>"/enterprise/compass",:caption=>Rb.t("Learn more about employers & insurers")}],:img=>"employers-and-insurers-mobile@3x.png",:title=>Rb.t("Employers & Insurers"),:caption=>Rb.t("Lower costs and improve productivity & satisfaction by providing the right service at the right cost at the right time ")},\n' +
+    		'          {:links=>[{:href=>"/enterprise/insurers",:caption=>Rb.t("Learn more about employers & insurers")}],:img=>"employers-and-insurers-mobile@3x.png",:title=>Rb.t("Employers & Insurers"),:caption=>Rb.t("Lower costs and improve productivity & satisfaction by providing the right service at the right cost at the right time ")},\n' +
     		'          {:links=>[{:href=>"/enterprise/sos",:caption=>Rb.t("Learn more about government & population managers")}],:img=>"govt-pop-mangagers@3x.png",:title=>Rb.t("Government & Population Managers")},\n' +
     		'          {:links=>[{:href=>"/what_we_make/developers",:caption=>Rb.t("Learn more about developers")}],:img=>"developers-mobile@3x.png",:title=>Rb.t("Developers"),:caption=>Rb.t("MyProduct Cloud enables developers to build interoperable, engaging, and smart business experiences, powered by our massive backend.")}\n' +
     		'        ]\n' +
