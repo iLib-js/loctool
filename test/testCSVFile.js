@@ -941,43 +941,55 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "foo",
         	key: "bar",
-        	source: "le bar",
-        	locale: "fr-FR",
+        	source: "bar",
+        	sourceLocale: "en-US",
+        	target: "le bar",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "asdf",
-        	source: "l'asdf",
-        	locale: "fr-FR",
+        	source: "asdf",
+        	sourceLocale: "en-US",
+        	target: "l'asdf",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "bar2",
-        	source: "le bar2",
-        	locale: "fr-FR",
+        	source: "bar2",
+        	sourceLocale: "en-US",
+        	target: "le bar2",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "asdf2",
-        	source: "l'asdf2",
-        	locale: "fr-FR",
+        	source: "asdf2",
+        	sourceLocale: "en-US",
+        	target: "l'asdf2",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "bar3",
-        	source: "le bar3",
-        	locale: "fr-FR",
+        	source: "bar3",
+        	sourceLocale: "en-US",
+        	target: "le bar3",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "asdf3",
-        	source: "l'asdf3",
-        	locale: "fr-FR",
+        	source: "asdf3",
+        	sourceLocale: "en-US",
+        	target: "l'asdf3",
+        	targetLocale: "fr-FR",
         	datatype: "x-csv"
         }));
 

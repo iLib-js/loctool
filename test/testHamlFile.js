@@ -2934,20 +2934,20 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -2977,28 +2977,28 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("Bold text."),
-            source: "Texte gras.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	target: "Texte gras.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3026,28 +3026,28 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("Bold text."),
-            source: "Texte gras.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	target: "Texte gras.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3077,28 +3077,31 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	source: "This is a test.",
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("Bold text."),
-            source: "Texte gras.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	source: "Bold text.",
+        	target: "Texte gras.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	source: "This should all be in one string.",
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3110,7 +3113,7 @@ module.exports = {
         var resource = hft.modern.getClean(ResourceString.cleanHashKey("webapp", "fr-FR", key, "x-haml"));
         test.ok(resource);
 
-        test.equal(resource.getSource(), expected);
+        test.equal(resource.getTarget(), expected);
         test.equal(resource.reskey, key);
         
         test.done();
@@ -3132,20 +3135,20 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test"),
-            source: "Ceci est un essai",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test"),
+        	target: "Ceci est un essai",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("another test."),
-            source: "encore un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("another test."),
+        	target: "encore un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3175,20 +3178,20 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3217,12 +3220,12 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("Please continue by voice or chat."),
-            source: "Por favor, continúa por voz o chat.",
-            locale: "es-US",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("Please continue by voice or chat."),
+        	target: "Por favor, continúa por voz o chat.",
+        	targetLocale: "es-US",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "es-US");
@@ -3254,28 +3257,28 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("Bold text."),
-            source: "Texte gras.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("Bold text."),
+        	target: "Texte gras.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3285,8 +3288,8 @@ module.exports = {
         var resource = hft.modern.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
         test.ok(resource);
         
-        diff(resource.text, expected);
-        test.equal(resource.text, expected);
+        diff(resource.getTarget(), expected);
+        test.equal(resource.getTarget(), expected);
         
         test.done();
     },
@@ -3311,20 +3314,20 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This should all be in one string."),
-            source: "Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This should all be in one string."),
+        	target: "Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.assembleTranslation(segment, translations, "fr-FR");
@@ -3336,8 +3339,8 @@ module.exports = {
         var resource = hft.newres.get(ResourceString.hashKey("webapp", "fr-FR", h.makeKey(segment.text), hft.datatype));
         test.ok(resource);
         
-        diff(resource.text, expected);
-        test.equal(resource.text, expected);
+        diff(resource.getTarget(), expected);
+        test.equal(resource.getTarget(), expected);
         
         test.done();
     },
@@ -3357,12 +3360,12 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test. This should all be in one string."),
-            source: "Ceci est un essai. Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test. This should all be in one string."),
+        	target: "Ceci est un essai. Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3387,12 +3390,12 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test. This should all be in one string."),
-            source: "Ceci est un essai. Tout doit etre en une phrase.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test. This should all be in one string."),
+        	target: "Ceci est un essai. Tout doit etre en une phrase.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3418,20 +3421,20 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is a test."),
-            source: "Ceci est un essai.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is a test."),
+        	target: "Ceci est un essai.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey("This is more text at a different indentation level."),
-            source: "Tout doit etre dans deux phrases.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey("This is more text at a different indentation level."),
+        	target: "Tout doit etre dans deux phrases.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3457,12 +3460,14 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is <span class="foo">a test</span> for the ages.'),
-            source: 'Ceci est <span class="foo">un essai</span> pour les temps entiere.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is <span class="foo">a test</span> for the ages.'),
+			source: "This is <span class=\"foo\">a test</span> for the ages.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est <span class="foo">un essai</span> pour les temps entiere.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3486,12 +3491,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3515,12 +3522,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3544,12 +3553,14 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3574,20 +3585,24 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is more text at the same indentation level.'),
-            source: 'Ceci est plus texte avec le meme niveau d\'indentation.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is more text at the same indentation level.'),
+			source: "This is more text at the same indentation level.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est plus texte avec le meme niveau d\'indentation.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3612,12 +3627,14 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3643,12 +3660,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test of <b>bold text</b> embedded in the sentence.'),
-            source: 'Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test of <b>bold text</b> embedded in the sentence.'),
+			source: "This is a test of <b>bold text</b> embedded in the sentence.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai de <b>texte en gras</b> incorporé dans la phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3674,12 +3693,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.'),
-            source: 'Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test of the <a class="data icon" href="/pages/contact_us">non-breaking</a> tags.'),
+			source: "This is a test of the <a class=\"data icon\" href=\"/pages/contact_us\">non-breaking</a> tags.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai des mots clés <a class="data icon" href="/pages/contact_us">sans ruptures</a>.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3706,20 +3727,24 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Message'),
-            source: 'Méssage',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Message'),
+			source: "Message",
+			sourceLocale: "en-US",
+        	target: 'Méssage',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Recommend'),
-            source: 'Recommendez',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Recommend'),
+			source: "Recommend",
+			sourceLocale: "en-US",
+        	target: 'Recommendez',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3750,20 +3775,24 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3793,28 +3822,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string. Another string. Yet another string.'),
-            source: 'Une autre phrase. Plus une autre. Encore une phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string. Another string. Yet another string.'),
+			source: "A different string. Another string. Yet another string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase. Plus une autre. Encore une phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3843,28 +3878,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3891,12 +3932,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3923,12 +3966,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3955,12 +4000,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('!! XML This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('!! XML This is a test.'),
+			source: "!! XML This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -3986,12 +4033,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('! XML This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('! XML This is a test.'),
+			source: "! XML This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4021,20 +4070,24 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4069,20 +4122,24 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4114,28 +4171,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4163,28 +4226,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4213,28 +4282,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4263,28 +4338,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4313,28 +4394,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4363,28 +4450,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4412,28 +4505,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4461,28 +4560,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4514,28 +4619,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4566,28 +4677,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4613,28 +4730,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4660,28 +4783,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4707,28 +4836,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4755,12 +4890,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is <br/> Spinal Tap.'),
-            source: 'Ceci est <br/> Spinal Tap.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is <br/> Spinal Tap.'),
+			source: "This is <br/> Spinal Tap.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est <br/> Spinal Tap.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4784,12 +4921,14 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A & B'),
-            source: 'C & D',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A & B'),
+			source: "A & B",
+			sourceLocale: "en-US",
+        	target: 'C & D',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4814,28 +4953,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4861,28 +5006,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('This is a test.'),
-            source: 'Ceci est un essai.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('This is a test.'),
+			source: "This is a test.",
+			sourceLocale: "en-US",
+        	target: 'Ceci est un essai.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('A different string.'),
-            source: 'Une autre phrase.',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('A different string.'),
+			source: "A different string.",
+			sourceLocale: "en-US",
+        	target: 'Une autre phrase.',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Not indented.'),
-            source: "Sans l'indentation.",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Not indented.'),
+			source: "Not indented.",
+			sourceLocale: "en-US",
+        	target: "Sans l'indentation.",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4919,36 +5070,44 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
-            source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
+			source: "Type your organization\'s own values to estimate your ROI",
+			sourceLocale: "en-US",
+        	target: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Calculate ROI for'),
-            source: 'Calculer le ROI pour',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Calculate ROI for'),
+			source: "Calculate ROI for",
+			sourceLocale: "en-US",
+        	target: 'Calculer le ROI pour',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Reset values'),
-            source: 'Réinitialiser les valeurs',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Reset values'),
+			source: "Reset values",
+			sourceLocale: "en-US",
+        	target: 'Réinitialiser les valeurs',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Assumptions'),
-            source: "Hypothèses",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Assumptions'),
+			source: "Assumptions",
+			sourceLocale: "en-US",
+        	target: "Hypothèses",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -4972,7 +5131,7 @@ module.exports = {
     },
     
     testHamlFileLocalizeTextNewResIsCorrect: function(test) {
-        test.expect(7);
+        test.expect(8);
 
         var h = new HamlFile({
             project: p,
@@ -4998,28 +5157,34 @@ module.exports = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Calculate ROI for'),
-            source: 'Calculer le ROI pour',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Calculate ROI for'),
+			source: "Calculate ROI for",
+			sourceLocale: "en-US",
+        	target: 'Calculer le ROI pour',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Reset values'),
-            source: 'Réinitialiser les valeurs',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Reset values'),
+			source: "Reset values",
+			sourceLocale: "en-US",
+        	target: 'Réinitialiser les valeurs',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Assumptions'),
-            source: "Hypothèses",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Assumptions'),
+			source: "Assumptions",
+			sourceLocale: "en-US",
+        	target: "Hypothèses",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         var actual = h.localizeText(translations, "fr-FR");
@@ -5040,15 +5205,16 @@ module.exports = {
         diff(actual, expected);
         test.equal(actual, expected);
 
-        test.equal(hft.newres.size(), 2);
+        test.equal(hft.newres.size(), 1);
         
         var resource = hft.newres.getClean(
             ResourceString.cleanHashKey(
                     p.getProjectId(), "fr-FR", h.makeKey("Type your organization's own values to estimate your ROI"), "x-haml"));
         
         test.ok(resource);
-        test.equal(resource.origin, "target");
         test.equal(resource.getSource(), "Type your organization's own values to estimate your ROI");
+        test.equal(resource.getTarget(), "Type your organization's own values to estimate your ROI");
+        test.equal(resource.getTargetLocale(), "fr-FR");
 
         test.done();
     },
@@ -5218,44 +5384,54 @@ module.exports = {
         
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Calculate ROI for'),
-            source: 'Calculer le ROI pour',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Calculate ROI for'),
+			source: "Calculate ROI for",
+			sourceLocale: "en-US",
+        	target: 'Calculer le ROI pour',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
-            source: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Type your organization\'s own values to estimate your ROI'),
+        	source: "Type your organization's own values to estimate your ROI",
+        	sourceLocale: "en-US",
+        	target: 'Tapez les valeurs propres de votre organisation pour estimer votre ROI',
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Reset values'),
-            source: "Réinitialiser les valeurs",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Reset values'),
+			source: "Reset values",
+			sourceLocale: "en-US",
+        	target: "Réinitialiser les valeurs",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Assumptions'),
-            source: "Hypothèses",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Assumptions'),
+			source: "Assumptions",
+			sourceLocale: "en-US",
+        	target: "Hypothèses",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
-            key: h.makeKey('Return on investment'),
-            source: "Retour sur investissement",
-            locale: "fr-FR",
-            datatype: hft.datatype,
-            origin: "target"
+        	project: "webapp",
+        	key: h.makeKey('Return on investment'),
+			source: "Return on investment",
+			sourceLocale: "en-US",
+        	target: "Retour sur investissement",
+        	targetLocale: "fr-FR",
+        	datatype: hft.datatype,
+        	origin: "target"
         }));
         
         h.localize(translations, ["fr-FR"]);

@@ -116,12 +116,56 @@ module.exports = {
         test.done();
     },
 
-    testAndroidResourceFileParsePluralGetByKey: function(test) {
-        test.expect(7);
+    testAndroidResourceFileParsePluralTargetOnly: function(test) {
+        test.expect(9);
 
         var arf = new AndroidResourceFile({
         	project: p,
-			type: arft
+			type: arft,
+			locale: "de-DE" // different from source locale, so should produce target resources
+        });
+        test.ok(arf);
+        
+        arf.parse(
+        		'<?xml version="1.0" encoding="utf-8"?>\n' +
+        		'<resources \n' +
+        		'  xmlns:tools="http://schemas.android.com/tools">\n' +
+        	    '  <plurals name="friend_comment">\n' +
+                '    <item quantity="one">\n' +
+                '      {start}1 friend{end} commented\n' +
+                '    </item>\n' +
+                '    <item quantity="other">\n' +
+                '      {start}%d friends{end} commented\n' +
+                '    </item>\n' +
+                '  </plurals>\n' +
+        		'</resources>\n');
+
+
+        var set = arf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "de-DE", "friend_comment"));
+        test.ok(r);
+        
+        test.equal(r.getKey(), "friend_comment");
+        test.equal(r.getSourceLocale(), "en-US");
+        test.equal(r.getTargetLocale(), "de-DE");
+        
+        var plurals = r.getTargetPlurals();
+        test.ok(plurals);
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
+        
+        test.done();
+    },
+
+    testAndroidResourceFileParsePluralSourceOnly: function(test) {
+        test.expect(9);
+
+        var arf = new AndroidResourceFile({
+        	project: p,
+			type: arft,
+			targetLocale: "en-US"  // same as source locale, so should produce source-only resources
         });
         test.ok(arf);
         
@@ -145,9 +189,10 @@ module.exports = {
         
         var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "friend_comment"));
         test.ok(r);
-        
+        test.equal(r.getSourceLocale(), "en-US");
+        test.ok(!r.getTargetLocale());
         test.equal(r.getKey(), "friend_comment");
-        var plurals = r.getPlurals();
+        var plurals = r.getSourcePlurals();
         test.ok(plurals);
         test.equal(plurals.one, "{start}1 friend{end} commented");
         test.equal(plurals.other, "{start}%d friends{end} commented");
@@ -183,7 +228,7 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getKey(), "self_questions");
-        var array = r.getArray();
+        var array = r.getSourceArray();
         test.ok(array);
         test.equal(array.length, 3);
         test.equal(array[0], "How many times have you been pregnant?");
@@ -345,7 +390,7 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getKey(), "friend_comment");
-        var plurals = r.getPlurals();
+        var plurals = r.getSourcePlurals();
         test.ok(plurals);
         test.equal(plurals.one, "{start}1 friend{end} commented");
         test.equal(plurals.other, "{start}%d friends{end} commented");
@@ -375,7 +420,7 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getKey(), "self_questions");
-        var array = r.getArray();
+        var array = r.getSourceArray();
         test.ok(array);
         test.equal(array.length, 3);
         test.equal(array[0], "How many times have you been pregnant?");
@@ -447,7 +492,7 @@ module.exports = {
         	project: "android",
         	key: "asdf",
         	source: "foobar",
-        	locale: "en-US"
+        	sourceLocale: "en-US"
         }));
         
         var xml = arf._getXML();
@@ -525,7 +570,7 @@ module.exports = {
         arf.addResource(new ResourcePlural({
         	project: "android",
         	key: "asdf",
-        	strings: {
+        	sourceStrings: {
         		"one": "This is singular",
         		"few": "This is few",
         		"other": "This is other"
@@ -537,7 +582,7 @@ module.exports = {
         arf.addResource(new ResourcePlural({
         	project: "android",
         	key: "foobar",
-        	strings: {
+        	sourceStrings: {
         		"one": "un",
         		"few": "deux",
         		"other": "trois"
@@ -582,16 +627,16 @@ module.exports = {
         arf.addResource(new ResourceArray({
         	project: "android",
         	key: "asdf",
-        	array: ["one", "two", "three"],
-        	locale: "en-US",
+        	sourceArray: ["one", "two", "three"],
+        	sourceLocale: "en-US",
         	comment: "comment1"
         }));
         
         arf.addResource(new ResourceArray({
         	project: "android",
         	key: "foobar",
-        	array: ["un", "deux", "trois"],
-        	locale: "en-US",
+        	sourceArray: ["un", "deux", "trois"],
+        	sourceLocale: "en-US",
         	comment: "comment2"
         }));
 
