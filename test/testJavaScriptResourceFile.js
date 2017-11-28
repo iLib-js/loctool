@@ -94,21 +94,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -143,21 +149,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -225,15 +237,19 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen\"text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen\"text"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen\"text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen\"text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -272,15 +288,19 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen'text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen'text"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen'text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen'text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -321,21 +341,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
