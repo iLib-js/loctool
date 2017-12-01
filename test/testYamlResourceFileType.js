@@ -427,7 +427,7 @@ module.exports = {
     },
     
     testYamlResourceFileTypeGetResourceFileWithFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",
@@ -445,14 +445,14 @@ module.exports = {
 
         var yrf = yrft.getResourceFile("fr-FR-CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "fr-FR");
-        test.equal(yrf.getPath(), "config/locales/fr-CHOCOLATE.yml");
+        test.equal(yrf.getLocale(), "fr-FR-CHOCOLATE");
+        test.equal(yrf.getPath(), "config/locales/fr-FR-CHOCOLATE.yml");
 
         test.done();
     },
 
     testYamlResourceFileTypeGetResourceFileENUSWithFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",
@@ -470,14 +470,14 @@ module.exports = {
 
         var yrf = yrft.getResourceFile("en-US-CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "en-US");
-        test.equal(yrf.getPath(), "config/locales/en-CHOCOLATE.yml");
+        test.equal(yrf.getLocale(), "en-US-CHOCOLATE");
+        test.equal(yrf.getPath(), "config/locales/en-US-CHOCOLATE.yml");
 
         test.done();
     },
 
     testYamlResourceFileTypeGetResourceFileENHKWithFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",
@@ -495,14 +495,14 @@ module.exports = {
 
         var yrf = yrft.getResourceFile("en-HK-CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "en-HK");
+        test.equal(yrf.getLocale(), "en-HK-CHOCOLATE");
         test.equal(yrf.getPath(), "config/locales/en-HK-CHOCOLATE.yml");
 
         test.done();
     },
 
     testYamlResourceFileTypeGetResourceFileZHHKWithFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",
@@ -520,14 +520,14 @@ module.exports = {
 
         var yrf = yrft.getResourceFile("zh-Hant-HK-CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "zh-Hant-HK");
-        test.equal(yrf.getPath(), "config/locales/zh-Hant-CHOCOLATE.yml");
+        test.equal(yrf.getLocale(), "zh-Hant-HK-CHOCOLATE");
+        test.equal(yrf.getPath(), "config/locales/zh-Hant-HK-CHOCOLATE.yml");
 
         test.done();
     },
 
     testYamlResourceFileTypeGetResourceFileZHCNWithFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",
@@ -545,14 +545,14 @@ module.exports = {
 
         var yrf = yrft.getResourceFile("zh-Hans-CN-CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "zh-Hans-CN");
-        test.equal(yrf.getPath(), "config/locales/zh-CHOCOLATE.yml");
+        test.equal(yrf.getLocale(), "zh-Hans-CN-CHOCOLATE");
+        test.equal(yrf.getPath(), "config/locales/zh-Hans-CN-CHOCOLATE.yml");
 
         test.done();
     },
 
     testYamlResourceFileTypeGetResourceFileWithNoFlavor: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new WebProject({
         	id: "webapp",

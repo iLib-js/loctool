@@ -126,6 +126,27 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileTypeHandlesNoFilesNamedForALocaleWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["DISCOVERY"]
+        });
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(!yft.handles("en-ZA-DISCOVERY.yml"));
+
+        test.done();
+    },
+    
     testYamlFileTypeHandlesNoFilesNamedForALocaleInASubdir: function(test) {
         test.expect(4);
 
@@ -144,6 +165,27 @@ module.exports = {
         test.ok(!yft.handles("a/b/en-US.yml"));
         test.ok(!yft.handles("c/d/de-DE.yml"));
         test.ok(!yft.handles("e/f/en.yml"));
+
+        test.done();
+    },
+
+    testYamlFileTypeHandlesNoFilesNamedForALocaleWithFlavorInASubdir: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["DISCOVERY"]
+        });
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(!yft.handles("a/b/en-ZA-DISCOVERY.yml"));
 
         test.done();
     },
@@ -184,6 +226,27 @@ module.exports = {
         test.ok(yft);
         
         test.ok(!yft.handles("config/locales/auto/en-US.yml"));
+        
+        test.done();
+    },
+
+    testYamlFileTypeHandlesNoResourceFilesInSubdirsWithFlavors: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["DISCOVERY"]
+        });
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(!yft.handles("config/locales/auto/en-ZA-DISCOVERY.yml"));
         
         test.done();
     },

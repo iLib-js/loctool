@@ -173,5 +173,23 @@ module.exports = {
         test.ok(!htf.handles("app/views/who_we_are/press.zh-Hans-CN.html.haml"));
         
         test.done();
+    },
+    
+    testHamlFileTypeHandlesAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"],
+			flavors: ["DISCOVERY"]
+		});
+        
+        var htf = new HamlFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/foo.en-ZA-DISCOVERY.html.haml"));
+        
+        test.done();
     }
 };
