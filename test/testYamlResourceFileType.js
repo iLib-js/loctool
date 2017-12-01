@@ -443,9 +443,9 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
 
-        var yrf = yrft.getResourceFile("fr-FR-CHOCOLATE");
+        var yrf = yrft.getResourceFile("fr-FR", "CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "fr-FR-CHOCOLATE");
+        test.equal(yrf.getLocale(), "fr-FR");
         test.equal(yrf.getPath(), "config/locales/fr-FR-CHOCOLATE.yml");
 
         test.done();
@@ -468,9 +468,9 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
 
-        var yrf = yrft.getResourceFile("en-US-CHOCOLATE");
+        var yrf = yrft.getResourceFile("en-US", "CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "en-US-CHOCOLATE");
+        test.equal(yrf.getLocale(), "en-US");
         test.equal(yrf.getPath(), "config/locales/en-US-CHOCOLATE.yml");
 
         test.done();
@@ -493,9 +493,9 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
 
-        var yrf = yrft.getResourceFile("en-HK-CHOCOLATE");
+        var yrf = yrft.getResourceFile("en-HK", "CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "en-HK-CHOCOLATE");
+        test.equal(yrf.getLocale(), "en-HK");
         test.equal(yrf.getPath(), "config/locales/en-HK-CHOCOLATE.yml");
 
         test.done();
@@ -518,9 +518,9 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
 
-        var yrf = yrft.getResourceFile("zh-Hant-HK-CHOCOLATE");
+        var yrf = yrft.getResourceFile("zh-Hant-HK", "CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "zh-Hant-HK-CHOCOLATE");
+        test.equal(yrf.getLocale(), "zh-Hant-HK");
         test.equal(yrf.getPath(), "config/locales/zh-Hant-HK-CHOCOLATE.yml");
 
         test.done();
@@ -543,9 +543,9 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
 
-        var yrf = yrft.getResourceFile("zh-Hans-CN-CHOCOLATE");
+        var yrf = yrft.getResourceFile("zh-Hans-CN", "CHOCOLATE");
         
-        test.equal(yrf.getLocale(), "zh-Hans-CN-CHOCOLATE");
+        test.equal(yrf.getLocale(), "zh-Hans-CN");
         test.equal(yrf.getPath(), "config/locales/zh-Hans-CN-CHOCOLATE.yml");
 
         test.done();

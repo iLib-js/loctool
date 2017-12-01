@@ -110,7 +110,7 @@ module.exports = {
         var y = new YamlFile({
             project: p,
             type: yft,
-            pathName: "foo/customized/en-VANILLA.yml"
+            pathName: "foo/customized/en-US-VANILLA.yml"
         });
         test.ok(y);
 
@@ -125,10 +125,11 @@ module.exports = {
         var y = new YamlFile({
             project: p,
             type: yft,
-            pathName: "foo/customized/en-PEACH.yml"
+            pathName: "foo/customized/en-US-PEACH.yml"
         });
         test.ok(y);
 
+        // PEACH is not a flavor in the project
         test.ok(!y.getFlavor());
 
         test.done();
@@ -305,6 +306,59 @@ module.exports = {
         test.equal(r[5].getSourceLocale(), "en-US");
         test.equal(r[5].getKey(), "test");
         test.equal(r[5].getContext(), "zh_Hans_CN@foo@bar@asdf");
+
+        test.done();
+    },
+
+    testYamlFileParseWithFlavor: function(test) {
+        test.expect(28);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft,
+            path: "config/customization/en-US-CHOCOLATE.yml"
+        });
+        test.ok(yml);
+
+        yml.parse(
+                '---\n' +
+                "en-US-CHOCOLATE:\n" +
+                '  r9834724545: Jobs\n' +
+                '  r9483762220: Our internship program\n' +
+                '  r6782977423: |\n' +
+                '    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '    directly from experienced, successful entrepreneurs.\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 3);
+
+        // locale is not special for this type of yml file, so it should appear in the context
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "en-US");
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "en-US");
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[2].getSource(),
+                'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getSourceLocale(), "en-US");
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "en-US");
+        test.equal(r[2].getFlavor(), "CHOCOLATE");
 
         test.done();
     },
