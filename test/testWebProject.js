@@ -111,5 +111,182 @@ module.exports = {
         test.deepEqual(p.flavors, ["VANILLA", "CHOCOLATE"]);
         
         test.done();
+    },
+    
+    testWebProjectGetResourceDirsString: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": "a/b/c"
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.deepEqual(p.getResourceDirs("yml"), ["a/b/c"]);
+        
+        test.done();
+    },
+
+    testWebProjectGetResourceDirsNotThere: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": "a/b/c"
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.deepEqual(p.getResourceDirs("java"), []);
+        
+        test.done();
+    },
+
+    testWebProjectGetResourceDirsNoneSpecified: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.deepEqual(p.getResourceDirs("java"), []);
+        
+        test.done();
+    },
+
+    testWebProjectGetResourceDirsArray: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.deepEqual(p.getResourceDirs("yml"), ["a/b/c", "d/e/f"]);
+        
+        test.done();
+    },
+    
+    testWebProjectIsResourcePathPositive: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.ok(p.isResourcePath("yml", "a/b/c/x.yml"));
+        
+        test.done();
+    },
+    
+    testWebProjectIsResourcePathNegative: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.ok(!p.isResourcePath("yml", "a/c/x.yml"));
+        
+        test.done();
+    },
+    
+    testWebProjectIsResourcePathPositive2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.ok(p.isResourcePath("yml", "d/e/f/x.yml"));
+        
+        test.done();
+    },
+
+    testWebProjectIsResourcePathSubdirectory: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.ok(p.isResourcePath("yml", "d/e/f/m/n/o/x.yml"));
+        
+        test.done();
+    },
+
+    testWebProjectIsResourcePathDirOnly: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "web",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": ["a/b/c", "d/e/f"]
+        	}
+        }, "./testfiles", {
+        	locales:["en-GB"]
+        });
+
+        test.ok(p);
+
+        test.ok(p.isResourcePath("yml", "d/e/f"));
+        
+        test.done();
     }
 };

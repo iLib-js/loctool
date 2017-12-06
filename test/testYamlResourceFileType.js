@@ -57,6 +57,7 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
         
+        // not in the resource dir
         test.ok(!yrft.handles("foo.yml"));
         
         test.done();
@@ -77,6 +78,7 @@ module.exports = {
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
         
+        // not in the resource dir
         test.ok(!yrft.handles("foo.tmpl.html"));
         test.ok(!yrft.handles("foo.html.haml"));
         test.ok(!yrft.handles("foo.js"));
@@ -120,6 +122,26 @@ module.exports = {
         test.ok(yrft);
         
         test.ok(yrft.handles("config/locales/en.yml"));
+        
+        test.done();
+    },
+
+    testYamlResourceFileTypeHandlesSourceResourceFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"yml": "config/locales"
+        	}
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
+        
+        var yrft = new YamlResourceFileType(p);
+        test.ok(yrft);
+        
+        test.ok(yrft.handles("config/locales/en-US.yml"));
         
         test.done();
     },

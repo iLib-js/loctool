@@ -179,7 +179,7 @@
 		},
         "loctool.lib.YamlFileType": {
 			"appenders": [ "default" ],
-			"level": "info"
+			"level": "debug"
 		},
         "loctool.lib.YamlResourceFile": {
 			"appenders": [ "default" ],
