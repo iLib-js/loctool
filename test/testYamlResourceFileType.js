@@ -27,13 +27,13 @@ module.exports = {
         test.expect(1);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         
@@ -46,13 +46,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -67,13 +67,13 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -90,13 +90,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -110,13 +110,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -130,13 +130,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -150,13 +150,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {	
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {    
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -170,13 +170,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -190,13 +190,13 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	},
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            },
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -210,14 +210,14 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -233,14 +233,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -257,14 +257,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -281,14 +281,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -305,14 +305,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -329,14 +329,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -353,14 +353,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -377,14 +377,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -401,14 +401,14 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -425,14 +425,14 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "de-DE",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
+            locales:["en-GB"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -452,15 +452,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -477,15 +477,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -502,15 +502,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -527,15 +527,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -552,15 +552,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
@@ -577,15 +577,15 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "config/locales"
+            }
         }, "./testfiles", {
-			locales:["fr-FR"],
-			flavors:["CHOCOLATE", "VANILLA"]
-		});
+            locales:["fr-FR"],
+            flavors:["CHOCOLATE", "VANILLA"]
+        });
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
