@@ -31,8 +31,6 @@
     ],
     "files": [
         "db",
-        "lib",
-        "node_modules/html-parser",
         "log4js.json",
         "README.md",
         "LICENSE.txt"
@@ -53,7 +51,10 @@
         "test": "ant test"
     },
     "dependencies": {
-        "ilib": ">=12.0.0",
+        "ilib": "13.0.0",
+        "tap": "^7.0.0",
+        "hoek": "^4.0.1",
+        "joi": "^9.0.4",
         "log4js": "^2.0.0",
         "mysql2": ">=1.5.0",
         "pretty-data": ">=0.40.0",
@@ -63,6 +64,9 @@
         "opencc": ">=1.0.5",
         "build-gradle-reader": "*",
         "micromatch": ">=3.1.0"
+    },
+    "devDependencies": {
+        "nodeunit": "0.11.2"
     },
     "bundledDependencies": ["html-parser", "xml2json"]
 }
