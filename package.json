@@ -6,11 +6,11 @@
     "description": "A string resource extractor for multiple files types and project types",
     "license": "Apache-2.0",
     "keywords": [
-        "internationalization", 
-        "i18n", 
-        "localization", 
-        "l10n", 
-        "globalization", 
+        "internationalization",
+        "i18n",
+        "localization",
+        "l10n",
+        "globalization",
         "g11n",
         "strings",
         "resources",
@@ -26,7 +26,7 @@
     "contributors": [
         {
             "name": "Edwin Hoogerbeets",
-            "email": "edwin.hoogerbeets@healthtap.com" 
+            "email": "edwin.hoogerbeets@healthtap.com"
         }
     ],
     "files": [
@@ -68,5 +68,8 @@
     "devDependencies": {
         "nodeunit": "0.11.2"
     },
-    "bundledDependencies": ["html-parser", "xml2json"]
+    "bundledDependencies": [
+        "html-parser",
+        "xml2json"
+    ]
 }
