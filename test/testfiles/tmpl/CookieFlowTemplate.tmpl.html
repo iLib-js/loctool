@@ -19,7 +19,7 @@
             Get insurance quotes for free!
           <% } %>
       </div>
-      <div class="upsell-ad-wrapper" style="<%= specialist ? '' : 'padding-left: 0' %>">
+      <div class="upsell-ad-wrapper" style="<%- specialist ? '' : 'padding-left: 0' %>">
          <% if(specialist){ %>
           <a class="specialist-avatar" href="/specialists/<%= specialist.id %>" style="background-image: url(<%= specialist.avatar_transparent_circular %>);"></a>
         <% } %>
