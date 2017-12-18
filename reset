@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git reset --hard HEAD
+git clean -f -d node_modules lib test
