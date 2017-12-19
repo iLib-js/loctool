@@ -2279,8 +2279,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'Mr. <%- family_name %> is not available.',
-            source: 'Mr. <%- family_name %> n\'est pas disponibles.',
-            locale: "fr-FR",
+            source: 'Mr. <%- family_name %> is not available.',
+            target: 'Mr. <%- family_name %> n\'est pas disponibles.',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
@@ -3136,8 +3137,9 @@ module.exports = {
         translations.add(new ResourceString({
             project: "webapp",
             key: 'foo',
-            source: 'asdf',
-            locale: "fr-FR",
+            source: 'foo',
+            target: 'asdf',
+            targetLocale: "fr-FR",
             datatype: "html"
         }));
 
