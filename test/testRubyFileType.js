@@ -224,5 +224,23 @@ module.exports = {
         test.ok(!rf.handles("app/views/who_we_are/press.zh-Hans-CN.html.haml"));
         
         test.done();
+    },
+    
+    testRubyFileTypeHandlesAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"],
+			flavors: ["DISCOVERY"]
+		});
+        
+        var rf = new RubyFileType(p);
+        test.ok(rf);
+        
+        test.ok(!rf.handles("app/views/who_we_are/press.en-ZA-DISCOVERY.html.haml"));
+        
+        test.done();
     }
 };

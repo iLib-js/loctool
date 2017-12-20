@@ -411,6 +411,59 @@ module.exports = {
         test.ok(!htf.handles("a/b/c/strings.es-US.tmpl.html"));
         
         test.done();
-    }
+    },
+    
+    testJavaScriptFileTypeHandlesJSAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
 
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"],
+			flavors: ["DISCOVERY"]
+		});
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.js"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesHamlAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"],
+			flavors: ["DISCOVERY"]
+		});
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.html.haml"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesTemplateAlreadyLocalizedGB: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles", {
+			locales:["en-GB"],
+			flavors: ["DISCOVERY"]
+		});
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.tmpl.html"));
+        
+        test.done();
+    }
 };

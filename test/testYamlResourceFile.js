@@ -408,7 +408,7 @@ module.exports = {
         });
 
         var expected =
-            'de-DE:\n' +
+            'de:\n' +
             '  more_source_text: mehr Quellen\"text\n' +
             '  source_text: Quellen\"text\n';
 
@@ -450,7 +450,7 @@ module.exports = {
         });
 
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
             "  '• &amp;nbsp; Hello, how are you': • &amp;nbsp; 你好吗\n";
 
@@ -492,7 +492,7 @@ module.exports = {
         });
 
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n" +
             "  short key: |-\n" +
             "    this is text that is relatively long and can run past the end of the page\n" +
@@ -656,7 +656,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r003425245: short text\n" +
             "  r24524524524: |-\n" +
             "    this is text that is relatively long and can run past the end of the page\n" +
@@ -695,7 +695,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +
             "    other: 'There are %{count} tests'\n";
@@ -740,7 +740,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r003425245: short text\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +
