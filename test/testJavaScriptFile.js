@@ -1,13 +1,36 @@
 	/*
  * testJavaScriptFile.js - test the JavaScript file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!JavaScriptFile) {
     var JavaScriptFile = require("../lib/JavaScriptFile.js");
+    var JavaScriptFileType = require("../lib/JavaScriptFileType.js");
     var WebProject =  require("../lib/WebProject.js");
 }
+
+var p = new WebProject({
+	id: "webapp",
+	sourceLocale: "en-US"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var jsft = new JavaScriptFileType(p);
 
 module.exports = {
     testJavaScriptFileConstructor: function(test) {
@@ -22,12 +45,7 @@ module.exports = {
     testJavaScriptFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p, "./testfiles/js/t1.js");
+        var j = new JavaScriptFile(p, "./testfiles/js/t1.js", jsft);
         
         test.ok(j);
         
@@ -37,12 +55,7 @@ module.exports = {
     testJavaScriptFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         test.done();
@@ -51,12 +64,7 @@ module.exports = {
     testJavaScriptFileMakeKey: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         test.equal(j.makeKey("This is a test"), "This is a test");
@@ -67,12 +75,7 @@ module.exports = {
     testJavaScriptFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test")');
@@ -94,12 +97,7 @@ module.exports = {
     testJavaScriptFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test")');
@@ -118,12 +116,7 @@ module.exports = {
     testJavaScriptFileParseJSSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getStringJS("This is a test")');
@@ -142,12 +135,7 @@ module.exports = {
     testJavaScriptFileParseSimpleSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("RB.getString('This is a test')");
@@ -166,12 +154,7 @@ module.exports = {
     testJavaScriptFileParseJSSimpleSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("RB.getStringJS('This is a test')");
@@ -190,12 +173,7 @@ module.exports = {
     testJavaScriptFileParseMoreComplexSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("if (subcat == 'Has types') {title = RB.getString('Types of {topic}').format({topic: topic.attribute.name})}");
@@ -214,12 +192,7 @@ module.exports = {
     testJavaScriptFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
@@ -235,16 +208,29 @@ module.exports = {
         test.done();
     },
 
+    testJavaScriptFileParseJSCompressWhitespaceInKey: function(test) {
+        test.expect(5);
+
+        var j = new JavaScriptFile(p, undefined, jsft);
+        test.ok(j);
+        
+        j.parse('RB.getStringJS("\t\t This \\n \n is \\\n\t a    test")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "\t\t This \\n \n is \t a    test");
+        
+        test.done();
+    },
 
     testJavaScriptFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -262,12 +248,7 @@ module.exports = {
     testJavaScriptFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -287,12 +268,7 @@ module.exports = {
     testJavaScriptFileParseSingleQuotesWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("\tRB.getString('This is a test'); // i18n: this is a translator\'s comment\n\tfoo('This is not');");
@@ -312,28 +288,23 @@ module.exports = {
     testJavaScriptFileParseSingleQuotesWithEmbeddedSingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse(
-    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a patient!\').format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a friend!\').format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a friend!");
         test.ok(r);
-        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
-        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
+        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
         
         test.done();
     },
@@ -341,28 +312,23 @@ module.exports = {
     testJavaScriptFileParseSingleQuotesWithEmbeddedDoubleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse(
-    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a patient!").format({\n' +
-    		'        prefix: doctor_detail.expert_name_prefix,\n' +
-    		'        last_name: doctor_detail.last_name\n' +
+    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a friend!").format({\n' +
+    		'        prefix: detail.name_prefix,\n' +
+    		'        last_name: detail.last_name\n' +
     		'    });'
         );
         
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         test.ok(r);
-        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
-        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
+        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
         
         test.done();
     },
@@ -370,12 +336,7 @@ module.exports = {
     testJavaScriptFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -397,12 +358,7 @@ module.exports = {
     testJavaScriptFileParseWithKey: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -423,12 +379,7 @@ module.exports = {
     testJavaScriptFileParseJSWithKey: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getStringJS("This is a test", "unique_id")');
@@ -449,12 +400,7 @@ module.exports = {
     testJavaScriptFileParseWithKeySingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("RB.getString('This is a test', 'unique_id')");
@@ -475,12 +421,7 @@ module.exports = {
     testJavaScriptFileParseJSWithKeySingleQuotes: function(test) {
         test.expect(5);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("RB.getStringJS('This is a test', 'unique_id')");
@@ -501,12 +442,7 @@ module.exports = {
     testJavaScriptFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -523,12 +459,7 @@ module.exports = {
     testJavaScriptFileParseMultiple: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
@@ -552,12 +483,7 @@ module.exports = {
     testJavaScriptFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
@@ -587,12 +513,7 @@ module.exports = {
     testJavaScriptFileParseMultipleSameLine: function(test) {
         test.expect(12);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test"), RB.getString("This is a second test"), RB.getString("This is a third test")');
@@ -623,12 +544,7 @@ module.exports = {
     testJavaScriptFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
@@ -654,12 +570,7 @@ module.exports = {
     testJavaScriptFileParseMultipleWithUniqueIdsAndComments: function(test) {
         test.expect(10);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
@@ -689,12 +600,7 @@ module.exports = {
     testJavaScriptFileParseWithDups: function(test) {
         test.expect(6);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
@@ -715,12 +621,7 @@ module.exports = {
     testJavaScriptFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
@@ -746,12 +647,7 @@ module.exports = {
     testJavaScriptFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + " and this isnt");');
@@ -766,12 +662,7 @@ module.exports = {
     testJavaScriptFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + foobar);');
@@ -785,12 +676,7 @@ module.exports = {
     testJavaScriptFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString(foobar);');
@@ -804,12 +690,7 @@ module.exports = {
     testJavaScriptFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('RB.getString();');
@@ -823,12 +704,7 @@ module.exports = {
     testJavaScriptFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('EPIRB.getString("This is a test");');
@@ -842,12 +718,7 @@ module.exports = {
     testJavaScriptFileParseSubobject: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse('App.RB.getString("This is a test");');
@@ -861,19 +732,14 @@ module.exports = {
     testJavaScriptFileParsePunctuationBeforeRB: function(test) {
         test.expect(9);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse(
 			"        <%\n" +
 			"        var listsOver4 = false;\n" +
 			"        var seemoreLen = 0;\n" +
-			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Family history')];\n" +
+			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Smart Watches')];\n" +
 			"        _.each(subcats, function(subcat, j){\n" +
 			"            var list = topic.attribute.kb_attribute_relationships[subcat] || [];\n" +
 			"            if (list.length > 0) {\n" +
@@ -889,10 +755,10 @@ module.exports = {
         test.equal(r.getSource(), "Personal");
         test.equal(r.getKey(), "Personal");
         
-        r = set.getBySource("Family history");
+        r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },
@@ -900,12 +766,7 @@ module.exports = {
     testJavaScriptFileParseEmptyString: function(test) {
         test.expect(3);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         j.parse("var subcats = [RB.getStringJS(''), RB.getString(''), RB.getStringJS('', 'foo'), RB.getStringJS('foo', '')];\n");
@@ -921,12 +782,7 @@ module.exports = {
     testJavaScriptFileExtractFile: function(test) {
         test.expect(8);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p, "./js/t1.js");
+        var j = new JavaScriptFile(p, "./js/t1.js", jsft);
         test.ok(j);
         
         // should read the file
@@ -954,12 +810,7 @@ module.exports = {
     testJavaScriptFileExtractTemplateFile: function(test) {
         test.expect(11);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p, "./tmpl/topic_types.tmpl.html");
+        var j = new JavaScriptFile(p, "./tmpl/topic_types.tmpl.html", jsft);
         test.ok(j);
         
         // should read the file
@@ -967,22 +818,22 @@ module.exports = {
         
         var set = j.getTranslationSet();
         
-        test.equal(set.size(), 11);
+        test.equal(set.size(), 4);
         
-        var r = set.getBySource("Medical Devices");
+        var r = set.getBySource("Hand-held Devices");
         test.ok(r);
-        test.equal(r.getSource(), "Medical Devices");
-        test.equal(r.getKey(), "Medical Devices");
+        test.equal(r.getSource(), "Hand-held Devices");
+        test.equal(r.getKey(), "Hand-held Devices");
 
-        var r = set.getBySource("Medications");
+        var r = set.getBySource("Tablets");
         test.ok(r);
-        test.equal(r.getSource(), "Medications");
-        test.equal(r.getKey(), "Medications");
+        test.equal(r.getSource(), "Tablets");
+        test.equal(r.getKey(), "Tablets");
 
-        var r = set.getBySource("Family history");
+        var r = set.getBySource("Smart Watches");
         test.ok(r);
-        test.equal(r.getSource(), "Family history");
-        test.equal(r.getKey(), "Family history");
+        test.equal(r.getSource(), "Smart Watches");
+        test.equal(r.getKey(), "Smart Watches");
         
         test.done();
     },
@@ -990,12 +841,7 @@ module.exports = {
     testJavaScriptFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p);
+        var j = new JavaScriptFile(p, undefined, jsft);
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -1011,12 +857,7 @@ module.exports = {
     testJavaScriptFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new WebProject({
-        	id: "ht-webapp12",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new JavaScriptFile(p, "./java/foo.js");
+        var j = new JavaScriptFile(p, "./java/foo.js", jsft);
         test.ok(j);
         
         // should attempt to read the file and not fail

@@ -1,7 +1,20 @@
 /*
  * testUtils.js - test the utils object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!utils) {
@@ -83,11 +96,11 @@ module.exports = {
     testHashKeySimpleTexts1: function(test) {
         test.expect(5);
 
-        test.equals(utils.hashKey("Medications in your profile"), "r32020327");
-		test.equals(utils.hashKey("All medications"), "r835310324");
+        test.equals(utils.hashKey("Settings in your profile"), "r618035987");
+		test.equals(utils.hashKey("All locations"), "r246937959");
 		test.equals(utils.hashKey("Conditions"), "r103883086");
-		test.equals(utils.hashKey("Symptoms"), "r481086103");
-		test.equals(utils.hashKey("Experts"), "r343852585");
+		test.equals(utils.hashKey("Everything"), "r414542544");
+		test.equals(utils.hashKey("Locations"), "r29058502");
         
         test.done();
 	},
@@ -96,27 +109,25 @@ module.exports = {
         test.expect(5);
 
         test.equals(utils.hashKey("Procedures"), "r807691021");
-		test.equals(utils.hashKey("Health Apps"), "r941505899");
-		test.equals(utils.hashKey("Conditions in your profile"), "r240633868");
-		test.equals(utils.hashKey("Treatment Reviews"), "r795086964");
-		test.equals(utils.hashKey("Answers"), "r221604632");
+		test.equals(utils.hashKey("Functions"), "r535786086");
+		test.equals(utils.hashKey("Morning and afternoon"), "r409842466");
+		test.equals(utils.hashKey("Evening"), "r72303136");
+		test.equals(utils.hashKey("Nighttime"), "r332185734");
         
         test.done();
 	},
 
 	testHashKeySimpleTexts3: function(test) {
-        test.expect(10);
+        test.expect(8);
 
-        test.equals(utils.hashKey("Private Health Profile"), "r669315500");
-		test.equals(utils.hashKey("People you care for"), "r710774033");
+        test.equals(utils.hashKey("Private Profile"), "r314592735");
+		test.equals(utils.hashKey("People you are connected to"), "r711926199");
 		test.equals(utils.hashKey("Notifications"), "r284964820");
 		test.equals(utils.hashKey("News"), "r613036745");
 		test.equals(utils.hashKey("More Tips"), "r216617786");
-		test.equals(utils.hashKey("Goals"), "r788359072");
+		test.equals(utils.hashKey("Filters"), "r81370429");
 		test.equals(utils.hashKey("Referral Link"), "r140625167");
 		test.equals(utils.hashKey("Questions"), "r256277957");
-		test.equals(utils.hashKey("Private consults"), "r18128760");
-		test.equals(utils.hashKey("Suggested doctors for you"), "r584966709");
         
         test.done();
 	},
@@ -124,22 +135,21 @@ module.exports = {
 	testHashKeyEscapes: function(test) {
         test.expect(2);
 
-        test.equals(utils.hashKey("Can\'t find treatment id"), "r926831062");
+        test.equals(utils.hashKey("Can\'t find id"), "r743945592");
 		test.equals(utils.hashKey("Can\'t find an application for SMS"), "r909283218");
         
         test.done();
 	},
 	
 	testHashKeyPunctuation: function(test) {
-        test.expect(7);
+        test.expect(6);
 
-        test.equals(utils.hashKey("{topic_name}({topic_generic_name})"), "r382554039");
-		test.equals(utils.hashKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"), "r436261634");
-		test.equals(utils.hashKey("{sharer_name} {start}found this helpful{end}"), "r858107784");
-		test.equals(utils.hashKey("Grow your Care-Team"), "r522565682");
+        test.equals(utils.hashKey("{name}({generic_name})"), "r300446104");
+		test.equals(utils.hashKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+		test.equals(utils.hashKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+		test.equals(utils.hashKey("Grow your network"), "r214079422");
 		test.equals(utils.hashKey("Failed to send connection request!"), "r1015770123");
-		test.equals(utils.hashKey("{goal_name} Goals"), "r993422001");
-		test.equals(utils.hashKey("Referral link copied!"), "r201354363");
+		test.equals(utils.hashKey("Connection request copied!"), "r136272443");
         
         test.done();
 	},
@@ -151,5 +161,35 @@ module.exports = {
         test.equal(utils.hashKey("This is a test"), "r654479252");
         
         test.done();
+    },
+    
+    testTrimEscapedRealWhitespace: function(test) {
+        test.expect(4);
+        
+        test.equal(utils.trimEscaped("This is a test"), "This is a test");
+        test.equal(utils.trimEscaped(" \t \n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \t  \n"), "This is a test");
+        test.equal(utils.trimEscaped("\n \t \r This is a test \r \t \n"), "This is a test");
+
+        test.done();
+    },
+
+    testTrimEscapedEscapedWhitespace: function(test) {
+        test.expect(3);
+        
+        test.equal(utils.trimEscaped(" \\t \\n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \\t  \\n"), "This is a test");
+        test.equal(utils.trimEscaped("\\n \\t \\r This is a test \\r \\t \\n"), "This is a test");
+
+        test.done();
+    },
+    
+    testTrimEscapedEscapedUndefined: function(test) {
+        test.expect(1);
+        
+        test.equal(utils.trimEscaped(undefined), undefined);
+        
+        test.done();
     }
+
 }

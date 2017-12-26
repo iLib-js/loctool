@@ -1,54 +1,197 @@
 {
-	"appenders": [
-	    { 
-	    	"type": "console",
-	    	"layout": {
-				"type": "pattern",
-				"pattern": "%r %p %c: %m"
-			}
+    "appenders": {
+        "default": { 
+            "type": "console",
+            "layout": {
+                "type": "pattern",
+                "pattern": "%r %p %c: %m"
+            }
+        }
+    },
+    "categories": {
+		"default": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.AndroidLayoutFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.AndroidLayoutFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.AndroidProject": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.AndroidResourceFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.AndroidResourceFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ContextResourceString": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.DBTranslationSet": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.FileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.HamlFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.HamlFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.IosLayoutResourceString": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.IosStringsFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.IosStringsFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaScriptFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaScriptFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaScriptResourceFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.JavaScriptResourceFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.LocalRepository": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ObjectiveCFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ObjectiveCFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ObjectiveCProject": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.Project": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ProjectFactory": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.PseudoFactory": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ResourceArray": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ResourceFactory": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ResourcePlural": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.ResourceString": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.RubyFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.RubyFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.SwiftFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.SwiftFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.SwiftProject": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.TranslationSet": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.WebProject": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.Xliff": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.XliffFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.XliffFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.YamlFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.YamlFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.YamlResourceFile": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.lib.YamlResourceFileType": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
+        "loctool.loctool":  {
+			"appenders": [ "default" ],
+			"level": "info"
 		}
-	],
-	"levels": {
-		"[all]": "INFO",
-		"loctool.lib.AndroidLayoutFile": "INFO",
-		"loctool.lib.AndroidLayoutFileType": "INFO",
-		"loctool.lib.AndroidProject": "INFO",
-		"loctool.lib.AndroidResourceFile": "INFO",
-		"loctool.lib.AndroidResourceFileType": "INFO",
-		"loctool.lib.ContextResourceString": "INFO",
-		"loctool.lib.DBTranslationSet": "INFO",
-		"loctool.lib.FileType": "INFO",
-		"loctool.lib.HamlFile": "INFO",
-		"loctool.lib.HamlFileType": "INFO",
-		"loctool.lib.IosLayoutResourceString": "INFO",
-		"loctool.lib.IosStringsFile": "INFO",
-		"loctool.lib.IosStringsFileType": "INFO",
-		"loctool.lib.JavaFile": "INFO",
-		"loctool.lib.JavaFileType": "INFO",
-		"loctool.lib.JavaScriptFile": "INFO",
-		"loctool.lib.JavaScriptFileType": "INFO",
-		"loctool.lib.JavaScriptResourceFile": "INFO",
-		"loctool.lib.JavaScriptResourceFileType": "INFO",
-		"loctool.lib.LocalRepository": "INFO",
-		"loctool.lib.ObjectiveCFile": "INFO",
-		"loctool.lib.ObjectiveCFileType": "INFO",
-		"loctool.lib.ObjectiveCProject": "INFO",
-		"loctool.lib.Project": "INFO",
-		"loctool.lib.ResourceArray": "INFO",
-		"loctool.lib.ResourceFactory": "INFO",
-		"loctool.lib.ResourcePlural": "INFO",
-		"loctool.lib.ResourceString": "INFO",
-		"loctool.lib.RubyFile": "INFO",
-		"loctool.lib.RubyFileType": "INFO",
-		"loctool.lib.TranslationSet": "INFO",
-		"loctool.lib.WebProject": "INFO",
-		"loctool.lib.Xliff": "INFO",
-		"loctool.lib.XliffFile": "INFO",
-		"loctool.lib.XliffFileType": "INFO",
-		"loctool.lib.YamlFile": "INFO",
-		"loctool.lib.YamlFileType": "INFO",
-		"loctool.lib.YamlResourceFile": "INFO",
-		"loctool.lib.YamlResourceFileType": "INFO",
-		"loctool.loctool":  "INFO"
-	}
+    }
 }

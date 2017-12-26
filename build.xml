@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-build.xml - build the translation circle app
+build.xml - build the localization tool app 
 
-Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
+Copyright © 2016-2017, JEDLSoft
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+limitations under the License.
 -->
 
 <project name="loctool" default="test">
@@ -77,7 +90,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 			</exec>
 		</sequential>
 	</macrodef>
-
+	
 	<target name="debug.loctool">
 		<debug.loctool.base dir="${user.dir}" />
 	</target>
@@ -138,8 +151,16 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 
+	<target name="debug.resourcearray" description="Debug only the resource array tests">
+		<debug script="${build.test}/testResourceArray.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.resourceplural" description="Run only the plural resource tests">
 		<run script="${build.test}/testResourcePlural.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+
+	<target name="debug.resourceplural" description="Debug only the plural resource tests">
+		<debug script="${build.test}/testResourcePlural.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.translationset" description="Run only the translation set tests">
@@ -269,13 +290,29 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 	<target name="debug.objectivecfile" description="Debug only the tests for the Objective C file">
 		<debug script="${build.test}/testObjectiveCFile.js" dir="${build.test}"/>
 	</target>
-
+	
 	<target name="test.objectivecfiletype" description="Run only the tests for the Objective C file type">
 		<run script="${build.test}/testObjectiveCFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
 	<target name="debug.objectivecfiletype" description="Debug only the tests for the Objective C file type">
 		<debug script="${build.test}/testObjectiveCFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.swiftfile" description="Run only the tests for the Swift file">
+		<run script="${build.test}/testSwiftFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.swiftfile" description="Debug only the tests for the Swift file">
+		<debug script="${build.test}/testSwiftFile.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.swiftfiletype" description="Run only the tests for the Swift file type">
+		<run script="${build.test}/testSwiftFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.swiftfiletype" description="Debug only the tests for the Swift file type">
+		<debug script="${build.test}/testSwiftFileType.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.iosstringsfile" description="Run only the tests for the strings resource file">
@@ -342,6 +379,22 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testYamlResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.csv" description="Run only the tests for the csv object">
+		<run script="${build.test}/testCSV.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.csv" description="Debug only the tests for the csv object">
+		<debug script="${build.test}/testCSV.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.csvfile" description="Run only the tests for the csv file object">
+		<run script="${build.test}/testCSVFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.csvfile" description="Debug only the tests for the csv file object">
+		<debug script="${build.test}/testCSVFile.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.rubyfile" description="Run only the tests for the Ruby file object">
 		<run script="${build.test}/testRubyFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -358,12 +411,28 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testRubyFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.hamlfile" description="Run only the haml file tests">
+		<run script="${build.test}/testHamlFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.hamlfile" description="Debug only the haml file tests">
+		<debug script="${build.test}/testHamlFile.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.hamlfiletype" description="Run only the tests for the haml file type">
 		<run script="${build.test}/testHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
 	<target name="debug.hamlfiletype" description="Debug only the tests for the haml file type">
 		<debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.oldhamlfiletype" description="Run only the tests for the old haml file type">
+		<run script="${build.test}/testOldHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.oldhamlfiletype" description="Debug only the tests for the old haml file type">
+		<debug script="${build.test}/testOldHamlFileType.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.pseudobritish" description="Run only the tests for the pseudo british localizer">
@@ -374,6 +443,14 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoBritish.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.pseudocanadian" description="Run only the tests for the pseudo canadian localizer">
+		<run script="${build.test}/testPseudoCanadian.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudocanadian" description="Debug only the tests for the pseudo canadian localizer">
+		<debug script="${build.test}/testPseudoCanadian.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.projectfactory" description="Run only the tests for the project factory object">
 		<run script="${build.test}/testProjectFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -382,7 +459,55 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testProjectFactory.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.projectfactory">
+	<target name="test.pseudonewzealand" description="Run only the tests for the pseudo New Zealand localizer">
+		<run script="${build.test}/testPseudoNewZealand.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudonewzealand" description="Debug only the tests for the pseudo New Zealand localizer">
+		<debug script="${build.test}/testPseudoNewZealand.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.pseudohant" description="Run only the tests for the pseudo Hant localizer">
+		<run script="${build.test}/testPseudoHant.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.pseudohant" description="Debug only the tests for the pseudo Hant localizer">
+		<debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.buildgradle" description="Run only the tests for the build gradle object">
+		<run script="${build.test}/testBuildGradle.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.buildgradle" description="Debug only the tests for the build gradle object">
+		<debug script="${build.test}/testBuildGradle.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.androidproject" description="Run only the tests for the Android project object">
+		<run script="${build.test}/testAndroidProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidproject" description="Debug only the tests for the Android project object">
+		<debug script="${build.test}/testAndroidProject.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.androidflavors" description="Run only the tests for the Android flavors object">
+		<run script="${build.test}/testAndroidFlavors.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidflavors" description="Debug only the tests for the Android flavors object">
+		<debug script="${build.test}/testAndroidFlavors.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.webproject" description="Run only the tests for the Web project object">
+		<run script="${build.test}/testWebProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.webproject" description="Debug only the tests for the Web project object">
+		<debug script="${build.test}/testWebProject.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory">
 	</target>
 
 	<macrodef name="runsql">
@@ -428,8 +553,8 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 	</target>
 
 	<target name="cleardb" description="Initialize the data base for the development environment">
-		<runsql username="ht"
-            password="--password=dYw@j45XKk#$"
+		<runsql username="ht" 
+            password="--password=dYw@j45XKk#$" 
             file="${build.base}/db/cleardb.sql"
             host="localhost"
             database="translations"/>

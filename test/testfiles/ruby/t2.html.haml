@@ -6,14 +6,14 @@
   gross = form_data[:gross_saving].present? ? form_data[:gross_saving] : calc_defaults[:gross_saving]
   tmpl = {
     :organization_size=>{:title=>Rb.t('Size of organization')},
-    :doctor_visits_per_year=>{:title=>Rb.t('Doctor visits per member per year')},
-    :avg_cost_doctor_visit=>{:title=>Rb.t('Average cost of doctor visit'),:currency=>1},
-    :urgent_visits_per_year=>{:title=>Rb.t('Urgent care visits per member per year')},
-    :avg_cost_urgent_visit=>{:title=>Rb.t('Average cost of urgent care visit'),:currency=>1},
-    :er_visits_per_year=>{:title=>Rb.t('ER visits per member per year')},
-    :avg_cost_er_visit=>{:title=>Rb.t('Average cost of ER visit'),:currency=>1}
+    :visits_per_year=>{:title=>Rb.t('Visits per member per year')},
+    :avg_cost_per_visit=>{:title=>Rb.t('Average cost of visits'),:currency=>1},
+    :avg_visits_per_year=>{:title=>Rb.t('Average visits per member per year')},
+    :avg_cost_of_visit=>{:title=>Rb.t('Average cost of visit'),:currency=>1},
+    :member_visits_per_year=>{:title=>Rb.t('Visits per member per year')},
+    :avg_cost_visit=>{:title=>Rb.t('Average cost of visit'),:currency=>1}
   }
-.compass-pricing
+.pricing
   .pricing-intro
     %h2.header-medium.light 
       Calculate ROI for
@@ -63,7 +63,7 @@
                 %p.title #{val[:title]}
   
   .mobile-ui
-    %a.btn.btn-small.btn-outline-teal.jump-link{:href=>'#compass_pricing',:data=>{:jump_link_page=>1}}
+    %a.btn.btn-small.btn-outline-teal.jump-link{:href=>'#pricing',:data=>{:jump_link_page=>1}}
       View your ROI
   .mobile-ui.calc-links
     %a.reset Reset values

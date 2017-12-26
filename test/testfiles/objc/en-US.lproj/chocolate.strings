@@ -1,0 +1,5 @@
+/* Class = "UILabel"; text = "Are you a member?"; ObjectID = "F5h-fB-tt5"; */
+"F5h-fB-tt5.text" = "Are you an existing customer?";
+
+/* Class = "UILabel"; text = "Are you a friend?"; ObjectID = "MFI-qx-pQf"; */
+"MFI-qx-pQf.text" = "Are you connected to a customer?";

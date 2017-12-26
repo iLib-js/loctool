@@ -1,7 +1,21 @@
+#!/usr/bin/env node
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 /*
  * This code is intended to be run under node.js
@@ -26,7 +40,9 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [command [command-specific-arguments]]\n" +
+	console.log(
+		"Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir]\n" +
+		"               [-x dir] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
@@ -39,6 +55,18 @@ function usage() {
 		"-f or --filetype\n" +
 		"  Restrict operation to only the given list of file types. This allows you to\n" +
 		"  run only the parts of the loctool that are needed at the moment.\n" +
+		"-n or --pseudo\n" +
+		"  Do pseudo-localize missing strings and generate the pseudo-locale. (Default is\n" +
+		"  not to do pseudo-localization.\n" +
+		"-o or --oldhaml\n" +
+		"  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+		"-t or --target\n" +
+		"  Write all output to the given target dir instead of in the source dir.\n" +
+		"-i or --identify\n" +
+		"  Identify resources where possible by marking up the translated files with \n" +
+		"  the resource key.\n" +
+		"-x or --xliffs\n" +
+		"  Specify the dir where the xliffs files live. Default: \".\"\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
 		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -60,9 +88,14 @@ function usage() {
 
 // the global settings object that configures how the tool will operate
 var settings = {
-	rootDir: ".",
-	locales: null,
-	pull: false
+	rootDir: ".",			// source directory where all localizable files reside
+	locales: [],
+	pull: false,
+	identify: false,
+	oldHamlLoc: false,
+	nopseudo: true,
+	targetDir: ".",			// target directory for all output files
+	xliffsDir: "."
 };
 
 var options = [];
@@ -77,13 +110,33 @@ for (var i = 0; i < argv.length; i++) {
 		if (i < argv.length && argv[i+1]) {
 			settings.locales = argv[++i].split(",");
 		}
+	} else if (val === "-n" || val === "--pseudo") {
+		settings.nopseudo = false;
+	} else if (val === "-o" || val === "--oldhaml") {
+		settings.oldHamlLoc = true;
+	} else if (val === "-i" || val === "--identify") {
+		settings.identify = true;
 	} else if (val === "-f" || val === "--filetype") {
-		if (i < argv.length && argv[i+1]) {
+		if (i+1 < argv.length && argv[i+1]) {
 			var types = argv[++i].split(",");
 			settings.fileTypes = {};
 			types.forEach(function(type) {
 				settings.fileTypes[type] = true;
 			});
+		}
+	} else if (val === "-t" || val === "--target") {
+		if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
+			settings.targetDir = argv[++i];
+		} else {
+			console.error("Error: -t (--target) option requires a directory name argument to follow it.");
+			usage();
+		}
+	} else if (val === "-x" || val === "--xliffs") {
+		if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
+			settings.xliffsDir = argv[++i];
+		} else {
+			console.error("Error: -x (--xliffs) option requires a directory name argument to follow it.");
+			usage();
 		}
 	} else {
 		options.push(val);
@@ -207,12 +260,16 @@ function walk(dir, project) {
 			
 			if (project.options && project.options.includes) {
 				project.options.includes.forEach(function(p) {
-					var stat = fs.statSync(p);
-					if (stat && stat.isDirectory()) {
-						logger.info(p);
-						walk(p, project);
+					if (fs.existsSync(p)) {
+						var stat = fs.statSync(p);
+						if (stat && stat.isDirectory()) {
+							logger.info(p);
+							walk(p, project);
+						} else {
+							project.addPath(p);
+						}
 					} else {
-						project.addPath(p);
+						logger.warn("File " + p + " which is listed in the includes in the project.json does not exist any more.");
 					}
 				});
 			}
@@ -223,8 +280,9 @@ function walk(dir, project) {
 	var pathName, relPath, included, stat;
 	
 	list.forEach(function (file) {
+		var root = project ? project.getRoot() : settings.rootDir;
 		pathName = path.join(dir, file);
-		relPath = path.relative(project.getRoot(), pathName);
+		relPath = path.relative(root, pathName);
 		included = true;
 
 		if (project) {
@@ -252,10 +310,10 @@ function walk(dir, project) {
 				walk(pathName, project);
 			} else {
 				if (project) {
-					logger.info(pathName);
-					project.addPath(pathName);
+					logger.info(relPath);
+					project.addPath(relPath);
 				} else {
-					logger.trace("Ignoring non-project file: " + pathName);
+					logger.trace("Ignoring non-project file: " + relPath);
 				}
 			}
 		} else {

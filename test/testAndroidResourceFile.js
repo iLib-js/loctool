@@ -1,16 +1,52 @@
 /*
- * testAndroidResourceFile.js - test the Java file handler object.
+ * testAndroidResourceFile.js - test the Android resource file handler object.
  *
- * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+ * Copyright © 2016-2017, HealthTap, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 if (!AndroidResourceFile) {
     var AndroidResourceFile = require("../lib/AndroidResourceFile.js");
+    var AndroidResourceFileType = require("../lib/AndroidResourceFileType.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ContextResourceString =  require("../lib/ContextResourceString.js");
     var ResourcePlural =  require("../lib/ResourcePlural.js");
     var ResourceArray =  require("../lib/ResourceArray.js");
 }
+
+function diff(a, b) {
+    var min = Math.min(a.length, b.length);
+    
+    for (var i = 0; i < min; i++) {
+    	if (a[i] !== b[i]) {
+    		console.log("Found difference at character " + i);
+    		console.log("a: " + a.substring(i));
+    		console.log("b: " + b.substring(i));
+    		break;
+    	}
+    }
+}
+
+var p = new AndroidProject({
+	id: "android",
+	sourceLocale: "en-US"
+}, "./testfiles", {
+	locales:["en-GB"]
+});
+
+var arft = new AndroidResourceFileType(p);
 
 module.exports = {
     testAndroidResourceFileConstructor: function(test) {
@@ -25,12 +61,9 @@ module.exports = {
     testAndroidResourceFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
+        	project: p,
+			type: arft, 
         	pathName: "./java/res/values/t1.xml",
         	locale: "en-US"
         });
@@ -43,10 +76,6 @@ module.exports = {
     testAndroidResourceFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({project: p, pathName: "foo"});
         test.ok(arf);
         
@@ -54,14 +83,11 @@ module.exports = {
     },
 
     testAndroidResourceFileParseStringGetByKey: function(test) {
-        test.expect(5);
+        test.expect(6);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p
+        	project: p,
+			type: arft
         });
         test.ok(arf);
         
@@ -72,8 +98,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -81,24 +107,23 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
-        test.equal(r.getKey(), "thanks_doc_pre");
-        
+        test.equal(r.getKey(), "thanks_friend_pre");
+        test.equal(r.getState(), "new");
+
         test.done();
     },
 
-    testAndroidResourceFileParsePluralGetByKey: function(test) {
-        test.expect(7);
+    testAndroidResourceFileParsePluralTargetOnly: function(test) {
+        test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p
+        	project: p,
+			type: arft,
+			locale: "de-DE" // different from source locale, so should produce target resources
         });
         test.ok(arf);
         
@@ -106,12 +131,12 @@ module.exports = {
         		'<?xml version="1.0" encoding="utf-8"?>\n' +
         		'<resources \n' +
         		'  xmlns:tools="http://schemas.android.com/tools">\n' +
-        	    '  <plurals name="doctor_comment">\n' +
+        	    '  <plurals name="friend_comment">\n' +
                 '    <item quantity="one">\n' +
-                '      {start}1 doctor{end} commented\n' +
+                '      {start}1 friend{end} commented\n' +
                 '    </item>\n' +
                 '    <item quantity="other">\n' +
-                '      {start}%d doctors{end} commented\n' +
+                '      {start}%d friends{end} commented\n' +
                 '    </item>\n' +
                 '  </plurals>\n' +
         		'</resources>\n');
@@ -120,27 +145,71 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourcePlural.hashKey(undefined, undefined, "en-US", "doctor_comment"));
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "de-DE", "friend_comment"));
         test.ok(r);
         
-        test.equal(r.getKey(), "doctor_comment");
-        var plurals = r.getPlurals();
+        test.equal(r.getKey(), "friend_comment");
+        test.equal(r.getSourceLocale(), "en-US");
+        test.equal(r.getTargetLocale(), "de-DE");
+        test.equal(r.getState(), "new");
+        
+        var plurals = r.getTargetPlurals();
         test.ok(plurals);
-        test.equal(plurals.one, "{start}1 doctor{end} commented");
-        test.equal(plurals.other, "{start}%d doctors{end} commented");
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
+        
+        test.done();
+    },
+
+    testAndroidResourceFileParsePluralSourceOnly: function(test) {
+        test.expect(10);
+
+        var arf = new AndroidResourceFile({
+        	project: p,
+			type: arft,
+			targetLocale: "en-US"  // same as source locale, so should produce source-only resources
+        });
+        test.ok(arf);
+        
+        arf.parse(
+        		'<?xml version="1.0" encoding="utf-8"?>\n' +
+        		'<resources \n' +
+        		'  xmlns:tools="http://schemas.android.com/tools">\n' +
+        	    '  <plurals name="friend_comment">\n' +
+                '    <item quantity="one">\n' +
+                '      {start}1 friend{end} commented\n' +
+                '    </item>\n' +
+                '    <item quantity="other">\n' +
+                '      {start}%d friends{end} commented\n' +
+                '    </item>\n' +
+                '  </plurals>\n' +
+        		'</resources>\n');
+
+
+        var set = arf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "friend_comment"));
+        test.ok(r);
+        test.equal(r.getSourceLocale(), "en-US");
+        test.ok(!r.getTargetLocale());
+        test.equal(r.getKey(), "friend_comment");
+        test.equal(r.getState(), "new");
+
+        var plurals = r.getSourcePlurals();
+        test.ok(plurals);
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
         
         test.done();
     },
 
     testAndroidResourceFileParseArrayGetByKey: function(test) {
-        test.expect(9);
+        test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p
+        	project: p,
+			type: arft
         });
         test.ok(arf);
         
@@ -159,11 +228,13 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceArray.hashKey(undefined, undefined, "en-US", "self_questions"));
+        var r = set.get(ResourceArray.hashKey("android", undefined, "en-US", "self_questions"));
         test.ok(r);
         
         test.equal(r.getKey(), "self_questions");
-        var array = r.getArray();
+        test.equal(r.getState(), "new");
+
+        var array = r.getSourceArray();
         test.ok(array);
         test.equal(array.length, 3);
         test.equal(array[0], "How many times have you been pregnant?");
@@ -174,14 +245,11 @@ module.exports = {
     },
 
     testAndroidResourceFileParseStringDNT: function(test) {
-        test.expect(6);
+        test.expect(7);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p
+        	project: p,
+			type: arft
         });
         test.ok(arf);
         
@@ -192,8 +260,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -201,25 +269,24 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "app_id", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "app_id", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "151779581544891");
         test.equal(r.getKey(), "app_id");
+        test.equal(r.getState(), "new");
+
         test.ok(r.dnt)
         
         test.done();
     },
 
     testAndroidResourceFileParseStringWithComment: function(test) {
-        test.expect(7);
+        test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p
+        	project: p,
+			type: arft
         });
         test.ok(arf);
         
@@ -230,8 +297,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
 
@@ -239,12 +306,14 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
-        test.equal(r.getKey(), "thanks_doc_pre");
-        test.equal(r.getComment(), "name is name of a doctor");
+        test.equal(r.getKey(), "thanks_friend_pre");
+        test.equal(r.getComment(), "name is name of your friend");
+        test.equal(r.getState(), "new");
+
         test.ok(!r.dnt);
         
         test.done();
@@ -254,12 +323,9 @@ module.exports = {
     testAndroidResourceFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "foo"
 		});
         test.ok(arf);
@@ -274,8 +340,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
@@ -287,15 +353,11 @@ module.exports = {
     },
 
     testAndroidResourceFileExtractFile: function(test) {
-        test.expect(6);
+        test.expect(7);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	id: "foo"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
+        	project: p,
+			type: arft, 
         	pathName: "./testfiles/java/res/values/strings.xml"
         });
         test.ok(arf);
@@ -307,10 +369,12 @@ module.exports = {
         
         test.equal(set.size(), 12);
         
-        var r = set.get(ContextResourceString.hashKey("foo", undefined, "en-US", "ask_question", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "ask_question", "x-android-resource"));
         test.ok(r);
-        test.equal(r.getSource(), "Ask doctors");
+        test.equal(r.getSource(), "Ask friends");
         test.equal(r.getKey(), "ask_question");
+        test.equal(r.getState(), "new");
+
         test.ok(!r.getContext());
 
         test.done();
@@ -319,12 +383,9 @@ module.exports = {
     testAndroidResourceFileExtractFilePlurals: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
+        	project: p,
+			type: arft, 
         	pathName: "./testfiles/java/res/values/plurals.xml"
         });
         test.ok(arf);
@@ -337,14 +398,14 @@ module.exports = {
         test.ok(set);
         test.equal(set.size(), 3);
 
-        var r = set.get(ResourcePlural.hashKey(undefined, undefined, "en-US", "doctor_comment"));
+        var r = set.get(ResourcePlural.hashKey("android", undefined, "en-US", "friend_comment"));
         test.ok(r);
         
-        test.equal(r.getKey(), "doctor_comment");
-        var plurals = r.getPlurals();
+        test.equal(r.getKey(), "friend_comment");
+        var plurals = r.getSourcePlurals();
         test.ok(plurals);
-        test.equal(plurals.one, "{start}1 doctor{end} commented");
-        test.equal(plurals.other, "{start}%d doctors{end} commented");
+        test.equal(plurals.one, "{start}1 friend{end} commented");
+        test.equal(plurals.other, "{start}%d friends{end} commented");
         
         test.done();
     },
@@ -352,12 +413,9 @@ module.exports = {
     testAndroidResourceFileExtractFileArrays: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
+        	project: p,
+			type: arft, 
         	pathName: "./testfiles/java/res/values/arrays.xml"
         });
         test.ok(arf);
@@ -370,11 +428,11 @@ module.exports = {
         test.ok(set);
         test.equal(set.size(), 2);
 
-        var r = set.get(ResourceArray.hashKey(undefined, undefined, "en-US", "self_questions"));
+        var r = set.get(ResourceArray.hashKey("android", undefined, "en-US", "self_questions"));
         test.ok(r);
         
         test.equal(r.getKey(), "self_questions");
-        var array = r.getArray();
+        var array = r.getSourceArray();
         test.ok(array);
         test.equal(array.length, 3);
         test.equal(array[0], "How many times have you been pregnant?");
@@ -387,12 +445,9 @@ module.exports = {
     testAndroidResourceFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "foo"
 		});
         test.ok(arf);
@@ -410,10 +465,6 @@ module.exports = {
     testAndroidResourceFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile(p, "./java/foo.java");
         test.ok(arf);
         
@@ -430,13 +481,9 @@ module.exports = {
     testAndroidResourceFileGetXMLStrings: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	id: "foo"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "./testfiles/java/res/values/foo.xml"
 		});
         test.ok(arf);
@@ -448,32 +495,34 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
         arf.addResource(new ContextResourceString({
-        	project: "foo",
+        	project: "android",
         	key: "asdf",
         	source: "foobar",
-        	locale: "en-US"
+        	sourceLocale: "en-US"
         }));
         
         var xml = arf._getXML();
-        
+
+        // output is sorted by key now
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
 			'<resources \n' +
 			'  xmlns:tools="http://schemas.android.com/tools">\n' +
 			'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
-			'  <string name="disclaimer">Disclaimer</string>\n' +
-			'  <string name="description_imgVw">imageView</string>\n' +
-			'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-			'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
-			'  <string name="thanks">Thank you!</string>\n' +
 			'  <string name="asdf">foobar</string>\n' +
+			'  <string name="description_imgVw">imageView</string>\n' +
+			'  <string name="disclaimer">Disclaimer</string>\n' +
+			'  <string name="thanks">Thank you!</string>\n' +
+			'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+			'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
 			'</resources>';
         
+        diff(xml, expected);
         test.equal(xml, expected);
         
         test.done();
@@ -482,13 +531,9 @@ module.exports = {
     testAndroidResourceFileGetXMLNoChange: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	id: "foo"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "./testfiles/java/res/values/foo.xml"
 		});
         test.ok(arf);
@@ -500,8 +545,8 @@ module.exports = {
         		'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
         		'  <string name="disclaimer">Disclaimer</string>\n' +
         		'  <string name="description_imgVw">imageView</string>\n' +
-        		'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-        		'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+        		'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+        		'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
         		'  <string name="thanks">Thank you!</string>\n' +
         		'</resources>\n');
         
@@ -513,8 +558,8 @@ module.exports = {
 			'  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
 			'  <string name="disclaimer">Disclaimer</string>\n' +
 			'  <string name="description_imgVw">imageView</string>\n' +
-			'  <string name="thanks_doc_pre" i18n="name is name of a doctor">Send a thank you note to\n{name}</string>\n' +
-			'  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>\n' +
+			'  <string name="thanks_friend_pre" i18n="name is name of your friend">Send a thank you note to\n{name}</string>\n' +
+			'  <string name="thanks_news">{name} appreciates your gratitude :)</string>\n' +
 			'  <string name="thanks">Thank you!</string>\n' +
 			'</resources>\n';
         
@@ -526,22 +571,18 @@ module.exports = {
     testAndroidResourceFileGetXMLPlurals: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	id: "foo"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "./testfiles/java/res/values/foo.xml",
 			locale: "en-US"
 		});
         test.ok(arf);
         
         arf.addResource(new ResourcePlural({
-        	project: "foo",
+        	project: "android",
         	key: "asdf",
-        	strings: {
+        	sourceStrings: {
         		"one": "This is singular",
         		"few": "This is few",
         		"other": "This is other"
@@ -551,9 +592,9 @@ module.exports = {
         }));
         
         arf.addResource(new ResourcePlural({
-        	project: "foo",
+        	project: "android",
         	key: "foobar",
-        	strings: {
+        	sourceStrings: {
         		"one": "un",
         		"few": "deux",
         		"other": "trois"
@@ -587,31 +628,27 @@ module.exports = {
     testAndroidResourceFileGetXMLArrays: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US",
-        	id: "foo"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-			project: p,
+        	project: p,
+			type: arft,
 			pathName: "./testfiles/java/res/values/foo.xml",
 			locale: "en-US"
 		});
         test.ok(arf);
         
         arf.addResource(new ResourceArray({
-        	project: "foo",
+        	project: "android",
         	key: "asdf",
-        	array: ["one", "two", "three"],
-        	locale: "en-US",
+        	sourceArray: ["one", "two", "three"],
+        	sourceLocale: "en-US",
         	comment: "comment1"
         }));
         
         arf.addResource(new ResourceArray({
-        	project: "foo",
+        	project: "android",
         	key: "foobar",
-        	array: ["un", "deux", "trois"],
-        	locale: "en-US",
+        	sourceArray: ["un", "deux", "trois"],
+        	sourceLocale: "en-US",
         	comment: "comment2"
         }));
 
@@ -640,12 +677,9 @@ module.exports = {
     testAndroidResourceFileGetLocale: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
+        	project: p,
+			type: arft, 
         	pathName: "./res/values/foo.xml"
         });
         test.ok(arf);
@@ -660,12 +694,9 @@ module.exports = {
     testAndroidResourceFileGetLocaleFromDir: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
         	project: p,
+			type: arft,
         	pathName: "./res/values-en-rNZ/foo.xml"
         });
         test.ok(arf);
@@ -680,12 +711,9 @@ module.exports = {
     testAndroidResourceFileGetContext: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
         	project: p,
+			type: arft,
         	pathName: "./res/values-bar/foo.xml"
         });
         test.ok(arf);
@@ -698,12 +726,9 @@ module.exports = {
     testAndroidResourceFileGetLocaleAndContext1: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
         	project: p,
+			type: arft,
         	pathName: "./res/values-de-bar/foo.xml"
         });
         test.ok(arf);
@@ -717,12 +742,9 @@ module.exports = {
     testAndroidResourceFileGetLocaleAndContext1: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
         	project: p,
+			type: arft,
         	pathName: "./res/values-de-bar/foo.xml"
         });
         test.ok(arf);
@@ -736,12 +758,9 @@ module.exports = {
     testAndroidResourceFileGetLocaleAndContext2: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
         	project: p,
+			type: arft,
         	pathName: "./res/values-de-rCH-bar/foo.xml"
         });
         test.ok(arf);
@@ -755,17 +774,14 @@ module.exports = {
     testAndroidResourceFileGetLocaleAndContext2: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
         var arf = new AndroidResourceFile({
-        	project: p, 
-        	pathName: "./res/values-zh-sHant-rCN-bar/foo.xml"
+        	project: p,
+			type: arft, 
+        	pathName: "./res/values-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(arf);
         
-        test.equal(arf.getLocale(), "zh-Hant-CN");
+        test.equal(arf.getLocale(), "zh-Hans-CN");
         test.equal(arf.getContext(), "bar");
 
         test.done();
