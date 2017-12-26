@@ -83,7 +83,7 @@ module.exports = {
     },
 
     testAndroidResourceFileParseStringGetByKey: function(test) {
-        test.expect(5);
+        test.expect(6);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -112,12 +112,13 @@ module.exports = {
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
         test.equal(r.getKey(), "thanks_friend_pre");
-        
+        test.equal(r.getState(), "new");
+
         test.done();
     },
 
     testAndroidResourceFileParsePluralTargetOnly: function(test) {
-        test.expect(9);
+        test.expect(10);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -150,6 +151,7 @@ module.exports = {
         test.equal(r.getKey(), "friend_comment");
         test.equal(r.getSourceLocale(), "en-US");
         test.equal(r.getTargetLocale(), "de-DE");
+        test.equal(r.getState(), "new");
         
         var plurals = r.getTargetPlurals();
         test.ok(plurals);
@@ -160,7 +162,7 @@ module.exports = {
     },
 
     testAndroidResourceFileParsePluralSourceOnly: function(test) {
-        test.expect(9);
+        test.expect(10);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -192,6 +194,8 @@ module.exports = {
         test.equal(r.getSourceLocale(), "en-US");
         test.ok(!r.getTargetLocale());
         test.equal(r.getKey(), "friend_comment");
+        test.equal(r.getState(), "new");
+
         var plurals = r.getSourcePlurals();
         test.ok(plurals);
         test.equal(plurals.one, "{start}1 friend{end} commented");
@@ -201,7 +205,7 @@ module.exports = {
     },
 
     testAndroidResourceFileParseArrayGetByKey: function(test) {
-        test.expect(9);
+        test.expect(10);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -228,6 +232,8 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getKey(), "self_questions");
+        test.equal(r.getState(), "new");
+
         var array = r.getSourceArray();
         test.ok(array);
         test.equal(array.length, 3);
@@ -239,7 +245,7 @@ module.exports = {
     },
 
     testAndroidResourceFileParseStringDNT: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -268,13 +274,15 @@ module.exports = {
         
         test.equal(r.getSource(), "151779581544891");
         test.equal(r.getKey(), "app_id");
+        test.equal(r.getState(), "new");
+
         test.ok(r.dnt)
         
         test.done();
     },
 
     testAndroidResourceFileParseStringWithComment: function(test) {
-        test.expect(7);
+        test.expect(8);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -304,6 +312,8 @@ module.exports = {
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
         test.equal(r.getKey(), "thanks_friend_pre");
         test.equal(r.getComment(), "name is name of your friend");
+        test.equal(r.getState(), "new");
+
         test.ok(!r.dnt);
         
         test.done();
@@ -343,7 +353,7 @@ module.exports = {
     },
 
     testAndroidResourceFileExtractFile: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var arf = new AndroidResourceFile({
         	project: p,
@@ -363,6 +373,8 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "Ask friends");
         test.equal(r.getKey(), "ask_question");
+        test.equal(r.getState(), "new");
+
         test.ok(!r.getContext());
 
         test.done();
