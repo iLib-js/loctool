@@ -28,33 +28,33 @@ module.exports = {
         test.expect(1);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
-        
+
         test.done();
     },
-    
+
     testWebProjectRightResourceTypeRuby: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
-        
+
         var rt = p.getResourceFileType("ruby");
-        
+
         test.ok(rt instanceof YamlResourceFileType);
-        
+
         test.done();
     },
 
@@ -62,18 +62,18 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
-        
+
         var rt = p.getResourceFileType("js");
-        
+
         test.ok(rt instanceof JavaScriptResourceFileType);
-        
+
         test.done();
     },
 
@@ -81,17 +81,17 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"],
-        	flavors: ["VANILLA", "CHOCOLATE"]
+            locales:["en-GB"],
+            flavors: ["VANILLA", "CHOCOLATE"]
         });
 
         test.ok(p);
-        
+
         test.ok(p.flavors);
-        
+
         test.done();
     },
 
@@ -99,37 +99,37 @@ module.exports = {
         test.expect(3);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"],
-        	flavors: ["VANILLA", "CHOCOLATE"]
+            locales:["en-GB"],
+            flavors: ["VANILLA", "CHOCOLATE"]
         });
 
         test.ok(p);
         test.ok(p.flavors);
         test.deepEqual(p.flavors, ["VANILLA", "CHOCOLATE"]);
-        
+
         test.done();
     },
-    
+
     testWebProjectGetResourceDirsString: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "a/b/c"
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "a/b/c"
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.deepEqual(p.getResourceDirs("yml"), ["a/b/c"]);
-        
+
         test.done();
     },
 
@@ -137,19 +137,19 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "a/b/c"
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": "a/b/c"
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.deepEqual(p.getResourceDirs("java"), []);
-        
+
         test.done();
     },
 
@@ -157,16 +157,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US"
+            id: "web",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.deepEqual(p.getResourceDirs("java"), []);
-        
+
         test.done();
     },
 
@@ -174,79 +174,79 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.deepEqual(p.getResourceDirs("yml"), ["a/b/c", "d/e/f"]);
-        
+
         test.done();
     },
-    
+
     testWebProjectIsResourcePathPositive: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.ok(p.isResourcePath("yml", "a/b/c/x.yml"));
-        
+
         test.done();
     },
-    
+
     testWebProjectIsResourcePathNegative: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.ok(!p.isResourcePath("yml", "a/c/x.yml"));
-        
+
         test.done();
     },
-    
+
     testWebProjectIsResourcePathPositive2: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.ok(p.isResourcePath("yml", "d/e/f/x.yml"));
-        
+
         test.done();
     },
 
@@ -254,19 +254,19 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.ok(p.isResourcePath("yml", "d/e/f/m/n/o/x.yml"));
-        
+
         test.done();
     },
 
@@ -274,19 +274,19 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "web",
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": ["a/b/c", "d/e/f"]
-        	}
+            id: "web",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "yml": ["a/b/c", "d/e/f"]
+            }
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
 
         test.ok(p.isResourcePath("yml", "d/e/f"));
-        
+
         test.done();
     }
 };

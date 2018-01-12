@@ -616,7 +616,7 @@ module.exports = {
             '</xliff>';
 
         diff(actual, expected);
-        test.equal(actual, expected);       
+        test.equal(actual, expected);
         test.done();
     },
 
