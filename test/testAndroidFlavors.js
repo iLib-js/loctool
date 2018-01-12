@@ -27,7 +27,7 @@ module.exports = {
 
         var af = new AndroidFlavors();
         test.ok(af);
-        
+
         test.done();
     },
 
@@ -36,9 +36,9 @@ module.exports = {
 
         var af = new AndroidFlavors();
         test.ok(af);
-        
+
         test.ok(!af.hasFlavors());
-        
+
         test.done();
     },
 
@@ -47,9 +47,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.ok(af.hasFlavors());
-        
+
         test.done();
     },
 
@@ -58,9 +58,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.deepEqual(af.getAllFlavors(), ["a", "b", "c"]);
-        
+
         test.done();
     },
 
@@ -69,11 +69,11 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.deepEqual(af.getSourceDirs("a"), ["flavors/a/src"]);
         test.deepEqual(af.getSourceDirs("b"), ["flavors/bproj/src"]);
         test.deepEqual(af.getSourceDirs("c"), ["flavors/xXx/src"]);
-        
+
         test.done();
     },
 
@@ -82,9 +82,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.deepEqual(af.getSourceDirs("main"), ["android/java"]);
-        
+
         test.done();
     },
 
@@ -93,11 +93,11 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.deepEqual(af.getResourceDirs("a"), ["flavors/a/res"]);
         test.deepEqual(af.getResourceDirs("b"), ["flavors/bproj/res"]);
         test.deepEqual(af.getResourceDirs("c"), ["flavors/xXx/res"]);
-        
+
         test.done();
     },
 
@@ -106,9 +106,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.deepEqual(af.getResourceDirs("main"), ["android/res"]);
-        
+
         test.done();
     },
 
@@ -117,9 +117,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("a/b.java"), "main");
-        
+
         test.done();
     },
 
@@ -128,9 +128,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("flavors/a/src/com/mycompany/x.java"), "a");
-        
+
         test.done();
     },
 
@@ -139,9 +139,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("flavors/bproj/src/com/mycompany/x.java"), "b");
-        
+
         test.done();
     },
 
@@ -150,9 +150,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("flavors/xXx/src/com/mycompany/x.java"), "c");
-        
+
         test.done();
     },
 
@@ -161,9 +161,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("flavors/a/java/b.java"), "main");
-        
+
         test.done();
     },
 
@@ -172,9 +172,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath(), "main");
-        
+
         test.done();
     },
 
@@ -183,9 +183,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath(""), "main");
-        
+
         test.done();
     },
 
@@ -194,9 +194,9 @@ module.exports = {
 
         var af = new AndroidFlavors("./build1.gradle", "./testfiles");
         test.ok(af);
-        
+
         test.equal(af.getFlavorForPath("testfiles/flavors/a/src/myclass.java"), "a");
-        
+
         test.done();
     }
 };

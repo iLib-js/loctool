@@ -25,11 +25,11 @@ if (!IosStringsFile) {
 }
 
 var p = new ObjectiveCProject({
-	id: "iosapp",
-	sourceLocale: "en-US"
+    id: "iosapp",
+    sourceLocale: "en-US"
 }, "./testfiles", {
-	locales:["en-GB"],
-	flavors: ["chocolate", "vanilla"]
+    locales:["en-GB"],
+    flavors: ["chocolate", "vanilla"]
 });
 
 var isft = new IosStringsFileType(p);
@@ -196,10 +196,10 @@ module.exports = {
         test.equal(set.size(), 0);
 
         strings.parse('/* i18n: this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a driver?";');
-        
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+                '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a driver?";');
+
         test.ok(set);
 
         test.equal(set.size(), 2);
@@ -218,10 +218,10 @@ module.exports = {
         test.ok(strings);
 
         strings.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a driver?";');
-       
+                '"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+                '/* Class = "UILabel"; text = "Are you a driver?"; ObjectID = "MFI-qx-pQf"; */\n' +
+                '"MFI-qx-pQf.text" = "Are you a driver?";');
+
         var set = strings.getTranslationSet();
         test.ok(set);
 
@@ -248,9 +248,9 @@ module.exports = {
         test.expect(14);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/en-US.lproj/SignUpViewController.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/en-US.lproj/SignUpViewController.strings"
         });
         test.ok(strings);
 
@@ -306,7 +306,7 @@ module.exports = {
         test.equal(set.size(), 21);
 
         var r = set.getBy({
-        	reskey: "%@ (%ld yrs)"
+            reskey: "%@ (%ld yrs)"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "%1$@ (%2$ld yrs)");
@@ -314,7 +314,7 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "$%@ regularly"
+            reskey: "$%@ regularly"
         });
         test.ok(r);
         test.equal(r[0].getSource(), "$%@ regularly");
@@ -322,7 +322,7 @@ module.exports = {
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "%@ and "
+            reskey: "%@ and "
         });
         test.ok(r);
         test.equal(r[0].getSource(), "%@ and ");
@@ -383,24 +383,24 @@ module.exports = {
         test.ok(strings);
 
         [
-        	new ResourceString({
-        		project: "iosapp",
-        		key: "source text",
-				source: "source text",
-				sourceLocale: "en-US",
-				target: "Quellen\"text",
-				targetLocale: "de-DE",
+            new ResourceString({
+                project: "iosapp",
+                key: "source text",
+                source: "source text",
+                sourceLocale: "en-US",
+                target: "Quellen\"text",
+                targetLocale: "de-DE",
                 comment: "foo"
-        	}),
-        	new ResourceString({
-        		project: "iosapp",
-        		key: "more source text",
-				source: "more source text",
-				sourceLocale: "en-US",
-				target: "mehr Quellen\"text",
-				targetLocale: "de-DE",
-        		comment: "bar"
-        	})
+            }),
+            new ResourceString({
+                project: "iosapp",
+                key: "more source text",
+                source: "more source text",
+                sourceLocale: "en-US",
+                target: "mehr Quellen\"text",
+                targetLocale: "de-DE",
+                comment: "bar"
+            })
         ].forEach(function(res) {
             strings.addResource(res);
         });
@@ -430,18 +430,18 @@ module.exports = {
                 project: "iosapp",
                 targetLocale: "de-DE",
                 key: "source text",
-				source: "source text",
-				sourceLocale: "en-US",
-				target: "Quellen\n\ttext",
+                source: "source text",
+                sourceLocale: "en-US",
+                target: "Quellen\n\ttext",
                 comment: "foo"
             }),
             new ResourceString({
                 project: "iosapp",
                 targetLocale: "de-DE",
                 key: "more source text",
-				source: "more source text",
-				sourceLocale: "en-US",
-				target: "mehr Quellen\"text",
+                source: "more source text",
+                sourceLocale: "en-US",
+                target: "mehr Quellen\"text",
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -473,9 +473,9 @@ module.exports = {
                 project: "iosapp",
                 targetLocale: "de-DE",
                 key: "source\\ntext",
-				source: "source\\ntext",
-				sourceLocale: "en-US",
-				target: "Quellen text",
+                source: "source\\ntext",
+                sourceLocale: "en-US",
+                target: "Quellen text",
                 comment: "foo",
                 datatype: "x-swift"
             }),
@@ -483,9 +483,9 @@ module.exports = {
                 project: "iosapp",
                 targetLocale: "de-DE",
                 key: "more source\\ntext",
-				source: "more source\\ntext",
-				sourceLocale: "en-US",
-				target: "mehr Quellen text",
+                source: "more source\\ntext",
+                sourceLocale: "en-US",
+                target: "mehr Quellen text",
                 comment: "bar",
                 datatype: "x-swift"
             }),
@@ -493,9 +493,9 @@ module.exports = {
                 project: "iosapp",
                 targetLocale: "de-DE",
                 key: "2V9-YN-vxb.normalTitlet",
-				source: "2V9-YN-vxb.normalTitlet",
-				sourceLocale: "en-US",
-				target: "noch mehr Quellen text",
+                source: "2V9-YN-vxb.normalTitlet",
+                sourceLocale: "en-US",
+                target: "noch mehr Quellen text",
                 comment: "bar",
                 datatype: "x-xib"
             })
@@ -503,7 +503,7 @@ module.exports = {
             strings.addResource(res);
         });
 
-        var expected = 
+        var expected =
             '/* bar */\n' +
             '"2V9-YN-vxb.normalTitlet" = "noch mehr Quellen text";\n\n' +
             '/* bar */\n' +
@@ -531,9 +531,9 @@ module.exports = {
                 project: "iosapp",
                 targetLocale: "es-US",
                 key: "“The future of technology is at your fingertips.”",
-				source: "“The future of technology is at your fingertips.”",
-				sourceLocale: "en-US",
-				target: '"El futuro de la tecnología está al alcance de tus dedos."',
+                source: "“The future of technology is at your fingertips.”",
+                sourceLocale: "en-US",
+                target: '"El futuro de la tecnología está al alcance de tus dedos."',
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -541,8 +541,8 @@ module.exports = {
         });
 
         test.equal(strings.getContent(),
-        	'/* bar */\n' +
-        	'"“The future of technology is at your fingertips.”" = "\\\"El futuro de la tecnología está al alcance de tus dedos.\\\"";\n'
+            '/* bar */\n' +
+            '"“The future of technology is at your fingertips.”" = "\\\"El futuro de la tecnología está al alcance de tus dedos.\\\"";\n'
         );
 
         test.done();
@@ -593,22 +593,22 @@ module.exports = {
         test.expect(17);
 
         var strings = new IosStringsFile({
-        	project: p,
-			type: isft, 
-        	pathName: "./objc/en-US.lproj/chocolate.strings"
+            project: p,
+            type: isft,
+            pathName: "./objc/en-US.lproj/chocolate.strings"
         });
-        
+
         test.ok(strings);
-        
+
         strings.extract();
-        
+
         var set = strings.getTranslationSet();
-        
+
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Are you an existing customer?");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.ok(!r[0].getTargetLocale());
@@ -624,7 +624,7 @@ module.exports = {
         test.equal(r[1].getComment(), 'Class = "UILabel"; text = "Are you a friend?"; ObjectID = "MFI-qx-pQf";');
         test.equal(r[1].getFlavor(), "chocolate");
         test.equal(r[1].getPath(), "./objc/en-US.lproj/chocolate.strings");
-        
+
         test.done();
     }
 };

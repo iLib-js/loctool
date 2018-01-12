@@ -462,7 +462,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
         test.ok(rs);
@@ -496,7 +496,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
         test.ok(rs);
@@ -530,7 +530,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
 
@@ -1058,7 +1058,7 @@ module.exports = {
         test.expect(1);
 
         test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_");
-        
+
         test.done();
     },
 

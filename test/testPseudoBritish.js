@@ -25,13 +25,13 @@ if (!PseudoFactory) {
 }
 
 var project = new WebProject({
-	sourceLocale: "en-US",
-	pseudoLocale: "ps-DO",
-	resourceDirs: {
-		"yml": "config/locales"
-	}
+    sourceLocale: "en-US",
+    pseudoLocale: "ps-DO",
+    resourceDirs: {
+        "yml": "config/locales"
+    }
 }, "./testfiles", {
-	locales: ["en-GB", "en-NZ", "es-US"]
+    locales: ["en-GB", "en-NZ", "es-US"]
 });
 
 module.exports = {
@@ -39,12 +39,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("traveler"), "traveller");
-        
+
         test.done();
     },
 
@@ -52,25 +52,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishOddWordBoundaries: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
-        
+
         test.done();
     },
 
@@ -78,12 +78,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler."), "I am a traveller.");
-        
+
         test.done();
     },
 
@@ -91,25 +91,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("globalization"), "globalisation");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishInitialCapital: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("Globalization"), "Globalisation");
-        
+
         test.done();
     },
 
@@ -117,12 +117,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("GLOBALIZATION"), "GLOBALISATION");
-        
+
         test.done();
     },
 
@@ -130,12 +130,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("I'm not about to retire"), "I'm not about to retire"); // no translation
-        
+
         test.done();
     },
 
@@ -143,51 +143,51 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishSkipReplacementsJava: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "java"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "java"
+        });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishSkipReplacementsJavascript: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "javascript"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "javascript"
+        });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishSkipReplacementsHTML: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "html"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "html"
+        });
         test.equal(pb.getString("Skip the unflavored <span name=\"estrogen\">supplements</a>."), "Skip the unflavoured <span name=\"estrogen\">supplements</a>.");
-        
+
         test.done();
     },
 
@@ -195,12 +195,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "xml"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "xml"
+        });
         test.equal(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>."), "Skip the unflavoured <source id=\"estrogen\">supplements</source>.");
-        
+
         test.done();
     },
 
@@ -208,25 +208,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "template"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "template"
+        });
         test.equal(pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishSkipReplacementsRuby: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "ruby"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "ruby"
+        });
         test.equal(pb.getString("Skip the unflavored %{estrogen} #{estrogen} supplements."), "Skip the unflavoured %{estrogen} #{estrogen} supplements.");
-        
+
         test.done();
     },
 
@@ -234,25 +234,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {oestrogen} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishSkipReplacementsYaml: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-GB",
-			type: "ruby"
-		});
+            project: project,
+            targetLocale: "en-GB",
+            type: "ruby"
+        });
         test.equal(pb.getString("Skip the unflavored %ESTROGEN% supplements."), "Skip the unflavoured %ESTROGEN% supplements.");
-        
+
         test.done();
     },
 
@@ -260,12 +260,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-NZ",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-NZ",
+            type: "text"
+        });
         test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
-        
+
         test.done();
     },
 
@@ -273,12 +273,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-AU",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-AU",
+            type: "text"
+        });
         test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
-        
+
         test.done();
     },
 
@@ -286,12 +286,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-ZA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-ZA",
+            type: "text"
+        });
         test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
-        
+
         test.done();
     },
 
@@ -299,12 +299,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-HK",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-HK",
+            type: "text"
+        });
         test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
-        
+
         test.done();
     },
 
@@ -312,16 +312,16 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			targetLocale: "en-PH", // Philippines uses US English
-			type: "text"
-		});
-        
+            project: project,
+            targetLocale: "en-PH", // Philippines uses US English
+            type: "text"
+        });
+
         test.ok(!pb);
-        
+
         test.done();
     },
-    
+
     testPseudoBritishGetStringForResourceWithOverrideTranslation: function(test) {
         test.expect(2);
 
@@ -359,15 +359,15 @@ module.exports = {
         translations.add(res);
 
         var pb = PseudoFactory({
-        	set: translations,
-        	project: project,
-			targetLocale: "en-GB",
-			type: "text"
-		});
-        
+            set: translations,
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+
         test.equal(pb.getStringForResource(english1), "override string");       // looked up
         test.equal(pb.getStringForResource(english2), "localisation chillis."); // auto-generated
-        
+
         test.done();
     }
 };

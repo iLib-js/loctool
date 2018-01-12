@@ -49,7 +49,7 @@ var p = new WebProject({
     locales:["en-GB"],
     nopseudo: true,
     targetDir: "testfiles",
-	flavors: ["CHOCOLATE", "VANILLA"]
+    flavors: ["CHOCOLATE", "VANILLA"]
 });
 
 var yft = new YamlFileType(p);
@@ -377,10 +377,10 @@ module.exports = {
             '  top_header: Refine Your Query\n' +
             '  header:\n' +
             '    person: "%ACK_SAMPLE%"\n' +
-            '    subaccount: "%ACK_SAMPLE%" \n' + 
+            '    subaccount: "%ACK_SAMPLE%" \n' +
             '  variations:\n' +
             '    person: "A %NAME% name?"\n' +
-            '    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' + 
+            '    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' +
             '    asdf:\n' +
             '      a: x y z\n' +
             '      c: a b c\n'
@@ -787,7 +787,7 @@ module.exports = {
             yml.addResource(res);
         });
 
-        var expected = 
+        var expected =
             "'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
             "• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
 
@@ -1681,7 +1681,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testYamlFileParseWithFlavor: function(test) {
         test.expect(15);
 
@@ -1701,7 +1701,7 @@ module.exports = {
         test.ok(set);
 
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
 
@@ -1712,7 +1712,7 @@ module.exports = {
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
-        
+
         test.equal(r[1].getSource(), "bar");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
@@ -1721,7 +1721,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testYamlFileParseWithNoFlavor: function(test) {
         test.expect(15);
 
@@ -1740,7 +1740,7 @@ module.exports = {
         test.ok(set);
 
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
 
@@ -1751,7 +1751,7 @@ module.exports = {
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
-        
+
         test.equal(r[1].getSource(), "bar");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
@@ -1760,7 +1760,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testYamlFileParseTargetWithNoFlavor: function(test) {
         test.expect(17);
 
@@ -1779,7 +1779,7 @@ module.exports = {
         test.ok(set);
 
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
 
@@ -1791,7 +1791,7 @@ module.exports = {
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
-        
+
         test.equal(r[1].getTarget(), "bar");
         test.equal(r[1].getTargetLocale(), "es-US");
         test.equal(r[1].getSourceLocale(), "en-US");
@@ -1801,7 +1801,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testYamlFileParseWithGleanedFlavor: function(test) {
         test.expect(15);
 
@@ -1821,7 +1821,7 @@ module.exports = {
         test.ok(set);
 
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
 
@@ -1832,7 +1832,7 @@ module.exports = {
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
-        
+
         test.equal(r[1].getSource(), "bar");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
@@ -1841,7 +1841,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testYamlFileParseWithNoGleanedFlavor: function(test) {
         test.expect(17);
 
@@ -1861,7 +1861,7 @@ module.exports = {
         test.ok(set);
 
         test.equal(set.size(), 2);
-        
+
         var r = set.getAll();
         test.ok(r);
 
@@ -1873,7 +1873,7 @@ module.exports = {
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
-        
+
         test.equal(r[1].getTarget(), "bar");
         test.equal(r[1].getTargetLocale(), "en-ZA");
         test.equal(r[1].getSourceLocale(), "en-US");

@@ -24,10 +24,10 @@ if (!ObjectiveCFile) {
 }
 
 var p = new ObjectiveCProject({
-	id: "ios",
-	sourceLocale: "en-US"
+    id: "ios",
+    sourceLocale: "en-US"
 }, "./testfiles", {
-	locales:["en-GB"]
+    locales:["en-GB"]
 });
 
 var ocft = new ObjectiveCFileType(p);
@@ -95,7 +95,7 @@ module.exports = {
         test.ok(set);
 
         var r = set.getBy({
-        	reskey: "This is a test"
+            reskey: "This is a test"
         });
         test.ok(r);
 
@@ -216,14 +216,14 @@ module.exports = {
 
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
-        
+
         test.done();
     },
 

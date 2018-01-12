@@ -355,20 +355,20 @@ assert.ifError = function (err) { if (err) {throw err;}};
 
 
 /**
- * Return true if every element in the expected array also exists in the the actual 
+ * Return true if every element in the expected array also exists in the the actual
  * array. The actual array may contain more elements that are not in the expected
- * array. This implementation is very simple and not very efficient (Order(n^2)) so 
+ * array. This implementation is very simple and not very efficient (Order(n^2)) so
  * do not call this to compare large arrays.
- * 
+ *
  * @param {Array.<Object>} actual The actual array to test
  * @param {Array.<Object>} expected The array to test against
  * @returns True if every element of the expected array exists in the actual array.
  */
 function isEqualIgnoringOrder(actual, expected) {
-	var found = false;
+    var found = false;
     for (var i = 0; i < expected.length; i++) {
-    	var found = false;
-    	for (var j = 0; j < actual.length; j++) {
+        var found = false;
+        for (var j = 0; j < actual.length; j++) {
             try {
                 if (_deepEqual(actual[j], expected[i])) {
                     found = true;
@@ -378,7 +378,7 @@ function isEqualIgnoringOrder(actual, expected) {
             }
         }
         if (!found) {
-        	return false;
+            return false;
         }
     }
     return true;
@@ -405,14 +405,14 @@ function isArray(object) {
  * @throws AssertionError
  */
 assert.equalIgnoringOrder = function(actual, expected, message) {
-	if (!isArray(expected)) {
-    	fail("Invalid expected argument to equalIgnoringOrder.");
+    if (!isArray(expected)) {
+        fail("Invalid expected argument to equalIgnoringOrder.");
     } else if (isArray(actual)) {
-		if (isEqualIgnoringOrder(actual, expected) === false) {
-			fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
-		}
-	} else {
-		fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
+        if (isEqualIgnoringOrder(actual, expected) === false) {
+            fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
+        }
+    } else {
+        fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
     }
     return;
 };

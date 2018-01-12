@@ -26,7 +26,7 @@ module.exports = {
         test.expect(1);
 
         var bg = new BuildGradle({
-        	path: "build1.gradle"
+            path: "build1.gradle"
         });
         test.ok(bg);
 
@@ -37,25 +37,25 @@ module.exports = {
         test.expect(1);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
 
         test.done();
     },
-    
+
     testBuildGradleGetFlavors: function(test) {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         test.deepEqual(bg.getFlavors(), ["a", "b", "c"]);
 
         test.done();
@@ -65,12 +65,12 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "gradle/build1.gradle"
+            root: "./testfiles",
+            path: "gradle/build1.gradle"
         });
 
         test.ok(bg);
-        
+
         test.deepEqual(bg.getFlavors(), ["a", "b", "c"]);
 
         test.done();
@@ -80,12 +80,12 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build2.gradle"
+            root: "./testfiles",
+            path: "build2.gradle"
         });
 
         test.ok(bg);
-        
+
         test.deepEqual(bg.getFlavors(), ["a"]);
 
         test.done();
@@ -95,12 +95,12 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build3.gradle"
+            root: "./testfiles",
+            path: "build3.gradle"
         });
 
         test.ok(bg);
-        
+
         test.deepEqual(bg.getFlavors(), []);
 
         test.done();
@@ -110,12 +110,12 @@ module.exports = {
         test.expect(2);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "nonexistent.gradle"
+            root: "./testfiles",
+            path: "nonexistent.gradle"
         });
 
         test.ok(bg);
-        
+
         test.deepEqual(bg.getFlavors(), []);
 
         test.done();
@@ -125,12 +125,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorRes("a");
         test.ok(res);
         test.equal(res.length, 1);
@@ -143,12 +143,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorRes("b");
         test.ok(res);
         test.equal(res.length, 1);
@@ -161,12 +161,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorRes("c");
         test.ok(res);
         test.equal(res.length, 1);
@@ -179,12 +179,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "gradle/build1.gradle"
+            root: "./testfiles",
+            path: "gradle/build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorRes("a");
         test.ok(res);
         test.equal(res.length, 1);
@@ -197,12 +197,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build2.gradle"
+            root: "./testfiles",
+            path: "build2.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorRes("a");
         test.ok(res);
         test.equal(res.length, 1);
@@ -215,12 +215,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorSrc("a");
         test.ok(res);
         test.equal(res.length, 1);
@@ -233,12 +233,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorSrc("b");
         test.ok(res);
         test.equal(res.length, 1);
@@ -251,12 +251,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build1.gradle"
+            root: "./testfiles",
+            path: "build1.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorSrc("c");
         test.ok(res);
         test.equal(res.length, 1);
@@ -269,12 +269,12 @@ module.exports = {
         test.expect(4);
 
         var bg = new BuildGradle({
-        	root: "./testfiles",
-        	path: "build2.gradle"
+            root: "./testfiles",
+            path: "build2.gradle"
         });
 
         test.ok(bg);
-        
+
         var res = bg.getFlavorSrc("a");
         test.ok(res);
         test.equal(res.length, 1);

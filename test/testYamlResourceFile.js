@@ -168,7 +168,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getSource(), 
+        test.equal(r[2].getSource(),
                 'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
                 'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
                 'directly from experienced, successful entrepreneurs.\n');
@@ -239,7 +239,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getTarget(), 
+        test.equal(r[2].getTarget(),
                 'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
                 'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
                 'directly from experienced, successful entrepreneurs.\n');
@@ -298,7 +298,7 @@ module.exports = {
         test.expect(14);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test.yml",
             type: yft
         });
@@ -361,7 +361,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./objc/en.lproj/asdf.yml",
             type: yft
         });
@@ -374,14 +374,14 @@ module.exports = {
 
         test.equal(set.size(), 0);
 
-        test.done();   
+        test.done();
     },
 
     testYamlResourceFileGetContent: function(test) {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./asdf.yml",
             locale: "de-DE",
             type: yft
@@ -423,7 +423,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft
@@ -465,7 +465,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft
@@ -509,7 +509,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./asdf.yml",
             locale: "de-DE",
             type: yft
@@ -525,7 +525,7 @@ module.exports = {
         test.expect(5);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test.yml",
             locale: "en-US",
             type: yft
@@ -550,7 +550,7 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -577,7 +577,7 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -604,7 +604,7 @@ module.exports = {
         test.expect(4);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -628,7 +628,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft

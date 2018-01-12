@@ -69,9 +69,9 @@ exports.run = function (files, options, callback) {
         }
     });
 
-	var opts = {
-	    testspec: options.testspec,
-	    testFullSpec: options.testFullSpec,
+    var opts = {
+        testspec: options.testspec,
+        testFullSpec: options.testFullSpec,
         moduleStart: function (name) {
             console.log('\n' + bold(name));
         },
@@ -120,12 +120,12 @@ exports.run = function (files, options, callback) {
             tracker.put(name);
         }
     };
-	if (files && files.length) {
-	    var paths = files.map(function (p) {
-	        return path.resolve(p);
-	    });
-	    nodeunit.runFiles(paths, opts);
-	} else {
-		nodeunit.runModules(files,opts);
-	}
+    if (files && files.length) {
+        var paths = files.map(function (p) {
+            return path.resolve(p);
+        });
+        nodeunit.runFiles(paths, opts);
+    } else {
+        nodeunit.runModules(files,opts);
+    }
 };
