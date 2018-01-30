@@ -665,7 +665,8 @@ module.exports = {
         // too short for most English words
         yml.parse('---\n' +
                 'a: "a"\n' +
-                'b: "ab"\n');
+                'b: "ab"\n' +
+                'c: "abc"\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
