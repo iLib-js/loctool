@@ -77,15 +77,13 @@ limitations under the License.
 			<exec osfamily="unix" executable="${node}/bin/node" dir="@{dir}" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="--inspect"/>
-				<arg line="--debug-brk"/>
+				<arg line="--inspect-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
 			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="--inspect"/>
-				<arg line="--debug-brk"/>
+				<arg line="--inspect-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
 		</sequential>
@@ -123,16 +121,14 @@ limitations under the License.
 			<exec osfamily="unix" executable="${node}/bin/node" dir="@{dir}" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="--inspect"/>
-				<arg line="--debug-brk"/>
+				<arg line="--inspect-brk"/>
 				<arg line="${nodeunit}/bin/nodeunit"/>
 				<arg line="@{script}"/>
 			</exec>
 			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="--inspect"/>
-				<arg line="--debug-brk"/>
+				<arg line="--inspect-brk"/>
 				<arg line="${nodeunit}/bin/nodeunit"/>
 				<arg line="@{script}"/>
 			</exec>
