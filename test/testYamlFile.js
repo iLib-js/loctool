@@ -631,6 +631,205 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseIgnoreNoSpacesWithPunctuation: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // not words... embedded punctuation is probably not English
+        yml.parse('---\n' +
+                'a: "http://foo.bar.com/asdf/asdf.html"\n' +
+                'b: "bar.asdf"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTooShort: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // too short for most English words
+        yml.parse('---\n' +
+                'a: "a"\n' +
+                'b: "ab"\n' +
+                'c: "abc"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTooLong: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // too long for regular English words
+        yml.parse('---\n' +
+                'a: "generalpractitionercardidnumber"\n' +
+                'b: "huasdfHfasYEwqlkasdfjklHAFaihaFAasysfkjasdfLASDFfihASDFKsadfhysafJSKf"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesWithNumbers: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // embedded numbers is not English
+        yml.parse('---\n' +
+                'a: "Abc3"\n' +
+                'b: "Huasdfafawql4kja"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesWithCamelCase: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: "LargeFormat"\n' +
+                'b: "NeedsAttention"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesAllCapsOkay: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: "LARGE"\n' +
+                'b: "ATTENTION"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTrueAndFalse: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: true\n' +
+                'b: false\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesOnlyDigits: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: 452345\n' +
+                'b: 344\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesHex: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: cbca81213eb5901b8ae4f8ac\n' +
+                'b: ab21fe4f440EA4\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
     testYamlFileExtractFile: function(test) {
         test.expect(14);
 
@@ -1450,8 +1649,8 @@ module.exports = {
         y.extract();
         var set = y.getTranslationSet();
         test.ok(set);
-        test.equal(set.getBySource('b','title@read_me').getLocalize(), true);
-        test.equal(set.getBySource('d','title@do_not_read_me').getLocalize(), false);
+        test.equal(set.getBySource('good','title@read_me').getLocalize(), true);
+        test.equal(set.getBySource('bad','title@do_not_read_me').getLocalize(), false);
         test.done();
     },
 
