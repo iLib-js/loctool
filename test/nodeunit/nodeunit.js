@@ -1481,10 +1481,10 @@ assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
 assert.ifError = function (err) { if (err) {throw err;}};
 
 function isEqualIgnoringOrder(actual, expected) {
-	var found = false;
+    var found = false;
     for (var i = 0; i < expected.length; i++) {
-    	var found = false;
-    	for (var j = 0; j < actual.length; j++) {
+        var found = false;
+        for (var j = 0; j < actual.length; j++) {
             try {
                 if (_deepEqual(actual[j], expected[i])) {
                     found = true;
@@ -1494,7 +1494,7 @@ function isEqualIgnoringOrder(actual, expected) {
             }
         }
         if (!found) {
-        	return false;
+            return false;
         }
     }
     return true;
@@ -1505,14 +1505,14 @@ function isArray(object) {
 };
 
 assert.equalIgnoringOrder = function(actual, expected, message) {
-	if (!isArray(expected)) {
-    	fail("Invalid expected argument to equalIgnoringOrder.");
+    if (!isArray(expected)) {
+        fail("Invalid expected argument to equalIgnoringOrder.");
     } else if (isArray(actual)) {
-		if (isEqualIgnoringOrder(actual, expected) === false) {
-			fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
-		}
-	} else {
-		fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
+        if (isEqualIgnoringOrder(actual, expected) === false) {
+            fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
+        }
+    } else {
+        fail(actual, expected, message, "equalIgnoringOrder", assert.equalIgnoringOrder);
     }
     return;
 };
@@ -2057,8 +2057,8 @@ exports.info = "Browser-based test reporter";
 
 exports.run = function (modules, options, callback) {
     var start = new Date().getTime(), div;
-	options = options || {};
-	div = options.div || document.body;
+    options = options || {};
+    div = options.div || document.body;
 
     function setText(el, txt) {
         if ('innerText' in el) {
@@ -2088,15 +2088,15 @@ exports.run = function (modules, options, callback) {
     setText(userAgent, navigator.userAgent);
 
     var notMap = {
-    	"==": "!=",
-    	"!=": "==",
-    	"<":  ">=",
-    	">":  "<=",
-    	"<=": ">",
-    	">=": "<",
-    	"in": "not in"
+        "==": "!=",
+        "!=": "==",
+        "<":  ">=",
+        ">":  "<=",
+        "<=": ">",
+        ">=": "<",
+        "in": "not in"
     };
-    
+
     nodeunit.runModules(modules, {
         moduleStart: function (name) {
             /*var mheading = document.createElement('h2');
@@ -2127,9 +2127,9 @@ exports.run = function (modules, options, callback) {
                 var a = assertions[i];
                 if (a.failed()) {
                     li.innerHTML = (a.message || a.method || 'no message') + " " +
-                    	a.error.actual + " (actual) " + (notMap[a.error.operator] || a.error.operator) + 
-                    	" " + a.error.expected + " (expected)" +
-                    	//JSON.stringify(a) + " " +
+                        a.error.actual + " (actual) " + (notMap[a.error.operator] || a.error.operator) +
+                        " " + a.error.expected + " (expected)" +
+                        //JSON.stringify(a) + " " +
                         '<pre>' + (a.error.stack || a.error) + '</pre>';
                     li.className = 'fail';
                 }

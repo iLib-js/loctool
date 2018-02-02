@@ -557,8 +557,8 @@ module.exports = {
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
-                "one": "This is estrogen", 
-                "few": "I color my checkbooks", 
+                "one": "This is estrogen",
+                "few": "I color my checkbooks",
                 "many": "This is not translated."
             },
             pathName: "a/b/c.java"
@@ -602,8 +602,8 @@ module.exports = {
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
-                "one": "This is estrogen", 
-                "few": "I color my checkbooks", 
+                "one": "This is estrogen",
+                "few": "I color my checkbooks",
                 "many": "This is not translated."
             },
             pathName: "a/b/c.java"
@@ -647,8 +647,8 @@ module.exports = {
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
-                "one": "This is estrogen", 
-                "few": "I color my checkbooks", 
+                "one": "This is estrogen",
+                "few": "I color my checkbooks",
                 "many": "This is not localized."
             },
             pathName: "a/b/c.java"
@@ -693,8 +693,8 @@ module.exports = {
             project: "foo",
             key: "asdf",
             sourceStrings: {
-                one: "How are you?", 
-                few: "What is the cruising speed of a swallow?？", 
+                one: "How are you?",
+                few: "What is the cruising speed of a swallow?？",
                 many: "What? Do you mean a European swallow or an African swallow?"
             },
             pathName: "a/b/c.java",
@@ -715,14 +715,14 @@ module.exports = {
             project: "foo",
             key: 'asdf',
             sourceStrings: {
-                one: "How are you?", 
-                few: "What is the cruising speed of a swallow?？", 
+                one: "How are you?",
+                few: "What is the cruising speed of a swallow?？",
                 many: "What? Do you mean a European swallow or an African swallow?"
             },
             sourceLocale: "en-US",
             targetStrings: {
-                one: '你好吗？', 
-                few: '燕子的巡航速度是多少？', 
+                one: '你好吗？',
+                few: '燕子的巡航速度是多少？',
                 many: '什么？ 你是指欧洲的燕子还是非洲的燕子？'
             },
             pathName: "a/b/c.java",

@@ -30,15 +30,15 @@ module.exports = {
         test.expect(2);
 
         var translations = new TranslationSet();
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         test.equal(ph.getSourceLocale(), "zh-Hans-CN");
         test.equal(ph.getTargetLocale(), "zh-Hant-HK");
-        
+
         test.done();
     },
 
@@ -55,16 +55,16 @@ module.exports = {
             sourceLocale: "zh-Hans-CN"
         }));
         */
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         test.equal(ph.getString('你好吗？'), "你好嗎？");
         test.equal(ph.getString('燕子的巡航速度是多少？'), "燕子的巡航速度是多少？");
         test.equal(ph.getString('什么？ 你是指欧洲的燕子还是非洲的燕子？'), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
-        
+
         test.done();
     },
 
@@ -81,15 +81,15 @@ module.exports = {
             sourceLocale: "zh-Hans-CN"
         }));
         */
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         test.equal(ph.getString('foo'), "foo");
         test.equal(ph.getString('What is the cruising speed of a swallow?'), "What is the cruising speed of a swallow?");
-        
+
         test.done();
     },
 
@@ -113,9 +113,9 @@ module.exports = {
             sourceArray: ["How are you?", "What is the cruising speed of a swallow?？", "What? Do you mean a European swallow or an African swallow?"],
             targetLocale: "zh-Hans-CN",
             targetArray: ['你好吗？', '燕子的巡航速度是多少？', '什么？ 你是指欧洲的燕子还是非洲的燕子？'],
-        	pathName: "a/b/c.java"
+            pathName: "a/b/c.java"
         }));
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
@@ -124,7 +124,7 @@ module.exports = {
         test.equal(ph.getStringForResource(ra, 0), "你好嗎？");
         test.equal(ph.getStringForResource(ra, 1), "燕子的巡航速度是多少？");
         test.equal(ph.getStringForResource(ra, 2), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
-        
+
         test.done();
     },
 
@@ -135,8 +135,8 @@ module.exports = {
             project: "foo",
             key: "asdf",
             sourceStrings: {
-                one: "How are you?", 
-                few: "What is the cruising speed of a swallow?？", 
+                one: "How are you?",
+                few: "What is the cruising speed of a swallow?？",
                 many: "What? Do you mean a European swallow or an African swallow?"
             },
             pathName: "a/b/c.java",
@@ -149,20 +149,20 @@ module.exports = {
             project: "foo",
             key: 'asdf',
             sourceStrings: {
-                one: "How are you?", 
-                few: "What is the cruising speed of a swallow?？", 
+                one: "How are you?",
+                few: "What is the cruising speed of a swallow?？",
                 many: "What? Do you mean a European swallow or an African swallow?"
             },
             sourceLocale: "en-US",
             targetStrings: {
-                one: '你好吗？', 
-                few: '燕子的巡航速度是多少？', 
+                one: '你好吗？',
+                few: '燕子的巡航速度是多少？',
                 many: '什么？ 你是指欧洲的燕子还是非洲的燕子？'
             },
             pathName: "a/b/c.java",
             targetLocale: "zh-Hans-CN"
         }));
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
@@ -171,7 +171,7 @@ module.exports = {
         test.equal(ph.getStringForResource(rp, "one"), "你好嗎？");
         test.equal(ph.getStringForResource(rp, "few"), "燕子的巡航速度是多少？");
         test.equal(ph.getStringForResource(rp, "many"), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
-        
+
         test.done();
     },
 
@@ -197,17 +197,17 @@ module.exports = {
             targetLocale: "zh-Hans-CN",
             pathName: "a/b/c.java"
         }));
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
 
         test.equal(ph.getStringForResource(rs), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
-        
+
         test.done();
     },
-    
+
     testPseudoHantGetStringForResourceArrayNoPreviousTranslation: function(test) {
         test.expect(4);
 
@@ -221,7 +221,7 @@ module.exports = {
         test.ok(ra);
 
         var translations = new TranslationSet();
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
@@ -231,7 +231,7 @@ module.exports = {
         test.equal(ph.getStringForResource(ra, 0), "How are you?");
         test.equal(ph.getStringForResource(ra, 1), "What is the cruising speed of a swallow?");
         test.equal(ph.getStringForResource(ra, 2), "What? Do you mean a European swallow or an African swallow?");
-        
+
         test.done();
     },
 
@@ -242,8 +242,8 @@ module.exports = {
             project: "foo",
             key: "asdf",
             sourceStrings: {
-                one: "How are you?", 
-                few: "What is the cruising speed of a swallow?", 
+                one: "How are you?",
+                few: "What is the cruising speed of a swallow?",
                 many: "What? Do you mean a European swallow or an African swallow?"
             },
             pathName: "a/b/c.java",
@@ -252,7 +252,7 @@ module.exports = {
         test.ok(rp);
 
         var translations = new TranslationSet();
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
@@ -262,7 +262,7 @@ module.exports = {
         test.equal(ph.getStringForResource(rp, "one"), "How are you?");
         test.equal(ph.getStringForResource(rp, "few"), "What is the cruising speed of a swallow?");
         test.equal(ph.getStringForResource(rp, "many"), "What? Do you mean a European swallow or an African swallow?");
-        
+
         test.done();
     },
 
@@ -279,49 +279,49 @@ module.exports = {
         test.ok(rs);
 
         var translations = new TranslationSet();
-       
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
 
         test.equal(ph.getStringForResource(rs), "What? Do you mean a European swallow or an African swallow?");
-        
+
         test.done();
     },
-    
+
     testPseudoHantGetStringForResourceUndefined: function(test) {
         test.expect(1);
 
         var translations = new TranslationSet();
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
 
         test.ok(!ph.getStringForResource(undefined, 0));
-        
+
         test.done();
     },
-    
+
     testPseudoHantGetStringTW: function(test) {
         test.expect(3);
 
         var translations = new TranslationSet();
-        
+
         // test Taiwan specific phrases
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-TW"
         });
-        
+
         // TW specific
         test.equal(ph.getString('方便麵'), "速食麵");
         test.equal(ph.getString('蹦極'), "笨豬跳");
         test.equal(ph.getString('優先級'), "優先順序");
-        
+
         test.done();
     },
 
@@ -329,17 +329,17 @@ module.exports = {
         test.expect(3);
 
         var translations = new TranslationSet();
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-TW"
         });
-        
+
         // generic traditional should still work too
         test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
         test.equal(ph.getString('东荡西除？'), "東蕩西除？");
         test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
-        
+
         test.done();
     },
 
@@ -347,14 +347,14 @@ module.exports = {
         test.expect(3);
 
         var translations = new TranslationSet();
-        
+
         // test Hong Kong specific phrases
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         test.equal(ph.getString('鰂魚涌'), "鰂魚涌");
         test.equal(ph.getString('深涌'), "深涌");
         test.equal(ph.getString('繮'), "韁");
@@ -365,22 +365,22 @@ module.exports = {
         test.expect(3);
 
         var translations = new TranslationSet();
-        
+
         // test Hong Kong specific phrases
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         // generic traditional should still work too
         test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
         test.equal(ph.getString('东荡西除？'), "東蕩西除？");
         test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
-        
+
         test.done();
     },
-    
+
     testPseudoHantGetStringForResourceWithOverrideTranslation: function(test) {
         test.expect(2);
 
@@ -404,7 +404,7 @@ module.exports = {
         });
 
         translations.add(english2);
-        
+
         res = new ResourceString({
             autoKey: true,
             key: "East and West?",
@@ -416,7 +416,7 @@ module.exports = {
         });
 
         translations.add(res);
-        
+
         res = new ResourceString({
             key: "foo",
             autoKey: true,
@@ -442,15 +442,15 @@ module.exports = {
         translations.add(res);
 
         // test Hong Kong specific phrases
-        
+
         var ph = new PseudoHant({
             set: translations,
             targetLocale: "zh-Hant-HK"
         });
-        
+
         test.equal(ph.getStringForResource(english1), "override string");  // looked up
         test.equal(ph.getStringForResource(english2), "東蕩西除？");        // auto-generated
-        
+
         test.done();
-    }    
+    }
 };

@@ -48,7 +48,8 @@ var p = new WebProject({
 }, "./testfiles", {
     locales:["en-GB"],
     nopseudo: true,
-    targetDir: "testfiles"
+    targetDir: "testfiles",
+    flavors: ["CHOCOLATE", "VANILLA"]
 });
 
 var yft = new YamlFileType(p);
@@ -59,6 +60,16 @@ module.exports = {
 
         var y = new YamlFile();
         test.ok(y);
+
+        test.done();
+    },
+
+    testYamlConstructorEmptyNoFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile();
+        test.ok(y);
+        test.ok(!y.getFlavor());
 
         test.done();
     },
@@ -89,6 +100,37 @@ module.exports = {
         test.ok(y);
 
         test.equal(y.getPath(), "foo/bar/x.yml");
+
+        test.done();
+    },
+
+    testYamlWithFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile({
+            project: p,
+            type: yft,
+            pathName: "foo/customized/en-US-VANILLA.yml"
+        });
+        test.ok(y);
+
+        test.equal(y.getFlavor(), "VANILLA");
+
+        test.done();
+    },
+
+    testYamlWithNonFlavor: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile({
+            project: p,
+            type: yft,
+            pathName: "foo/customized/en-US-PEACH.yml"
+        });
+        test.ok(y);
+
+        // PEACH is not a flavor in the project
+        test.ok(!y.getFlavor());
 
         test.done();
     },
@@ -268,6 +310,59 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseWithFlavor: function(test) {
+        test.expect(28);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft,
+            path: "config/customization/en-US-CHOCOLATE.yml"
+        });
+        test.ok(yml);
+
+        yml.parse(
+                '---\n' +
+                "en-US-CHOCOLATE:\n" +
+                '  r9834724545: Jobs\n' +
+                '  r9483762220: Our internship program\n' +
+                '  r6782977423: |\n' +
+                '    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                '    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                '    directly from experienced, successful entrepreneurs.\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 3);
+
+        // locale is not special for this type of yml file, so it should appear in the context
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "en-US");
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "en-US");
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[2].getSource(),
+                'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+                'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+                'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getSourceLocale(), "en-US");
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "en-US");
+        test.equal(r[2].getFlavor(), "CHOCOLATE");
+
+        test.done();
+    },
+
     testYamlFileParseMultipleLevels: function(test) {
         test.expect(24);
 
@@ -282,10 +377,10 @@ module.exports = {
             '  top_header: Refine Your Query\n' +
             '  header:\n' +
             '    person: "%ACK_SAMPLE%"\n' +
-            '    subaccount: "%ACK_SAMPLE%" \n' + 
+            '    subaccount: "%ACK_SAMPLE%" \n' +
             '  variations:\n' +
             '    person: "A %NAME% name?"\n' +
-            '    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' + 
+            '    subaccount: "A %SUBACCOUNT_NAME%\'s name?"\n' +
             '    asdf:\n' +
             '      a: x y z\n' +
             '      c: a b c\n'
@@ -536,6 +631,205 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseIgnoreNoSpacesWithPunctuation: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // not words... embedded punctuation is probably not English
+        yml.parse('---\n' +
+                'a: "http://foo.bar.com/asdf/asdf.html"\n' +
+                'b: "bar.asdf"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTooShort: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // too short for most English words
+        yml.parse('---\n' +
+                'a: "a"\n' +
+                'b: "ab"\n' +
+                'c: "abc"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTooLong: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // too long for regular English words
+        yml.parse('---\n' +
+                'a: "generalpractitionercardidnumber"\n' +
+                'b: "huasdfHfasYEwqlkasdfjklHAFaihaFAasysfkjasdfLASDFfihASDFKsadfhysafJSKf"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesWithNumbers: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // embedded numbers is not English
+        yml.parse('---\n' +
+                'a: "Abc3"\n' +
+                'b: "Huasdfafawql4kja"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesWithCamelCase: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: "LargeFormat"\n' +
+                'b: "NeedsAttention"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesAllCapsOkay: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: "LARGE"\n' +
+                'b: "ATTENTION"\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesTrueAndFalse: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: true\n' +
+                'b: false\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesOnlyDigits: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: 452345\n' +
+                'b: 344\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreNoSpacesHex: function(test) {
+        test.expect(3);
+
+        var yml = new YamlFile({
+            project: p,
+            type: yft
+        });
+        test.ok(yml);
+
+        // camel case means identifier, not English
+        yml.parse('---\n' +
+                'a: cbca81213eb5901b8ae4f8ac\n' +
+                'b: ab21fe4f440EA4\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
     testYamlFileExtractFile: function(test) {
         test.expect(14);
 
@@ -692,7 +986,7 @@ module.exports = {
             yml.addResource(res);
         });
 
-        var expected = 
+        var expected =
             "'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
             "• &amp;nbsp; Address a particular topic: • &amp;nbsp; 解决一个特定的主题\n";
 
@@ -1355,8 +1649,8 @@ module.exports = {
         y.extract();
         var set = y.getTranslationSet();
         test.ok(set);
-        test.equal(set.getBySource('b','title@read_me').getLocalize(), true);
-        test.equal(set.getBySource('d','title@do_not_read_me').getLocalize(), false);
+        test.equal(set.getBySource('good','title@read_me').getLocalize(), true);
+        test.equal(set.getBySource('bad','title@do_not_read_me').getLocalize(), false);
         test.done();
     },
 
@@ -1583,6 +1877,208 @@ module.exports = {
         diff(yml.getContent(),expected);
 
         test.equal(yml.getContent(), expected);
+
+        test.done();
+    },
+
+    testYamlFileParseWithFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft,
+            flavor: "CHOCOLATE"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.done();
+    },
+
+    testYamlFileParseWithNoFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
+
+        test.done();
+    },
+
+    testYamlFileParseTargetWithNoFlavor: function(test) {
+        test.expect(17);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "es-US",
+            type: yft
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTargetLocale(), "es-US");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+
+        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTargetLocale(), "es-US");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
+
+        test.done();
+    },
+
+    testYamlFileParseWithGleanedFlavor: function(test) {
+        test.expect(15);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-US",
+            type: yft,
+            pathName: "customization/en-CHOCOLATE.yml"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.done();
+    },
+
+    testYamlFileParseWithNoGleanedFlavor: function(test) {
+        test.expect(17);
+
+        var yml = new YamlFile({
+            project: p,
+            locale: "en-ZA",
+            type: yft,
+            pathName: "customization/en-ZA.yml"
+        });
+        test.ok(yml);
+
+        yml.parse('---\n' +
+                'a: foo\n' +
+                'b: bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 2);
+
+        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTargetLocale(), "en-ZA");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "a");
+        test.ok(!r[0].getContext());
+        test.ok(!r[0].getFlavor());
+
+        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTargetLocale(), "en-ZA");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "b");
+        test.ok(!r[1].getContext());
+        test.ok(!r[1].getFlavor());
 
         test.done();
     }

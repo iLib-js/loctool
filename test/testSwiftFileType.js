@@ -27,13 +27,13 @@ module.exports = {
         test.expect(1);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
-        
+
         test.ok(stf);
-        
+
         test.done();
     },
 
@@ -41,14 +41,14 @@ module.exports = {
         test.expect(2);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
         test.ok(stf);
-        
+
         test.ok(stf.handles("foo.swift"));
-        
+
         test.done();
     },
 
@@ -56,14 +56,14 @@ module.exports = {
         test.expect(2);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
         test.ok(stf);
-        
+
         test.ok(stf.handles("foo.h"));
-        
+
         test.done();
     },
 
@@ -71,44 +71,44 @@ module.exports = {
         test.expect(2);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
         test.ok(stf);
-        
+
         test.ok(!stf.handles("fooswift"));
-        
+
         test.done();
     },
-    
+
     testSwiftFileTypeHandlesFalse: function(test) {
         test.expect(2);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
         test.ok(stf);
-        
+
         test.ok(!stf.handles("foo.html"));
-        
+
         test.done();
     },
-    
+
     testSwiftFileTypeHandlesTrueWithDir: function(test) {
         test.expect(2);
 
         var p = new SwiftProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var stf = new SwiftFileType(p);
         test.ok(stf);
-        
+
         test.ok(stf.handles("a/b/c/foo.swift"));
-        
+
         test.done();
     }
 };

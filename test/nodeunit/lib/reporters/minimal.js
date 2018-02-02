@@ -70,9 +70,9 @@ exports.run = function (files, options, callback) {
     });
 
 
-	var opts = {
-	    testspec: options.testspec,
-	    testFullSpec: options.testFullSpec,
+    var opts = {
+        testspec: options.testspec,
+        testFullSpec: options.testFullSpec,
         moduleStart: function (name) {
             process.stdout.write(bold(name) + ': ');
         },
@@ -131,12 +131,12 @@ exports.run = function (files, options, callback) {
         }
     };
 
-	if (files && files.length) {
+    if (files && files.length) {
       var paths = files.map(function (p) {
           return path.resolve(p);
       });
-	    nodeunit.runFiles(paths, opts);
-	} else {
-		nodeunit.runModules(files,opts);
-	}
+        nodeunit.runFiles(paths, opts);
+    } else {
+        nodeunit.runModules(files,opts);
+    }
 };
