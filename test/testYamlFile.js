@@ -310,59 +310,6 @@ module.exports = {
         test.done();
     },
 
-    testYamlFileParseWithFlavor: function(test) {
-        test.expect(28);
-
-        var yml = new YamlFile({
-            project: p,
-            type: yft,
-            path: "config/customization/en-US-CHOCOLATE.yml"
-        });
-        test.ok(yml);
-
-        yml.parse(
-                '---\n' +
-                "en-US-CHOCOLATE:\n" +
-                '  r9834724545: Jobs\n' +
-                '  r9483762220: Our internship program\n' +
-                '  r6782977423: |\n' +
-                '    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-                '    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-                '    directly from experienced, successful entrepreneurs.\n');
-
-        var set = yml.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getAll();
-        test.ok(r);
-
-        test.equal(r.length, 3);
-
-        // locale is not special for this type of yml file, so it should appear in the context
-        test.equal(r[0].getSource(), "Jobs");
-        test.equal(r[0].getSourceLocale(), "en-US");
-        test.equal(r[0].getKey(), "r9834724545");
-        test.equal(r[0].getContext(), "en-US");
-        test.equal(r[0].getFlavor(), "CHOCOLATE");
-
-        test.equal(r[1].getSource(), "Our internship program");
-        test.equal(r[1].getSourceLocale(), "en-US");
-        test.equal(r[1].getKey(), "r9483762220");
-        test.equal(r[1].getContext(), "en-US");
-        test.equal(r[1].getFlavor(), "CHOCOLATE");
-
-        test.equal(r[2].getSource(),
-                'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
-                'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-                'directly from experienced, successful entrepreneurs.\n');
-        test.equal(r[2].getSourceLocale(), "en-US");
-        test.equal(r[2].getKey(), "r6782977423");
-        test.equal(r[2].getContext(), "en-US");
-        test.equal(r[2].getFlavor(), "CHOCOLATE");
-
-        test.done();
-    },
-
     testYamlFileParseMultipleLevels: function(test) {
         test.expect(24);
 
@@ -466,8 +413,8 @@ module.exports = {
         yml.parse(
                 '---\n' +
                 'Jobs:\n' +
-                '  - one\n' +
-                '  - two\n' +
+                '  - one and\n' +
+                '  - two and\n' +
                 '  - three\n' +
                 '  - four\n');
 
@@ -481,11 +428,11 @@ module.exports = {
 
         test.equal(r.length, 4);
 
-        test.equal(r[0].getSource(), "one");
+        test.equal(r[0].getSource(), "one and");
         test.equal(r[0].getKey(), "0");
         test.equal(r[0].getContext(), "Jobs");
 
-        test.equal(r[1].getSource(), "two");
+        test.equal(r[1].getSource(), "two and");
         test.equal(r[1].getKey(), "1");
         test.equal(r[1].getContext(), "Jobs");
 
@@ -517,7 +464,7 @@ module.exports = {
                 'options:\n' +
                 '  - name: attention\n' +
                 '    display_value: Usually requires immediate attention\n' +
-                '    color: red\n' +
+                '    color: reddish\n' +
                 '    bars_count: 5\n' +
                 '    action_options:\n' +
                 '    - :emergency\n' +   // should ignore these
@@ -561,7 +508,7 @@ module.exports = {
         test.equal(r[1].getKey(), "display_value");
         test.equal(r[1].getContext(), "options@0");
 
-        test.equal(r[2].getSource(), "red");
+        test.equal(r[2].getSource(), "reddish");
         test.equal(r[2].getKey(), "color");
         test.equal(r[2].getContext(), "options@0");
 
@@ -1650,7 +1597,7 @@ module.exports = {
         var set = y.getTranslationSet();
         test.ok(set);
         test.equal(set.getBySource('good','title@read_me').getLocalize(), true);
-        test.equal(set.getBySource('bad','title@do_not_read_me').getLocalize(), false);
+        test.ok(!set.getBySource('bad','title@do_not_read_me'));
         test.done();
     },
 
@@ -1660,24 +1607,21 @@ module.exports = {
         var y = new YamlFile({
             project: p,
             type: yft,
-            pathName: "./test3.yml"
+            pathName: "./test2.yml"
         });
         test.ok(y);
         y.extract();
         var outputFileContents =
-            'title:\n' +
-            '  read_me:\n' +
-            '    a: f\n' +
-            '  do_not_read_me:\n' +
-            '    c: e\n';
+            'saved_someone_else_time:\n' +
+            '  subject: "asdf"\n';
         y.parseOutputFile(outputFileContents);
         var set = y.getTranslationSet();
         test.ok(set);
         //test.equal(set.getBySource('d', 'title@do_not_read_me'), undefined);
-        var r = set.getBy({reskey: 'c', context: 'title@do_not_read_me'});
+        var r = set.getBy({reskey: 'subject', context: 'saved_someone_else_time'});
         test.ok(r);
         test.equal(r.length, 1);
-        test.equal(r[0].getSource(), 'e');
+        test.equal(r[0].getSource(), 'Someone said a colleague’s answer to your question saved them a lot of time:');
         test.done();
     },
 
@@ -1893,8 +1837,8 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-                'a: foo\n' +
-                'b: bar\n');
+                'a: foobar\n' +
+                'b: barfoo\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -1906,13 +1850,13 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSource(), "foobar");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
 
-        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSource(), "barfoo");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
@@ -1932,8 +1876,8 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-                'a: foo\n' +
-                'b: bar\n');
+                'a: foobar\n' +
+                'b: barfoo\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -1945,13 +1889,13 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSource(), "foobar");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
 
-        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSource(), "barfoo");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
@@ -1971,8 +1915,8 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-                'a: foo\n' +
-                'b: bar\n');
+                'a: foobar\n' +
+                'b: barfoo\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -1984,14 +1928,14 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTarget(), "foobar");
         test.equal(r[0].getTargetLocale(), "es-US");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
 
-        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTarget(), "barfoo");
         test.equal(r[1].getTargetLocale(), "es-US");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
@@ -2013,8 +1957,8 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-                'a: foo\n' +
-                'b: bar\n');
+                'a: foobar\n' +
+                'b: barfoo\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -2026,13 +1970,13 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getSource(), "foo");
+        test.equal(r[0].getSource(), "foobar");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.equal(r[0].getFlavor(), "CHOCOLATE");
 
-        test.equal(r[1].getSource(), "bar");
+        test.equal(r[1].getSource(), "barfoo");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
         test.ok(!r[1].getContext());
@@ -2053,8 +1997,8 @@ module.exports = {
         test.ok(yml);
 
         yml.parse('---\n' +
-                'a: foo\n' +
-                'b: bar\n');
+                'a: foobar\n' +
+                'b: barfoo\n');
 
         var set = yml.getTranslationSet();
         test.ok(set);
@@ -2066,14 +2010,14 @@ module.exports = {
 
         test.equal(r.length, 2);
 
-        test.equal(r[0].getTarget(), "foo");
+        test.equal(r[0].getTarget(), "foobar");
         test.equal(r[0].getTargetLocale(), "en-ZA");
         test.equal(r[0].getSourceLocale(), "en-US");
         test.equal(r[0].getKey(), "a");
         test.ok(!r[0].getContext());
         test.ok(!r[0].getFlavor());
 
-        test.equal(r[1].getTarget(), "bar");
+        test.equal(r[1].getTarget(), "barfoo");
         test.equal(r[1].getTargetLocale(), "en-ZA");
         test.equal(r[1].getSourceLocale(), "en-US");
         test.equal(r[1].getKey(), "b");
