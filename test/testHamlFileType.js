@@ -182,13 +182,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new HamlFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/foo.en-ZA-DISCOVERY.html.haml"));
+        test.ok(!htf.handles("a/b/c/foo.en-ZA-ASDF.html.haml"));
 
         test.done();
     }

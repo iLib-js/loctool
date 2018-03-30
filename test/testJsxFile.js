@@ -236,7 +236,7 @@ module.exports = {
         test.ok(j);
 
         j.parse(
-            '    <Translate prefix={detail.name_prefix} last_name={detail.last_name}>\n" +
+            '    <Translate prefix={detail.name_prefix} last_name={detail.last_name}>\n' +
             '      We will notify you when [[prefix]] [[last_name]] accepts you as a friend!\n' +
             '    </Translate>\n'
         );
@@ -273,6 +273,27 @@ module.exports = {
         test.done();
     },
 
+    testJsxFileParseWithEmbeddedHTMLElements: function(test) {
+        test.expect(5);
+
+        var j = new JsxFile(p, undefined, jsft);
+        test.ok(j);
+
+        j.parse(
+            '    <Translate>We will <span class="foo">notify <br/>you</span> when your friend accepts you as a <b>friend</b>!</Translate>'
+        );
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource('We will <span class="foo">notify <br/>you</span> when your friend accepts you as a <b>friend</b>!');
+        test.ok(r);
+        test.equal(r.getSource(), 'We will <span class="foo">notify <br/>you</span> when your friend accepts you as a <b>friend</b>!');
+        test.equal(r.getKey(), 'We will <span class="foo">notify <br/>you</span> when your friend accepts you as a <b>friend</b>!');
+
+        test.done();
+    },
+
     testJsxFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
         test.expect(6);
 
@@ -280,6 +301,28 @@ module.exports = {
         test.ok(j);
 
         j.parse('\tconst x = (<Translate key="foobar">This is a test</Translate>); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBy({
+            reskey: "foobar"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "foobar");
+        test.equal(r[0].getComment(), "this is a translator's comment");
+
+        test.done();
+    },
+
+    testJsxFileParseSimpleWithUniqueIdAndTranslatorCommentParam: function(test) {
+        test.expect(6);
+
+        var j = new JsxFile(p, undefined, jsft);
+        test.ok(j);
+
+        j.parse('\tconst x = (<Translate key="foobar" comment="this is a translator\'s comment">This is a test</Translate>);\n\tfoo("This is not");');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -401,19 +444,13 @@ module.exports = {
         test.done();
     },
 
-    
-    
-    
-    
-    
-    
     testJsxFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
+        j.parse('<Translate>This is a test</Translate> { // i18n: foo\n\t}\n\t<Translate>This is another test</Translate>\n\t\t<Translate>This is also a test</Translate>\t{ /* i18n: bar */ }\n');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -439,7 +476,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
+        j.parse('<Translate key="asdf">This is a test</Translate> { /* i18n: foo */ }\n\t<Translate>This is another test</Translate>\n\t\t<Translate key="kdkdkd">This is also a test</Translate>\t { /* i18n: bar */ }\n');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -469,7 +506,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
+        j.parse('<Translate>This is a test</Translate>\n\t<Translate>This is another test.</Translate>\n\t\t<Translate>This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -490,7 +527,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
+        j.parse('<Translate>This is a test</Translate>\n\t<Translate>This is another test.</Translate>\n\t\t<Translate key="unique_id">This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -510,13 +547,13 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileParseBogusConcatenation: function(test) {
+    testJsxFileParseEmbeddedReplacement: function(test) {
         test.expect(2);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test" + " and this isnt");');
+        j.parse('<Translate>This is a {test} and this isnt</Translate>');
 
         var set = j.getTranslationSet();
 
@@ -525,13 +562,13 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileParseBogusConcatenation2: function(test) {
+    testJsxFileParseIncorrectEntities: function(test) {
         test.expect(2);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test" + foobar);');
+        j.parse('<Translate>This is a "test" and this isn\'t</Translate>');
 
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
@@ -545,7 +582,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString(foobar);');
+        j.parse('<Translate>{test}</Translate>');
 
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
@@ -559,87 +596,9 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString();');
+        j.parse('<Translate></Translate>');
 
         var set = j.getTranslationSet();
-        test.equal(set.size(), 0);
-
-        test.done();
-    },
-
-    testJsxFileParseWholeWord: function(test) {
-        test.expect(2);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse('EPIRB.getString("This is a test");');
-
-        var set = j.getTranslationSet();
-        test.equal(set.size(), 0);
-
-        test.done();
-    },
-
-    testJsxFileParseSubobject: function(test) {
-        test.expect(2);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse('App.RB.getString("This is a test");');
-
-        var set = j.getTranslationSet();
-        test.equal(set.size(), 1);
-
-        test.done();
-    },
-
-    testJsxFileParsePunctuationBeforeRB: function(test) {
-        test.expect(9);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse(
-            "        <%\n" +
-            "        var listsOver4 = false;\n" +
-            "        var seemoreLen = 0;\n" +
-            "        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Smart Watches')];\n" +
-            "        _.each(subcats, function(subcat, j){\n" +
-            "            var list = topic.attribute.kb_attribute_relationships[subcat] || [];\n" +
-            "            if (list.length > 0) {\n" +
-            "        %>\n");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        test.equal(set.size(), 2);
-
-        var r = set.getBySource("Personal");
-        test.ok(r);
-        test.equal(r.getSource(), "Personal");
-        test.equal(r.getKey(), "Personal");
-
-        r = set.getBySource("Smart Watches");
-        test.ok(r);
-        test.equal(r.getSource(), "Smart Watches");
-        test.equal(r.getKey(), "Smart Watches");
-
-        test.done();
-    },
-
-    testJsxFileParseEmptyString: function(test) {
-        test.expect(3);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("var subcats = [RB.getStringJS(''), RB.getString(''), RB.getStringJS('', 'foo'), RB.getStringJS('foo', '')];\n");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
         test.equal(set.size(), 0);
 
         test.done();
@@ -648,7 +607,7 @@ module.exports = {
     testJsxFileExtractFile: function(test) {
         test.expect(8);
 
-        var j = new JsxFile(p, "./js/t1.js", jsft);
+        var j = new JsxFile(p, "./js/t1.jsx", jsft);
         test.ok(j);
 
         // should read the file
@@ -673,37 +632,6 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileExtractTemplateFile: function(test) {
-        test.expect(11);
-
-        var j = new JsxFile(p, "./tmpl/topic_types.tmpl.html", jsft);
-        test.ok(j);
-
-        // should read the file
-        j.extract();
-
-        var set = j.getTranslationSet();
-
-        test.equal(set.size(), 4);
-
-        var r = set.getBySource("Hand-held Devices");
-        test.ok(r);
-        test.equal(r.getSource(), "Hand-held Devices");
-        test.equal(r.getKey(), "Hand-held Devices");
-
-        var r = set.getBySource("Tablets");
-        test.ok(r);
-        test.equal(r.getSource(), "Tablets");
-        test.equal(r.getKey(), "Tablets");
-
-        var r = set.getBySource("Smart Watches");
-        test.ok(r);
-        test.equal(r.getSource(), "Smart Watches");
-        test.equal(r.getKey(), "Smart Watches");
-
-        test.done();
-    },
-
     testJsxFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
@@ -723,7 +651,7 @@ module.exports = {
     testJsxFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var j = new JsxFile(p, "./java/foo.js", jsft);
+        var j = new JsxFile(p, "./java/foo.jsx", jsft);
         test.ok(j);
 
         // should attempt to read the file and not fail

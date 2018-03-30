@@ -148,13 +148,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new HTMLTemplateFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/foo.en-ZA-DISCOVERY.tmpl.html"));
+        test.ok(!htf.handles("a/b/c/foo.en-ZA-ASDF.tmpl.html"));
 
         test.done();
     }
