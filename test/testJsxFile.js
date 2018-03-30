@@ -45,7 +45,7 @@ module.exports = {
     testJsxFileConstructorParams: function(test) {
         test.expect(1);
 
-        var j = new JsxFile(p, "./testfiles/js/t1.js", jsft);
+        var j = new JsxFile(p, "./testfiles/js/t1.jsx", jsft);
 
         test.ok(j);
 
@@ -100,7 +100,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test")');
+        j.parse('<Translate>This is a test</Translate>")');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -119,7 +119,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getStringJS("This is a test")');
+        j.parse('<Translate>This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -128,63 +128,6 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
-
-        test.done();
-    },
-
-    testJsxFileParseSimpleSingleQuotes: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("RB.getString('This is a test')");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
-
-        test.done();
-    },
-
-    testJsxFileParseJSSimpleSingleQuotes: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("RB.getStringJS('This is a test')");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
-
-        test.done();
-    },
-
-    testJsxFileParseMoreComplexSingleQuotes: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("if (subcat == 'Has types') {title = RB.getString('Types of {topic}').format({topic: topic.attribute.name})}");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource("Types of {topic}");
-        test.ok(r);
-        test.equal(r.getSource(), "Types of {topic}");
-        test.equal(r.getKey(), "Types of {topic}");
 
         test.done();
     },
@@ -195,7 +138,28 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('   RB.getString  (    \t "This is a test"    );  ');
+        j.parse('   <Translate>    \t This is a test  </Translate>  ');
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+
+        test.done();
+    },
+
+    testJsxFileParseSimpleIgnoreReturnChars: function(test) {
+        test.expect(5);
+
+        var j = new JsxFile(p, undefined, jsft);
+        test.ok(j);
+
+        j.parse('   <Translate>\n' +
+                '     This is a test\n' + 
+                '   </Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -214,7 +178,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getStringJS("\t\t This \\n \n is \\\n\t a    test")');
+        j.parse('<Translate>\t\t This \\n \n is \\\n\t a    test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -236,7 +200,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
 
-        j.parse('RB.getString("This is a test")');
+        j.parse('<Translate>This is a test</Translate>');
 
         test.ok(set);
 
@@ -251,7 +215,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+        j.parse('<Translate>This is a test</Translate> { /* i18n: this is a translator\'s comment */ }\n\tfoo("This is not");');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -265,70 +229,46 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileParseSingleQuotesWithTranslatorComment: function(test) {
-        test.expect(6);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("\tRB.getString('This is a test'); // i18n: this is a translator\'s comment\n\tfoo('This is not');");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource("This is a test");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
-        test.equal(r.getComment(), "this is a translator's comment");
-
-        test.done();
-    },
-
-    testJsxFileParseSingleQuotesWithEmbeddedSingleQuotes: function(test) {
+    testJsxFileParseWithParameters: function(test) {
         test.expect(5);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse(
-            '    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a friend!\').format({\n' +
-            '        prefix: detail.name_prefix,\n' +
-            '        last_name: detail.last_name\n' +
-            '    });'
+            '    <Translate prefix={detail.name_prefix} last_name={detail.last_name}>\n" +
+            '      We will notify you when [[prefix]] [[last_name]] accepts you as a friend!\n' +
+            '    </Translate>\n'
         );
 
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a friend!");
+        var r = set.getBySource("We will notify you when {prefix} {last_name} accepts you as a friend!");
         test.ok(r);
-        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
-        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a friend!");
+        test.equal(r.getSource(), "We will notify you when {prefix} {last_name} accepts you as a friend!");
+        test.equal(r.getKey(), "We will notify you when {prefix} {last_name} accepts you as a friend!");
 
         test.done();
     },
 
-    testJsxFileParseSingleQuotesWithEmbeddedDoubleQuotes: function(test) {
+    testJsxFileParseWithEmbeddedEntities: function(test) {
         test.expect(5);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse(
-            '    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a friend!").format({\n' +
-            '        prefix: detail.name_prefix,\n' +
-            '        last_name: detail.last_name\n' +
-            '    });'
+            '    <Translate>We&apos;ll notify you when &quot;your friend&quot; accepts you as a friend!</Translate>'
         );
 
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a friend!');
+        var r = set.getBySource("We'll notify you when \"your friend\" accepts you as a friend!");
         test.ok(r);
-        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
-        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a friend!');
+        test.equal(r.getSource(), "We'll notify you when \"your friend\" accepts you as a friend!");
+        test.equal(r.getKey(), "We'll notify you when \"your friend\" accepts you as a friend!");
 
         test.done();
     },
@@ -339,7 +279,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+        j.parse('\tconst x = (<Translate key="foobar">This is a test</Translate>); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -351,90 +291,6 @@ module.exports = {
         test.equal(r[0].getSource(), "This is a test");
         test.equal(r[0].getKey(), "foobar");
         test.equal(r[0].getComment(), "this is a translator's comment");
-
-        test.done();
-    },
-
-    testJsxFileParseWithKey: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse('RB.getString("This is a test", "unique_id")');
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBy({
-            reskey: "unique_id"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "This is a test");
-        test.equal(r[0].getKey(), "unique_id");
-
-        test.done();
-    },
-
-    testJsxFileParseJSWithKey: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse('RB.getStringJS("This is a test", "unique_id")');
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBy({
-            reskey: "unique_id"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "This is a test");
-        test.equal(r[0].getKey(), "unique_id");
-
-        test.done();
-    },
-
-    testJsxFileParseWithKeySingleQuotes: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("RB.getString('This is a test', 'unique_id')");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBy({
-            reskey: "unique_id"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "This is a test");
-        test.equal(r[0].getKey(), "unique_id");
-
-        test.done();
-    },
-
-    testJsxFileParseJSWithKeySingleQuotes: function(test) {
-        test.expect(5);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse("RB.getStringJS('This is a test', 'unique_id')");
-
-        var set = j.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBy({
-            reskey: "unique_id"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "This is a test");
-        test.equal(r[0].getKey(), "unique_id");
 
         test.done();
     },
@@ -462,7 +318,9 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
+        j.parse('<Translate>This is a test</Translate>\n' +
+                '\t<Translate>This is another test</Translate>\n' +
+                '\t\t<Translate>This is also a test</Translate>;');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -486,7 +344,9 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
+        j.parse('<Translate key="x">This is a test<Translate>\n' +
+                '\t<Translate>This is another test</Translate>\n' +
+                '\t\t<Translate key="y">This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -516,7 +376,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test"), RB.getString("This is a second test"), RB.getString("This is a third test")');
+        j.parse('<Translate>This is a test</Translate> <Translate>This is a second test</Translate> <Translate>This is a third test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -541,6 +401,12 @@ module.exports = {
         test.done();
     },
 
+    
+    
+    
+    
+    
+    
     testJsxFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
