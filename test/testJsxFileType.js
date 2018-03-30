@@ -261,7 +261,7 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileTypeHandlesHamlAlreadyLocalizedWithFlavor: function(test) {
+    testJsxFileTypeHandlesJsxAlreadyLocalizedWithFlavor: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -274,7 +274,7 @@ module.exports = {
         var htf = new JsxFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/en-ZA-ASDF.html.haml"));
+        test.ok(!htf.handles("a/b/c/en-ZA-ASDF.jsx"));
 
         test.done();
     }
