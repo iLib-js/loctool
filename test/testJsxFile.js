@@ -1,7 +1,7 @@
 /*
- * testJavaScriptFile.js - test the JavaScript file handler object.
+ * testJsxFile.js - test the React jsx file handler object.
  *
- * Copyright © 2016-2017, HealthTap, Inc.
+ * Copyright © 2018, HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
  * limitations under the License.
  */
 
-if (!JavaScriptFile) {
-    var JavaScriptFile = require("../lib/JavaScriptFile.js");
-    var JavaScriptFileType = require("../lib/JavaScriptFileType.js");
+if (!JsxFile) {
+    var JsxFile = require("../lib/JsxFile.js");
+    var JsxFileType = require("../lib/JsxFileType.js");
     var WebProject =  require("../lib/WebProject.js");
 }
 
@@ -30,41 +30,41 @@ var p = new WebProject({
     locales:["en-GB"]
 });
 
-var jsft = new JavaScriptFileType(p);
+var jsft = new JsxFileType(p);
 
 module.exports = {
-    testJavaScriptFileConstructor: function(test) {
+    testJsxFileConstructor: function(test) {
         test.expect(1);
 
-        var j = new JavaScriptFile();
+        var j = new JsxFile();
         test.ok(j);
 
         test.done();
     },
 
-    testJavaScriptFileConstructorParams: function(test) {
+    testJsxFileConstructorParams: function(test) {
         test.expect(1);
 
-        var j = new JavaScriptFile(p, "./testfiles/js/t1.js", jsft);
+        var j = new JsxFile(p, "./testfiles/js/t1.js", jsft);
 
         test.ok(j);
 
         test.done();
     },
 
-    testJavaScriptFileConstructorNoFile: function(test) {
+    testJsxFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         test.done();
     },
 
-    testJavaScriptFileMakeKey: function(test) {
+    testJsxFileMakeKey: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         test.equal(j.makeKey("This is a test"), "This is a test");
@@ -72,10 +72,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleGetByKey: function(test) {
+    testJsxFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test")');
@@ -94,10 +94,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleGetBySource: function(test) {
+    testJsxFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test")');
@@ -113,10 +113,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseJSSimpleGetBySource: function(test) {
+    testJsxFileParseJSSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getStringJS("This is a test")');
@@ -132,10 +132,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleSingleQuotes: function(test) {
+    testJsxFileParseSimpleSingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("RB.getString('This is a test')");
@@ -151,10 +151,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseJSSimpleSingleQuotes: function(test) {
+    testJsxFileParseJSSimpleSingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("RB.getStringJS('This is a test')");
@@ -170,10 +170,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMoreComplexSingleQuotes: function(test) {
+    testJsxFileParseMoreComplexSingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("if (subcat == 'Has types') {title = RB.getString('Types of {topic}').format({topic: topic.attribute.name})}");
@@ -189,10 +189,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleIgnoreWhitespace: function(test) {
+    testJsxFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
@@ -208,10 +208,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseJSCompressWhitespaceInKey: function(test) {
+    testJsxFileParseJSCompressWhitespaceInKey: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getStringJS("\t\t This \\n \n is \\\n\t a    test")');
@@ -227,10 +227,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleRightSize: function(test) {
+    testJsxFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -245,10 +245,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleWithTranslatorComment: function(test) {
+    testJsxFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -265,10 +265,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSingleQuotesWithTranslatorComment: function(test) {
+    testJsxFileParseSingleQuotesWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("\tRB.getString('This is a test'); // i18n: this is a translator\'s comment\n\tfoo('This is not');");
@@ -285,10 +285,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSingleQuotesWithEmbeddedSingleQuotes: function(test) {
+    testJsxFileParseSingleQuotesWithEmbeddedSingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse(
@@ -309,10 +309,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSingleQuotesWithEmbeddedDoubleQuotes: function(test) {
+    testJsxFileParseSingleQuotesWithEmbeddedDoubleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse(
@@ -333,10 +333,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
+    testJsxFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
         test.expect(6);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -355,10 +355,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseWithKey: function(test) {
+    testJsxFileParseWithKey: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -376,10 +376,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseJSWithKey: function(test) {
+    testJsxFileParseJSWithKey: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getStringJS("This is a test", "unique_id")');
@@ -397,10 +397,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseWithKeySingleQuotes: function(test) {
+    testJsxFileParseWithKeySingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("RB.getString('This is a test', 'unique_id')");
@@ -418,10 +418,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseJSWithKeySingleQuotes: function(test) {
+    testJsxFileParseJSWithKeySingleQuotes: function(test) {
         test.expect(5);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("RB.getStringJS('This is a test', 'unique_id')");
@@ -439,10 +439,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseWithKeyCantGetBySource: function(test) {
+    testJsxFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -456,10 +456,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMultiple: function(test) {
+    testJsxFileParseMultiple: function(test) {
         test.expect(8);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
@@ -480,10 +480,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMultipleWithKey: function(test) {
+    testJsxFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
@@ -510,10 +510,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMultipleSameLine: function(test) {
+    testJsxFileParseMultipleSameLine: function(test) {
         test.expect(12);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test"), RB.getString("This is a second test"), RB.getString("This is a third test")');
@@ -541,10 +541,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMultipleWithComments: function(test) {
+    testJsxFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
@@ -567,10 +567,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseMultipleWithUniqueIdsAndComments: function(test) {
+    testJsxFileParseMultipleWithUniqueIdsAndComments: function(test) {
         test.expect(10);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
@@ -597,10 +597,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseWithDups: function(test) {
+    testJsxFileParseWithDups: function(test) {
         test.expect(6);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
@@ -618,10 +618,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseDupsDifferingByKeyOnly: function(test) {
+    testJsxFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
@@ -644,10 +644,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseBogusConcatenation: function(test) {
+    testJsxFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test" + " and this isnt");');
@@ -659,10 +659,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseBogusConcatenation2: function(test) {
+    testJsxFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString("This is a test" + foobar);');
@@ -673,10 +673,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseBogusNonStringParam: function(test) {
+    testJsxFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString(foobar);');
@@ -687,10 +687,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseEmptyParams: function(test) {
+    testJsxFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('RB.getString();');
@@ -701,10 +701,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseWholeWord: function(test) {
+    testJsxFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('EPIRB.getString("This is a test");');
@@ -715,10 +715,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseSubobject: function(test) {
+    testJsxFileParseSubobject: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse('App.RB.getString("This is a test");');
@@ -729,10 +729,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParsePunctuationBeforeRB: function(test) {
+    testJsxFileParsePunctuationBeforeRB: function(test) {
         test.expect(9);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse(
@@ -763,10 +763,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileParseEmptyString: function(test) {
+    testJsxFileParseEmptyString: function(test) {
         test.expect(3);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         j.parse("var subcats = [RB.getStringJS(''), RB.getString(''), RB.getStringJS('', 'foo'), RB.getStringJS('foo', '')];\n");
@@ -779,10 +779,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileExtractFile: function(test) {
+    testJsxFileExtractFile: function(test) {
         test.expect(8);
 
-        var j = new JavaScriptFile(p, "./js/t1.js", jsft);
+        var j = new JsxFile(p, "./js/t1.js", jsft);
         test.ok(j);
 
         // should read the file
@@ -807,10 +807,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileExtractTemplateFile: function(test) {
+    testJsxFileExtractTemplateFile: function(test) {
         test.expect(11);
 
-        var j = new JavaScriptFile(p, "./tmpl/topic_types.tmpl.html", jsft);
+        var j = new JsxFile(p, "./tmpl/topic_types.tmpl.html", jsft);
         test.ok(j);
 
         // should read the file
@@ -838,10 +838,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileExtractUndefinedFile: function(test) {
+    testJsxFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, undefined, jsft);
+        var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
         // should attempt to read the file and not fail
@@ -854,10 +854,10 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileExtractBogusFile: function(test) {
+    testJsxFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var j = new JavaScriptFile(p, "./java/foo.js", jsft);
+        var j = new JsxFile(p, "./java/foo.js", jsft);
         test.ok(j);
 
         // should attempt to read the file and not fail
