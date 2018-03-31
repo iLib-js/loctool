@@ -43,10 +43,10 @@ exports.run = function (files, options, callback) {
     console.log('pre { font: 11px Andale Mono; margin-left: 1em; padding-left: 1em; margin-top:0; font-size:smaller;}');
     console.log('.assertion_message { margin-left: 1em; }');
     console.log('  ol {' +
-    '	list-style: none;' +
-    '	margin-left: 1em;' +
-    '	padding-left: 1em;' +
-    '	text-indent: -1em;' +
+    '    list-style: none;' +
+    '    margin-left: 1em;' +
+    '    padding-left: 1em;' +
+    '    text-indent: -1em;' +
     '}');
     console.log('  ol li.pass:before { content: "\\2714 \\0020"; }');
     console.log('  ol li.fail:before { content: "\\2716 \\0020"; }');

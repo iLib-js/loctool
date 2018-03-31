@@ -168,7 +168,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getSource(), 
+        test.equal(r[2].getSource(),
                 'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
                 'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
                 'directly from experienced, successful entrepreneurs.\n');
@@ -239,7 +239,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getTarget(), 
+        test.equal(r[2].getTarget(),
                 'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
                 'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
                 'directly from experienced, successful entrepreneurs.\n');
@@ -261,6 +261,59 @@ module.exports = {
         test.equal(r[5].getTargetLocale(), "zh-Hans-CN");
         test.equal(r[5].getKey(), "test");
         test.equal(r[5].getContext(), "foo@bar@asdf");
+
+        test.done();
+    },
+
+    testYamlFileParseCustomizationFileWithFlavor: function(test) {
+        test.expect(19);
+
+        var yml = new YamlResourceFile({
+            project: p,
+            type: yft,
+            path: "config/customization/en-US-CHOCOLATE.yml"
+        });
+        test.ok(yml);
+
+        yml.parse(
+            '---\n' +
+            "en-US-CHOCOLATE:\n" +
+            '  r9834724545: Jobs\n' +
+            '  r9483762220: Our internship program\n' +
+            '  r6782977423: |\n' +
+            '    Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+            '    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+            '    directly from experienced, successful entrepreneurs.\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 3);
+
+        // locale is not special for this type of yml file, so it should appear in the context
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getSourceLocale(), "en-US");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.ok(!r[0].getContext());
+        test.equal(r[0].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getSourceLocale(), "en-US");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.ok(!r[1].getContext());
+        test.equal(r[1].getFlavor(), "CHOCOLATE");
+
+        test.equal(r[2].getSource(),
+            'Completing an internship at MyCompany gives you the opportunity to experience innovation\n' +
+            'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+            'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getSourceLocale(), "en-US");
+        test.equal(r[2].getKey(), "r6782977423");
+        test.ok(!r[2].getContext());
+        test.equal(r[2].getFlavor(), "CHOCOLATE");
 
         test.done();
     },
@@ -298,7 +351,7 @@ module.exports = {
         test.expect(14);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test.yml",
             type: yft
         });
@@ -361,7 +414,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./objc/en.lproj/asdf.yml",
             type: yft
         });
@@ -374,14 +427,14 @@ module.exports = {
 
         test.equal(set.size(), 0);
 
-        test.done();   
+        test.done();
     },
 
     testYamlResourceFileGetContent: function(test) {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./asdf.yml",
             locale: "de-DE",
             type: yft
@@ -408,7 +461,7 @@ module.exports = {
         });
 
         var expected =
-            'de-DE:\n' +
+            'de:\n' +
             '  more_source_text: mehr Quellen\"text\n' +
             '  source_text: Quellen\"text\n';
 
@@ -423,7 +476,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft
@@ -450,7 +503,7 @@ module.exports = {
         });
 
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
             "  '• &amp;nbsp; Hello, how are you': • &amp;nbsp; 你好吗\n";
 
@@ -465,7 +518,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft
@@ -492,7 +545,7 @@ module.exports = {
         });
 
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n" +
             "  short key: |-\n" +
             "    this is text that is relatively long and can run past the end of the page\n" +
@@ -509,7 +562,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./asdf.yml",
             locale: "de-DE",
             type: yft
@@ -525,7 +578,7 @@ module.exports = {
         test.expect(5);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test.yml",
             locale: "en-US",
             type: yft
@@ -550,7 +603,7 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -577,7 +630,7 @@ module.exports = {
         test.expect(7);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -604,7 +657,7 @@ module.exports = {
         test.expect(4);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./test2.yml",
             locale: "en-US",
             type: yft
@@ -628,7 +681,7 @@ module.exports = {
         test.expect(2);
 
         var yml = new YamlResourceFile({
-            project: p, 
+            project: p,
             pathName: "./zh.yml",
             locale: "zh-Hans-CN",
             type: yft
@@ -656,7 +709,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r003425245: short text\n" +
             "  r24524524524: |-\n" +
             "    this is text that is relatively long and can run past the end of the page\n" +
@@ -695,7 +748,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +
             "    other: 'There are %{count} tests'\n";
@@ -740,7 +793,7 @@ module.exports = {
 
         var actual = yml.getContent();
         var expected =
-            "zh-Hans-CN:\n" +
+            "zh:\n" +
             "  r003425245: short text\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +

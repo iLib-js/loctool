@@ -462,7 +462,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
         test.ok(rs);
@@ -496,7 +496,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
         test.ok(rs);
@@ -530,7 +530,7 @@ module.exports = {
 
         var rs = new ResourceString({
             key: "asdf",
-            source: "I color my checkbooks and localize them.", 
+            source: "I color my checkbooks and localize them.",
             pathName: "a/b/c.java"
         });
 
@@ -783,6 +783,40 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringEqualsDifferentFlavor: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+            project: "foo",
+            context: "blah",
+            sourceLocale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted",
+            flavor: "vanilla"
+        });
+
+        var ra2 = new ResourceString({
+            project: "foo",
+            context: "blah",
+            sourceLocale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "x.java",
+            comment: "asdf asdf asdf asdf asdf",
+            state: "done"
+        });
+
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
     testResourceStringEqualsIgnoreSomeFields: function(test) {
         test.expect(3);
 
@@ -852,7 +886,7 @@ module.exports = {
     testResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey("iosapp", "de-DE", "This is a test", "html"), "rs_iosapp_de-DE_This is a test_html");
+        test.equal(ResourceString.hashKey("iosapp", "de-DE", "This is a test", "html", "chocolate"), "rs_iosapp_de-DE_This is a test_html_chocolate");
 
         test.done();
     },
@@ -860,7 +894,7 @@ module.exports = {
     testResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined, undefined), "rs__de-DE__");
+        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined, undefined), "rs__de-DE___");
 
         test.done();
     },
@@ -880,7 +914,28 @@ module.exports = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "rs_iosapp_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "rs_iosapp_de-DE_This is a test_html_");
+
+        test.done();
+    },
+
+    testResourceStringHashKeyWithFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            project: "iosapp",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            target: "Dies ist einen Test.",
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java",
+            datatype: "html",
+            flavor: "chocolate"
+        });
+        test.ok(rs);
+
+        test.equal(rs.hashKey(), "rs_iosapp_de-DE_This is a test_html_chocolate");
 
         test.done();
     },
@@ -898,7 +953,7 @@ module.exports = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "rs_iosapp_en-US_This is a test_html");
+        test.equal(rs.hashKey(), "rs_iosapp_en-US_This is a test_html_");
 
         test.done();
     },
@@ -1003,7 +1058,7 @@ module.exports = {
         test.expect(1);
 
         test.equal(IosLayoutResourceString.hashKey("iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test_");
-        
+
         test.done();
     },
 

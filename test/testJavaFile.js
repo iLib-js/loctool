@@ -26,11 +26,11 @@ if (!JavaFile) {
 }
 
 var p = new AndroidProject({
-	id: "webapp",
-	sourceLocale: "en-US",
-	pseudoLocale: "de-DE"
+    id: "webapp",
+    sourceLocale: "en-US",
+    pseudoLocale: "de-DE"
 }, "./testfiles", {
-	locales:["en-GB"]
+    locales:["en-GB"]
 });
 
 var jft = new JavaFileType(p);
@@ -41,17 +41,17 @@ module.exports = {
 
         var j = new JavaFile(p);
         test.ok(j);
-        
+
         test.done();
     },
-    
+
     testJavaFileConstructorParams: function(test) {
         test.expect(1);
 
         var j = new JavaFile(p, "./testfiles/java/t1.java", jft);
-        
+
         test.ok(j);
-        
+
         test.done();
     },
 
@@ -60,7 +60,7 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         test.done();
     },
 
@@ -69,9 +69,9 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         test.equal(j.makeKey("This is a test"), "r654479252");
-        
+
         test.done();
     },
 
@@ -82,12 +82,12 @@ module.exports = {
         test.ok(j);
 
         test.equals(j.makeKey("Preferences in your profile"), "r372802078");
-		test.equals(j.makeKey("All settings"), "r725930887");
-		test.equals(j.makeKey("Colour scheme"), "r734599412");
-		test.equals(j.makeKey("Experts"), "r343852585");
-        
+        test.equals(j.makeKey("All settings"), "r725930887");
+        test.equals(j.makeKey("Colour scheme"), "r734599412");
+        test.equals(j.makeKey("Experts"), "r343852585");
+
         test.done();
-	},
+    },
 
     testJavaFileMakeKeyUnescaped: function(test) {
         test.expect(5);
@@ -97,28 +97,28 @@ module.exports = {
 
         test.equals(j.makeKey("foo \\n \\t bar"), "r1056543475");
         test.equals(j.makeKey("\\n \\t bar"), "r755240053");
-		test.equals(j.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
-		test.equals(j.makeKey("\\'Dude\\'"), "r6259609");
-		
-        test.done();
-	},
+        test.equals(j.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
+        test.equals(j.makeKey("\\'Dude\\'"), "r6259609");
 
-	testJavaFileMakeKeySimpleTexts2: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
-        
+
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Procedures"), "r807691021");
-		test.equals(j.makeKey("Mobile Apps"), "r898923204");
-		test.equals(j.makeKey("Settings in your profile"), "r618035987");
-		test.equals(j.makeKey("Product Reviews"), "r175350918");
-		test.equals(j.makeKey("Answers"), "r221604632");
-        
-        test.done();
-	},
+        test.equals(j.makeKey("Mobile Apps"), "r898923204");
+        test.equals(j.makeKey("Settings in your profile"), "r618035987");
+        test.equals(j.makeKey("Product Reviews"), "r175350918");
+        test.equals(j.makeKey("Answers"), "r221604632");
 
-	testJavaFileMakeKeySimpleTexts3: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeySimpleTexts3: function(test) {
         test.expect(9);
 
         var j = new JavaFile(p, undefined, jft);
@@ -134,64 +134,64 @@ module.exports = {
         test.equals(j.makeKey("Questions"), "r256277957");
 
         test.done();
-	},
+    },
 
-	testJavaFileMakeKeyEscapes: function(test) {
+    testJavaFileMakeKeyEscapes: function(test) {
         test.expect(3);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("Can\'t find id"), "r743945592");
-		test.equals(j.makeKey("Can\'t find an application for SMS"), "r909283218");
-        
+        test.equals(j.makeKey("Can\'t find an application for SMS"), "r909283218");
+
         test.done();
-	},
-	
-	testJavaFileMakeKeyPunctuation: function(test) {
+    },
+
+    testJavaFileMakeKeyPunctuation: function(test) {
         test.expect(8);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
 
         test.equals(j.makeKey("{name}({generic_name})"), "r300446104");
-		test.equals(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
-		test.equals(j.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
-		test.equals(j.makeKey("Grow your Network"), "r895214324");
-		test.equals(j.makeKey("Failed to send connection request!"), "r1015770123");
-		test.equals(j.makeKey("{goal_name} Goals"), "r993422001");
-		test.equals(j.makeKey("Connection link copied!"), "r180897411");
-        
+        test.equals(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
+        test.equals(j.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
+        test.equals(j.makeKey("Grow your Network"), "r895214324");
+        test.equals(j.makeKey("Failed to send connection request!"), "r1015770123");
+        test.equals(j.makeKey("{goal_name} Goals"), "r993422001");
+        test.equals(j.makeKey("Connection link copied!"), "r180897411");
+
         test.done();
-	},
+    },
 
     testJavaFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         test.equal(j.makeKey("This is a test"), "r654479252");
         test.equal(j.makeKey("This is a test"), "r654479252");
-        
+
         test.done();
     },
-    
+
     testJavaFileMakeKeyCompressWhiteSpace: function(test) {
         test.expect(5);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         test.equal(j.makeKey("Can\'t find  id"), "r743945592");
-		test.equal(j.makeKey("Can\'t    find               id"), "r743945592");
-		
-		test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
-		test.equal(j.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
-        
+        test.equal(j.makeKey("Can\'t    find               id"), "r743945592");
+
+        test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
+        test.equal(j.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
+
         test.done();
-	},
-	
+    },
+
     testJavaFileMakeKeyTrimWhiteSpace: function(test) {
         test.expect(5);
 
@@ -200,14 +200,14 @@ module.exports = {
 
         test.equal(j.makeKey("Can\'t find  id"), "r743945592");
         test.equal(j.makeKey("      Can\'t find  id "), "r743945592");
-		
+
         test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
         test.equal(j.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");
 
-		test.done();
-	},
+        test.done();
+    },
 
-	testJavaFileMakeKeyNewLines: function(test) {
+    testJavaFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
@@ -215,11 +215,11 @@ module.exports = {
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(jf.makeKey("A \n B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyEscapeN: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyEscapeN: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
@@ -227,88 +227,88 @@ module.exports = {
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(jf.makeKey("A \\n B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyTabs: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyTabs: function(test) {
         test.expect(2);
-        
+
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \t B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyEscapeT: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyEscapeT: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\t B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyQuotes: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\'B\\' C"), "r935639115");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("\\u00A0 \\u0023"), "r2293235");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"), "r969175354");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\40 \\011 B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyJavaEscapeSequences: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyJavaEscapeSequences: function(test) {
         test.expect(2);
 
         var jf = new JavaFile(p);
         test.ok(jf);
 
         test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
-        
-        test.done();
-	},
 
-	testJavaFileMakeKeyCheckRubyCompatibility: function(test) {
+        test.done();
+    },
+
+    testJavaFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(13);
 
         var jf = new JavaFile(p);
@@ -326,27 +326,27 @@ module.exports = {
         test.equals(jf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
         test.equals(jf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
         test.equals(jf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
-        
+
         test.done();
-	},
-	
+    },
+
     testJavaFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "r654479252", "java"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -355,17 +355,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -374,14 +374,14 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -390,17 +390,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -409,17 +409,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -428,17 +428,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("Try a Virtual Consult ›");
         test.ok(r);
         test.equal(r.getSource(), "Try a Virtual Consult ›");
         test.equal(r.getKey(), "r682432029");
-        
+
         test.done();
     },
 
@@ -447,17 +447,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -472,11 +472,11 @@ module.exports = {
         test.equal(set.size(), 0);
 
         j.parse('RB.getString("This is a test")');
-        
+
         test.ok(set);
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -485,18 +485,18 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "this is a translator's comment");
-        
+
         test.done();
     },
 
@@ -505,18 +505,18 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "foobar", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "foobar");
         test.equal(r.getComment(), "this is a translator's comment");
-        
+
         test.done();
     },
 
@@ -525,17 +525,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('\tRB.getString("This is a \\\"test\\\".");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a \"test\".");
         test.ok(r);
         test.equal(r.getSource(), "This is a \"test\".");
         test.equal(r.getKey(), "r446151779");
-        
+
         test.done();
     },
 
@@ -544,17 +544,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('\tRB.getString("This is a \\\'test\\\'.");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a 'test'.");
         test.ok(r);
         test.equal(r.getSource(), "This is a 'test'.");
         test.equal(r.getKey(), "r531222461");
-        
+
         test.done();
     },
 
@@ -563,17 +563,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('\tRB.getString("This is a \'test\'.");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a 'test'.");
         test.ok(r);
         test.equal(r.getSource(), "This is a 'test'.");
         test.equal(r.getKey(), "r531222461");
-        
+
         test.done();
     },
 
@@ -582,17 +582,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test", "unique_id")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
-        
+
         test.done();
     },
 
@@ -601,17 +601,17 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
-        
+
         test.done();
     },
 
@@ -620,15 +620,15 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test", "unique_id")');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(!r);
-        
+
         test.done();
     },
 
@@ -637,22 +637,22 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
-        
+
         test.done();
     },
 
@@ -661,24 +661,24 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "x", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "x");
-        
+
         r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "y", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "y");
-        
+
         test.done();
     },
 
@@ -687,22 +687,22 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(r.getAutoKey());
-        
+
         r = set.getBySource("This is another test");
         test.ok(r);
         test.equal(r.getSource(), "This is another test");
         test.ok(r.getAutoKey());
-        
+
         test.done();
     },
 
@@ -711,24 +711,24 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "foo");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
         test.equal(r.getComment(), "bar");
-        
+
         test.done();
     },
 
@@ -737,24 +737,24 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "asdf", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "asdf");
         test.equal(r.getComment(), "foo");
-        
+
         r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "kdkdkd", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "kdkdkd");
         test.equal(r.getComment(), "bar");
-        
+
         test.done();
     },
 
@@ -763,19 +763,19 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -784,22 +784,22 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
-        
+
         var set = j.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
-        
+
         test.done();
     },
 
@@ -808,13 +808,13 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test" + " and this isnt");');
-        
+
         var set = j.getTranslationSet();
 
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -823,12 +823,12 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString("This is a test" + foobar);');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -837,12 +837,12 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString(foobar);');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -851,12 +851,12 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('RB.getString();');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -865,26 +865,26 @@ module.exports = {
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('EPIRB.getString("This is a test");');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
     testJavaFileParseSubobject: function(test) {
         test.expect(2);
-        
+
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         j.parse('App.RB.getString("This is a test");');
-        
+
         var set = j.getTranslationSet();
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -893,38 +893,38 @@ module.exports = {
 
         var j = new JavaFile(p, "./java/t1.java", jft);
         test.ok(j);
-        
+
         // should read the file
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 2);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "id1", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
         test.equal(r.getKey(), "id1");
-        
+
         test.done();
     },
-    
+
     testJavaFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
         var j = new JavaFile(p, undefined, jft);
         test.ok(j);
-        
+
         // should attempt to read the file and not fail
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -935,12 +935,12 @@ module.exports = {
 
         var j = new JavaFile(p, "./java/foo.java", jft);
         test.ok(j);
-        
+
         // should attempt to read the file and not fail
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -951,24 +951,24 @@ module.exports = {
 
         var j = new JavaFile(p, "./java/AskPickerSearchFragment.java", jft);
         test.ok(j);
-        
+
         // should read the file
         j.extract();
-        
+
         var set = j.getTranslationSet();
-        
+
         test.equal(set.size(), 3);
-        
+
         var r = set.getBySource("Can't find a group?");
         test.ok(r);
         test.equal(r.getSource(), "Can't find a group?");
         test.equal(r.getKey(), "r315749545");
-        
+
         r = set.getBySource("Can't find a friend?");
         test.ok(r);
         test.equal(r.getSource(), "Can't find a friend?");
         test.equal(r.getKey(), "r23431269");
-        
+
         r = set.getBySource("Invite them to Myproduct");
         test.ok(r);
         test.equal(r.getSource(), "Invite them to Myproduct");
