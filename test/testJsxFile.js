@@ -78,7 +78,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test")');
+        j.parse('<Translate>This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -186,7 +186,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "\t\t This \\n \n is \t a    test");
+        test.equal(r.getKey(), "This is a test");
 
         test.done();
     },
@@ -344,7 +344,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('RB.getString("This is a test", "unique_id")');
+        j.parse('<Translate key="unique_id">This is a test</Translate>');
 
         var set = j.getTranslationSet();
         test.ok(set);
@@ -387,7 +387,7 @@ module.exports = {
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('<Translate key="x">This is a test<Translate>\n' +
+        j.parse('<Translate key="x">This is a test</Translate>\n' +
                 '\t<Translate>This is another test</Translate>\n' +
                 '\t\t<Translate key="y">This is a test</Translate>');
 
@@ -409,6 +409,19 @@ module.exports = {
         test.equal(r[0].getSource(), "This is a test");
         test.ok(!r[0].getAutoKey());
         test.equal(r[0].getKey(), "y");
+
+        test.done();
+    },
+
+    testJsxFileParseNestedTranslate: function(test) {
+        test.expect(2);
+
+        var j = new JsxFile(p, undefined, jsft);
+        test.ok(j);
+
+        test.throws(function() {
+            j.parse('<Translate key="x">This is a test <Translate>This is another test</Translate> This is a test</Translate>');
+        });
 
         test.done();
     },
@@ -516,7 +529,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
 
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
 
         test.done();
     },
@@ -548,41 +561,31 @@ module.exports = {
     },
 
     testJsxFileParseEmbeddedReplacement: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('<Translate>This is a {test} and this isnt</Translate>');
+        test.throws(function() {
+            j.parse('<Translate>This is a {test} and this isnt</Translate>');
+        });
 
         var set = j.getTranslationSet();
 
-        test.equal(set.size(), 0);
-
-        test.done();
-    },
-
-    testJsxFileParseIncorrectEntities: function(test) {
-        test.expect(2);
-
-        var j = new JsxFile(p, undefined, jsft);
-        test.ok(j);
-
-        j.parse('<Translate>This is a "test" and this isn\'t</Translate>');
-
-        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
 
         test.done();
     },
 
     testJsxFileParseBogusNonStringParam: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var j = new JsxFile(p, undefined, jsft);
         test.ok(j);
 
-        j.parse('<Translate>{test}</Translate>');
+        test.throws(function() {
+            j.parse('<Translate>[[test]]</Translate>');
+        });
 
         var set = j.getTranslationSet();
         test.equal(set.size(), 0);
