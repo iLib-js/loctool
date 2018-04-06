@@ -125,7 +125,7 @@ module.exports = {
 
         var pseudo = PseudoFactory({
             project: project,
-            targetLocale: "en-GB-BUPA",
+            targetLocale: "en-GB-ASDF",
             type: "text"
         });
         test.ok(pseudo);
@@ -139,7 +139,7 @@ module.exports = {
 
         var pseudo = PseudoFactory({
             project: project,
-            targetLocale: "en-NZ-BUPA",
+            targetLocale: "en-NZ-ASDF",
             type: "text"
         });
         test.ok(pseudo);
@@ -167,7 +167,7 @@ module.exports = {
 
         var pseudo = PseudoFactory({
             project: project,
-            targetLocale: "zh-Hant-HK-QHMS",
+            targetLocale: "zh-Hant-HK-ASDF",
             type: "text"
         });
         test.ok(pseudo);
@@ -195,7 +195,7 @@ module.exports = {
 
         var pseudo = PseudoFactory({
             project: project,
-            targetLocale: "ps-DO-DISCOVERY",
+            targetLocale: "ps-DO-ASDF",
             type: "text"
         });
         test.ok(pseudo);
@@ -263,6 +263,102 @@ module.exports = {
             type: "text"
         });
         test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishEnglish: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-GB"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglish1: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-AU"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglish2: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-NZ"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglish3: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-HK"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglish4: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-ZA"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglish5: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-CA"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleChineseTrad: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("zh-Hant-HK"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishEnglishWithFlavor: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-GB-ASDF"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleBritishLikeEnglishWithFlavor1: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("en-AU-ASDF"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleChineseTradWithFlavor: function(test) {
+        test.expect(1);
+
+        test.ok(PseudoFactory.isPseudoLocale("zh-Hant-HK-ASDF"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleNoPseudo: function(test) {
+        test.expect(1);
+
+        test.ok(!PseudoFactory.isPseudoLocale("es-US"));
+
+        test.done();
+    },
+
+    testPseudoFactoryIsPseudoLocaleNoPseudoSourceLocale: function(test) {
+        test.expect(1);
+
+        test.ok(!PseudoFactory.isPseudoLocale("en-US"));
 
         test.done();
     }
