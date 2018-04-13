@@ -444,6 +444,8 @@ module.exports = {
         [
             new ContextResourceString({
                 project: "webapp",
+                sourceLocale: "en-US",
+                source: "source\"text",
                 targetLocale: "de-DE",
                 key: "source_text",
                 target: "Quellen\"text",
@@ -451,6 +453,8 @@ module.exports = {
             }),
             new ContextResourceString({
                 project: "webapp",
+                sourceLocale: "en-US",
+                source: "more source\"text",
                 targetLocale: "de-DE",
                 key: "more_source_text",
                 target: "mehr Quellen\"text",
@@ -486,16 +490,18 @@ module.exports = {
         [
             new ContextResourceString({
                 project: "webapp",
+                source: "• &amp;nbsp; Hello, how are you",
                 targetLocale: "zh-Hans-CN",
                 key: "• &amp;nbsp; Hello, how are you",
-                source: "• &amp;nbsp; 你好吗",
+                target: "• &amp;nbsp; 你好吗",
                 comment: " "
             }),
             new ContextResourceString({
                 project: "webapp",
+                source: "&apos;&#41;, url&#40;imgs/masks/top_bar",
                 targetLocale: "zh-Hans-CN",
                 key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
-                source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
+                target: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
                 comment: "bar"
             })
         ].forEach(function(res) {
@@ -528,6 +534,7 @@ module.exports = {
         [
             new ContextResourceString({
                 project: "webapp",
+                source: "short key",
                 targetLocale: "zh-Hans-CN",
                 key: "short key",
                 target: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
@@ -535,6 +542,7 @@ module.exports = {
             }),
             new ContextResourceString({
                 project: "webapp",
+                source: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
                 targetLocale: "zh-Hans-CN",
                 key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
                 target: "short text",
@@ -691,6 +699,7 @@ module.exports = {
         [
             new ContextResourceString({
                 project: "webapp",
+                source: "foo",
                 targetLocale: "zh-Hans-CN",
                 key: "r24524524524",
                 target: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
@@ -698,6 +707,7 @@ module.exports = {
             }),
             new ContextResourceString({
                 project: "webapp",
+                source: "bar",
                 targetLocale: "zh-Hans-CN",
                 key: "r003425245",
                 target: "short text",
@@ -772,6 +782,10 @@ module.exports = {
         [
             new ResourcePlural({
                 project: "webapp",
+                sourceStrings: {
+                    'one': 'one',
+                    'other': 'other'
+                },
                 targetLocale: "zh-Hans-CN",
                 comment: "",
                 key: 'r186608186',
@@ -782,6 +796,7 @@ module.exports = {
             }),
             new ContextResourceString({
                 project: "webapp",
+                source: "foo",
                 targetLocale: "zh-Hans-CN",
                 key: "r003425245",
                 target: "short text",

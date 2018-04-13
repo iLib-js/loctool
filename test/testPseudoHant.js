@@ -33,6 +33,7 @@ module.exports = {
 
         var ph = new PseudoHant({
             set: translations,
+            sourceLocale: "zh-Hans-CN",
             targetLocale: "zh-Hant-HK"
         });
 

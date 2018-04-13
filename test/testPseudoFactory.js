@@ -50,6 +50,20 @@ module.exports = {
         test.done();
     },
 
+    testPseudoFactoryBritishEnglishRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US");
+
+        test.done();
+    },
+
     testPseudoFactoryBritishLikeEnglish1: function(test) {
         test.expect(2);
 
@@ -148,6 +162,20 @@ module.exports = {
         test.done();
     },
 
+    testPseudoFactoryBritishLikeEnglishWithFlavorRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "en-NZ-ASDF",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US-ASDF");
+
+        test.done();
+    },
+
     testPseudoFactoryChineseTraditional: function(test) {
         test.expect(2);
 
@@ -158,6 +186,20 @@ module.exports = {
         });
         test.ok(pseudo);
         test.ok(pseudo instanceof PseudoHant);
+
+        test.done();
+    },
+
+    testPseudoFactoryChineseTraditionalRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "zh-Hant-HK",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "zh-Hans-CN");
 
         test.done();
     },
@@ -176,6 +218,20 @@ module.exports = {
         test.done();
     },
 
+    testPseudoFactoryChineseTraditionalWithFlavorRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "zh-Hant-HK-ASDF",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "zh-Hans-CN-ASDF");
+
+        test.done();
+    },
+
     testPseudoFactoryNormalPseudo: function(test) {
         test.expect(2);
 
@@ -190,6 +246,20 @@ module.exports = {
         test.done();
     },
 
+    testPseudoFactoryNormalPseudoRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "ps-DO",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US");
+
+        test.done();
+    },
+
     testPseudoFactoryNormalPseudoWithFlavor: function(test) {
         test.expect(2);
 
@@ -200,6 +270,20 @@ module.exports = {
         });
         test.ok(pseudo);
         test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryNormalPseudoWithFlavorRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project,
+            targetLocale: "ps-DO-ASDF",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US-ASDF");
 
         test.done();
     },

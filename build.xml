@@ -508,7 +508,7 @@ limitations under the License.
     </target>
 
     <target name="debug.pseudofactory" description="Debug only the tests for the PseudoFactory object">
-        <debug script="${build.test}/testPseudoFactory" dir="${build.test}"/>
+        <debug script="${build.test}/testPseudoFactory.js" dir="${build.test}"/>
     </target>
 
 	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory">
