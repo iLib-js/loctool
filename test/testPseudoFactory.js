@@ -191,7 +191,7 @@ module.exports = {
     },
 
     testPseudoFactoryChineseTraditionalRightSourceLocale: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var pseudo = PseudoFactory({
             project: project,
@@ -199,7 +199,8 @@ module.exports = {
             type: "text"
         });
         test.ok(pseudo);
-        test.equal(pseudo.getSourceLocale(), "zh-Hans-CN");
+        test.equal(pseudo.getSourceLocale(), "en-US");
+        test.equal(pseudo.getPseudoSourceLocale(), "zh-Hans-CN");
 
         test.done();
     },
@@ -219,7 +220,7 @@ module.exports = {
     },
 
     testPseudoFactoryChineseTraditionalWithFlavorRightSourceLocale: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var pseudo = PseudoFactory({
             project: project,
@@ -227,7 +228,8 @@ module.exports = {
             type: "text"
         });
         test.ok(pseudo);
-        test.equal(pseudo.getSourceLocale(), "zh-Hans-CN-ASDF");
+        test.equal(pseudo.getSourceLocale(), "en-US-ASDF");
+        test.equal(pseudo.getPseudoSourceLocale(), "zh-Hans-CN-ASDF");
 
         test.done();
     },
