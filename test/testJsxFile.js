@@ -158,7 +158,7 @@ module.exports = {
         test.ok(j);
 
         j.parse('   <Translate>\n' +
-                '     This is a test\n' + 
+                '     This is a test\n' +
                 '   </Translate>');
 
         var set = j.getTranslationSet();
