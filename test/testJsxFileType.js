@@ -170,7 +170,7 @@ module.exports = {
         var htf = new JsxFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.en-GB.js"));
+        test.ok(htf.handles("a/b/c/strings.en-GB.js"));
 
         test.done();
     },
@@ -226,7 +226,7 @@ module.exports = {
         test.done();
     },
 
-    testJsxFileTypeHandlesJSAlreadyLocalizedCN: function(test) {
+    testJsxFileTypeHandlesJSAlreadyLocalizedCN1: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -238,7 +238,24 @@ module.exports = {
         var htf = new JsxFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.js"));
+        test.ok(htf.handles("a/b/c/strings.zh-Hans-CN.js"));
+
+        test.done();
+    },
+
+    testJsxFileTypeHandlesJSAlreadyLocalizedCN2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new JsxFileType(p);
+        test.ok(htf);
+
+        test.ok(!htf.handles("a/b/c/zh-Hans-CN.js"));
 
         test.done();
     },
@@ -256,7 +273,7 @@ module.exports = {
         var htf = new JsxFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.en-ZA-ASDF.js"));
+        test.ok(htf.handles("a/b/c/strings.en-ZA-ASDF.js"));
 
         test.done();
     },
