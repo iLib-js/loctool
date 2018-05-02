@@ -191,5 +191,23 @@ module.exports = {
         test.ok(!htf.handles("a/b/c/foo.en-ZA-ASDF.html.haml"));
 
         test.done();
+    },
+    
+    testHamlFileTypeHandlesAlreadyLocalizedHKWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new HamlFileType(p);
+        test.ok(htf);
+
+        test.ok(!htf.handles("a/b/c/foo.zh-Hant-HK-ASDF.html.haml"));
+
+        test.done();
     }
 };

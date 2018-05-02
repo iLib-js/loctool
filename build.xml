@@ -503,6 +503,14 @@ limitations under the License.
 		<debug script="${build.test}/testWebProject.js" dir="${build.test}"/>
 	</target>
 
+    <target name="test.pseudofactory" description="Run only the tests for the PseudoFactory object">
+        <run script="${build.test}/testPseudoFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.pseudofactory" description="Debug only the tests for the PseudoFactory object">
+        <debug script="${build.test}/testPseudoFactory.js" dir="${build.test}"/>
+    </target>
+
     <target name="test.jsxfile" description="Run only the jsx file tests">
         <run script="${build.test}/testJsxFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
     </target>
@@ -511,15 +519,8 @@ limitations under the License.
         <debug script="${build.test}/testJsxFile.js" dir="${build.test}"/>
     </target>
 
-    <target name="test.jsxfiletype" description="Run only the tests for the jsx file type">
-        <run script="${build.test}/testJsxFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
-    </target>
 
-    <target name="debug.jsxfiletype" description="Debug only the tests for the jsx file type">
-        <debug script="${build.test}/testJsxFileType.js" dir="${build.test}"/>
-    </target>
-
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.jsxfile,test.jsxfiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype">
 	</target>
 
 	<macrodef name="runsql">
