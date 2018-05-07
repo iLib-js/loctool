@@ -428,7 +428,32 @@ module.exports = {
         test.equal(jsrf.getResourceFilePath(), "localized_js/de.js");
         test.done();
     },
-    
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageNoDefaultAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de-DE.js");
+        test.done();
+    },
+
     testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguage: function(test) {
         test.expect(2);
 
@@ -616,7 +641,32 @@ module.exports = {
         test.equal(jsrf.getResourceFilePath(), "localized_js/zh.js");
         test.done();
     },
-    
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZHNoDefaultsAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-CN"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh-Hans-CN.js");
+        test.done();
+    },
+
     testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZH: function(test) {
         test.expect(2);
 
@@ -928,6 +978,72 @@ module.exports = {
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_de = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocaleNoDefaultsAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the full locale spec in the first line
+        var expected =
+            'ilib.data.strings_de_DE = {\n' +
             '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
