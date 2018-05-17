@@ -63,13 +63,7 @@
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
         "build-gradle-reader": "*",
-        "micromatch": ">=3.1.0",
-
-        "hoek": "^4.0.1",
-        "joi": "^9.0.4"
-    },
-    "devDependencies": {
-        "nodeunit": "0.10.2"
+        "micromatch": ">=3.1.0"
     },
     "devDependencies": {
         "nodeunit": "0.11.2"
