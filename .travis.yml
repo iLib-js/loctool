@@ -8,12 +8,14 @@ addons:
     packages:
       - g++-4.8
 node_js:
-  - "4"
   - "6"
+  - "8"
+  - "9"
+  - "10"
 compiler:
   - gcc
 install:
-  - npm install node-expat opencc
+  - npm install
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
