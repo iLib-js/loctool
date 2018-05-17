@@ -136,13 +136,13 @@ module.exports = {
             }
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var yft = new YamlFileType(p);
         test.ok(yft);
 
-        test.ok(!yft.handles("en-ZA-DISCOVERY.yml"));
+        test.ok(!yft.handles("en-ZA-ASDF.yml"));
 
         test.done();
     },
@@ -179,13 +179,13 @@ module.exports = {
             }
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var yft = new YamlFileType(p);
         test.ok(yft);
 
-        test.ok(!yft.handles("a/b/en-ZA-DISCOVERY.yml"));
+        test.ok(!yft.handles("a/b/en-ZA-ASDF.yml"));
 
         test.done();
     },
@@ -240,13 +240,13 @@ module.exports = {
             }
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var yft = new YamlFileType(p);
         test.ok(yft);
 
-        test.ok(!yft.handles("config/locales/auto/en-ZA-DISCOVERY.yml"));
+        test.ok(!yft.handles("config/locales/auto/en-ZA-ASDF.yml"));
 
         test.done();
     },
