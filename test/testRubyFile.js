@@ -935,6 +935,32 @@ module.exports = {
         test.done();
     },
 
+    testRubyFileParseIgnoreBraces: function(test) {
+        test.expect(7);
+
+        var rf = new RubyFile({
+            project: p,
+            type: rft
+        });
+        test.ok(rf);
+
+        rf.parse('Rb.t("asdf asdfs{/link}")');
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+
+        test.ok(r);
+        test.equal(r.getSource(), "asdf asdfs{/link}");
+        test.equal(r.getKey(), "r23430520");
+
+        test.equal(set.size(), 1);
+
+        test.done();
+    },
+
     testRubyFileExtractFile: function(test) {
         test.expect(8);
 

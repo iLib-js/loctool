@@ -148,13 +148,31 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new HTMLTemplateFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/foo.en-ZA-DISCOVERY.tmpl.html"));
+        test.ok(!htf.handles("a/b/c/foo.en-ZA-ASDF.tmpl.html"));
+
+        test.done();
+    },
+
+    testHTMLTemplateFileTypeHandleszhHKAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new HTMLTemplateFileType(p);
+        test.ok(htf);
+
+        test.ok(!htf.handles("a/b/c/foo.zh-Hant-HK-ASDF.tmpl.html"));
 
         test.done();
     }

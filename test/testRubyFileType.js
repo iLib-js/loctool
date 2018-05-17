@@ -233,13 +233,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var rf = new RubyFileType(p);
         test.ok(rf);
 
-        test.ok(!rf.handles("app/views/who_we_are/press.en-ZA-DISCOVERY.html.haml"));
+        test.ok(!rf.handles("app/views/who_we_are/press.en-ZA-ASDF.html.haml"));
 
         test.done();
     }

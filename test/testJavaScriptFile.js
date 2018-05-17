@@ -1,4 +1,4 @@
-    /*
+/*
  * testJavaScriptFile.js - test the JavaScript file handler object.
  *
  * Copyright © 2016-2017, HealthTap, Inc.
