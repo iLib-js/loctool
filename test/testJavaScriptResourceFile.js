@@ -381,7 +381,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguage: function(test) {
         test.expect(2);
 
@@ -547,7 +547,7 @@ module.exports = {
         test.equal(jsrf.getResourceFilePath(), "localized_js/de-DE-ASDF.js");
         test.done();
     },
-    
+
     testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageWithFlavor: function(test) {
         test.expect(2);
 
@@ -854,7 +854,7 @@ module.exports = {
         test.equal(jsrf.getResourceFilePath(), "localized_js/en.js");
         test.done();
     },
-    
+
     testJavaScriptResourceFileGetResourceFilePathAlreadyHasPath: function(test) {
         test.expect(2);
 
