@@ -420,13 +420,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.js"));
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-ASDF.js"));
 
         test.done();
     },
@@ -438,13 +438,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.html.haml"));
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-ASDF.html.haml"));
 
         test.done();
     },
@@ -456,13 +456,13 @@ module.exports = {
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
-            flavors: ["DISCOVERY"]
+            flavors: ["ASDF"]
         });
 
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
 
-        test.ok(!htf.handles("a/b/c/strings.en-ZA-DISCOVERY.tmpl.html"));
+        test.ok(!htf.handles("a/b/c/strings.en-ZA-ASDF.tmpl.html"));
 
         test.done();
     }
