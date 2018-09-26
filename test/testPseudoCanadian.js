@@ -25,13 +25,13 @@ if (!PseudoFactory) {
 }
 
 var project = new WebProject({
-	sourceLocale: "en-US",
-	pseudoLocale: "ps-DO",
-	resourceDirs: {
-		"yml": "config/locales"
-	}
+    sourceLocale: "en-US",
+    pseudoLocale: "ps-DO",
+    resourceDirs: {
+        "yml": "config/locales"
+    }
 }, "./testfiles", {
-	locales: ["en-CA", "es-US"]
+    locales: ["en-CA", "es-US"]
 });
 
 module.exports = {
@@ -39,12 +39,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("traveler"), "traveller");
-        
+
         test.done();
     },
 
@@ -52,25 +52,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianOddWordBoundaries: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
-        
+
         test.done();
     },
 
@@ -78,12 +78,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("I am a traveler."), "I am a traveller.");
-        
+
         test.done();
     },
 
@@ -91,25 +91,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("color"), "colour");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianInitialCapital: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("Color"), "Colour");
-        
+
         test.done();
     },
 
@@ -117,12 +117,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("COLOR"), "COLOUR");
-        
+
         test.done();
     },
 
@@ -130,25 +130,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("globalization"), "globalization");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianInitialCapitalNotTranslated: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("Globalization"), "Globalization");
-        
+
         test.done();
     },
 
@@ -156,12 +156,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("GLOBALIZATION"), "GLOBALIZATION");
-        
+
         test.done();
     },
 
@@ -169,12 +169,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("I'm not about to avuncolor"), "I'm not about to avuncolor"); // no translation
-        
+
         test.done();
     },
 
@@ -182,51 +182,51 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianSkipReplacementsJava: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "java"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "java"
+        });
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colorful} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianSkipReplacementsJavascript: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "javascript"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "javascript"
+        });
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colorful} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianSkipReplacementsHTML: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "html"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "html"
+        });
         test.equal(pb.getString("Skip the unflavored <span name=\"colorful\">supplements</a>."), "Skip the unflavoured <span name=\"colorful\">supplements</a>.");
-        
+
         test.done();
     },
 
@@ -234,12 +234,12 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "xml"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "xml"
+        });
         test.equal(pb.getString("Skip the unflavored <source id=\"colorful\">supplements</source>."), "Skip the unflavoured <source id=\"colorful\">supplements</source>.");
-        
+
         test.done();
     },
 
@@ -247,25 +247,25 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "template"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "template"
+        });
         test.equal(pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"colorful\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"colorful\") : RB.getString(\"%\") %> supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoCanadianSkipReplacementsRuby: function(test) {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "ruby"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "ruby"
+        });
         test.equal(pb.getString("Skip the unflavored %{colorful} #{colorful} supplements."), "Skip the unflavoured %{colorful} #{colorful} supplements.");
-        
+
         test.done();
     },
 
@@ -273,15 +273,15 @@ module.exports = {
         test.expect(1);
 
         var pb = PseudoFactory({
-			project: project,
-			locale: "en-CA",
-			type: "text"
-		});
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
         test.equal(pb.getString("Skip the unflavored {colorful} supplements."), "Skip the unflavoured {colourful} supplements.");
-        
+
         test.done();
     },
-    
+
     testPseudoBritishGetStringForResourceWithOverrideTranslation: function(test) {
         test.expect(2);
 
@@ -290,7 +290,7 @@ module.exports = {
             key: "foo",
             autoKey: true,
             source: "I am enamored by color of your homogenized yogurt.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -300,7 +300,7 @@ module.exports = {
             key: "asdf",
             autoKey: true,
             source: "The color of your homogenized yogurt.",
-            locale: "en-US",
+            sourceLocale: "en-US",
             origin: "source"
         });
 
@@ -309,23 +309,25 @@ module.exports = {
         res = new ResourceString({
             key: "foo",
             autoKey: true,
-            source: "override string",
-            locale: "en-CA",
+            source: "I am enamored by color of your homogenized yogurt.",
+            sourceLocale: "en-US",
+            target: "override string",
+            targetLocale: "en-CA",
             origin: "target"
         });
 
         translations.add(res);
 
         var pb = PseudoFactory({
-        	set: translations,
-        	project: project,
-			locale: "en-CA",
-			type: "text"
-		});
-        
+            set: translations,
+            project: project,
+            targetLocale: "en-CA",
+            type: "text"
+        });
+
         test.equal(pb.getStringForResource(english1), "override string");       // looked up
         test.equal(pb.getStringForResource(english2), "The colour of your homogenized yogurt."); // auto-generated
-        
+
         test.done();
     }
 };

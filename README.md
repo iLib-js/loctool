@@ -8,17 +8,31 @@ resource file formats needed by each project.
 Installation
 ------------
 
-To install this, you will need to make sure you have nodejs installed
-on your machine and in your path. (Use 7.0 or later)
+To install the loctool, you will need to make sure you have nodejs installed
+on your machine and in your path, as this is used to run the code. (Use 7.0 or later)
 
-Once it is installed, you need to use the package manager "npm" to install
-the necessary libraries that use native code. (Other libraries that do not
-include native code are already checked in to the node_modules subdirectory.)
-First, make sure your current directory is the
-parent of the loctool and your cloned projects. Then, issue the following
-command:
+Once nodejs is installed, you can install the loctool itself. You can either
+get it from npm or from github.com:
 
-npm install node-expat opencc
+1. By npm is simple:
+
+npm install loctool
+
+or to install it globally:
+
+npm install -g loctool
+
+2. By github is a little more complicated in that you still need npm to install 
+the necessary JS libraries that the loctool depends upon:
+
+git clone git@github.com:iLib-js/loctool.git
+cd loctool
+npm install
+
+If you did these steps, you can run it in situ as if it were installed by npm.
+The difference is that now you can make a branch and recontribute your fixes as
+PRs back to the open-source community. Better would be if you made a fork first
+and submitted PRs from your fork instead.
 
 Running the Tool
 ----------------
@@ -43,6 +57,10 @@ Finally, run the tool:
 ```
 node <path-to-the-loctool-dir>/loctool.js
 ```
+
+or if you have the node_modules/.bin directory in your path already,
+you can simply run the "loctool" script which will launch node for
+you.
 
 The result is that it will find all localizable strings for your 
 project, and write them to an "new strings" xliff file for each
