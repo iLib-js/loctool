@@ -57,6 +57,8 @@
         "clean": "ant clean"
     },
     "dependencies": {
+        "acorn": "^6.0.0",
+        "acorn-jsx": "^5.0.0",
         "build-gradle-reader": "*",
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
