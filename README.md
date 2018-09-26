@@ -40,16 +40,20 @@ project id in the project.json file.
 
 Finally, run the tool:
 
+```
 node <path-to-the-loctool-dir>/loctool.js
+```
 
 The result is that it will find all localizable strings for your 
 project, and write them to an "new strings" xliff file for each
 target locale. If your project id is "foo", then it will produce files:
 
+```
 foo-new-es-ES.xliff
 foo-new-de-DE.xliff
 foo-new-fr-FR.xliff
 ...
+```
 
 One for each target locale. You can then hand these xliff files to
 your translation vendor. Any reputable translation house will know
