@@ -2192,10 +2192,10 @@ module.exports = {
 
         htf.localize(translations, ["fr-FR", "de-DE"]);
 
-        test.ok(fs.existsSync(path.join(base, "testfiles/html/CookieFlowTemplate.fr-FR.html")));
-        test.ok(fs.existsSync(path.join(base, "testfiles/html/CookieFlowTemplate.de-DE.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/html/CookieFlow.fr-FR.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/html/CookieFlow.de-DE.html")));
 
-        var content = fs.readFileSync(path.join(base, "testfiles/html/CookieFlowTemplate.fr-FR.html"), "utf-8");
+        var content = fs.readFileSync(path.join(base, "testfiles/html/CookieFlow.fr-FR.html"), "utf-8");
 
         var expected =
             '<div class="upsell-ad-item clearfix">  \n' +
@@ -2222,7 +2222,7 @@ module.exports = {
         diff(content, expected);
         test.equal(content, expected);
 
-        content = fs.readFileSync(path.join(base, "testfiles/html/CookieFlowTemplate.de-DE.html"), "utf-8");
+        content = fs.readFileSync(path.join(base, "testfiles/html/CookieFlow.de-DE.html"), "utf-8");
 
         test.equal(content,
             '<div class="upsell-ad-item clearfix">  \n' +
