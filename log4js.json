@@ -53,6 +53,22 @@
 			"appenders": [ "default" ],
 			"level": "info"
 		},
+        "loctool.lib.HTMLFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.HTMLFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.HTMLTemplateFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.HTMLTemplateFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.IosLayoutResourceString": {
 			"appenders": [ "default" ],
 			"level": "info"

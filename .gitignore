@@ -11,3 +11,4 @@ test/testfiles/tmpl/CookieFlowTemplate.de-DE.tmpl.html
 test/testfiles/tmpl/CookieFlowTemplate.fr-FR.tmpl.html
 test/testfiles/tmpl/nostrings.de-DE.tmpl.html
 test/testfiles/tmpl/nostrings.fr-FR.tmpl.html
+/node_modules/
