@@ -53,6 +53,7 @@
     "dependencies": {
         "build-gradle-reader": "*",
         "hoek": "^4.2.1",
+        "html-parser": "^0.11.0",
         "ilib": "^13.2.0",
         "joi": "^9.0.4",
         "js-stl": ">=0.0.6",
@@ -68,8 +69,5 @@
     },
     "devDependencies": {
         "nodeunit": "^0.11.3"
-    },
-    "bundledDependencies": [
-        "html-parser"
-    ]
+    }
 }
