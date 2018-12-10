@@ -384,9 +384,8 @@ try {
 		break;
 		
 	case "merge":
-		settings.infiles = options.slice(3);
 		var target = new Xliff({
-			path: settings.infiles[0]
+			path: settings.outfile
 		});
 		
 		settings.infiles.forEach(function (file) {
