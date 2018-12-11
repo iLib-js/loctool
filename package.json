@@ -52,10 +52,8 @@
     },
     "dependencies": {
         "build-gradle-reader": "*",
-        "hoek": "^4.2.1",
         "html-parser": "^0.11.0",
-        "ilib": "^13.2.0",
-        "joi": "^9.0.4",
+        "ilib": "^13.3.0",
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
