@@ -52,9 +52,8 @@
     },
     "dependencies": {
         "build-gradle-reader": "*",
-        "hoek": "^4.2.1",
-        "ilib": "^13.2.0",
-        "joi": "^9.0.4",
+        "html-parser": "^0.11.0",
+        "ilib": "^13.3.0",
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
@@ -63,13 +62,10 @@
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
         "pretty-data": ">=0.40.0",
-        "tap": "^7.0.0"
+        "tap": "^7.0.0",
+        "xml2json": "^0.11.2"
     },
     "devDependencies": {
-        "nodeunit": "^0.11.2"
-    },
-    "bundledDependencies": [
-        "html-parser",
-        "xml2json"
-    ]
+        "nodeunit": "^0.11.3"
+    }
 }
