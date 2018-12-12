@@ -22,7 +22,7 @@ if (!HTMLTemplateFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.htmltemplatefiletype = {
     testHTMLTemplateFileTypeConstructor: function(test) {
         test.expect(1);
 

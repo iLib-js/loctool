@@ -22,7 +22,7 @@ if (!HamlFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.hamlfiletype = {
     testHamlFileTypeConstructor: function(test) {
         test.expect(1);
 

@@ -22,7 +22,7 @@ if (!JavaScriptResourceFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.scriptresourcefiletype = {
     testJavaScriptResourceFileTypeConstructor: function(test) {
         test.expect(1);
 

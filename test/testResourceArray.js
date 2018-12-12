@@ -25,7 +25,7 @@ if (!ResourceArray) {
     var WebProject = require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.resourcearray = {
     testResourceArrayConstructorEmpty: function(test) {
         test.expect(1);
 

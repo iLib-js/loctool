@@ -48,7 +48,7 @@ var p = new AndroidProject({
 
 var arft = new AndroidResourceFileType(p);
 
-module.exports = {
+module.exports.androidresourcefile = {
     testAndroidResourceFileConstructor: function(test) {
         test.expect(1);
 

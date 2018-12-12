@@ -35,7 +35,7 @@ var p = new AndroidProject({
 
 var jft = new JavaFileType(p);
 
-module.exports = {
+module.exports.javafile = {
     testJavaFileConstructor: function(test) {
         test.expect(1);
 

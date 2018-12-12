@@ -21,7 +21,7 @@ if (!Set) {
     var Set = require("../lib/Set.js");
 }
 
-module.exports = {
+module.exports.set = {
     testSetConstructor: function(test) {
         test.expect(1);
 

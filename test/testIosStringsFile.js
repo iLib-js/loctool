@@ -34,7 +34,7 @@ var p = new ObjectiveCProject({
 
 var isft = new IosStringsFileType(p);
 
-module.exports = {
+module.exports.stringsfile = {
     testIosStringsFileConstructor: function(test) {
         test.expect(1);
 

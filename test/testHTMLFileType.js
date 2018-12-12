@@ -22,7 +22,7 @@ if (!HTMLFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.htmlfiletype = {
     testHTMLFileTypeConstructor: function(test) {
         test.expect(1);
 

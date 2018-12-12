@@ -22,7 +22,7 @@ if (!YamlFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.yamlfiletype = {
     testYamlFileTypeConstructor: function(test) {
         test.expect(1);
 

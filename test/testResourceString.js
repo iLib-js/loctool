@@ -27,7 +27,7 @@ if (!ResourceString) {
     var WebProject = require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.resourcestring = {
     testResourceStringConstructorEmpty: function(test) {
         test.expect(1);
 

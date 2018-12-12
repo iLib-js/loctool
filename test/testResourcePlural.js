@@ -25,7 +25,7 @@ if (!ResourcePlural) {
     var WebProject = require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.resourceplural = {
     testResourcePluralConstructorEmpty: function(test) {
         test.expect(1);
 

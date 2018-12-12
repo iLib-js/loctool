@@ -22,7 +22,7 @@ if (!AndroidProject) {
     var AndroidResourceFileType = require("../lib/AndroidResourceFileType.js");
 }
 
-module.exports = {
+module.exports.androidproject = {
     testAndroidProjectConstructor: function(test) {
         test.expect(1);
 

@@ -64,7 +64,7 @@ var pi = new WebProject({
 
 var hft = new HamlFileType(p);
 
-module.exports = {
+module.exports.hamlfile = {
     testHamlFileConstructor: function(test) {
         test.expect(1);
 

@@ -25,7 +25,7 @@ if (!LocalRepository) {
     var TranslationSet = require("../lib/TranslationSet.js");
 }
 
-module.exports = {
+module.exports.localrepository = {
     testSetUp: function(test) {
         test.expect(1);
 

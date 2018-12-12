@@ -21,7 +21,7 @@ if (!BuildGradle) {
     var BuildGradle = require("../lib/BuildGradle.js");
 }
 
-module.exports = {
+module.exports.buildgradle = {
     testBuildGradleConstructor: function(test) {
         test.expect(1);
 

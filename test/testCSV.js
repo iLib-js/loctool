@@ -21,7 +21,7 @@ if (!CSV) {
     var CSV = require("../lib/CSV.js");
 }
 
-module.exports = {
+module.exports.csv = {
     testCSVConstructor: function(test) {
         test.expect(1);
 

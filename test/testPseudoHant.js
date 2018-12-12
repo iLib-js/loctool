@@ -25,7 +25,7 @@ if (!PseudoHant) {
     var ResourceString = require("../lib/ResourceString.js");
 }
 
-module.exports = {
+module.exports.pseudohant = {
     testPseudoHantRightSourceLocale: function(test) {
         test.expect(2);
 
