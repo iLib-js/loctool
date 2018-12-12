@@ -24,7 +24,7 @@ if (!IosStringsFileType) {
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
 }
 
-module.exports = {
+module.exports.stringsfiletype = {
     testIosStringsFileTypeConstructor: function(test) {
         test.expect(1);
 

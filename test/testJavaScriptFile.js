@@ -32,7 +32,7 @@ var p = new WebProject({
 
 var jsft = new JavaScriptFileType(p);
 
-module.exports = {
+module.exports.scriptfile = {
     testJavaScriptFileConstructor: function(test) {
         test.expect(1);
 

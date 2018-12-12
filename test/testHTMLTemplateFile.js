@@ -42,7 +42,7 @@ function diff(a, b) {
     }
 }
 
-module.exports = {
+module.exports.htmltemplatefile = {
     testHTMLTemplateFileConstructor: function(test) {
         test.expect(1);
 

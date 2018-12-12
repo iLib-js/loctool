@@ -22,7 +22,7 @@ if (!AndroidLayoutFileType) {
     var AndroidProject =  require("../lib/AndroidProject.js");
 }
 
-module.exports = {
+module.exports.androidlayoutfiletype = {
     testAndroidLayoutFileTypeConstructor: function(test) {
         test.expect(1);
 

@@ -8,7 +8,7 @@ if (!ProjectFactory) {
     var ProjectFactory= require("../lib/ProjectFactory.js");
 }
 
-module.exports = {
+module.exports.projectfactory = {
   testProjectFactoryCreationAllEmpty: function(test){
     test.expect(1);
     var project = ProjectFactory('', {});

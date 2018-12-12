@@ -48,7 +48,8 @@
         "node": ">=0.12 <=7.2.1"
     },
     "scripts": {
-        "test": "ant test"
+        "test": "cd test; node testSuite.js",
+	"clean": "ant clean"
     },
     "dependencies": {
         "build-gradle-reader": "*",

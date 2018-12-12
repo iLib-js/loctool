@@ -24,7 +24,7 @@ if (!TranslationSet) {
     var ResourceArray = require("../lib/ResourceArray.js");
 }
 
-module.exports = {
+module.exports.translationset = {
      testTranslationSetConstructor: function(test) {
         test.expect(1);
 

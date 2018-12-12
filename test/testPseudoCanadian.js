@@ -34,7 +34,7 @@ var project = new WebProject({
     locales: ["en-CA", "es-US"]
 });
 
-module.exports = {
+module.exports.pseudocanadian = {
     testPseudoCanadianSimpleWord: function(test) {
         test.expect(1);
 

@@ -29,7 +29,7 @@ var p = new SwiftProject({
 
 var sft = new SwiftFileType(p);
 
-module.exports = {
+module.exports.swiftfile = {
     testSwiftFileConstructor: function(test) {
         test.expect(1);
 

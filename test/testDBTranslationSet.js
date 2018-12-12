@@ -25,7 +25,7 @@ if (!DBTranslationSet) {
     var TranslationSet = require("../lib/TranslationSet.js");
 }
 
-module.exports = {
+module.exports.dbtranslationset = {
     testSetUp: function(test) {
         test.expect(1);
 

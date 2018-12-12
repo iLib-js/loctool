@@ -41,7 +41,7 @@ function diff(a, b) {
     }
 }
 
-module.exports = {
+module.exports.xliff = {
     testXliffConstructor: function(test) {
         test.expect(1);
 

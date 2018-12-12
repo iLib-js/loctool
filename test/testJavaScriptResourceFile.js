@@ -36,7 +36,7 @@ function diff(a, b) {
     }
 }
 
-module.exports = {
+module.exports.scriptresourcefile = {
     testJavaScriptResourceFileConstructor: function(test) {
         test.expect(1);
 

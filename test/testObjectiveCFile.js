@@ -32,7 +32,7 @@ var p = new ObjectiveCProject({
 
 var ocft = new ObjectiveCFileType(p);
 
-module.exports = {
+module.exports.objectivecfile = {
     testObjectiveCFileConstructor: function(test) {
         test.expect(1);
 

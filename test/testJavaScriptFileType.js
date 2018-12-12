@@ -22,7 +22,7 @@ if (!JavaScriptFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.scriptfiletype = {
     testJavaScriptFileTypeConstructor: function(test) {
         test.expect(1);
 

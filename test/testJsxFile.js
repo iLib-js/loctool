@@ -32,7 +32,7 @@ var p = new WebProject({
 
 var jsft = new JsxFileType(p);
 
-module.exports = {
+module.exports.jsxfile = {
     testJsxFileConstructor: function(test) {
         test.expect(1);
 

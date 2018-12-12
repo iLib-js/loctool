@@ -38,7 +38,7 @@ var settings = {
     "build.gradle": "build1.gradle"
 };
 
-module.exports = {
+module.exports.androidresourcefiletype = {
     testAndroidResourceFileTypeConstructor: function(test) {
         test.expect(1);
 

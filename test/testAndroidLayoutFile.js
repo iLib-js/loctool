@@ -33,7 +33,7 @@ var p = new AndroidProject({
 
 var alft = new AndroidLayoutFileType(p);
 
-module.exports = {
+module.exports.androidlayoutfile = {
     testAndroidLayoutFileConstructor: function(test) {
         test.expect(1);
 
