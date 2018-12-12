@@ -5,6 +5,9 @@ This tool reads source files in various formats, extracts strings
 for translation, and writes out the translated strings the various 
 resource file formats needed by each project.
 
+See the [release notes](./docs/ReleaseNotes.md) for details on what is
+new and what has changed.
+
 Installation
 ------------
 
