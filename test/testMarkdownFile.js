@@ -47,7 +47,8 @@ var p = new WebProject({
     id: "foo",
     sourceLocale: "en-US"
 }, "./testfiles", {
-    locales:["en-GB"]
+    locales:["en-GB"],
+    targetDir: "testfiles"
 });
 
 var mdft = new MarkdownFileType(p);
@@ -2189,7 +2190,7 @@ module.exports.markdown = {
             project: "webapp",
             key: 'r777006502',
             source: 'This is some text. This is more text. Pretty, pretty text.',
-            target: 'Ceci est du texte. C\'est plus de texte. Joli, joli texte.',
+            target: 'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.',
             targetLocale: "de-DE",
             datatype: "markdown"
         }));
@@ -2197,7 +2198,7 @@ module.exports.markdown = {
             project: "webapp",
             key: 'r112215756',
             source: 'This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
-            target: 'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.',
+            target: 'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.',
             targetLocale: "de-DE",
             datatype: "html"
         }));
@@ -2205,7 +2206,7 @@ module.exports.markdown = {
             project: "webapp",
             key: 'r260813817',
             source: 'This is the last bit of localizable text.',
-            target: 'C\'est le dernier morceau de texte localisable.',
+            target: 'Dies ist der letzte Teil des lokalisierbaren Textes.',
             targetLocale: "de-DE",
             datatype: "html"
         }));
@@ -2254,7 +2255,7 @@ module.exports.markdown = {
             '[/block]\n' +
             'C\'est le dernier morceau de texte localisable.\n' +
             '\n' +
-            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n';
+            'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
 
         diff(content, expected);
         test.equal(content, expected);
@@ -2267,10 +2268,10 @@ module.exports.markdown = {
             'excerpt: ""\n' +
             '---\n' +
             '\n' +
-            'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
+            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
             '==================================\n' +
             '\n' +
-            'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n' +
+            'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n' +
             '\n' +
             '[block:code]\n' +
             '{\n' +
@@ -2283,7 +2284,7 @@ module.exports.markdown = {
             '  ]\n' +
             '}\n' +
             '[/block]\n' +
-            'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
+            'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
             '[block:parameters]\n' +
             '{\n' +
             '  "data": {\n' +
@@ -2296,9 +2297,9 @@ module.exports.markdown = {
             '  "rows": 5\n' +
             '}\n' +
             '[/block]\n' +
-            'C\'est le dernier morceau de texte localisable.\n' +
+            'Dies ist der letzte Teil des lokalisierbaren Textes.\n' +
             '\n' +
-            'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
+            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n';
 
         diff(content, expected);
         test.equal(content, expected);
@@ -2311,15 +2312,7 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, path.join(base, "testfiles"), {
-            locales:["en-GB"],
-            targetDir: "testfiles"
-        });
-
-        var htf = new MarkdownFile(p, "./html/nostrings.html");
+        var htf = new MarkdownFile(p, "./md/nostrings.md");
         test.ok(htf);
 
         // should read the file
@@ -2328,7 +2321,7 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Obtenez des devis d\'assurance gratuitement!',
             targetLocale: "fr-FR",
@@ -2336,7 +2329,7 @@ module.exports.markdown = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Kostenlosen Versicherungs-Angebote erhalten!',
             targetLocale: "de-DE",
@@ -2346,298 +2339,19 @@ module.exports.markdown = {
         htf.localize(translations, ["fr-FR", "de-DE"]);
 
         // should produce the files, even if there is nothing to localize in them
-        test.ok(fs.existsSync(path.join(base, "testfiles/html/nostrings.fr-FR.html")));
-        test.ok(fs.existsSync(path.join(base, "testfiles/html/nostrings.de-DE.html")));
+        test.ok(fs.existsSync(path.join(base, "fr-FR/testfiles/md/nostrings.md")));
+        test.ok(fs.existsSync(path.join(base, "de-DE/testfiles/md/nostrings.md")));
 
         test.done();
     },
 
-    testMarkdownFileLocalizeTextNonTemplateTagsInsideTags: function(test) {
-        test.expect(6);
-
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
-
-        htf.parse('<html>\n' +
-                '   <body>\n' +
-                '       <span class="foo" <span class="bar"> Mr. Smith is not available.</span></span>\n' +
-                '   </body>\n' +
-                '</html>\n');
-
-        var set = htf.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource('Mr. Smith is not available.');
-        test.ok(r);
-        test.equal(r.getSource(), 'Mr. Smith is not available.');
-        test.equal(r.getKey(), 'Mr. Smith is not available.');
-
-        var translations = new TranslationSet();
-        translations.add(new ResourceString({
-            project: "webapp",
-            key: 'Mr. Smith is not available.',
-            source: 'Mr. Smith is not available.',
-            target: 'Mssr. Smith n\'est pas disponible.',
-            targetLocale: "fr-FR",
-            datatype: "html"
-        }));
-
-        var actual = htf.localizeText(translations, "fr-FR");
-        var expected =
-                '<html>\n' +
-                '   <body>\n' +
-                '       <span class="foo" span="" class="bar"> Mssr. Smith n\'est pas disponible.</span></span>\n' +
-                '   </body>\n' +
-                '</html>\n';
-
-        diff(actual, expected);
-        test.equal(actual, expected);
-        test.done();
-    },
-
-    testMarkdownFileLocalizeTextEscapeDoubleQuotes: function(test) {
-        test.expect(3);
-
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
-
-        htf.parse('  <span class="foo" onclick=\'javascript:var a = "foo", b = "bar";\'>foo</span>');
-
-        var set = htf.getTranslationSet();
-        test.ok(set);
-
-        var translations = new TranslationSet();
-        translations.add(new ResourceString({
-            project: "webapp",
-            key: 'foo',
-            source: 'foo',
-            target: 'asdf',
-            targetLocale: "fr-FR",
-            datatype: "html"
-        }));
-
-        diff(htf.localizeText(translations, "fr-FR"),
-                '  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
-
-        test.equal(htf.localizeText(translations, "fr-FR"),
-                '  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
-
-        test.done();
-    },
-
-    testMarkdownFileLocalizeTextIgnoreScriptTags: function(test) {
-        test.expect(3);
-
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
-
-        htf.parse('<html><body><script type="javascript">\n' +
-               '  foo\n' +
-            '</script>\n' +
-            '<span class="foo">foo</span>\n' +
-            '<div></div><script>foo</script><div></div>\n' +
-            '</body></html>');
-
-        var set = htf.getTranslationSet();
-        test.ok(set);
-
-        var translations = new TranslationSet();
-        translations.add(new ResourceString({
-            project: "webapp",
-            key: 'foo',
-            source: 'foo',
-            target: 'asdf',
-            targetLocale: "fr-FR",
-            datatype: "html"
-        }));
-
-        var expected =
-            '<html><body><script type="javascript">\n' +
-            '  foo\n' +
-            '</script>\n' +
-            '<span class="foo">asdf</span>\n' +
-            '<div></div><script>foo</script><div></div>\n' +
-            '</body></html>';
-
-        diff(htf.localizeText(translations, "fr-FR"), expected);
-
-        test.equal(htf.localizeText(translations, "fr-FR"), expected);
-
-        test.done();
-    },
-
-    testMarkdownFileLocalizeTextIgnoreStyleTags: function(test) {
-        test.expect(3);
-
-        var p = new WebProject({
-            id: "webapp",
-            sourceLocale: "en-US"
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
-
-        htf.parse('<html><body><style>\n' +
-               '  foo\n' +
-            '</style>\n' +
-            '<span class="foo">foo</span>\n' +
-            '<div></div><style>foo</style><div></div>\n' +
-            '</body></html>');
-
-        var set = htf.getTranslationSet();
-        test.ok(set);
-
-        var translations = new TranslationSet();
-        translations.add(new ResourceString({
-            project: "webapp",
-            key: 'foo',
-            source: 'foo',
-            target: 'asdf',
-            targetLocale: "fr-FR",
-            datatype: "html"
-        }));
-
-        var expected =
-            '<html><body><style>\n' +
-            '  foo\n' +
-            '</style>\n' +
-            '<span class="foo">asdf</span>\n' +
-            '<div></div><style>foo</style><div></div>\n' +
-            '</body></html>';
-
-        diff(htf.localizeText(translations, "fr-FR"), expected);
-
-        test.equal(htf.localizeText(translations, "fr-FR"), expected);
-
-        test.done();
-    },
-
-    testMarkdownFileExtractFileFullyExtracted: function(test) {
-        test.expect(17);
-
-        var base = path.dirname(module.id);
-
-        var p = new WebProject({
-            sourceLocale: "en-US"
-        }, path.join(base, "testfiles"), {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p, "./html/meeting_panel.html");
-        test.ok(htf);
-
-        // should read the file
-        htf.extract();
-
-        var set = htf.getTranslationSet();
-
-        test.equal(set.size(), 5);
-
-        var r = set.getBySource("Upcoming Appointments");
-        test.ok(r);
-        test.equal(r.getSource(), "Upcoming Appointments");
-        test.equal(r.getKey(), "Upcoming Appointments");
-
-        r = set.getBySource("Completed Meetings");
-        test.ok(r);
-        test.equal(r.getSource(), "Completed Meetings");
-        test.equal(r.getKey(), "Completed Meetings");
-
-        r = set.getBySource("Get help");
-        test.ok(r);
-        test.equal(r.getSource(), "Get help");
-        test.equal(r.getKey(), "Get help");
-
-        r = set.getBySource("Colleagues are standing by to help");
-        test.ok(r);
-        test.equal(r.getSource(), "Colleagues are standing by to help");
-        test.equal(r.getKey(), "Colleagues are standing by to help");
-
-        r = set.getBySource("Ask your co-workers now");
-        test.ok(r);
-        test.equal(r.getSource(), "Ask your co-workers now");
-        test.equal(r.getKey(), "Ask your co-workers now");
-
-        test.done();
-    },
-
-    testMarkdownFileExtractFileFullyExtracted2: function(test) {
-        test.expect(11);
-
-        var base = path.dirname(module.id);
-
-        var p = new WebProject({
-            sourceLocale: "en-US"
-        }, path.join(base, "testfiles"), {
-            locales:["en-GB"]
-        });
-
-        var htf = new MarkdownFile(p, "./html/mode.html");
-        test.ok(htf);
-
-        // should read the file
-        htf.extract();
-
-        var set = htf.getTranslationSet();
-
-        test.equal(set.size(), 3);
-
-        var r = set.getBySource("Choose a meeting method");
-        test.ok(r);
-        test.equal(r.getSource(), "Choose a meeting method");
-        test.equal(r.getKey(), "Choose a meeting method");
-
-        r = set.getBySource("Test phrase");
-        test.ok(r);
-        test.equal(r.getSource(), "Test phrase");
-        test.equal(r.getKey(), "Test phrase");
-
-        r = set.getBySource("In Person Mode");
-        test.ok(r);
-        test.equal(r.getSource(), "In Person Mode");
-        test.equal(r.getKey(), "In Person Mode");
-
-        test.done();
-    },
 
     testMarkdownFileExtractFileNewResources: function(test) {
         test.expect(16);
 
         var base = path.dirname(module.id);
 
-        var p = new WebProject({
-            id: "foo",
-            sourceLocale: "en-US"
-        }, path.join(base, "testfiles"), {
-            locales:["en-GB"]
-        });
-
-        var t = new MarkdownFileType(p);
-
-        var htf = new MarkdownFile(p, "./html/mode.html", t);
+        var htf = new MarkdownFile(p, "./md/mode.md", mdft);
         test.ok(htf);
 
         htf.extract();
@@ -2646,42 +2360,27 @@ module.exports.markdown = {
 
         translations.add(new ResourceString({
             project: "foo",
-            key: "Choose a meeting method",
+            key: "r950833718",
             source: "Choose a meeting method",
             sourceLocale: "en-US",
             target: "Choisissez une méthode de réunion d'affaires",
             targetLocale: "fr-FR",
-            datatype: "html"
+            datatype: "markdown"
         }));
 
         var actual = htf.localizeText(translations, "fr-FR");
         var expected =
-            '<div class="askHeader">\n' +
-            '  <h3>Choisissez une méthode de réunion d\'affaires</h3>\n' +
-            '</div>\n' +
-            '<div id="chooseMode">\n' +
-            '  <div class="askContent">\n' +
-            '    <div class="specialistInfo">\n' +
-            '      <div class="portraitContainer">\n' +
-            '        <div class="portrait">\n' +
-            '          <img src="http://foo.com/photo.png" height="86px" width="86px"/>\n' +
-            '        </div>\n' +
-            '        <div class="dot on"></div>\n' +
-            '      </div>\n' +
-            '      <div class="rating">\n' +
-            '      </div>\n' +
-            '      <div class="name"></div>\n' +
-            '      <div class="specialty"></div>\n' +
-            '      Ťëšţ þĥŕàšë543210\n' +
-            '    </div>\n' +
-            '    <div class="modeSelection">\n' +
-            '      <div class="modeContents">\n' +
-            '        <h4>Ïñ Pëŕšõñ Mõðë6543210</h4>\n' +
-            '        <p class="description"></p>\n' +
-            '      </div>\n' +
-            '    </div><div class="divider"></div>\n' +
-            '  </div>\n' +
-            '</div>\n';
+            'Choisissez une méthode de réunion d\'affaires\n' +
+            '-----------------------\n' +
+            '\n' +
+            '<img src="http://foo.com/photo.png" height="86px" width="86px"/>\n' +
+            '\n' +
+            'Ťëšţ þĥŕàšë543210\n' +
+            '\n' +
+            'Ïñ Pëŕšõñ Mõðë6543210\n' +
+            '--------------\n' +
+            '\n' +
+            '\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -2696,7 +2395,7 @@ module.exports.markdown = {
 
         r = set.getBySource("Test phrase");
         test.ok(r);
-        test.equal(resources[0].getKey(), "Test phrase");
+        test.equal(resources[0].getKey(), "r103886803");
         test.equal(resources[0].getSource(), "Test phrase");
         test.equal(resources[0].getSourceLocale(), "en-US");
         test.equal(resources[0].getTarget(), "Test phrase");
@@ -2704,7 +2403,7 @@ module.exports.markdown = {
 
         r = set.getBySource("In Person Mode");
         test.ok(r);
-        test.equal(resources[1].getKey(), "In Person Mode");
+        test.equal(resources[1].getKey(), "r251839517");
         test.equal(resources[1].getSource(), "In Person Mode");
         test.equal(resources[1].getSourceLocale(), "en-US");
         test.equal(resources[1].getTarget(), "In Person Mode");
