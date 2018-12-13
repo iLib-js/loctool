@@ -45,6 +45,8 @@ module.exports.files = [
     "testJsxFile.js",
     "testJsxFileType.js",
     "testLocalRepository.js",
+    "testMarkdownFile.js",
+    "testMarkdownFileType.js",
     "testObjectiveCFile.js",
     "testObjectiveCFileType.js",
     "testOldHamlFileType.js",
