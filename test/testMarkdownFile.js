@@ -387,7 +387,7 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('&nbsp; &nnbsp; &mmsp;\n');
+        htf.parse('&nbsp; &#xA0; \n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
