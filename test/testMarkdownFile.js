@@ -472,7 +472,7 @@ module.exports.markdown = {
     },
 
     testMarkdownFileParseContinuedParagraph: function(test) {
-        test.expect(9);
+        test.expect(7);
 
         var htf = new MarkdownFile(p);
         test.ok(htf);
@@ -483,9 +483,9 @@ module.exports.markdown = {
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test. This is also a test.");
+        var r = set.getBySource("This is a test.\nThis is also a test.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test. This is also a test.");
+        test.equal(r.getSource(), "This is a test.\nThis is also a test.");
         test.equal(r.getKey(), "r770271164");
 
         r = set.getBySource("This is a test.");
