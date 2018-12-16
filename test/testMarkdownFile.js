@@ -536,7 +536,7 @@ module.exports.markdown = {
         var r = set.getBySource("This is also a &#3; test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a &#3; test");
-        test.equal(r.getKey(), "");
+        test.equal(r.getKey(), "r1041204778");
 
         test.done();
     },
@@ -553,10 +553,10 @@ module.exports.markdown = {
         test.ok(set);
 
         // leave the whitespace control chars alone
-        var r = set.getBySource("This is also a &#x000C; test");
+        var r = set.getBySource("This is also a \u000C test");
         test.ok(r);
-        test.equal(r.getSource(), "This is also a &#x000C; test");
-        test.equal(r.getKey(), "");
+        test.equal(r.getSource(), "This is also a \u000C test");
+        test.equal(r.getKey(), "r999080996");
 
         test.done();
     },
