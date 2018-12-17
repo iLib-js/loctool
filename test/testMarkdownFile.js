@@ -413,13 +413,44 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseEmpty: function(test) {
+        test.expect(3);
+
+        var htf = new MarkdownFile(p);
+        test.ok(htf);
+
+        htf.parse(' \n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testMarkdownFileParseSkipHeader: function(test) {
+        test.expect(3);
+
+        var htf = new MarkdownFile(p);
+        test.ok(htf);
+
+        htf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+
     testMarkdownFileParseNoStrings: function(test) {
         test.expect(3);
 
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n\n');
+        htf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n     \n\t\t\t\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -851,13 +882,12 @@ module.exports.markdown = {
     },
 
     testMarkdownFileParseLocalizableAttributes: function(test) {
-        test.expect(11);
+        test.expect(8);
 
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<img src="http://www.test.test/foo.png" alt="Alternate text"/>\n' +
-                'This is a test\n' +
+        htf.parse('This is a test\n' +
                 '<input type="text" placeholder="localizable placeholder here"></input>\n');
 
         var set = htf.getTranslationSet();
@@ -867,11 +897,6 @@ module.exports.markdown = {
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-
-        r = set.getBySource("Alternate text");
-        test.ok(r);
-        test.equal(r.getSource(), "Alternate text");
-        test.equal(r.getKey(), "r1051764073");
 
         r = set.getBySource("localizable placeholder here");
         test.ok(r);
@@ -887,8 +912,7 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<img src="http://www.test.test/foo.png" alt=""/>\n' +
-                'This is a test\n' +
+        htf.parse('This is a test\n' +
                 '<input type="text" placeholder=""></input>\n');
 
         var set = htf.getTranslationSet();
