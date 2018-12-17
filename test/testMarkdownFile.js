@@ -734,10 +734,10 @@ module.exports.markdown = {
 
         // should not pick up the emphasis marker because there is no localizable text
         // before it or after it
-        var r = set.getBySource("This is a test of the emergency parsing system.");
+        var r = set.getBySource("<c0>This is a test of the emergency parsing system.</c0>");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
-        test.equal(r.getKey(), "r699762575");
+        test.equal(r.getSource(), "<c0>This is a test of the emergency parsing system.</c0>");
+        test.equal(r.getKey(), "r49032733");
 
         test.done();
     },
@@ -809,7 +809,7 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</div>\n\n' +
+        htf.parse('<span>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</span>\n\n' +
                   'This is <b>another test</b> of the emergency parsing </span> system.\n');
 
         var set = htf.getTranslationSet();
@@ -830,8 +830,8 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<div title="This value is localizable">\n' +
-                'This is a test\n' +
+        htf.parse('<div title="This value is localizable">\n\n' +
+                'This is a test\n\n' +
                 '</div>\n');
 
         var set = htf.getTranslationSet();
@@ -856,9 +856,9 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<img src="http://www.test.test/foo.png" alt="Alternate text">\n' +
+        htf.parse('<img src="http://www.test.test/foo.png" alt="Alternate text"/>\n' +
                 'This is a test\n' +
-                '<input type="text" placeholder="localizable placeholder here">\n');
+                '<input type="text" placeholder="localizable placeholder here"></input>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -887,9 +887,9 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<img src="http://www.test.test/foo.png" alt="">\n' +
+        htf.parse('<img src="http://www.test.test/foo.png" alt=""/>\n' +
                 'This is a test\n' +
-                '<input type="text" placeholder="">\n');
+                '<input type="text" placeholder=""></input>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
