@@ -953,7 +953,7 @@ module.exports.markdown = {
     },
 
     testMarkdownFileParseI18NComments: function(test) {
-        test.expect(6);
+        test.expect(10);
 
         var htf = new MarkdownFile(p);
         test.ok(htf);
