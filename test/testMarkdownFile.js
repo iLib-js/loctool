@@ -986,7 +986,7 @@ module.exports.markdown = {
         var htf = new MarkdownFile(p);
         test.ok(htf);
 
-        htf.parse('<html><body>\n' +
+        htf.parse(
             '<script type="javascript">\n' +
             'if (window) {\n' +
             '  $(".foo").class("asdf");\n' +
@@ -1000,8 +1000,7 @@ module.exports.markdown = {
             '    line-height: 40px;\n' +
             '  }\n' +
             '</style>\n' +
-            '<span class="foo">foo</span>\n' +
-            '</body></html>');
+            '<span class="foo">foo</span>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
