@@ -49,7 +49,7 @@
     },
     "scripts": {
         "test": "cd test; node testSuite.js",
-	"clean": "ant clean"
+        "clean": "ant clean"
     },
     "dependencies": {
         "build-gradle-reader": "*",

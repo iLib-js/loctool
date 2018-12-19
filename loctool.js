@@ -138,6 +138,13 @@ for (var i = 0; i < argv.length; i++) {
 			console.error("Error: -x (--xliffs) option requires a directory name argument to follow it.");
 			usage();
 		}
+    } else if (val === "-z" || val === "--xliffsOut") {
+        if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
+            settings.xliffsOut = argv[++i];
+        } else {
+            console.error("Error: -z (--xliffsOut) option requires a directory name argument to follow it.");
+            usage();
+        }
 	} else {
 		options.push(val);
 	}
