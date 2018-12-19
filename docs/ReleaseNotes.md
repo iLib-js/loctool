@@ -10,6 +10,16 @@ New Features:
 * Added support for plain HTML files
     * Text and certain tags are extracted as translation units
     * Recomposes translations and HTML together into translated HTML
+* Added support for specifying the xliffsDir in the project.json
+    * Directory where xliff files are read from
+    * Can now be specified in the project.json under settings.xliffsDir
+    * Can still be specified on the command-line with `-x dir` as before
+    * Default is root dir of the project, as it was before
+* Added support for the xliffsOut setting
+    * Directory where xliff files are written
+    * Can be specified in the project json under settings.xliffsOut
+    * Can be specified on the command-line with `-z dir`
+    * Default is root dir of the project, as it was before
 
 Bug Fixes:
 
