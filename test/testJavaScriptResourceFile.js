@@ -36,7 +36,7 @@ function diff(a, b) {
     }
 }
 
-module.exports = {
+module.exports.scriptresourcefile = {
     testJavaScriptResourceFileConstructor: function(test) {
         test.expect(1);
 
@@ -94,21 +94,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -143,21 +149,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -225,15 +237,19 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen\"text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen\"text"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen\"text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen\"text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -272,15 +288,19 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellen'text"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellen'text"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellen'text"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellen'text"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -321,21 +341,27 @@ module.exports = {
         [
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "source text",
-                source: "Quellentext"
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "more source text",
-                source: "mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
             }),
             new ResourceString({
                 project: "webapp",
-                locale: "de-DE",
+                targetLocale: "de-DE",
                 key: "yet more source text",
-                source: "noch mehr Quellentext"
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
             })
         ].forEach(function(res) {
             jsrf.addResource(res);
@@ -354,5 +380,1297 @@ module.exports = {
         test.equal(actual, expected);
 
         test.done();
-    }
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguage: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageNoDefaultAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de-DE.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguage: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-AT"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de-AT.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE-ASDF"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de-DE-ASDF.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-AT-ASDF"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/de-AT-ASDF.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZH: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-CN"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZHNoDefaultsAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-CN"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh-Hans-CN.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZH: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hant-HK"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh-Hant.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageZH2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-SG"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh-Hans-SG.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageZH3: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hant-TW"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/zh-Hant-TW.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathDefaultLocale: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        // should default to English/US
+        var jsrf = new JavaScriptResourceFile({
+            project: p
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/en.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetResourceFilePathAlreadyHasPath: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-AT",
+            pathName: "localized_js/foo.js"
+        });
+
+        test.ok(jsrf);
+
+        test.equal(jsrf.getResourceFilePath(), "localized_js/foo.js");
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocale: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_de = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocaleNoDefaultsAvailable: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the full locale spec in the first line
+        var expected =
+            'ilib.data.strings_de_DE = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentNonDefaultLocale: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-AT"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-AT",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-AT",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-AT",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the full locale spec in the first line
+        var expected =
+            'ilib.data.strings_de_AT = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocaleZH: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-CN"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-CN",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-CN",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-CN",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_zh = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocaleZH2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hant-HK"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-HK",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-HK",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-HK",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_zh_Hant = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentNonDefaultLocaleZH: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hans-SG"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-SG",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-SG",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hans-SG",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_zh_Hans_SG = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentNonDefaultLocaleZH2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "zh-Hant-TW"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-TW",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-TW",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "zh-Hant-TW",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_zh_Hant_TW = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentDefaultLocaleWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE-ASDF"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_de_DE_ASDF = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testJavaScriptResourceFileGetContentNonDefaultLocaleWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                "js": "localized_js"
+            }
+        }, "./testfiles", {
+            locales:["en-GB", "de-DE", "de-AT"],
+            localeDefaults: {
+                "en": {
+                    def: "en-US",
+                    spec: "en"
+                },
+                "es": {
+                    def: "es-US",
+                    spec: "es"
+                },
+                "de": {
+                    def: "de-DE",
+                    spec: "de"
+                },
+                "zh-Hans": {
+                    def: "zh-Hans-CN",
+                    spec: "zh"
+                },
+                "zh-Hant": {
+                    def: "zh-Hant-HK",
+                    spec: "zh-Hant"
+                }
+            },
+            identify: true
+        });
+
+        var jsrf = new JavaScriptResourceFile({
+            project: p,
+            locale: "de-DE-ASDF"
+        });
+
+        test.ok(jsrf);
+
+        [
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "source text",
+                sourceLocale: "en-US",
+                source: "source text",
+                target: "Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "more source text",
+                sourceLocale: "en-US",
+                source: "more source text",
+                target: "mehr Quellentext"
+            }),
+            new ResourceString({
+                project: "webapp",
+                targetLocale: "de-DE-ASDF",
+                key: "yet more source text",
+                sourceLocale: "en-US",
+                source: "yet more source text",
+                target: "noch mehr Quellentext"
+            })
+        ].forEach(function(res) {
+            jsrf.addResource(res);
+        });
+
+        // should use the default locale spec in the first line
+        var expected =
+            'ilib.data.strings_de_DE_ASDF = {\n' +
+            '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
+            '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
+            '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
+            '};\n';
+
+        var actual = jsrf.getContent();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
 };

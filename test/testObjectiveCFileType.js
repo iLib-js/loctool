@@ -22,20 +22,20 @@ if (!ObjectiveCFileType) {
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
 }
 
-module.exports = {
+module.exports.objectivecfiletype = {
     testObjectiveCFileTypeConstructor: function(test) {
         test.expect(1);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
-        
+
         test.ok(htf);
-        
+
         test.done();
     },
 
@@ -43,16 +43,16 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("foo.m"));
-        
+
         test.done();
     },
 
@@ -60,16 +60,16 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("foo.h"));
-        
+
         test.done();
     },
 
@@ -77,50 +77,50 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.cm"));
-        
+
         test.done();
     },
-    
+
     testObjectiveCFileTypeHandlesFalse: function(test) {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.html"));
-        
+
         test.done();
     },
-    
+
     testObjectiveCFileTypeHandlesTrueWithDir: function(test) {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new ObjectiveCFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("a/b/c/foo.m"));
-        
+
         test.done();
     }
 };

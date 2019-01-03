@@ -1,6 +1,6 @@
 ---
 title:
   read_me:
-    a: b
+    a: good
   do_not_read_me:
-    c: d
+    c: bad

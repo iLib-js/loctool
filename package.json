@@ -1,16 +1,16 @@
 {
     "name": "loctool",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
     "license": "Apache-2.0",
     "keywords": [
-        "internationalization", 
-        "i18n", 
-        "localization", 
-        "l10n", 
-        "globalization", 
+        "internationalization",
+        "i18n",
+        "localization",
+        "l10n",
+        "globalization",
         "g11n",
         "strings",
         "resources",
@@ -26,13 +26,11 @@
     "contributors": [
         {
             "name": "Edwin Hoogerbeets",
-            "email": "edwin.hoogerbeets@healthtap.com" 
+            "email": "edwin.hoogerbeets@healthtap.com"
         }
     ],
     "files": [
         "db",
-        "lib",
-        "node_modules/html-parser",
         "log4js.json",
         "README.md",
         "LICENSE.txt"
@@ -47,22 +45,28 @@
         "url": "https://github.com/iLib-js/loctool.git"
     },
     "engines": {
-        "nodejs": "<= 0.10.*"
+        "node": ">=0.12 <=7.2.1"
     },
     "scripts": {
-        "test": "ant test"
+        "test": "cd test; node testSuite.js",
+        "clean": "ant clean"
     },
     "dependencies": {
-        "ilib": ">=12.0.0",
-        "log4js": "^2.0.0",
-        "mysql2": ">=1.5.0",
-        "pretty-data": ">=0.40.0",
-        "js-yaml": ">=3.10.0",
+        "build-gradle-reader": "*",
+        "html-parser": "^0.11.0",
+        "ilib": "^13.3.0",
         "js-stl": ">=0.0.6",
+        "js-yaml": ">=3.10.0",
+        "log4js": "^2.0.0",
+        "micromatch": ">=3.1.0",
+        "mysql2": ">=1.5.0",
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
-        "build-gradle-reader": "*",
-        "micromatch": ">=3.1.0"
+        "pretty-data": ">=0.40.0",
+        "tap": "^7.0.0",
+        "xml2json": "^0.11.2"
     },
-    "bundledDependencies": ["html-parser", "xml2json"]
+    "devDependencies": {
+        "nodeunit": "^0.11.3"
+    }
 }

@@ -32,8 +32,8 @@ exports.info = "Browser-based test reporter";
 
 exports.run = function (modules, options, callback) {
     var start = new Date().getTime(), div;
-	options = options || {};
-	div = options.div || document.body;
+    options = options || {};
+    div = options.div || document.body;
 
     function setText(el, txt) {
         if ('innerText' in el) {

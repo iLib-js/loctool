@@ -28,12 +28,12 @@ var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
 }, "./testfiles", {
-	locales:["en-GB"]
+    locales:["en-GB"]
 });
 
 var rft = new RubyFileType(p);
 
-module.exports = {
+module.exports.rubyfile = {
     testRubyFileConstructor: function(test) {
         test.expect(1);
 
@@ -57,9 +57,9 @@ module.exports = {
         test.expect(1);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.done();
@@ -69,9 +69,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equal(rf.makeKey("This is a test"), "r654479252");
@@ -83,136 +83,136 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("Settings    in $$$  your profile"), "r729246322");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyCompressUnderscores2: function(test) {
+    testRubyFileMakeKeyCompressUnderscores2: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("Terms___and___Conditions"), "r906781227");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyNewLines: function(test) {
+    testRubyFileMakeKeyNewLines: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(rf.makeKey("A \n B"), "r191336864");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyTabs: function(test) {
+    testRubyFileMakeKeyTabs: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("A \t B"), "r191336864");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyQuotes: function(test) {
+    testRubyFileMakeKeyQuotes: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("A \\'B\\' C"), "r935639115");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyInterpretEscapedNonSpecialChars: function(test) {
+    testRubyFileMakeKeyInterpretEscapedNonSpecialChars: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("\\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z"), "r1027573048");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyInterpretEscapedSpecialChars: function(test) {
+    testRubyFileMakeKeyInterpretEscapedSpecialChars: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("\\u00A0 \\x23"), "r2293235");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+    testRubyFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("Talk to a support representative live 24/7 via video or\u00a0text\u00a0chat"), "r133149847");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyNoSkipHTML: function(test) {
+    testRubyFileMakeKeyNoSkipHTML: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("A <br> B"), "r158397839");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyCheckRubyCompatibility: function(test) {
+    testRubyFileMakeKeyCheckRubyCompatibility: function(test) {
         test.expect(18);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
@@ -235,72 +235,72 @@ module.exports = {
         test.equals(rf.makeKey("We help more than %{num_ceos} CEOs in our network enhance their reputations,<br>build professional networks, better serve existing customers, grow their businesses,<br>and increase their bottom line."), "r885882110");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyUnescapedNewLines: function(test) {
+    testRubyFileMakeKeyUnescapedNewLines: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         // unescaped is used for single quoted strings
         test.equals(rf.makeKeyUnescaped("A \\\\n B"), "r968833504");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyUnescapedTabs: function(test) {
+    testRubyFileMakeKeyUnescapedTabs: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("A \\\\t B"), "r215504705");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyUnescapedQuotes: function(test) {
+    testRubyFileMakeKeyUnescapedQuotes: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("A \\'B\\' C"), "r935639115");
 
         test.done();
-	},
+    },
 
-	testRubyFileMakeKeyInterpretUnescapedSpecialChars: function(test) {
+    testRubyFileMakeKeyInterpretUnescapedSpecialChars: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("\\u00A0 \\x23"), "r262108213");
 
         test.done();
-	},
+    },
 
     testRubyFileMakeKeyDigits: function(test) {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equal(rf.makeKey("0"), "r3145008");
@@ -312,9 +312,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         test.equal(rf.makeKey("foo: done?!@#$%^&*()"), "r621645297");
@@ -326,9 +326,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test")');
@@ -349,9 +349,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("Rb.t('This is a test')");
@@ -372,9 +372,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test")');
@@ -394,9 +394,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("  \t \n This is a test \t \t \n")');
@@ -416,9 +416,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("  \\t \\n This is a test \\t \\t \\n\\n")');
@@ -438,9 +438,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("Rb.t('This is \\'a\\' test')");
@@ -461,9 +461,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("Rb.t(\"This is \\'a\\' test\")");
@@ -484,9 +484,9 @@ module.exports = {
         test.expect(3);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("")');
@@ -503,9 +503,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('   Rb.t  (    \t "This is a test"    );  ');
@@ -526,9 +526,9 @@ module.exports = {
         test.expect(4);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         var set = rf.getTranslationSet();
@@ -547,9 +547,9 @@ module.exports = {
         test.expect(6);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('\tRb.t("This is a test"); # i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -570,9 +570,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("Rb.t('Created at %{date}', variables: {date: @date.localize.to_s})");
@@ -593,9 +593,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("Rb.t('what', {resource_id: 'which_what'})");
@@ -616,9 +616,9 @@ module.exports = {
         test.expect(5);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("what", {resource_id: "which_what"})');
@@ -639,9 +639,9 @@ module.exports = {
         test.expect(8);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");');
@@ -666,9 +666,9 @@ module.exports = {
         test.expect(8);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('This is Rb.t("This is a test"), a.parse("This is another test."), Rb.t("This is also a test"));');
@@ -693,9 +693,9 @@ module.exports = {
         test.expect(8);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse("[Rb.t('Access the world’s leading online knowledgebase.'), Rb.t('We‘re committed to helping you grow your business!')],");
@@ -720,9 +720,9 @@ module.exports = {
         test.expect(10);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");\t# i18n: bar');
@@ -749,9 +749,9 @@ module.exports = {
         test.expect(10);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test", "asdf");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test", "kdkdkd");\t# i18n: bar');
@@ -778,15 +778,15 @@ module.exports = {
         test.expect(10);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse(
-        		'            .about-item\n' +
-        		'              .item-title\n' +
-        		'                = @is_ceo ? Rb.t(\'Specialty\') : Rb.t(\'I specialize in\') # i18n this is a section title. Ie. Title: Specialty, Content: Growth Hacking\n'
+                '            .about-item\n' +
+                '              .item-title\n' +
+                '                = @is_ceo ? Rb.t(\'Specialty\') : Rb.t(\'I specialize in\') # i18n this is a section title. Ie. Title: Specialty, Content: Growth Hacking\n'
         );
 
         var set = rf.getTranslationSet();
@@ -812,9 +812,9 @@ module.exports = {
         test.expect(6);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is a test");');
@@ -836,9 +836,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test" + " and this isnt");');
@@ -854,9 +854,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t("This is a test" + foobar);');
@@ -871,9 +871,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t(foobar);');
@@ -888,9 +888,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('Rb.t();');
@@ -905,9 +905,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('EPIRb.t("This is a test");');
@@ -922,9 +922,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse('App.Rb.t("This is a test");');
@@ -935,13 +935,39 @@ module.exports = {
         test.done();
     },
 
+    testRubyFileParseIgnoreBraces: function(test) {
+        test.expect(7);
+
+        var rf = new RubyFile({
+            project: p,
+            type: rft
+        });
+        test.ok(rf);
+
+        rf.parse('Rb.t("asdf asdfs{/link}")');
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+
+        test.ok(r);
+        test.equal(r.getSource(), "asdf asdfs{/link}");
+        test.equal(r.getKey(), "r23430520");
+
+        test.equal(set.size(), 1);
+
+        test.done();
+    },
+
     testRubyFileExtractFile: function(test) {
         test.expect(8);
 
         var rf = new RubyFile({
-        	project: p,
-			type: rft,
-        	pathName: "./ruby/external_user_metric.rb"
+            project: p,
+            type: rft,
+            pathName: "./ruby/external_user_metric.rb"
         });
         test.ok(rf);
 
@@ -969,9 +995,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         // should attempt to read the file and not fail
@@ -988,9 +1014,9 @@ module.exports = {
         test.expect(2);
 
         var rf = new RubyFile({
-        	project: p,
-			type: rft,
-        	pathName: "./ruby/foo.rb"
+            project: p,
+            type: rft,
+            pathName: "./ruby/foo.rb"
         });
         test.ok(rf);
 
@@ -1008,36 +1034,36 @@ module.exports = {
         test.expect(18);
 
         var rf = new RubyFile({
-			project: p,
-			type: rft
-		});
+            project: p,
+            type: rft
+        });
         test.ok(rf);
 
         rf.parse(
-    		'.contain-width\n' +
-    		'  .for-everyone\n' +
-    		'    %p.big-text.montserrat-regular\n' +
-    		'      WE HAVE INSURANCE FOR EVERYONE\n' +
-    		'    .items\n' +
-    		'      :ruby\n' +
-    		'        data=[\n' +
-    		'          {:links=>[{:href=>"/what_we_make/members",:caption=>Rb.t("Learn more about members")}],:img=>"members-mobile@3x.png",:title=>Rb.t("Members"),:caption=>Rb.t("Immediate access to other CEOs and their expertise, anytime, anywhere")},\n' +
-    		'          {:links=>[{:href=>"/enterprise/providers",:caption=>Rb.t("Learn about business service providers")},{:href=>"/enterprise/practices",:caption=>Rb.t("Learn about best practices")}],:img=>"providers-and-data-warehouse-systems-mobile@3x.png",:title=>Rb.t("Providers & Data Warehouse Systems"))},\n' +
-    		'          {:links=>[{:href=>"/enterprise/insurers",:caption=>Rb.t("Learn more about employers & insurers")}],:img=>"employers-and-insurers-mobile@3x.png",:title=>Rb.t("Employers & Insurers"),:caption=>Rb.t("Lower costs and improve productivity & satisfaction by providing the right service at the right cost at the right time ")},\n' +
-    		'          {:links=>[{:href=>"/enterprise/sos",:caption=>Rb.t("Learn more about government & population managers")}],:img=>"govt-pop-mangagers@3x.png",:title=>Rb.t("Government & Population Managers")},\n' +
-    		'          {:links=>[{:href=>"/what_we_make/developers",:caption=>Rb.t("Learn more about developers")}],:img=>"developers-mobile@3x.png",:title=>Rb.t("Developers"),:caption=>Rb.t("MyProduct Cloud enables developers to build interoperable, engaging, and smart business experiences, powered by our massive backend.")}\n' +
-    		'        ]\n' +
-    		'      -data.each do |item|\n' +
-    		'        .item\n' +
-    		'          .item-inner\n' +
-    		'            %img{:src=>"/imgs/static_pages/home/new/" + item[:img]}\n' +
-    		'            %p.title.montserrat-regular #{item[:title].html_safe}\n' +
-    		'            %p.small-text #{item[:caption].html_safe}\n' +
-    		'            - item[:links] ||= []\n' +
-    		'            - item[:links].each do |link|\n' +
-    		'              %a.small-text.link{:href=>link[:href]} \n' +
-    		'                #{link[:caption]}\n' +
-    		'                %span.arrow &rsaquo;\n'
+            '.contain-width\n' +
+            '  .for-everyone\n' +
+            '    %p.big-text.montserrat-regular\n' +
+            '      WE HAVE INSURANCE FOR EVERYONE\n' +
+            '    .items\n' +
+            '      :ruby\n' +
+            '        data=[\n' +
+            '          {:links=>[{:href=>"/what_we_make/members",:caption=>Rb.t("Learn more about members")}],:img=>"members-mobile@3x.png",:title=>Rb.t("Members"),:caption=>Rb.t("Immediate access to other CEOs and their expertise, anytime, anywhere")},\n' +
+            '          {:links=>[{:href=>"/enterprise/providers",:caption=>Rb.t("Learn about business service providers")},{:href=>"/enterprise/practices",:caption=>Rb.t("Learn about best practices")}],:img=>"providers-and-data-warehouse-systems-mobile@3x.png",:title=>Rb.t("Providers & Data Warehouse Systems"))},\n' +
+            '          {:links=>[{:href=>"/enterprise/insurers",:caption=>Rb.t("Learn more about employers & insurers")}],:img=>"employers-and-insurers-mobile@3x.png",:title=>Rb.t("Employers & Insurers"),:caption=>Rb.t("Lower costs and improve productivity & satisfaction by providing the right service at the right cost at the right time ")},\n' +
+            '          {:links=>[{:href=>"/enterprise/sos",:caption=>Rb.t("Learn more about government & population managers")}],:img=>"govt-pop-mangagers@3x.png",:title=>Rb.t("Government & Population Managers")},\n' +
+            '          {:links=>[{:href=>"/what_we_make/developers",:caption=>Rb.t("Learn more about developers")}],:img=>"developers-mobile@3x.png",:title=>Rb.t("Developers"),:caption=>Rb.t("MyProduct Cloud enables developers to build interoperable, engaging, and smart business experiences, powered by our massive backend.")}\n' +
+            '        ]\n' +
+            '      -data.each do |item|\n' +
+            '        .item\n' +
+            '          .item-inner\n' +
+            '            %img{:src=>"/imgs/static_pages/home/new/" + item[:img]}\n' +
+            '            %p.title.montserrat-regular #{item[:title].html_safe}\n' +
+            '            %p.small-text #{item[:caption].html_safe}\n' +
+            '            - item[:links] ||= []\n' +
+            '            - item[:links].each do |link|\n' +
+            '              %a.small-text.link{:href=>link[:href]} \n' +
+            '                #{link[:caption]}\n' +
+            '                %span.arrow &rsaquo;\n'
 
         );
 
@@ -1079,7 +1105,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1089,8 +1115,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1100,7 +1126,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1110,8 +1136,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1121,7 +1147,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1131,8 +1157,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1142,7 +1168,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1152,8 +1178,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1163,7 +1189,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1173,8 +1199,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1184,7 +1210,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1194,8 +1220,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1205,7 +1231,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1215,8 +1241,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1226,7 +1252,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1242,7 +1268,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1252,8 +1278,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('three'),undefined)
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('three'),undefined)
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1263,7 +1289,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1273,12 +1299,12 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('two'),'There are a couple tests');
-        test.equals(r.get('zero'),'There are no tests');
-        test.equals(r.get('few'),'There are a few tests');
-        test.equals(r.get('many'),'There are many tests');
-        test.equals(r.get('other'),"There are %{count} tests");
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('two'),'There are a couple tests');
+        test.equals(r.getSource('zero'),'There are no tests');
+        test.equals(r.getSource('few'),'There are a few tests');
+        test.equals(r.getSource('many'),'There are many tests');
+        test.equals(r.getSource('other'),"There are %{count} tests");
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1288,7 +1314,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1298,8 +1324,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
@@ -1309,7 +1335,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1319,9 +1345,9 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('other'),'There are %{count} %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('other'),'There are %{count} %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
@@ -1332,18 +1358,18 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
-        rf.parse("        = Rb.p({:one => '%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in', :other => '%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in'}, {:link => \"<a href='#{url}'>\", :name => colleague.full_name, :link_end => '</a>', :question_link => \"<a href='#{question_url}'>\", :count => count}).html_safe		");
+        rf.parse("        = Rb.p({:one => '%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in', :other => '%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in'}, {:link => \"<a href='#{url}'>\", :name => colleague.full_name, :link_end => '</a>', :question_link => \"<a href='#{question_url}'>\", :count => count}).html_safe        ");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in');
-        test.equals(r.get('other'),'%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in');
+        test.equals(r.getSource('one'),'%{link}%{name}%{link_end} + %{question_link}1 colleague%{link_end} weighed in');
+        test.equals(r.getSource('other'),'%{link}%{name}%{link_end} + %{question_link}%{count} colleagues%{link_end} weighed in');
         test.equals(r.getKey(), 'r747576181');
         test.done();
     },
@@ -1353,7 +1379,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1363,8 +1389,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1374,7 +1400,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1384,8 +1410,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1395,7 +1421,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1405,8 +1431,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1416,7 +1442,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1426,8 +1452,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1437,7 +1463,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1447,8 +1473,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1458,7 +1484,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1468,8 +1494,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1479,7 +1505,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1489,8 +1515,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('other'),'There are %{count} tests');
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1500,7 +1526,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1516,7 +1542,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1526,8 +1552,8 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('three'),undefined)
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('three'),undefined)
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1537,7 +1563,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1547,12 +1573,12 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 test');
-        test.equals(r.get('two'),'There are a couple tests');
-        test.equals(r.get('zero'),'There are no tests');
-        test.equals(r.get('few'),'There are a few tests');
-        test.equals(r.get('many'),'There are many tests');
-        test.equals(r.get('other'),"There are %{count} tests");
+        test.equals(r.getSource('one'),'This is 1 test');
+        test.equals(r.getSource('two'),'There are a couple tests');
+        test.equals(r.getSource('zero'),'There are no tests');
+        test.equals(r.getSource('few'),'There are a few tests');
+        test.equals(r.getSource('many'),'There are many tests');
+        test.equals(r.getSource('other'),"There are %{count} tests");
         test.equals(r.getKey(), 'r186608186');
         test.done();
     },
@@ -1562,7 +1588,7 @@ module.exports = {
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
@@ -1572,42 +1598,42 @@ module.exports = {
         test.equal(set.size(), 1);
         var r = set.getAll()[0];
         test.ok(r);
-        test.equals(r.get('one'),'This is 1 %{thing}');
-        test.equals(r.get('thing'),undefined);
+        test.equals(r.getSource('one'),'This is 1 %{thing}');
+        test.equals(r.getSource('thing'),undefined);
         test.equals(r.getKey(), 'r1006137616');
         test.done();
     },
-    
+
     testRubyFileParseShortStringInHaml: function(test) {
         test.expect(11);
 
         var rf = new RubyFile({
             project: p,
-			type: rft
+            type: rft
         });
         test.ok(rf);
 
         rf.parse('%html\n' +
-				 '  %head\n' +
-				 '    %meta{:name=>"pdfkit-page_size", :content => Rb.t("A4")}\n' +
-				 '    %meta{:name=>"pdfkit-margin_top", :content => Rb.t("0.05in")}\n' +
-				 '    %meta{:name=>"pdfkit-margin_right", :content => Rb.t("0.05in")}\n');
+                 '  %head\n' +
+                 '    %meta{:name=>"pdfkit-page_size", :content => Rb.t("A4")}\n' +
+                 '    %meta{:name=>"pdfkit-margin_top", :content => Rb.t("0.05in")}\n' +
+                 '    %meta{:name=>"pdfkit-margin_right", :content => Rb.t("0.05in")}\n');
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 2);
         var resources = set.getAll();
         test.ok(resources);
         test.equal(resources.length, 2);
-        
+
         var r = resources[0];
         test.ok(r);
-        
+
         test.equals(r.getSource(), 'A4');
         test.equals(r.getKey(), 'r949377406');
-        
+
         r = resources[1];
         test.ok(r);
-        
+
         test.equals(r.getSource(), '0.05in');
         test.equals(r.getKey(), 'r586828064');
 

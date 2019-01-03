@@ -22,20 +22,20 @@ if (!JavaScriptResourceFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.scriptresourcefiletype = {
     testJavaScriptResourceFileTypeConstructor: function(test) {
         test.expect(1);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
-        
+
         test.ok(htf);
-        
+
         test.done();
     },
 
@@ -43,16 +43,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.js"));
-        
+
         test.done();
     },
 
@@ -60,16 +60,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("localized_js/de-DE.js"));
-        
+
         test.done();
     },
 
@@ -77,51 +77,51 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.tmpl.html"));
         test.ok(!htf.handles("foo.html.haml"));
         test.ok(!htf.handles("foo.yml"));
 
         test.done();
     },
-    
+
     testJavaScriptResourceFileTypeGetResourceFile: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE"
+            id: "webapp",
+            sourceLocale: "de-DE"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
 
         var jsrf = htf.getResourceFile("fr-FR");
-        
+
         test.equal(jsrf.getLocale(), "fr-FR");
 
         test.done();
     },
-    
+
     testJavaScriptResourceFileTypeGetResourceFileSameOneEachTime: function(test) {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "webapp",
-        	sourceLocale: "de-DE"
+            id: "webapp",
+            sourceLocale: "de-DE"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new JavaScriptResourceFileType(p);
         test.ok(htf);
 

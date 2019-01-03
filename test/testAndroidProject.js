@@ -22,38 +22,38 @@ if (!AndroidProject) {
     var AndroidResourceFileType = require("../lib/AndroidResourceFileType.js");
 }
 
-module.exports = {
+module.exports.androidproject = {
     testAndroidProjectConstructor: function(test) {
         test.expect(1);
 
         var p = new AndroidProject({
-        	id: "android",
-        	sourceLocale: "en-US"
+            id: "android",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
-        
+
         test.done();
     },
-    
+
     testAndroidProjectRightResourceType: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
-        	id: "android",
-        	sourceLocale: "en-US"
+            id: "android",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"]
+            locales:["en-GB"]
         });
 
         test.ok(p);
-        
+
         var rt = p.getResourceFileType();
-        
+
         test.ok(rt instanceof AndroidResourceFileType);
-        
+
         test.done();
     },
 
@@ -61,17 +61,17 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	id: "android",
-        	sourceLocale: "en-US"
+            id: "android",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"],
-        	"build.gradle": "./build1.gradle"
+            locales:["en-GB"],
+            "build.gradle": "./build1.gradle"
         });
 
         test.ok(p);
-        
+
         test.ok(p.flavors);
-        
+
         test.done();
     },
 
@@ -79,25 +79,25 @@ module.exports = {
         test.expect(8);
 
         var p = new AndroidProject({
-        	id: "android",
-        	sourceLocale: "en-US"
+            id: "android",
+            sourceLocale: "en-US"
         }, "./testfiles", {
-        	locales:["en-GB"],
-        	"build.gradle": "./build1.gradle"
+            locales:["en-GB"],
+            "build.gradle": "./build1.gradle"
         });
 
         test.ok(p);
         test.ok(p.flavors);
-        
+
         test.deepEqual(p.flavors.getSourceDirs("a"), ["flavors/a/src"]);
         test.deepEqual(p.flavors.getResourceDirs("a"), ["flavors/a/res"]);
-        
+
         test.deepEqual(p.flavors.getSourceDirs("b"), ["flavors/bproj/src"]);
         test.deepEqual(p.flavors.getResourceDirs("b"), ["flavors/bproj/res"]);
-        
+
         test.deepEqual(p.flavors.getSourceDirs("c"), ["flavors/xXx/src"]);
         test.deepEqual(p.flavors.getResourceDirs("c"), ["flavors/xXx/res"]);
-        
+
         test.done();
     }
 };

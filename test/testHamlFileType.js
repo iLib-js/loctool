@@ -22,20 +22,20 @@ if (!HamlFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.hamlfiletype = {
     testHamlFileTypeConstructor: function(test) {
         test.expect(1);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
-        
+
         test.ok(htf);
-        
+
         test.done();
     },
 
@@ -43,16 +43,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("foo.html.haml"));
-        
+
         test.done();
     },
 
@@ -60,50 +60,50 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.tml.haml"));
-        
+
         test.done();
     },
-    
+
     testHamlFileTypeHandlesFalse: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.haml"));
-        
+
         test.done();
     },
-    
+
     testHamlFileTypeHandlesTrueWithDir: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("a/b/c/foo.html.haml"));
-        
+
         test.done();
     },
 
@@ -111,16 +111,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/c/foo.en-GB.html.haml"));
-        
+
         test.done();
     },
 
@@ -128,16 +128,16 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/c/foo.es-US.html.haml"));
-        
+
         test.done();
     },
 
@@ -145,33 +145,69 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/c/foo.zh-Hans-CN.html.haml"));
-        
+
         test.done();
     },
-    
+
     testHamlFileTypeHandlesAlreadyLocalizedCN2: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+            sourceLocale: "en-US"
         }, "./testfiles", {
-			locales:["en-GB"]
-		});
-        
+            locales:["en-GB"]
+        });
+
         var htf = new HamlFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("app/views/who_we_are/press.zh-Hans-CN.html.haml"));
-        
+
+        test.done();
+    },
+
+    testHamlFileTypeHandlesAlreadyLocalizedWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new HamlFileType(p);
+        test.ok(htf);
+
+        test.ok(!htf.handles("a/b/c/foo.en-ZA-ASDF.html.haml"));
+
+        test.done();
+    },
+    
+    testHamlFileTypeHandlesAlreadyLocalizedHKWithFlavor: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new HamlFileType(p);
+        test.ok(htf);
+
+        test.ok(!htf.handles("a/b/c/foo.zh-Hant-HK-ASDF.html.haml"));
+
         test.done();
     }
 };
