@@ -1,6 +1,14 @@
 Release Notes for Version 1
 ============================
 
+Build 003
+-------
+Published as version 1.1.1
+
+Bug Fixes:
+* the package.json was screwed up so it didn't publish the code. This is fixed now. No code
+  differences from 1.1.0
+
 Build 002
 -------
 Published as version 1.1.0
