@@ -466,16 +466,16 @@ module.exports.htmlfile = {
         test.ok(htf);
 
         htf.parse(
-                '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
-                '<html>\n' +
-                '   <body>\n' +
-                '       This is a test\n' +
-                '       <div id="foo">\n' +
-                '           This is also a test\n' +
-                '       </div>\n' +
-                '       This is a test\n' +
-                '   </body>\n' +
-                '</html>\n');
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
+            '<html>\n' +
+            '   <body>\n' +
+            '       This is a test\n' +
+            '       <div id="foo">\n' +
+            '           This is also a test\n' +
+            '       </div>\n' +
+            '       This is a test\n' +
+            '   </body>\n' +
+            '</html>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
