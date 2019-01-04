@@ -63,6 +63,7 @@
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
+        "message-accumulator": "file:../message-accumulator/message-accumulator-1.0.0.tgz",
         "micromatch": ">=3.1.0",
         "mysql2": ">=1.5.0",
         "node-expat": ">=2.3.0",
