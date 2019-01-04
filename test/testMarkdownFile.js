@@ -57,8 +57,8 @@ module.exports.markdown = {
     testMarkdownFileConstructor: function(test) {
         test.expect(1);
 
-        var htf = new MarkdownFile();
-        test.ok(htf);
+        var mf = new MarkdownFile();
+        test.ok(mf);
 
         test.done();
     },
@@ -66,9 +66,9 @@ module.exports.markdown = {
     testMarkdownFileConstructorParams: function(test) {
         test.expect(1);
 
-        var htf = new MarkdownFile(p, "./testfiles/md/test1.md");
+        var mf = new MarkdownFile(p, "./testfiles/md/test1.md");
 
-        test.ok(htf);
+        test.ok(mf);
 
         test.done();
     },
@@ -76,8 +76,8 @@ module.exports.markdown = {
     testMarkdownFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
         test.done();
     },
@@ -309,12 +309,12 @@ module.exports.markdown = {
     testMarkdownFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\nThis is a test too\n');
+        mf.parse('This is a test\n\nThis is a test too\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.get(ResourceString.hashKey("foo", "en-US", "r654479252", "markdown"));
@@ -329,12 +329,12 @@ module.exports.markdown = {
     testMarkdownFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\nThis is a test too\n');
+        mf.parse('This is a test\n\nThis is a test too\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -348,12 +348,12 @@ module.exports.markdown = {
     testMarkdownFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test            \t   \t     \n\nThis is a test too\n');
+        mf.parse('This is a test            \t   \t     \n\nThis is a test too\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -367,13 +367,13 @@ module.exports.markdown = {
     testMarkdownFileParseDontExtractUnicodeWhitespace: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
         // contains U+00A0 non-breaking space and other Unicode space characters
-        htf.parse('            ​‌‍ \n');
+        mf.parse('            ​‌‍ \n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         test.equal(set.size(), 0);
@@ -384,12 +384,12 @@ module.exports.markdown = {
     testMarkdownFileParseDontExtractNbspEntity: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('&nbsp; &#xA0; \n');
+        mf.parse('&nbsp; &#xA0; \n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         test.equal(set.size(), 0);
@@ -400,12 +400,12 @@ module.exports.markdown = {
     testMarkdownFileParseDoExtractOtherEntities: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('&uuml;\n');
+        mf.parse('&uuml;\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         test.equal(set.size(), 1);
@@ -416,12 +416,12 @@ module.exports.markdown = {
     testMarkdownFileParseEmpty: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse(' \n');
+        mf.parse(' \n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 0);
 
@@ -431,12 +431,12 @@ module.exports.markdown = {
     testMarkdownFileParseSkipHeader: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n');
+        mf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 0);
 
@@ -447,12 +447,12 @@ module.exports.markdown = {
     testMarkdownFileParseNoStrings: function(test) {
         test.expect(3);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n     \n\t\t\t\n');
+        mf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n     \n\t\t\t\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 0);
 
@@ -462,13 +462,13 @@ module.exports.markdown = {
     testMarkdownFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.equal(set.size(), 0);
 
-        htf.parse('This is a test\n\n');
+        mf.parse('This is a test\n\n');
 
         test.ok(set);
 
@@ -480,13 +480,13 @@ module.exports.markdown = {
     testMarkdownFileParseMultiple: function(test) {
         test.expect(8);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\n' +
+        mf.parse('This is a test\n\n' +
                   'This is also a test\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -505,13 +505,13 @@ module.exports.markdown = {
     testMarkdownFileParseContinuedParagraph: function(test) {
         test.expect(7);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test.\n' +
+        mf.parse('This is a test.\n' +
                   'This is also a test.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test.\nThis is also a test.");
@@ -532,14 +532,14 @@ module.exports.markdown = {
     testMarkdownFileParseWithDups: function(test) {
         test.expect(6);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\n' +
+        mf.parse('This is a test\n\n' +
                   'This is also a test\n\n' +
                   'This is a test\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -555,12 +555,12 @@ module.exports.markdown = {
     testMarkdownFileParseEscapeInvalidChars: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is also a &#x3; test\n');
+        mf.parse('This is also a &#x3; test\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // should use html entities to represent the invalid control chars
@@ -575,12 +575,12 @@ module.exports.markdown = {
     testMarkdownFileParseDontEscapeWhitespaceChars: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is also a &#x000C; test\n');
+        mf.parse('This is also a &#x000C; test\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // leave the whitespace control chars alone
@@ -595,10 +595,10 @@ module.exports.markdown = {
     testMarkdownFileSkipReadmeIOBlocks: function(test) {
         test.expect(8);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n' +
+        mf.parse('This is a test\n' +
                   '[block:parameters]\n' +
                   '{\n' +
                   '  "data": {\n' +
@@ -617,7 +617,7 @@ module.exports.markdown = {
                   '[/block]\n' +
                   'bar\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -639,12 +639,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingEmphasis: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a *test* of the emergency parsing system.\n');
+        mf.parse('This is a *test* of the emergency parsing system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a <c0>test</c0> of the emergency parsing system.");
@@ -658,12 +658,12 @@ module.exports.markdown = {
     testMarkdownFileParseNestedNonBreakingEmphasis: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This _is a *test* of the emergency parsing_ system.\n');
+        mf.parse('This _is a *test* of the emergency parsing_ system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This <c0>is a <c1>test</c1> of the emergency parsing</c0> system.");
@@ -677,12 +677,12 @@ module.exports.markdown = {
     testMarkdownFileParseNestedAndSequentialNonBreakingEmphasis: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This _is a *test* of the_ *emergency parsing* system.\n');
+        mf.parse('This _is a *test* of the_ *emergency parsing* system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This <c0>is a <c1>test</c1> of the</c0> <c2>emergency parsing</c2> system.");
@@ -696,12 +696,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingLinks: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test of the [emergency parsing system](http://foo.com/bar/asdf.html).\n');
+        mf.parse('This is a test of the [emergency parsing system](http://foo.com/bar/asdf.html).\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test of the <c0>emergency parsing system</c0>.");
@@ -715,12 +715,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingHTMLTags: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a <c0>test</c0> of the emergency parsing system.");
@@ -734,12 +734,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingHTMLTagsOutside: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<em>This is a test of the emergency parsing system.</em>\n');
+        mf.parse('<em>This is a test of the emergency parsing system.</em>\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // should not pick up the emphasis marker because there is no localizable text
@@ -755,12 +755,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingEmphasisOutside: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('*This is a test of the emergency parsing system.*\n');
+        mf.parse('*This is a test of the emergency parsing system.*\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // should not pick up the emphasis marker because there is no localizable text
@@ -776,12 +776,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingHTMLTagsInside: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // should pick up the span tag because there is localizable text
@@ -797,12 +797,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingHTMLTagsInsideMultiple: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // tags should be nestable
@@ -817,12 +817,12 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingTagsNotWellFormed: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // the end span tag should automatically end the em tag
@@ -837,13 +837,13 @@ module.exports.markdown = {
     testMarkdownFileParseNonBreakingTagsTagStackIsReset: function(test) {
         test.expect(5);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<span>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</span>\n\n' +
+        mf.parse('<span>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</span>\n\n' +
                   'This is <b>another test</b> of the emergency parsing </span> system.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         // the end div tag ends all the other tags
@@ -858,14 +858,14 @@ module.exports.markdown = {
     testMarkdownFileParseLocalizableTitle: function(test) {
         test.expect(8);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<div title="This value is localizable">\n\n' +
+        mf.parse('<div title="This value is localizable">\n\n' +
                 'This is a test\n\n' +
                 '</div>\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -884,13 +884,13 @@ module.exports.markdown = {
     testMarkdownFileParseLocalizableAttributes: function(test) {
         test.expect(8);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n' +
+        mf.parse('This is a test\n' +
                 '<input type="text" placeholder="localizable placeholder here"></input>\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test");
@@ -909,13 +909,13 @@ module.exports.markdown = {
     testMarkdownFileParseLocalizableAttributesSkipEmpty: function(test) {
         test.expect(6);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n' +
+        mf.parse('This is a test\n' +
                 '<input type="text" placeholder=""></input>\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         test.equal(set.size(), 1);
@@ -931,12 +931,12 @@ module.exports.markdown = {
     testMarkdownFileParseLocalizableAttributesAndNonBreakingTags: function(test) {
         test.expect(8);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n');
+        mf.parse('This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource('This is <c0>a test</c0> of non-breaking tags.');
@@ -955,14 +955,14 @@ module.exports.markdown = {
     testMarkdownFileParseI18NComments: function(test) {
         test.expect(10);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<!-- i18n this describes the text below -->\n' +
+        mf.parse('<!-- i18n this describes the text below -->\n' +
                 'This is a test of the emergency parsing system.\n\n' +
                 'But not this text\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         var r = set.getBySource("This is a test of the emergency parsing system.");
@@ -983,10 +983,10 @@ module.exports.markdown = {
     testMarkdownFileParseIgnoreTags: function(test) {
         test.expect(6);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse(
+        mf.parse(
             '<script type="javascript">\n' +
             'if (window) {\n' +
             '  $(".foo").class("asdf");\n' +
@@ -1002,7 +1002,7 @@ module.exports.markdown = {
             '</style>\n' +
             '<span class="foo">foo</span>\n');
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
         test.ok(set);
 
         test.equal(set.size(), 1);
@@ -1020,13 +1020,13 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p, "./md/test1.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/test1.md");
+        test.ok(mf);
 
         // should read the file
-        htf.extract();
+        mf.extract();
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
 
         test.equal(set.size(), 3);
 
@@ -1053,13 +1053,13 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p, "./md/test2.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/test2.md");
+        test.ok(mf);
 
         // should read the file
-        htf.extract();
+        mf.extract();
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
 
         test.equal(set.size(), 5);
 
@@ -1082,13 +1082,13 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
         // should attempt to read the file and not fail
-        htf.extract();
+        mf.extract();
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
 
         test.equal(set.size(), 0);
 
@@ -1100,13 +1100,13 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p, "./md/bogus.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/bogus.md");
+        test.ok(mf);
 
         // should attempt to read the file and not fail
-        htf.extract();
+        mf.extract();
 
-        var set = htf.getTranslationSet();
+        var set = mf.getTranslationSet();
 
         test.equal(set.size(), 0);
 
@@ -1116,10 +1116,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeText: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n');
+        mf.parse('This is a test\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1132,7 +1132,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        var actual = htf.localizeText(translations, "fr-FR");
+        var actual = mf.localizeText(translations, "fr-FR");
         var expected = 'Ceci est un essai\n';
 
         diff(actual, expected);
@@ -1143,10 +1143,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextPreserveWhitespace: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('     This is a test    \n');
+        mf.parse('     This is a test    \n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1159,7 +1159,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             '     Ceci est un essai    \n');
 
         test.done();
@@ -1168,10 +1168,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextMultiple: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('       This is a test\n\n' +
+        mf.parse('       This is a test\n\n' +
                 '           This is also a test\n');
 
         var translations = new TranslationSet();
@@ -1194,7 +1194,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 '       Ceci est un essai\n\n' +
                 '           Ceci est aussi un essai\n');
 
@@ -1204,10 +1204,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextWithDups: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\n' +
+        mf.parse('This is a test\n\n' +
                 'This is also a test\n\n' +
                 'This is a test\n');
 
@@ -1231,7 +1231,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est un essai\n\n' +
                 'Ceci est aussi un essai\n\n' +
                 'Ceci est un essai\n');
@@ -1242,10 +1242,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextSkipScript: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<script>\n' +
+        mf.parse('<script>\n' +
                 '// comment text\n' +
                 'if (locales.contains[thisLocale]) {\n' +
                 '    document.write("<input id=\"locale\" class=\"foo\" title=\"bar\"></input>");\n' +
@@ -1265,7 +1265,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             '<script>\n' +
             '// comment text\n' +
             'if (locales.contains[thisLocale]) {\n' +
@@ -1281,10 +1281,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTags: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1297,7 +1297,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             'Ceci est un <em>essai</em> du système d\'analyse syntaxique de l\'urgence.\n');
 
         test.done();
@@ -1306,10 +1306,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTagsOutside: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('*This is a test of the emergency parsing system.*\n');
+        mf.parse('*This is a test of the emergency parsing system.*\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1322,7 +1322,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             '*Ceci est un essai du système d\'analyse syntaxique de l\'urgence.*\n');
 
         test.done();
@@ -1331,10 +1331,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTagsInside: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1346,7 +1346,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>\n');
 
         test.done();
@@ -1355,10 +1355,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTagsInsideMultiple: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1370,7 +1370,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
             'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>\n');
 
         test.done();
@@ -1379,10 +1379,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTagsNotWellFormed: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n');
+        mf.parse('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1394,7 +1394,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</em></span>\n');
 
         test.done();
@@ -1403,10 +1403,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextNonBreakingTagsNotWellFormedWithTerminatorTag: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n');
+        mf.parse('<div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1418,7 +1418,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 '<div>Ceci est <span id="foo" class="bar"> un essai <em>d\'analyse syntaxique </em></span></div> system.\n');
 
         test.done();
@@ -1427,10 +1427,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextLocalizableTitle: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<div title="This value is localizable">\n' +
+        mf.parse('<div title="This value is localizable">\n' +
                 'This is a test\n' +
                 '</div>\n');
 
@@ -1452,7 +1452,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 '<div title="Cette valeur est localisable">\n' +
                 'Ceci est un essai\n' +
                 '</div>\n');
@@ -1463,10 +1463,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextLocalizableAttributes: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('![Alternate text](http://www.test.test/foo.png "title here")\n' +
+        mf.parse('![Alternate text](http://www.test.test/foo.png "title here")\n' +
                 'This is a test\n' +
                 '<input type="text" placeholder="localizable placeholder here">\n');
 
@@ -1504,7 +1504,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 '![Texte alternative](http://www.test.test/foo.png "titre ici")\n' +
                 'Ceci est un essai\n' +
                 '<input type="text" placeholder="espace réservé localisable ici">\n');
@@ -1515,10 +1515,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextLocalizableAttributesAndNonBreakingTags: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n');
+        mf.parse('This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1538,7 +1538,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est <a href="foo.html" title="titre localisable">un essai</a> des balises non-ruptures.\n');
 
         test.done();
@@ -1547,10 +1547,10 @@ module.exports.markdown = {
     testMarkdownFileLocalizeTextI18NComments: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('<!-- i18n: this describes the text below -->\n' +
+        mf.parse('<!-- i18n: this describes the text below -->\n' +
                 'This is a test of the emergency parsing system.\n');
 
         var translations = new TranslationSet();
@@ -1563,7 +1563,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.\n');
 
         test.done();
@@ -1580,10 +1580,10 @@ module.exports.markdown = {
             identify: true
         });
 
-        var htf = new MarkdownFile(p);
-        test.ok(htf);
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
 
-        htf.parse('This is a test\n\n' +
+        mf.parse('This is a test\n\n' +
                 'This is also a test\n\n' +
                 'This is a test\n');
 
@@ -1611,7 +1611,7 @@ module.exports.markdown = {
             '<span loclang="markdown" locid="r654479252">Ceci est un essai</span>\n\n' +
             '<span loclang="markdown" locid="r999080996">Ceci est aussi un essai</span>\n\n' +
             '<span loclang="markdown" locid="r654479252">Ceci est un essai</span>\n';
-           var actual = htf.localizeText(translations, "fr-FR");
+           var actual = mf.localizeText(translations, "fr-FR");
 
            diff(actual, expected);
         test.equal(actual, expected);
@@ -1621,10 +1621,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedPathSimple: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "simple.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "simple.md");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "fr-FR/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/simple.md");
 
         test.done();
     },
@@ -1632,10 +1632,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedPathComplex: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "./asdf/bar/simple.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./asdf/bar/simple.md");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
 
         test.done();
     },
@@ -1643,10 +1643,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedPathRegularMarkdownFileName: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "./asdf/bar/simple.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./asdf/bar/simple.md");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
 
         test.done();
     },
@@ -1654,10 +1654,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedPathNotEnoughParts: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "./asdf/bar/simple");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./asdf/bar/simple");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple");
 
         test.done();
     },
@@ -1665,10 +1665,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedSourceLocale: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "./en-US/asdf/bar/simple.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./en-US/asdf/bar/simple.md");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
 
         test.done();
     },
@@ -1676,10 +1676,10 @@ module.exports.markdown = {
     testMarkdownFileGetLocalizedSourceLocaleInMidPath: function(test) {
         test.expect(2);
 
-        var htf = new MarkdownFile(p, "./asdf/en-US/bar/simple.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./asdf/en-US/bar/simple.md");
+        test.ok(mf);
 
-        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/fr-FR/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "asdf/fr-FR/bar/simple.md");
 
         test.done();
     },
@@ -1689,11 +1689,11 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p, "./md/test1.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/test1.md");
+        test.ok(mf);
 
         // should read the file
-        htf.extract();
+        mf.extract();
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1762,7 +1762,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        htf.localize(translations, ["fr-FR", "de-DE"]);
+        mf.localize(translations, ["fr-FR", "de-DE"]);
 
         test.ok(fs.existsSync(path.join(base, "fr-FR/md/test1.md")));
         test.ok(fs.existsSync(path.join(base, "de-DE/md/test1.md")));
@@ -1863,11 +1863,11 @@ module.exports.markdown = {
 
         var base = path.dirname(module.id);
 
-        var htf = new MarkdownFile(p, "./md/nostrings.md");
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/nostrings.md");
+        test.ok(mf);
 
         // should read the file
-        htf.extract();
+        mf.extract();
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1887,7 +1887,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        htf.localize(translations, ["fr-FR", "de-DE"]);
+        mf.localize(translations, ["fr-FR", "de-DE"]);
 
         // should produce the files, even if there is nothing to localize in them
         test.ok(fs.existsSync(path.join(base, "fr-FR/testfiles/md/nostrings.md")));
@@ -1903,10 +1903,10 @@ module.exports.markdown = {
         var base = path.dirname(module.id);
 
         var t = new MarkdownFileType(p);
-        var htf = new MarkdownFile(p, "./md/mode.md", t);
-        test.ok(htf);
+        var mf = new MarkdownFile(p, "./md/mode.md", t);
+        test.ok(mf);
 
-        htf.extract();
+        mf.extract();
 
         var translations = new TranslationSet();
 
@@ -1920,7 +1920,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        var actual = htf.localizeText(translations, "fr-FR");
+        var actual = mf.localizeText(translations, "fr-FR");
         var expected =
             'Choisissez une méthode de réunion d\'affaires\n' +
             '-----------------------\n' +
