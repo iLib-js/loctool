@@ -453,6 +453,43 @@ module.exports.htmlfile = {
         test.done();
     },
 
+    testHTMLFileParseIgnoreDoctypeTag: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse(
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
+            '<html>\n' +
+            '   <body>\n' +
+            '       This is a test\n' +
+            '       <div id="foo">\n' +
+            '           This is also a test\n' +
+            '       </div>\n' +
+            '       This is a test\n' +
+            '   </body>\n' +
+            '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+
+        test.equal(set.size(), 2);
+
+        test.done();
+    },
+
     testHTMLFileParseDontEscapeWhitespaceChars: function(test) {
         test.expect(5);
 
@@ -1324,6 +1361,64 @@ module.exports.htmlfile = {
                 '       Ceci est un essai\n' +
                 '   </body>\n' +
                 '</html>\n');
+
+        test.done();
+    },
+
+    testHTMLFileLocalizeTextWithDoctypeTag: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse(
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
+            '<html>\n' +
+            '   <body>\n' +
+            '       This is a test\n' +
+            '       <div id="foo">\n' +
+            '           This is also a test\n' +
+            '       </div>\n' +
+            '   </body>\n' +
+            '</html>\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            target: "Ceci est un essai",
+            targetLocale: "fr-FR",
+            datatype: "html"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "This is also a test",
+            source: "This is also a test",
+            sourceLocale: "en-US",
+            target: "Ceci est aussi un essai",
+            targetLocale: "fr-FR",
+            datatype: "html"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
+            '<html>\n' +
+            '   <body>\n' +
+            '       Ceci est un essai\n' +
+            '       <div id="foo">\n' +
+            '           Ceci est aussi un essai\n' +
+            '       </div>\n' +
+            '   </body>\n' +
+            '</html>\n');
 
         test.done();
     },

@@ -1,6 +1,14 @@
 Release Notes for Version 1
 ============================
 
+Build 006
+-------
+Published as version 1.1.2
+
+Bug Fixes:
+* HTML and HTML template files were not localized properly when there is a &lt;!DOCTYPE&gt; tag in the text.
+The output included the attributes of the tag, but not the tag itself. This is corrected now.
+
 Build 003
 -------
 Published as version 1.1.1
