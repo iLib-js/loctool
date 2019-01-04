@@ -453,6 +453,43 @@ module.exports.htmlfile = {
         test.done();
     },
 
+    testHTMLFileParseIgnoreDoctypeTag: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse(
+                '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n' +
+                '<html>\n' +
+                '   <body>\n' +
+                '       This is a test\n' +
+                '       <div id="foo">\n' +
+                '           This is also a test\n' +
+                '       </div>\n' +
+                '       This is a test\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+
+        test.equal(set.size(), 2);
+
+        test.done();
+    },
+
     testHTMLFileParseDontEscapeWhitespaceChars: function(test) {
         test.expect(5);
 
