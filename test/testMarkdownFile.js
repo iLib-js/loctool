@@ -533,9 +533,9 @@ module.exports.markdown = {
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test. This is also a test.");
+        var r = set.getBySource("This is a test.\nThis is also a test.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test. This is also a test.");
+        test.equal(r.getSource(), "This is a test.\nThis is also a test.");
         test.equal(r.getKey(), "r770271164");
 
         r = set.getBySource("This is a test.");
@@ -1035,7 +1035,7 @@ module.exports.markdown = {
     },
 
     testMarkdownFileExtractFile: function(test) {
-        test.expect(11);
+        test.expect(14);
 
         var base = path.dirname(module.id);
 
@@ -1047,7 +1047,7 @@ module.exports.markdown = {
 
         var set = mf.getTranslationSet();
 
-        test.equal(set.size(), 3);
+        test.equal(set.size(), 4);
 
         var r = set.getBySource("This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
         test.ok(r);
@@ -1064,11 +1064,16 @@ module.exports.markdown = {
         test.equal(r.getSource(), "This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
         test.equal(r.getKey(), "r112215756");
 
+        r = set.getBySource("This is the last bit of localizable text.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is the last bit of localizable text.");
+        test.equal(r.getKey(), "r260813817");
+
         test.done();
     },
 
     testMarkdownFileExtractFile2: function(test) {
-        test.expect(8);
+        test.expect(11);
 
         var base = path.dirname(module.id);
 
@@ -1080,18 +1085,22 @@ module.exports.markdown = {
 
         var set = mf.getTranslationSet();
 
-        test.equal(set.size(), 5);
+        test.equal(set.size(), 3);
 
         var r = set.getBySource("This is text with a <c0>link</c0> in it.");
         test.ok(r);
         test.equal(r.getSource(), "This is text with a <c0>link</c0> in it.");
         test.equal(r.getKey(), "r717941707");
 
-
         r = set.getBySource("This is text with <c0>some emphasis <c1>on the wrong</c1> syllable</c0>. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
         test.ok(r);
-        test.equal(r.getSource(), "his is text with <c0>some emphasis <c1>on the wrong</c1> syllable</c0>. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
+        test.equal(r.getSource(), "This is text with <c0>some emphasis <c1>on the wrong</c1> syllable</c0>. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
         test.equal(r.getKey(), "r736057533");
+
+        r = set.getBySource("This is a Heading");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a Heading");
+        test.equal(r.getKey(), "r728092714");
 
         test.done();
     },
