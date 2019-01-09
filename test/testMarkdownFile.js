@@ -443,6 +443,25 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseSkipHeaderAndParseRest: function(test) {
+        test.expect(6);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n\nThis is a test\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+
+        test.done();
+    },
 
     testMarkdownFileParseNoStrings: function(test) {
         test.expect(3);
@@ -514,9 +533,9 @@ module.exports.markdown = {
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test.\nThis is also a test.");
+        var r = set.getBySource("This is a test. This is also a test.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test.\nThis is also a test.");
+        test.equal(r.getSource(), "This is a test. This is also a test.");
         test.equal(r.getKey(), "r770271164");
 
         r = set.getBySource("This is a test.");
