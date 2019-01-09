@@ -784,10 +784,10 @@ module.exports.markdown = {
 
         // should not pick up the emphasis marker because there is no localizable text
         // before it or after it
-        var r = set.getBySource("<c0>This is a test of the emergency parsing system.</c0>");
+        var r = set.getBySource("This is a test of the emergency parsing system.");
         test.ok(r);
-        test.equal(r.getSource(), "<c0>This is a test of the emergency parsing system.</c0>");
-        test.equal(r.getKey(), "r49032733");
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
 
         test.done();
     },
@@ -989,7 +989,7 @@ module.exports.markdown = {
         test.equal(r.getSource(), "This is a test of the emergency parsing system.");
         test.equal(r.getKey(), "r699762575");
         test.equal(r.getComment(), "this describes the text below");
-        
+
         r = set.getBySource("But not this text");
         test.ok(r);
         test.equal(r.getSource(), "But not this text");
