@@ -60,6 +60,7 @@
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
         "ilib": "^13.3.0",
+        "ilib-tree-node": "file:../ilib-tree-node/ilib-tree-node-1.0.0.tgz",
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
@@ -73,9 +74,11 @@
         "remark-html": "^9.0.0",
         "remark-parse": "^6.0.3",
         "remark-rehype": "^4.0.0",
+        "remark-stringify": "^6.0.4",
         "tap": "^7.0.0",
         "unified": "^7.1.0",
         "unist-util-filter": "^1.0.0",
+        "unist-util-map": "^1.0.4",
         "xml2json": "^0.11.2"
     },
     "devDependencies": {

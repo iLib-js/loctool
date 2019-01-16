@@ -1174,7 +1174,7 @@ module.exports.markdown = {
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('     This is a test    \n');
+        mf.parse('This is a test    \n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1188,7 +1188,7 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-            '     Ceci est un essai    \n');
+            'Ceci est un essai    \n');
 
         test.done();
     },
@@ -1199,8 +1199,8 @@ module.exports.markdown = {
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('       This is a test\n\n' +
-                '           This is also a test\n');
+        mf.parse('This is a test\n\n' +
+                'This is also a test\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1223,8 +1223,8 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-                '       Ceci est un essai\n\n' +
-                '           Ceci est aussi un essai\n');
+                'Ceci est un essai\n\n' +
+                'Ceci est aussi un essai\n');
 
         test.done();
     },
@@ -1317,8 +1317,8 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r519900356",
-            source: "This is a<c0>test</c0>of the emergency parsing system.",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
             sourceLocale: "en-US",
             target: "Ceci est un <c0>essai</c0> du système d'analyse syntaxique de l'urgence.",
             targetLocale: "fr-FR",
@@ -1351,7 +1351,7 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-            '*Ceci est un essai du système d\'analyse syntaxique de l\'urgence.*\n');
+            '_Ceci est un essai du système d\'analyse syntaxique de l\'urgence._\n');
 
         test.done();
     },
@@ -1367,15 +1367,15 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r687390938',
-            source: 'This is<c0>a test of the emergency parsing</c0>system.',
-            target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de l\'urgence.</c0>',
+            key: 'r124733470',
+            source: 'This is <c0> a test of the emergency parsing </c0> system.',
+            target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de l\'urgence. </c0>',
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-            'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>\n');
+            'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence. </span>\n');
 
         test.done();
     },
@@ -1391,8 +1391,8 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r106401729',
-            source: 'This is<c0>a test of the<c1>emergency</c1>parsing</c0>system.',
+            key: 'r772812508',
+            source: 'This is <c0> a test of the <c1>emergency</c1> parsing </c0> system.',
             target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de <c1>l\'urgence</c1>.</c0>',
             targetLocale: "fr-FR",
             datatype: "markdown"
@@ -1415,8 +1415,8 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r21791788',
-            source: 'This is<c0>a test of the<c1>emergency parsing</c1></c0>system.',
+            key: 'r417724998',
+            source: 'This is <c0> a test of the <c1>emergency parsing </c1></c0> system.',
             target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de <c1>l\'urgence.</c1></c0>',
             targetLocale: "fr-FR",
             datatype: "markdown"
@@ -1428,39 +1428,13 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileLocalizeTextNonBreakingTagsNotWellFormedWithTerminatorTag: function(test) {
-        test.expect(2);
-
-        var mf = new MarkdownFile(p);
-        test.ok(mf);
-
-        mf.parse('<div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n');
-
-        var translations = new TranslationSet();
-        translations.add(new ResourceString({
-            project: "foo",
-            key: 'r693069813',
-            source: 'This is<c0>a test of the<c1>emergency parsing</c1></c0>',
-            target: 'Ceci est <c0> un essai <c1>d\'analyse syntaxique</c1></c0>',
-            targetLocale: "fr-FR",
-            datatype: "markdown"
-        }));
-
-        test.equal(mf.localizeText(translations, "fr-FR"),
-                '<div>Ceci est <span id="foo" class="bar"> un essai <em>d\'analyse syntaxique </em></span></div> system.\n');
-
-        test.done();
-    },
-
     testMarkdownFileLocalizeTextLocalizableTitle: function(test) {
         test.expect(2);
 
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('<div title="This value is localizable">\n' +
-                'This is a test\n' +
-                '</div>\n');
+        mf.parse('Markdown text <div title="This value is localizable">This is a test</div>\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
@@ -1481,9 +1455,7 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-                '<div title="Cette valeur est localisable">\n' +
-                'Ceci est un essai\n' +
-                '</div>\n');
+            'Markdown text <div title="Cette valeur est localisable">Ceci est un essai</div>\n');
 
         test.done();
     },
@@ -1533,9 +1505,9 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-                '![Texte alternative](http://www.test.test/foo.png "titre ici")\n' +
-                'Ceci est un essai\n' +
-                '<input type="text" placeholder="espace réservé localisable ici">\n');
+            '![Texte alternative](http://www.test.test/foo.png "titre ici")\n' +
+            'Ceci est un essai\n' +
+            '<input type="text" placeholder="espace réservé localisable ici">\n');
 
         test.done();
     },
@@ -1551,8 +1523,8 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r210107016',
-            source: 'This is<c0>a test</c0>of non-breaking tags.',
+            key: 'r1063253939',
+            source: 'This is <c0>a test</c0> of non-breaking tags.',
             target: 'Ceci est <c0>un essai</c0> des balises non-ruptures.',
             targetLocale: "fr-FR",
             datatype: "markdown"
@@ -1592,7 +1564,8 @@ module.exports.markdown = {
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-                'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.\n');
+            '<!-- i18n: this describes the text below -->\n\n' +
+            'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.\n');
 
         test.done();
     },
@@ -1636,12 +1609,12 @@ module.exports.markdown = {
         }));
 
         var expected =
-            '<span loclang="markdown" locid="r654479252">Ceci est un essai</span>\n\n' +
-            '<span loclang="markdown" locid="r999080996">Ceci est aussi un essai</span>\n\n' +
-            '<span loclang="markdown" locid="r654479252">Ceci est un essai</span>\n';
-           var actual = mf.localizeText(translations, "fr-FR");
+            '<span x-locid="r654479252">Ceci est un essai</span>\n\n' +
+            '<span x-locid="r999080996">Ceci est aussi un essai</span>\n\n' +
+            '<span x-locid="r654479252">Ceci est un essai</span>\n';
+        var actual = mf.localizeText(translations, "fr-FR");
 
-           diff(actual, expected);
+        diff(actual, expected);
         test.equal(actual, expected);
         test.done();
     },
@@ -1690,24 +1663,24 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileGetLocalizedSourceLocale: function(test) {
+    testMarkdownFileGetLocalizedPathAlreadyHasSourceLocale: function(test) {
         test.expect(2);
 
         var mf = new MarkdownFile(p, "./en-US/asdf/bar/simple.md");
         test.ok(mf);
 
-        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "./fr-FR/asdf/bar/simple.md");
 
         test.done();
     },
 
-    testMarkdownFileGetLocalizedSourceLocaleInMidPath: function(test) {
+    testMarkdownFileGetLocalizedPathSourceLocaleInMidPath: function(test) {
         test.expect(2);
 
         var mf = new MarkdownFile(p, "./asdf/en-US/bar/simple.md");
         test.ok(mf);
 
-        test.equal(mf.getLocalizedPath("fr-FR"), "asdf/fr-FR/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "./asdf/fr-FR/bar/simple.md");
 
         test.done();
     },
@@ -1725,7 +1698,7 @@ module.exports.markdown = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r548615397',
             source: 'This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
             target: 'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.',
@@ -1733,7 +1706,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r777006502',
             source: 'This is some text. This is more text. Pretty, pretty text.',
             target: 'Ceci est du texte. C\'est plus de texte. Joli, joli texte.',
@@ -1741,7 +1714,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r112215756',
             source: 'This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
             target: 'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.',
@@ -1749,7 +1722,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r260813817',
             source: 'This is the last bit of localizable text.',
             target: 'C\'est le dernier morceau de texte localisable.',
@@ -1758,7 +1731,7 @@ module.exports.markdown = {
         }));
 
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r548615397',
             source: 'This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
             target: 'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.',
@@ -1766,7 +1739,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r777006502',
             source: 'This is some text. This is more text. Pretty, pretty text.',
             target: 'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.',
@@ -1774,7 +1747,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r112215756',
             source: 'This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
             target: 'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.',
@@ -1782,7 +1755,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r260813817',
             source: 'This is the last bit of localizable text.',
             target: 'Dies ist der letzte Teil des lokalisierbaren Textes.',
@@ -1792,19 +1765,17 @@ module.exports.markdown = {
 
         mf.localize(translations, ["fr-FR", "de-DE"]);
 
-        test.ok(fs.existsSync(path.join(base, "fr-FR/md/test1.md")));
-        test.ok(fs.existsSync(path.join(base, "de-DE/md/test1.md")));
+        test.ok(fs.existsSync(path.join(base, p.root, "fr-FR/md/test1.md")));
+        test.ok(fs.existsSync(path.join(base, p.root, "de-DE/md/test1.md")));
 
-        var content = fs.readFileSync(path.join(base, "fr-FR/md/test1.md"), "utf-8");
+        var content = fs.readFileSync(path.join(base, p.root, "fr-FR/md/test1.md"), "utf-8");
 
         var expected =
-            '---\n' +
+            '* * *\n\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
-            'excerpt: ""\n' +
-            '---\n' +
-            '\n' +
-            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
-            '==================================\n' +
+            'excerpt: ""\n\n' +
+            '* * *\n\n' +
+            '# Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
             '\n' +
             'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n' +
             '\n' +
@@ -1839,16 +1810,14 @@ module.exports.markdown = {
         diff(content, expected);
         test.equal(content, expected);
 
-        var content = fs.readFileSync(path.join(base, "de-DE/md/test1.md"), "utf-8");
+        var content = fs.readFileSync(path.join(base, p.root, "de-DE/md/test1.md"), "utf-8");
 
         var expected =
-            '---\n' +
+            '* * *\n\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
-            'excerpt: ""\n' +
-            '---\n' +
-            '\n' +
-            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
-            '==================================\n' +
+            'excerpt: ""\n\n' +
+            '* * *\n\n' +
+            '# Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
             '\n' +
             'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n' +
             '\n' +
@@ -1899,7 +1868,7 @@ module.exports.markdown = {
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Obtenez des devis d\'assurance gratuitement!',
@@ -1907,7 +1876,7 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
         translations.add(new ResourceString({
-            project: "webapp",
+            project: "foo",
             key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Kostenlosen Versicherungs-Angebote erhalten!',
@@ -1918,8 +1887,8 @@ module.exports.markdown = {
         mf.localize(translations, ["fr-FR", "de-DE"]);
 
         // should produce the files, even if there is nothing to localize in them
-        test.ok(fs.existsSync(path.join(base, "fr-FR/testfiles/md/nostrings.md")));
-        test.ok(fs.existsSync(path.join(base, "de-DE/testfiles/md/nostrings.md")));
+        test.ok(fs.existsSync(path.join(base, p.root, "fr-FR/md/nostrings.md")));
+        test.ok(fs.existsSync(path.join(base, p.root, "de-DE/md/nostrings.md")));
 
         test.done();
     },
@@ -1950,17 +1919,13 @@ module.exports.markdown = {
 
         var actual = mf.localizeText(translations, "fr-FR");
         var expected =
-            'Choisissez une méthode de réunion d\'affaires\n' +
-            '-----------------------\n' +
+            '## Choisissez une méthode de réunion d\'affaires\n' +
             '\n' +
-            '<img src="http://foo.com/photo.png" height="86px" width="86px"/>\n' +
+            '<img src="http://foo.com/photo.png" height="86px" width="86px">\n' +
             '\n' +
             'Ťëšţ þĥŕàšë543210\n' +
             '\n' +
-            'Ïñ Pëŕšõñ Mõðë6543210\n' +
-            '--------------\n' +
-            '\n' +
-            '\n';
+            '## Ïñ Pëŕšõñ Mõðë6543210\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
