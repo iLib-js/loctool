@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -58,7 +58,9 @@
     "dependencies": {
         "build-gradle-reader": "*",
         "html-parser": "^0.11.0",
-        "ilib": "^13.3.0",
+        "ilib": "^14.1.0",
+        "ilib-loctool-javascript-resource": "file:../ilib-loctool-javascript-resource/ilib-loctool-javascript-resource-1.0.0.tgz",
+        "ilib-loctool-jsx": "file:../ilib-loctool-jsx/ilib-loctool-jsx-1.0.0.tgz",
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
