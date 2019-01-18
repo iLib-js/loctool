@@ -1754,6 +1754,17 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileGetLocalizedPathSourceLocaleInBeginningPath: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p, "en-US/asdf/bar/simple.md");
+        test.ok(mf);
+
+        test.equal(mf.getLocalizedPath("fr-FR"), "./asdf/fr-FR/bar/simple.md");
+
+        test.done();
+    },
+
     testMarkdownFileGetLocalizedPathSourceLocaleInMidPathOnlyWholeLocale: function(test) {
         test.expect(2);
 
