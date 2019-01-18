@@ -1754,6 +1754,18 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileGetLocalizedPathSourceLocaleInMidPathOnlyWholeLocale: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p, "./asdf/pen-USing/en-US/bar/simple.md");
+        test.ok(mf);
+
+        // should leave "pen-USing" alone and only get the "en-US" path component
+        test.equal(mf.getLocalizedPath("fr-FR"), "./asdf/pen-USing/fr-FR/bar/simple.md");
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeFile: function(test) {
         test.expect(5);
 
