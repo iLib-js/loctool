@@ -71,6 +71,7 @@
         "opencc": ">=1.0.5",
         "pretty-data": ">=0.40.0",
         "rehype-raw": "^4.0.0",
+        "remark-highlight.js": "^5.1.0",
         "remark-html": "^9.0.0",
         "remark-parse": "^6.0.3",
         "remark-rehype": "^4.0.0",

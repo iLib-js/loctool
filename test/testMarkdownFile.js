@@ -718,15 +718,34 @@ module.exports.markdown = {
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('This is a test of the [emergency parsing system](http://foo.com/bar/asdf.html).\n');
+        mf.parse('This is a test of the [emergency parsing](http://foo.com/bar/asdf.html) system.\n');
 
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test of the <c0>emergency parsing system</c0>.");
+        var r = set.getBySource("This is a test of the <c0>emergency parsing</c0> system.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test of the <c0>emergency parsing system</c0>.");
-        test.equal(r.getKey(), "r34753043");
+        test.equal(r.getSource(), "This is a test of the <c0>emergency parsing</c0> system.");
+        test.equal(r.getKey(), "r848003676");
+
+        test.done();
+    },
+
+    testMarkdownFileParseNonBreakingInlineCode: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the `inline code` system.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the <c0></c0> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the <c0></c0> system.");
+        test.equal(r.getKey(), "r594105461");
 
         test.done();
     },
@@ -1306,6 +1325,56 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextWithLinks: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a [test](http://www.test.com/) of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un [essai](http://www.test.com/) du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithInlineCode: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a `test` of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r896778209",
+            source: "This is a <c0></c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0></c0> du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un `test` du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextNonBreakingTags: function(test) {
         test.expect(2);
 
@@ -1685,7 +1754,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileLocalize: function(test) {
+    testMarkdownFileLocalizeFile: function(test) {
         test.expect(5);
 
         var base = path.dirname(module.id);
