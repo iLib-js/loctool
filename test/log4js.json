@@ -95,7 +95,7 @@
 		},
         "loctool.lib.MarkdownFile": {
             "appenders": [ "default" ],
-            "level": "trace"
+            "level": "info"
         },
         "loctool.lib.MarkdownFileType": {
             "appenders": [ "default" ],
