@@ -70,3 +70,122 @@ A method should exist for each of these, which are called in the
 order listed above.
 
 ## The Service Provider Interface
+
+### File Class
+
+```
+interface File {
+    /**
+     * Construct a new instance of this file class for the file
+     * at the given pathName.
+     *
+     * @param {string} pathName path to the file to respresent
+     * @param {API} API a set of calls that that the plugin can use
+     * to get things done
+     */
+    constructor(pathName, API) {}
+
+    /**
+     * Extract all the localizable strings from the file and add
+     * them to the project's translation set. This method should
+     * open the file, read its contents, parse it, and add each
+     * string it finds to the project's traslation set, which can
+     * be retrieved from the API passed to the constructor.
+     */
+    extract() {}
+
+    /**
+     * Return the set of string resources found in the current file.
+     *
+     * @returns {TranslationSet} The set of resources found in the
+     * current file.
+     */
+    getTranslationSet(){}
+
+    /**
+     * If the source file was modified in any way during the
+     * extraction, this method allows the plugin to write out the
+     * source file back to disk to the appropriate file.
+     */
+    write() {}
+
+    /**
+     * Return the location on disk where the version of this file,
+     * localized for the given locale, should be written.
+     *
+     * @param {String] locale the locale spec for the target locale
+     * @returns {String} the localized path name
+     */
+    getLocalizedPath(locale) {}
+
+    /**
+     * Localize the contents of this file and write out the
+     * localized file to a different file path.
+     *
+     * @param {TranslationSet} translations the current set of
+     * translations
+     * @param {Array.<String>} locales array of locales to translate to
+     */
+    localize(translations, locales) {}
+}
+```
+
+### FileType Class
+
+```
+interface FileType {
+    /**
+     * Construct a new instance of this filetype class to represent
+     * a collection of files of this type.
+     *
+     * @param {Project} project an instance of a project in which this
+     * filetype exists
+     * @param {API} API a set of calls that that the plugin can use
+     * to get things done
+     */
+    constructor(project, API) {}
+
+    /**
+     * Return true if the given path is handled by the current file type.
+     *
+     * @param {String} pathName path to the file being queried
+     * @returns {boolean} true if the path is handled by this type,
+     * or false otherwise
+     */
+    handles(pathName) {}
+
+    /**
+     * Return a unique name for this type of plugin.
+     * @returns {string} a unique name for this type of plugin
+     */
+    name() {}
+
+    /**
+    * Write out the aggregated resources for this file type. In
+    * some cases, the string are written out to a common resource
+    * file, and in other cases, to a type-specific resource file.
+    * In yet other cases, nothing is written out, as the each of
+    * the files themselves are localized individually, so there
+    * are no aggregated strings.
+    */
+    write() {}
+
+    /**
+     * Return a new instance of a file class for the given path.
+     * This method acts as a factory for the file class that
+     goes along with this filetype class.
+     * @param {string} path path to the file to represent
+     * @returns {File} a File class instance for the given path
+    newFile(path) {}
+
+    /**
+    * Register the data types and resource class with the resource
+    * factory so that it knows which class
+    * to use when deserializing instances of resource entities.
+    * @returns {Object} a object which gives the class name for
+    * each of the categories of strings
+    */
+    registerDataTypes() {}
+}
+```
+

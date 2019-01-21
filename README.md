@@ -133,7 +133,7 @@ All paths are relative to the root of the project.
     project is "X", then it will look for "X.xliff")
 * projectType - the type of the project, which affects how source files
     are read and resource files are written. Must be one of
-    "android", "iosobjc", "iosswift", or "web"
+    "android", "iosobjc", "iosswift", or "web", or "custom"
 * resourceDirs - an array of dirs that have resource files in them
 * excludes - an array of dirs or files to exclude from searching. When
     a dir is excluded, all subfiles and subdirs in that dir
