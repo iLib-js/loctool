@@ -167,7 +167,40 @@ modules similar to the way Babel or Webpack plugins are written.
 
 If you encounter a file type that the loctool doesn't currently
 handle, or which it is handling in a way that you don't like, you can
-write your own plugin. A plugin is simply two modules
-that conform to a simple API. If you would like to write one,
+write your own plugin. A plugin is simply two classes
+that conform to a simple SPI. If you would like to write one,
 read the [How to Write a Loctool Plugin](docs/Plugins.md)
 documentation for all the details.
+
+List of Current Plugins
+-----------------------
+
+* `ilib-loctool-android-layout` - extract strings from 
+Android layout.xml files
+
+* `ilib-loctool-android-resource` - extract strings from
+Android strings.xml files
+
+* `ilib-loctool-javascript` - extract strings from Javascript
+code that uses ilib to do its translations
+
+* `ilib-loctool-jsx` - extract strings from JSX format
+code that uses ilib and react-ilib to do its translations
+
+Copyright and License
+-------
+
+Copyright &copy; 2016-2019, HealthTap, Inc. and JEDLSoft
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this tool except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+limitations under the License.
