@@ -81,7 +81,7 @@ interface File {
      *
      * @param {string} pathName path to the file to respresent
      * @param {API} API a set of calls that that the plugin can use
-     * to get things done
+     * to get things done.
      */
     constructor(pathName, API) {}
 
@@ -189,3 +189,37 @@ interface FileType {
 }
 ```
 
+### API Class
+
+An instance of this is sent to the constructor of the FileType
+class. The FileType.newFile method should send it to instances
+of the File class as well.
+
+```
+class API {
+    /**
+     Return a new instance of a resource of the given type.
+     The possible types are:
+
+     <ul>
+     <li>string - the resource is a simple string</li>
+     <li>array - the resource is an array of strings</li>
+     <li>plural - the resource is a string with plural forms</li>
+     <li>contextString - the resource is a simple string with a
+     context. Strings in the different contexts can have the same
+     content, but are differentiated by their context.</li>
+     </ul>
+
+    @param {string} type the type of resource being sought
+     */
+    resourceFactory(type) {}
+
+    newTranslationSet: function(sourceLocale) {
+        return new TranslationSet(sourceLocale);
+    },
+    utils: utils,
+    newFileType: function(project) {
+        return new FileType(project);
+    }
+}
+```
