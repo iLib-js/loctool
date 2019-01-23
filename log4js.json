@@ -109,6 +109,14 @@
 			"appenders": [ "default" ],
 			"level": "info"
 		},
+        "loctool.lib.MarkdownFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.MarkdownFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.ObjectiveCFile": {
 			"appenders": [ "default" ],
 			"level": "info"
