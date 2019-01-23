@@ -32,7 +32,7 @@ var p = new AndroidProject({
     locales:["en-GB"]
 });
 
-module.exports = {
+module.exports.csvfile = {
     testCSVFileConstructor: function(test) {
         test.expect(1);
 

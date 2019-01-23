@@ -33,7 +33,7 @@ var p = new WebProject({
 
 var rft = new RubyFileType(p);
 
-module.exports = {
+module.exports.rubyfile = {
     testRubyFileConstructor: function(test) {
         test.expect(1);
 

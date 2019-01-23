@@ -50,7 +50,7 @@ var p = new WebProject({
 
 var yft = new YamlResourceFileType(p);
 
-module.exports = {
+module.exports.yamlresourcefile = {
     testYamlConstructorEmpty: function(test) {
         test.expect(1);
 

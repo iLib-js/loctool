@@ -22,7 +22,7 @@ if (!JsxFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.jsxfiletype = {
     testJsxFileTypeConstructor: function(test) {
         test.expect(1);
 

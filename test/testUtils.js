@@ -21,7 +21,7 @@ if (!utils) {
     var utils = require("../lib/utils.js");
 }
 
-module.exports = {
+module.exports.utils = {
     testUtilsIsAndroidResourceYes: function(test) {
         test.expect(17);
 

@@ -21,7 +21,7 @@ if (!AndroidFlavors) {
     var AndroidFlavors = require("../lib/AndroidFlavors.js");
 }
 
-module.exports = {
+module.exports.androidflavors = {
     testAndroidFlavorsConstructor: function(test) {
         test.expect(1);
 

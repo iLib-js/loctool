@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "1.0.0",
+    "version": "1.1.2",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -31,7 +31,11 @@
     ],
     "files": [
         "db",
+        "lib",
+        "docs",
         "log4js.json",
+        "loctool.js",
+        "hashkey.js",
         "README.md",
         "LICENSE.txt"
     ],
@@ -48,15 +52,15 @@
         "node": ">=0.12 <=7.2.1"
     },
     "scripts": {
-        "test": "ant test"
+        "test": "cd test; node testSuite.js",
+        "clean": "ant clean"
     },
     "dependencies": {
         "acorn": "^6.0.0",
         "acorn-jsx": "^5.0.0",
         "build-gradle-reader": "*",
-        "hoek": "^4.2.1",
+        "html-parser": "^0.11.0",
         "ilib": "^13.3.0",
-        "joi": "^9.0.4",
         "js-stl": ">=0.0.6",
         "js-yaml": ">=3.10.0",
         "log4js": "^2.0.0",
@@ -65,13 +69,10 @@
         "node-expat": ">=2.3.0",
         "opencc": ">=1.0.5",
         "pretty-data": ">=0.40.0",
-        "tap": "^7.0.0"
+        "tap": "^7.0.0",
+        "xml2json": "^0.11.2"
     },
     "devDependencies": {
-        "nodeunit": "^0.11.2"
-    },
-    "bundledDependencies": [
-        "html-parser",
-        "xml2json"
-    ]
+        "nodeunit": "^0.11.3"
+    }
 }

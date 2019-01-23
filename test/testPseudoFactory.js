@@ -35,7 +35,7 @@ var project = new WebProject({
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 
-module.exports = {
+module.exports.pseudofactory = {
     testPseudoFactoryBritishEnglish: function(test) {
         test.expect(2);
 

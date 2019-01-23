@@ -22,7 +22,7 @@ if (!ObjectiveCFileType) {
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
 }
 
-module.exports = {
+module.exports.objectivecfiletype = {
     testObjectiveCFileTypeConstructor: function(test) {
         test.expect(1);
 

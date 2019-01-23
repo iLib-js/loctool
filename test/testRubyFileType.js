@@ -22,7 +22,7 @@ if (!RubyFileType) {
     var WebProject =  require("../lib/WebProject.js");
 }
 
-module.exports = {
+module.exports.rubyfiletype = {
     testRubyFileTypeConstructor: function(test) {
         test.expect(1);
 

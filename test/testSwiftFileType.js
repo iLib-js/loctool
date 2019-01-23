@@ -22,7 +22,7 @@ if (!SwiftFileType) {
     var SwiftProject =  require("../lib/SwiftProject.js");
 }
 
-module.exports = {
+module.exports.swiftfiletype = {
     testSwiftFileTypeConstructor: function(test) {
         test.expect(1);
 

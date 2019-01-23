@@ -22,7 +22,7 @@ if (!JavaFileType) {
     var AndroidProject =  require("../lib/AndroidProject.js");
 }
 
-module.exports = {
+module.exports.javafiletype = {
     testJavaFileTypeConstructor: function(test) {
         test.expect(1);
 
