@@ -1760,7 +1760,7 @@ module.exports.markdown = {
         var mf = new MarkdownFile(p, "en-US/asdf/bar/simple.md");
         test.ok(mf);
 
-        test.equal(mf.getLocalizedPath("fr-FR"), "./asdf/fr-FR/bar/simple.md");
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
 
         test.done();
     },
