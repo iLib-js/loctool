@@ -1863,10 +1863,10 @@ module.exports.markdown = {
         var content = fs.readFileSync(path.join(base, p.root, "fr-FR/md/test1.md"), "utf-8");
 
         var expected =
-            '* * *\n\n' +
+            '---\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
-            'excerpt: ""\n\n' +
-            '* * *\n\n' +
+            'excerpt: ""\n' +
+            '---\n' +
             '# Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
             '\n' +
             'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n' +
@@ -1882,7 +1882,7 @@ module.exports.markdown = {
             '  ]\n' +
             '}\n' +
             '[/block]\n' +
-            'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
+            'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n\n' +
             '[block:parameters]\n' +
             '{\n' +
             '  "data": {\n' +
@@ -1905,10 +1905,10 @@ module.exports.markdown = {
         var content = fs.readFileSync(path.join(base, p.root, "de-DE/md/test1.md"), "utf-8");
 
         var expected =
-            '* * *\n\n' +
+            '---\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
-            'excerpt: ""\n\n' +
-            '* * *\n\n' +
+            'excerpt: ""\n' +
+            '---\n' +
             '# Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
             '\n' +
             'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n' +
@@ -1924,7 +1924,7 @@ module.exports.markdown = {
             '  ]\n' +
             '}\n' +
             '[/block]\n' +
-            'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
+            'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n\n' +
             '[block:parameters]\n' +
             '{\n' +
             '  "data": {\n' +
@@ -2045,6 +2045,100 @@ module.exports.markdown = {
         test.equal(resources[1].getSourceLocale(), "en-US");
         test.equal(resources[1].getTarget(), "In Person Mode");
         test.equal(resources[1].getTargetLocale(), "fr-FR");
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithListAndBlockWithNoSpace: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '* list item 1\n' +
+            '* list item 2\n' +
+            '[block:callout]\n' +
+            '{\n' +
+            '  "type": "test"\n' +
+            '}\n' +
+            '[/block]\n' +
+            '## Test Header\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r970090275',
+            source: 'list item 1',
+            target: 'article du liste No. 1',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r970155796',
+            source: 'list item 2',
+            target: 'article du liste No. 2',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r34696891',
+            source: 'Test Header',
+            target: 'Entête du Teste',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            '* article du liste No. 1\n' +
+            '* article du liste No. 2\n' +
+            '\n' +
+            '[block:callout]\n' +
+            '{\n' +
+            '  "type": "test"\n' +
+            '}\n' +
+            '[/block]\n' +
+            '\n' +
+            '## Entête du Teste\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextHeaderWithNoSpace: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '#Bad Header\n' +
+            '##Other Bad Header\n' +
+            '# Bad Header\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r868915655',
+            source: 'Bad Header',
+            target: 'Entête mal',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r836504731',
+            source: 'Other Bad Header',
+            target: 'Autre entête mal',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            '# Entête mal\n\n' +
+            '## Autre entête mal\n\n' +
+            '# Entête mal\n');
 
         test.done();
     }
