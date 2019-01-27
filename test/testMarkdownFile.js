@@ -2141,7 +2141,54 @@ module.exports.markdown = {
             '# Entête mal\n');
 
         test.done();
-    }
+    },
+
+    testMarkdownFileLocalizeTextDontEscapeCode: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'test\n' +
+            '[block:code]\n' +
+            '{\n' +
+            '  "codes": [\n' +
+            '    {\n' +
+            '      "code": "aws cloudformation describe-stacks \\\n    --stack-name boxskill \\\n    --query \'Stacks[].Outputs\'\n# Your URL should look something like this:\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
+            '      "language": "shell"\n' +
+            '    }\n' +
+            '  ]\n' +
+            '}\n' +
+            '[/block]\n' +
+            'test\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r852587715',
+            source: 'test',
+            target: 'Teste',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Teste\n\n' +
+            '[block:code]\n' +
+            '{\n' +
+            '  "codes": [\n' +
+            '    {\n' +
+            '      "code": "aws cloudformation describe-stacks \\\n    --stack-name boxskill \\\n    --query \'Stacks[].Outputs\'\n# Your URL should look something like this:\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
+            '      "language": "shell"\n' +
+            '    }\n' +
+            '  ]\n' +
+            '}\n' +
+            '[/block]\n' +
+            'Teste\n');
+
+        test.done();
+    },
 };
 
 
