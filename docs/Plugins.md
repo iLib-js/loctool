@@ -135,8 +135,10 @@ interface File {
 ```
 interface FileType {
     /**
-     * Construct a new instance of this filetype class to represent
-     * a collection of files of this type.
+     * Construct a new instance of this filetype subclass to represent
+     * a collection of files of this type. Instances of this class
+     * should store the API for use later to access things inside of
+     * the loctool.
      *
      * @param {Project} project an instance of a project in which this
      * filetype exists
@@ -155,7 +157,30 @@ interface FileType {
     handles(pathName) {}
 
     /**
-     * Return a unique name for this type of plugin.
+     * Return the file name extensions that correspond to this file
+     * type. The extensions should be returned as an array of strings
+     * that include the dot or other separator. The extensions array
+     * is used to do a rough filter of all the files, and the
+     * handles() method is called for each file to verify whether
+     * or not that particular file is handled.
+     *
+     * @example Extensions for Java files:
+     *
+     * <pre>
+     *     getExtensions() {
+     *         return [".java", ".jav"];
+     *     }
+     * </pre>
+     *
+     * @returns {Array.<string>} an array of strings that give the
+     * file name extensions of the files that this file type handles
+     */
+    getExtensions() {}
+
+    /**
+     * Return a unique name for this type of plugin that can be
+     * displayed to a user.
+     *
      * @returns {string} a unique name for this type of plugin
      */
     name() {}
@@ -179,13 +204,40 @@ interface FileType {
     newFile(path) {}
 
     /**
-     * Register the data types and resource class with the resource
-     * factory so that it knows which class
-     * to use when deserializing instances of resource entities.
-     * @returns {Object} a object which gives the class name for
-     * each of the categories of strings
+     * Return a unique string that can be used to identify strings
+     * that come from this type of file. This is used in XLIFF files
+     * and a few other places to identify the file type. The value
+     * must be one of the strings from the XLIFF specification
+     * at [http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html#datatype]
+     * or a custom string that starts with "x-".
+     *
+     * @returns {string} a unique string to identify strings from
+     * this type of file
      */
-    registerDataTypes() {}
+    getDataType() {}
+
+    /**
+     * Return a hash that maps the class of a resource to a specific
+     * resource type. The properties of the hash are the classes "string",
+     * "array", and "plural". The values are one of the resource types
+     * given below in the discussion about resources. If any of the
+     * properties are left out, the default is assumed. The default for
+     * "string" is "string", for "array" is "array", and for "plural" it
+     * is "plural". If the return value is undefined, all of the classes
+     * will use the default types.
+     *
+     * @example Return value for an Android string which defines strings as
+     * being of the context string type, and arrays and plurals are
+     * of the default type:
+     * <pre>
+     * {
+     *     "string": "contextString"
+     * }
+     * </pre>
+     * @returns {Object|undefined} a object which maps the resource class
+     * name to the resource type
+     */
+    getDataTypes() {}
 }
 ```
 
@@ -1025,7 +1077,6 @@ class TranslationSet {
      * set and this one
      */
     diff(other) {}
-
 }
 ```
 
