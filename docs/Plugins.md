@@ -161,30 +161,30 @@ interface FileType {
     name() {}
 
     /**
-    * Write out the aggregated resources for this file type. In
-    * some cases, the string are written out to a common resource
-    * file, and in other cases, to a type-specific resource file.
-    * In yet other cases, nothing is written out, as the each of
-    * the files themselves are localized individually, so there
-    * are no aggregated strings.
-    */
+     * Write out the aggregated resources for this file type. In
+     * some cases, the string are written out to a common resource
+     * file, and in other cases, to a type-specific resource file.
+     * In yet other cases, nothing is written out, as the each of
+     * the files themselves are localized individually, so there
+     * are no aggregated strings.
+     */
     write() {}
 
     /**
      * Return a new instance of a file class for the given path.
      * This method acts as a factory for the file class that
-     goes along with this filetype class.
+     * goes along with this filetype class.
      * @param {string} path path to the file to represent
      * @returns {File} a File class instance for the given path
     newFile(path) {}
 
     /**
-    * Register the data types and resource class with the resource
-    * factory so that it knows which class
-    * to use when deserializing instances of resource entities.
-    * @returns {Object} a object which gives the class name for
-    * each of the categories of strings
-    */
+     * Register the data types and resource class with the resource
+     * factory so that it knows which class
+     * to use when deserializing instances of resource entities.
+     * @returns {Object} a object which gives the class name for
+     * each of the categories of strings
+     */
     registerDataTypes() {}
 }
 ```
@@ -340,274 +340,692 @@ path name is used to determine which .strings file
 the translation should go into when the translated
 .strings files are being generated.
 
+#### Resource
+
 The API for the superclass of all resources is as
 follows:
 
 ```
 class Resource {
     /**
-    * @class Represents a resource from a resource file or
-    * extracted from the code. The props may contain any
-    * of the following properties:
-    *
-    * <ul>
-    * <li>project {String} - the project that this resource is in
-    * <li><i>context</i> {String} - The context for this resource,
-    * such as "landscape mode", or "7200dp", which differentiates it
-    * from the base resource that has no special context. The default
-    * if this property is not specified is undefined, meaning no
-    * context.
-    * <li>sourceLocale {String} - the locale of the source resource.
-    * <li>targetLocale {String} - the locale of the target resource.
-    * <li>key {String} - the unique key of this string, which should include the context
-    * of the string
-    * <li>pathName {String} - pathName to the file where the string was extracted from
-    * <li>autoKey {boolean} - true if the key was generated based on the source text
-    * <li>state {String} - current state of the resource (ie. "new", "translated", or "accepted")
-    * </ul>
-    *
-    * @constructor
-    * @param {Object} props properties of the string, as defined above
-    */
+     * @class Represents a resource from a resource file or
+     * extracted from the code. The props may contain any
+     * of the following properties:
+     *
+     * <ul>
+     * <li>project {String} - the project that this resource is in
+     * <li><i>context</i> {String} - The context for this resource,
+     * such as "landscape mode", or "7200dp", which differentiates it
+     * from the base resource that has no special context. The default
+     * if this property is not specified is undefined, meaning no
+     * context.
+     * <li>sourceLocale {String} - the locale of the source resource.
+     * <li>targetLocale {String} - the locale of the target resource.
+     * <li>key {String} - the unique key of this string, which should include the context
+     * of the string
+     * <li>pathName {String} - pathName to the file where the string was extracted from
+     * <li>autoKey {boolean} - true if the key was generated based on the source text
+     * <li>state {String} - current state of the resource (ie. "new", "translated", or "accepted")
+     * </ul>
+     *
+     * @constructor
+     * @param {Object} props properties of the string, as defined above
+     */
     constructor(props) {}
 
     /**
-    * Return the project that this resource was found in.
-    *
-    * @returns {String} the project of this resource
-    */
+     * Return the project that this resource was found in.
+     *
+     * @returns {String} the project of this resource
+     */
     getProject() {}
 
     /**
-    * Return the unique key of this resource.
-    *
-    * @returns {String} the unique key of this resource
-    */
+     * Return the unique key of this resource.
+     *
+     * @returns {String} the unique key of this resource
+     */
     getKey() {}
 
     /**
-    * Return the resource type of this resource. This is one of
-    * string, array, or plural.
-    *
-    * @returns {String} the resource type of this resource
-    */
+     * Return the resource type of this resource. This is one of
+     * string, array, or plural.
+     *
+     * @returns {String} the resource type of this resource
+     */
     getType() {}
 
     /**
-    * Return the data type of this resource.
-    *
-    * @returns {String} the data type of this resource
-    */
+     * Return the data type of this resource.
+     *
+     * @returns {String} the data type of this resource
+     */
     getDataType() {}
 
     /**
-    * Return true if the key of this resource was automatically generated,
-    * and false if it was an explicit key.
-    *
-    * @returns {boolean} true if the key of this string was auto generated,
-    * false otherwise
-    */
+     * Return true if the key of this resource was automatically generated,
+     * and false if it was an explicit key.
+     *
+     * @returns {boolean} true if the key of this string was auto generated,
+     * false otherwise
+     */
     getAutoKey() {}
 
     /**
-    * Return the context of this resource, or undefined if there
-    * is no context.
-    * @returns {String|undefined} the context of this resource, or undefined if there
-    * is no context.
-    */
+     * Return the context of this resource, or undefined if there
+     * is no context.
+     * @returns {String|undefined} the context of this resource, or undefined if there
+     * is no context.
+     */
     getContext() {}
 
     /**
-    * Return the source locale of this resource, or undefined if there
-    * is no context or the locale is the same as the project's source locale.
-    * @returns {String|undefined} the locale of this resource, or undefined if there
-    * is no locale.
-    */
+     * Return the source locale of this resource, or undefined if there
+     * is no context or the locale is the same as the project's source locale.
+     * @returns {String|undefined} the locale of this resource, or undefined if there
+     * is no locale.
+     */
     getSourceLocale() {}
 
     /**
-    * Set the source locale of this resource.
-    * @param {String} locale the source locale of this resource
-    */
+     * Set the source locale of this resource.
+     * @param {String} locale the source locale of this resource
+     */
     setSourceLocale(locale) {}
 
     /**
-    * Return the target locale of this resource, or undefined if the resource
-    * is a source-only resource.
-    * @returns {String|undefined} the locale of this resource, or undefined if there
-    * is no locale.
-    */
+     * Return the target locale of this resource, or undefined if the resource
+     * is a source-only resource.
+     * @returns {String|undefined} the locale of this resource, or undefined if there
+     * is no locale.
+     */
     getTargetLocale() {}
 
     /**
-    * Set the target locale of this resource.
-    * @param {String} locale the target locale of this resource
-    */
+     * Set the target locale of this resource.
+     * @param {String} locale the target locale of this resource
+     */
     setTargetLocale(locale) {}
 
     /**
-    * Return the state of this resource. This is a string that gives the
-    * stage of life of this resource. Currently, it can be one of "new",
-    * "translated", or "accepted".
-    *
-    * @returns {String} the state of this resource
-    */
+     * Return the state of this resource. This is a string that gives the
+     * stage of life of this resource. Currently, it can be one of "new",
+     * "translated", or "accepted".
+     *
+     * @returns {String} the state of this resource
+     */
     getState() {}
 
     /**
-    * Set the state of this resource. This is a string that gives the
-    * stage of life of this resource. Currently, it can be one of "new",
-    * "translated", or "accepted".
-    *
-    * @parma {String} state the state of this resource
-    */
+     * Set the state of this resource. This is a string that gives the
+     * stage of life of this resource. Currently, it can be one of "new",
+     * "translated", or "accepted".
+     *
+     * @parma {String} state the state of this resource
+     */
     setState(state) {}
 
     /**
-    * Return the original path to the file from which this resource was
-    * originally extracted.
-    *
-    * @returns {String} the path to the file containing this resource
-    */
+     * Return the original path to the file from which this resource was
+     * originally extracted.
+     *
+     * @returns {String} the path to the file containing this resource
+     */
     getPath() {}
 
     /**
-    * Return the translator's comment for this resource if there is
-    * one, or undefined if not.
-    *
-    * @returns {String|undefined} the translator's comment for this resource
-    * if the engineer put one in the code
-    */
+     * Return the translator's comment for this resource if there is
+     * one, or undefined if not.
+     *
+     * @returns {String|undefined} the translator's comment for this resource
+     * if the engineer put one in the code
+     */
     getComment() {}
 
     /**
-    * Set the translator's comment for this resource.
-    *
-    * @param {String|undefined} comment the translator's comment to set. Use
-    * undefined to clear the comment
-    */
+     * Set the translator's comment for this resource.
+     *
+     * @param {String|undefined} comment the translator's comment to set. Use
+     * undefined to clear the comment
+     */
     setComment(comment) {}
 
     /**
-    * Return the localize flag of this resource.
-    * This flag indicates whether we should look up a translation for this resource.
-    * When false, we should simply substitute the source back
-    *
-    * @returns {Boolean} the localize flag of this resource
-    */
+     * Return the localize flag of this resource.
+     * This flag indicates whether we should look up a translation for this resource.
+     * When false, we should simply substitute the source back
+     *
+     * @returns {Boolean} the localize flag of this resource
+     */
     getLocalize() {}
 
     /**
-    * Return the name of the flavor for this resource, or undefined
-    * for the "main" or default flavor.
-    *
-    *  @return {String|undefined} the name of the flavor for this
-    *  resource or undefined for the main or default flavor
-    */
+     * Return the name of the flavor for this resource, or undefined
+     * for the "main" or default flavor.
+     *
+     *  @return {String|undefined} the name of the flavor for this
+     *  resource or undefined for the main or default flavor
+     */
     getFlavor() {}
 
     /**
-    * Return true if the other resource represents the same resource as
-    * the current one. The project, context, locale, key, flavor, and type must
-    * match. Other fields such as the pathName, state, and comment fields are
-    * ignored as minor variations.
-    *
-    * @param {Resource} other another resource to test against the current one
-    * @returns {boolean} true if these represent the same resource, false otherwise
-    */
+     * Return true if the other resource represents the same resource as
+     * the current one. The project, context, locale, key, flavor, and type must
+     * match. Other fields such as the pathName, state, and comment fields are
+     * ignored as minor variations.
+     *
+     * @param {Resource} other another resource to test against the current one
+     * @returns {boolean} true if these represent the same resource, false otherwise
+     */
     same(other) {}
 
     /**
-    * Return the number of strings in this resource.
-    *
-    * @returns {number} the number of strings in this resource
-    */
+     * Return the number of strings in this resource.
+     *
+     * @returns {number} the number of strings in this resource
+     */
     size() {}
 
     /**
-    * Clone this resource and override the properties with the given ones.
-    *
-    * @params {Object|undefined} overrides optional properties to override in
-    * the cloned object
-    * @returns {ResourceArray} a clone of this resource
-    */
+     * Clone this resource and override the properties with the given ones.
+     *
+     * @params {Object|undefined} overrides optional properties to override in
+     * the cloned object
+     * @returns {ResourceArray} a clone of this resource
+     */
     clone(overrides) {}
 
     /**
-    * Return true if the other resource contains the exact same resource as
-    * the current one. All fields must match.
-    *
-    * @param {Resource} other another resource to test against the current one
-    * @returns {boolean} true if these represent the same resource, false otherwise
-    */
+     * Return true if the other resource contains the exact same resource as
+     * the current one. All fields must match.
+     *
+     * @param {Resource} other another resource to test against the current one
+     * @returns {boolean} true if these represent the same resource, false otherwise
+     */
     equals(other) {}
 
     /**
-     * Return the a hash key that uniquely identifies this resource.
+     * Return the a hash key that uniquely identifies this resource. The hash
+     * key is used to look up a resource in a translation set.
      *
      *  @return {String} a unique hash key for this resource
      */
     hashKey() {}
 
     /**
-    * Return the a hash key that uniquely identifies the translation of
-    * this resource to the given locale.
-    *
-    * @param {String} locale a locale spec of the desired translation
-    * @return {String} a unique hash key for this resource
-    */
+     * Return the a hash key that uniquely identifies the translation of
+     * this resource to the given locale.
+     *
+     * @param {String} locale a locale spec of the desired translation
+     * @return {String} a unique hash key for this resource
+     */
     hashKeyForTranslation(locale) {}
 
     /**
-    * Return the a hash key that uniquely identifies this resource, but cleaned
-    *
-    *  @return {String} a unique hash key for this resource, but cleaned
-    */
+     * Return the cleaned hash key that uniquely identifies this resource.
+     * A cleaned hash key is meant to increase matches between source
+     * strings that only differ in ways that do not affect the translation.
+     * For example, if string #1 has 4 spaces at the beginning, and string
+     * #2 has 12 spaces at the beginning, but they both have the exact
+     * same text after that, there is no good reason that they should not
+     * share the same translation. The spaces do not really affect the
+     * traslation of that text. A cleaned hash key can be cleaned in
+     * a variety of ways, and the exact methods used are unique to the
+     * type of resource.
+     *
+     *  @return {String} a unique hash key for this resource, but cleaned
+     */
     cleanHashKey() {}
 
     /**
-    * Return the a hash key that uniquely identifies the translation of
-    * this resource to the given locale, but cleaned
-    *
-    * @param {String} locale a locale spec of the desired translation
-    * @return {String} a unique hash key for this resource's string
-    */
+     * Return a cleaned hash key that uniquely identifies the translation of
+     * this resource to the given locale. See above for a definition of a
+     * cleaned hash key.
+     *
+     * @param {String} locale a locale spec of the desired translation
+     * @return {String} a unique hash key for this resource's string
+     */
     cleanHashKeyForTranslation(locale) {}
 }
 ```
+
+#### ResourceString
 
 Additionally, a string resource has these methods:
 
 ```
 class ResourceString extends Resource {
     /**
-    * Return the source string written in the source
-    * locale of this resource string.
-    *
-    * @returns {String} the source string
-    */
+     * Return the source string written in the source
+     * locale of this resource string.
+     *
+     * @returns {String} the source string
+     */
     getSource() {}
 
     /**
-    * Set the source string written in the source
-    * locale of this resource string.
-    *
-    * @param {String} str the source string
-    */
+     * Set the source string written in the source
+     * locale of this resource string.
+     *
+     * @param {String} str the source string
+     */
     setSource(str) {}
 
     /**
-    * Return the string written in the target locale.
-    *
-    * @returns {String} the source string
-    */
+     * Return the string written in the target locale.
+     *
+     * @returns {String} the source string
+     */
     getTarget() {}
 
     /**
-    * Set the target string of this resource.
-    *
-    * @param {String} str the target string
-    */
+     * Set the target string of this resource.
+     *
+     * @param {String} str the target string
+     */
     setTarget(str) {}
 }
 ```
+
+#### ResourceArray
+
+Additionally, an array resource has these methods:
+
+```
+class ResourceArray extends Resource {
+    /**
+     * Return the array of source strings for this resource.
+     *
+     * @returns {Array.<String>} the array of strings that are
+     * the source of this resource
+     */
+    getSourceArray() {}
+
+    /**
+     * Set the array of source strings for this resource.
+     *
+     * @param {Array.<String>} arr the array of strings to set
+     * as the source array
+     */
+    setSourceArray(arr) {}
+
+    /**
+     * Return the array of target strings for this resource. The
+     * target string at array position N corresponds to the source
+     * string at position N.
+     *
+     * @returns {Array.<String>} the array of strings that are
+     * the target value of this resource
+     */
+    getTargetArray() {}
+
+    /**
+     * Set the array of target strings for this resource.
+     *
+     * @param {Array.<String>} arr the array of strings to set
+     * as the target array
+     */
+    setTargetArray(arr) {}
+
+    /**
+     * Return the source string with the given index into the array.
+     *
+     * @param {number} i The index of the string being sought
+     * @returns {String|undefined} the value of the string at index i or
+     * undefined if i is outside the bounds of the array
+     */
+    getSource(i) {}
+
+    /**
+     * Return the target string with the given index into the array.
+     *
+     * @param {number} i The index of the string being sought
+     * @returns {String|undefined} the value of the string at index i or
+     * undefined if i is outside the bounds of the array
+     */
+    getTarget(i) {}
+
+    /**
+     * Add a string to the source array at index i.
+     *
+     * @param {number} i the index at which to add the string
+     * @param {String} str the string to add
+     */
+    addSource(i, str) {}
+
+    /**
+     * Add a string to the target array at index i.
+     *
+     * @param {number} i the index at which to add the string
+     * @param {String} str the string to add
+     */
+    addTarget(i, str) {}
+
+    /**
+     * Return the length of the array of strings in this resource.
+     *
+     * @returns {number} the length of the array of strings in this
+     * resource
+     */
+    size() {}
+}
+```
+
+#### ResourcePlural
+
+Additionally, a plural resource has these methods:
+
+```
+class ResourcePlural extends Resource {
+    /**
+     * Return the source plurals hash of this plurals resource.
+     * The hash maps the plural category to the source string
+     * for that category. The plural categories are defined by the
+     * Unicode CLDR specification: http://cldr.unicode.org/index/cldr-spec/plural-rules
+     *
+     * The properties of the strings hash can be any of these classes
+     * supported by CLDR:
+     *
+     * <ul>
+     * <li>zero
+     * <li>one
+     * <li>two
+     * <li>few
+     * <li>many
+     * <li>other
+     * </ul>
+     *
+     * @returns {Object} the source hash
+     */
+    getSourcePlurals() {}
+
+    /**
+     * Return the target plurals hash of this plurals resource.
+     * The hash maps the plural category to the translation of
+     * the source string for that category. Note that the source
+     * and target hashes may contain different categories due
+     * to the differences in plural rules between the source and
+     * target languages.
+     *
+     * @returns {Object} the target hash
+     */
+    getTargetPlurals() {}
+
+    /**
+     * Set the source plurals hash of this plurals resource.
+     *
+     * @param {Object} plurals the source hash
+     */
+    setSourcePlurals(plurals) {}
+
+    /**
+     * Set the target plurals hash of this plurals resource.
+     *
+     * @param {Object} plurals the target hash
+     */
+    setTargetPlurals(plurals) {}
+
+    /**
+     * Return the source string of the given plural category.
+     *
+     * @param {string} pluralCategory the category of the
+     * source string being sought
+     * @returns {String} the source string for the given
+     * plural category
+     */
+    getSource(pluralCategory) {}
+
+    /**
+     * Return the target string of the given plural category.
+     *
+     * @param {string} pluralCategory the category of the
+     * target string being sought
+     * @returns {String} the target string for the given
+     * plural class
+     */
+    getTarget(pluralCategory) {}
+
+    /**
+     * Return the number of plural categories in
+     * the source of this resource.
+     *
+     * @returns {number} the number of source categories
+     */
+    getClasses() {}
+
+    /**
+     * Add a string with the given plural category to the source of
+     * this plural resource.
+     *
+     * @param {String} pluralCategory the CLDR category of this string
+     * @param {String} str the source string to add for the category
+     */
+    addSource(pluralCategory, str) {}
+
+    /**
+     * Add a string with the given plural category to the target of
+     * this plural resource.
+     *
+     * @param {String} pluralCategory the CLDR category of this string
+     * @param {String} str the target string to add for the category
+     */
+    addTarget(pluralCategory, str) {}
+
+    /**
+     * Return the number of categories in this resource. If
+     * there are translations in this resource, the number of target categories
+     * is returned. If there are only source strings in this resource,
+     * the number of source categories is returned.
+     *
+     * @returns {number} the number of categories in this
+     * resource
+     */
+    size() {}
+}
+```
+
+#### TranslationSet
+
+A translation set is
+a set of resources which contain meta-data about their
+strings and the source and translated strings themselves.
+A translation set may contain the same source phrase
+multiple times if the meta-data is different because the
+same phrase may be used in different ways in different
+ontexts of the application and thus may need a different
+translation.<p>
+
+This is differentiated from a translation memory where
+there are translations of source strings or phrases
+without meta-data and possibly broken into shorter units.
+A translation memory may also have multiple translations
+for a particular source phrase, but which one should be
+used for a particular source string in the application
+is unclear because there is no meta-data associating
+each translation with the source string.<p>
+
+The purpose of a translation memory is to aid a translator
+in reusing translations that they have previous done
+for consistency and speed of translation. The purpose
+of a translation set is to denote which translations
+are used for each source string in the application in
+its idiosyncratic context.<p>
+
+The loctool uses translation sets to collect source strings
+in the application and to represent translations of them.
+
+```
+class TranslationSet {
+    /**
+     * Get a resource by its hashkey.
+     *
+     * @param {String} hashkey The unique hashkey of the resource being sought.
+     * @returns {Resource|undefined} a resource corresponding to the hashkey, or
+     * undefined if there is no resource with that key
+     */
+    get(hashkey) {}
+
+    /**
+     * Get a resource by its clean string hashkey.
+     *
+     * @param {String} hashkey The unique hashkey of the resource being sought.
+     * @returns {Resource|undefined} a resource corresponding to the hashkey, or undefined if there is no
+     * resource with that key
+     */
+    getClean(hashkey) {}
+
+    /**
+     * Get a resource by its source string and context. The source string must be written
+     * in the language and script of the source locale. For array types, the
+     * source string
+     * must be one of the values in the string array. For plural types, it
+     * must be one of the values of the quantities.<p>
+     *
+     * If the context is undefined,
+     * this method will find the base generic resource with no context.
+     *
+     * @param {String} source The source string to look up
+     * @param {String|undefined} context The optional context of the resource being sought.
+     * @returns {Resource|undefined} a resource corresponding to the source string, or
+     * undefined if there is no resource with that source
+     */
+    getBySource(source, context) {}
+
+    /**
+     * Return all resources in this set.
+     *
+     * @returns {Array.<Resource>} an array of resources in this set,
+     * possibly empty
+     */
+    getAll() {}
+
+    /**
+     * Add a resource to this set. If this resource has the same key
+     * as an existing resource, but a different locale, then this
+     * resource is added a translation instead.
+     *
+     * @param {Resource} resource a resource to add to this set
+     */
+    add(resource) {}
+
+    /**
+     * Add every resource in the given array to this set.
+     * @param {Array.<Resource>} resources an array of resources to add
+     * to this set
+     */
+    addAll(resources) {}
+
+    /**
+     * Add every resource in the given translation set to this set,
+     * merging the results together.
+     *
+     * @param {TranslationSet} set an set of resources to add
+     * to this set
+     */
+    addSet(set) {}
+
+    /**
+     * Return the number of unique resources in this set.
+     * @param {String|undefined} context The optional context of the resource being counted.
+     * @param {String|undefined} locale the locale of the resources being counted
+     * @returns {number} the number of unique resources in this set
+     */
+    TranslationSet.prototype.size = function(context, locale) {
+        return this.resources.length;
+    };
+
+    /**
+     * Reset the dirty flag to false, meaning the set is clean. This will
+     * allow callers to tell if any more resources were added after
+     * this call was made because adding those resources will set
+     * the dirty flag to true again.
+     */
+    setClean() {}
+
+    /**
+     * Return whether or not this set is dirty. The dirty flag is set
+     * whenever a new resource was added to or removed from the set
+     * after it was created or since the last time the setClean method
+     * was called.
+     * @return {boolean} true if the set is dirty, false otherwise
+     */
+    isDirty() {}
+
+    /**
+     * Remove a resource from the set. The resource must have at
+     * least enough fields specified to uniquely identify the
+     * resource to remove. These are: project, context, locale,
+     * resType, and reskey.
+     *
+     * @param {Resource} resource The resource to remove
+     * @returns {boolean} true if the resource was removed successfully
+     * and false otherwise
+     */
+    remove(resource) {}
+
+    /**
+     * Get a resource by the given criteria.
+     * @param {Object} criteria the filter criteria to select the resources to return
+     * @returns {Array.<Resource>|undefined} the array of Resources, or undefined if the
+     * retrieval did not find any resources that match or there was some error
+     */
+    getBy(options) {}
+
+    /**
+     * Return an array of all the project names in the database.
+     *
+     * @returns {Array.<String>|undefined} the array of project names
+     * or undefined if there are no projects in the set
+     */
+    getProjects() {}
+
+    /**
+     * Return an array of all the contexts within the given project
+     * in the set. The root context is just the empty string.
+     * The root context is where all strings will go if they are
+     * not given an explicit context in the resource file or code.
+     *
+     * @param {String|undefined} project the project that contains
+     * the contexts or undefined to mean all projects
+     * @returns {Array.<String>|undefined} the array of context names
+     * or undefined if there are no contexts in the set
+     */
+    getContexts(project) {}
+
+    /**
+     * Return an array of all the locales available within the given
+     * project and context in the set. The root context is just
+     * the empty string. The locales are returned as BCP-47 locale
+     * specs.
+     *
+     * @param {String|undefined} project the project that contains
+     * the contexts or undefined to mean all projects
+     * @param {String|undefined} context the context that contains
+     * the locales or undefined to mean all locales.
+     * Use the empty string "" for the default/root context.
+     * @returns {Array.<String>|undefined} the array of context names
+     * or undefined if there are no contexts in the set
+     */
+    getLocales(project, context) {}
+
+    /**
+     * Clear all resources from this set.
+     */
+    clear() {}
+
+    /**
+     * Return a new translation set that contains the differences
+     * between the current set and the other set. Resources are
+     * added to the difference set if they exist in the other
+     * set but not the current one, or if they exist in both
+     * sets, but contain different fields.
+     *
+     * @param {TranslationSet} other the other set to diff against
+     * @returns {TranslationSet} the differences between the other
+     * set and this one
+     */
+    diff(other) {}
+
+}
+```
+
