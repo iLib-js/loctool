@@ -306,14 +306,24 @@ class API {
      * locale is used.
      * @returns {TranslationSet} a new translation set instance
      */
-    newTranslationSet: function(sourceLocale) {
-        return new TranslationSet(sourceLocale);
-    },
+    newTranslationSet: function(sourceLocale) {}
 
     /**
      * Utility functions and data that the plugin may need.
      */
-    utils: utils
+    utils: utils,
+
+    /**
+     * Return true if the given locale spec is for a pseudo-locale.
+     * A pseudo-locale is one where an algorithm is applied
+     * to the source text to create a pseudo-localization. This is
+     * useful for localization enablement testing or font testing.
+     *
+     * @param {string} locale the locale spec for the locale to test
+     * @returns {boolean} true if the given locale is a pseudo-locale
+     * and false otherwise.
+     */
+    isPseudoLocale: function(locale) {}
 }
 ```
 
