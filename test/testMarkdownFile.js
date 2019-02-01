@@ -801,12 +801,11 @@ module.exports.markdown = {
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        // should not pick up the emphasis marker because there is no localizable text
-        // before it or after it
-        var r = set.getBySource("This is a test of the emergency parsing system.");
+        // should pick up the emphasis markers
+        var r = set.getBySource("<c0>This is a test of the emergency parsing system.</c0>");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
-        test.equal(r.getKey(), "r699762575");
+        test.equal(r.getSource(), "<c0>This is a test of the emergency parsing system.</c0>");
+        test.equal(r.getKey(), "r49032733");
 
         test.done();
     },
@@ -1411,10 +1410,10 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r699762575",
-            source: "This is a test of the emergency parsing system.",
+            key: "r49032733",
+            source: "<c0>This is a test of the emergency parsing system.</c0>",
             sourceLocale: "en-US",
-            target: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
+            target: "<c0>Ceci est un essai du système d'analyse syntaxique de l'urgence.</c0>",
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
@@ -1869,8 +1868,7 @@ module.exports.markdown = {
             '---\n' +
             '# Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
             '\n' +
-            'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n' +
-            '\n' +
+            'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n\n' +
             '[block:code]\n' +
             '{\n' +
             '  "codes": [\n' +
@@ -1881,7 +1879,7 @@ module.exports.markdown = {
             '    }\n' +
             '  ]\n' +
             '}\n' +
-            '[/block]\n' +
+            '[/block]\n\n' +
             'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n\n' +
             '[block:parameters]\n' +
             '{\n' +
@@ -1894,7 +1892,7 @@ module.exports.markdown = {
             '  "cols": 3,\n' +
             '  "rows": 5\n' +
             '}\n' +
-            '[/block]\n' +
+            '[/block]\n\n' +
             'C\'est le dernier morceau de texte localisable.\n' +
             '\n' +
             'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
@@ -1911,8 +1909,7 @@ module.exports.markdown = {
             '---\n' +
             '# Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
             '\n' +
-            'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n' +
-            '\n' +
+            'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n\n' +
             '[block:code]\n' +
             '{\n' +
             '  "codes": [\n' +
@@ -1923,7 +1920,7 @@ module.exports.markdown = {
             '    }\n' +
             '  ]\n' +
             '}\n' +
-            '[/block]\n' +
+            '[/block]\n\n' +
             'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n\n' +
             '[block:parameters]\n' +
             '{\n' +
@@ -1936,7 +1933,7 @@ module.exports.markdown = {
             '  "cols": 3,\n' +
             '  "rows": 5\n' +
             '}\n' +
-            '[/block]\n' +
+            '[/block]\n\n' +
             'Dies ist der letzte Teil des lokalisierbaren Textes.\n' +
             '\n' +
             'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n';
@@ -2093,14 +2090,12 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
             '* article du liste No. 1\n' +
-            '* article du liste No. 2\n' +
-            '\n' +
+            '* article du liste No. 2\n\n' +
             '[block:callout]\n' +
             '{\n' +
             '  "type": "test"\n' +
             '}\n' +
-            '[/block]\n' +
-            '\n' +
+            '[/block]\n\n' +
             '## Entête du Teste\n');
 
         test.done();
@@ -2155,7 +2150,7 @@ module.exports.markdown = {
             '{\n' +
             '  "codes": [\n' +
             '    {\n' +
-            '      "code": "aws cloudformation describe-stacks \\\n    --stack-name boxskill \\\n    --query \'Stacks[].Outputs\'\n# Your URL should look something like this:\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
+            '      "code": "aws cloudformation describe-stacks \\\\\\n    --stack-name boxskill \\\\\\n    --query \'Stacks[].Outputs\'\\n# Your URL should look something like this:\\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
             '      "language": "shell"\n' +
             '    }\n' +
             '  ]\n' +
@@ -2173,22 +2168,53 @@ module.exports.markdown = {
             datatype: "markdown"
         }));
 
-        test.equal(mf.localizeText(translations, "fr-FR"),
+        var actual = mf.localizeText(translations, "fr-FR");
+        var expected =
             'Teste\n\n' +
             '[block:code]\n' +
             '{\n' +
             '  "codes": [\n' +
             '    {\n' +
-            '      "code": "aws cloudformation describe-stacks \\\n    --stack-name boxskill \\\n    --query \'Stacks[].Outputs\'\n# Your URL should look something like this:\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
+            '      "code": "aws cloudformation describe-stacks \\\\\\n    --stack-name boxskill \\\\\\n    --query \'Stacks[].Outputs\'\\n# Your URL should look something like this:\\n# https://[id].execute-api.us-east-1.amazonaws.com/Prod/hello/",\n' +
             '      "language": "shell"\n' +
             '    }\n' +
             '  ]\n' +
             '}\n' +
-            '[/block]\n' +
-            'Teste\n');
+            '[/block]\n\n' +
+            'Teste\n';
+
+        diff(actual, expected);
+
+        test.equal(actual, expected);
 
         test.done();
     },
+
+    testMarkdownFileParseMultipleMDComponents: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'Integration samples include: \n' +
+            '* **[File Workflow with Webhooks](/docs/file-workflow-with-webhooks)**: Creating file task automation with webhooks.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getBySource("Integration samples include:");
+        test.ok(r);
+        test.equal(r.getSource(), "Integration samples include:");
+        test.equal(r.getKey(), "r537538527");
+
+        r = set.getBySource("<c0><c1>File Workflow with Webhooks</c1></c0>: Creating file task automation with webhooks.");
+        test.ok(r);
+        test.equal(r.getSource(), "<c0><c1>File Workflow with Webhooks</c1></c0>: Creating file task automation with webhooks.");
+        test.equal(r.getKey(), "r663481768");
+
+        test.done();
+    }
 };
-
-
