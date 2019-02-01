@@ -1342,5 +1342,77 @@ module.exports.resourcearray = {
         test.equal(ra.hashKey(), "ra_foo_blah_de-DE_asdf");
 
         test.done();
+    },
+
+    testResourceArrayIsInstanceSame: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceArray({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceArray: ["a", "b", "c"]
+        });
+        test.ok(rs);
+
+        var dup = new ResourceArray({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceArray: ["a", "b", "c"]
+        });
+        test.ok(dup);
+
+        test.ok(rs.isInstance(dup));
+
+        test.done();
+    },
+
+    testResourceArrayIsInstanceDifferingInSource: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceArray({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceArray: ["a", "b", "c"]
+        });
+        test.ok(rs);
+
+        var dup = new ResourceArray({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceArray: ["a", "b", "cd"]
+        });
+        test.ok(dup);
+
+        test.ok(!rs.isInstance(dup));
+
+        test.done();
     }
 };

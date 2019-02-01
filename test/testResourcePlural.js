@@ -1610,5 +1610,89 @@ module.exports.resourceplural = {
         test.equal(rp.hashKey(), "rp_foo_blah_de-DE_asdf");
 
         test.done();
+    },
+
+    testResourcePluralIsInstanceSame: function(test) {
+        test.expect(3);
+
+        var rs = new ResourcePlural({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceStrings: {
+                one: "This is a test",
+                other: "These are tests"
+            }
+        });
+        test.ok(rs);
+
+        var dup = new ResourcePlural({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceStrings: {
+                one: "This is a test",
+                other: "These are tests"
+            }
+        });
+        test.ok(dup);
+
+        test.ok(rs.isInstance(dup));
+
+        test.done();
+    },
+
+    testResourcePluralIsInstanceDifferingInSource: function(test) {
+        test.expect(3);
+
+        var rs = new ResourcePlural({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceStrings: {
+                one: "This is a test",
+                other: "These are tests"
+            }
+        });
+        test.ok(rs);
+
+        var dup = new ResourcePlural({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            sourceStrings: {
+                one: "This is a test",
+                other: "These are tests."
+            }
+        });
+        test.ok(dup);
+
+        test.ok(!rs.isInstance(dup));
+
+        test.done();
     }
 };

@@ -1115,6 +1115,78 @@ module.exports.resourcestring = {
         test.equal(rs.hashKey(), "irs_iosapp_en-US_a/b/es.lproj/foo.xib_This is a test_");
 
         test.done();
-    }
+    },
+
+    testResourceStringIsInstanceSame: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            source: "This is a test"
+        });
+        test.ok(rs);
+
+        var dup = new ResourceString({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            source: "This is a test"
+        });
+        test.ok(dup);
+
+        test.ok(rs.isInstance(dup));
+
+        test.done();
+    },
+
+    testResourceStringIsInstanceDifferingInSource: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            source: "This is a test"
+        });
+        test.ok(rs);
+
+        var dup = new ResourceString({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            source: "This is a test."
+        });
+        test.ok(dup);
+
+        test.ok(!rs.isInstance(dup));
+
+        test.done();
+    },
 
 };
