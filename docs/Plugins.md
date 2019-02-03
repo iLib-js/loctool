@@ -238,6 +238,35 @@ interface FileType {
      * name to the resource type
      */
     getDataTypes() {}
+
+    /**
+     * Return the translation set containing all of the extracted
+     * resources for all instances of this type of file. This includes
+     * all new strings and all existing strings. If it was extracted
+     * from a source file, it should be returned here.
+     *
+     * @returns {TranslationSet} the set containing all of the
+     * extracted resources
+     */
+    getExtracted() {}
+
+    /**
+    * Return the translation set containing all of the new
+    * resources for all instances of this type of file.
+    *
+    * @returns {TranslationSet} the set containing all of the
+    * new resources
+    */
+    getNew() {}
+
+    /**
+    * Return the translation set containing all of the pseudo
+    * localized resources for all instances of this type of file.
+    *
+    * @returns {TranslationSet} the set containing all of the
+    * pseudo localized resources
+    */
+    getPseudo() {}
 }
 ```
 
@@ -648,6 +677,14 @@ class Resource {
      * @return {String} a unique hash key for this resource's string
      */
     cleanHashKeyForTranslation(locale) {}
+
+    /**
+     */
+    isInstance(resource) {}
+
+    addInstance(resource) {}
+
+    getInstances() {}
 }
 ```
 
@@ -992,9 +1029,7 @@ class TranslationSet {
      * @param {String|undefined} locale the locale of the resources being counted
      * @returns {number} the number of unique resources in this set
      */
-    TranslationSet.prototype.size = function(context, locale) {
-        return this.resources.length;
-    };
+    size(context, locale) {}
 
     /**
      * Reset the dirty flag to false, meaning the set is clean. This will
@@ -1090,3 +1125,124 @@ class TranslationSet {
 }
 ```
 
+### The Project Class
+
+Projects are a container for a particular project on disk. They
+are configured by putting a project.json file in the root of
+project on disk. Projects contain various translation sets, as
+well as settings and options.
+
+Projects give the settings and options that are needed by many
+plugins. Options come from the "options" property in the
+project.json file, which contain some standard options and some
+custom ones. If you write a plugin, you can configure that
+plugin using options in the project.json file. Settings come
+from the command-line or the environment variables
+of the loctool. The settings do not change for a run of the
+loctool, but options can change with every project, as every
+project has its own project.json file.
+
+The project is provided to the file type constructor of your
+plugin, and should be passed to file instances as well if they
+need it.
+
+The Project class has the following methods and properties
+that a plugin might need:
+
+```
+class Project {
+    /**
+     * Return the translation set for this project.
+     *
+     * @returns {TranslationSet} the translation set
+     */
+    getTranslationSet() {}
+
+    /**
+     * Return the unique id of this project. Often this is the
+     * name of the repository in source control.
+     *
+     * @returns {String} the unique id of this project
+     */
+    getProjectId() {}
+
+    /**
+     * Return the root directory of this project.
+     *
+     * @returns {String} the path to the root dir of this project
+     */
+    getRoot() {}
+
+    /**
+     * Add the given path name the list of files in this project.
+     *
+     * @returns {String} pathName the path to add to the project
+     */
+    addPath(pathName) {}
+
+    /**
+     * Return an array of resource directories for the file type.
+     * If there are no resource directories for the file type,
+     * then this returns an empty array.
+     *
+     * @returns {Array.<String>} an array of resource directories
+     * for the file type.
+     */
+    getResourceDirs(type) {}
+
+    /**
+     * Return true if the given path is included in the list of
+     * resource directories for the given type. This method returns
+     * true for any path to a directory or file within any resource
+     * directory or any of its subdirectories.
+     *
+     * @param {String} type the type of resources being tested
+     * @param {String} pathName the directory name to test
+     * @returns {Boolean} true if the path is within one of
+     * the resource directories, and false otherwise
+     */
+    isResourcePath(type, pathName) {}
+
+    /**
+     * Return true if the given locale is the source locale of this
+     * project, or any of the flavors thereof.
+     * @param {String} locale the locale spec to test
+     * @returns {boolean} true if the given locale is the source
+     * locale of this project or any of its flavors, and false
+     * otherwise.
+     */
+    isSourceLocale(locale) {}
+
+    /**
+     * Get the source locale for this project.
+     *
+     * @returns {string} the locale spec for the source locale of
+     * this project
+     */
+    getSourceLocale() {}
+
+    /**
+     * Get the pseudo-localization locale for this project.
+     *
+     * @returns {string} the locale spec for the pseudo locale of
+     * this project
+     */
+    getPseudoLocale() {}
+
+    /**
+     * Return the resource file type for this project.
+     * The resource file type will be able to read in and
+     * write out resource files and other file types put
+     * their resources here. The type parameter tells
+     * which type of resources are being sought. A project
+     * for example may contain separate resource files for
+     * javascript and ruby.
+     *
+     * @param {String} type the type of resource being sought
+     * @returns {FileType} the resource file type for this
+     * project, which may be an instance of another file
+     * type plugin
+     */
+    getResourceFileType(type) {}
+}
+```
