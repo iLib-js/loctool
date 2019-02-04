@@ -954,7 +954,7 @@ module.exports.htmlfile = {
         test.done();
     },
 
-    testHTMLFileParseIgnoreTags: function(test) {
+    testHTMLFileParseIgnoreScriptTags: function(test) {
         test.expect(6);
 
         var p = new WebProject({
@@ -973,6 +973,36 @@ module.exports.htmlfile = {
             '  $(".foo").class("asdf");\n' +
             '}\n' +
             '</script>\n' +
+            '<span class="foo">foo</span>\n' +
+            '</body></html>');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
+        test.done();
+    },
+
+    testHTMLFileParseIgnoreStyleTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html><body>\n' +
             '<style>\n' +
             '  .activity_title{\n' +
             '    font-size: 18px;\n' +
@@ -982,6 +1012,40 @@ module.exports.htmlfile = {
             '  }\n' +
             '</style>\n' +
             '<span class="foo">foo</span>\n' +
+            '</body></html>');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
+        test.done();
+    },
+
+    testHTMLFileParseIgnoreCodeTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html><body>\n' +
+            '<span class="foo">foo</span>\n' +
+            '<code>\n' +
+            '  var js = new ResBundle();\n' +
+            '  var str = js.getString("Test String");\n' +
+            '</code>\n' +
             '</body></html>');
 
         var set = htf.getTranslationSet();
