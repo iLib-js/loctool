@@ -467,7 +467,7 @@ module.exports.swiftfile = {
     },
 
     testSwiftFileExtractFile: function(test) {
-        test.expect(26);
+        test.expect(31);
 
         var j = new SwiftFile(p, "./swift/MyproductStrings.swift", sft);
         test.ok(j);
@@ -483,7 +483,14 @@ module.exports.swiftfile = {
         test.ok(r);
         test.equal(r.getSource(), "Options");
         test.equal(r.getKey(), "Options");
-        test.equal(r.getComment(), "Add Action sheet message");
+        test.equal(r.getComment(), "Add Action sheet title");
+
+        var instances = r.getInstances();
+        test.ok(instances);
+        test.equal(instances.length, 1);
+        test.equal(instances[0].getSource(), "Options");
+        test.equal(instances[0].getKey(), "Options");
+        test.equal(instances[0].getComment(), "Add Action sheet message");
 
         r = set.getBySource("Error logging out");
         test.ok(r);
