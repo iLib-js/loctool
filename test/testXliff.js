@@ -1,7 +1,7 @@
 /*
  * testXliff.js - test the Xliff object.
  *
- * Copyright © 2016-2017, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -2881,6 +2881,288 @@ module.exports.xliff = {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
+        test.done();
+    },
+    
+    testXliffAddResourcesWithInstances: function(test) {
+        test.expect(9);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp"
+        });
+        
+        var res2 = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp",
+            comment: "special translators note"
+        });
+        res.addInstance(res2);
+
+        x.addResource(res);
+
+        var reslist = x.getResources({
+            reskey: "foobar"
+        });
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 1);
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "webapp");
+        test.ok(!reslist[0].getComment());
+        
+        test.done();
+    },
+
+    testXliffAddMultipleResourcesAddInstances: function(test) {
+        test.expect(17);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        // this one has the same source, locale, key, and file
+        // so it should create an instance of the first one
+        res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            comment: "blah blah blah",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        var reslist = x.getResources({
+            reskey: "foobar"
+        });
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 1);
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "webapp");
+        test.ok(!reslist[0].getComment());
+        
+        var instances = reslist[0].getInstances();
+        test.ok(instances);
+        test.equal(instances.length, 1);
+        
+        test.equal(instances[0].getSource(), "Asdf asdf");
+        test.equal(instances[0].getSourceLocale(), "en-US");
+        test.equal(instances[0].getKey(), "foobar");
+        test.equal(instances[0].getPath(), "foo/bar/asdf.java");
+        test.equal(instances[0].getProject(), "webapp");
+        test.equal(instances[0].getComment(), "blah blah blah");
+
+        test.done();
+    },
+
+    testXliffSerializeWithResourcesWithInstances: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        // this one has the same source, locale, key, and file
+        // so it should create an instance of the first one
+        res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            comment: "blah blah blah",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="webapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="2" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '        <note annotates="source">blah blah blah</note>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        var actual = x.serialize();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testXliffSerializeWithTranslationUnitsWithInstances: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+            "source": "bababa",
+            "sourceLocale": "en-US",
+            "target": "ababab",
+            "targetLocale": "fr-FR",
+            "key": "asdf",
+            "file": "/a/b/asdf.js",
+            "project": "iosapp",
+            "id": 2333,
+            "resType":"string",
+            "origin": "source",
+            "context": "asdfasdf",
+            "comment": "this is a comment"
+        }));
+
+        x.addTranslationUnit(new TranslationUnit({
+            "source": "bababa",
+            "sourceLocale": "en-US",
+            "target": "ababab",
+            "targetLocale": "fr-FR",
+            "key": "asdf",
+            "file": "/a/b/asdf.js",
+            "project": "iosapp",
+            "id": 2334,
+            "resType":"string",
+            "origin": "source",
+            "context": "asdfasdf",
+            "comment": "this is a different comment"
+        }));
+
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note annotates="source">this is a comment</note>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="2334" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note annotates="source">this is a different comment</note>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        var actual = x.serialize();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testXliffDeserializeCreateInstances: function(test) {
+        test.expect(21);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        x.deserialize(
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note annotates="source">this is a comment</note>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="2334" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note annotates="source">this is a different comment</note>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 1);
+
+        test.equal(reslist[0].getTarget(), "ababab");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
+        test.equal(reslist[0].getKey(), "asdf");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].context, "asdfasdf");
+        test.equal(reslist[0].comment, "this is a comment");
+
+        var instances = reslist[0].getInstances();
+        test.ok(instances);
+        test.equal(instances.length, 1);
+
+        test.equal(instances[0].getTarget(), "ababab");
+        test.equal(instances[0].getTargetLocale(), "fr-FR");
+        test.equal(instances[0].getKey(), "asdf");
+        test.equal(instances[0].getPath(), "/a/b/asdf.js");
+        test.equal(instances[0].getProject(), "iosapp");
+        test.equal(instances[0].resType, "string");
+        test.equal(instances[0].context, "asdfasdf");
+        test.equal(instances[0].comment, "this is a different comment");
 
         test.done();
     }
