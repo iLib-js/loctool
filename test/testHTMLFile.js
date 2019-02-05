@@ -95,7 +95,7 @@ module.exports.htmlfile = {
         var htf = new HTMLFile(p);
         test.ok(htf);
 
-        test.equal(htf.makeKey("This is a test"), "This is a test");
+        test.equal(htf.makeKey("This is a test"), "r654479252");
 
         test.done();
     },
@@ -112,7 +112,7 @@ module.exports.htmlfile = {
         var htf = new HTMLFile(p);
         test.ok(htf);
 
-        test.equal(htf.makeKey("This is\n a te\nst"), "This is a te st");
+        test.equal(htf.makeKey("This is\n a te\nst"), "r1055138400");
 
         test.done();
     },
@@ -129,7 +129,7 @@ module.exports.htmlfile = {
         var htf = new HTMLFile(p);
         test.ok(htf);
 
-        test.equal(htf.makeKey("This \t is\n \t a   test"), "This is a test");
+        test.equal(htf.makeKey("This \t is\n \t a   test"), "r654479252");
 
         test.done();
     },
@@ -146,7 +146,7 @@ module.exports.htmlfile = {
         var htf = new HTMLFile(p);
         test.ok(htf);
 
-        test.equal(htf.makeKey("\n\t This \t is\n \t a   test\n\n\n"), "This is a test");
+        test.equal(htf.makeKey("\n\t This \t is\n \t a   test\n\n\n"), "r654479252");
 
         test.done();
     },
@@ -168,11 +168,11 @@ module.exports.htmlfile = {
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test", "html"));
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "r654479252", "html"));
         test.ok(r);
 
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.done();
     },
@@ -197,7 +197,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.done();
     },
@@ -226,7 +226,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.done();
     },
@@ -376,12 +376,12 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "This is also a test");
+        test.equal(r.getKey(), "r999080996");
 
         test.done();
     },
@@ -414,7 +414,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.equal(set.size(), 2);
 
@@ -448,7 +448,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is also a &#3; test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a &#3; test");
-        test.equal(r.getKey(), "This is also a &#3; test");
+        test.equal(r.getKey(), "r1041204778");
 
         test.done();
     },
@@ -483,7 +483,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.equal(set.size(), 2);
 
@@ -517,7 +517,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is also a \u000C test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a \u000C test");
-        test.equal(r.getKey(), "This is also a test");
+        test.equal(r.getKey(), "r999080996");
 
         test.done();
     },
@@ -554,7 +554,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         var r = set.getBySource("// comment text");
         test.ok(!r);
@@ -588,10 +588,10 @@ module.exports.htmlfile = {
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a <em>test</em> of the emergency parsing system.");
+        var r = set.getBySource("This is a <c0>test</c0> of the emergency parsing system.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a <em>test</em> of the emergency parsing system.");
-        test.equal(r.getKey(), "This is a<em>test</em>of the emergency parsing system.");
+        test.equal(r.getSource(), "This is a <c0>test</c0> of the emergency parsing system.");
+        test.equal(r.getKey(), "r306365966");
 
         test.done();
     },
@@ -622,7 +622,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test of the emergency parsing system.");
         test.ok(r);
         test.equal(r.getSource(), "This is a test of the emergency parsing system.");
-        test.equal(r.getKey(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
 
         test.done();
     },
@@ -650,10 +650,10 @@ module.exports.htmlfile = {
 
         // should pick up the span tag because there is localizable text
         // before it and after it
-        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+        var r = set.getBySource('This is <c0> a test of the emergency parsing </c0> system.');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
-        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.');
+        test.equal(r.getSource(), 'This is <c0> a test of the emergency parsing </c0> system.');
+        test.equal(r.getKey(), 'r124733470');
 
         test.done();
     },
@@ -680,10 +680,10 @@ module.exports.htmlfile = {
         test.ok(set);
 
         // tags should be nestable
-        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
+        var r = set.getBySource('This is <c0> a test of the <c1>emergency</c1> parsing </c0> system.');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
-        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.');
+        test.equal(r.getSource(), 'This is <c0> a test of the <c1>emergency</c1> parsing </c0> system.');
+        test.equal(r.getKey(), 'r772812508');
 
         test.done();
     },
@@ -710,10 +710,10 @@ module.exports.htmlfile = {
         test.ok(set);
 
         // the end span tag should automatically end the em tag
-        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
+        var r = set.getBySource('This is <c0> a test of the <c1>emergency parsing </c1></c0> system.');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
-        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.');
+        test.equal(r.getSource(), 'This is <c0> a test of the <c1>emergency parsing </c1></c0> system.');
+        test.equal(r.getKey(), 'r417724998');
 
         test.done();
     },
@@ -732,7 +732,7 @@ module.exports.htmlfile = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n' +
+                '       <div>This is <c0> a test of the <c1>emergency parsing </div> system.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -740,10 +740,10 @@ module.exports.htmlfile = {
         test.ok(set);
 
         // the end div tag ends all the other tags
-        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
+        var r = set.getBySource('This is <c0> a test of the <c1>emergency parsing</c1></c0>');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
-        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency parsing');
+        test.equal(r.getSource(), 'This is <c0> a test of the <c1>emergency parsing</c1></c0>');
+        test.equal(r.getKey(), 'r713898724');
 
         test.done();
     },
@@ -771,10 +771,10 @@ module.exports.htmlfile = {
         test.ok(set);
 
         // the end div tag ends all the other tags
-        var r = set.getBySource('This is <b>another test</b> of the emergency parsing');
+        var r = set.getBySource('This is <c0>another test</c0> of the emergency parsing');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <b>another test</b> of the emergency parsing');
-        test.equal(r.getKey(), 'This is<b>another test</b>of the emergency parsing');
+        test.equal(r.getSource(), 'This is <c0>another test</c0> of the emergency parsing');
+        test.equal(r.getKey(), 'r2117084');
 
         test.done();
     },
@@ -805,12 +805,12 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         r = set.getBySource("This value is localizable");
         test.ok(r);
         test.equal(r.getSource(), "This value is localizable");
-        test.equal(r.getKey(), "This value is localizable");
+        test.equal(r.getKey(), "r922503175");
 
         test.done();
     },
@@ -841,17 +841,17 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         r = set.getBySource("Alternate text");
         test.ok(r);
         test.equal(r.getSource(), "Alternate text");
-        test.equal(r.getKey(), "Alternate text");
+        test.equal(r.getKey(), "r1051764073");
 
         r = set.getBySource("localizable placeholder here");
         test.ok(r);
         test.equal(r.getSource(), "localizable placeholder here");
-        test.equal(r.getKey(), "localizable placeholder here");
+        test.equal(r.getKey(), "r734414247");
 
         test.done();
     },
@@ -884,7 +884,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
 
         test.done();
     },
@@ -910,15 +910,15 @@ module.exports.htmlfile = {
         var set = htf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource('This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
+        var r = set.getBySource('This is <c0>a test</c0> of non-breaking tags.');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
-        test.equal(r.getKey(), 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.');
+        test.equal(r.getSource(), 'This is <c0>a test</c0> of non-breaking tags.');
+        test.equal(r.getKey(), 'r1063253939');
 
         r = set.getBySource("localizable title");
         test.ok(r);
         test.equal(r.getSource(), "localizable title");
-        test.equal(r.getKey(), "localizable title");
+        test.equal(r.getKey(), "r160369622");
 
         test.done();
     },
@@ -948,7 +948,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("This is a test of the emergency parsing system.");
         test.ok(r);
         test.equal(r.getSource(), "This is a test of the emergency parsing system.");
-        test.equal(r.getKey(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
         test.equal(r.getComment(), "this describes the text below");
 
         test.done();
@@ -984,7 +984,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("foo");
         test.ok(r);
         test.equal(r.getSource(), "foo");
-        test.equal(r.getKey(), "foo");
+        test.equal(r.getKey(), "r941132140");
 
         test.done();
     },
@@ -1022,7 +1022,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("foo");
         test.ok(r);
         test.equal(r.getSource(), "foo");
-        test.equal(r.getKey(), "foo");
+        test.equal(r.getKey(), "r941132140");
 
         test.done();
     },
@@ -1056,7 +1056,7 @@ module.exports.htmlfile = {
         var r = set.getBySource("foo");
         test.ok(r);
         test.equal(r.getSource(), "foo");
-        test.equal(r.getKey(), "foo");
+        test.equal(r.getKey(), "r941132140");
 
         test.done();
     },
@@ -1085,17 +1085,17 @@ module.exports.htmlfile = {
         var r = set.getBySource("Get insurance quotes for free!");
         test.ok(r);
         test.equal(r.getSource(), "Get insurance quotes for free!");
-        test.equal(r.getKey(), "Get insurance quotes for free!");
+        test.equal(r.getKey(), "r308704783");
 
         r = set.getBySource("Send question");
         test.ok(r);
         test.equal(r.getSource(), "Send question");
-        test.equal(r.getKey(), "Send question");
+        test.equal(r.getKey(), "r458583963");
 
         r = set.getBySource("Ask");
         test.ok(r);
         test.equal(r.getSource(), "Ask");
-        test.equal(r.getKey(), "Ask");
+        test.equal(r.getKey(), "r30868880");
 
         test.done();
     },
@@ -1125,27 +1125,27 @@ module.exports.htmlfile = {
         var r = set.getBySource("Description");
         test.ok(r);
         test.equal(r.getSource(), "Description");
-        test.equal(r.getKey(), "Description");
+        test.equal(r.getKey(), "r398698468");
 
-        r = set.getBySource('Authored by <a class="actor_link bold" href="#expert_vip/x/">John Smith</a>');
+        r = set.getBySource('Authored by <c0>John Smith</c0>');
         test.ok(r);
-        test.equal(r.getSource(), 'Authored by <a class="actor_link bold" href="#expert_vip/x/">John Smith</a>');
-        test.equal(r.getKey(), 'Authored by<a class="actor_link bold" href="#expert_vip/x/">John Smith</a>');
+        test.equal(r.getSource(), 'Authored by <c0>John Smith</c0>');
+        test.equal(r.getKey(), 'r389685457');
 
         r = set.getBySource('Agreed');
         test.ok(r);
         test.equal(r.getSource(), 'Agreed');
-        test.equal(r.getKey(), 'Agreed');
+        test.equal(r.getKey(), 'r906242212');
 
-        r = set.getBySource('and <a class="bold"><span class="friend_agree_count_h">8</span> of your friends agree</a>');
+        r = set.getBySource('and <c0><c1>8</c1> of your friends agree</c0>');
         test.ok(r);
-        test.equal(r.getSource(), 'and <a class="bold"><span class="friend_agree_count_h">8</span> of your friends agree</a>');
-        test.equal(r.getKey(), 'and<a class="bold"><span class="friend_agree_count_h">8</span>of your friends agree</a>');
+        test.equal(r.getSource(), 'and <c0><c1>8</c1> of your friends agree</c0>');
+        test.equal(r.getKey(), 'r997712256');
 
         r = set.getBySource("Write a better description &raquo;");
         test.ok(r);
         test.equal(r.getSource(), "Write a better description &raquo;");
-        test.equal(r.getKey(), "Write a better description &raquo;");
+        test.equal(r.getKey(), "r182493507");
 
         test.done();
     },
@@ -1217,7 +1217,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1256,7 +1256,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1298,7 +1298,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1342,7 +1342,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1351,7 +1351,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -1398,7 +1398,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1407,7 +1407,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -1456,7 +1456,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1465,7 +1465,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -1517,7 +1517,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -1565,10 +1565,10 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a<em>test</em>of the emergency parsing system.",
-            source: "This is a<em>test</em>of the emergency parsing system.",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
             sourceLocale: "en-US",
-            target: "Ceci est un <em>essai</em> du système d'analyse syntaxique de l'urgence.",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse syntaxique de l'urgence.",
             targetLocale: "fr-FR",
             datatype: "html"
         }));
@@ -1605,7 +1605,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test of the emergency parsing system.",
+            key: "r699762575",
             source: "This is a test of the emergency parsing system.",
             sourceLocale: "en-US",
             target: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
@@ -1645,9 +1645,9 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.',
-            source: 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.',
-            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>',
+            key: 'r124733470',
+            source: 'This is <c0> a test of the emergency parsing </c0> system.',
+            target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de l\'urgence.</c0>',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
@@ -1684,9 +1684,9 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.',
-            source: 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.',
-            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>',
+            key: 'r772812508',
+            source: 'This is <c0> a test of the <c1>emergency</c1> parsing </c0> system.',
+            target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de <c1>l\'urgence</c1>.</c0>',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
@@ -1723,9 +1723,9 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.',
-            source: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.',
-            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>',
+            key: 'r417724998',
+            source: 'This is <c0> a test of the <c1>emergency parsing </c1></c0> system.',
+            target: 'Ceci est <c0> un essai du système d\'analyse syntaxique de <c1>l\'urgence.</c1></c0>',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
@@ -1733,7 +1733,7 @@ module.exports.htmlfile = {
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<html>\n' +
                 '   <body>\n' +
-                '       Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>\n' +
+                '       Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</em></span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -1762,9 +1762,9 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing',
-            source: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing',
-            target: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique',
+            key: 'r215850552',
+            source: 'This is <c0> a test of the <c1>emergency parsing </c1></c0>',
+            target: 'Ceci est <c0> un essai du système <c1>d\'analyse syntaxique </c1></c0>',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
@@ -1772,7 +1772,7 @@ module.exports.htmlfile = {
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<html>\n' +
                 '   <body>\n' +
-                '       <div>Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique </div> system.\n' +
+                '       <div>Ceci est <span id="foo" class="bar"> un essai du <em>système d\'analyse syntaxique </em></div> system.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -1803,7 +1803,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This value is localizable',
+            key: 'r922503175',
             source: 'This value is localizable',
             target: 'Cette valeur est localisable',
             targetLocale: "fr-FR",
@@ -1811,7 +1811,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is a test',
+            key: 'r654479252',
             source: 'This is a test',
             target: 'Ceci est un essai',
             targetLocale: "fr-FR",
@@ -1854,7 +1854,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'Alternate text',
+            key: 'r1051764073',
             source: 'Alternate text',
             target: 'Texte alternative',
             targetLocale: "fr-FR",
@@ -1862,7 +1862,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is a test',
+            key: 'r654479252',
             source: 'This is a test',
             target: 'Ceci est un essai',
             targetLocale: "fr-FR",
@@ -1870,7 +1870,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'localizable placeholder here',
+            key: 'r734414247',
             source: 'localizable placeholder here',
             target: 'espace réservé localisable ici',
             targetLocale: "fr-FR",
@@ -1911,15 +1911,15 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.',
-            source: 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.',
-            target: 'Ceci est <a href="foo.html" title="{title}">un essai</a> des balises non-ruptures.',
+            key: 'r1063253939',
+            source: 'This is <c0>a test</c0> of non-breaking tags.',
+            target: 'Ceci est <c0>un essai</c0> des balises non-ruptures.',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'localizable title',
+            key: 'r160369622',
             source: 'localizable title',
             target: 'titre localisable',
             targetLocale: "fr-FR",
@@ -1959,7 +1959,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is a test of the emergency parsing system.',
+            key: 'r699762575',
             source: 'This is a test of the emergency parsing system.',
             target: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
             targetLocale: "fr-FR",
@@ -2004,7 +2004,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is a test",
+            key: "r654479252",
             source: "This is a test",
             sourceLocale: "en-US",
             target: "Ceci est un essai",
@@ -2013,7 +2013,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -2024,11 +2024,11 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <span loclang="html" locid="This is a test">Ceci est un essai</span>\n' +
+            '       <span loclang="html" locid="r654479252">Ceci est un essai</span>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="This is also a test">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
-            '       <span loclang="html" locid="This is a test">Ceci est un essai</span>\n' +
+            '       <span loclang="html" locid="r654479252">Ceci est un essai</span>\n' +
             '   </body>\n' +
             '</html>\n';
            var actual = htf.localizeText(translations, "fr-FR");
@@ -2064,7 +2064,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "placeholder text",
+            key: "r561033628",
             source: "placeholder text",
             sourceLocale: "en-US",
             target: "Texte de l'espace réservé",
@@ -2073,7 +2073,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This is a test',
+            key: 'r654479252',
             source: 'This is a test',
             target: 'Ceci est un essai',
             targetLocale: "fr-FR",
@@ -2081,7 +2081,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -2092,9 +2092,9 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <area alt="&lt;span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;"><span loclang="html" locid="This is a test">Ceci est un essai</span></area>\n' +
+            '       <area alt="&lt;span loclang=&quot;html&quot; locid=&quot;r561033628&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;"><span loclang="html" locid="r654479252">Ceci est un essai</span></area>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="This is also a test">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
             '   </body>\n' +
             '</html>\n';
@@ -2131,7 +2131,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "placeholder text",
+            key: "r561033628",
             source: "placeholder text",
             sourceLocale: "en-US",
             target: "Texte de l'espace réservé",
@@ -2140,16 +2140,16 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'This<span title="{title}">is a test</span>',
-            source: 'This<span title="{title}">is a test</span>',
+            key: 'r325440473',
+            source: 'This <c0>is a test</c0>',
             sourceLocale: "en-US",
-            target: 'Ceci <span title="{title}">est un essai</span>',
+            target: 'Ceci <c0>est un essai</c0>',
             targetLocale: "fr-FR",
             datatype: "html"
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: "This is also a test",
+            key: "r999080996",
             source: "This is also a test",
             sourceLocale: "en-US",
             target: "Ceci est aussi un essai",
@@ -2160,9 +2160,9 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <span loclang="html" locid="This&lt;span title=&quot;{title}&quot;&gt;is a test&lt;/span&gt;">Ceci <span title="&lt;span loclang=&quot;html&quot; locid=&quot;placeholder text&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;">est un essai</span></span>\n' +
+            '       <span loclang="html" locid="r325440473">Ceci <span title="&lt;span loclang=&quot;html&quot; locid=&quot;r561033628&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;">est un essai</span></span>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="This is also a test">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
             '   </body>\n' +
             '</html>\n';
@@ -2285,7 +2285,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Obtenez des devis d\'assurance gratuitement!',
             targetLocale: "fr-FR",
@@ -2293,7 +2293,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Talk',
+            key: 'r400586044',
             source: 'Talk',
             target: 'Consultee',
             targetLocale: "fr-FR",
@@ -2301,7 +2301,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Ask',
+            key: 'r30868880',
             source: 'Ask',
             target: 'Poser un question',
             targetLocale: "fr-FR",
@@ -2309,7 +2309,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Send question',
+            key: 'r458583963',
             source: 'Send question',
             target: 'Envoyer la question',
             targetLocale: "fr-FR",
@@ -2318,7 +2318,7 @@ module.exports.htmlfile = {
 
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Kostenlosen Versicherungs-Angebote erhalten!',
             targetLocale: "de-DE",
@@ -2326,7 +2326,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Talk',
+            key: 'r400586044',
             source: 'Talk',
             target: 'Beratung',
             targetLocale: "de-DE",
@@ -2334,7 +2334,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Ask',
+            key: 'r30868880',
             source: 'Ask',
             target: 'Eine Frage stellen',
             targetLocale: "de-DE",
@@ -2342,7 +2342,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Send question',
+            key: 'r458583963',
             source: 'Send question',
             target: 'Frage abschicken',
             targetLocale: "de-DE",
@@ -2431,7 +2431,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Obtenez des devis d\'assurance gratuitement!',
             targetLocale: "fr-FR",
@@ -2439,7 +2439,7 @@ module.exports.htmlfile = {
         }));
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Get insurance quotes for free!',
+            key: 'r308704783',
             source: 'Get insurance quotes for free!',
             target: 'Kostenlosen Versicherungs-Angebote erhalten!',
             targetLocale: "de-DE",
@@ -2480,12 +2480,12 @@ module.exports.htmlfile = {
         var r = set.getBySource('Mr. Smith is not available.');
         test.ok(r);
         test.equal(r.getSource(), 'Mr. Smith is not available.');
-        test.equal(r.getKey(), 'Mr. Smith is not available.');
+        test.equal(r.getKey(), 'r41505278');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'Mr. Smith is not available.',
+            key: 'r41505278',
             source: 'Mr. Smith is not available.',
             target: 'Mssr. Smith n\'est pas disponible.',
             targetLocale: "fr-FR",
@@ -2526,7 +2526,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'foo',
+            key: 'r941132140',
             source: 'foo',
             target: 'asdf',
             targetLocale: "fr-FR",
@@ -2568,7 +2568,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'foo',
+            key: 'r941132140',
             source: 'foo',
             target: 'asdf',
             targetLocale: "fr-FR",
@@ -2616,7 +2616,7 @@ module.exports.htmlfile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "webapp",
-            key: 'foo',
+            key: 'r941132140',
             source: 'foo',
             target: 'asdf',
             targetLocale: "fr-FR",
@@ -2662,27 +2662,27 @@ module.exports.htmlfile = {
         var r = set.getBySource("Upcoming Appointments");
         test.ok(r);
         test.equal(r.getSource(), "Upcoming Appointments");
-        test.equal(r.getKey(), "Upcoming Appointments");
+        test.equal(r.getKey(), "r110253465");
 
         r = set.getBySource("Completed Meetings");
         test.ok(r);
         test.equal(r.getSource(), "Completed Meetings");
-        test.equal(r.getKey(), "Completed Meetings");
+        test.equal(r.getKey(), "r163355880");
 
         r = set.getBySource("Get help");
         test.ok(r);
         test.equal(r.getSource(), "Get help");
-        test.equal(r.getKey(), "Get help");
+        test.equal(r.getKey(), "r1035647778");
 
         r = set.getBySource("Colleagues are standing by to help");
         test.ok(r);
         test.equal(r.getSource(), "Colleagues are standing by to help");
-        test.equal(r.getKey(), "Colleagues are standing by to help");
+        test.equal(r.getKey(), "r688256348");
 
         r = set.getBySource("Ask your co-workers now");
         test.ok(r);
         test.equal(r.getSource(), "Ask your co-workers now");
-        test.equal(r.getKey(), "Ask your co-workers now");
+        test.equal(r.getKey(), "r575590209");
 
         test.done();
     },
@@ -2711,17 +2711,17 @@ module.exports.htmlfile = {
         var r = set.getBySource("Choose a meeting method");
         test.ok(r);
         test.equal(r.getSource(), "Choose a meeting method");
-        test.equal(r.getKey(), "Choose a meeting method");
+        test.equal(r.getKey(), "r950833718");
 
         r = set.getBySource("Test phrase");
         test.ok(r);
         test.equal(r.getSource(), "Test phrase");
-        test.equal(r.getKey(), "Test phrase");
+        test.equal(r.getKey(), "r103886803");
 
         r = set.getBySource("In Person Mode");
         test.ok(r);
         test.equal(r.getSource(), "In Person Mode");
-        test.equal(r.getKey(), "In Person Mode");
+        test.equal(r.getKey(), "r251839517");
 
         test.done();
     },
@@ -2749,7 +2749,7 @@ module.exports.htmlfile = {
 
         translations.add(new ResourceString({
             project: "foo",
-            key: "Choose a meeting method",
+            key: "r950833718",
             source: "Choose a meeting method",
             sourceLocale: "en-US",
             target: "Choisissez une méthode de réunion d'affaires",
@@ -2799,7 +2799,7 @@ module.exports.htmlfile = {
 
         r = set.getBySource("Test phrase");
         test.ok(r);
-        test.equal(resources[0].getKey(), "Test phrase");
+        test.equal(resources[0].getKey(), "r103886803");
         test.equal(resources[0].getSource(), "Test phrase");
         test.equal(resources[0].getSourceLocale(), "en-US");
         test.equal(resources[0].getTarget(), "Test phrase");
@@ -2807,7 +2807,7 @@ module.exports.htmlfile = {
 
         r = set.getBySource("In Person Mode");
         test.ok(r);
-        test.equal(resources[1].getKey(), "In Person Mode");
+        test.equal(resources[1].getKey(), "r251839517");
         test.equal(resources[1].getSource(), "In Person Mode");
         test.equal(resources[1].getSourceLocale(), "en-US");
         test.equal(resources[1].getTarget(), "In Person Mode");
