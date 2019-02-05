@@ -2925,7 +2925,7 @@ module.exports.xliff = {
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "webapp");
-        test.ok(!reslist[0].getcomment());
+        test.ok(!reslist[0].getComment());
         
         test.done();
     },
@@ -2951,7 +2951,7 @@ module.exports.xliff = {
         // this one has the same source, locale, key, and file
         // so it should create an instance of the first one
         res = new ResourceString({
-            source: "baby baby",
+            source: "Asdf asdf",
             sourceLocale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
@@ -2968,7 +2968,7 @@ module.exports.xliff = {
         test.ok(reslist);
 
         test.equal(reslist.length, 1);
-        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getSource(), "Asdf asdf");
         test.equal(reslist[0].getSourceLocale(), "en-US");
         test.equal(reslist[0].getKey(), "foobar");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
@@ -2979,12 +2979,67 @@ module.exports.xliff = {
         test.ok(instances);
         test.equal(instances.length, 1);
         
-        test.equal(instances[0].getSource(), "baby baby");
+        test.equal(instances[0].getSource(), "Asdf asdf");
         test.equal(instances[0].getSourceLocale(), "en-US");
         test.equal(instances[0].getKey(), "foobar");
         test.equal(instances[0].getPath(), "foo/bar/asdf.java");
         test.equal(instances[0].getProject(), "webapp");
         test.equal(instances[0].getComment(), "blah blah blah");
+
+        test.done();
+    },
+
+    testXliffSerializeWithResourcesWithInstances: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        // this one has the same source, locale, key, and file
+        // so it should create an instance of the first one
+        res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            comment: "blah blah blah",
+            project: "webapp"
+        });
+
+        x.addResource(res);
+
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="webapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="2" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '        <note annotates="source">blah blah blah</note>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        var actual = x.serialize();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
 
         test.done();
     },
