@@ -610,7 +610,7 @@ module.exports.htmlfile = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <span id="foo" class="bar">  This is a test of the emergency parsing system.  </span>\n' +
+                '       <span id="foo" class="bar">This is a test of the emergency parsing system.</span>\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -619,6 +619,36 @@ module.exports.htmlfile = {
 
         // should not pick up the span tag because there is no localizable text
         // before it or after it
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        test.done();
+    },
+
+    testHTMLFileParseNonBreakingTagsOutsideTrimWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <span id="foo" class="bar"> \t\t \r  This is a test of the emergency parsing system.   \t \n  </span>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        // should trim the whitespace before and after the string
         var r = set.getBySource("This is a test of the emergency parsing system.");
         test.ok(r);
         test.equal(r.getSource(), "This is a test of the emergency parsing system.");
@@ -654,6 +684,132 @@ module.exports.htmlfile = {
         test.ok(r);
         test.equal(r.getSource(), 'This is <c0> a test of the emergency parsing </c0> system.');
         test.equal(r.getKey(), 'r124733470');
+
+        test.done();
+    },
+
+    testHTMLFileParseNonBreakingTagsAtStartOfString: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <span id="foo" class="bar">This is a test of the emergency parsing </span> system.\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        // should pick up the span tag because there is localizable text
+        // after the close
+        var r = set.getBySource('<c0>This is a test of the emergency parsing </c0> system.');
+        test.ok(r);
+        test.equal(r.getSource(), '<c0>This is a test of the emergency parsing </c0> system.');
+        test.equal(r.getKey(), 'r580926060');
+
+        test.done();
+    },
+
+    testHTMLFileParseMultipleNonBreakingTagsAtStartOfString: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <span id="foo" class="bar"><b>This</b> is a test of the emergency parsing system.</span>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        // should pick up the b tag because there is localizable text
+        // after the close, but not the span tag
+        var r = set.getBySource('<c0>This</c0> is a test of the emergency parsing system.');
+
+        test.ok(r);
+        test.equal(r.getSource(), '<c0>This</c0> is a test of the emergency parsing system.');
+        test.equal(r.getKey(), 'r501987849');
+
+        test.done();
+    },
+
+    testHTMLFileParseMultipleNonBreakingTagsAsOuterTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       <span id="foo" class="bar"><b>This is a test of the emergency parsing system.</b></span>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up the span and b tags because there is no localizable text
+        // before or after them
+        var r = set.getBySource('This is a test of the emergency parsing system.');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is a test of the emergency parsing system.');
+        test.equal(r.getKey(), 'r699762575');
+
+        test.done();
+    },
+
+    testHTMLFileParseMultipleNonBreakingTagsAtEndOfString: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLFile(p);
+        test.ok(htf);
+
+        htf.parse('<html>\n' +
+                '   <body>\n' +
+                '       This is a test of the emergency parsing system.<span id="foo" class="bar">  </span>\n' +
+                '   </body>\n' +
+                '</html>\n');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        // should pick up the span tag because there is localizable text
+        // inside it or after the close
+        var r = set.getBySource('This is a test of the emergency parsing system.');
+
+        test.ok(r);
+        test.equal(r.getSource(), 'This is a test of the emergency parsing system.');
+        test.equal(r.getKey(), 'r699762575');
 
         test.done();
     },
