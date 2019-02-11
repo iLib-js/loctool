@@ -394,6 +394,29 @@ module.exports.resource = {
         test.done();
     },
 
+    testResourceAddInstanceSelf: function(test) {
+        test.expect(2);
+
+        var rs = new Resource({
+            context: "a",
+            datatype: "markdown",
+            dnt: false,
+            flavor: "asdf",
+            project: "foo",
+            reskey: "test.string",
+            resType: "string",
+            sourceLocale: "en-US",
+            targetLocale: "ja-JP",
+            pathName: "a/b/c.md"
+        });
+        test.ok(rs);
+
+        // can't add yourself as an instance of yourself
+        test.ok(!rs.addInstance(rs));
+
+        test.done();
+    },
+
     testResourceAddInstanceUndefined: function(test) {
         test.expect(2);
 
