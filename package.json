@@ -59,6 +59,7 @@
         "build-gradle-reader": "*",
         "html-parser": "^0.11.0",
         "ilib": "^14.1.0",
+        "ilib-loctool-javascript": "file:../ilib-loctool-javascript/ilib-loctool-javascript-1.0.0.tgz",
         "ilib-loctool-javascript-resource": "file:../ilib-loctool-javascript-resource/ilib-loctool-javascript-resource-1.0.0.tgz",
         "ilib-loctool-jsx": "file:../ilib-loctool-jsx/ilib-loctool-jsx-1.0.0.tgz",
         "js-stl": ">=0.0.6",
