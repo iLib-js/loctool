@@ -543,7 +543,7 @@ limitations under the License.
         <debug script="${build.test}/testJsxFileType.js" dir="${build.test}"/>
     </target>
 
-   <target name="test.customproject" description="Run only the tests for the custom project object">
+    <target name="test.customproject" description="Run only the tests for the custom project object">
         <run script="${build.test}/testCustomProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
     </target>
 
@@ -551,7 +551,15 @@ limitations under the License.
         <debug script="${build.test}/testCustomProject.js" dir="${build.test}"/>
     </target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype">
+    <target name="test.resourcefactory" description="Run only the tests for the resource factory object">
+        <run script="${build.test}/testResourceFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.resourcefactory" description="Debug only the tests for the resource factory object">
+        <debug script="${build.test}/testResourceFactory.js" dir="${build.test}"/>
+    </target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype,test.resourcefactory">
 	</target>
 
 	<macrodef name="runsql">
