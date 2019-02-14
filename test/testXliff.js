@@ -2836,18 +2836,10 @@ module.exports.xliff = {
             "comment": "this is a comment"
         }));
 
-        diff(x.serialize(),
+        var actual = x.serialize();
+        var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
-                '        <source>bababa</source>\n' +
-                '        <target>ababab</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
                 '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="iosapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
@@ -2857,30 +2849,19 @@ module.exports.xliff = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>';
 
-        test.equal(x.serialize(),
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
-                '        <source>bababa</source>\n' +
-                '        <target>ababab</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="iosapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
-                '        <source>a</source>\n' +
-                '        <target>b</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
+        diff(actual, expected);
+        test.equal(actual, expected);
 
         test.done();
     },
