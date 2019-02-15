@@ -742,10 +742,10 @@ module.exports.markdown = {
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test of the <c0></c0> system.");
+        var r = set.getBySource("This is a test of the <c0/> system.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test of the <c0></c0> system.");
-        test.equal(r.getKey(), "r594105461");
+        test.equal(r.getSource(), "This is a test of the <c0/> system.");
+        test.equal(r.getKey(), "r405516144");
 
         test.done();
     },
@@ -1360,10 +1360,10 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r896778209",
-            source: "This is a <c0></c0> of the emergency parsing system.",
+            key: "r879023644",
+            source: "This is a <c0/> of the emergency parsing system.",
             sourceLocale: "en-US",
-            target: "Ceci est un <c0></c0> du système d'analyse syntaxique de l'urgence.",
+            target: "Ceci est un <c0/> du système d'analyse syntaxique de l'urgence.",
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
