@@ -790,6 +790,27 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseNonBreakingIgnoreComplexIrrelevant: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('*_ <span class="test"> <span id="foo"></span></span>  This is a test of the emergency parsing system.   _*\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up any of the non-breaking tags because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        test.done();
+    },
+
     testMarkdownFileParseNonBreakingEmphasisOutside: function(test) {
         test.expect(5);
 
@@ -802,10 +823,10 @@ module.exports.markdown = {
         test.ok(set);
 
         // should pick up the emphasis markers
-        var r = set.getBySource("<c0>This is a test of the emergency parsing system.</c0>");
+        var r = set.getBySource("This is a test of the emergency parsing system.");
         test.ok(r);
-        test.equal(r.getSource(), "<c0>This is a test of the emergency parsing system.</c0>");
-        test.equal(r.getKey(), "r49032733");
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
 
         test.done();
     },
@@ -1410,16 +1431,41 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r49032733",
-            source: "<c0>This is a test of the emergency parsing system.</c0>",
+            key: "r699762575",
+            source: "This is a test of the emergency parsing system.",
             sourceLocale: "en-US",
-            target: "<c0>Ceci est un essai du système d'analyse syntaxique de l'urgence.</c0>",
+            target: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
             '_Ceci est un essai du système d\'analyse syntaxique de l\'urgence._\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextNonBreakingTagsBeforeAndAfter: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('*_ <span class="test"> <span id="foo"></span></span>  This is a test of the emergency parsing system.   _*\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r699762575",
+            source: "This is a test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            '__ <span class="test"> <span id="foo"></span></span>  Ceci est un essai du système d\'analyse syntaxique de l\'urgence.   __\n');
 
         test.done();
     },
