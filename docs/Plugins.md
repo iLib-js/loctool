@@ -251,12 +251,20 @@ interface FileType {
     getExtracted() {}
 
     /**
-    * Return the translation set containing all of the new
-    * resources for all instances of this type of file.
-    *
-    * @returns {TranslationSet} the set containing all of the
-    * new resources
-    */
+     * Add the contents of the given translation set to the extracted resources
+     * for this file type.
+     *
+     * @param {TranslationSet} set set of resources to add to the current set
+     */
+    addSet(set) {}
+
+    /**
+     * Return the translation set containing all of the new
+     * resources for all instances of this type of file.
+     *
+     * @returns {TranslationSet} the set containing all of the
+     * new resources
+     */
     getNew() {}
 
     /**
