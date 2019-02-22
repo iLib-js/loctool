@@ -19,6 +19,7 @@
 
 if (!CustomProject) {
     var CustomProject = require("../lib/CustomProject.js");
+    var JavaScriptFileType = require("ilib-loctool-javascript");
     var JavaScriptResourceFileType = require("ilib-loctool-javascript-resource");
 }
 
@@ -38,24 +39,106 @@ module.exports.customproject = {
         test.done();
     },
 
-    testCustomProjectRightResourceTypeRuby: function(test) {
+    testCustomProjectLoadPlugin: function(test) {
         test.expect(2);
 
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US",
-            plugins: ["ilib-loctooljavascript"]
+            plugins: ["ilib-loctool-javascript"]
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+        test.ok(p);
+        p.init(function() {
+            var jt = p.getFileType("javascript");
+            
+            test.ok(jt instanceof JavaScriptFileType);
+            
+            test.done();
+        });
+    },
+
+    testCustomProjectLoadPluginShortName: function(test) {
+        test.expect(2);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US",
+            plugins: ["javascript"]
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+        test.ok(p);
+
+        p.init(function(){
+            var jt = p.getFileType("javascript");
+            
+            test.ok(jt instanceof JavaScriptFileType);
+            
+            test.done();
+        });
+    },
+
+    testCustomProjectNoInit: function(test) {
+        test.expect(2);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
 
         test.ok(p);
 
-        var jt = p.getResourceFileType("javascript");
-
-        test.ok(jt instanceof JavaScriptResourceFileType);
+        test.ok(!p.getFileType("javascript"));
 
         test.done();
+    },
+
+    testCustomProjectNoPlugin: function(test) {
+        test.expect(2);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+        test.ok(p);
+        p.init(function(){
+            test.ok(!p.getFileType("javascript"));
+            
+            test.done();
+        });
+    },
+
+    testCustomProjectRightResourceTypeJavascript: function(test) {
+        test.expect(2);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US",
+            plugins: ["ilib-loctool-javascript"],
+            resourceFiles: {
+                "javascript": {
+                    "plugin": "javascript-resource",
+                    "directories": ["resources"]
+                }
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        test.ok(p);
+        p.init(function() {
+            var jt = p.getResourceFileType("javascript");
+            
+            test.ok(jt instanceof JavaScriptResourceFileType);
+            
+            test.done();
+        });
     },
 
     testCustomProjectRightResourceTypeJS: function(test) {
@@ -69,12 +152,13 @@ module.exports.customproject = {
         });
 
         test.ok(p);
-
-        var rt = p.getResourceFileType("js");
-
-        test.ok(rt instanceof JavaScriptResourceFileType);
-
-        test.done();
+        p.init(function() {
+            var rt = p.getResourceFileType("js");
+            
+            test.ok(rt instanceof JavaScriptResourceFileType);
+            
+            test.done();
+        });
     },
 
     testCustomProjectGotFlavors: function(test) {
