@@ -39,7 +39,7 @@
 		},
         "loctool.lib.CustomProject": {
             "appenders": [ "default" ],
-            "level": "trace"
+            "level": "info"
         },
         "loctool.lib.DBTranslationSet": {
 			"appenders": [ "default" ],
@@ -213,9 +213,13 @@
 			"appenders": [ "default" ],
 			"level": "info"
         },
+        "loctool.plugin.JavaScriptFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.plugin.JavaScriptFileType": {
             "appenders": [ "default" ],
-            "level": "trace"
+            "level": "info"
         }
     }
 }
