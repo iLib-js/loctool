@@ -246,7 +246,7 @@ module.exports.htmlfile = {
         test.ok(htf);
 
         // contains U+00A0 non-breaking space and other Unicode space characters
-        htf.parse('<div>            ​‌‍ ⁠⁡⁢⁣⁤</div>\n');
+        htf.parse('<div>            ​‌‍ ⁠</div>\n');
 
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -888,7 +888,7 @@ module.exports.htmlfile = {
 
         htf.parse('<html>\n' +
                 '   <body>\n' +
-                '       <div>This is <c0> a test of the <c1>emergency parsing </div> system.\n' +
+                '       <div>This is <span id="foo"> a test of the <em>emergency parsing</div> system.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -1301,7 +1301,7 @@ module.exports.htmlfile = {
         r = set.getBySource("Write a better description &raquo;");
         test.ok(r);
         test.equal(r.getSource(), "Write a better description &raquo;");
-        test.equal(r.getKey(), "r182493507");
+        test.equal(r.getKey(), "r291101881");
 
         test.done();
     },
@@ -1928,7 +1928,7 @@ module.exports.htmlfile = {
         test.equal(htf.localizeText(translations, "fr-FR"),
                 '<html>\n' +
                 '   <body>\n' +
-                '       <div>Ceci est <span id="foo" class="bar"> un essai du <em>système d\'analyse syntaxique </em></div> system.\n' +
+                '       <div>Ceci est <span id="foo" class="bar"> un essai du système <em>d\'analyse syntaxique </em></span></div> system.\n' +
                 '   </body>\n' +
                 '</html>\n');
 
@@ -2180,11 +2180,11 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <span loclang="html" locid="r654479252">Ceci est un essai</span>\n' +
+            '       <span loclang="html" x-locid="r654479252">Ceci est un essai</span>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" x-locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
-            '       <span loclang="html" locid="r654479252">Ceci est un essai</span>\n' +
+            '       <span loclang="html" x-locid="r654479252">Ceci est un essai</span>\n' +
             '   </body>\n' +
             '</html>\n';
            var actual = htf.localizeText(translations, "fr-FR");
@@ -2248,9 +2248,9 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <area alt="&lt;span loclang=&quot;html&quot; locid=&quot;r561033628&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;"><span loclang="html" locid="r654479252">Ceci est un essai</span></area>\n' +
+            '       <area alt="&lt;span loclang=&quot;html&quot; x-locid=&quot;r561033628&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;"><span loclang="html" x-locid="r654479252">Ceci est un essai</span></area>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" x-locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
             '   </body>\n' +
             '</html>\n';
@@ -2316,9 +2316,9 @@ module.exports.htmlfile = {
         var expected =
             '<html>\n' +
             '   <body>\n' +
-            '       <span loclang="html" locid="r325440473">Ceci <span title="&lt;span loclang=&quot;html&quot; locid=&quot;r561033628&quot;&gt;Texte de l&apos;espace réservé&lt;/span&gt;">est un essai</span></span>\n' +
+            '       <span loclang="html" x-locid="r325440473">Ceci <span title="Texte de l&apos;espace réservé">est un essai</span></span>\n' +
             '       <div id="foo">\n' +
-            '           <span loclang="html" locid="r999080996">Ceci est aussi un essai</span>\n' +
+            '           <span loclang="html" x-locid="r999080996">Ceci est aussi un essai</span>\n' +
             '       </div>\n' +
             '   </body>\n' +
             '</html>\n';
