@@ -17,6 +17,9 @@
  * limitations under the License.
  */
 
+var nodeunit = require("nodeunit");
+require("./assertExtras.js");
+
 if (!CustomProject) {
     var CustomProject = require("../lib/CustomProject.js");
     var JavaScriptFileType = require("ilib-loctool-javascript");
@@ -52,9 +55,9 @@ module.exports.customproject = {
         test.ok(p);
         p.init(function() {
             var jt = p.getFileType("javascript");
-            
+
             test.ok(jt instanceof JavaScriptFileType);
-            
+
             test.done();
         });
     },
@@ -73,9 +76,9 @@ module.exports.customproject = {
 
         p.init(function(){
             var jt = p.getFileType("javascript");
-            
+
             test.ok(jt instanceof JavaScriptFileType);
-            
+
             test.done();
         });
     },
@@ -109,7 +112,7 @@ module.exports.customproject = {
         test.ok(p);
         p.init(function(){
             test.ok(!p.getFileType("javascript"));
-            
+
             test.done();
         });
     },
@@ -134,12 +137,42 @@ module.exports.customproject = {
         test.ok(p);
         p.init(function() {
             var jt = p.getResourceFileType("javascript");
-            
+
             test.ok(jt instanceof JavaScriptResourceFileType);
-            
+
             test.done();
         });
     },
+
+    /*
+    testCustomProjectRightResourceDirJavascript: function(test) {
+        test.expect(3);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US",
+            plugins: ["ilib-loctool-javascript"],
+            resourceFiles: {
+                "javascript": {
+                    "plugin": "javascript-resource",
+                    "directories": ["resources", "foo"]
+                }
+            }
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        test.ok(p);
+        p.init(function() {
+            var jt = p.getResourceFileType("javascript");
+            test.ok(jt instanceof JavaScriptResourceFileType);
+
+            test.equalIgnoringOrder(p.getResourceDirs(), ["resources", "foo"]);
+
+            test.done();
+        });
+    },
+    */
 
     testCustomProjectRightResourceTypeJS: function(test) {
         test.expect(2);
@@ -154,9 +187,9 @@ module.exports.customproject = {
         test.ok(p);
         p.init(function() {
             var rt = p.getResourceFileType("js");
-            
+
             test.ok(rt instanceof JavaScriptResourceFileType);
-            
+
             test.done();
         });
     },

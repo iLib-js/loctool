@@ -25,6 +25,7 @@ module.exports.files = [
     "testAndroidResourceFile.js",
     "testAndroidResourceFileType.js",
     "testBuildGradle.js",
+    "testCustomProject.js",
 //    "testCSV.js",
 //    "testCSVFile.js",
 //    "testDBTranslationSet.js",
