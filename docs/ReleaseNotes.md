@@ -1,3 +1,38 @@
+Release Notes for Version 2
+============================
+
+Build 001
+-------
+Published as version 2.0.0
+
+New Features:
+
+* Added support for github-flavored markdown files
+    * Text and some types of controls are extracted as translation units
+    * Recomposes translations and markdwon together into translated markdown files
+* HTML and Markdown now use coded text
+    * Codes are in the form of XML-like tags in the source string.
+      Example: "The files are <c0>not removed</c0> when you delete the index."
+    * The codes represent html tags or other controls that do not affect the meaning
+      of the source string or the translation.
+    * The tags or controls may change in
+      the source file without causing a new translatable string to appear, allowing
+      the engineer to change non-text things without worrying about triggering a new
+      translation.
+    * The codes in the source file are used to recreate the target file
+      at localization time by substituting them in to the translated string.
+    * Coded text is a breaking change! Your translation xliffs from 1.X of loctool
+      are not compatible because they include the HTML tags directly in the source
+      and target. You will need to create new translation xliffs.
+
+Bug Fixes:
+    * Strings inside of HTML &lt;code&gt; tags are now ignored.
+    * Most resources now appear in the xliff files in the order that they appear in
+      the source files, allowing for easier debugging and for alignment of strings
+      in files written in different languages.
+    * The "*-extracted.xliff" file includes all duplicates of a resource now to help
+      with alignment.
+
 Release Notes for Version 1
 ============================
 
