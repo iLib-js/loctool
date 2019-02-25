@@ -26,12 +26,14 @@ New Features:
       and target. You will need to create new translation xliffs.
 
 Bug Fixes:
-    * Strings inside of HTML &lt;code&gt; tags are now ignored.
-    * Most resources now appear in the xliff files in the order that they appear in
-      the source files, allowing for easier debugging and for alignment of strings
-      in files written in different languages.
-    * The "*-extracted.xliff" file includes all duplicates of a resource now to help
-      with alignment.
+
+* Strings inside of HTML &lt;code&gt; tags are now ignored.
+* Most resources now appear in the xliff files in the order that they appear in
+  the source files, allowing for easier debugging and for alignment of strings
+  in files written in different languages.
+* The "*-extracted.xliff" file includes all duplicates of a resource now to help
+  with alignment.
+* Fixed some duplicate entries in the British and NZ spellings files
 
 Release Notes for Version 1
 ============================
