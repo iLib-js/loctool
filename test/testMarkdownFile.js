@@ -811,6 +811,96 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseLists: function(test) {
+        test.expect(12);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '* This is a test of the emergency parsing system.\n' +
+            '* This is another test.\n' +
+            '* And finally, the last test.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        var r = set.getBySource("This is another test.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is another test.");
+        test.equal(r.getKey(), "r139148599");
+
+        var r = set.getBySource("And finally, the last test.");
+        test.ok(r);
+        test.equal(r.getSource(), "And finally, the last test.");
+        test.equal(r.getKey(), "r177500258");
+
+        test.done();
+    },
+
+    testMarkdownFileParseListWithTextBefore: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'This is text before the list.\n' +
+            '* This is a test of the emergency parsing system.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        var r = set.getBySource("This is text before the list.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is text before the list.");
+        test.equal(r.getKey(), "r254971181");
+
+        test.done();
+    },
+
+    testMarkdownFileParseListWithTextAfter: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '* This is a test of the emergency parsing system.\n\n' +
+            'This is text after the list.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        var r = set.getBySource("This is text after the list.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is text after the list.");
+        test.equal(r.getKey(), "r607073205");
+
+        test.done();
+    },
+
     testMarkdownFileParseNonBreakingEmphasisOutside: function(test) {
         test.expect(5);
 
