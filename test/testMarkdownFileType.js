@@ -244,7 +244,7 @@ module.exports.markdownfiletype = {
 
         test.done();
     },
-    
+
     testMarkdownFileTypeHandlesSourceDirIsNotLocalized: function(test) {
         test.expect(2);
 
@@ -261,6 +261,43 @@ module.exports.markdownfiletype = {
         test.ok(htf.handles("en-US/a/b/c/foo.md"));
 
         test.done();
-    }
+    },
 
+    testMarkdownFileTypeHandlesSourceDirNotLocalizedWithMD: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new MarkdownFileType(p);
+        test.ok(htf);
+
+        // md has the form of an iso language name, but it is not a real language
+        test.ok(htf.handles("md/a/b/c/foo.md"));
+
+        test.done();
+    },
+
+    testMarkdownFileTypeHandlesSourceDirNotLocalizedWithLocaleLookingDir: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            flavors: ["ASDF"]
+        });
+
+        var htf = new MarkdownFileType(p);
+        test.ok(htf);
+
+        // en-AA looks like a real locale, but it is not because XX is not a country code
+        test.ok(htf.handles("en-XX/a/b/c/foo.md"));
+
+        test.done();
+    }
 };
