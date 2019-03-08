@@ -26,7 +26,7 @@ or more other resource files. In many software products, the source
 resource file is written in English for the US, but it could easily
 be in any language if the engineers are more comfortable with that
 language. This is the default method used by programming
-languages and platforms suchas Java or C++. With the right libraries,
+languages and platforms such as Java or C++. With the right libraries,
 the strings could appear in the source code as above, and be
 automatically extracted. This frees the engineers from the hassle
 of manually extracting the strings, which usually results in better
@@ -52,7 +52,7 @@ of the file type
 appropriate resource file
 
 A method should exist for each of these, which are called in the
-order listed above.
+order listed above. For specifics, see below.
 
 ## Operation of a File Class
 
@@ -60,20 +60,27 @@ A file class is responsible for the following things:
 
 * Extract and return the localizable strings from the file
 * Write out a modified copy of the source file if changes were
-made automatically
-* Localize a source file in memory and then write out one copy
-of the source file for each target locale, this is a type of file that
-writes localized copies
+made automatically. For example, some source files can be automatically
+internationalized, and then written back out again. The engineer
+is responsible for checking these modified source files back in
+to the source control system.
+* For static files or files that do not load strings from resource
+files, the file class can localize the source file in memory and
+then write out one copy of the file for each target locale.
 * Return the path to the localized file for a particular locale
 
 A method should exist for each of these, which are called in the
-order listed above.
+order listed above. If any of the operations are not applicable,
+a stub function still needs to exist and may do nothing.
 
 ## The Service Provider Interface
 
 ### File Class
 
-```
+Each implementation of a file class must adhere to the following
+interface:
+
+```javascript
 interface File {
     /**
      * Construct a new instance of this file class for the file
@@ -131,6 +138,8 @@ interface File {
 ```
 
 ### FileType Class
+
+Each implementation of a filetype class must adhere to the following interface:
 
 ```
 interface FileType {
@@ -288,7 +297,9 @@ of the File class as well.
 class API {
     /**
      * Return a new instance of a resource of the given type.
-     * The possible types are:
+     * The options are passed to the resource subclass
+     * constructor. The primary option is the "resType".
+     * The possible resType values are:
      *
      * <ul>
      * <li>string - the resource is a simple string</li>
@@ -304,10 +315,34 @@ class API {
      * to appropriate .strings file.</li>
      * </ul>
      *
-     * @param {string} type the type of resource being sought
+     * Other properties that can be passed in the options are:
+     *
+     * <ul>
+     * <li>project - name of the project containing this resource
+     * <li>key - the unique key of this resource
+     * <li>sourceLocale - the source locale of this resource
+     * <li>source - the source string for the "string", "iosString"
+     *   and "contextString" resTypes
+     * <li>sourceArray - the source array for the "array" resType
+     * <li>sourcePlurals - an object mapping CLDR plural categories
+     *   to source strings for the "plural" resType
+     * <li>autoKey - boolean value which is true when the key is
+     *   generated automatically from the source rather than given
+     *   explicitly.
+     * <li>pathName - path to the file where this resource was extracted
+     * <li>state - state of the current resource. Almost always,
+     *   plugins should report that the state is "new".
+     * <li>comment - translator's comment
+     * <li>datatype - data type used in xliff files to identify
+     *   strings as having been extracted from this type of file
+     * <li>index - numerical index that gives the order of the strings
+     *   in the source file.
+     * </ul>
+     *
+     * @param {Object} options the options as given above
      * @returns {Resource} an instance of a resource subclass
      */
-    resourceFactory(type) {}
+    newResource(options) {}
 
     /**
      * Create a new translation set. A translation set is
@@ -343,10 +378,11 @@ class API {
      * locale is used.
      * @returns {TranslationSet} a new translation set instance
      */
-    newTranslationSet: function(sourceLocale) {}
+    newTranslationSet(sourceLocale) {}
 
     /**
-     * Utility functions and data that the plugin may need.
+     * Object containing some utility functions and data that the
+     * plugin may need.
      */
     utils: utils,
 
@@ -360,7 +396,34 @@ class API {
      * @returns {boolean} true if the given locale is a pseudo-locale
      * and false otherwise.
      */
-    isPseudoLocale: function(locale) {}
+    isPseudoLocale(locale) {}
+
+    /**
+     * Return a pseudo-translation resource bundle. This kind of
+     * resource bundle applies a function over a source string to
+     * produce a translated string. The resulting translated string
+     * may be used for i18n testing or as an actual translation.
+     *
+     * @param {string} locale the target locale of the pseudo bundle
+     * @param {FileType} filetype the file type of the file where
+     *   the source strings are extracted from
+     * @param {Project} project the project where the source
+     *   strings are extracted from
+     * @returns {ResBundle} a resource bundle that automatically
+     *   translates source strings
+     */
+    getPseudoBundle(locale, filetype, project) {}
+
+    /**
+     * Return a FileType instance that represents the type of file
+     * that is used as a resource file for the given source file
+     * type. For example, Java source files use the properties files
+     * as resource file types.
+     * @param {string} type the type of source file
+     * @returns {FileType} a file type instance that represents the
+     *   resource file type for the given source file type
+     */
+    getResourceFileType(type) {}
 }
 ```
 

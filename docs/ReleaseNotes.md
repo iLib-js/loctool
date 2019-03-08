@@ -1,6 +1,29 @@
 Release Notes for Version 2
 ============================
 
+Build 002
+-------
+
+Published as version 2.1.0
+
+New Features:
+
+* Added support for plugins
+    * Allows loctool to load arbitary npm modules as plugins which handle
+      particular types of files
+    * Plugins are loaded though the "CustomProject" class which is specified
+      in the project.json file with the type "custom"
+    * Loctool does not need changes to handle new file types
+    * Anyone can now write a plugin for their own unique custom file type
+      by creating two classes that adhere to a particular interface
+    * Many of the existing built-in file types have been externalized to
+      their own github repos and published as separate npm modules with
+      the prefix "ilib-loctool-"
+        * Custom projects can use these directly
+        * Eventually, the built-in file type modules will go away, and
+          all projects will use plugins exclusively
+
+
 Build 001
 -------
 Published as version 2.0.0
