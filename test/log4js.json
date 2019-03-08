@@ -45,6 +45,14 @@
 			"appenders": [ "default" ],
 			"level": "info"
 		},
+        "loctool.lib.HTMLFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.HTMLFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.HamlFile": {
 			"appenders": [ "default" ],
 			"level": "info"
@@ -93,6 +101,14 @@
 			"appenders": [ "default" ],
 			"level": "info"
 		},
+        "loctool.lib.MarkdownFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.MarkdownFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.ObjectiveCFile": {
 			"appenders": [ "default" ],
 			"level": "info"

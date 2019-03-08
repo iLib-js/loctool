@@ -286,7 +286,7 @@ function walk(dir, project) {
 	var list = fs.readdirSync(dir);
 	var pathName, relPath, included, stat;
 	
-	list.forEach(function (file) {
+	list.sort().forEach(function (file) {
 		var root = project ? project.getRoot() : settings.rootDir;
 		pathName = path.join(dir, file);
 		relPath = path.relative(root, pathName);

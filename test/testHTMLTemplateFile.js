@@ -1,7 +1,7 @@
 /*
  * testHTMLTemplateFile.js - test the HTML template file handler object.
  *
- * Copyright © 2016-2017, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1336,7 +1336,7 @@ module.exports.htmltemplatefile = {
         test.done();
     },
 
-    testHTMLTemplateFileParseIgnoreTags: function(test) {
+    testHTMLTemplateFileParseIgnoreScriptTags: function(test) {
         test.expect(6);
 
         var p = new WebProject({
@@ -1355,6 +1355,36 @@ module.exports.htmltemplatefile = {
             '  $(".foo").class("asdf");\n' +
             '}\n' +
             '</script>\n' +
+            '<span class="foo">foo</span>\n' +
+            '</body></html>');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseIgnoreStyleTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html><body>\n' +
             '<style>\n' +
             '  .activity_title{\n' +
             '    font-size: 18px;\n' +
@@ -1364,6 +1394,40 @@ module.exports.htmltemplatefile = {
             '  }\n' +
             '</style>\n' +
             '<span class="foo">foo</span>\n' +
+            '</body></html>');
+
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
+        test.done();
+    },
+
+    testHTMLTemplateFileParseIgnoreCodeTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+
+        htf.parse('<html><body>\n' +
+            '<span class="foo">foo</span>\n' +
+            '<code>\n' +
+            '  var js = new ResBundle();\n' +
+            '  var str = js.getString("Test String");\n' +
+            '</code>\n' +
             '</body></html>');
 
         var set = htf.getTranslationSet();
