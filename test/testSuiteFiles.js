@@ -59,6 +59,7 @@ module.exports.files = [
     "testPseudoNewZealand.js",
     "testResource.js",
     "testResourceArray.js",
+    "testResourceFactory.js",
     "testResourcePlural.js",
     "testResourceString.js",
     "testRubyFile.js",
