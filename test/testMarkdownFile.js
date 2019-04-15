@@ -1605,6 +1605,56 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextWithLinkReference: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency [C1] parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r858031024",
+            source: "This is a test of the emergency <c0/> parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse syntaxique de l'urgence <c0/>.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un test du système d\'analyse syntaxique de l\'urgence [C1].\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithMultipleLinkReferences: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency [C1] parsing system [R1].\n\n[C1] https://www.box.com/test1\n[R1] http://www.box.com/about.html\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r90710505",
+            source: "This is a test of the emergency <c0/> parsing system <c1/>.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse syntaxique <c1/> de l'urgence <c0/>.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un test du système d\'analyse syntaxique [R1] de l\'urgence [C1].\n\n[C1] <https://www.box.com/test1>\n[R1] <http://www.box.com/about.html>\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextNonBreakingTags: function(test) {
         test.expect(2);
 
