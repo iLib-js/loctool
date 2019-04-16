@@ -65,19 +65,19 @@ properties. Here is an example project.json file:
     "projectType": "android",
     "pseudoLocale": "de",
     "resourceDirs": {
-    	"java": "./res"
+        "java": "./res"
     },
     "excludes": [
-    	"./.git",
-    	"./assets",
-    	"./bin",
-    	"./libs",
-    	"./script/**/*.sh",
-    	"public",
-    	"./classes"
+        "./.git",
+        "./assets",
+        "./bin",
+        "./libs",
+        "./script/**/*.sh",
+        "public",
+        "./classes"
     ],
     "includes: [
-    	"public/**/*.html"
+        "public/**/*.html"
     ],
     settings: {
         locales: ["es-ES", "de-DE", "fr-FR"]
@@ -99,7 +99,7 @@ All paths are relative to the root of the project.
     * iosswift - an iOS project using Swift
     * web - a web application
     * custom - a project using a custom set of plugins to process
-    all of the files
+    all of the files (see below)
 * resourceDirs - an object that maps a file type to a dir that serves
     as the out for resource files
 * excludes - an array of dirs or files to exclude from searching. When
@@ -257,6 +257,13 @@ strings.xml files
 * `ilib-loctool-csv` - extract strings from comma-separated
 values (CSV) format files and produce translated CSV files
 
+* `ilib-loctool-ghfm` - extract strings from Github-Flavored
+Markdown (MD) format files and produce translated MD files
+
+* `ilib-loctool-ghfm-readmeio` - extract strings from Github-Flavored
+Markdown (MD) format files with Readme.io extensions and
+produce translated MD files
+
 * `ilib-loctool-haml` - extract strings from HAML format
 files and produce translated HAML files
 
@@ -297,6 +304,72 @@ files and produce translated YAML files
 
 * `ilib-loctool-xliff` - extract strings from XLIFF
 format files and produce translated XLIFF files
+
+Configuring a Custom Project Type
+-----------------------------------------------
+
+Let's say you have a web project that uses Javscript,
+JST, and HTML on the front end, and you would like to
+localize it using loctool.
+
+In this case, you need to make sure to add
+`ilib-loctool-jst`, `ilib-loctool-html`, and
+`ilib-loctool-javascript` to the dependencies property
+of your package.json file:
+
+```
+  ...
+  "dependencies": {
+    "ilib-loctool-jst": "^1.0.0",
+    "ilib-loctool-html", "^1.0.0",
+    "ilib-loctool-javascript": "^1.0.0"
+  },
+  ...
+```
+
+Then, you need to add a "plugins" property to the package.json
+file which is an array of plugin names. The plugins may be
+referred to with their whole name from npm, like
+"ilib-loctool-jst", or it can be referred to by the part
+after the "ilib-loctool-", so just "jst" in this example.
+
+Here is what your custom project.json might look like:
+
+
+```
+{
+    "name": "My Web App",
+    "id": "mywebapp",
+    "projectType": "custom",
+    "sourceLocale": "en-US",
+    "pseudoLocale": "sw",
+    "resourceDirs": {
+        "jst": "./i18n",
+        "javascript": "./i18n"
+    },
+    "plugins": [
+        "jst",
+        "html",
+        "javascript"
+    ],
+    "excludes": [
+        "./.git",
+        "./assets",
+        "./bin",
+        "./libs",
+        "./script/**/*.sh",
+        "./classes"
+    ],
+    "includes: [
+        "**/*.html",
+        "**/*.jst",
+        "**/*.js"
+    ],
+    settings: {
+        locales: ["es-ES", "de-DE", "fr-FR"],
+    }
+}
+```
 
 Copyright and License
 -------
