@@ -1802,6 +1802,60 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextMismatchedNumberOfComponents: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        // there is no c1 in the source, so this better not throw an exception
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse <c1>syntaxique</c1> de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        // Should ignore the c1 as if it weren't there
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <em>essai</em> du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextMismatchedNumberOfComponentsSelfClosing: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        // there is no c1 in the source, so this better not throw an exception
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse <c1/> syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        // Should ignore the c1 as if it weren't there
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <em>essai</em> du système d\'analyse  syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextLocalizableTitle: function(test) {
         test.expect(2);
 
