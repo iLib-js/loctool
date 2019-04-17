@@ -64,7 +64,7 @@
         "js-stl": ">=0.0.6",
         "js-yaml": "^3.12.1",
         "log4js": "^2.0.0",
-        "message-accumulator": "^2.0.2",
+        "message-accumulator": "^2.2.0",
         "micromatch": "^3.1.0",
         "mysql2": "^1.6.5",
         "node-expat": ">=2.3.0",
