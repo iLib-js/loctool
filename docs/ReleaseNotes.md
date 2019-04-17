@@ -19,6 +19,8 @@ Bug Fixes:
     * filter out strings that only contain URLs
     * filter out strings that do not contain localizable text (only whitespace and/or punctuation)
     * make sure that the text on the lines after the last bullet in a list does not get added to that last list item
+    * Fixed a crash that happens when there are more components in the translation than the source string. Now it
+      just gives a warning and proceeds as if that extra component were not there.
 * Fix dependency on ilib-tree-node
 * Added test/testResourceFactory.js to verify the ResourceFactory code
 * Added the ability to keep reference links and inline code snippets with the string, even when
