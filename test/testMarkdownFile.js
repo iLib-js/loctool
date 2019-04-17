@@ -1605,6 +1605,33 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextWithInlineCodeAtTheEnd: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('Delete the file with this command: `git rm filename`\n');
+
+        // should not optimize out inline code at the end of strings so that it can be
+        // part of the text that is translated
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r66239583",
+            source: "Delete the file with this command: <c0/>",
+            sourceLocale: "en-US",
+            target: "Avec cette commande <c0/>, vous pouvez supprimer le fichier.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Avec cette commande `git rm filename`, vous pouvez supprimer le fichier.\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextWithLinkReference: function(test) {
         test.expect(2);
 
