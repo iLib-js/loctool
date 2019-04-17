@@ -1,6 +1,33 @@
 Release Notes for Version 2
 ============================
 
+Build 003
+-------
+
+Published as version 2.2.0
+
+New Features:
+
+* Added support for link references in markdown
+    * link references do not create a break in the translatable
+      string any more, and are hidden from the translators using
+      xml-like tags
+
+Bug Fixes:
+
+* Markdown fixes
+    * filter out strings that only contain URLs
+    * filter out strings that do not contain localizable text (only whitespace and/or punctuation)
+    * make sure that the text on the lines after the last bullet in a list does not get added to that last list item
+    * Fixed a crash that happens when there are more components in the translation than the source string. Now it
+      just gives a warning and proceeds as if that extra component were not there.
+* Fix dependency on ilib-tree-node
+* Added test/testResourceFactory.js to verify the ResourceFactory code
+* Added the ability to keep reference links and inline code snippets with the string, even when
+  they are at the beginning or end of the string. They are not optimized out. Other components that
+  appear at the beginning or end of the string are still optimized out as normal.
+
+
 Build 002
 -------
 

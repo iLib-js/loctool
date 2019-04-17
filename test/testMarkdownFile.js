@@ -731,6 +731,97 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseDontExtractURLOnlyLinks: function(test) {
+        test.expect(7);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'Here are some links:\n\n' +
+            '* [http://www.box.com/foobar](http://www.box.com/foobar)\n' +
+            '* [http://www.box.com/asdf](http://www.box.com/asdf)\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+
+        var r = set.getBySource("Here are some links:");
+        test.ok(r);
+        test.equal(r.getSource(), "Here are some links:");
+        test.equal(r.getKey(), "r539503678");
+
+        // the URLs should not be extracted if they are the only thing in the string
+        r = set.getBySource("http://www.box.com/foobar");
+        test.ok(!r);
+
+        test.done();
+    },
+
+    testMarkdownFileParseDoExtractURLLinksMidString: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency parsing [http://www.box.com/foobar](http://www.box.com/foobar) system.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the emergency parsing <c0>http://www.box.com/foobar</c0> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing <c0>http://www.box.com/foobar</c0> system.");
+        test.equal(r.getKey(), "r598935364");
+
+        test.done();
+    },
+
+    testMarkdownFileParseReferences: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency parsing [C1] system.\n\n' +
+                '[C1] http://www.box.com/foobar\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the emergency parsing <c0/> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing <c0/> system.");
+        test.equal(r.getKey(), "r1010312382");
+
+        test.done();
+    },
+
+    testMarkdownFileParseNotOnlyReference: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency parsing system.\n\n' +
+                '[C1] As referenced before.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        r = set.getBySource("As referenced before.");
+        test.ok(r);
+        test.equal(r.getSource(), "As referenced before.");
+        test.equal(r.getKey(), "r335185216");
+
+        test.done();
+    },
+
     testMarkdownFileParseNonBreakingInlineCode: function(test) {
         test.expect(5);
 
@@ -897,6 +988,35 @@ module.exports.markdown = {
         test.ok(r);
         test.equal(r.getSource(), "This is text after the list.");
         test.equal(r.getKey(), "r607073205");
+
+        test.done();
+    },
+
+    testMarkdownFileParseListWithTextAfter2: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'The viewer can be embedded in an IFrame, or linked directly. The URL pattern for the viewer is:\n\n' +
+            '* **https://cloud.app.box.com/viewer/{FileID}?options**\n\n' +
+            'The File ID can be obtained from the API or from the web application user interface.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var r = set.getBySource("The viewer can be embedded in an IFrame, or linked directly. The URL pattern for the viewer is:");
+        test.ok(r);
+        test.equal(r.getSource(), "The viewer can be embedded in an IFrame, or linked directly. The URL pattern for the viewer is:");
+        test.equal(r.getKey(), "r220720707");
+
+        var r = set.getBySource("The File ID can be obtained from the API or from the web application user interface.");
+        test.ok(r);
+        test.equal(r.getSource(), "The File ID can be obtained from the API or from the web application user interface.");
+        test.equal(r.getKey(), "r198589153");
 
         test.done();
     },
@@ -1485,6 +1605,83 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextWithInlineCodeAtTheEnd: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('Delete the file with this command: `git rm filename`\n');
+
+        // should not optimize out inline code at the end of strings so that it can be
+        // part of the text that is translated
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r66239583",
+            source: "Delete the file with this command: <c0/>",
+            sourceLocale: "en-US",
+            target: "Avec cette commande <c0/>, vous pouvez supprimer le fichier.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Avec cette commande `git rm filename`, vous pouvez supprimer le fichier.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithLinkReference: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency [C1] parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r858031024",
+            source: "This is a test of the emergency <c0/> parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse syntaxique de l'urgence <c0/>.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un test du système d\'analyse syntaxique de l\'urgence [C1].\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithMultipleLinkReferences: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency [C1] parsing system [R1].\n\n[C1] https://www.box.com/test1\n[R1] http://www.box.com/about.html\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r90710505",
+            source: "This is a test of the emergency <c0/> parsing system <c1/>.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse syntaxique <c1/> de l'urgence <c0/>.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un test du système d\'analyse syntaxique [R1] de l\'urgence [C1].\n\n[C1] <https://www.box.com/test1>\n[R1] <http://www.box.com/about.html>\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextNonBreakingTags: function(test) {
         test.expect(2);
 
@@ -1628,6 +1825,60 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</em></span>\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextMismatchedNumberOfComponents: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        // there is no c1 in the source, so this better not throw an exception
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse <c1>syntaxique</c1> de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        // Should ignore the c1 as if it weren't there
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <em>essai</em> du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextMismatchedNumberOfComponentsSelfClosing: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <em>test</em> of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        // there is no c1 in the source, so this better not throw an exception
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r306365966",
+            source: "This is a <c0>test</c0> of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0>essai</c0> du système d'analyse <c1/> syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        // Should ignore the c1 as if it weren't there
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <em>essai</em> du système d\'analyse  syntaxique de l\'urgence.\n');
 
         test.done();
     },
