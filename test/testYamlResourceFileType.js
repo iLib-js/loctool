@@ -368,7 +368,7 @@ module.exports.yamlresourcefiletype = {
         var yrf = yrft.getResourceFile("en-US");
 
         test.equal(yrf.getLocale(), "en-US");
-        test.equal(yrf.getPath(), "config/locales/en.yml");
+        test.equal(yrf.getPath(), "config/locales/en-US.yml");
 
         test.done();
     },
@@ -392,7 +392,7 @@ module.exports.yamlresourcefiletype = {
         var yrf = yrft.getResourceFile("en-GB");
 
         test.equal(yrf.getLocale(), "en-GB");
-        test.equal(yrf.getPath(), "config/locales/en-GB.yml");
+        test.equal(yrf.getPath(), "config/locales/en.yml");
 
         test.done();
     },
