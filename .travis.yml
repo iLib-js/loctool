@@ -18,6 +18,8 @@ compiler:
 install:
   - npm install
 script:
+  - NODE=$(dirname $(dirname $(which node)))
+  - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
   - ant test
 branches:
   only:
