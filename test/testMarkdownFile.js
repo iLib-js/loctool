@@ -428,7 +428,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileParseSkipHeader: function(test) {
+    testMarkdownFileParseDontSkipHeader: function(test) {
         test.expect(3);
 
         var mf = new MarkdownFile(p);
@@ -438,22 +438,57 @@ module.exports.markdown = {
 
         var set = mf.getTranslationSet();
         test.ok(set);
-        test.equal(set.size(), 0);
+        test.equal(set.size(), 1);
 
         test.done();
     },
 
-    testMarkdownFileParseSkipHeaderAndParseRest: function(test) {
-        test.expect(6);
+    testMarkdownFileParseParseHeader: function(test) {
+        test.expect(12);
 
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('---\ntitle: "foo"\nexcerpt: ""\n---\n\nThis is a test\n');
+        mf.parse('---\ntitle: "This is the title"\nexcerpt: "This is the excerpt"\nrandom: "Another random string"\n---\n\n');
 
         var set = mf.getTranslationSet();
         test.ok(set);
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 3);
+
+        var r = set.getBySource("This is the title");
+        test.ok(r);
+        test.equal(r.getSource(), "This is the title");
+        test.equal(r.getKey(), "r435325837");
+
+        var r = set.getBySource("This is the excerpt");
+        test.ok(r);
+        test.equal(r.getSource(), "This is the excerpt");
+        test.equal(r.getKey(), "r943509816");
+
+        var r = set.getBySource("Another random string");
+        test.ok(r);
+        test.equal(r.getSource(), "Another random string");
+        test.equal(r.getKey(), "r327460386");
+
+        test.done();
+    },
+
+    testMarkdownFileParseParseHeaderAndParseRest: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('---\ntitle: "This is the title"\nexcerpt: ""\n---\n\nThis is a test\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 2);
+
+        var r = set.getBySource("This is the title");
+        test.ok(r);
+        test.equal(r.getSource(), "This is the title");
+        test.equal(r.getKey(), "r435325837");
 
         var r = set.getBySource("This is a test");
         test.ok(r);
@@ -1678,6 +1713,58 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
             'Ceci est un test du système d\'analyse syntaxique [R1] de l\'urgence [C1].\n\n[C1] <https://www.box.com/test1>\n[R1] <http://www.box.com/about.html>\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithFileHeader: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '---\n' +
+            'title: "This is the title"\n' +
+            'excerpt: "This is the excerpt"\n' +
+            '---\n\n' +
+            'This is a test\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r435325837",
+            source: "This is the title",
+            sourceLocale: "en-US",
+            target: "Ceci est le titre",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r943509816",
+            source: "This is the excerpt",
+            sourceLocale: "en-US",
+            target: "Ceci est l'extrait",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r654479252",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            target: "Ceci est un test",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            '---\n' +
+            'title: "Ceci est le titre"\n' +
+            'excerpt: "Ceci est l\'extrait"\n' +
+            '---\n\n' +
+            'Ceci est un test\n');
 
         test.done();
     },
