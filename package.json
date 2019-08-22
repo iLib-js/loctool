@@ -52,7 +52,7 @@
         "node": ">=6.0.0"
     },
     "scripts": {
-        "test": "cd test; node testSuite.js",
+        "test": "cd test; LANG=en_US node testSuite.js",
         "clean": "ant clean"
     },
     "dependencies": {
@@ -63,7 +63,7 @@
         "ilib-tree-node": "^1.2.1",
         "js-stl": ">=0.0.6",
         "js-yaml": "^3.12.1",
-        "log4js": "^2.0.0",
+        "log4js": "^5.0.0",
         "message-accumulator": "^2.2.0",
         "micromatch": "^3.1.0",
         "mysql2": "^1.6.5",
@@ -76,13 +76,14 @@
         "remark-parse": "^6.0.3",
         "remark-rehype": "^4.0.0",
         "remark-stringify": "^6.0.4",
-        "tap": "^7.0.0",
+        "tap": "^14.6.1",
         "unified": "^7.1.0",
         "unist-util-filter": "^1.0.0",
         "unist-util-map": "^1.0.4",
         "xml2json": "^0.11.2"
     },
     "devDependencies": {
+        "ilib-loctool-javascript": "^1.0.0",
         "nodeunit": "^0.11.3"
     }
 }
