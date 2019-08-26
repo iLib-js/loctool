@@ -308,18 +308,19 @@ format files and produce translated XLIFF files
 Configuring a Custom Project Type
 -----------------------------------------------
 
-Let's say you have a web project that uses Javscript,
+Let's say you have a web project that uses Javascript,
 JST, and HTML on the front end, and you would like to
 localize it using loctool.
 
-In this case, you need to make sure to add
+In this case, you need to make sure to add `loctool`,
 `ilib-loctool-jst`, `ilib-loctool-html`, and
 `ilib-loctool-javascript` to the dependencies property
 of your package.json file:
 
 ```
   ...
-  "dependencies": {
+  "devDependencies": {
+    "loctool": "^2.4.0",
     "ilib-loctool-jst": "^1.0.0",
     "ilib-loctool-html", "^1.0.0",
     "ilib-loctool-javascript": "^1.0.0"
@@ -327,7 +328,7 @@ of your package.json file:
   ...
 ```
 
-Then, you need to add a "plugins" property to the package.json
+Then, you need to add a "plugins" property to the project.json
 file which is an array of plugin names. The plugins may be
 referred to with their whole name from npm, like
 "ilib-loctool-jst", or it can be referred to by the part
@@ -369,6 +370,24 @@ Here is what your custom project.json might look like:
         locales: ["es-ES", "de-DE", "fr-FR"],
     }
 }
+```
+
+Running the Loctool
+-------------------
+
+If you have "node_modules/.bin" in your path, then you can run
+the loctool with just a simple `loctool` command. Otherwise,
+you will have to give the path to it explicitly.
+
+If you are writing a script in npm, the "node_modules/.bin"
+directory is automatically added to the path, so you can create
+a script like this in your package.json without the explicit
+path:
+
+```
+"scripts": {
+    "loc": "loctool"
+},
 ```
 
 Copyright and License
