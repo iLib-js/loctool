@@ -124,10 +124,9 @@ module.exports.customproject = {
             id: "custom",
             sourceLocale: "en-US",
             plugins: ["ilib-loctool-mock"],
-            resourceFiles: {
-                "mock": {
-                    "plugin": "mock-resource",
-                    "directories": ["resources"]
+            settings: {
+                resourceFileTypes: {
+                    "mock": "mock-resource"
                 }
             }
         }, "./testfiles", {
@@ -149,7 +148,8 @@ module.exports.customproject = {
 
         var p = new CustomProject({
             id: "custom",
-            sourceLocale: "en-US"
+            sourceLocale: "en-US",
+            plugins: ["mock"]
         }, "./testfiles", {
             locales:["en-GB"]
         });
