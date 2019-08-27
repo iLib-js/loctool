@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 004
+-------
+
+Published as version 2.2.1
+
+New Features:
+
+Bug Fixes:
+
+* Fix a few bugs related to figuring out which file types are resource file types in custom projects
+
 Build 003
 -------
 
