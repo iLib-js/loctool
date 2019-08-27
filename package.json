@@ -53,6 +53,7 @@
     },
     "scripts": {
         "test": "cd test; node testSuite.js",
+        "link": "cd test/ilib-loctool-mock ; npm link ; cd ../ilib-loctool-mock-resource ; npm link ; cd ../.. ; npm link ilib-loctool-mock ilib-loctool-mock-resource",
         "clean": "ant clean"
     },
     "dependencies": {
