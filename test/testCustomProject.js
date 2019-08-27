@@ -22,8 +22,8 @@ require("./assertExtras.js");
 
 if (!CustomProject) {
     var CustomProject = require("../lib/CustomProject.js");
-    var JavaScriptFileType = require("ilib-loctool-javascript");
-    var JavaScriptResourceFileType = require("ilib-loctool-javascript-resource");
+    var MockFileType = require("ilib-loctool-mock");
+    var MockResourceFileType = require("ilib-loctool-mock-resource");
 }
 
 module.exports.customproject = {
@@ -48,15 +48,15 @@ module.exports.customproject = {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US",
-            plugins: ["ilib-loctool-javascript"]
+            plugins: ["ilib-loctool-mock"]
         }, "./testfiles", {
             locales:["en-GB"]
         });
         test.ok(p);
         p.init(function() {
-            var jt = p.getFileType("javascript");
+            var jt = p.getFileType("mock");
 
-            test.ok(jt instanceof JavaScriptFileType);
+            test.ok(jt instanceof MockFileType);
 
             test.done();
         });
@@ -68,16 +68,16 @@ module.exports.customproject = {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US",
-            plugins: ["javascript"]
+            plugins: ["mock"]
         }, "./testfiles", {
             locales:["en-GB"]
         });
         test.ok(p);
 
         p.init(function(){
-            var jt = p.getFileType("javascript");
+            var jt = p.getFileType("mock");
 
-            test.ok(jt instanceof JavaScriptFileType);
+            test.ok(jt instanceof MockFileType);
 
             test.done();
         });
@@ -95,7 +95,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(!p.getFileType("javascript"));
+        test.ok(!p.getFileType("mock"));
 
         test.done();
     },
@@ -111,7 +111,7 @@ module.exports.customproject = {
         });
         test.ok(p);
         p.init(function(){
-            test.ok(!p.getFileType("javascript"));
+            test.ok(!p.getFileType("mock"));
 
             test.done();
         });
@@ -123,11 +123,10 @@ module.exports.customproject = {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US",
-            plugins: ["ilib-loctool-javascript"],
-            resourceFiles: {
-                "javascript": {
-                    "plugin": "javascript-resource",
-                    "directories": ["resources"]
+            plugins: ["ilib-loctool-mock"],
+            settings: {
+                resourceFileTypes: {
+                    "mock": "mock-resource"
                 }
             }
         }, "./testfiles", {
@@ -136,59 +135,30 @@ module.exports.customproject = {
 
         test.ok(p);
         p.init(function() {
-            var jt = p.getResourceFileType("javascript");
+            var jt = p.getResourceFileType("mock");
 
-            test.ok(jt instanceof JavaScriptResourceFileType);
-
-            test.done();
-        });
-    },
-
-    /*
-    testCustomProjectRightResourceDirJavascript: function(test) {
-        test.expect(3);
-
-        var p = new CustomProject({
-            id: "custom",
-            sourceLocale: "en-US",
-            plugins: ["ilib-loctool-javascript"],
-            resourceFiles: {
-                "javascript": {
-                    "plugin": "javascript-resource",
-                    "directories": ["resources", "foo"]
-                }
-            }
-        }, "./testfiles", {
-            locales:["en-GB"]
-        });
-
-        test.ok(p);
-        p.init(function() {
-            var jt = p.getResourceFileType("javascript");
-            test.ok(jt instanceof JavaScriptResourceFileType);
-
-            test.equalIgnoringOrder(p.getResourceDirs(), ["resources", "foo"]);
+            test.ok(jt instanceof MockResourceFileType);
 
             test.done();
         });
     },
-    */
 
     testCustomProjectRightResourceTypeJS: function(test) {
         test.expect(2);
 
         var p = new CustomProject({
             id: "custom",
-            sourceLocale: "en-US"
+            sourceLocale: "en-US",
+            plugins: ["mock"]
         }, "./testfiles", {
             locales:["en-GB"]
         });
 
         test.ok(p);
         p.init(function() {
-            var rt = p.getResourceFileType("js");
+            var rt = p.getResourceFileType("mock");
 
-            test.ok(rt instanceof JavaScriptResourceFileType);
+            test.ok(rt instanceof MockResourceFileType);
 
             test.done();
         });
