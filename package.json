@@ -52,7 +52,8 @@
         "node": ">=6.0.0"
     },
     "scripts": {
-        "test": "cd test; LANG=en_US node testSuite.js",
+        "test": "cd test; LANG=en-US node testSuite.js",
+        "linkmocks": "cd test/ilib-loctool-mock ; npm link ; cd ../ilib-loctool-mock-resource ; npm link ; cd ../.. ; npm link ilib-loctool-mock ilib-loctool-mock-resource",
         "clean": "ant clean"
     },
     "dependencies": {

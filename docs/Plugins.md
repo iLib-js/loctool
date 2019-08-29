@@ -120,7 +120,7 @@ interface File {
      * Return the location on disk where the version of this file,
      * localized for the given locale, should be written.
      *
-     * @param {String] locale the locale spec for the target locale
+     * @param {String} locale the locale spec for the target locale
      * @returns {String} the localized path name
      */
     getLocalizedPath(locale) {}
