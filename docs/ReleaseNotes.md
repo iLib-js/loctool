@@ -9,7 +9,7 @@ Published as version 2.3.0
 New Features:
 * Added support for XLIFF 2.0 files
     * Previously, loctool only supported XLIFF 1.2 format files
-    * Used for xliff output of extracted strings
+    * Optionally used for xliff output of extracted strings
 
 Bug Fixes:
 
