@@ -11,6 +11,8 @@ New Features:
 Bug Fixes:
 
 * Fix a few bugs related to figuring out which file types are resource file types in custom projects
+* Many file types were not producing any translated output for the generated pseudo locales.
+Now they do!
 
 Build 003
 -------
