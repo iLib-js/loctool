@@ -21,6 +21,11 @@
         <target>oh bebe bebe</target>
         <note annotates="source">come &amp; enjoy it with them</note>
       </trans-unit>
+      <trans-unit id="4">
+        <source>Hello</source>
+        <target>Hallo</target>
+        <note annotates="source">come &amp; enjoy it with them</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
