@@ -611,7 +611,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srLanguage="en-US" trgLanguage="nl-NL">\n' +
-            '  <file original="foo/bar/asdf.java" l:project="androidapp" x-flavor="chocolate">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp" l:flavor="chocolate">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
             '        <source>Asdf asdf</source>\n' +
@@ -670,17 +670,17 @@ module.exports.xliff = {
             '    </unit>\n' +
             '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-            '    <unit id="2" name="huzzah" restype="plural" l:datatype="x-android-resource" l:category="zero">\n' +
+            '    <unit id="2" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="zero">\n' +
             '      <segment>\n' +
             '        <source>0</source>\n' +
             '      </segment>\n' +
             '    </unit>\n' +
-            '    <unit id="3" name="huzzah" restype="plural" l:datatype="x-android-resource" l:category="one">\n' +
+            '    <unit id="3" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
             '      <segment>\n' +
             '        <source>1</source>\n' +
             '      </segment>\n' +
             '    </unit>\n' +
-            '    <unit id="4" name="huzzah" restype="plural" l:datatype="x-android-resource" l:category="few">\n' +
+            '    <unit id="4" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
             '      <segment>\n' +
             '        <source>few</source>\n' +
             '      </segment>\n' +
@@ -1064,13 +1064,13 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" restype="plural" l:datatype="ruby" l:category="one">\n' +
+                '    <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
                 '      <segment>\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '        <target state="new">Da gibts 1 Objekt.</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" restype="plural" l:datatype="ruby" l:category="other">\n' +
+                '    <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
                 '      <segment>\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target state="new">Da gibts {n} Objekten.</target>\n' +
@@ -1490,12 +1490,12 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" restype="plural" l:datatype="x-android-resource" l:category="one">\n' +
+                '    <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                 '      <segment>\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" restype="plural" l:datatype="x-android-resource" l:category="other">\n' +
+                '    <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                 '      <segment>\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '      </segment>\n' +
@@ -1537,13 +1537,13 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" restype="plural" l:datatype="x-android-resource" l:category="one">\n' +
+                '    <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                 '      <segment>\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '        <target>Hay 1 objeto.</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" restype="plural" l:datatype="x-android-resource" l:category="other">\n' +
+                '    <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                 '      <segment>\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target>Hay {n} objetos.</target>\n' +
