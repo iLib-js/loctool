@@ -42,7 +42,7 @@ function diff(a, b) {
 }
 
 module.exports.xliff = {
-    testXliffConstructor: function(test) {
+    testXliff20Constructor: function(test) {
         test.expect(1);
 
         var x = new Xliff({version: "2.0"});
@@ -51,7 +51,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffConstructorIsEmpty: function(test) {
+    testXliff20ConstructorIsEmpty: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -62,7 +62,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffConstructorFull: function(test) {
+    testXliff20ConstructorFull: function(test) {
         test.expect(8);
 
         var x = new Xliff({
@@ -88,7 +88,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffGetPath: function(test) {
+    testXliff20GetPath: function(test) {
         test.expect(2);
 
         var x = new Xliff({
@@ -103,7 +103,7 @@ module.exports.xliff = {
     },
 
 
-    testXliffSetPath: function(test) {
+    testXliff20SetPath: function(test) {
         test.expect(3);
 
         var x = new Xliff({
@@ -121,7 +121,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSetPathInitiallyEmpty: function(test) {
+    testXliff20SetPathInitiallyEmpty: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -136,7 +136,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddResource: function(test) {
+    testXliff20AddResource: function(test) {
         test.expect(11);
 
         var x = new Xliff({version: "2.0"});
@@ -175,7 +175,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSize: function(test) {
+    testXliff20Size: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -202,7 +202,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResources: function(test) {
+    testXliff20AddMultipleResources: function(test) {
         test.expect(8);
 
         var x = new Xliff({version: "2.0"});
@@ -244,7 +244,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResourcesRightSize: function(test) {
+    testXliff20AddMultipleResourcesRightSize: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -276,7 +276,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResourcesOverwrite: function(test) {
+    testXliff20AddMultipleResourcesOverwrite: function(test) {
         test.expect(9);
 
         var x = new Xliff({version: "2.0"});
@@ -322,7 +322,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResourcesOverwriteRightSize: function(test) {
+    testXliff20AddMultipleResourcesOverwriteRightSize: function(test) {
         test.expect(4);
 
         var x = new Xliff({version: "2.0"});
@@ -360,7 +360,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResourcesNoOverwrite: function(test) {
+    testXliff20AddMultipleResourcesNoOverwrite: function(test) {
         test.expect(13);
 
         var x = new Xliff({version: "2.0"});
@@ -412,7 +412,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddResourceDontAddSourceLocaleAsTarget: function(test) {
+    testXliff20AddResourceDontAddSourceLocaleAsTarget: function(test) {
         test.expect(2);
 
         var x = new Xliff({
@@ -449,7 +449,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffGetResourcesMultiple: function(test) {
+    testXliff20GetResourcesMultiple: function(test) {
         test.expect(11);
 
         var x = new Xliff({version: "2.0"});
@@ -498,7 +498,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithContext: function(test) {
+    testXliff20SerializeWithContext: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -519,14 +519,15 @@ module.exports.xliff = {
 
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="nl-NL">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext" l:context="foobar">\n' +
             '      <segment>\n' +
             '        <source>Asdf asdf</source>\n' +
             '        <target>gutver</target>\n' +
             '      </segment>\n' +
-            '    <unit>\n' +
+            '    </unit>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -535,7 +536,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithSourceOnly: function(test) {
+    testXliff20SerializeWithSourceOnly: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -558,7 +559,7 @@ module.exports.xliff = {
             key: "huzzah",
             pathName: "foo/bar/j.java",
             project: "webapp",
-            targetLocale: "fr-FR"
+            targetLocale: "de-DE"
         });
 
         x.addResource(res);
@@ -566,7 +567,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLanguage="en-US" trgLanguage="fr-FR">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -588,7 +590,55 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithFlavors: function(test) {
+    testXliff20SerializeWithSourceOnlyFilterOutWrongLocales: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        // should be filtered out because of the different target locale
+        res = new ContextResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            targetLocale: "fr-FR"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '      <segment>\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '      </segment>\n' +
+            '    </unit>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testXliff20SerializeWithFlavors: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -610,7 +660,8 @@ module.exports.xliff = {
 
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srLanguage="en-US" trgLanguage="nl-NL">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp" l:flavor="chocolate">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -626,7 +677,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithSourceOnlyAndPlurals: function(test) {
+    testXliff20SerializeWithSourceOnlyAndPlurals: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -661,7 +712,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLanguage="en-US" trgLanguage="de-DE">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -693,7 +745,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithSourceOnlyAndArray: function(test) {
+    testXliff20SerializeWithSourceOnlyAndArray: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -724,9 +776,9 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <body>\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
             '        <source>Asdf asdf</source>\n' +
@@ -734,17 +786,17 @@ module.exports.xliff = {
             '    </unit>\n' +
              '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-            '    <body>\n' +
-            '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="0">\n' +
+            '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
             '      <segment>\n' +
             '        <source>one</source>\n' +
             '      </segment>\n' +
             '    </unit>\n' +
-            '    <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="1">\n' +
+            '    <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+            '      <segment>\n' +
             '        <source>two</source>\n' +
             '      </segment>\n' +
             '    </unit>\n' +
-            '    <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="2">\n' +
+            '    <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
             '      <segment>\n' +
             '        <source>three</source>\n' +
             '      </segment>\n' +
@@ -757,7 +809,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithExplicitIds: function(test) {
+    testXliff20SerializeWithExplicitIds: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -793,7 +845,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="nl-NL">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="4444444" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -815,7 +868,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithSourceAndTarget: function(test) {
+    testXliff20SerializeWithSourceAndTarget: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -849,7 +902,8 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -874,7 +928,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithSourceAndTargetDifferentTargetLocales: function(test) {
+    testXliff20SerializeWithSourceAndTargetDifferentTargetLocales: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -914,7 +968,7 @@ module.exports.xliff = {
         }
     },
 
-    testXliffSerializeWithSourceAndTargetAndComment: function(test) {
+    testXliff20SerializeWithSourceAndTargetAndComment: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -948,7 +1002,8 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <notes>\n' +
@@ -981,7 +1036,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithHeader: function(test) {
+    testXliff20SerializeWithHeader: function(test) {
         test.expect(2);
 
         var x = new Xliff({
@@ -1011,7 +1066,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="nl-NL">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <header>\n' +
                 '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
@@ -1030,7 +1086,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithPlurals: function(test) {
+    testXliff20SerializeWithPlurals: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -1062,7 +1118,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
                 '      <segment>\n' +
@@ -1084,7 +1141,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithArrays: function(test) {
+    testXliff20SerializeWithArrays: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -1106,21 +1163,22 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="0">\n' +
+                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
                 '        <source>Zero</source>\n' +
                 '        <target>Zero</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="1">\n' +
+                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
                 '      <segment>\n' +
                 '        <source>One</source>\n' +
                 '        <target>Eins</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="2">\n' +
+                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
                 '      <segment>\n' +
                 '        <source>Two</source>\n' +
                 '        <target>Zwei</target>\n' +
@@ -1133,7 +1191,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithXMLEscaping: function(test) {
+    testXliff20SerializeWithXMLEscaping: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -1168,7 +1226,8 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar &quot;asdf&quot;" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1192,7 +1251,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithXMLEscapingWithQuotes: function(test) {
+    testXliff20SerializeWithXMLEscapingWithQuotes: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -1213,7 +1272,8 @@ module.exports.xliff = {
 
         test.equal(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="nl-NL">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="&quot;double&quot; and &apos;single&apos;" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1227,7 +1287,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithComments: function(test) {
+    testXliff20SerializeWithComments: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -1249,7 +1309,8 @@ module.exports.xliff = {
 
         test.equal(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="nl-NL">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <notes>\n' +
@@ -1266,7 +1327,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithSourceOnly: function(test) {
+    testXliff20DeserializeWithSourceOnly: function(test) {
         test.expect(21);
 
         var x = new Xliff();
@@ -1274,7 +1335,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1320,7 +1382,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithSourceAndTarget: function(test) {
+    testXliff20DeserializeWithSourceAndTarget: function(test) {
         test.expect(21);
 
         var x = new Xliff();
@@ -1328,7 +1390,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
                 '      <segment>\n' +
@@ -1378,7 +1441,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithXMLUnescaping: function(test) {
+    testXliff20DeserializeWithXMLUnescaping: function(test) {
         test.expect(19);
 
         var x = new Xliff();
@@ -1430,7 +1493,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithEscapedNewLines: function(test) {
+    testXliff20DeserializeWithEscapedNewLines: function(test) {
         test.expect(17);
 
         var x = new Xliff();
@@ -1438,7 +1501,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="en-CA">\n' +
+                '<xliff version="2.0" srcLang="en-CA" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
                 '      <segment>\n' +
@@ -1480,7 +1544,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithPlurals: function(test) {
+    testXliff20DeserializeWithPlurals: function(test) {
         test.expect(10);
 
         var x = new Xliff();
@@ -1527,7 +1591,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithPluralsTranslated: function(test) {
+    testXliff20DeserializeWithPluralsTranslated: function(test) {
         test.expect(13);
 
         var x = new Xliff();
@@ -1535,7 +1599,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
+                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                 '      <segment>\n' +
@@ -1583,7 +1648,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithArrays: function(test) {
+    testXliff20DeserializeWithArrays: function(test) {
         test.expect(10);
 
         var x = new Xliff();
@@ -1591,19 +1656,20 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="0">\n' +
+                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
                 '        <source>Zero</source>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="1">\n' +
+                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
                 '      <segment>\n' +
                 '        <source>One</source>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="2">\n' +
+                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
                 '      <segment>\n' +
                 '        <source>Two</source>\n' +
                 '      </segment>\n' +
@@ -1628,7 +1694,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithArraysTranslated: function(test) {
+    testXliff20DeserializeWithArraysTranslated: function(test) {
         test.expect(12);
 
         var x = new Xliff();
@@ -1636,21 +1702,22 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="0">\n' +
+                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
                 '        <source>Zero</source>\n' +
                 '        <target>Zero</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="1">\n' +
+                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
                 '      <segment>\n' +
                 '        <source>One</source>\n' +
                 '        <target>Eins</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:category="2">\n' +
+                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
                 '      <segment>\n' +
                 '        <source>Two</source>\n' +
                 '        <target>Zwei</target>\n' +
@@ -1678,7 +1745,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithArraysAndTranslations: function(test) {
+    testXliff20DeserializeWithArraysAndTranslations: function(test) {
         test.expect(20);
 
         var x = new Xliff();
@@ -1686,27 +1753,28 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
+                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
-                '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="0">\n' +
+                '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
                 '        <source>This is element 0</source>\n' +
                 '        <target>Este es 0</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="1">\n' +
+                '    <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
                 '      <segment>\n' +
                 '        <source>This is element 1</source>\n' +
                 '        <target>Este es 1</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="2">\n' +
+                '    <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
                 '      <segment>\n' +
                 '        <source>This is element 2</source>\n' +
                 '        <target>Este es 2</target>\n' +
                 '      </segment>\n' +
                 '    </unit>\n' +
-                '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="3">\n' +
+                '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
                 '      <segment>\n' +
                 '        <source>This is element 3</source>\n' +
                 '        <target>Este es 3</target>\n' +
@@ -1748,7 +1816,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithArraysAndTranslationsPartial: function(test) {
+    testXliff20DeserializeWithArraysAndTranslationsPartial: function(test) {
         test.expect(20);
 
         var x = new Xliff();
@@ -1756,9 +1824,10 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
+                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
-                '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:category="3">\n' +
+                '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
                 '      <segment>\n' +
                 '        <source>This is element 3</source>\n' +
                 '        <target>Este es 3</target>\n' +
@@ -1800,7 +1869,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithComments: function(test) {
+    testXliff20DeserializeWithComments: function(test) {
         test.expect(18);
 
         var x = new Xliff();
@@ -1856,7 +1925,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithContext: function(test) {
+    testXliff20DeserializeWithContext: function(test) {
         test.expect(19);
 
         var x = new Xliff();
@@ -1864,7 +1933,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:context="na na na">\n' +
                 '      <segment>\n' +
@@ -1908,7 +1978,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeRealFile: function(test) {
+    testXliff20DeserializeRealFile: function(test) {
         test.expect(3);
 
         var x = new Xliff();
@@ -1929,7 +1999,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeEmptySource: function(test) {
+    testXliff20DeserializeEmptySource: function(test) {
         test.expect(12);
 
         var x = new Xliff();
@@ -1937,7 +2007,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="de-DE">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:context="na na na">\n' +
                 '      <segment>\n' +
@@ -1976,7 +2047,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeEmptyTarget: function(test) {
+    testXliff20DeserializeEmptyTarget: function(test) {
         test.expect(23);
 
         var x = new Xliff();
@@ -1984,7 +2055,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="fr-FR">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
                 '      <segment>\n' +
@@ -2033,7 +2105,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeEmptyTargetNoTargetLocale: function(test) {
+    testXliff20DeserializeEmptyTargetNoTargetLocale: function(test) {
         test.expect(23);
 
         var x = new Xliff();
@@ -2090,7 +2162,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeWithMultipleSegments: function(test) {
+    testXliff20DeserializeWithMultipleSegments: function(test) {
         test.expect(12);
 
         var x = new Xliff();
@@ -2098,7 +2170,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="fr-FR">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/j.java" l:project="webapp">\n' +
                 '    <unit id="2" name="huzzah" type="res:string">\n' +
                 '      <segment id="1">\n' +
@@ -2137,7 +2210,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializePreserveSourceWhitespace: function(test) {
+    testXliff20DeserializePreserveSourceWhitespace: function(test) {
         test.expect(9);
 
         var x = new Xliff();
@@ -2145,7 +2218,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
+                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
                 '      <segment>\n' +
@@ -2172,7 +2246,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializePreserveTargetWhitespace: function(test) {
+    testXliff20DeserializePreserveTargetWhitespace: function(test) {
         test.expect(9);
 
         var x = new Xliff();
@@ -2180,7 +2254,8 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="es-US">\n' +
+                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
                 '      <segment>\n' +
@@ -2207,7 +2282,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnit: function(test) {
+    testXliff20AddTranslationUnit: function(test) {
         test.expect(10);
 
         var x = new Xliff({version: "2.0"});
@@ -2242,7 +2317,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitMergeResources: function(test) {
+    testXliff20AddTranslationUnitMergeResources: function(test) {
         test.expect(12);
 
         var x = new Xliff({version: "2.0"});
@@ -2293,7 +2368,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitAddMultipleUnits: function(test) {
+    testXliff20AddTranslationUnitAddMultipleUnits: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -2338,7 +2413,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitReplacePreviousUnit: function(test) {
+    testXliff20AddTranslationUnitReplacePreviousUnit: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -2384,7 +2459,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitRightContents: function(test) {
+    testXliff20AddTranslationUnitRightContents: function(test) {
         test.expect(15);
 
         var x = new Xliff({version: "2.0"});
@@ -2442,7 +2517,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitRightResourceTypesRegularString: function(test) {
+    testXliff20AddTranslationUnitRightResourceTypesRegularString: function(test) {
         test.expect(4);
 
         var x = new Xliff({version: "2.0"});
@@ -2475,7 +2550,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
+    testXliff20AddTranslationUnitRightResourceTypesContextString: function(test) {
         test.expect(5);
 
         ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
@@ -2526,7 +2601,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitReplaceSourceOnlyUnit: function(test) {
+    testXliff20AddTranslationUnitReplaceSourceOnlyUnit: function(test) {
         test.expect(3);
 
         var x = new Xliff({version: "2.0"});
@@ -2570,7 +2645,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitDifferentPathsRightTypes: function(test) {
+    testXliff20AddTranslationUnitDifferentPathsRightTypes: function(test) {
         test.expect(5);
 
         var x = new Xliff({version: "2.0"});
@@ -2620,7 +2695,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddTranslationUnitDifferentPaths: function(test) {
+    testXliff20AddTranslationUnitDifferentPaths: function(test) {
         test.expect(23);
 
         var x = new Xliff({version: "2.0"});
@@ -2687,7 +2762,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithTranslationUnits: function(test) {
+    testXliff20SerializeWithTranslationUnits: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -2725,7 +2800,8 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="fr-FR">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
                 '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
                 '      <notes>\n' +
@@ -2754,7 +2830,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithTranslationUnitsDifferentLocales: function(test) {
+    testXliff20SerializeWithTranslationUnitsDifferentLocales: function(test) {
         test.expect(2);
 
         var x = new Xliff({version: "2.0"});
@@ -2798,7 +2874,7 @@ module.exports.xliff = {
         test.done();
     },
     
-    testXliffAddResourcesWithInstances: function(test) {
+    testXliff20AddResourcesWithInstances: function(test) {
         test.expect(9);
 
         var x = new Xliff({
@@ -2844,7 +2920,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffAddMultipleResourcesAddInstances: function(test) {
+    testXliff20AddMultipleResourcesAddInstances: function(test) {
         test.expect(17);
 
         var x = new Xliff({
@@ -2904,7 +2980,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithResourcesWithInstances: function(test) {
+    testXliff20SerializeWithResourcesWithInstancesWithNoTarget: function(test) {
         test.expect(2);
 
         var x = new Xliff({
@@ -2938,9 +3014,9 @@ module.exports.xliff = {
 
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US">\n' +
+            '<xliff version="2.0" srcLang="en-US" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
-            '    <body>\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
             '        <source>Asdf asdf</source>\n' +
@@ -2965,7 +3041,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffSerializeWithTranslationUnitsWithInstances: function(test) {
+    testXliff20SerializeWithTranslationUnitsWithInstances: function(test) {
         test.expect(2);
 
         var x = new Xliff({
@@ -3006,9 +3082,9 @@ module.exports.xliff = {
 
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="fr-FR">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
-            '    <body>\n' +
             '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
             '      <notes>\n' +
             '        <note appliesTo="source">this is a comment</note>\n' +
@@ -3038,7 +3114,7 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliffDeserializeCreateInstances: function(test) {
+    testXliff20DeserializeCreateInstances: function(test) {
         test.expect(21);
 
         var x = new Xliff({
@@ -3049,7 +3125,8 @@ module.exports.xliff = {
 
         x.deserialize(
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" xmlns:l="http://ilib-js.com/loctool" srcLang="en-US" trgLang="fr-FR">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
+            '  xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
             '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
             '      <notes>\n' +
