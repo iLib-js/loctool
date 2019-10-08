@@ -1946,7 +1946,7 @@ module.exports.xliff = {
 
         var fs = require("fs");
 
-        var str = fs.readFileSync("testfiles/test.xliff", "utf-8");
+        var str = fs.readFileSync("testfiles/test4.xliff", "utf-8");
 
         x.deserialize(str);
 
@@ -1954,7 +1954,7 @@ module.exports.xliff = {
 
         test.ok(reslist);
 
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 4);
 
         test.done();
     },
