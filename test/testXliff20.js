@@ -1,5 +1,5 @@
 /*
- * testXliff.js - test the Xliff 2.0 object.
+ * testXliff20.js - test the Xliff 2.0 object.
  *
  * Copyright © 2019 JEDLSoft
  *
@@ -928,46 +928,6 @@ module.exports.xliff = {
         test.done();
     },
 
-    testXliff20SerializeWithSourceAndTargetDifferentTargetLocales: function(test) {
-        test.expect(2);
-
-        var x = new Xliff({version: "2.0"});
-        test.ok(x);
-
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            sourceLocale: "en-US",
-            target: "foobarfoo",
-            targetLocale: "de-DE",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "webapp",
-            origin: "target"
-        });
-
-        x.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            sourceLocale: "en-US",
-            target: "bebe bebe",
-            targetLocale: "fr-FR",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "webapp",
-            origin: "target"
-        });
-
-        try {
-            x.addResource(res);
-            test.fail();
-        } catch (e) {
-            test.ok(e);
-        } finally {
-            test.done();
-        }
-    },
-
     testXliff20SerializeWithSourceAndTargetAndComment: function(test) {
         test.expect(2);
 
@@ -1501,7 +1461,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-CA" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="en-CA" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
@@ -1599,7 +1559,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
@@ -1753,7 +1713,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
                 '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
@@ -1824,7 +1784,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
                 '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
@@ -2042,7 +2002,7 @@ module.exports.xliff = {
         test.equal(reslist[0].getId(), "2");
 
         test.equal(reslist[0].getTarget(), "bebe bebe");
-        test.equal(reslist[0].getTargetLocale(), "fr-FR");
+        test.equal(reslist[0].getTargetLocale(), "de-DE");
 
         test.done();
     },
@@ -2218,7 +2178,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
@@ -2254,7 +2214,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="es-US" trgLang="en-US" \n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
                 '  xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
@@ -2873,7 +2833,7 @@ module.exports.xliff = {
 
         test.done();
     },
-    
+
     testXliff20AddResourcesWithInstances: function(test) {
         test.expect(9);
 
@@ -2890,7 +2850,7 @@ module.exports.xliff = {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
-        
+
         var res2 = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2916,7 +2876,7 @@ module.exports.xliff = {
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "webapp");
         test.ok(!reslist[0].getComment());
-        
+
         test.done();
     },
 
@@ -2965,11 +2925,11 @@ module.exports.xliff = {
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "webapp");
         test.ok(!reslist[0].getComment());
-        
+
         var instances = reslist[0].getInstances();
         test.ok(instances);
         test.equal(instances.length, 1);
-        
+
         test.equal(instances[0].getSource(), "Asdf asdf");
         test.equal(instances[0].getSourceLocale(), "en-US");
         test.equal(instances[0].getKey(), "foobar");
