@@ -16,6 +16,16 @@
         <target>bebe bebe</target>
         <note annotates="source">come &amp; enjoy it with us</note>
       </trans-unit>
+      <trans-unit id="3" resname="ohhuzzah" restype="string" datatype="plaintext">
+        <source x-key="oh">baby baby</source>
+        <target>oh bebe bebe</target>
+        <note annotates="source">come &amp; enjoy it with them</note>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Hello</source>
+        <target>Hallo</target>
+        <note annotates="source">come &amp; enjoy it with them</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

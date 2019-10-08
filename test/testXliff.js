@@ -1850,7 +1850,7 @@ module.exports.xliff = {
 
         test.ok(reslist);
 
-        test.equal(reslist.length, 2);
+        test.equal(reslist.length, 4);
 
         test.done();
     },
