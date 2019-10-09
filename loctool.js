@@ -41,11 +41,13 @@ var pull = false;
 
 function usage() {
 	console.log(
-		"Usage: loctool [-h] [-p] [-l locales] [-f filetype] [-t dir]\n" +
+		"Usage: loctool [-h] [-2] [-p] [-l locales] [-f filetype] [-t dir]\n" +
 		"               [-x dir] [-i] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
+		"-2\n" +
+		"  Use xliff 2.0 format files instead of the default xliff 1.2\n" +
 		"-p or --pull\n" +
 		"  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
 		"-l or --locales\n" +
@@ -95,7 +97,8 @@ var settings = {
 	oldHamlLoc: false,
 	nopseudo: true,
 	targetDir: ".",			// target directory for all output files
-	xliffsDir: "."
+	xliffsDir: ".",
+	xliffVersion: 1.2
 };
 
 var options = [];
@@ -104,6 +107,8 @@ for (var i = 0; i < argv.length; i++) {
 	var val = argv[i];
 	if (val === "-h" || val === "--help") {
 		usage();
+	} else if (val === "-2") {
+	    settings.xliffVersion = 2;
 	} else if (val === "-p" || val === "--pull") {
 		settings.pull = true;
 	} else if (val === "-l" || val === "--locales") {
@@ -178,6 +183,10 @@ case "split":
 		usage();
 	}
 	settings.splittype = options[3];
+	if (settings.splittype !== "language" && settings.xliffVersion >= 2) {
+	    console.log("Error: you cannot split xliff 2.x files by project. They can only be split by language.");
+	    usage();
+	}
 	settings.infiles = options.slice(4);
 	settings.infiles.forEach(function (file) {
 		if (!fs.existsSync(file)) {
@@ -238,7 +247,7 @@ function processNextProject() {
 					});
 				});
 			});
-		})
+		});
 	}
 }
 
@@ -399,7 +408,9 @@ try {
 			if (fs.existsSync(file)) {
 				logger.info("Merging " + file + " ...");
 				var data = fs.readFileSync(file, "utf-8");
-				var xliff = new Xliff();
+				var xliff = new Xliff({
+				    version: settings.xliffVersion
+				});
 				xliff.deserialize(data);
 				target.addTranslationUnits(xliff.getTranslationUnits());
 			} else {
