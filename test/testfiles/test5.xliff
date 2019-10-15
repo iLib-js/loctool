@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="ko-KR">
+ <file id="settings_f1" original="settings">
+  <group id="settings_g1" name="javascript">
+   <unit id="settings_1">
+    <segment>
+     <source>Closed Caption Settings</source>
+     <target>자막 설정</target>
+    </segment>
+   </unit>
+   <unit id="settings_2">
+    <segment>
+     <source>Digital Mode Option</source>
+     <target>디지털 모드 옵션</target>
+    </segment>
+   </unit>
+   <unit id="settings_143">
+    <notes>
+     <note>(복사금지) help strings</note>
+    </notes>
+    <segment>
+     <source>Use this option to correct picture quality issues that may result after your TV has been turned on for an extended period of time.</source>
+     <target>화면의 픽셀을 보정하여, 장시간 TV가 켜져 있을 때 발생할 수 있는 문제를 방지합니다.</target>
+    </segment>
+   </unit>
+   <unit id="settings_1524" name="pictureControlLow_Male">
+    <segment>
+     <source>Low</source>
+     <target>낮음</target>
+    </segment>
+   </unit>
+   <unit id="settings_1525" name="pictureControlMedium_Male">
+    <segment>
+     <source>Medium</source>
+     <target>보통</target>
+    </segment>
+   </unit>
+   <unit id="settings_1526" name="pictureControlHigh_Male">
+    <segment>
+     <source>Auto</source>
+     <target>높음</target>
+    </segment>
+   </unit>
+ </group>
+ </file>
+</xliff>
