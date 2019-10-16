@@ -17,10 +17,10 @@ compiler:
   - gcc
 install:
   - npm install
+  - npm run linkmocks
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
-  - npm run linkmocks
   - ant test
 branches:
   only:

@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.2.1",
+    "version": "2.3.0",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -53,7 +53,7 @@
     },
     "scripts": {
         "test": "cd test; node testSuite.js",
-        "linkmocks": "cd test/ilib-loctool-mock ; npm link ; cd ../ilib-loctool-mock-resource ; npm link ; cd ../.. ; npm link ilib-loctool-mock ilib-loctool-mock-resource",
+        "linkmocks": "cd node_modules ; rm ilib-loctool-mock* ; ln -s ../test/ilib-loctool-mock* .",
         "clean": "ant clean"
     },
     "dependencies": {
