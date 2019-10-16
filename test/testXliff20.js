@@ -3138,5 +3138,109 @@ module.exports.xliff = {
         test.equal(instances[0].comment, "this is a different comment");
 
         test.done();
-    }
+    },
+
+    testXliff20DeserializeLGStyleXliff: function(test) {
+        test.expect(24);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="ko-KR">\n' +
+                '  <file id="f1" original="foo/bar/asdf.java" >\n' +
+                '    <group id="g1" name="javascript">\n' +
+                '      <unit id="1">\n' +
+                '        <segment>\n' +
+                '          <source>Closed Caption Settings</source>\n' +
+                '          <target>자막 설정</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="2">\n' +
+                '        <segment>\n' +
+                '          <source>Low</source>\n' +
+                '          <target>낮음</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist[0].getSource(), "Closed Caption Settings");
+        test.equal(reslist[0].getSourceLocale(), "en-KR");
+        test.equal(reslist[0].getTarget(), "자막 설정");
+        test.equal(reslist[0].getTargetLocale(), "ko-KR");
+        test.equal(reslist[0].getKey(), "Closed Caption Settings");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.ok(!reslist[0].getProject());
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].dataType, "javascript");
+        test.ok(!reslist[0].getComment());
+        test.equal(reslist[0].getId(), "1");
+
+        test.equal(reslist[1].getSource(), "Low");
+        test.equal(reslist[1].getSourceLocale(), "en-KR");
+        test.equal(reslist[1].getTarget(), "낮음");
+        test.equal(reslist[1].getTargetLocale(), "ko-KR");
+        test.equal(reslist[1].getKey(), "Low");
+        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
+        test.ok(!reslist[1].getProject());
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].dataType, "javascript");
+        test.ok(!reslist[1].getComment());
+        test.equal(reslist[1].getId(), "2");
+
+        test.done();
+    },
+
+    testXliff20DeserializeRealLGFile: function(test) {
+        test.expect(25);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var fs = require("fs");
+
+        var str = fs.readFileSync("testfiles/test5.xliff", "utf-8");
+
+        x.deserialize(str);
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 5);
+
+        test.equal(reslist[0].getSource(), "Closed Caption Settings");
+        test.equal(reslist[0].getSourceLocale(), "en-KR");
+        test.equal(reslist[0].getTarget(), "자막 설정");
+        test.equal(reslist[0].getTargetLocale(), "ko-KR");
+        test.equal(reslist[0].getKey(), "Closed Caption Settings");
+        test.equal(reslist[0].getPath(), "settings");
+        test.ok(!reslist[0].getProject());
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].dataType, "javascript");
+        test.ok(!reslist[0].getComment());
+        test.equal(reslist[0].getId(), "1");
+
+        test.equal(reslist[3].getSource(), "Low");
+        test.equal(reslist[3].getSourceLocale(), "en-KR");
+        test.equal(reslist[3].getTarget(), "낮음");
+        test.equal(reslist[3].getTargetLocale(), "ko-KR");
+        test.equal(reslist[3].getKey(), "pictureControlLow_Male");
+        test.equal(reslist[3].getPath(), "settings");
+        test.ok(!reslist[3].getProject());
+        test.equal(reslist[3].resType, "string");
+        test.equal(reslist[3].dataType, "javascript");
+        test.ok(!reslist[3].getComment());
+        test.equal(reslist[3].getId(), "settings_1524");
+
+        test.done();
+    },
+
 };
