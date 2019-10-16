@@ -18,6 +18,7 @@ compiler:
 install:
   - npm run linkmocks
   - npm install
+  - ls -l node_modules
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
