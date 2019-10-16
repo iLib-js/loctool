@@ -3177,9 +3177,9 @@ module.exports.xliff = {
         test.equal(reslist[0].getTargetLocale(), "ko-KR");
         test.equal(reslist[0].getKey(), "Closed Caption Settings");
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.ok(!reslist[0].getProject());
+        test.equal(reslist[0].getProject(), "foo/bar/asdf.java");
         test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].dataType, "javascript");
+        test.equal(reslist[0].datatype, "javascript");
         test.ok(!reslist[0].getComment());
         test.equal(reslist[0].getId(), "1");
 
@@ -3189,9 +3189,9 @@ module.exports.xliff = {
         test.equal(reslist[1].getTargetLocale(), "ko-KR");
         test.equal(reslist[1].getKey(), "Low");
         test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
-        test.ok(!reslist[1].getProject());
+        test.equal(reslist[1].getProject(), "foo/bar/asdf.java");
         test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].dataType, "javascript");
+        test.equal(reslist[1].datatype, "javascript");
         test.ok(!reslist[1].getComment());
         test.equal(reslist[1].getId(), "2");
 
@@ -3214,7 +3214,7 @@ module.exports.xliff = {
 
         test.ok(reslist);
 
-        test.equal(reslist.length, 5);
+        test.equal(reslist.length, 6);
 
         test.equal(reslist[0].getSource(), "Closed Caption Settings");
         test.equal(reslist[0].getSourceLocale(), "en-KR");
@@ -3222,11 +3222,11 @@ module.exports.xliff = {
         test.equal(reslist[0].getTargetLocale(), "ko-KR");
         test.equal(reslist[0].getKey(), "Closed Caption Settings");
         test.equal(reslist[0].getPath(), "settings");
-        test.ok(!reslist[0].getProject());
+        test.equal(reslist[0].getProject(), "settings");
         test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].dataType, "javascript");
+        test.equal(reslist[0].datatype, "javascript");
         test.ok(!reslist[0].getComment());
-        test.equal(reslist[0].getId(), "1");
+        test.equal(reslist[0].getId(), "settings_1");
 
         test.equal(reslist[3].getSource(), "Low");
         test.equal(reslist[3].getSourceLocale(), "en-KR");
@@ -3234,13 +3234,12 @@ module.exports.xliff = {
         test.equal(reslist[3].getTargetLocale(), "ko-KR");
         test.equal(reslist[3].getKey(), "pictureControlLow_Male");
         test.equal(reslist[3].getPath(), "settings");
-        test.ok(!reslist[3].getProject());
+        test.equal(reslist[3].getProject(), "settings");
         test.equal(reslist[3].resType, "string");
-        test.equal(reslist[3].dataType, "javascript");
+        test.equal(reslist[3].datatype, "javascript");
         test.ok(!reslist[3].getComment());
         test.equal(reslist[3].getId(), "settings_1524");
 
         test.done();
-    },
-
+    }
 };
