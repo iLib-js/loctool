@@ -53,7 +53,7 @@
     },
     "scripts": {
         "test": "cd test; node testSuite.js",
-        "linkmocks": "rm -rf node_modules ; mkdir -p node_modules ; cd node_modules ; ln -s ../test/ilib-loctool-mock* .",
+        "linkmocks": "cd node_modules ; ln -s ../test/ilib-loctool-mock* .",
         "clean": "ant clean"
     },
     "dependencies": {
