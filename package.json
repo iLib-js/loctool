@@ -62,6 +62,8 @@
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
         "ilib": "^14.3.0",
+        "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
+        "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
         "ilib-tree-node": "^1.2.2",
         "js-stl": ">=0.0.6",
         "js-yaml": "^3.12.1",
