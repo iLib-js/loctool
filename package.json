@@ -54,6 +54,7 @@
     "scripts": {
         "test": "cd test; node testSuite.js",
         "linkmocks": "cd node_modules ; rm ilib-loctool-mock* ; ln -s ../test/ilib-loctool-mock* .",
+        "installmocks": "npm install ./test/ilib-loctool-mock/ilib-loctool-mock-*.tgz ./test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-*.tgz",
         "clean": "ant clean"
     },
     "dependencies": {

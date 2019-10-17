@@ -16,8 +16,9 @@ node_js:
 compiler:
   - gcc
 install:
+  - rm -rf node_modules
   - npm install
-  - npm run linkmocks
+  - npm run installmocks
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
