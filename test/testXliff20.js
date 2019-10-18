@@ -52,12 +52,41 @@ module.exports.xliff = {
     },
 
     testXliff20ConstructorIsEmpty: function(test) {
-        test.expect(3);
+        test.expect(2);
 
         var x = new Xliff({version: "2.0"});
         test.ok(x);
 
         test.equal(x.size(), 0);
+        test.done();
+    },
+
+    testXliff20ConstructorRightVersion: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        test.equal(x.getVersion(), "2.0");
+        test.done();
+    },
+
+    testXliff20ConstructorNumericVersion12: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: 1.2});
+        test.ok(x);
+
+        test.equal(x.getVersion(), "1.2");
+        test.done();
+    },
+
+    testXliff20ConstructorNumericVersion20: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: 2.0});
+        test.ok(x);
+
         test.equal(x.getVersion(), "2.0");
         test.done();
     },
