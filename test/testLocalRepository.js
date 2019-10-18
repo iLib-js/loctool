@@ -95,6 +95,71 @@ module.exports.localrepository = {
         })
     },
 
+    testLocalRepositoryConstructorWithXliffsDir: function(test) {
+        test.expect(17);
+
+        var repo = new LocalRepository({
+            sourceLocale: "en-US",
+            xliffsDir: "./testfiles/xliffs"
+        });
+
+        test.ok(repo);
+
+        repo.init(function(){
+            repo.getBy({
+                reskey: "foobar"
+            }, function(err, resources) {
+                test.ok(resources);
+                test.equal(resources.length, 2);
+
+                test.equal(resources[0].getKey(), "foobar");
+                test.equal(resources[0].getProject(), "webapp");
+                test.equal(resources[0].getSourceLocale(), "en-US");
+                test.equal(resources[0].getSource(), "Asdf asdf");
+                test.equal(resources[0].getTargetLocale(), "de-DE");
+                test.equal(resources[0].getTarget(), "foobarfoo");
+                test.equal(resources[0].getComment(), "foobar is where it's at!");
+
+                test.equal(resources[1].getKey(), "foobar");
+                test.equal(resources[1].getProject(), "webapp");
+                test.equal(resources[1].getSourceLocale(), "en-US");
+                test.equal(resources[1].getSource(), "Asdf asdf");
+                test.equal(resources[1].getTargetLocale(), "fr-FR");
+                test.equal(resources[1].getTarget(), "La asdf");
+                test.equal(resources[1].getComment(), "foobar is where it's at!");
+
+                repo.close(function() {
+                    test.done();
+                });
+            });
+        })
+    },
+
+    testLocalRepositoryConstructorWithXliffsDirIgnoreNonmatchingFiles: function(test) {
+        test.expect(3);
+
+        var repo = new LocalRepository({
+            sourceLocale: "en-US",
+            xliffsDir: "./testfiles/xliffs"
+        });
+
+        test.ok(repo);
+
+        repo.init(function(){
+            repo.getBy({
+                reskey: "foobar",
+                targetLocale: "es-ES"
+            }, function(err, resources) {
+                test.ok(resources);
+                test.equal(resources.length, 0);
+
+                repo.close(function() {
+                    test.done();
+                });
+            });
+        })
+    },
+
     testLocalRepositoryGetEmpty: function(test) {
         test.expect(2);
 
