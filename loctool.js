@@ -184,7 +184,7 @@ case "split":
 	}
 	settings.splittype = options[3];
 	if (settings.splittype !== "language" && settings.xliffVersion >= 2) {
-	    console.log("Error: you cannot split xliff 2.x files by project. They can only be split by language.");
+	    console.log("Error: you cannot split xliff 2.x files by project. They can only be split\nby language.\n\n");
 	    usage();
 	}
 	settings.infiles = options.slice(4);
@@ -384,7 +384,8 @@ try {
 			file = cache[key];
 			if (!file) {
 				file = cache[key] = new Xliff({
-					path: "./" + key + ".xliff"
+					path: "./" + key + ".xliff",
+					version: settings.xliffVersion
 				});
 				logger.trace("new xliff is " + JSON.stringify(file, undefined, 4));
 			}
@@ -401,7 +402,8 @@ try {
 		
 	case "merge":
 		var target = new Xliff({
-			path: settings.outfile
+			path: settings.outfile,
+            version: settings.xliffVersion
 		});
 		
 		settings.infiles.forEach(function (file) {
