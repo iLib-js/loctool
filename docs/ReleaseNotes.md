@@ -22,9 +22,9 @@ New Features:
     file because multiple target locales are not allowed to be in the
     same file.
     * As many files are you like may appear in the xliffsDir directory
-    and they will be read in to memory as long as the file names have
-    a dash followed by a BCP-47 locale specifier and a ".xliff" extension.
-    eg. (project1-de-DE.xliff, project2-de-DE.xliff, etc.)
+    and they will be read in to memory as long as the file names end
+    with a BCP-47 locale specifier and a ".xliff" extension.
+    eg. (project1-de-DE.xliff, project2-de-DE.xliff, ko-KR.xliff, etc.)
 * Added support for a new method projectClose() to the FileType plugins SPI
     * Called right before each project is closed
     * Allows the file type class to do any last-minute clean-up or
