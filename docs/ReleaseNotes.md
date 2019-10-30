@@ -10,6 +10,10 @@ New Features:
 * Added support for XLIFF 2.0 files
     * Previously, loctool only supported XLIFF 1.2 format files
     * Optionally used for xliff output of extracted strings
+* Added support for a new method projectClose() to the FileType plugins SPI
+    * Called right before each project is closed
+    * Allows the file type class to do any last-minute clean-up or
+      generate any final files
 
 Bug Fixes:
 
