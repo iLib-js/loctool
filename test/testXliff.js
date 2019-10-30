@@ -2865,7 +2865,7 @@ module.exports.xliff = {
 
         test.done();
     },
-    
+
     testXliffAddResourcesWithInstances: function(test) {
         test.expect(9);
 
@@ -2881,7 +2881,7 @@ module.exports.xliff = {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
-        
+
         var res2 = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2907,7 +2907,7 @@ module.exports.xliff = {
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "webapp");
         test.ok(!reslist[0].getComment());
-        
+
         test.done();
     },
 
@@ -2955,11 +2955,11 @@ module.exports.xliff = {
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "webapp");
         test.ok(!reslist[0].getComment());
-        
+
         var instances = reslist[0].getInstances();
         test.ok(instances);
         test.equal(instances.length, 1);
-        
+
         test.equal(instances[0].getSource(), "Asdf asdf");
         test.equal(instances[0].getSourceLocale(), "en-US");
         test.equal(instances[0].getKey(), "foobar");

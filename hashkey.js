@@ -1,6 +1,6 @@
 /*
  * hashkey.js - Calculate a hash key for a source string
- * 
+ *
  * Copyright © 2016-2017, HealthTap Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,6 +26,6 @@ var jf = new JavaFile();
 var args = process.argv;
 
 for (var i = 2; i < args.length; i++) {
-	console.log("Java: " + jf.makeKey(args[i]) + ": " + args[i]);
-	console.log("Ruby: " + rf.makeKey(args[i]) + ": " + args[i]);
+    console.log("Java: " + jf.makeKey(args[i]) + ": " + args[i]);
+    console.log("Ruby: " + rf.makeKey(args[i]) + ": " + args[i]);
 }

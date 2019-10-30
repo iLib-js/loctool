@@ -192,7 +192,7 @@ module.exports.hamlfiletype = {
 
         test.done();
     },
-    
+
     testHamlFileTypeHandlesAlreadyLocalizedHKWithFlavor: function(test) {
         test.expect(2);
 
