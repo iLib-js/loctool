@@ -25,6 +25,10 @@ New Features:
     and they will be read in to memory as long as the file names have
     a dash followed by a BCP-47 locale specifier and a ".xliff" extension.
     eg. (project1-de-DE.xliff, project2-de-DE.xliff, etc.)
+* Added support for a new method projectClose() to the FileType plugins SPI
+    * Called right before each project is closed
+    * Allows the file type class to do any last-minute clean-up or
+      generate any final files
 
 Bug Fixes:
 
