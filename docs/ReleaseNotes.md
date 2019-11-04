@@ -4,13 +4,37 @@ Release Notes for Version 2
 Build 004
 -------
 
-Published as version 2.2.1
+Published as version 2.3.0
 
 New Features:
+* Added support for XLIFF 2.0 files
+    * Previously, loctool only supported XLIFF 1.2 format files
+    * Optionally used for xliff output as well
+    * Use the new `-2` option to specify xliff 2.0
+    * When xliff 2.0 files are in use, "loctool split" can only split
+    xliff files by language because xliff 2.0 does not support translation
+    units with differing target locales.
+    * Both xliff 1.2 and 2.0 files can be read in regardless of the
+    version of the output file. The parser reads the version number from
+    the "xliff" tag and parses its contents appropriately.
+* Loctool will now read in all xliff files it finds in xliffsDir
+    * With xliff 2.0, the loctool cannot load in only one project.xliff
+    file because multiple target locales are not allowed to be in the
+    same file.
+    * As many files are you like may appear in the xliffsDir directory
+    and they will be read in to memory as long as the file names end
+    with a BCP-47 locale specifier and a ".xliff" extension.
+    eg. (project1-de-DE.xliff, project2-de-DE.xliff, ko-KR.xliff, etc.)
+* Added support for a new method projectClose() to the FileType plugins SPI
+    * Called right before each project is closed
+    * Allows the file type class to do any last-minute clean-up or
+      generate any final files
 
 Bug Fixes:
 
 * Fix a few bugs related to figuring out which file types are resource file types in custom projects
+* Many file types were not producing any translated output for the generated pseudo locales.
+Now they do!
 
 Build 003
 -------

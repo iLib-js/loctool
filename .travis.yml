@@ -16,11 +16,11 @@ node_js:
 compiler:
   - gcc
 install:
+  - rm -rf node_modules
   - npm install
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
-  - npm run linkmocks
   - ant test
 branches:
   only:

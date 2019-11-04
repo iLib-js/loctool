@@ -1,6 +1,6 @@
 /*
  * testSuiteFiles.js - list the test files in this directory
- * 
+ *
  * Copyright © 2018-2019, Box, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -71,6 +71,7 @@ module.exports.files = [
     "testUtils.js",
     "testWebProject.js",
     "testXliff.js",
+    "testXliff20.js",
     "testYamlFile.js",
     "testYamlFileType.js",
     "testYamlResourceFile.js",
