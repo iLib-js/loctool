@@ -12,9 +12,11 @@ node_js:
   - "8"
   - "9"
   - "10"
+  - "11"
 compiler:
   - gcc
 install:
+  - rm -rf node_modules
   - npm install
 script:
   - NODE=$(dirname $(dirname $(which node)))
