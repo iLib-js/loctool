@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -60,8 +60,6 @@
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
         "ilib": "^14.3.0",
-        "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
-        "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
         "ilib-tree-node": "^1.2.2",
         "js-stl": ">=0.0.6",
         "js-yaml": "^3.12.1",
@@ -85,6 +83,8 @@
         "xml2json": "^0.11.2"
     },
     "devDependencies": {
+        "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
+        "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
         "nodeunit": "^0.11.3"
     }
 }

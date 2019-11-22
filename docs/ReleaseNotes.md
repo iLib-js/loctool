@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 005
+-------
+
+Bug Fixes:
+* Fixed incorrect npm packaging in v2.3.0. Testing packages were included in
+  the dependencies instead of the dev dependencies.
+
 Build 004
 -------
 
