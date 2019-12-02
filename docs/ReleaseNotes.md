@@ -4,6 +4,8 @@ Release Notes for Version 2
 Build 006
 -------
 
+Published as version 2.3.2
+
 Bug Fixes:
 * Fixed a problem parsing/localizing valueless HTML attributes in markdown files
 * now ignores whitespace before html comments
