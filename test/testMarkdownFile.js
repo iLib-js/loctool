@@ -902,6 +902,27 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseHTMLWithValuelessAttributes: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<span class="foo" checked>This is a test of the emergency parsing system.</span>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up any of the non-breaking tags because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        test.done();
+    },
+
     testMarkdownFileParseLists: function(test) {
         test.expect(12);
 
@@ -2067,6 +2088,41 @@ module.exports.markdown = {
             '<span x-locid="r654479252">Ceci est un essai</span>\n\n' +
             '<span x-locid="r999080996">Ceci est aussi un essai</span>\n\n' +
             '<span x-locid="r654479252">Ceci est un essai</span>\n';
+        var actual = mf.localizeText(translations, "fr-FR");
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testMarkdownFileLocalizeHTMLWithValuelessAttributes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<span class="foo" checked>This is a test of the emergency parsing system.</span>\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r699762575",
+            source: "This is a test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse d'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        var expected =
+            '<span class="foo" checked>Ceci est un test du système d\'analyse d\'urgence.</span>\n';
         var actual = mf.localizeText(translations, "fr-FR");
 
         diff(actual, expected);
