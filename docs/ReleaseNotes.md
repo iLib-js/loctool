@@ -6,6 +6,9 @@ Build 006
 
 Bug Fixes:
 * Fixed a problem parsing/localizing valueless HTML attributes in markdown files
+* now ignores whitespace before html comments
+* now uses remark-frontmatter to parse the headers
+* now parses linkreferences properly when the text is not the default
 
 Build 005
 -------
