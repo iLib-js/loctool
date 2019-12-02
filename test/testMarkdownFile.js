@@ -1170,6 +1170,32 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseLocalizableTitleSingleQuotes: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse("<div title='This value is localizable'>\n\n" +
+                'This is a test\n\n' +
+                '</div>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+
+        r = set.getBySource("This value is localizable");
+        test.ok(r);
+        test.equal(r.getSource(), "This value is localizable");
+        test.equal(r.getKey(), "r922503175");
+
+        test.done();
+    },
+
     testMarkdownFileParseLocalizableAttributes: function(test) {
         test.expect(8);
 
@@ -1916,6 +1942,38 @@ module.exports.markdown = {
         translations.add(new ResourceString({
             project: "foo",
             key: 'r922503175',
+            source: 'This value is localizable',
+            target: 'Cette valeur est localisable',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r654479252',
+            source: 'This is a test',
+            target: 'Ceci est un essai',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Markdown text <div title="Cette valeur est localisable">Ceci est un essai</div>\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextLocalizableTitleSingleQuotes: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse("Markdown text <div title='This value is localizable'>This is a test</div>\n");
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            key: 'r922503175',
+            project: "foo",
             source: 'This value is localizable',
             target: 'Cette valeur est localisable',
             targetLocale: "fr-FR",
