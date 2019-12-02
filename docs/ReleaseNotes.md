@@ -1,8 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 006
+-------
+
+Bug Fixes:
+* Fixed a problem parsing/localizing valueless HTML attributes in markdown files
+
 Build 005
 -------
+
+Published as version 2.3.1
 
 Bug Fixes:
 * Fixed incorrect npm packaging in v2.3.0. Testing packages were included in
