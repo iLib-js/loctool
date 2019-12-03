@@ -1,7 +1,7 @@
 {
     "name": "HT Test",
     "id": "ht-test",
-    "projectType": "custom",
+    "projectType": "web",
     "pseudoLocale": "de-DE",
     "resourceDirs": {
         "yml": "config/locales",
@@ -16,6 +16,5 @@
     ],
     "settings": {
         "locales": ["en-GB", "es-US", "zh-Hans-CN"]
-    },
-    "plugins": ["foo"]
+    }
 }
