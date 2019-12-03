@@ -1,8 +1,21 @@
 Release Notes for Version 2
 ============================
 
+Build 006
+-------
+
+Published as version 2.3.2
+
+Bug Fixes:
+* Fixed a problem parsing/localizing valueless HTML attributes in markdown files
+* now ignores whitespace before html comments
+* now uses remark-frontmatter to parse the headers
+* now parses linkreferences properly when the text is not the default
+
 Build 005
 -------
+
+Published as version 2.3.1
 
 Bug Fixes:
 * Fixed incorrect npm packaging in v2.3.0. Testing packages were included in

@@ -804,7 +804,7 @@ module.exports.markdown = {
         test.ok(mf);
 
         mf.parse('This is a test of the emergency parsing system.\n\n' +
-                '[C1] As referenced before.\n');
+                '[C1]: As referenced before.\n');
 
         var set = mf.getTranslationSet();
         test.ok(set);
@@ -814,10 +814,10 @@ module.exports.markdown = {
         test.equal(r.getSource(), "This is a test of the emergency parsing system.");
         test.equal(r.getKey(), "r699762575");
 
-        r = set.getBySource("As referenced before.");
+        r = set.getBySource("<c0/>: As referenced before.");
         test.ok(r);
-        test.equal(r.getSource(), "As referenced before.");
-        test.equal(r.getKey(), "r335185216");
+        test.equal(r.getSource(), "<c0/>: As referenced before.");
+        test.equal(r.getKey(), "r650576171");
 
         test.done();
     },
@@ -888,6 +888,27 @@ module.exports.markdown = {
         test.ok(mf);
 
         mf.parse('*_ <span class="test"> <span id="foo"></span></span>  This is a test of the emergency parsing system.   _*\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up any of the non-breaking tags because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        test.done();
+    },
+
+    testMarkdownFileParseHTMLWithValuelessAttributes: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<span class="foo" checked>This is a test of the emergency parsing system.</span>\n');
 
         var set = mf.getTranslationSet();
         test.ok(set);
@@ -1130,6 +1151,32 @@ module.exports.markdown = {
         test.ok(mf);
 
         mf.parse('<div title="This value is localizable">\n\n' +
+                'This is a test\n\n' +
+                '</div>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+
+        r = set.getBySource("This value is localizable");
+        test.ok(r);
+        test.equal(r.getSource(), "This value is localizable");
+        test.equal(r.getKey(), "r922503175");
+
+        test.done();
+    },
+
+    testMarkdownFileParseLocalizableTitleSingleQuotes: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse("<div title='This value is localizable'>\n\n" +
                 'This is a test\n\n' +
                 '</div>\n');
 
@@ -1915,6 +1962,38 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeTextLocalizableTitleSingleQuotes: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse("Markdown text <div title='This value is localizable'>This is a test</div>\n");
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            key: 'r922503175',
+            project: "foo",
+            source: 'This value is localizable',
+            target: 'Cette valeur est localisable',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r654479252',
+            source: 'This is a test',
+            target: 'Ceci est un essai',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Markdown text <div title="Cette valeur est localisable">Ceci est un essai</div>\n');
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeTextLocalizableAttributes: function(test) {
         test.expect(2);
 
@@ -2067,6 +2146,41 @@ module.exports.markdown = {
             '<span x-locid="r654479252">Ceci est un essai</span>\n\n' +
             '<span x-locid="r999080996">Ceci est aussi un essai</span>\n\n' +
             '<span x-locid="r654479252">Ceci est un essai</span>\n';
+        var actual = mf.localizeText(translations, "fr-FR");
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testMarkdownFileLocalizeHTMLWithValuelessAttributes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"]
+        });
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<span class="foo" checked>This is a test of the emergency parsing system.</span>\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r699762575",
+            source: "This is a test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse d'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        var expected =
+            '<span class="foo" checked>Ceci est un test du système d\'analyse d\'urgence.</span>\n';
         var actual = mf.localizeText(translations, "fr-FR");
 
         diff(actual, expected);
@@ -2601,6 +2715,201 @@ module.exports.markdown = {
         test.ok(r);
         test.equal(r.getSource(), "<c0><c1>File Workflow with Webhooks</c1></c0>: Creating file task automation with webhooks.");
         test.equal(r.getKey(), "r663481768");
+
+        test.done();
+    },
+
+    testMarkdownFileParseWithLinkReferenceWithText: function(test) {
+        test.expect(6);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'For developer support, please reach out to us via one of our channels:\n' +
+            '\n' +
+            '- [Ask on Twitter][twitter]: For general questions and support.\n' +
+            '\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n'
+        );
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        var resources = set.getAll();
+
+        test.equal(resources.length, 2);
+
+        test.equal(resources[0].getSource(), "For developer support, please reach out to us via one of our channels:");
+
+        test.equal(resources[1].getSource(), "<c0>Ask on Twitter</c0>: For general questions and support.");
+
+        test.done();
+    },
+
+    testMarkdownFileParseWithMultipleLinkReferenceWithText: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'For developer support, please reach out to us via one of our channels:\n' +
+            '\n' +
+            '- [Ask on Twitter][twitter]: For general questions and support.\n' +
+            '- [Ask in email][email]: For specific questions and support.\n' +
+            '- [Ask on stack overflow][so]: For community answers and support.\n' +
+            '\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n' +
+            '[email]: mailto:support@ourplatform\n' +
+            '[so]: http://ourplatform.stackoverflow.com/'
+        );
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 4);
+
+        var resources = set.getAll();
+
+        test.equal(resources.length, 4);
+
+        test.equal(resources[0].getSource(), "For developer support, please reach out to us via one of our channels:");
+        test.equal(resources[1].getSource(), "<c0>Ask on Twitter</c0>: For general questions and support.");
+        test.equal(resources[2].getSource(), "<c0>Ask in email</c0>: For specific questions and support.");
+        test.equal(resources[3].getSource(), "<c0>Ask on stack overflow</c0>: For community answers and support.");
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeWithReferenceLinks: function(test) {
+        test.expect(3);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'For developer support, please reach out to us via one of our channels:\n' +
+            '\n' +
+            '- [Ask on Twitter][twitter]: For general questions and support.\n' +
+            '\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n'
+        );
+        test.ok(mf);
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r816306377',
+            source: 'For developer support, please reach out to us via one of our channels:',
+            target: 'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r293599939',
+            source: '<c0>Ask on Twitter</c0>: For general questions and support.',
+            target: '<c0>Auf Twitter stellen</c0>: Für allgemeine Fragen und Unterstützung.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:\n' +
+            '\n' +
+            '* [Auf Twitter stellen][twitter]: Für allgemeine Fragen und Unterstützung.\n' +
+            '\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testMarkdownFileParseHTMLComments: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <!-- comment -->test of the emergency parsing system.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        test.done();
+    },
+
+    testMarkdownFileParseHTMLCommentsWithIndent: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency parsing system.\n  <!-- comment -->\nA second string\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "r699762575");
+
+        var r = set.getBySource("A second string");
+        test.ok(r);
+        test.equal(r.getSource(), "A second string");
+        test.equal(r.getKey(), "r772298159");
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeHTMLCommentsWithIndent: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency parsing system.\n  <!-- comment -->\nA second string\n');
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r699762575',
+            source: 'This is a test of the emergency parsing system.',
+            target: 'This is a test of the emergency parsing system... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r772298159',
+            source: 'A second string',
+            target: 'A second string... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            'This is a test of the emergency parsing system... in GERMAN!\n\n  <!-- comment -->\n\nA second string... in GERMAN!\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
 
         test.done();
     }
