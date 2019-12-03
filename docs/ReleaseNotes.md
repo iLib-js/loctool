@@ -14,6 +14,11 @@ Bug Fixes:
     * Shortcut references are converted to full so that the title can be translated without
       changing the label.
 
+Bug Fixes:
+* Now when an exception happens, the loctool process will exit with an error code
+  so that scripts that call the loctool can fail appropriately instead of just
+  quietly and obliviously carrying on.
+
 Build 006
 -------
 
