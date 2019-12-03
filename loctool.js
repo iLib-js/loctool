@@ -39,7 +39,13 @@ log4js.configure(path.dirname(module.filename) + '/log4js.json');
 var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
+function getVersion() {
+    var pkg = require("./package.json");
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019, HealthTap, Inc. and JEDLSoft";
+}
+
 function usage() {
+    console.log(getVersion());
     console.log(
         "Usage: loctool [-h] [-2] [-p] [-l locales] [-f filetype] [-t dir]\n" +
         "               [-x dir] [-i] [command [command-specific-arguments]]\n" +
@@ -67,6 +73,8 @@ function usage() {
         "-i or --identify\n" +
         "  Identify resources where possible by marking up the translated files with \n" +
         "  the resource key.\n" +
+        "-v or --version\n" +
+        "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
         "  Specify the dir where the xliffs files live. Default: \".\"\n" +
         "command\n" +
@@ -85,7 +93,12 @@ function usage() {
         "root dir\n" +
         "  directory containing the git projects with the source code. \n" +
         "  Default: current dir.\n");
-    process.exit(1);
+    process.exit(0);
+}
+
+function printVersion() {
+    console.log(getVersion());
+    process.exit(0);
 }
 
 // the global settings object that configures how the tool will operate
@@ -136,6 +149,8 @@ for (var i = 0; i < argv.length; i++) {
             console.error("Error: -t (--target) option requires a directory name argument to follow it.");
             usage();
         }
+    } else if (val === "-v" || val === "--version") {
+        printVersion();
     } else if (val === "-x" || val === "--xliffs") {
         if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
             settings.xliffsDir = argv[++i];
