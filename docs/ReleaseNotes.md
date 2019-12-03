@@ -1,6 +1,14 @@
 Release Notes for Version 2
 ============================
 
+Build 007
+-------
+
+New Features:
+* Added -v (--version) command-line parameter. Prints out the version from the package.json
+  and then exits.
+  * Updated the usage to print that as well
+
 Build 006
 -------
 
