@@ -449,6 +449,6 @@ try {
     exitValue = 2;
 }
 logger.info("Done");
-log4js.shutdown(function() {});
-
-process.exit(exitValue);
+log4js.shutdown(function() {
+    process.exit(exitValue);
+});
