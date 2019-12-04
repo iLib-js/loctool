@@ -38,6 +38,7 @@ log4js.configure(path.dirname(module.filename) + '/log4js.json');
 
 var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
+var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
@@ -445,22 +446,9 @@ try {
             fileTypes[i].close();
         }
     }
-    log4js.shutdown(function() {});
+    exitValue = 2;
 }
 logger.info("Done");
-
-/*
-var obj = {};
-if (path.match(/[a-z]+\.jf/)) {
-    try {
-        var data = fs.readFileSync(path, 'utf8');
-        if (data.length > 0) {
-            obj = JSON.parse(data);
-            merged = common.merge(merged, obj);
-        }
-    } catch (err) {
-        console.log("File " + path + " is not readable or does not contain valid JSON.\n");
-        console.log(err + "\n");
-    }
-}
-*/
+log4js.shutdown(function() {
+    process.exit(exitValue);
+});

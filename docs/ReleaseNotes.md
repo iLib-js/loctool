@@ -9,6 +9,11 @@ New Features:
   and then exits.
   * Updated the usage to print that as well
 
+Bug Fixes:
+* Now when an exception happens, the loctool process will exit with an error code
+  so that scripts that call the loctool can fail appropriately instead of just
+  quietly and obliviously carrying on.
+
 Build 006
 -------
 
