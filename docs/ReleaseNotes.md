@@ -7,7 +7,12 @@ Build 007
 New Features:
 * Added -v (--version) command-line parameter. Prints out the version from the package.json
   and then exits.
-  * Updated the usage to print that as well
+    * Updated the usage to print that as well
+
+Bug Fixes:
+* Fixed the link reference support in markdown to support both full and shortcut references
+    * Shortcut references are converted to full so that the title can be translated without
+      changing the label.
 
 Build 006
 -------
