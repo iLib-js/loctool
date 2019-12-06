@@ -4,15 +4,22 @@ Release Notes for Version 2
 Build 007
 -------
 
+Published as version 2.4.0
+
 New Features:
 * Added -v (--version) command-line parameter. Prints out the version from the package.json
   and then exits.
     * Updated the usage to print that as well
+* The markdown code now adds a translator comment/note for inline code segments so that the
+  translator can know what the text of the self-closing components are.
 
 Bug Fixes:
 * Fixed the link reference support in markdown to support both full and shortcut references
     * Shortcut references are converted to full so that the title can be translated without
       changing the label.
+* Now when an exception happens, the loctool process will exit with an error code
+  so that scripts that call the loctool can fail appropriately instead of just
+  quietly and obliviously carrying on.
 
 Bug Fixes:
 * Now when an exception happens, the loctool process will exit with an error code
