@@ -838,7 +838,7 @@ module.exports.markdown = {
     },
 
     testMarkdownFileParseNonBreakingInlineCode: function(test) {
-        test.expect(5);
+        test.expect(6);
 
         var mf = new MarkdownFile(p);
         test.ok(mf);
@@ -851,7 +851,28 @@ module.exports.markdown = {
         var r = set.getBySource("This is a test of the <c0/> system.");
         test.ok(r);
         test.equal(r.getSource(), "This is a test of the <c0/> system.");
+        test.equal(r.getComment(), "c0 will be replaced with the inline code `inline code`.");
         test.equal(r.getKey(), "r405516144");
+
+        test.done();
+    },
+
+    testMarkdownFileParseMultipleNonBreakingInlineCodes: function(test) {
+        test.expect(6);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a `test` of the `inline code` system.\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a <c0/> of the <c1/> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a <c0/> of the <c1/> system.");
+        test.equal(r.getComment(), "c0 will be replaced with the inline code `test`. c1 will be replaced with the inline code `inline code`.");
+        test.equal(r.getKey(), "r960448365");
 
         test.done();
     },
