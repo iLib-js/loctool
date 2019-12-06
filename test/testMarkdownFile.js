@@ -731,6 +731,46 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseReferenceLinksWithTitle: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the [emergency parsing][emer_sys] system.\n\n' +
+            '[emer_sys]: http://www.test.com/\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the <c0>emergency parsing</c0> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the <c0>emergency parsing</c0> system.");
+        test.equal(r.getKey(), "r848003676");
+
+        test.done();
+    },
+
+    testMarkdownFileParseReferenceLinksWithoutTitle: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the [emergency parsing] system.\n\n' +
+            '[emergency parsing]: http://www.test.com/\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getBySource("This is a test of the <c0>emergency parsing</c0> system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the <c0>emergency parsing</c0> system.");
+        test.equal(r.getKey(), "r848003676");
+
+        test.done();
+    },
+
     testMarkdownFileParseDontExtractURLOnlyLinks: function(test) {
         test.expect(7);
 
@@ -784,40 +824,15 @@ module.exports.markdown = {
         test.ok(mf);
 
         mf.parse('This is a test of the emergency parsing [C1] system.\n\n' +
-                '[C1] http://www.box.com/foobar\n');
+                '[C1]: http://www.box.com/foobar\n');
 
         var set = mf.getTranslationSet();
         test.ok(set);
 
-        var r = set.getBySource("This is a test of the emergency parsing <c0/> system.");
+        var r = set.getBySource("This is a test of the emergency parsing <c0>C1</c0> system.");
         test.ok(r);
-        test.equal(r.getSource(), "This is a test of the emergency parsing <c0/> system.");
-        test.equal(r.getKey(), "r1010312382");
-
-        test.done();
-    },
-
-    testMarkdownFileParseNotOnlyReference: function(test) {
-        test.expect(8);
-
-        var mf = new MarkdownFile(p);
-        test.ok(mf);
-
-        mf.parse('This is a test of the emergency parsing system.\n\n' +
-                '[C1]: As referenced before.\n');
-
-        var set = mf.getTranslationSet();
-        test.ok(set);
-
-        var r = set.getBySource("This is a test of the emergency parsing system.");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
-        test.equal(r.getKey(), "r699762575");
-
-        r = set.getBySource("<c0/>: As referenced before.");
-        test.ok(r);
-        test.equal(r.getSource(), "<c0/>: As referenced before.");
-        test.equal(r.getKey(), "r650576171");
+        test.equal(r.getSource(), "This is a test of the emergency parsing <c0>C1</c0> system.");
+        test.equal(r.getKey(), "r475244008");
 
         test.done();
     },
@@ -1690,16 +1705,16 @@ module.exports.markdown = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r858031024",
-            source: "This is a test of the emergency <c0/> parsing system.",
+            key: "r1017266258",
+            source: "This is a test of the emergency <c0>C1</c0> parsing system.",
             sourceLocale: "en-US",
-            target: "Ceci est un test du système d'analyse syntaxique de l'urgence <c0/>.",
+            target: "Ceci est un test du système d'analyse syntaxique de l'urgence <c0>C1</c0>.",
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-            'Ceci est un test du système d\'analyse syntaxique de l\'urgence [C1].\n');
+            'Ceci est un test du système d\'analyse syntaxique de l\'urgence [C1][C1].\n');
 
         test.done();
     },
@@ -1710,21 +1725,21 @@ module.exports.markdown = {
         var mf = new MarkdownFile(p);
         test.ok(mf);
 
-        mf.parse('This is a test of the emergency [C1] parsing system [R1].\n\n[C1] https://www.box.com/test1\n[R1] http://www.box.com/about.html\n');
+        mf.parse('This is a test of the emergency [C1] parsing system [R1].\n\n[C1]: https://www.box.com/test1\n[R1]: http://www.box.com/about.html\n');
 
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: "r90710505",
-            source: "This is a test of the emergency <c0/> parsing system <c1/>.",
+            key: "r817759238",
+            source: "This is a test of the emergency <c0>C1</c0> parsing system <c1>R1</c1>.",
             sourceLocale: "en-US",
-            target: "Ceci est un test du système d'analyse syntaxique <c1/> de l'urgence <c0/>.",
+            target: "Ceci est un test du système d'analyse syntaxique <c1>Reponse1</c1> de l'urgence <c0>teste</c0>.",
             targetLocale: "fr-FR",
             datatype: "markdown"
         }));
 
         test.equal(mf.localizeText(translations, "fr-FR"),
-            'Ceci est un test du système d\'analyse syntaxique [R1] de l\'urgence [C1].\n\n[C1] <https://www.box.com/test1>\n[R1] <http://www.box.com/about.html>\n');
+            'Ceci est un test du système d\'analyse syntaxique [Reponse1][R1] de l\'urgence [teste][C1].\n\n[C1]: https://www.box.com/test1\n\n[R1]: http://www.box.com/about.html\n');
 
         test.done();
     },
@@ -2445,6 +2460,128 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileLocalizeFileWithFrontMatter: function(test) {
+        test.expect(5);
+
+        var base = path.dirname(module.id);
+
+        var mf = new MarkdownFile(p, "./md/test3.md");
+        test.ok(mf);
+
+        // should read the file
+        mf.extract();
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r548615397',
+            source: 'This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
+            target: 'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r777006502',
+            source: 'This is some text. This is more text. Pretty, pretty text.',
+            target: 'Ceci est du texte. C\'est plus de texte. Joli, joli texte.',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r112215756',
+            source: 'This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
+            target: 'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r260813817',
+            source: 'This is the last bit of localizable text.',
+            target: 'C\'est le dernier morceau de texte localisable.',
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r548615397',
+            source: 'This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
+            target: 'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r777006502',
+            source: 'This is some text. This is more text. Pretty, pretty text.',
+            target: 'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r112215756',
+            source: 'This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.',
+            target: 'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r260813817',
+            source: 'This is the last bit of localizable text.',
+            target: 'Dies ist der letzte Teil des lokalisierbaren Textes.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        mf.localize(translations, ["fr-FR", "de-DE"]);
+
+        test.ok(fs.existsSync(path.join(base, p.root, "fr-FR/md/test3.md")));
+        test.ok(fs.existsSync(path.join(base, p.root, "de-DE/md/test3.md")));
+
+        var content = fs.readFileSync(path.join(base, p.root, "fr-FR/md/test3.md"), "utf-8");
+
+        var expected =
+            '---\n' +
+            'title: This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n' +
+            'status: this front matter should remain unlocalized\n' +
+            '---\n' +
+            '# Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n' +
+            '\n' +
+            'Ceci est du texte. C\'est plus de texte. Joli, joli texte.\n\n' +
+            'Ceci est de la texte localisable. Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n\n' +
+            'C\'est le dernier morceau de texte localisable.\n' +
+            '\n' +
+            'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
+
+        diff(content, expected);
+        test.equal(content, expected);
+
+        var content = fs.readFileSync(path.join(p.root, "de-DE/md/test3.md"), "utf-8");
+
+        var expected =
+            '---\n' +
+            'title: This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n' +
+            'status: this front matter should remain unlocalized\n' +
+            '---\n' +
+            '# Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n' +
+            '\n' +
+            'Dies ist ein Text. Dies ist mehr Text. Hübscher, hübscher Text.\n\n' +
+            'Dies ist ein lokalisierbarer Text. Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n\n' +
+            'Dies ist der letzte Teil des lokalisierbaren Textes.\n' +
+            '\n' +
+            'Dies ist der Titel dieses Testdokumentes, das mehrmals im Dokument selbst erscheint.\n';
+
+        diff(content, expected);
+        test.equal(content, expected);
+
+        test.done();
+    },
+
     testMarkdownFileLocalizeNoStrings: function(test) {
         test.expect(3);
 
@@ -2784,7 +2921,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileLocalizeWithReferenceLinks: function(test) {
+    testMarkdownFileLocalizeReferenceLinksWithTitle: function(test) {
         test.expect(3);
 
         var mf = new MarkdownFile(p);
@@ -2826,6 +2963,56 @@ module.exports.markdown = {
             '* [Auf Twitter stellen][twitter]: Für allgemeine Fragen und Unterstützung.\n' +
             '\n' +
             '[twitter]: https://twitter.com/OurPlatform\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeReferenceLinksWithoutTitle: function(test) {
+        test.expect(3);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'For developer support, please reach out to us via one of our channels:\n' +
+            '\n' +
+            '- [Ask on Twitter] For general questions and support.\n' +
+            '\n' +
+            '[Ask on Twitter]: https://twitter.com/OurPlatform\n'
+        );
+        test.ok(mf);
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r816306377',
+            source: 'For developer support, please reach out to us via one of our channels:',
+            target: 'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r1030328207',
+            source: '<c0>Ask on Twitter</c0> For general questions and support.',
+            target: '<c0>Auf Twitter stellen</c0> für allgemeine Fragen und Unterstützung.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        // DON'T localize the label. Instead, add a title that is translated
+        var expected =
+            'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:\n' +
+            '\n' +
+            '* [Auf Twitter stellen][Ask on Twitter] für allgemeine Fragen und Unterstützung.\n' +
+            '\n' +
+            '[Ask on Twitter]: https://twitter.com/OurPlatform\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
