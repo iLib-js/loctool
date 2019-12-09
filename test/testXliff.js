@@ -915,7 +915,7 @@ module.exports.xliff = {
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>foobarfoo</target>\n' +
-                '        <note annotates="source">foobar is where it\'s at!</note>\n' +
+                '        <note>foobar is where it\'s at!</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -924,7 +924,7 @@ module.exports.xliff = {
                 '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '        <target>bebe bebe</target>\n' +
-                '        <note annotates="source">come &amp; enjoy it with us</note>\n' +
+                '        <note>come &amp; enjoy it with us</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -1205,7 +1205,7 @@ module.exports.xliff = {
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>baby baby</target>\n' +
-                '        <note annotates="source">A very nice string</note>\n' +
+                '        <note>A very nice string</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -1743,7 +1743,7 @@ module.exports.xliff = {
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf asdf</source>\n' +
-                '        <note annotates="source">A very nice string</note>\n' +
+                '        <note>A very nice string</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -1751,7 +1751,7 @@ module.exports.xliff = {
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
-                '        <note annotates="source">Totally awesome.</note>\n' +
+                '        <note>Totally awesome.</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -2767,12 +2767,12 @@ module.exports.xliff = {
                 '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
                 '        <source>bababa</source>\n' +
                 '        <target>ababab</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
                 '        <source>a</source>\n' +
                 '        <target>b</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -2786,12 +2786,12 @@ module.exports.xliff = {
                 '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
                 '        <source>bababa</source>\n' +
                 '        <target>ababab</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
                 '        <source>a</source>\n' +
                 '        <target>b</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -2845,7 +2845,7 @@ module.exports.xliff = {
                 '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
                 '        <source>a</source>\n' +
                 '        <target>b</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -2854,7 +2854,7 @@ module.exports.xliff = {
                 '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
                 '        <source>bababa</source>\n' +
                 '        <target>ababab</target>\n' +
-                '        <note annotates="source">this is a comment</note>\n' +
+                '        <note>this is a comment</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -3011,7 +3011,7 @@ module.exports.xliff = {
             '      </trans-unit>\n' +
             '      <trans-unit id="2" resname="foobar" restype="string" datatype="plaintext">\n' +
             '        <source>Asdf asdf</source>\n' +
-            '        <note annotates="source">blah blah blah</note>\n' +
+            '        <note>blah blah blah</note>\n' +
             '      </trans-unit>\n' +
             '    </body>\n' +
             '  </file>\n' +
@@ -3071,12 +3071,12 @@ module.exports.xliff = {
             '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
             '        <source>bababa</source>\n' +
             '        <target>ababab</target>\n' +
-            '        <note annotates="source">this is a comment</note>\n' +
+            '        <note>this is a comment</note>\n' +
             '      </trans-unit>\n' +
             '      <trans-unit id="2334" resname="asdf" restype="string" x-context="asdfasdf">\n' +
             '        <source>bababa</source>\n' +
             '        <target>ababab</target>\n' +
-            '        <note annotates="source">this is a different comment</note>\n' +
+            '        <note>this is a different comment</note>\n' +
             '      </trans-unit>\n' +
             '    </body>\n' +
             '  </file>\n' +
@@ -3091,6 +3091,64 @@ module.exports.xliff = {
     },
 
     testXliffDeserializeCreateInstances: function(test) {
+        test.expect(21);
+
+        var x = new Xliff({
+            allowDups: true
+        });
+        test.ok(x);
+
+        x.deserialize(
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note>this is a comment</note>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="2334" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+            '        <source>bababa</source>\n' +
+            '        <target>ababab</target>\n' +
+            '        <note>this is a different comment</note>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 1);
+
+        test.equal(reslist[0].getTarget(), "ababab");
+        test.equal(reslist[0].getTargetLocale(), "fr-FR");
+        test.equal(reslist[0].getKey(), "asdf");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].context, "asdfasdf");
+        test.equal(reslist[0].comment, "this is a comment");
+
+        var instances = reslist[0].getInstances();
+        test.ok(instances);
+        test.equal(instances.length, 1);
+
+        test.equal(instances[0].getTarget(), "ababab");
+        test.equal(instances[0].getTargetLocale(), "fr-FR");
+        test.equal(instances[0].getKey(), "asdf");
+        test.equal(instances[0].getPath(), "/a/b/asdf.js");
+        test.equal(instances[0].getProject(), "iosapp");
+        test.equal(instances[0].resType, "string");
+        test.equal(instances[0].context, "asdfasdf");
+        test.equal(instances[0].comment, "this is a different comment");
+
+        test.done();
+    },
+
+    testXliffDeserializeStillAcceptsAnnotatesAttr: function(test) {
         test.expect(21);
 
         var x = new Xliff({
