@@ -12,6 +12,7 @@ node_js:
   - "8"
   - "9"
   - "10"
+  - "11"
 compiler:
   - gcc
 install:
@@ -19,6 +20,7 @@ install:
 script:
   - NODE=$(dirname $(dirname $(which node)))
   - sed "s@XXXX@$NODE@" build.properties.travis > build.properties
+  - npm run linkmocks
   - ant test
 branches:
   only:

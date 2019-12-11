@@ -1,0 +1,32 @@
+{
+    "name": "ilib-loctool-mock-resource",
+    "version": "1.0.0",
+    "main": "./MockResourceFileType.js",
+    "description": "A loctool plugin that knows how to process JS resource files",
+    "license": "Apache-2.0",
+    "keywords": [
+        "internationalization",
+        "i18n",
+        "localization",
+        "l10n",
+        "globalization",
+        "g11n",
+        "strings",
+        "resources",
+        "locale",
+        "translation",
+        "webpack",
+        "loader",
+        "javascript"
+    ],
+    "files": [
+        "MockResourceFileType.js",
+        "MockResourceFile.js"
+    ],
+    "dependencies": {
+        "ilib": "^14.2.0"
+    },
+    "devDependencies": {
+        "loctool": "^2.1.0"
+    }
+}

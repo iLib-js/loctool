@@ -1,0 +1,37 @@
+{
+    "name": "ilib-loctool-mock",
+    "version": "1.0.0",
+    "main": "./MockFileType.js",
+    "description": "A loctool plugin that knows how to process JS files",
+    "license": "Apache-2.0",
+    "keywords": [
+        "internationalization",
+        "i18n",
+        "localization",
+        "l10n",
+        "globalization",
+        "g11n",
+        "strings",
+        "resources",
+        "locale",
+        "translation",
+        "webpack",
+        "loader",
+        "javascript"
+    ],
+    "email": "ehoogerbeets@gmail.com",
+    "author": {
+        "name": "Edwin Hoogerbeets",
+        "web": "http://www.translationcircle.com/",
+        "email": "ehoogerbeets@gmail.com"
+    },
+    "files": [
+        "MockFileType.js"
+    ],
+    "dependencies": {
+        "ilib": "^14.2.0"
+    },
+    "devDependencies": {
+        "loctool": "^2.1.0"
+    }
+}

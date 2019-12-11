@@ -2,7 +2,7 @@
 <!--
 build.xml - build the localization tool app 
 
-Copyright © 2016-2017, JEDLSoft
+Copyright © 2016-2017, 2019 JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -134,6 +134,14 @@ limitations under the License.
 			</exec>
 		</sequential>
 	</macrodef>
+
+    <target name="test.resource" description="Run only the resource tests">
+        <run script="${build.test}/testResource.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+    </target>
+
+    <target name="debug.resource" description="Debug only the resource tests">
+        <debug script="${build.test}/testResource.js" dir="${build.test}"/>
+    </target>
 
 	<target name="test.resourcestring" description="Run only the resource string tests">
 		<run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
@@ -294,6 +302,22 @@ limitations under the License.
 	<target name="debug.htmltemplatefiletype" description="Debug only the tests for the HTML template file type">
 		<debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
 	</target>
+
+    <target name="test.markdownfile" description="Run only the tests for the Markdown file">
+        <run script="${build.test}/testMarkdownFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.markdownfile" description="Debug only the tests for Markdown files">
+        <debug script="${build.test}/testMarkdownFile.js" dir="${build.test}"/>
+    </target>
+
+    <target name="test.markdownfiletype" description="Run only the tests for the Markdown file type">
+        <run script="${build.test}/testMarkdownFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.markdownfiletype" description="Debug only the tests for the Markdown file type">
+        <debug script="${build.test}/testMarkdownFileType.js" dir="${build.test}"/>
+    </target>
 
 	<target name="test.objectivecfile" description="Run only the tests for the Objective C file">
 		<run script="${build.test}/testObjectiveCFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
@@ -543,7 +567,23 @@ limitations under the License.
         <debug script="${build.test}/testJsxFileType.js" dir="${build.test}"/>
     </target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype">
+    <target name="test.customproject" description="Run only the tests for the custom project object">
+        <run script="${build.test}/testCustomProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.customproject" description="Debug only the tests for the custom project object">
+        <debug script="${build.test}/testCustomProject.js" dir="${build.test}"/>
+    </target>
+
+    <target name="test.resourcefactory" description="Run only the tests for the resource factory object">
+        <run script="${build.test}/testResourceFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="debug.resourcefactory" description="Debug only the tests for the resource factory object">
+        <debug script="${build.test}/testResourceFactory.js" dir="${build.test}"/>
+    </target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype,test.markdownfiletype,test.markdownfile,test.resourcefactory,test.customproject">
 	</target>
 
 	<macrodef name="runsql">

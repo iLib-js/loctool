@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019, HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -286,7 +286,7 @@ function walk(dir, project) {
 	var list = fs.readdirSync(dir);
 	var pathName, relPath, included, stat;
 	
-	list.forEach(function (file) {
+	list.sort().forEach(function (file) {
 		var root = project ? project.getRoot() : settings.rootDir;
 		pathName = path.join(dir, file);
 		relPath = path.relative(root, pathName);
