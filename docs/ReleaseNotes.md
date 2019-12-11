@@ -1,18 +1,76 @@
 Release Notes for Version 2
 ============================
 
+Build 007
+-------
+
+New Features:
+* Added -v (--version) command-line parameter. Prints out the version from the package.json
+  and then exits.
+  * Updated the usage to print that as well
+
+Bug Fixes:
+* Now when an exception happens, the loctool process will exit with an error code
+  so that scripts that call the loctool can fail appropriately instead of just
+  quietly and obliviously carrying on.
+
+Build 006
+-------
+
+Published as version 2.3.2
+
+Bug Fixes:
+* Fixed a problem parsing/localizing valueless HTML attributes in markdown files
+* now ignores whitespace before html comments
+* now uses remark-frontmatter to parse the headers
+* now parses linkreferences properly when the text is not the default
+
+Build 005
+-------
+
+Published as version 2.3.1
+
+Bug Fixes:
+* Fixed incorrect npm packaging in v2.3.0. Testing packages were included in
+  the dependencies instead of the dev dependencies.
+
 Build 004
 -------
 
-Published as version 2.2.1
+Published as version 2.3.0
 
 New Features:
+* Added support for XLIFF 2.0 files
+    * Previously, loctool only supported XLIFF 1.2 format files
+    * Optionally used for xliff output as well
+    * Use the new `-2` option to specify xliff 2.0
+    * When xliff 2.0 files are in use, "loctool split" can only split
+    xliff files by language because xliff 2.0 does not support translation
+    units with differing target locales.
+    * Both xliff 1.2 and 2.0 files can be read in regardless of the
+    version of the output file. The parser reads the version number from
+    the "xliff" tag and parses its contents appropriately.
+* Loctool will now read in all xliff files it finds in xliffsDir
+    * With xliff 2.0, the loctool cannot load in only one project.xliff
+    file because multiple target locales are not allowed to be in the
+    same file.
+    * As many files are you like may appear in the xliffsDir directory
+    and they will be read in to memory as long as the file names end
+    with a BCP-47 locale specifier and a ".xliff" extension.
+    eg. (project1-de-DE.xliff, project2-de-DE.xliff, ko-KR.xliff, etc.)
+* Added support for a new method projectClose() to the FileType plugins SPI
+    * Called right before each project is closed
+    * Allows the file type class to do any last-minute clean-up or
+      generate any final files
 
 Bug Fixes:
 
 * Fix a few bugs related to figuring out which file types are resource file types in custom projects
 * Many file types were not producing any translated output for the generated pseudo locales.
-Now they do!
+  Now they do!
+* If you had loctool install in the global node modules, and your loctool plugin installed in your
+  project's node modules, it was not finding and loading that plugin. Now loctool will check the 
+  loctool directory, the current project, and the ../plugins directory for plugins.
 
 Build 003
 -------

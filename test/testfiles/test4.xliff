@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:l="http://ilib-js.com/loctool" version="2.0" srcLang="en-US" trgLang="de-DE">
+  <file original="foo/bar/asdf.java" l:project="webapp">
+      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">
+        <notes>
+	        <note annotates="source">foobar is where it&apos;s at!</note>
+        </notes>
+        <segment>
+	        <source>Asdf asdf</source>
+	        <target>foobarfoo</target>
+        </segment>
+      </unit>
+  </file>
+  <file original="foo/bar/j.java" l:project="webapp">
+      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">
+        <notes>
+	        <note annotates="source">come &amp; enjoy it with us</note>
+        </notes>
+        <segment>
+	        <source>baby baby</source>
+	        <target>bebe bebe</target>
+        </segment>
+      </unit>
+      <unit id="3" name="ohhuzzah" type="res:string" l:datatype="plaintext">
+        <notes>
+	        <note annotates="source">come &amp; enjoy it with them</note>
+        </notes>
+        <segment>
+	        <source x-key="oh">baby baby</source>
+	        <target>oh bebe bebe</target>
+        </segment>
+      </unit>
+      <unit id="4" name="asdf">
+        <notes>
+	        <note annotates="source">come &amp; enjoy it with them</note>
+        </notes>
+        <segment>
+	        <source>Hello</source>
+	        <target>Hallo</target>
+        </segment>
+      </unit>
+  </file>
+</xliff>

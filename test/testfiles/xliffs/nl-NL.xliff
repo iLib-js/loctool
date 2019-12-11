@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">
+  <file original="foo/bar/j.java" source-language="en-US" target-language="nl-NL" product-name="webapp">
     <body>
       <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">
         <source>Asdf asdf</source>
-        <target>foobarfoo</target>
+        <target>Het asdf</target>
         <note annotates="source">foobar is where it&apos;s at!</note>
       </trans-unit>
-    </body>
-  </file>
-  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">
-    <body>
       <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">
         <source>baby baby</source>
         <target>bebe bebe</target>
@@ -18,12 +14,12 @@
       </trans-unit>
       <trans-unit id="3" resname="ohhuzzah" restype="string" datatype="plaintext">
         <source x-key="oh">baby baby</source>
-        <target>oh bebe bebe</target>
+        <target>de bebe bebe</target>
         <note annotates="source">come &amp; enjoy it with them</note>
       </trans-unit>
       <trans-unit id="4">
         <source x-key="asdfasdf">Hello</source>
-        <target>Hallo</target>
+        <target>Hallo mijnheer</target>
         <note annotates="source">come &amp; enjoy it with them</note>
       </trans-unit>
     </body>

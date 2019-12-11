@@ -320,7 +320,7 @@ of your package.json file:
 ```
   ...
   "devDependencies": {
-    "loctool": "^2.4.0",
+    "loctool": "^2.3.0",
     "ilib-loctool-jst": "^1.0.0",
     "ilib-loctool-html", "^1.0.0",
     "ilib-loctool-javascript": "^1.0.0"
