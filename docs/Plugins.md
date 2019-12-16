@@ -1,6 +1,6 @@
-# How to Write a Loctool Plugin
+# How to Write a Loctool 2 Plugin
 
-A loctool plugin is relatively simple: one class that handles a
+A loctool version 2 plugin is relatively simple: one class that handles a
 particular type of file (a "file" class), and another class
 that handles a collection of such files (a "file type" class).
 The filetype class is the main entry point for the
