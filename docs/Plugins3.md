@@ -64,7 +64,7 @@ register for.
 - file-open
 - extract
 - localize
-- getpath
+- get-path
 - file-write
 - file-close
 
