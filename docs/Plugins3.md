@@ -6,7 +6,7 @@ with version 3, but they are deprecated. In future versions of
 the loctool, they will no longer be supported. 
 
 The loctool version 3 plugin framework is rewritten in the
-style of webpack plugins, though with differences, in that
+style of webpack plugins, though with some differences, in that
 the loctool generates a sequence of events, and the plugins
 are called when they register to listen for those events.
 Contrast this to version 2 plugins, which are implementations
@@ -39,25 +39,65 @@ register for.
 
 ### Project
 
-- open
-- config
-- close
+- project-open
+- project-config
+- before-file-scan
+- after-file-scan
+- start-extraction
+- before-file-extraction
+- after-file-extraction
+- end-extraction
+- start-writes
+- start-file-writes
+- before-file-write
+- after-file-write
+- end-file-writes
+- start-filetype-writes
+- before-filetype-write
+- after-filetype-write
+- end-filetype-writes
+- end-writes
+- project-close
 
 ### File
 
-- open
+- file-open
 - extract
 - localize
 - getpath
-- write
-- close
+- file-write
+- file-close
 
 ### FileType
 
-- open
-- write
-- newfile
-- getdatatype
-- getresourcetypes
-- getextensions
-- close
+- filetype-open
+- new-file
+- filetype-write
+- filetype-close
+
+## Pseudo-Translate
+
+- pseudo-open
+- get-source-locale
+- translate
+- pseudo-close
+
+## Resource
+
+- resource-create
+- resource-config
+- get-source
+- set-source
+- get-target
+- set-target
+- hash-key
+- resource-destroy
+
+## Repository
+
+- repository-open
+- repository-init
+- get-resources
+- save-resources
+- remove-resources
+- repository-close
