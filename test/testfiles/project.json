@@ -7,6 +7,7 @@
         "yml": "config/locales",
         "js": "public/localized_js"
     },
+    "resourceFileName": "strings.json",
     "schema": "./appinfo.schema.json",
     "excludes": [
         ".*"
