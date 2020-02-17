@@ -42,5 +42,16 @@
     </segment>
    </unit>
  </group>
+ <group id="settings_g2" name="x-qml">
+    <unit id="settings_22">
+    <notes>
+     <note>copy strings from voiceagnet</note>
+    </notes>
+    <segment>
+     <source>SEARCH</source>
+     <target>검색</target>
+    </segment>
+   </unit>
+  </group>
  </file>
 </xliff>
