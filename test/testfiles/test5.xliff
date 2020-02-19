@@ -45,7 +45,7 @@
  <group id="settings_g2" name="x-qml">
     <unit id="settings_22">
     <notes>
-     <note>copy strings from voiceagnet</note>
+     <note>copy strings from voice app</note>
     </notes>
     <segment>
      <source>SEARCH</source>
