@@ -4,7 +4,7 @@ Release Notes for Version 2
 Build 008
 -------
 
-Published as version 2.4.1
+Published as version 2.5.0
 
 New Features:
 * Added support to handle multiple group tags in an xliff file
