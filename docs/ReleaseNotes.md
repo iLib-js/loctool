@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 008
+-------
+
+Published as version 2.5.0
+
+New Features:
+* Added support to handle multiple group tags in an xliff file
+    * loctool considersed only one group tag in an xliff file. but now we can support a case to have multiple groups in a xliff file
+
 Build 007
 -------
 
