@@ -3053,8 +3053,8 @@ module.exports.markdown = {
         test.equal(resources.length, 3);
 
         test.equal(resources[0].getSource(), "Regular service will be <c0>available</c0>.");
-        test.equal(resources[1].getSource(), "link title");
-        test.equal(resources[2].getSource(), "http://a.com/");
+        test.equal(resources[1].getSource(), "http://a.com/");
+        test.equal(resources[2].getSource(), "link title");
 
         test.done();
     },
