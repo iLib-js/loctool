@@ -3228,7 +3228,7 @@ module.exports.xliff = {
     },
 
     testXliff20DeserializeRealLGFile: function(test) {
-        test.expect(25);
+        test.expect(37);
 
         var x = new Xliff();
         test.ok(x);
@@ -3240,10 +3240,8 @@ module.exports.xliff = {
         x.deserialize(str);
 
         var reslist = x.getResources();
-
         test.ok(reslist);
-
-        test.equal(reslist.length, 6);
+        test.equal(reslist.length, 7);
 
         test.equal(reslist[0].getSource(), "Closed Caption Settings");
         test.equal(reslist[0].getSourceLocale(), "en-KR");
@@ -3268,6 +3266,19 @@ module.exports.xliff = {
         test.equal(reslist[3].datatype, "javascript");
         test.ok(!reslist[3].getComment());
         test.equal(reslist[3].getId(), "settings_1524");
+
+        test.equal(reslist[6].getSource(), "SEARCH");
+        test.equal(reslist[6].getSourceLocale(), "en-KR");
+        test.equal(reslist[6].getTarget(), "검색");
+        test.equal(reslist[6].getTargetLocale(), "ko-KR");
+        test.equal(reslist[6].getKey(), "SEARCH");
+        test.equal(reslist[6].getPath(), "settings");
+        test.equal(reslist[6].getProject(), "settings");
+        test.equal(reslist[6].resType, "string");
+        test.equal(reslist[6].datatype, "x-qml");
+        test.ok(reslist[6].getComment());
+        test.equal(reslist[6].getComment(), "copy strings from voice app");
+        test.equal(reslist[6].getId(), "settings_22");
 
         test.done();
     }

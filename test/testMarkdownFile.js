@@ -798,6 +798,42 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseTurnOnURLOnlyLinks: function(test) {
+        test.expect(12);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'Here are some links:\n\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '* [http://www.box.com/foobar](http://www.box.com/foobar)\n' +
+            '* [http://www.box.com/asdf](http://www.box.com/asdf)\n' +
+            '<!-- i18n-disable localize-links -->\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 3);
+
+        var r = set.getBySource("Here are some links:");
+        test.ok(r);
+        test.equal(r.getSource(), "Here are some links:");
+        test.equal(r.getKey(), "r539503678");
+
+        // the URLs should be extracted because we turned on link localization
+        r = set.getBySource("http://www.box.com/foobar");
+        test.ok(r);
+        test.equal(r.getSource(), "http://www.box.com/foobar");
+        test.equal(r.getKey(), "r803907207");
+
+        r = set.getBySource("http://www.box.com/asdf");
+        test.ok(r);
+        test.equal(r.getSource(), "http://www.box.com/asdf");
+        test.equal(r.getKey(), "r247450278");
+
+        test.done();
+    },
+
     testMarkdownFileParseDoExtractURLLinksMidString: function(test) {
         test.expect(5);
 
@@ -1206,7 +1242,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileParseLocalizableTitleSingleQuotes: function(test) {
+    testMarkdownFileParseLocalizableTitleWithSingleQuotes: function(test) {
         test.expect(8);
 
         var mf = new MarkdownFile(p);
@@ -1761,6 +1797,59 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
             'Ceci est un test du système d\'analyse syntaxique [Reponse1][R1] de l\'urgence [teste][C1].\n\n[C1]: https://www.box.com/test1\n\n[R1]: http://www.box.com/about.html\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextWithMultipleLocalizableLinkReferences: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a test of the emergency [C1] parsing system [R1].\n\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '[C1]: https://www.box.com/test1\n' +
+            '[R1]: http://www.box.com/about.html\n' +
+            '<!-- i18n-disable localize-links -->\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r817759238",
+            source: "This is a test of the emergency <c0>C1</c0> parsing system <c1>R1</c1>.",
+            sourceLocale: "en-US",
+            target: "Ceci est un test du système d'analyse syntaxique <c1>Reponse1</c1> de l'urgence <c0>teste</c0>.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r647537837",
+            source: "https://www.box.com/test1",
+            sourceLocale: "en-US",
+            target: "https://www.box.com/fr/test1",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r448858983",
+            source: "http://www.box.com/about.html",
+            sourceLocale: "en-US",
+            target: "http://www.box.com/fr/about.html",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un test du système d\'analyse syntaxique [Reponse1][R1] de l\'urgence [teste][C1].\n\n' +
+            '<!-- i18n-enable localize-links -->\n\n' +
+            '[C1]: https://www.box.com/fr/test1\n\n' +
+            '[R1]: http://www.box.com/fr/about.html\n\n' +
+            '<!-- i18n-disable localize-links -->\n');
 
         test.done();
     },
@@ -2907,6 +2996,101 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseWithLinkReferenceToExtractedURL: function(test) {
+        test.expect(8);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '- [Ask on Twitter][twitter]: For general questions and support.\n' +
+            '- [Ask on Facebook][facebook]: For general questions and support.\n' +
+            '\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n' +
+            '[facebook]: http://www.facebook.com/OurPlatform\n' +
+            '<!-- i18n-disable localize-links -->'
+        );
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 4);
+
+        var resources = set.getAll();
+
+        test.equal(resources.length, 4);
+
+        test.equal(resources[0].getSource(), "<c0>Ask on Twitter</c0>: For general questions and support.");
+        test.equal(resources[1].getSource(), "<c0>Ask on Facebook</c0>: For general questions and support.");
+        test.equal(resources[2].getSource(), "https://twitter.com/OurPlatform");
+        test.equal(resources[3].getSource(), "http://www.facebook.com/OurPlatform");
+
+        test.done();
+    },
+
+    testMarkdownFileParseWithLinkReferenceWithLinkTitle: function(test) {
+        test.expect(7);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'Regular service will be [available][exception].\n' +
+            '\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '[exception]: http://a.com/ "link title"\n' +
+            '<!-- i18n-disable localize-links -->'
+        );
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+
+        var resources = set.getAll();
+
+        test.equal(resources.length, 3);
+
+        test.equal(resources[0].getSource(), "Regular service will be <c0>available</c0>.");
+        test.equal(resources[1].getSource(), "http://a.com/");
+        test.equal(resources[2].getSource(), "link title");
+
+        test.done();
+    },
+
+    testMarkdownFileParseWithLinkReferenceToExtractedURLNotAfterTurnedOff: function(test) {
+        test.expect(7);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            '- [Ask on Twitter][twitter]: For general questions and support.\n' +
+            '- [Ask on Facebook][facebook]: For general questions and support.\n' +
+            '\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '[twitter]: https://twitter.com/OurPlatform\n' +
+            '<!-- i18n-disable localize-links -->' +
+            '[facebook]: http://www.facebook.com/OurPlatform\n'
+        );
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 3);
+
+        var resources = set.getAll();
+
+        test.equal(resources.length, 3);
+
+        test.equal(resources[0].getSource(), "<c0>Ask on Twitter</c0>: For general questions and support.");
+        test.equal(resources[1].getSource(), "<c0>Ask on Facebook</c0>: For general questions and support.");
+        test.equal(resources[2].getSource(), "https://twitter.com/OurPlatform");
+
+        test.done();
+    },
+
     testMarkdownFileParseWithMultipleLinkReferenceWithText: function(test) {
         test.expect(8);
 
@@ -2942,7 +3126,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileLocalizeReferenceLinksWithTitle: function(test) {
+    testMarkdownFileLocalizeReferenceLinksWithLinkId: function(test) {
         test.expect(3);
 
         var mf = new MarkdownFile(p);
@@ -2991,7 +3175,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    testMarkdownFileLocalizeReferenceLinksWithoutTitle: function(test) {
+    testMarkdownFileLocalizeReferenceLinksWithoutLinkId: function(test) {
         test.expect(3);
 
         var mf = new MarkdownFile(p);
@@ -3034,6 +3218,75 @@ module.exports.markdown = {
             '* [Auf Twitter stellen][Ask on Twitter] für allgemeine Fragen und Unterstützung.\n' +
             '\n' +
             '[Ask on Twitter]: https://twitter.com/OurPlatform\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeReferenceLinksWithLinkTitle: function(test) {
+        test.expect(3);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'For developer support, please reach out to us via one of our channels:\n' +
+            '\n' +
+            '- [Ask on Twitter][twitter] For general questions and support.\n' +
+            '\n' +
+            '<!-- i18n-enable localize-links -->\n' +
+            '[twitter]: https://twitter.com/OurPlatform "Our Platform"\n' +
+            '<!-- i18n-disable localize-links -->\n'
+        );
+        test.ok(mf);
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r816306377',
+            source: 'For developer support, please reach out to us via one of our channels:',
+            target: 'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r1030328207',
+            source: '<c0>Ask on Twitter</c0> For general questions and support.',
+            target: '<c0>Auf Twitter stellen</c0> für allgemeine Fragen und Unterstützung.',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r85880207',
+            source: 'https://twitter.com/OurPlatform',
+            target: 'https://de.twitter.com/OurPlatform',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r504251007',
+            source: 'Our Platform',
+            target: 'Unsere Platformen',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            'Wenn Sie Entwicklerunterstützung benötigen, wenden Sie sich bitte über einen unserer Kanäle an uns:\n' +
+            '\n' +
+            '* [Auf Twitter stellen][twitter] für allgemeine Fragen und Unterstützung.\n' +
+            '\n' +
+            '<!-- i18n-enable localize-links -->\n\n' +
+            '[twitter]: https://de.twitter.com/OurPlatform "Unsere Platformen"\n\n' +
+            '<!-- i18n-disable localize-links -->\n';
 
         diff(actual, expected);
         test.equal(actual, expected);
