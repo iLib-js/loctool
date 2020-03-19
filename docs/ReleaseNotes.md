@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 010
+-------
+
+Published as version 2.7.0
+
+New Features:
+* Added the -q or --quiet flag which only prints out banners, errors, and warnings
+* Added the -s or --silent flag which never prints anything. Instead, it only sets the exit code.
+  This is intended to be used in scripts where all the verbose output is not needed.
+
 Build 009
 -------
 
