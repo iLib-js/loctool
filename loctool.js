@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020, HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,32 +48,37 @@ function getVersion() {
 function usage() {
     console.log(getVersion());
     console.log(
-        "Usage: loctool [-h] [-2] [-p] [-l locales] [-f filetype] [-t dir]\n" +
-        "               [-x dir] [-i] [command [command-specific-arguments]]\n" +
+        "Usage: loctool [-l locales] [-f filetype] [-t dir]\n" +
+        "               [-x dir] [-2hinopqsv] [command [command-specific-arguments]]\n" +
         "Extract localizable strings from the source code.\n\n" +
-        "-h or --help\n" +
-        "  this help\n" +
         "-2\n" +
         "  Use xliff 2.0 format files instead of the default xliff 1.2\n" +
-        "-p or --pull\n" +
-        "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+        "-f or --filetype\n" +
+        "  Restrict operation to only the given list of file types. This allows you to\n" +
+        "  run only the parts of the loctool that are needed at the moment.\n" +
+        "-h or --help\n" +
+        "  this help\n" +
+        "-i or --identify\n" +
+        "  Identify resources where possible by marking up the translated files with \n" +
+        "  the resource key.\n" +
         "-l or --locales\n" +
         "  Restrict operation to only the given locales. Locales should be given as\n" +
         "  a comma-separated list of BCP-47 locale specs. By default, this tool\n" +
         "  will operate with all locales that are available in the translations.\n" +
-        "-f or --filetype\n" +
-        "  Restrict operation to only the given list of file types. This allows you to\n" +
-        "  run only the parts of the loctool that are needed at the moment.\n" +
         "-n or --pseudo\n" +
         "  Do pseudo-localize missing strings and generate the pseudo-locale. (Default is\n" +
         "  not to do pseudo-localization.\n" +
         "-o or --oldhaml\n" +
         "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+        "-p or --pull\n" +
+        "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+        "-q or --quiet\n" +
+        "  Quiet mode. Only print banners and any errors/warnings.\n" +
+        "-s or --silent\n" +
+        "  Silent mode. Don't ever print anything on the stdout. Instead, just exit with\n" +
+        "  the appropriate exit code.\n" +
         "-t or --target\n" +
         "  Write all output to the given target dir instead of in the source dir.\n" +
-        "-i or --identify\n" +
-        "  Identify resources where possible by marking up the translated files with \n" +
-        "  the resource key.\n" +
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
@@ -135,6 +140,10 @@ for (var i = 0; i < argv.length; i++) {
         settings.oldHamlLoc = true;
     } else if (val === "-i" || val === "--identify") {
         settings.identify = true;
+    } else if (val === "-q" || val === "--quiet") {
+        logger.level = 'error';
+    } else if (val === "-s" || val === "--silent") {
+        logger.level = 'OFF';
     } else if (val === "-f" || val === "--filetype") {
         if (i+1 < argv.length && argv[i+1]) {
             var types = argv[++i].split(",");
