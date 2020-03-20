@@ -1035,7 +1035,7 @@ module.exports.resourcestring = {
         test.done();
     },
 
-    testContextResourceStringCkeanHashKey: function(test) {
+    testContextResourceStringCleanHashKey: function(test) {
         test.expect(2);
 
         var rs = new ContextResourceString({

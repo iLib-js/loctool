@@ -11,6 +11,9 @@ New Features:
 * Added the -s or --silent flag which never prints anything. Instead, it only sets the exit code.
   This is intended to be used in scripts where all the verbose output is not needed.
 
+Bug Fixes:
+* Fixed to include locale when creating cleanHashKey in ContextResourceString
+
 Build 009
 -------
 
