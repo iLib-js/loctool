@@ -1035,6 +1035,25 @@ module.exports.resourcestring = {
         test.done();
     },
 
+    testContextResourceStringCleanHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+            project: "custom-app",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a/b/c.js",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.cleanHashKey(), "crs_custom-app_foobar_de-DE_This is a test_x-qml_");
+
+        test.done();
+    },
+
     testContextResourceStringSourceOnlyHashKey: function(test) {
         test.expect(2);
 
