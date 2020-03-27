@@ -120,7 +120,7 @@ var settings = {
     targetDir: ".",            // target directory for all output files
     xliffsDir: ".",
     xliffVersion: 1.2,
-    noXliffsOut: false
+    noxliffsOut: false
 };
 
 var options = [];
@@ -179,7 +179,7 @@ for (var i = 0; i < argv.length; i++) {
             usage();
         }
     } else if (val === "--no-xliffsOut") {
-        settings.noXliffsOut = true;
+        settings.noxliffsOut = true;
     }
     else {
         options.push(val);
