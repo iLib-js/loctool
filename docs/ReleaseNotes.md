@@ -10,6 +10,7 @@ New Features:
 * Added the -q or --quiet flag which only prints out banners, errors, and warnings
 * Added the -s or --silent flag which never prints anything. Instead, it only sets the exit code.
   This is intended to be used in scripts where all the verbose output is not needed.
+* Added the --no-xliffsOut flag which not to generate xliff files for extracted strings from files.
 
 Bug Fixes:
 * Fixed to include locale when creating cleanHashKey in ContextResourceString
