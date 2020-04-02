@@ -83,8 +83,8 @@ function usage() {
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
         "  Specify the dir where the xliffs files live. Default: \".\"\n" +
-        "--no-xliffsOut\n" +
-        "  Do not generate xliff files for extracted strings from files. (Default is generate xliff files) \n" +
+        "--localizeOnly\n" +
+        "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -120,7 +120,7 @@ var settings = {
     targetDir: ".",            // target directory for all output files
     xliffsDir: ".",
     xliffVersion: 1.2,
-    noxliffsOut: false
+    localizeOnly: false
 };
 
 var options = [];
@@ -178,8 +178,8 @@ for (var i = 0; i < argv.length; i++) {
             console.error("Error: -z (--xliffsOut) option requires a directory name argument to follow it.");
             usage();
         }
-    } else if (val === "--no-xliffsOut") {
-        settings.noxliffsOut = true;
+    } else if (val === "--localizeOnly") {
+        settings.localizeOnly = true;
     }
     else {
         options.push(val);
