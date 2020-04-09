@@ -35,6 +35,26 @@ var project = new WebProject({
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 
+var project2 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: "zxx-XX",
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-NZ", "es-US"]
+});
+
+var project3 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: ["zxx-XX", "zxx-Hans-XX"],
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-NZ", "es-US"]
+});
+
 module.exports.pseudofactory = {
     testPseudoFactoryBritishEnglish: function(test) {
         test.expect(2);
@@ -286,6 +306,45 @@ module.exports.pseudofactory = {
         });
         test.ok(pseudo);
         test.equal(pseudo.getSourceLocale(), "en-US-ASDF");
+
+        test.done();
+    },
+    testPseudoFactoryNormalzxx: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project2,
+            targetLocale: "zxx-XX",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+    testPseudoFactoryNormalzxx2: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "zxx-Hans-XX",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+    testPseudoFactoryNormalzxx3: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "zxx-XX-ASDF",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
 
         test.done();
     },
