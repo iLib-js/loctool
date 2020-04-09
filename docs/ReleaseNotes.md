@@ -11,6 +11,10 @@ New Features:
 * Added the -s or --silent flag which never prints anything. Instead, it only sets the exit code.
   This is intended to be used in scripts where all the verbose output is not needed.
 * Added the --localizeOnly flag which Generate a localization resource only. Do not create any other files at all after running loctool.
+* Added support to handle multiple pseudo locales. If you want to use more than one pseudo locale, you have put list to an array. Example:
+  ```
+  pseudoLocale: ["zxx-XX", "zxx-Hans-XX", "zxx-Hebr-XX"]
+  ```
 
 Bug Fixes:
 * Fixed to include locale when creating cleanHashKey in ContextResourceString
