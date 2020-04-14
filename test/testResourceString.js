@@ -961,7 +961,7 @@ module.exports.resourcestring = {
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html", "flavor"), "crs_iosapp_foobar_de-DE_This is a test_html_flavor_");
+        test.equal(ContextResourceString.hashKey("iosapp", "foobar", "de-DE", "This is a test", "html", "flavor"), "crs_iosapp_foobar_de-DE_This is a test_html_flavor");
 
         test.done();
     },
@@ -969,7 +969,7 @@ module.exports.resourcestring = {
     testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey(undefined, undefined, undefined, "de-DE", undefined, undefined, undefined), "crs____de-DE___");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined, undefined), "crs___de-DE___");
 
         test.done();
     },
@@ -990,7 +990,7 @@ module.exports.resourcestring = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_r654479252_de-DE_This is a test_html_");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_");
 
         test.done();
     },
@@ -1030,7 +1030,7 @@ module.exports.resourcestring = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_r654479252_de-DE_This is a test_html_chocolate");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_de-DE_This is a test_html_chocolate");
 
         test.done();
     },
@@ -1049,7 +1049,7 @@ module.exports.resourcestring = {
         });
         test.ok(rs);
 
-        test.equal(rs.cleanHashKey(), "crs_custom-app_foobar_r654479252_de-DE_This is a test_x-qml_");
+        test.equal(rs.cleanHashKey(), "crs_custom-app_foobar_de-DE_This is a test_x-qml_");
 
         test.done();
     },
@@ -1068,7 +1068,7 @@ module.exports.resourcestring = {
         });
         test.ok(rs);
 
-        test.equal(rs.hashKey(), "crs_iosapp_foobar_r654479252_en-US_This is a test_html_");
+        test.equal(rs.hashKey(), "crs_iosapp_foobar_en-US_This is a test_html_");
 
         test.done();
     },

@@ -22,7 +22,6 @@ if (!TranslationSet) {
     var ResourceString = require("../lib/ResourceString.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
-    var utils = require("../lib/utils.js");
 }
 
 module.exports.translationset = {
@@ -250,15 +249,14 @@ module.exports.translationset = {
         });
 
         ts.add(res);
-        var sourceHash = utils.hashKey("This is a test");
-        var r = ts.get(ContextResourceString.hashKey(undefined, undefined, sourceHash, res.getSourceLocale(), "asdf", "plaintext"));
+
+        var r = ts.get(ContextResourceString.hashKey(undefined, undefined, res.getSourceLocale(), "asdf", "plaintext"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
 
-        sourceHash = utils.hashKey("This is a test");
-        r = ts.get(ContextResourceString.hashKey(undefined, "different", sourceHash, res.getSourceLocale(), "asdf", "plaintext"));
+        r = ts.get(ContextResourceString.hashKey(undefined, "different", res.getSourceLocale(), "asdf", "plaintext"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");

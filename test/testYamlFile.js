@@ -24,7 +24,6 @@ if (!YamlFile) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
-    var utils = require("../lib/utils.js");
 }
 
 function diff(a, b) {
@@ -1075,8 +1074,8 @@ module.exports.yamlfile = {
 
         var set = yml.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("The perks of interning");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "The_perks_of_interning", "x-yaml"));
+
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "The_perks_of_interning", "x-yaml"));
         test.ok(r);
 
         test.equal(r.getSource(), "The perks of interning");
@@ -1100,8 +1099,8 @@ module.exports.yamlfile = {
 
         var set = yml.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("Someone said a colleague’s answer to your question saved them a lot of time:");
-        var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_time", sourceHash, "en-US", "subject", "x-yaml"));
+
+        var r = set.get(ContextResourceString.hashKey("webapp", "saved_someone_else_time", "en-US", "subject", "x-yaml"));
         test.ok(r);
 
         test.equal(r.getSource(), "Someone said a colleague’s answer to your question saved them a lot of time:");
@@ -1127,8 +1126,8 @@ module.exports.yamlfile = {
 
         var set = yml.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("%1, %2 has answered a question you asked!");
-        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", sourceHash, "en-US", "email_subject", "x-yaml"));
+
+        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
 
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
@@ -1154,8 +1153,8 @@ module.exports.yamlfile = {
 
         var set = yml.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("%1, %2 has answered a question you asked!");
-        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", sourceHash, "en-US", "email_subject", "x-yaml"));
+
+        var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
 
         test.ok(r instanceof ContextResourceString);

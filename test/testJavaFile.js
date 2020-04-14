@@ -23,7 +23,6 @@ if (!JavaFile) {
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
     var ContextResourceString =  require("../lib/ContextResourceString.js");
-    var utils = require("../lib/utils.js");
 }
 
 var p = new AndroidProject({
@@ -342,8 +341,7 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "r654479252", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "r654479252", "java"));
         test.ok(r);
 
         test.equal(r.getSource(), "This is a test");
@@ -513,8 +511,7 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "foobar", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "foobar", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "foobar");
@@ -591,8 +588,7 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "unique_id", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -611,8 +607,7 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "unique_id", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -672,15 +667,13 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "x", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "x", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "x");
 
-        var sourceHash = utils.hashKey("This is a test");
-        r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "y", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "y", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
@@ -750,15 +743,13 @@ module.exports.javafile = {
         var set = j.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "asdf", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "asdf", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "asdf");
         test.equal(r.getComment(), "foo");
 
-        var sourceHash = utils.hashKey("This is also a test")
-        r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "kdkdkd", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "kdkdkd", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "kdkdkd");
@@ -804,8 +795,7 @@ module.exports.javafile = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
 
-        var sourceHash = utils.hashKey("This is a test");
-        r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "unique_id", "java"));
+        r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -916,8 +906,7 @@ module.exports.javafile = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
 
-        var sourceHash = utils.hashKey("This is a test with a unique id")
-        var r = set.get(ContextResourceString.hashKey("webapp", undefined, sourceHash, "en-US", "id1", "java"));
+        var r = set.get(ContextResourceString.hashKey("webapp", undefined, "en-US", "id1", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
         test.equal(r.getKey(), "id1");

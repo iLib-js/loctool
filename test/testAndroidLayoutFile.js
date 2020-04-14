@@ -22,7 +22,6 @@ if (!AndroidLayoutFile) {
     var AndroidLayoutFileType = require("../lib/AndroidLayoutFileType.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ContextResourceString =  require("../lib/ContextResourceString.js");
-    var utils = require("../lib/utils.js");
 }
 
 var p = new AndroidProject({
@@ -119,8 +118,8 @@ module.exports.androidlayoutfile = {
 
         var set = alf.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "text_This_is_a_test", "x-android-resource"));
+
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "This is a test");
@@ -218,8 +217,8 @@ module.exports.androidlayoutfile = {
 
         var set = alf.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "text_This_is_a_test", "x-android-resource"));
+
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "This is a test");
@@ -690,8 +689,8 @@ module.exports.androidlayoutfile = {
         var resources = set.getAll();
 
         test.equal(resources.length, 1);
-        var sourceHash = utils.hashKey("This is a test");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "text_This_is_a_test", "x-android-resource"));
+
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "This is a test");

@@ -24,7 +24,6 @@ if (!AndroidResourceFile) {
     var ContextResourceString =  require("../lib/ContextResourceString.js");
     var ResourcePlural =  require("../lib/ResourcePlural.js");
     var ResourceArray =  require("../lib/ResourceArray.js");
-    var utils = require("../lib/utils.js");
 }
 
 function diff(a, b) {
@@ -107,8 +106,8 @@ module.exports.androidresourcefile = {
 
         var set = arf.getTranslationSet();
         test.ok(set);
-        var sourceHash = utils.hashKey("Send a thank you note to\n{name}");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "thanks_friend_pre", "x-android-resource"));
+
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
@@ -270,8 +269,7 @@ module.exports.androidresourcefile = {
         var set = arf.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("151779581544891");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "app_id", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "app_id", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "151779581544891");
@@ -308,8 +306,7 @@ module.exports.androidresourcefile = {
         var set = arf.getTranslationSet();
         test.ok(set);
 
-        var sourceHash = utils.hashKey("Send a thank you note to\n{name}");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "thanks_friend_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "thanks_friend_pre", "x-android-resource"));
         test.ok(r);
 
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
@@ -372,8 +369,7 @@ module.exports.androidresourcefile = {
 
         test.equal(set.size(), 12);
 
-        var sourceHash = utils.hashKey("Ask friends");
-        var r = set.get(ContextResourceString.hashKey("android", undefined, sourceHash, "en-US", "ask_question", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("android", undefined, "en-US", "ask_question", "x-android-resource"));
         test.ok(r);
         test.equal(r.getSource(), "Ask friends");
         test.equal(r.getKey(), "ask_question");
