@@ -1247,7 +1247,7 @@ module.exports.resourcestring = {
     testSourceContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(SourceContextResourceString.hashKey("qmlapp", "foobar", "de-DE", "This is a test", "x-qml", "flavor"), "scrs_qmlapp_foobar_de-DE_This is a test_x-qml_flavor_");
+        test.equal(SourceContextResourceString.hashKey("qmlapp", "foobar", "de-DE", "This is a test", "x-qml", "flavor", "r12345678"), "scrs_qmlapp_foobar_de-DE_This is a test_x-qml_flavor_r12345678");
 
         test.done();
     },
