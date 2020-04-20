@@ -15,6 +15,7 @@ New Features:
   ```
   pseudoLocale: ["zxx-XX", "zxx-Hans-XX", "zxx-Hebr-XX"]
   ```
+* Added `SourceContextResourceString` that is for strings in qml files. The hash key made with this,  that it includes additionally the hash value of the source. That is a difference from ContextResourceString.
 
 Bug Fixes:
 * Fixed to include locale when creating cleanHashKey in ContextResourceString
