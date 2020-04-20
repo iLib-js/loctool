@@ -1329,7 +1329,7 @@ module.exports.resourcestring = {
             key: "This is a test",
             source: "This is a test",
             locale: "de-DE",
-            pathName: "a/b/c.js",
+            pathName: "a.qml",
             datatype: "x-qml"
         });
         test.ok(rs);
