@@ -1,6 +1,26 @@
 Release Notes for Version 2
 ============================
 
+Build 010
+-------
+
+Published as version 2.7.0
+
+New Features:
+* Added the -q or --quiet flag which only prints out banners, errors, and warnings
+* Added the -s or --silent flag which never prints anything. Instead, it only sets the exit code.
+  This is intended to be used in scripts where all the verbose output is not needed.
+* Added the --localizeOnly flag which Generate a localization resource only. Do not create any other files at all after running loctool.
+* Added support to handle multiple pseudo locales. If you want to use more than one pseudo locale, you have to put the locales in an array. Example:
+  ```
+  pseudoLocale: ["zxx-XX", "zxx-Hans-XX", "zxx-Hebr-XX"]
+  ```
+* Added `SourceContextResourceString` that is for strings in qml files. The hash key made with this, that it includes additionally the hash value of the source. That is a difference from ContextResourceString.
+
+Bug Fixes:
+* Fixed to include locale when creating cleanHashKey in ContextResourceString
+* Updated dependencies to the latest packages and fixed the resulting unit test failures due to the opencc update
+
 Build 009
 -------
 

@@ -20,6 +20,7 @@
 if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
+    var SourceContextResourceString = require("../lib/SourceContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var RegularPseudo = require("../lib/RegularPseudo.js");
     var PseudoFactory = require("../lib/PseudoFactory.js");
@@ -1035,6 +1036,25 @@ module.exports.resourcestring = {
         test.done();
     },
 
+    testContextResourceStringCleanHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new ContextResourceString({
+            project: "custom-app",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a/b/c.js",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.cleanHashKey(), "crs_custom-app_foobar_de-DE_This is a test_x-qml_");
+
+        test.done();
+    },
+
     testContextResourceStringSourceOnlyHashKey: function(test) {
         test.expect(2);
 
@@ -1221,6 +1241,119 @@ module.exports.resourcestring = {
         test.ok(dup);
 
         test.ok(!rs.isInstance(dup));
+
+        test.done();
+    },
+    testSourceContextResourceStringStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(SourceContextResourceString.hashKey("qmlapp", "foobar", "de-DE", "This is a test", "x-qml", "flavor", "r12345678"), "scrs_qmlapp_foobar_de-DE_This is a test_x-qml_flavor_r12345678");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(SourceContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined, undefined, undefined), "scrs___de-DE____");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            target: "Dies ist einen Test.",
+            targetLocale: "de-DE",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.hashKey(), "scrs_qmlqpp_foobar_de-DE_This is a test_x-qml__r654479252");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringGetFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml",
+            flavor: "a"
+        });
+        test.ok(rs);
+
+        test.equal(rs.getFlavor(), "a");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringHashKeyWithFlavor: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.hashKey(), "scrs_qmlqpp_foobar_de-DE_This is a test_x-qml__r654479252");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringCleanHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "custom-app",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a.qml",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.cleanHashKey(), "scrs_custom-app_foobar_de-DE_This is a test_x-qml__r654479252");
+
+        test.done();
+    },
+
+    testSourceContextResourceStringSourceOnlyHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+
+        test.equal(rs.hashKey(), "scrs_qmlqpp_foobar_en-US_This is a test_x-qml__r654479252");
 
         test.done();
     },
