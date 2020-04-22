@@ -319,8 +319,8 @@ module.exports.pseudohant = {
         });
 
         // TW specific
-        test.equal(ph.getString('方便麵'), "速食麵");
-        test.equal(ph.getString('蹦極'), "笨豬跳");
+        test.equal(ph.getString('卸載'), "解除安裝");
+        test.equal(ph.getString('城域網'), "都會網路");
         test.equal(ph.getString('優先級'), "優先順序");
 
         test.done();
