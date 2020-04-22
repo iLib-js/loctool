@@ -19,6 +19,7 @@ New Features:
 
 Bug Fixes:
 * Fixed to include locale when creating cleanHashKey in ContextResourceString
+* Updated dependencies to the latest packages and fixed the resulting unit test failures due to the opencc update
 
 Build 009
 -------
