@@ -4,9 +4,7 @@ Release Notes for Version 2
 Build 011
 -------
 
-Published as version 2.8.0
-
-New Features:
+Published as version 2.7.1
 
 Bug Fixes:
 * Fixed a bug where xliff files are trying to be created when there was no extracted string.
