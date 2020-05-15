@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 011
+-------
+
+Published as version 2.8.0
+
+New Features:
+
+Bug Fixes:
+* Fixed a bug when there are no extracted strings.
+
 Build 010
 -------
 
