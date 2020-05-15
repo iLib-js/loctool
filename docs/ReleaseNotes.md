@@ -9,7 +9,7 @@ Published as version 2.8.0
 New Features:
 
 Bug Fixes:
-* Fixed a bug when there are no extracted strings.
+* Fixed a bug where xliff files are trying to be created when there was no extracted string.
 
 Build 010
 -------
