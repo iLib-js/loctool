@@ -8,8 +8,8 @@ Published as version 2.7.1
 
 Bug Fixes:
 * Fixed a bug where xliff files are trying to be created when there was no extracted string.
-* Fixed a bug where self-closed tags like <br/> in markdown files were not handled properly,
-causing exceptions that complained about syntax errors
+* Fixed a bug where the xliff files (extracted + new files) were never generated, even when
+localizeOnly is turned off
 
 Build 010
 -------
