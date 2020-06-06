@@ -1,6 +1,6 @@
 {
-    "name": "HT Test",
-    "id": "ht-test",
+    "name": "Loctool Test",
+    "id": "loctest",
     "projectType": "web",
     "pseudoLocale": "de-DE",
     "resourceDirs": {
@@ -9,7 +9,6 @@
     },
     "schema": "./appinfo.schema.json",
     "excludes": [
-        ".*"
     ],
     "includes": [
         "config/notifications.yml"
