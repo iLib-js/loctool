@@ -51,6 +51,7 @@ module.exports.files = [
     "testObjectiveCFile.js",
     "testObjectiveCFileType.js",
     "testOldHamlFileType.js",
+    "testProject.js",
     "testProjectFactory.js",
     "testPseudoBritish.js",
     "testPseudoCanadian.js",
