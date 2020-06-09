@@ -11,6 +11,9 @@ Bug Fixes:
 * Fixed a bug where the xliff files (extracted + new files) were never generated, even when
 localizeOnly is turned off
 
+* Fixed a bug where self-closed tags like <br/> in markdown files were not handled properly,
+causing exceptions that complained about syntax errors
+
 Build 010
 -------
 

@@ -953,6 +953,90 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseNonBreakingSelfClosingHTMLTags: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<em>This is a test of the <br> emergency parsing system.</em>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up the emphasis marker because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the <c0/> emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the <c0/> emergency parsing system.");
+        test.equal(r.getKey(), "r1070934855");
+
+        test.done();
+    },
+
+    testMarkdownFileParseBreakingSelfClosedHTMLTags: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<em>This is a test of the <p/> emergency parsing system.</em>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up the emphasis marker because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the");
+        test.equal(r.getKey(), "r593084440");
+
+        test.done();
+    },
+
+    testMarkdownFileParseBreakingNotClosedHTMLTags: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<em>This is a test of the <p> emergency parsing system.</em>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up the emphasis marker because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the");
+        test.equal(r.getKey(), "r593084440");
+
+        test.done();
+    },
+
+    testMarkdownFileParseNonBreakingSelfClosedHTMLTags: function(test) {
+        test.expect(5);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('<em>This is a test of the <br/> emergency parsing system.</em>\n');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        // should not pick up the emphasis marker because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the <c0/> emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the <c0/> emergency parsing system.");
+        test.equal(r.getKey(), "r1070934855");
+
+        test.done();
+    },
+
     testMarkdownFileParseNonBreakingIgnoreComplexIrrelevant: function(test) {
         test.expect(5);
 
@@ -1997,6 +2081,124 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
                 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</em></span>\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextBreakingTags: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <p>test of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r21364457",
+            source: "This is a",
+            sourceLocale: "en-US",
+            target: "Ceci est un",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r787549036",
+            source: "test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <p>essai du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextSelfClosedBreakingTags: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <p/>test of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r21364457",
+            source: "This is a",
+            sourceLocale: "en-US",
+            target: "Ceci est un",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r787549036",
+            source: "test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <p/>essai du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextSelfClosingNonBreakingTags: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <br>test of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r292870472",
+            source: "This is a <c0/>test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0/>essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <br>essai du système d\'analyse syntaxique de l\'urgence.\n');
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTextSelfClosedNonBreakingTags: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse('This is a <br/>test of the emergency parsing system.\n');
+
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r292870472",
+            source: "This is a <c0/>test of the emergency parsing system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un <c0/>essai du système d'analyse syntaxique de l'urgence.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            'Ceci est un <br/>essai du système d\'analyse syntaxique de l\'urgence.\n');
 
         test.done();
     },
