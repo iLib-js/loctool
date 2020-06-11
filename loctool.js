@@ -283,41 +283,40 @@ function processNextProject() {
 function walk(dir, project) {
     logger.trace("Searching " + dir);
 
-    var results = [], projectRoot = false;
+    var results = [], projectRoot = false, newProject;
 
-    if (!project) {
-        project = ProjectFactory(dir, settings);
-        if (project) {
-            projectRoot = true;
-            logger.info("-------------------------------------------------------------------------------------------");
-            logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
-            logger.trace("Project: ");
-            logger.trace(project);
-            if (settings.pull) {
-                /*
-                logger.info("Doing git pull to get the latest before scanning this dir.");
-                var git = new Git(dir);
-                git.pull();
-                */
-            }
+    newProject = ProjectFactory(dir, settings);
+    if (newProject) {
+        project = newProject;
+        projectRoot = true;
+        logger.info("-------------------------------------------------------------------------------------------");
+        logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
+        logger.trace("Project: ");
+        logger.trace(project);
+        if (settings.pull) {
+            /*
+            logger.info("Doing git pull to get the latest before scanning this dir.");
+            var git = new Git(dir);
+            git.pull();
+            */
+        }
 
-            projectQueue.enqueue(project);
+        projectQueue.enqueue(project);
 
-            if (project.options && project.options.includes) {
-                project.options.includes.forEach(function(p) {
-                    if (fs.existsSync(p)) {
-                        var stat = fs.statSync(p);
-                        if (stat && stat.isDirectory()) {
-                            logger.info(p);
-                            walk(p, project);
-                        } else {
-                            project.addPath(p);
-                        }
+        if (project.options && project.options.includes) {
+            project.options.includes.forEach(function(p) {
+                if (fs.existsSync(p)) {
+                    var stat = fs.statSync(p);
+                    if (stat && stat.isDirectory()) {
+                        logger.info(p);
+                        walk(p, project);
                     } else {
-                        logger.warn("File " + p + " which is listed in the includes in the project.json does not exist any more.");
+                        project.addPath(p);
                     }
-                });
-            }
+                } else {
+                    logger.warn("File " + p + " which is listed in the includes in the project.json does not exist any more.");
+                }
+            });
         }
     }
 
@@ -365,6 +364,11 @@ function walk(dir, project) {
             logger.trace("Excluded.");
         }
     });
+
+    if (projectRoot) {
+        logger.info('Project "' + project.options.name + '" is done.');
+        logger.info("-------------------------------------------------------------------------------------------");
+    }
 
     return results;
 }
