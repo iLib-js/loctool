@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 012
+-------
+
+Published as version 2.7.2
+
+Bug Fixes:
+* Backtracked to opencc 1.0.6 because the current version (1.1.1) does
+not compile properly on ubuntu with node 12+
+
 Build 011
 -------
 
@@ -10,7 +19,6 @@ Bug Fixes:
 * Fixed a bug where xliff files are trying to be created when there was no extracted string.
 * Fixed a bug where the xliff files (extracted + new files) were never generated, even when
 localizeOnly is turned off
-
 * Fixed a bug where self-closed tags like <br/> in markdown files were not handled properly,
 causing exceptions that complained about syntax errors
 
