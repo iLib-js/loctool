@@ -913,6 +913,38 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseInlineCodeByItself: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'This is a test of the inline code system.\n' +
+            '\n' +
+            '`inline code`\n' +
+            '\n' +
+            'Sentence after.');
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        // should not extract the inline code by itself
+        var r = set.getBySource("This is a test of the inline code system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the inline code system.");
+        test.equal(r.getKey(), "r41637229");
+
+        r = set.getBySource("Sentence after.");
+        test.ok(r);
+        test.equal(r.getSource(), "Sentence after.");
+        test.equal(r.getKey(), "r16227039");
+
+        test.done();
+    },
+
     testMarkdownFileParseNonBreakingHTMLTags: function(test) {
         test.expect(5);
 
@@ -1486,6 +1518,142 @@ module.exports.markdown = {
         test.done();
     },
 
+    testMarkdownFileParseTable: function(test) {
+        test.expect(21);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| asdf              | fdsa            |\n" +
+            "| foo               | bar             |\n");
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 6);
+
+        r = set.getBySource("Query description");
+        test.ok(r);
+        test.equal(r.getSource(), "Query description");
+        test.equal(r.getKey(), "r744039504");
+
+        r = set.getBySource("Returns column");
+        test.ok(r);
+        test.equal(r.getSource(), "Returns column");
+        test.equal(r.getKey(), "r595024848");
+
+        var r = set.getBySource("asdf");
+        test.ok(r);
+        test.equal(r.getSource(), "asdf");
+        test.equal(r.getKey(), "r976104267");
+
+        r = set.getBySource("fdsa");
+        test.ok(r);
+        test.equal(r.getSource(), "fdsa");
+        test.equal(r.getKey(), "r486555110");
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "r941132140");
+
+        r = set.getBySource("bar");
+        test.ok(r);
+        test.equal(r.getSource(), "bar");
+        test.equal(r.getKey(), "r755240053");
+
+        test.done();
+    },
+
+    testMarkdownFileParseTableWithInlineCode: function(test) {
+        test.expect(15);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| `asdf`            | `fdsa`          |\n" +
+            "| foo               | bar             |\n");
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 4);
+
+        r = set.getBySource("Query description");
+        test.ok(r);
+        test.equal(r.getSource(), "Query description");
+        test.equal(r.getKey(), "r744039504");
+
+        r = set.getBySource("Returns column");
+        test.ok(r);
+        test.equal(r.getSource(), "Returns column");
+        test.equal(r.getKey(), "r595024848");
+
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "r941132140");
+
+        r = set.getBySource("bar");
+        test.ok(r);
+        test.equal(r.getSource(), "bar");
+        test.equal(r.getKey(), "r755240053");
+
+        test.done();
+    },
+
+    testMarkdownFileParseTableWithInlineCodeAndTextAfterwards: function(test) {
+        test.expect(14);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| `order_by`        | `field_key`     |\n" +
+            "\n" +
+            "## Heading Title\n" +
+            "\n" +
+            "Text body.\n");
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 4);
+
+        r = set.getBySource("Query description");
+        test.ok(r);
+        test.equal(r.getSource(), "Query description");
+        test.equal(r.getKey(), "r744039504");
+
+        r = set.getBySource("Returns column");
+        test.ok(r);
+        test.equal(r.getSource(), "Returns column");
+        test.equal(r.getKey(), "r595024848");
+
+        var r = set.getBySource("Heading Title");
+        test.ok(r);
+        test.equal(r.getSource(), "Heading Title");
+        test.equal(r.getKey(), "r931719890");
+
+        r = set.getBySource("Text body.");
+        test.ok(r);
+        test.equal(r.getSource(), "Text body.");
+        test.equal(r.getKey(), "r443039973");
+
+        test.done();
+    },
+
     testMarkdownFileExtractFile: function(test) {
         test.expect(14);
 
@@ -1831,6 +1999,70 @@ module.exports.markdown = {
 
         test.equal(mf.localizeText(translations, "fr-FR"),
             'Avec cette commande `git rm filename`, vous pouvez supprimer le fichier.\n');
+
+        test.done();
+    },
+
+    
+    testMarkdownFileParseInlineCodeByItself: function(test) {
+        test.expect(9);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            'This is a test of the inline code system.\n' +
+            '\n' +
+            '`inline code`\n' +
+            '\n' +
+            'Sentence after.\n');
+
+        // should not optimize out inline code at the end of strings so that it can be
+        // part of the text that is translated
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r41637229",
+            source: "This is a test of the inline code system.",
+            sourceLocale: "en-US",
+            target: "Ceci est un teste de la systeme 'inline code'.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: "r16227039",
+            source: "Sentence after.",
+            sourceLocale: "en-US",
+            target: "La phrase denier.",
+            targetLocale: "fr-FR",
+            datatype: "markdown"
+        }));
+
+        test.equal(mf.localizeText(translations, "fr-FR"),
+            "Ceci est un teste de la systeme 'inline code'.\n" +
+            '\n' +
+            '`inline code`\n' +
+            '\n' +
+            'La phrase denier.\n');
+
+        test.done();
+
+        var set = mf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 2);
+
+        // should not extract the inline code by itself
+        var r = set.getBySource("This is a test of the inline code system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the inline code system.");
+        test.equal(r.getKey(), "r41637229");
+
+        r = set.getBySource("Sentence after.");
+        test.ok(r);
+        test.equal(r.getSource(), "Sentence after.");
+        test.equal(r.getKey(), "r16227039");
 
         test.done();
     },
@@ -3575,5 +3807,200 @@ module.exports.markdown = {
         test.equal(actual, expected);
 
         test.done();
+    },
+
+    testMarkdownFileLocalizeTable: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| foo               | bar             |\n");
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r744039504',
+            source: 'Query description',
+            target: 'Query description... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r595024848',
+            source: 'Returns column',
+            target: 'Returns column... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r941132140',
+            source: 'foo',
+            target: 'foo... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r755240053',
+            source: 'bar',
+            target: 'bar... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            "|                                 |                              |\n" +
+            "| ------------------------------- | ---------------------------- |\n" +
+            "| Query description... in GERMAN! | Returns column... in GERMAN! |\n" +
+            "| foo... in GERMAN!               | bar... in GERMAN!            |\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+    
+    testMarkdownFileLocalizeTableWithInlineCode: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| `code`            | `more code`     |\n" +
+            "| foo               | bar             |\n");
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r744039504',
+            source: 'Query description',
+            target: 'Query description... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r595024848',
+            source: 'Returns column',
+            target: 'Returns column... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r941132140',
+            source: 'foo',
+            target: 'foo... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r755240053',
+            source: 'bar',
+            target: 'bar... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            "|                                 |                              |\n" +
+            "| ------------------------------- | ---------------------------- |\n" +
+            "| Query description... in GERMAN! | Returns column... in GERMAN! |\n" +
+            "| `code`                          | `more code`                  |\n" +
+            "| foo... in GERMAN!               | bar... in GERMAN!            |\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testMarkdownFileLocalizeTableWithInlineCodeAndTextAfter: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p);
+        test.ok(mf);
+
+        mf.parse(
+            "|                   |                 |\n" +
+            "|-------------------|-----------------|\n" +
+            "| Query description | Returns column  |\n" +
+            "| `code`            | `more code`     |\n" +
+            "\n" +
+            "## Header Title\n" +
+            "\n" +
+            "Body text.\n");
+
+
+        var translations = new TranslationSet();
+
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r744039504',
+            source: 'Query description',
+            target: 'Query description... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r595024848',
+            source: 'Returns column',
+            target: 'Returns column... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r941132140',
+            source: 'Header Title',
+            target: 'Header Title... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+        translations.add(new ResourceString({
+            project: "foo",
+            key: 'r755240053',
+            source: 'Body text.',
+            target: 'Body text... in GERMAN!',
+            targetLocale: "de-DE",
+            datatype: "markdown"
+        }));
+
+        var actual = mf.localizeText(translations, "de-DE");
+
+        var expected =
+            "|                                 |                              |\n" +
+            "| ------------------------------- | ---------------------------- |\n" +
+            "| Query description... in GERMAN! | Returns column... in GERMAN! |\n" +
+            "| `code`                          | `more code`                  |\n" +
+            "\n" +
+            "## Header Title... in GERMAN!\n" +
+            "\n" +
+            "Body text... in GERMAN!\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
     }
+
 };
