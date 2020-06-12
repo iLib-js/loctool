@@ -22,13 +22,11 @@
  */
 var fs = require('fs');
 var path = require('path');
-var util = require('util');
 var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
-var TranslationSet = require("./lib/TranslationSet.js");
 var Xliff = require("./lib/Xliff.js");
 
 
