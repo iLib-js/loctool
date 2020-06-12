@@ -1611,7 +1611,7 @@ module.exports.markdown = {
     },
 
     testMarkdownFileParseTableWithInlineCodeAndTextAfterwards: function(test) {
-        test.expect(14);
+        test.expect(15);
 
         var mf = new MarkdownFile(p);
         test.ok(mf);
@@ -2004,8 +2004,8 @@ module.exports.markdown = {
     },
 
     
-    testMarkdownFileParseInlineCodeByItself: function(test) {
-        test.expect(9);
+    testMarkdownFileLocalizeInlineCodeByItself: function(test) {
+        test.expect(2);
 
         var mf = new MarkdownFile(p);
         test.ok(mf);
@@ -2045,24 +2045,6 @@ module.exports.markdown = {
             '`inline code`\n' +
             '\n' +
             'La phrase denier.\n');
-
-        test.done();
-
-        var set = mf.getTranslationSet();
-        test.ok(set);
-
-        test.equal(set.size(), 2);
-
-        // should not extract the inline code by itself
-        var r = set.getBySource("This is a test of the inline code system.");
-        test.ok(r);
-        test.equal(r.getSource(), "This is a test of the inline code system.");
-        test.equal(r.getKey(), "r41637229");
-
-        r = set.getBySource("Sentence after.");
-        test.ok(r);
-        test.equal(r.getSource(), "Sentence after.");
-        test.equal(r.getKey(), "r16227039");
 
         test.done();
     },
@@ -3970,7 +3952,7 @@ module.exports.markdown = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r941132140',
+            key: 'r1037333769',
             source: 'Header Title',
             target: 'Header Title... in GERMAN!',
             targetLocale: "de-DE",
@@ -3978,7 +3960,7 @@ module.exports.markdown = {
         }));
         translations.add(new ResourceString({
             project: "foo",
-            key: 'r755240053',
+            key: 'r521829558',
             source: 'Body text.',
             target: 'Body text... in GERMAN!',
             targetLocale: "de-DE",
