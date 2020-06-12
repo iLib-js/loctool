@@ -2003,7 +2003,7 @@ module.exports.markdown = {
         test.done();
     },
 
-    
+
     testMarkdownFileLocalizeInlineCodeByItself: function(test) {
         test.expect(2);
 
@@ -3851,7 +3851,7 @@ module.exports.markdown = {
 
         test.done();
     },
-    
+
     testMarkdownFileLocalizeTableWithInlineCode: function(test) {
         test.expect(2);
 

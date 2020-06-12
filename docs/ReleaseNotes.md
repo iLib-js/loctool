@@ -185,7 +185,7 @@ Bug Fixes:
 * Many file types were not producing any translated output for the generated pseudo locales.
   Now they do!
 * If you had loctool install in the global node modules, and your loctool plugin installed in your
-  project's node modules, it was not finding and loading that plugin. Now loctool will check the 
+  project's node modules, it was not finding and loading that plugin. Now loctool will check the
   loctool directory, the current project, and the ../plugins directory for plugins.
 
 Build 003
