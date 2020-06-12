@@ -9,6 +9,10 @@ Published as version 2.7.2
 Bug Fixes:
 * Backtracked to opencc 1.0.6 because the current version (1.1.1) does
 not compile properly on ubuntu with node 12+
+* Fixed the parsing and localization of text in table cells
+* Fixed the parsing and localization of inline code that is the only part of a localizable
+segment. Inline code is only translatable when it is part of a larger localizable piece of
+text, not when it is by itself.
 
 Build 011
 -------
