@@ -1,6 +1,19 @@
 Release Notes for Version 2
 ============================
 
+Build 012
+-------
+
+Published as version 2.7.2
+
+Bug Fixes:
+* Backtracked to opencc 1.0.6 because the current version (1.1.1) does
+not compile properly on ubuntu with node 12+
+* Fixed the parsing and localization of text in table cells
+* Fixed the parsing and localization of inline code that is the only part of a localizable
+segment. Inline code is only translatable when it is part of a larger localizable piece of
+text, not when it is by itself.
+
 Build 011
 -------
 
@@ -10,7 +23,6 @@ Bug Fixes:
 * Fixed a bug where xliff files are trying to be created when there was no extracted string.
 * Fixed a bug where the xliff files (extracted + new files) were never generated, even when
 localizeOnly is turned off
-
 * Fixed a bug where self-closed tags like <br/> in markdown files were not handled properly,
 causing exceptions that complained about syntax errors
 
@@ -173,7 +185,7 @@ Bug Fixes:
 * Many file types were not producing any translated output for the generated pseudo locales.
   Now they do!
 * If you had loctool install in the global node modules, and your loctool plugin installed in your
-  project's node modules, it was not finding and loading that plugin. Now loctool will check the 
+  project's node modules, it was not finding and loading that plugin. Now loctool will check the
   loctool directory, the current project, and the ../plugins directory for plugins.
 
 Build 003
