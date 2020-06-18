@@ -3977,7 +3977,7 @@ module.exports.markdown = {
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
 
-        var mf = new MarkdownFile(p2, "./notrans.md");
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
         test.ok(mf);
 
         // should read the file
@@ -4043,7 +4043,7 @@ module.exports.markdown = {
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
 
-        var mf = new MarkdownFile(p2, "./notrans.md");
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
         test.ok(mf);
 
         // should read the file
@@ -4077,7 +4077,7 @@ module.exports.markdown = {
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
 
-        var mf = new MarkdownFile(p2, "./notrans.md");
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
         test.ok(mf);
 
         // should read the file
