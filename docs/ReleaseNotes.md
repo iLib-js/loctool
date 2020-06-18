@@ -1,6 +1,18 @@
 Release Notes for Version 2
 ============================
 
+Build 013
+-------
+
+Published as version 2.8.0
+
+New Features:
+- added a "fullyTranslated" setting for the markdown code. This makes sure that if a
+  file does not have all of its translations, then that file is produced in the source
+  language.
+    - Also produces a file in the project root called `translation-status.json`
+      that details which files were fully translated and which were not
+
 Build 012
 -------
 
