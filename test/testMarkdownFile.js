@@ -2815,7 +2815,7 @@ module.exports.markdown = {
     testMarkdownFileLocalizeFile: function(test) {
         test.expect(5);
 
-        var mf = new MarkdownFile(p, "./md/test1.md");
+        var mf = new MarkdownFile(p, "./md/test1.md", mdft);
         test.ok(mf);
 
         // should read the file
@@ -2981,7 +2981,7 @@ module.exports.markdown = {
     testMarkdownFileLocalizeFileWithFrontMatter: function(test) {
         test.expect(5);
 
-        var mf = new MarkdownFile(p, "./md/test3.md");
+        var mf = new MarkdownFile(p, "./md/test3.md", mdft);
         test.ok(mf);
 
         // should read the file
@@ -3101,7 +3101,7 @@ module.exports.markdown = {
     testMarkdownFileLocalizeNoStrings: function(test) {
         test.expect(3);
 
-        var mf = new MarkdownFile(p, "./md/nostrings.md");
+        var mf = new MarkdownFile(p, "./md/nostrings.md", mdft);
         test.ok(mf);
 
         // should read the file
@@ -3976,8 +3976,8 @@ module.exports.markdown = {
 
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
-
-        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
+        var mdft2 = new MarkdownFileType(p2);
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         test.ok(mf);
 
         // should read the file
@@ -4042,8 +4042,8 @@ module.exports.markdown = {
 
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
-
-        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
+        var mdft2 = new MarkdownFileType(p2);
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         test.ok(mf);
 
         // should read the file
@@ -4076,8 +4076,8 @@ module.exports.markdown = {
 
         // this subproject has the "fullyTranslated" flag set to true
         var p2 = ProjectFactory("./testfiles/md/subproject", {});
-
-        var mf = new MarkdownFile(p2, "./notrans.md", mdft);
+        var mdft2 = new MarkdownFileType(p2);
+        var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         test.ok(mf);
 
         // should read the file
