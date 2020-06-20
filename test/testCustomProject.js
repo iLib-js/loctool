@@ -177,7 +177,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.flavors);
+        test.ok(p.flavorList);
 
         test.done();
     },
@@ -194,8 +194,8 @@ module.exports.customproject = {
         });
 
         test.ok(p);
-        test.ok(p.flavors);
-        test.deepEqual(p.flavors, ["VANILLA", "CHOCOLATE"]);
+        test.ok(p.flavorList);
+        test.deepEqual(p.flavorList, ["VANILLA", "CHOCOLATE"]);
 
         test.done();
     },
@@ -375,5 +375,24 @@ module.exports.customproject = {
         test.ok(p.isResourcePath("yml", "d/e/f"));
 
         test.done();
+    },
+
+    testCustomProjectLoadAndroidFlavors: function(test) {
+        test.expect(3);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US",
+            plugins: ["ilib-loctool-mock"]
+        }, "./testfiles", {
+            locales:["en-GB"],
+            "build.gradle": "build1.gradle"
+        });
+        test.ok(p);
+        p.init(function() {
+            test.ok(p.flavors);
+            test.ok(p.flavors.getFlavorForPath("flavors/bproj/res"), "chocolate");
+            test.done();
+        });
     }
 };

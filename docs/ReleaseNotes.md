@@ -12,6 +12,8 @@ New Features:
   language.
     - Also produces a file in the project root called `translation-status.json`
       that details which files were fully translated and which were not
+Bug Fixes:
+- Fix a problem with custom projects not loading Android flavors properly
 
 Build 012
 -------
