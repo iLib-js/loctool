@@ -19,7 +19,7 @@ node_js:
 compiler:
   - gcc
 install:
-  - rm -rf node_modules
+  - rm -rf node_modules package-lock.json
   - npm install
 script:
   - NODE=$(dirname $(dirname $(which node)))
