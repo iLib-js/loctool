@@ -15,6 +15,12 @@ New Features:
 Bug Fixes:
 - Fix a problem with custom projects not loading Android flavors properly
 
+Bug Fixes:
+- Loctool was not properly processing subprojects found while walking the tree.
+    - didn't put all the output to target dir, which meant it didn't go
+      into the subproject's directories, but into dirs that were relative
+      to the root project instead
+
 Build 012
 -------
 
