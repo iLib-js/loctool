@@ -123,5 +123,46 @@ module.exports.project = {
             });
         });
         test.done();
+    },
+    
+    testProjectIsResourcePathYes: function(test){
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(project.isResourcePath("js", "testfiles/public/localized_js/file.js"));
+
+        test.done();
+    },
+    testProjectIsResourcePathNo: function(test){
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(!project.isResourcePath("js", "testfiles/public/file.js"));
+
+        test.done();
+    },
+    testProjectIsResourcePathNoTargetPath: function(test){
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(!project.isResourcePath("js", "public/localized_js/file.js"));
+
+        test.done();
+    },
+    testProjectIsResourcePathSubpath: function(test){
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(project.isResourcePath("js", "testfiles/public/localized_js/zh/Hant/TW/file.js"));
+
+        test.done();
+    },
+    testProjectIsResourcePathAnyFileName: function(test){
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(project.isResourcePath("js", "testfiles/public/localized_js/resources.json"));
+
+        test.done();
     }
 };
