@@ -48,8 +48,7 @@ var p = new WebProject({
     id: "foo",
     sourceLocale: "en-US"
 }, "./testfiles", {
-    locales:["en-GB"],
-    targetDir: "testfiles"
+    locales:["en-GB"]
 });
 
 var mdft = new MarkdownFileType(p);

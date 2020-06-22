@@ -42,6 +42,8 @@ function diff(a, b) {
     }
 }
 
+var base = path.dirname(module.id);
+
 module.exports.htmlfile = {
     testHTMLFileConstructor: function(test) {
         test.expect(1);
@@ -1219,8 +1221,6 @@ module.exports.htmlfile = {
 
     testHTMLFileExtractFile: function(test) {
         test.expect(11);
-
-        var base = path.dirname(module.id);
 
         var p = new WebProject({
             sourceLocale: "en-US"
@@ -2428,8 +2428,7 @@ module.exports.htmlfile = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"],
-            targetDir: "testfiles"
+            locales:["en-GB"]
         });
 
         var htf = new HTMLFile(p, "./html/CookieFlow.html");
@@ -2574,8 +2573,7 @@ module.exports.htmlfile = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"],
-            targetDir: "testfiles"
+            locales:["en-GB"]
         });
 
         var htf = new HTMLFile(p, "./html/nostrings.html");
