@@ -2792,8 +2792,7 @@ module.exports.htmltemplatefile = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"],
-            targetDir: "testfiles"
+            locales:["en-GB"]
         });
 
         var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowTemplate.tmpl.html");
@@ -2968,8 +2967,7 @@ module.exports.htmltemplatefile = {
             id: "webapp",
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
-            locales:["en-GB"],
-            targetDir: "testfiles"
+            locales:["en-GB"]
         });
 
         var htf = new HTMLTemplateFile(p, "./tmpl/nostrings.tmpl.html");
