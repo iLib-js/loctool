@@ -12,10 +12,9 @@ New Features:
   language.
     - Also produces a file in the project root called `translation-status.json`
       that details which files were fully translated and which were not
-Bug Fixes:
-- Fix a problem with custom projects not loading Android flavors properly
 
 Bug Fixes:
+- Fix a problem with custom projects not loading Android flavors properly
 - Loctool was not properly processing subprojects found while walking the tree.
     - didn't put all the output to target dir, which meant it didn't go
       into the subproject's directories, but into dirs that were relative
