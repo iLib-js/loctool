@@ -1,6 +1,25 @@
 Release Notes for Version 2
 ============================
 
+Build 013
+-------
+
+Published as version 2.8.0
+
+New Features:
+- added a "fullyTranslated" setting for the markdown code. This makes sure that if a
+  file does not have all of its translations, then that file is produced in the source
+  language.
+    - Also produces a file in the project root called `translation-status.json`
+      that details which files were fully translated and which were not
+
+Bug Fixes:
+- Fix a problem with custom projects not loading Android flavors properly
+- Loctool was not properly processing subprojects found while walking the tree.
+    - didn't put all the output to target dir, which meant it didn't go
+      into the subproject's directories, but into dirs that were relative
+      to the root project instead
+
 Build 012
 -------
 

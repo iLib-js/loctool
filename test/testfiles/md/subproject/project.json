@@ -1,0 +1,22 @@
+{
+    "name": "Loctool Test",
+    "id": "loctest2",
+    "projectType": "web",
+    "pseudoLocale": "de-DE",
+    "resourceDirs": {
+        "yml": "config/locales",
+        "js": "public/localized_js"
+    },
+    "schema": "./appinfo.schema.json",
+    "excludes": [
+    ],
+    "includes": [
+        "config/notifications.yml"
+    ],
+    "settings": {
+        "locales": ["en-GB", "es-US", "zh-Hans-CN"],
+        "markdown": {
+            "fullyTranslated": true
+        }
+    }
+}

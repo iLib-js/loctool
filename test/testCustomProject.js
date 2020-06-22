@@ -1,7 +1,7 @@
 /*
  * testCustomProject.js - test the Custom Project class.
  *
- * Copyright © 2019, JEDLSoft
+ * Copyright © 2019-2020, JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -177,7 +177,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.flavors);
+        test.ok(p.flavorList);
 
         test.done();
     },
@@ -194,8 +194,8 @@ module.exports.customproject = {
         });
 
         test.ok(p);
-        test.ok(p.flavors);
-        test.deepEqual(p.flavors, ["VANILLA", "CHOCOLATE"]);
+        test.ok(p.flavorList);
+        test.deepEqual(p.flavorList, ["VANILLA", "CHOCOLATE"]);
 
         test.done();
     },
@@ -292,7 +292,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "a/b/c/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/a/b/c/x.yml"));
 
         test.done();
     },
@@ -312,7 +312,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(!p.isResourcePath("yml", "a/c/x.yml"));
+        test.ok(!p.isResourcePath("yml", "testfiles/a/c/x.yml"));
 
         test.done();
     },
@@ -332,7 +332,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f/x.yml"));
 
         test.done();
     },
@@ -352,7 +352,7 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f/m/n/o/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f/m/n/o/x.yml"));
 
         test.done();
     },
@@ -372,8 +372,27 @@ module.exports.customproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f"));
 
         test.done();
+    },
+
+    testCustomProjectLoadAndroidFlavors: function(test) {
+        test.expect(3);
+
+        var p = new CustomProject({
+            id: "custom",
+            sourceLocale: "en-US",
+            plugins: ["ilib-loctool-mock"]
+        }, "./testfiles", {
+            locales:["en-GB"],
+            "build.gradle": "build1.gradle"
+        });
+        test.ok(p);
+        p.init(function() {
+            test.ok(p.flavors);
+            test.ok(p.flavors.getFlavorForPath("flavors/bproj/res"), "chocolate");
+            test.done();
+        });
     }
 };

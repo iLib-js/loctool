@@ -1,7 +1,7 @@
 /*
  * testWebProject.js - test the Web Project class.
  *
- * Copyright © 2017, HealthTap, Inc.
+ * Copyright © 2017, 2020 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -205,7 +205,7 @@ module.exports.webproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "a/b/c/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/a/b/c/x.yml"));
 
         test.done();
     },
@@ -225,7 +225,7 @@ module.exports.webproject = {
 
         test.ok(p);
 
-        test.ok(!p.isResourcePath("yml", "a/c/x.yml"));
+        test.ok(!p.isResourcePath("yml", "testfiles/a/c/x.yml"));
 
         test.done();
     },
@@ -245,7 +245,7 @@ module.exports.webproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f/x.yml"));
 
         test.done();
     },
@@ -265,7 +265,7 @@ module.exports.webproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f/m/n/o/x.yml"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f/m/n/o/x.yml"));
 
         test.done();
     },
@@ -285,7 +285,7 @@ module.exports.webproject = {
 
         test.ok(p);
 
-        test.ok(p.isResourcePath("yml", "d/e/f"));
+        test.ok(p.isResourcePath("yml", "testfiles/d/e/f"));
 
         test.done();
     }
