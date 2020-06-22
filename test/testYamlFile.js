@@ -48,7 +48,6 @@ var p = new WebProject({
 }, "./testfiles", {
     locales:["en-GB"],
     nopseudo: true,
-    targetDir: "testfiles",
     flavors: ["CHOCOLATE", "VANILLA"]
 });
 
