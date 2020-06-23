@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 014
+-------
+
+Published as version 2.8.1
+
+Bug Fixes:
+- Fix a problem where the MarkdownFileType was producing the translation-status.json file
+  even when the fullyTranslated option is not turned on. If it is not turned on, it is not
+  useful anyways so don't produce it.
+
 Build 013
 -------
 
