@@ -16,7 +16,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-var path = require('path');
 
 if (!LocalRepository) {
     var LocalRepository = require("../lib/LocalRepository.js");
@@ -101,7 +100,7 @@ module.exports.localrepository = {
 
         var repo = new LocalRepository({
             sourceLocale: "en-US",
-            xliffsDir: path.join(process.env.PWD, "./testfiles/xliffs")
+            xliffsDir: "./testfiles/xliffs"
         });
 
         test.ok(repo);
