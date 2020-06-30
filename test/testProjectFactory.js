@@ -4,6 +4,8 @@
  * Copyright © 2017, 2020 Healthtap, Inc. All Rights Reserved.
  */
 
+ var path = require('path');
+
 if (!ProjectFactory) {
     var ProjectFactory= require("../lib/ProjectFactory.js");
 }
@@ -109,6 +111,26 @@ module.exports.projectfactory = {
         test.ok(project);
         // should be relative to the root of the project
         test.equal(project.xliffsOut, 'testfiles/blah');
+        test.done();
+    },
+
+    testProjectFactoryAbsolutePathXliffsDir: function(test){
+        test.expect(2);
+        var xliffAbslutePath = path.join(process.env.PWD, 'asdf')
+        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsDir': xliffAbslutePath});
+        test.ok(project);
+        // should be relative to the root of the project
+        test.equal(project.xliffsDir, path.join(process.env.PWD, 'asdf'));
+        test.done();
+    },
+
+    testProjectFactoryAbsolutePathxliffsOut: function(test){
+        test.expect(2);
+        var xliffAbslutePath = path.join(process.env.PWD, 'blah')
+        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsOut': xliffAbslutePath});
+        test.ok(project);
+        // should be relative to the root of the project
+        test.equal(project.xliffsOut, path.join(process.env.PWD, 'blah'));
         test.done();
     }
 
