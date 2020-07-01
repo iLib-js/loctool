@@ -110,6 +110,36 @@ module.exports.projectfactory = {
         // should be relative to the root of the project
         test.equal(project.xliffsOut, 'testfiles/blah');
         test.done();
+    },
+
+    testProjectFactoryAbsolutePathTargetDir: function(test){
+        test.expect(2);
+        var targetAbsolutePath = '/foo/asdf';
+        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'targetDir': targetAbsolutePath});
+        test.ok(project);
+        // should be relative to the root of the project
+        test.equal(project.target, '/foo/asdf');
+        test.done();
+    },
+
+    testProjectFactoryAbsolutePathXliffsDir: function(test){
+        test.expect(2);
+        var xliffAbsolutePath = '/foo/asdf';
+        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsDir': xliffAbsolutePath});
+        test.ok(project);
+        // should be relative to the root of the project
+        test.equal(project.xliffsDir, '/foo/asdf');
+        test.done();
+    },
+
+    testProjectFactoryAbsolutePathxliffsOut: function(test){
+        test.expect(2);
+        var xliffAbsolutePath = '/foo/asdf';
+        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsOut': xliffAbsolutePath});
+        test.ok(project);
+        // should be relative to the root of the project
+        test.equal(project.xliffsOut, '/foo/asdf');
+        test.done();
     }
 
 };

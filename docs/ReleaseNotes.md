@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 015
+-------
+
+Published as version 2.8.2
+
+Bug Fixes:
+- Fix a problem where the xliff path is incorrectly converted when the path is absolute.
+
+
 Build 014
 -------
 
