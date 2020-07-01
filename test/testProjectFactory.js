@@ -4,8 +4,6 @@
  * Copyright © 2017, 2020 Healthtap, Inc. All Rights Reserved.
  */
 
- var path = require('path');
-
 if (!ProjectFactory) {
     var ProjectFactory= require("../lib/ProjectFactory.js");
 }
