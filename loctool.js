@@ -29,7 +29,7 @@ var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var Xliff = require("./lib/Xliff.js");
-
+var GenerateResource = require("./lib/GenerateResource.js");
 
 // var Git = require("simple-git");
 
@@ -236,6 +236,8 @@ case "merge":
     settings.outfile = options[3]
     settings.infiles = options.slice(4);
     break;
+case "generate":
+    settings.xliffsDir = options[3];
 }
 
 logger.info("loctool - extract strings from source code.\n");
@@ -506,6 +508,13 @@ try {
         });
 
         fs.writeFileSync(target.getPath(), target.serialize(), "utf-8");
+        break;
+
+    case "generate":
+        //settings.xliffVersion = 2;
+        var path = settings.xliffsDir;
+        var genResource = new GenerateResource();
+        genResource.init(path);
         break;
     }
 
