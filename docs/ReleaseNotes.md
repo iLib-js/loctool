@@ -7,7 +7,8 @@ Build 015
 Published as version 2.8.2
 
 Bug Fixes:
-- Fix a problem where the xliff path is incorrectly converted when the path is absolute.
+- Fixed a problem where the xliff path is incorrectly converted when the path is absolute.
+- Added a condition not to see a warning message when xliff file is loading.
 
 
 Build 014
