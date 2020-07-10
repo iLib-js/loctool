@@ -83,7 +83,13 @@ function usage() {
         "  Specify the dir where the xliffs files live. Default: \".\"\n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
+        "--xliffResRoot\n" +
+        "  Specify the dir where the xliffs resource generation output (Default is resources/) live.. \n" +
+        "--xliffResName\n" +
+        "  Specify the resource filename from xliff resource generation (Default is strings.json/) live.. \n" +
         "command\n" +
+        "--generateFilename\n" +
+        "  . \n" +
         "  a command to execute. This is one of:\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
         "             files. This is the default command. Default root dir name is '.'\n" +
@@ -96,6 +102,7 @@ function usage() {
         "             language or project.\n" +
         "    merge outfile filename ... - merge the given xliff files to the named\n" +
         "             outfile.\n" +
+        "    generate -x [xliffPath] --xliffResRoot [path] --xliffResName [filename] ... - " +
         "root dir\n" +
         "  directory containing the git projects with the source code. \n" +
         "  Default: current dir.\n");
@@ -178,6 +185,10 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
+    } else if (val === "--xliffResRoot") {
+        settings.xliffResRoot = argv[++i];
+    } else if (val === "--xliffResName") {
+        settings.xliffResName = argv[++i];
     }
     else {
         options.push(val);
@@ -233,8 +244,6 @@ case "merge":
     settings.outfile = options[3]
     settings.infiles = options.slice(4);
     break;
-case "generate":
-    settings.xliffsDir = options[3];
 }
 
 logger.info("loctool - extract strings from source code.\n");
@@ -457,10 +466,12 @@ try {
         break;
 
     case "generate":
-        //settings.xliffVersion = 2;
-        var path = settings.xliffsDir;
-        var genResource = new GenerateResource();
-        genResource.init(path);
+        var genResource = new GenerateResource({
+            xliffsDir: settings.xliffsDir,
+            resPath: settings.xliffResRoot,
+            resName: settings.xliffResName
+        });
+        genResource.init();
         break;
     }
 

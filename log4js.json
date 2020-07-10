@@ -49,6 +49,10 @@
 			"appenders": [ "default" ],
 			"level": "info"
 		},
+		"loctool.lib.GenerateResource": {
+			"appenders": [ "default" ],
+			"level": "info"
+		},
         "loctool.lib.HamlFile": {
 			"appenders": [ "default" ],
 			"level": "info"
