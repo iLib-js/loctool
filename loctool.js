@@ -468,7 +468,7 @@ try {
     case "generate":
         var genResource = new GenerateResource({
             xliffsDir: settings.xliffsDir,
-            resPath: settings.xliffResRoot,
+            resRoot: settings.xliffResRoot,
             resName: settings.xliffResName
         });
         genResource.init();
