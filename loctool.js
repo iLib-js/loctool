@@ -519,6 +519,7 @@ try {
 
     case "generate":
         var genResource = new GenerateResource({
+            targetDir: settings.targetDir,
             xliffsDir: settings.xliffsDir,
             resRoot: settings.xliffResRoot,
             resName: settings.xliffResName
