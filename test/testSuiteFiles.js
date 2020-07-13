@@ -29,6 +29,7 @@ module.exports.files = [
 //    "testCSV.js",
 //    "testCSVFile.js",
 //    "testDBTranslationSet.js",
+    "testGenerateResource.js",
     "testHTMLFile.js",
     "testHTMLFileType.js",
     "testHTMLTemplateFile.js",
