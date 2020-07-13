@@ -88,8 +88,6 @@ function usage() {
         "--xliffResName\n" +
         "  Specify the resource filename from xliff resource generation (Default is strings.json/) live.. \n" +
         "command\n" +
-        "--generateFilename\n" +
-        "  . \n" +
         "  a command to execute. This is one of:\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
         "             files. This is the default command. Default root dir name is '.'\n" +
