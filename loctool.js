@@ -89,8 +89,6 @@ function usage() {
         "--xliffResName\n" +
         "  Specify the resource filename from xliff resource generation (Default is strings.json/) live.. \n" +
         "command\n" +
-        "--generateFilename\n" +
-        "  . \n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
         "             and write out a project.json file.\n" +
