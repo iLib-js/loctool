@@ -28,7 +28,6 @@ var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var Xliff = require("./lib/Xliff.js");
-var GenerateResource = require("./lib/GenerateResource.js");
 
 // var Git = require("simple-git");
 
@@ -84,9 +83,9 @@ function usage() {
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "--xliffResRoot\n" +
-        "  Specify the dir where the xliffs resource generation output (Default is resources/) live.. \n" +
+        "  Specify the dir where the generation output should go. (Default is resources/) \n" +
         "--xliffResName\n" +
-        "  Specify the resource filename from xliff resource generation (Default is strings.json/) live.. \n" +
+        "  Specify the resource filename used during resource file generation. (Default is strings.json/ \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -464,14 +463,19 @@ try {
         break;
 
     case "generate":
-        var genResource = new GenerateResource({
-            targetDir: settings.targetDir,
-            xliffsDir: settings.xliffsDir,
-            resRoot: settings.xliffResRoot,
-            resName: settings.xliffResName
-        });
-        genResource.init();
-        break;
+        var project = ProjectFactory(".", settings);
+        if (project) {
+            project.init(function() {
+                project.generateResource(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            logger.info("Processing generate mode is done.");
+                        });
+                    });
+                });
+            });
+        };
+       break;
     }
 
 } catch (e) {
