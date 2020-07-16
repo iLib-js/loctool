@@ -17,8 +17,18 @@
  * limitations under the License.
  */
 
+var fs = require('fs');
 if (!GenerateResource) {
-    var GenerateResource = require("../lib/GenerateResource.js");  
+    var GenerateResource = require("../lib/GenerateResource.js");
+}
+if (!ProjectFactory) {
+    var ProjectFactory = require("../lib/ProjectFactory.js");
+}
+
+function rmrf(path) {
+    if (fs.existsSync(path)) {
+        fs.unlinkSync(path);
+    }
 }
 
 module.exports.genresource = {
@@ -68,17 +78,37 @@ module.exports.genresource = {
         test.done();
     },
     testGenerateResourceSetParams2: function(test) {
-        test.expect(4);
+        test.expect(5);
 
         var genres = new GenerateResource({
             xliffsDir: "./testfiles/xliff20"
-         });
+        });
+
         test.ok(genres);
         genres.init();
         test.equal(genres.getXliffsDir(), "./testfiles/xliff20");
         test.equal(genres.getResourceFilePath("ko-KR"), "resources/ko/strings.json");
+        test.ok(!fs.existsSync("./testfiles/ko/strings.json"));
         test.equal(genres.getResSize(), 2);
 
         test.done();
     },
+    testGenerateResourceGenerate: function(test) {
+        test.expect(4);
+
+        rmrf("./testfiles/ko/strings.json");
+        test.ok(!fs.existsSync("./testfiles/ko/strings.json"));
+
+        var genres = new GenerateResource({
+            xliffsDir: "./testfiles/xliff20",
+            resRoot: "./testfiles"
+         });
+        test.ok(genres);
+        genres.init();
+        genres.generate();
+        test.equal(genres.getResourceFilePath("ko-KR"), "testfiles/ko/strings.json");
+        test.ok(fs.existsSync("./testfiles/ko/strings.json"));
+        rmrf("./testfiles/ko/strings.json");
+        test.done();
+    }
 };
