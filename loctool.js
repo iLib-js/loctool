@@ -86,8 +86,8 @@ function usage() {
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
-		"    init  [project-name] - initialize the current directory as a loctool project\n" +
-		"             and write out a project.json file.\n" +
+        "    init  [project-name] - initialize the current directory as a loctool project\n" +
+        "             and write out a project.json file.\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
         "             files. This is the default command. Default root dir name is '.'\n" +
         "    report - generate a loc report, but don't generate localized resource files.\n" +
