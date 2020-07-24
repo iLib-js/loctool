@@ -22,6 +22,7 @@
  */
 var fs = require('fs');
 var path = require('path');
+var readline = require("readline-sync");
 var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
@@ -40,7 +41,7 @@ var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
-    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019, HealthTap, Inc. and JEDLSoft";
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2020, HealthTap, Inc. and JEDLSoft";
 }
 
 function usage() {
@@ -85,6 +86,8 @@ function usage() {
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
+		"    init  [project-name] - initialize the current directory as a loctool project\n" +
+		"             and write out a project.json file.\n" +
         "    localize [root-dir-name] - extract strings and generate localized resource\n" +
         "             files. This is the default command. Default root dir name is '.'\n" +
         "    report - generate a loc report, but don't generate localized resource files.\n" +
@@ -373,8 +376,59 @@ function walk(dir, project) {
     return results;
 }
 
+function collectInfo() {
+    console.log(getVersion());
+    console.log("Project Initialize");
+
+    var settings = {
+        rootDir: '.',
+        pseudoLocale: "zxx-XX"
+    };
+
+    var answer = readline.question('Full name of this project: ');
+    settings.name = answer;
+    settings.id = answer;
+
+    answer = readline.question('Type of this project (web, swift, iosobjc, android, custom) [custom]: ');
+    switch (answer) {
+        case 'web':
+        case 'swift':
+        case 'iosobjc':
+        case 'android':
+            settings.projectType = answer;
+            break;
+        default:
+        case 'custom':
+            settings.projectType = 'custom';
+            settings.plugins = [
+                "javascript",
+                "javascript-resource",
+                "ghfm"
+            ];
+            settings.resourceDirs = {
+                "javascript": "target",
+                "md": "target"
+            };
+            break;
+    }
+
+    answer = readline.question('Source locale [en-US]: ');
+    settings.sourceLocale = answer || "en-US";
+
+    return settings;
+}
+
 try {
     switch (command) {
+    case "init":
+        var info = collectInfo();
+        var project = ProjectFactory.newProject(info);
+        var config = project.getConfig(info);
+        var outputFile = path.join(settings.rootDir, "project.json");
+        fs.writeFileSync(outputFile, JSON.stringify(config, undefined, 4) + '\n', "utf-8");
+        logger.info("Wrote file " + outputFile);
+        break;
+
     case "localize":
         walk(settings.rootDir, undefined);
         processNextProject();

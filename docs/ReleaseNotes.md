@@ -4,7 +4,11 @@ Release Notes for Version 2
 Build 015
 -------
 
-Published as version 2.8.2
+Published as version 2.9.0
+
+New Features:
+- Add "loctool init" command to generate an initial project.json file that the user can
+  use as a starting framework.
 
 Bug Fixes:
 - Fixed a problem where the xliff path is incorrectly converted when the path is absolute.
