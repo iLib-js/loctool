@@ -61,6 +61,7 @@
     },
     "dependencies": {
         "@babel/core": "^7.10.5",
+        "@babel/preset-env": "^7.10.4",
         "@babel/register": "^7.10.5",
         "build-gradle-reader": "*",
         "he": "^1.2.0",
