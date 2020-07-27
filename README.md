@@ -17,7 +17,8 @@ on your machine and in your path, as this is used to run the code. (Use 7.0 or l
 Once nodejs is installed, you can install the loctool itself. You can either
 get it from npm or from github.com:
 
-1. By npm is simple: `npm install loctool` or to install it globally: `npm install -g loctool`
+1. By npm is simple: `npm install loctool` or to install it globally: `npm install -g loctool`.
+(Alternately, `yarn add loctool`)
 
 1. By github is a little more complicated in that you still need npm to install
 the necessary JS libraries that the loctool depends upon:
@@ -55,35 +56,65 @@ The loctool will recursively search the given directory
 (current dir by default) for project.json files to find the roots of the
 projects. The root of each project will be recursively searched for localizable files.
 
-The project.json file minimally contains the name, id, and projectType
-properties. Here is an example project.json file:
+The easiest way to create a new project.json file for a particular directory is
+to use the `loctool init` command. This will ask you a few questions and generate
+a new project.json file in the current directory. You can use this as a starting
+point for your project, and then edit it to customize any settings.
 
 ```
+> node node_modules/.bin/loctool.js init
+22:52:56 INFO loctool.loctool: loctool - extract strings from source code.
+
+22:52:56 INFO loctool.loctool: Command: init
+loctool v2.8.2 Copyright (c) 2016-2017, 2019-2020, HealthTap, Inc. and JEDLSoft
+Project Initialize
+Full name of this project: myproject
+Type of this project (web, swift, iosobjc, android, custom) [custom]:
+Source locale [en-US]:
+22:52:57 INFO loctool.loctool: Wrote file project.json
+22:52:57 INFO loctool.loctool: Done
+> cat project.json
 {
-    "name": "Android App",
-    "id": "myandroidapp",
-    "projectType": "android",
-    "pseudoLocale": "de",
+    "name": "myproject",
+    "id": "myproject",
+    "sourceLocale": "en-US",
+    "pseudoLocale": "zxx-XX",
     "resourceDirs": {
-        "java": "./res"
+        "javascript": "target",
+        "md": "target"
     },
+    "includes": [],
     "excludes": [
-        "./.git",
-        "./assets",
-        "./bin",
-        "./libs",
-        "./script/**/*.sh",
-        "public",
-        "./classes"
+        ".git",
+        ".github",
+        "test",
+        "node_modules"
     ],
-    "includes: [
-        "public/**/*.html"
-    ],
-    settings: {
-        locales: ["es-ES", "de-DE", "fr-FR"]
-    }
+    "settings": {
+        "locales": [
+            "en-GB",
+            "de-DE",
+            "fr-FR",
+            "it-IT",
+            "es-ES",
+            "pt-BR",
+            "ja-JP",
+            "zh-Hans-CN",
+            "ko-KR"
+        ]
+    },
+    "projectType": "custom",
+    "plugins": [
+        "javascript",
+        "javascript-resource",
+        "ghfm"
+    ]
 }
+>
 ```
+
+The project.json file minimally contains the name, id, and projectType
+properties.
 
 All paths are relative to the root of the project.
 
@@ -109,8 +140,10 @@ All paths are relative to the root of the project.
     excludes. This allows you to exclude an entire directory
     but localize particular files in that directory.
 * settings - other settings which configure this project. The most
-    important of these is "locales", which is an arrary of
+    important of these is "locales", which is an array of
     target locales.
+* plugins - an array of plugins to use that handle various file types
+  in your project
 
 Both the "includes" and "excludes" arrays may contain enhanced glob
 wildcard expressions using the [minimatch syntax](https://github.com/isaacs/minimatch):
@@ -290,6 +323,9 @@ Javascript resource files and produce JS resource files
 * `ilib-loctool-jsx` - extract strings from JSX format
 code that uses ilib and react-ilib to do its translations
 
+* `ilib-loctool-jst` - extract strings from JavaScript Template
+(JST) format files
+
 * `ilib-loctool-markdown` - extract strings from Markdown format
 files and produce translated Markdown files
 
@@ -304,6 +340,27 @@ files and produce translated YAML files
 
 * `ilib-loctool-xliff` - extract strings from XLIFF
 format files and produce translated XLIFF files
+
+* `ilib-loctool-webos-appinfo-json` - extract strings webOS
+  appinfo.json files
+
+* `ilib-loctool-webos-c` - extract strings from C language
+  files for webOS
+
+* `ilib-loctool-webos-cpp` - extract strings from C++ language
+  files for webOS
+
+* `ilib-loctool-webos-javascript` - extract strings from Javascript language
+  files for webOS
+
+* `ilib-loctool-webos-json-resource` - extract strings from
+webOS json resource files
+
+* `ilib-loctool-webos-qml` - extract strings from QML language
+  files for webOS
+
+* `ilib-loctool-webos-ts` - extract strings from QT's TS format files
+  for webOS
 
 Configuring a Custom Project Type
 -----------------------------------------------
@@ -393,7 +450,7 @@ path:
 Copyright and License
 -------
 
-Copyright &copy; 2016-2019, HealthTap, Inc. and JEDLSoft
+Copyright &copy; 2016-2020, HealthTap, Inc. and JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this tool except in compliance with the License.
