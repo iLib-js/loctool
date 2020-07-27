@@ -60,6 +60,8 @@
         "clean": "ant clean"
     },
     "dependencies": {
+        "@babel/core": "^7.10.5",
+        "@babel/register": "^7.10.5",
         "build-gradle-reader": "*",
         "he": "^1.2.0",
         "html-parser": "^0.11.0",

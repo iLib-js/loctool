@@ -26,9 +26,15 @@ var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
 
+var utils = require("./lib/utils.js");
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var Xliff = require("./lib/Xliff.js");
 
+if (utils.nodeMajorVersion() < 7) {
+    // when using node 6 and earlier, we have to transform any ES6
+    // code in the libraries we use to ES5 code before it can be run
+    require("@babel/register");
+}
 
 // var Git = require("simple-git");
 
