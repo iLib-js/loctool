@@ -26,9 +26,9 @@ var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
 
-var utils = require("./lib/utils.js");
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var Xliff = require("./lib/Xliff.js");
+
 
 // var Git = require("simple-git");
 
