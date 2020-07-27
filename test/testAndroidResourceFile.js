@@ -93,8 +93,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -129,8 +128,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <plurals name="friend_comment">\n' +
                 '    <item quantity="one">\n' +
                 '      {start}1 friend{end} commented\n' +
@@ -173,8 +171,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <plurals name="friend_comment">\n' +
                 '    <item quantity="one">\n' +
                 '      {start}1 friend{end} commented\n' +
@@ -215,8 +212,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string-array name="self_questions">\n' +
                 '    <item>How many times have you been pregnant?</item>\n' +
                 '    <item>How many deliveries did you have?</item>\n' +
@@ -255,8 +251,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -292,8 +287,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -335,8 +329,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -490,8 +483,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -511,8 +503,7 @@ module.exports.androidresourcefile = {
 
         // output is sorted by key now
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<resources \n' +
-            '  xmlns:tools="http://schemas.android.com/tools">\n' +
+            '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
             '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
             '  <string name="asdf">foobar</string>\n' +
             '  <string name="description_imgVw">imageView</string>\n' +
@@ -540,8 +531,7 @@ module.exports.androidresourcefile = {
 
         arf.parse(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<resources \n' +
-                '  xmlns:tools="http://schemas.android.com/tools">\n' +
+                '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
                 '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
                 '  <string name="disclaimer">Disclaimer</string>\n' +
                 '  <string name="description_imgVw">imageView</string>\n' +
@@ -553,8 +543,7 @@ module.exports.androidresourcefile = {
         var xml = arf._getXML();
 
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<resources \n' +
-            '  xmlns:tools="http://schemas.android.com/tools">\n' +
+            '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
             '  <string name="app_id" i18n="Do not translate">151779581544891</string>\n' +
             '  <string name="disclaimer">Disclaimer</string>\n' +
             '  <string name="description_imgVw">imageView</string>\n' +
@@ -606,8 +595,7 @@ module.exports.androidresourcefile = {
         var xml = arf._getXML();
 
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<resources \n' +
-            '  xmlns:tools="http://schemas.android.com/tools">\n' +
+            '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
             '  <plurals name="asdf" i18n="comment1">\n' +
             '    <item quantity="one">This is singular</item>\n' +
             '    <item quantity="few">This is few</item>\n' +
@@ -655,8 +643,7 @@ module.exports.androidresourcefile = {
         var xml = arf._getXML();
 
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<resources \n' +
-            '  xmlns:tools="http://schemas.android.com/tools">\n' +
+            '<resources xmlns:tools="http://schemas.android.com/tools">\n' +
             '  <string-array name="asdf" i18n="comment1">\n' +
             '    <item>one</item>\n' +
             '    <item>two</item>\n' +

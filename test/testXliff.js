@@ -1,7 +1,7 @@
 /*
  * testXliff.js - test the Xliff object.
  *
- * Copyright © 2016-2017, 2019 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -970,7 +970,7 @@ module.exports.xliff = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="webapp">\n' +
                 '    <header>\n' +
-                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
+                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
