@@ -85,7 +85,9 @@
         "unified": "^7.1.0",
         "unist-builder": "^2.0.3",
         "unist-util-filter": "^1.0.2",
-        "xml2json": "^0.11.2"
+        "unist-util-map": "^1.0.5",
+        "util.promisify": "^1.0.1",
+        "xml-js": "^1.6.11"
     },
     "devDependencies": {
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
