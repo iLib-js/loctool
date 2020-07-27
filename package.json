@@ -81,10 +81,9 @@
         "remark-parse": "^6.0.3",
         "remark-rehype": "^4.0.1",
         "remark-stringify": "^6.0.4",
-        "tap": "^14.10.7",
         "unified": "^7.1.0",
+        "unist-builder": "^2.0.3",
         "unist-util-filter": "^1.0.2",
-        "unist-util-map": "^1.0.5",
         "xml2json": "^0.11.2"
     },
     "devDependencies": {
