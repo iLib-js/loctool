@@ -1,7 +1,7 @@
 /*
  * testResourceString.js - test the resource string object.
  *
- * Copyright © 2016-2017, 2019 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -300,11 +300,13 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
+            test.ok(rs2);
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoRightString: function(test) {
@@ -321,15 +323,17 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getSource(), "This is a test");
-        test.equal(rs2.sourceLocale, "en-US");
-        test.equal(rs2.getTarget(), "Ťĥíš íš à ţëšţ6543210");
-        test.equal(rs2.getTargetLocale(), "de-DE");
+            test.ok(rs2);
+            test.equal(rs2.getSource(), "This is a test");
+            test.equal(rs2.sourceLocale, "en-US");
+            test.equal(rs2.getTarget(), "Ťĥíš íš à ţëšţ6543210");
+            test.equal(rs2.getTargetLocale(), "de-DE");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoSkipPercents: function(test) {
@@ -346,12 +350,14 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
+            test.ok(rs2);
+            test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoSkipEmbeddedHTML: function(test) {
@@ -368,12 +374,14 @@ module.exports.resourcestring = {
             type: "html"
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getTarget(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
+            test.ok(rs2);
+            test.equal(rs2.getTarget(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoSkipEmbeddedXML: function(test) {
@@ -392,10 +400,12 @@ module.exports.resourcestring = {
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getTarget(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
+        rb.init(function() {
+            test.ok(rs2);
+            test.equal(rs2.getTarget(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoSkipPercentsAndReplacements: function(test) {
@@ -412,12 +422,14 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
+            test.ok(rs2);
+            test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoBadLocale: function(test) {
@@ -434,11 +446,13 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo(undefined, rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo(undefined, rb);
 
-        test.ok(!rs2);
+            test.ok(!rs2);
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoBadBundle: function(test) {
@@ -482,14 +496,16 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("en-GB", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("en-GB", rb);
 
-        test.ok(rs2);
-        test.ok(rs2.getTargetLocale(), "en-GB");
+            test.ok(rs2);
+            test.ok(rs2.getTargetLocale(), "en-GB");
 
-        test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
+            test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoBritishLikeRightString: function(test) {
@@ -516,14 +532,16 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("en-ZA", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("en-ZA", rb);
 
-        test.ok(rs2);
-        test.ok(rs2.getTargetLocale(), "en-ZA");
+            test.ok(rs2);
+            test.ok(rs2.getTargetLocale(), "en-ZA");
 
-        test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
+            test.equal(rs2.getTarget(), "I colour my chequebooks and localise them.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoCanadianRightString: function(test) {
@@ -549,14 +567,16 @@ module.exports.resourcestring = {
             type: "c"
         });
 
-        var rs2 = rs.generatePseudo("en-CA", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("en-CA", rb);
 
-        test.ok(rs2);
-        test.ok(rs2.getTargetLocale(), "en-CA");
+            test.ok(rs2);
+            test.ok(rs2.getTargetLocale(), "en-CA");
 
-        test.equal(rs2.getTarget(), "I colour my chequebooks and localize them.");
+            test.equal(rs2.getTarget(), "I colour my chequebooks and localize them.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringGeneratePseudoTraditionalChineseRightString: function(test) {
@@ -597,14 +617,16 @@ module.exports.resourcestring = {
             set: translations
         });
 
-        var rs2 = rs.generatePseudo("zh-Hant-TW", rb);
+        rb.init(function() {
+            var rs2 = rs.generatePseudo("zh-Hant-TW", rb);
 
-        test.ok(rs2);
-        test.ok(rs2.getTargetLocale(), "zh-Hant-TW");
+            test.ok(rs2);
+            test.ok(rs2.getTargetLocale(), "zh-Hant-TW");
 
-        test.equal(rs2.getTarget(), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+            test.equal(rs2.getTarget(), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceStringClone: function(test) {

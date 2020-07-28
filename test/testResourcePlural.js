@@ -1,7 +1,7 @@
 /*
  * testResourcePlural.js - test the resource plural object.
  *
- * Copyright © 2016-2017, 2019 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -424,12 +424,14 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("de-DE", rb);
 
-        test.ok(rp2);
-        test.equal(rp2.getTargetLocale(), "de-DE");
+            test.ok(rp2);
+            test.equal(rp2.getTargetLocale(), "de-DE");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourcePluralGeneratePseudoRightString: function(test) {
@@ -451,18 +453,20 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("de-DE", rb);
 
-        test.ok(rp2);
+            test.ok(rp2);
 
-        var t = rp2.getTargetPlurals();
+            var t = rp2.getTargetPlurals();
 
-        test.ok(t);
-        test.deepEqual(t, {
-            "one": "Ťĥíš íš šíñğüľàŕ76543210",
-            "two": "Ťĥíš íš ðõübľë6543210",
-            "few": "Ťĥíš íš ţĥë fëŵ çàšë9876543210",
-            "many": "Ťĥíš íš ţĥë màñÿ çàšë6543210"
+            test.ok(t);
+            test.deepEqual(t, {
+                "one": "Ťĥíš íš šíñğüľàŕ76543210",
+                "two": "Ťĥíš íš ðõübľë6543210",
+                "few": "Ťĥíš íš ţĥë fëŵ çàšë9876543210",
+                "many": "Ťĥíš íš ţĥë màñÿ çàšë6543210"
+            });
         });
 
         test.done();
@@ -487,21 +491,23 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("de-DE", rb);
 
-        test.ok(rp2);
+            test.ok(rp2);
 
-        var t = rp2.getTargetPlurals();
+            var t = rp2.getTargetPlurals();
 
-        test.ok(t);
-        test.deepEqual(t, {
-            "one": "Ťĥíš íš %s šíñğüľàŕ9876543210",
-            "two": "Ťĥíš íš %d ðõübľë876543210",
-            "few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë9876543210",
-            "many": "Ťĥíš íš ţĥë màñÿ %7x çàšë76543210"
+            test.ok(t);
+            test.deepEqual(t, {
+                "one": "Ťĥíš íš %s šíñğüľàŕ9876543210",
+                "two": "Ťĥíš íš %d ðõübľë876543210",
+                "few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë9876543210",
+                "many": "Ťĥíš íš ţĥë màñÿ %7x çàšë76543210"
+            });
+
+            test.done();
         });
-
-        test.done();
     },
 
     testResourcePluralGeneratePseudoBadLocale: function(test) {
@@ -523,10 +529,12 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo(undefined, rb);
-        test.ok(!rp2);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo(undefined, rb);
+            test.ok(!rp2);
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourcePluralGeneratePseudoBadBundle: function(test) {
@@ -579,21 +587,23 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("en-GB", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("en-GB", rb);
 
-        test.ok(rp2);
-        test.ok(rp2.getTargetLocale(), "en-GB");
+            test.ok(rp2);
+            test.ok(rp2.getTargetLocale(), "en-GB");
 
-        var t = rp2.getTargetPlurals();
+            var t = rp2.getTargetPlurals();
 
-        test.ok(t);
-        test.deepEqual(t, {
-            "one": "This is oestrogen",
-            "few": "I colour my chequebooks",
-            "many": "This is not translated."
+            test.ok(t);
+            test.deepEqual(t, {
+                "one": "This is oestrogen",
+                "few": "I colour my chequebooks",
+                "many": "This is not translated."
+            });
+
+            test.done();
         });
-
-        test.done();
     },
 
     testResourcePluralGeneratePseudoBritishLikeRightString: function(test) {
@@ -624,18 +634,20 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("en-ZA", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("en-ZA", rb);
 
-        test.ok(rp2);
-        test.ok(rp2.getTargetLocale(), "en-ZA");
+            test.ok(rp2);
+            test.ok(rp2.getTargetLocale(), "en-ZA");
 
-        var t = rp2.getTargetPlurals();
+            var t = rp2.getTargetPlurals();
 
-        test.ok(t);
-        test.deepEqual(t, {
-            "one": "This is oestrogen",
-            "few": "I colour my chequebooks",
-            "many": "This is not translated."
+            test.ok(t);
+            test.deepEqual(t, {
+                "one": "This is oestrogen",
+                "few": "I colour my chequebooks",
+                "many": "This is not translated."
+            });
         });
 
         test.done();
@@ -669,21 +681,23 @@ module.exports.resourceplural = {
             type: "c"
         });
 
-        var rp2 = rp.generatePseudo("en-CA", rb);
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("en-CA", rb);
 
-        test.ok(rp2);
-        test.ok(rp2.getTargetLocale(), "en-CA");
+            test.ok(rp2);
+            test.ok(rp2.getTargetLocale(), "en-CA");
 
-        var t = rp2.getTargetPlurals();
+            var t = rp2.getTargetPlurals();
 
-        test.ok(t);
-        test.deepEqual(t, {
-            "one": "This is estrogen",
-            "few": "I colour my chequebooks",
-            "many": "This is not localized."
+            test.ok(t);
+            test.deepEqual(t, {
+                "one": "This is estrogen",
+                "few": "I colour my chequebooks",
+                "many": "This is not localized."
+            });
+
+            test.done();
         });
-
-        test.done();
     },
 
     testResourcePluralGeneratePseudoTraditionalChineseRightString: function(test) {
@@ -736,21 +750,23 @@ module.exports.resourceplural = {
             set: translations
         });
 
-        var rp2 = rp.generatePseudo("zh-Hant-TW", rb);
-
-        test.ok(rp2);
-        test.ok(rp2.getTargetLocale(), "zh-Hant-TW");
-
-        var t = rp2.getTargetPlurals();
-
-        test.ok(t);
-        test.deepEqual(t, {
-            one: "你好嗎？",
-            few: "燕子的巡航速度是多少？",
-            many: "什麼？ 你是指歐洲的燕子還是非洲的燕子？"
+        rb.init(function() {
+            var rp2 = rp.generatePseudo("zh-Hant-TW", rb);
+            
+            test.ok(rp2);
+            test.ok(rp2.getTargetLocale(), "zh-Hant-TW");
+            
+            var t = rp2.getTargetPlurals();
+            
+            test.ok(t);
+            test.deepEqual(t, {
+                one: "你好嗎？",
+                few: "燕子的巡航速度是多少？",
+                many: "什麼？ 你是指歐洲的燕子還是非洲的燕子？"
+            });
+            
+            test.done();
         });
-
-        test.done();
     },
 
     testResourcePluralClone: function(test) {

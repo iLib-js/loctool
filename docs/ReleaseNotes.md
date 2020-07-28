@@ -1,6 +1,26 @@
 Release Notes for Version 2
 ============================
 
+Build 015
+-------
+
+Published as version 2.9.0
+
+New Features:
+- Add "loctool init" command to generate an initial project.json file that the user can
+  use as a starting framework.
+
+Bug Fixes:
+- Fixed a problem where the xliff path is incorrectly converted when the path is absolute.
+- Added a condition not to see a warning message when xliff file is loading.
+- Loctool could not install or run on certain platforms with certain versions of C++
+  compilers installed because the node-gyp compiler did not work right
+    - moved from `opencc` to `opencc-js` which is pure JS code, but a little
+      bit slower
+    - moved from `xml2json` to `xml-js` which is also pure JS code, and also
+      a little slower
+    - no longer depends on the `PrettyData` module
+
 Build 014
 -------
 

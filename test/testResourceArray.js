@@ -1,7 +1,7 @@
 /*
  * testResourceArray.js - test the resource array object.
  *
- * Copyright © 2016-2017, 2019, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020, HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -387,13 +387,15 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("de-DE", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getSourceLocale(), "en-US");
-        test.ok(ra2.getTargetLocale(), "de-DE");
+            test.ok(ra2);
+            test.ok(ra2.getSourceLocale(), "en-US");
+            test.ok(ra2.getTargetLocale(), "de-DE");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoRightString: function(test) {
@@ -410,20 +412,22 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("de-DE", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "de-DE");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "de-DE");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
-        test.equal(strings[2], "Ťĥíš íš ñõţ543210");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
+            test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
+            test.equal(strings[2], "Ťĥíš íš ñõţ543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoSkipPercents: function(test) {
@@ -440,20 +444,22 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("de-DE", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("de-DE", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "de-DE");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "de-DE");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ876543210");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ6543210");
-        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d9876543210");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "Ťĥíš íš à %s ţëšţ876543210");
+            test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ6543210");
+            test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d9876543210");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoBadLocale: function(test) {
@@ -470,10 +476,12 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo(undefined, rb);
-        test.ok(!ra2);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo(undefined, rb);
+            test.ok(!ra2);
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoBadBundle: function(test) {
@@ -517,20 +525,22 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("en-GB", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("en-GB", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "en-GB");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "en-GB");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "This is oestrogen");
-        test.equal(strings[1], "I colour my chequebooks");
-        test.equal(strings[2], "This is not translated.");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "This is oestrogen");
+            test.equal(strings[1], "I colour my chequebooks");
+            test.equal(strings[2], "This is not translated.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoBritishLikeRightString: function(test) {
@@ -557,20 +567,22 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("en-ZA", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("en-ZA", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "en-ZA");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "en-ZA");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "This is oestrogen");
-        test.equal(strings[1], "I colour my chequebooks");
-        test.equal(strings[2], "This is not translated.");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "This is oestrogen");
+            test.equal(strings[1], "I colour my chequebooks");
+            test.equal(strings[2], "This is not translated.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoCanadianRightString: function(test) {
@@ -597,20 +609,22 @@ module.exports.resourcearray = {
             type: "c"
         });
 
-        var ra2 = ra.generatePseudo("en-CA", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("en-CA", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "en-CA");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "en-CA");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "This is estrogen");
-        test.equal(strings[1], "I colour my chequebooks");
-        test.equal(strings[2], "This is not localized.");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "This is estrogen");
+            test.equal(strings[1], "I colour my chequebooks");
+            test.equal(strings[2], "This is not localized.");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayGeneratePseudoTraditionalChineseRightString: function(test) {
@@ -651,20 +665,22 @@ module.exports.resourcearray = {
             set: translations
         });
 
-        var ra2 = ra.generatePseudo("zh-Hant-TW", rb);
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("zh-Hant-TW", rb);
 
-        test.ok(ra2);
-        test.ok(ra2.getTargetLocale(), "zh-Hant-TW");
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "zh-Hant-TW");
 
-        var strings = ra2.getTargetArray();
+            var strings = ra2.getTargetArray();
 
-        test.ok(strings);
-        test.equal(strings.length, 3);
-        test.equal(strings[0], "你好嗎？");
-        test.equal(strings[1], "燕子的巡航速度是多少？");
-        test.equal(strings[2], "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+            test.ok(strings);
+            test.equal(strings.length, 3);
+            test.equal(strings[0], "你好嗎？");
+            test.equal(strings[1], "燕子的巡航速度是多少？");
+            test.equal(strings[2], "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-        test.done();
+            test.done();
+        });
     },
 
     testResourceArrayClone: function(test) {
