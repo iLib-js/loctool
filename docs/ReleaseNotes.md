@@ -1,6 +1,14 @@
 Release Notes for Version 2
 ============================
 
+Build 016
+-------
+
+Published as version 2.9.1
+Bug Fixes:
+- Fixed a problem to parse xliff 2.0 files
+
+
 Build 015
 -------
 
