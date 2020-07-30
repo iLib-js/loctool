@@ -1,6 +1,14 @@
 Release Notes for Version 2
 ============================
 
+Build 016
+-------
+
+Published as version 2.9.1
+
+Bug Fixes:
+- Updated to remove duplicate locales in a list
+
 Build 015
 -------
 
