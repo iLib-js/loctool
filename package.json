@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",

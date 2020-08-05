@@ -548,8 +548,7 @@ module.exports.xliff = {
 
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext" l:context="foobar">\n' +
             '      <segment>\n' +
@@ -596,8 +595,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -651,8 +649,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -689,8 +686,7 @@ module.exports.xliff = {
 
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp" l:flavor="chocolate">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -741,8 +737,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -805,8 +800,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -874,8 +868,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="4444444" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -931,8 +924,7 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -991,8 +983,7 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <notes>\n' +
@@ -1055,11 +1046,10 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <header>\n' +
-                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
+                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>\n' +
                 '    </header>\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1107,8 +1097,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
                 '      <segment>\n' +
@@ -1152,8 +1141,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
@@ -1215,8 +1203,7 @@ module.exports.xliff = {
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar &quot;asdf&quot;" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1261,8 +1248,7 @@ module.exports.xliff = {
 
         test.equal(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="&quot;double&quot; and &apos;single&apos;" type="res:string" l:datatype="plaintext">\n' +
                 '      <segment>\n' +
@@ -1298,8 +1284,7 @@ module.exports.xliff = {
 
         test.equal(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '      <notes>\n' +
@@ -1379,8 +1364,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
                 '      <segment>\n' +
@@ -1588,8 +1572,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                 '      <segment>\n' +
@@ -1645,8 +1628,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
@@ -1691,8 +1673,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
@@ -1742,8 +1723,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
                 '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
                 '      <segment>\n' +
@@ -1813,8 +1793,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="res/values/arrays.xml" l:project="androidapp">\n' +
                 '    <unit id="5" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
                 '      <segment>\n' +
@@ -1922,8 +1901,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:context="na na na">\n' +
                 '      <segment>\n' +
@@ -1996,8 +1974,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string" l:context="na na na">\n' +
                 '      <segment>\n' +
@@ -2044,8 +2021,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <unit id="1" name="foobar" type="res:string">\n' +
                 '      <segment>\n' +
@@ -2159,8 +2135,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/j.java" l:project="webapp">\n' +
                 '    <unit id="2" name="huzzah" type="res:string">\n' +
                 '      <segment id="1">\n' +
@@ -2207,8 +2182,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
                 '      <segment>\n' +
@@ -2243,8 +2217,7 @@ module.exports.xliff = {
 
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="UI/AddAnotherButtonView.m" l:project="iosapp">\n' +
                 '    <unit id="196" name="      Add Another" type="res:string" l:datatype="x-objective-c">\n' +
                 '      <segment>\n' +
@@ -2789,8 +2762,7 @@ module.exports.xliff = {
 
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
-                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
                 '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
                 '      <notes>\n' +
@@ -3003,8 +2975,7 @@ module.exports.xliff = {
 
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
             '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '      <segment>\n' +
@@ -3071,8 +3042,7 @@ module.exports.xliff = {
 
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
             '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
             '      <notes>\n' +
@@ -3095,6 +3065,7 @@ module.exports.xliff = {
              '  </file>\n' +
             '</xliff>';
 
+
         var actual = x.serialize();
         diff(actual, expected);
 
@@ -3114,8 +3085,7 @@ module.exports.xliff = {
 
         x.deserialize(
             '<?xml version="1.0" encoding="utf-8"?>\n' +
-            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" \n' +
-            '  xmlns:l="http://ilib-js.com/loctool">\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
             '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
             '      <notes>\n' +
