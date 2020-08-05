@@ -11,7 +11,8 @@ New Features:
   node loctool.js generate -x xliffPath
   ```
 Bug Fixes:
-- Fix a problem where the xliff path is incorrectly converted when the path is absolute.
+- Fixed a problem where the xliff path is incorrectly converted when the path is absolute.
+- Added a condition not to see a warning message when xliff file is loading.
 
 
 Build 014
