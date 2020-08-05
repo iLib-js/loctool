@@ -20,6 +20,7 @@ Build 015
 
 Published as version 2.9.0
 
+
 New Features:
 - Add "loctool init" command to generate an initial project.json file that the user can
   use as a starting framework.
