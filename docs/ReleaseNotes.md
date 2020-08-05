@@ -8,6 +8,7 @@ Published as version 2.9.1
 
 Bug Fixes:
 - Updated to remove duplicate locales in a list
+- Fixed a problem to parse xliff 2.0 files
 
 Build 015
 -------
