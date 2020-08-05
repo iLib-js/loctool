@@ -125,7 +125,8 @@ var settings = {
     targetDir: ".",            // target directory for all output files
     xliffsDir: ".",
     xliffVersion: 1.2,
-    localizeOnly: false
+    localizeOnly: false,
+    projectType: "web"
 };
 
 var options = [];
@@ -159,6 +160,13 @@ for (var i = 0; i < argv.length; i++) {
             types.forEach(function(type) {
                 settings.fileTypes[type] = true;
             });
+        }
+    } else if (val === "--projectType") {
+        settings.projectType = argv[++i];
+    } else if (val === "--plugins") {
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            settings.plugins = types;
         }
     } else if (val === "-t" || val === "--target") {
         if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
@@ -517,7 +525,7 @@ try {
         break;
 
     case "generate":
-        var project = ProjectFactory(".", settings);
+        var project = ProjectFactory.newProject(settings, settings);
         if (project) {
             project.init(function() {
                 project.generateResource(function() {
