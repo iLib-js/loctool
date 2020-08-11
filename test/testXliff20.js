@@ -598,8 +598,123 @@ module.exports.xliff = {
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-            '  <file original="foo/bar/asdf.java" l:project="androidapp"/>\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+            '    <group id="group_2" name="plaintext">\n' +
+            '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>baby baby</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+
+
+    },
+
+    testXliff20SerializediffrentFileSampePrj: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ContextResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" l:project="androidapp">\n' +
+            '    <group id="group_2" name="plaintext">\n' +
+            '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>baby baby</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testXliff20SerializeSampeFilesPrj: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ContextResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <group id="group_1" name="plaintext">\n' +
             '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '        <segment>\n' +
@@ -745,8 +860,7 @@ module.exports.xliff = {
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-            '  <file original="foo/bar/asdf.java" l:project="androidapp"/>\n' +
-            '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <group id="group_1" name="plaintext">\n' +
             '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '        <segment>\n' +
@@ -754,6 +868,8 @@ module.exports.xliff = {
             '        </segment>\n' +
             '      </unit>\n' +
             '    </group>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" l:project="webapp">\n' +
             '    <group id="group_2" name="x-android-resource">\n' +
             '      <unit id="2" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="zero">\n' +
             '        <segment>\n' +
@@ -811,8 +927,7 @@ module.exports.xliff = {
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-            '  <file original="foo/bar/asdf.java" l:project="androidapp"/>\n' +
-            '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
             '    <group id="group_1" name="plaintext">\n' +
             '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
             '        <segment>\n' +
@@ -820,6 +935,8 @@ module.exports.xliff = {
             '        </segment>\n' +
             '      </unit>\n' +
             '    </group>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" l:project="webapp">\n' +
             '    <group id="group_2" name="x-android-resource">\n' +
             '      <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
             '        <segment>\n' +
@@ -940,8 +1057,7 @@ module.exports.xliff = {
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-                '  <file original="foo/bar/asdf.java" l:project="webapp"/>\n' +
-                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <group id="group_1" name="plaintext">\n' +
                 '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
@@ -949,6 +1065,10 @@ module.exports.xliff = {
                 '          <target>foobarfoo</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '    <group id="group_2" name="plaintext">\n' +
                 '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
                 '          <source>baby baby</source>\n' +
@@ -1000,8 +1120,7 @@ module.exports.xliff = {
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-                '  <file original="foo/bar/asdf.java" l:project="webapp"/>\n' +
-                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
                 '    <group id="group_1" name="plaintext">\n' +
                 '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '        <notes>\n' +
@@ -1012,6 +1131,10 @@ module.exports.xliff = {
                 '          <target>foobarfoo</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '    <group id="group_2" name="plaintext">\n' +
                 '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
                 '        <notes>\n' +
                 '          <note appliesTo="source">come &amp; enjoy it with us</note>\n' +
@@ -1065,9 +1188,6 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
-                '    <header>\n' +
-                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>\n' +
-                '    </header>\n' +
                 '    <group id="group_1" name="plaintext">\n' +
                 '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
@@ -1076,6 +1196,9 @@ module.exports.xliff = {
                 '        </segment>\n' +
                 '      </unit>\n' +
                 '    </group>\n' +
+                '    <header>\n' +
+                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>\n' +
+                '    </header>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -1227,8 +1350,7 @@ module.exports.xliff = {
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
-                '  <file original="foo/bar/asdf.java" l:project="androidapp"/>\n' +
-                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <group id="group_1" name="plaintext">\n' +
                 '      <unit id="1" name="foobar &quot;asdf&quot;" type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
@@ -1236,6 +1358,10 @@ module.exports.xliff = {
                 '          <target>Asdf \'quotes\'</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '    <group id="group_2" name="plaintext">\n' +
                 '      <unit id="2" name="huzzah &amp;quot;asdf&amp;quot; #(test)" type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
                 '          <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
