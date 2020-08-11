@@ -41,7 +41,11 @@ function diff(a, b) {
     }
 }
 
-module.exports.xliff = {
+module.exports.xliff20 = {
+    setUp: function(callback) {
+        ResourceFactory.unregisterDataType("x-android-resource");
+        callback();
+    },
     testXliff20Constructor: function(test) {
         test.expect(1);
 
@@ -2515,10 +2519,9 @@ module.exports.xliff = {
     testXliff20AddTranslationUnitRightResourceTypesContextString: function(test) {
         test.expect(5);
 
-        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
-
         var x = new Xliff({version: "2.0"});
         test.ok(x);
+        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
 
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
