@@ -3301,6 +3301,7 @@ module.exports.xliff = {
             '  </file>\n' +
             '</xliff>';
 
+
         var actual = x.serialize();
         diff(actual, expected);
 

@@ -3,9 +3,14 @@ Release Notes for Version 2
 
 Build 016
 -------
+
 Published as version 2.10.0
 New Features:
 - Added `group` element under the file element in Xliff format. it is categorized per datatype.
+
+Bug Fixes:
+- Updated to remove duplicate locales in a list
+- Fixed a problem to parse xliff 2.0 files
 
 Build 015
 -------
