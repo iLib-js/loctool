@@ -2519,9 +2519,10 @@ module.exports.xliff20 = {
     testXliff20AddTranslationUnitRightResourceTypesContextString: function(test) {
         test.expect(5);
 
+        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
+
         var x = new Xliff({version: "2.0"});
         test.ok(x);
-        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
 
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
