@@ -80,6 +80,8 @@ function usage() {
         "  Write all output to the given target dir instead of in the source dir.\n" +
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
+        "-x or --xliffs\n" +
+        "  Specify the dir where the xliffs files live. Default: \".\"\n" +
         "--projectType\n" +
         "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
         "--plugins\n" +
