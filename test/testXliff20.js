@@ -550,12 +550,14 @@ module.exports.xliff = {
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext" l:context="foobar">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '        <target>gutver</target>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext" l:context="foobar">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '          <target>gutver</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -597,18 +599,134 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-            '    <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>baby baby</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_2" name="plaintext">\n' +
+            '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>baby baby</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+
+
+    },
+
+    testXliff20SerializediffrentFileSampePrj: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ContextResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" l:project="androidapp">\n' +
+            '    <group id="group_2" name="plaintext">\n' +
+            '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>baby baby</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testXliff20SerializeSampeFilesPrj: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ContextResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>baby baby</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -651,11 +769,13 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -688,12 +808,14 @@ module.exports.xliff = {
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp" l:flavor="chocolate">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '        <target>gutver</target>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '          <target>gutver</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -739,28 +861,32 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-            '    <unit id="2" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="zero">\n' +
-            '      <segment>\n' +
-            '        <source>0</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="3" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
-            '      <segment>\n' +
-            '        <source>1</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="4" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
-            '      <segment>\n' +
-            '        <source>few</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_2" name="x-android-resource">\n' +
+            '      <unit id="2" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="zero">\n' +
+            '        <segment>\n' +
+            '          <source>0</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="3" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+            '        <segment>\n' +
+            '          <source>1</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="4" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
+            '        <segment>\n' +
+            '          <source>few</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -802,29 +928,33 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-             '  </file>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-            '    <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
-            '      <segment>\n' +
-            '        <source>one</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
-            '      <segment>\n' +
-            '        <source>two</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
-            '      <segment>\n' +
-            '        <source>three</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-             '  </file>\n' +
+            '    <group id="group_2" name="x-android-resource">\n' +
+            '      <unit id="2" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+            '        <segment>\n' +
+            '          <source>one</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="3" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+            '        <segment>\n' +
+            '          <source>two</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="4" name="huzzah" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
+            '        <segment>\n' +
+            '          <source>three</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
             '</xliff>';
 
         diff(actual, expected);
@@ -870,18 +1000,20 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="4444444" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>baby baby</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
-                '    <unit id="4444445" name="asdf" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>abcdef</source>\n' +
-                '        <target>hijklmn</target>\n' +
-                '      </segment>\n' +
-               '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="4444444" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Asdf asdf</source>\n' +
+                '          <target>baby baby</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="4444445" name="asdf" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>abcdef</source>\n' +
+                '          <target>hijklmn</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
         diff(actual, expected);
@@ -926,20 +1058,24 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
-                '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Asdf asdf</source>\n' +
+                '          <target>foobarfoo</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-                '    <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_2" name="plaintext">\n' +
+                '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>baby baby</source>\n' +
+                '          <target>bebe bebe</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -985,26 +1121,30 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
-                '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-                '      <notes>\n' +
-                '        <note appliesTo="source">foobar is where it\'s at!</note>\n' +
-                '      </notes>\n' +
-                '      <segment>\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">foobar is where it\'s at!</note>\n' +
+                '        </notes>\n' +
+                '        <segment>\n' +
+                '          <source>Asdf asdf</source>\n' +
+                '          <target>foobarfoo</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-                '    <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
-                '      <notes>\n' +
-                '        <note appliesTo="source">come &amp; enjoy it with us</note>\n' +
-                '      </notes>\n' +
-                '      <segment>\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_2" name="plaintext">\n' +
+                '      <unit id="2" name="huzzah" type="res:string" l:datatype="plaintext">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">come &amp; enjoy it with us</note>\n' +
+                '        </notes>\n' +
+                '        <segment>\n' +
+                '          <source>baby baby</source>\n' +
+                '          <target>bebe bebe</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -1048,15 +1188,17 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Asdf asdf</source>\n' +
+                '          <target>baby baby</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '    <header>\n' +
                 '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>\n' +
                 '    </header>\n' +
-                '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>baby baby</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -1099,18 +1241,20 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
-                '      <segment>\n' +
-                '        <source>There is 1 object.</source>\n' +
-                '        <target state="new">Da gibts 1 Objekt.</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
-                '    <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
-                '      <segment>\n' +
-                '        <source>There are {n} objects.</source>\n' +
-                '        <target state="new">Da gibts {n} Objekten.</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="ruby">\n' +
+                '      <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
+                '        <segment>\n' +
+                '          <source>There is 1 object.</source>\n' +
+                '          <target state="new">Da gibts 1 Objekt.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
+                '        <segment>\n' +
+                '          <source>There are {n} objects.</source>\n' +
+                '          <target state="new">Da gibts {n} Objekten.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
         diff(actual, expected);
@@ -1143,24 +1287,26 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
-                '      <segment>\n' +
-                '        <source>Zero</source>\n' +
-                '        <target>Zero</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
-                '    <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
-                '      <segment>\n' +
-                '        <source>One</source>\n' +
-                '        <target>Eins</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
-                '    <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
-                '      <segment>\n' +
-                '        <source>Two</source>\n' +
-                '        <target>Zwei</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="x-android-resource">\n' +
+                '      <unit id="1" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                '        <segment>\n' +
+                '          <source>Zero</source>\n' +
+                '          <target>Zero</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="2" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                '        <segment>\n' +
+                '          <source>One</source>\n' +
+                '          <target>Eins</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="3" name="foobar" type="res:array" l:datatype="x-android-resource" l:index="2">\n' +
+                '        <segment>\n' +
+                '          <source>Two</source>\n' +
+                '          <target>Zwei</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
         diff(actual, expected)
@@ -1205,20 +1351,24 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="de-DE" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar &quot;asdf&quot;" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
-                '        <target>Asdf \'quotes\'</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="foobar &quot;asdf&quot;" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '          <target>Asdf \'quotes\'</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '  <file original="foo/bar/j.java" l:project="webapp">\n' +
-                '    <unit id="2" name="huzzah &amp;quot;asdf&amp;quot; #(test)" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '        <target>baby #(test)</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_2" name="plaintext">\n' +
+                '      <unit id="2" name="huzzah &amp;quot;asdf&amp;quot; #(test)" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '          <target>baby #(test)</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -1250,12 +1400,14 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="&quot;double&quot; and &apos;single&apos;" type="res:string" l:datatype="plaintext">\n' +
-                '      <segment>\n' +
-                '        <source>Here are "double" and \'single\' quotes.</source>\n' +
-                '        <target>Hier zijn "dubbel" en \'singel\' quotaties.</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="&quot;double&quot; and &apos;single&apos;" type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Here are "double" and \'single\' quotes.</source>\n' +
+                '          <target>Hier zijn "dubbel" en \'singel\' quotaties.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>');
 
@@ -1286,15 +1438,17 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
-                '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-                '      <notes>\n' +
-                '        <note appliesTo="source">A very nice string</note>\n' +
-                '      </notes>\n' +
-                '      <segment>\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>baby baby</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">A very nice string</note>\n' +
+                '        </notes>\n' +
+                '        <segment>\n' +
+                '          <source>Asdf asdf</source>\n' +
+                '          <target>baby baby</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>');
 
@@ -2764,24 +2918,26 @@ module.exports.xliff = {
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
-                '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
-                '      <notes>\n' +
-                '        <note appliesTo="source">this is a comment</note>\n' +
-                '      </notes>\n' +
-                '      <segment>\n' +
-                '        <source>bababa</source>\n' +
-                '        <target>ababab</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
-                '    <unit id="2334" name="foobar" type="res:string" l:context="asdfasdf">\n' +
-                '      <notes>\n' +
-                '        <note appliesTo="source">this is a comment</note>\n' +
-                '      </notes>\n' +
-                '      <segment>\n' +
-                '        <source>a</source>\n' +
-                '        <target>b</target>\n' +
-                '      </segment>\n' +
-                '    </unit>\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">this is a comment</note>\n' +
+                '        </notes>\n' +
+                '        <segment>\n' +
+                '          <source>bababa</source>\n' +
+                '          <target>ababab</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="2334" name="foobar" type="res:string" l:context="asdfasdf">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">this is a comment</note>\n' +
+                '        </notes>\n' +
+                '        <segment>\n' +
+                '          <source>a</source>\n' +
+                '          <target>b</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
                 '  </file>\n' +
                 '</xliff>';
 
@@ -2977,19 +3133,21 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="foo/bar/asdf.java" l:project="webapp">\n' +
-            '    <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="2" name="foobar" type="res:string" l:datatype="plaintext">\n' +
-            '      <notes>\n' +
-            '        <note appliesTo="source">blah blah blah</note>\n' +
-            '      </notes>\n' +
-            '      <segment>\n' +
-            '        <source>Asdf asdf</source>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="1" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="2" name="foobar" type="res:string" l:datatype="plaintext">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">blah blah blah</note>\n' +
+            '        </notes>\n' +
+            '        <segment>\n' +
+            '          <source>Asdf asdf</source>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
             '  </file>\n' +
             '</xliff>';
 
@@ -3044,25 +3202,103 @@ module.exports.xliff = {
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
             '  <file original="/a/b/asdf.js" l:project="iosapp">\n' +
-            '    <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
-            '      <notes>\n' +
-            '        <note appliesTo="source">this is a comment</note>\n' +
-            '      </notes>\n' +
-            '      <segment>\n' +
-            '        <source>bababa</source>\n' +
-            '        <target>ababab</target>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-            '    <unit id="2334" name="asdf" type="res:string" l:context="asdfasdf">\n' +
-            '      <notes>\n' +
-            '        <note appliesTo="source">this is a different comment</note>\n' +
-            '      </notes>\n' +
-            '      <segment>\n' +
-            '        <source>bababa</source>\n' +
-            '        <target>ababab</target>\n' +
-            '      </segment>\n' +
-            '    </unit>\n' +
-             '  </file>\n' +
+            '    <group id="group_1" name="plaintext">\n' +
+            '      <unit id="2333" name="asdf" type="res:string" l:context="asdfasdf">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">this is a comment</note>\n' +
+            '        </notes>\n' +
+            '        <segment>\n' +
+            '          <source>bababa</source>\n' +
+            '          <target>ababab</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '      <unit id="2334" name="asdf" type="res:string" l:context="asdfasdf">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">this is a different comment</note>\n' +
+            '        </notes>\n' +
+            '        <segment>\n' +
+            '          <source>bababa</source>\n' +
+            '          <target>ababab</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        var actual = x.serialize();
+        diff(actual, expected);
+
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testXliff20SerializeWithTranslationUnitsWithTypes: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({
+            version: "2.0",
+            allowDups: true
+        });
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+            "source": "bababa",
+            "sourceLocale": "en-US",
+            "target": "ababab",
+            "targetLocale": "fr-FR",
+            "key": "asdf",
+            "file": "/a/b/asdf.js",
+            "project": "webapp1",
+            "resType":"string",
+            "origin": "source",
+            "context": "asdfasdf",
+            "comment": "this is a comment",
+            "datatype": "javascript"
+        }));
+
+        x.addTranslationUnit(new TranslationUnit({
+            "source": "bababa",
+            "sourceLocale": "en-US",
+            "target": "ababab",
+            "targetLocale": "fr-FR",
+            "key": "asdf",
+            "file": "/a/b/asdf.js",
+            "project": "webapp1",
+            "resType":"string",
+            "origin": "source",
+            "context": "asdfasdf",
+            "comment": "this is a different comment",
+            "datatype": "x-json"
+        }));
+
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="2.0" srcLang="en-US" trgLang="fr-FR" xmlns:l="http://ilib-js.com/loctool">\n' +
+            '  <file original="/a/b/asdf.js" l:project="webapp1">\n' +
+            '    <group id="group_1" name="javascript">\n' +
+            '      <unit id="1" name="asdf" type="res:string" l:datatype="javascript" l:context="asdfasdf">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">this is a comment</note>\n' +
+            '        </notes>\n' +
+            '        <segment>\n' +
+            '          <source>bababa</source>\n' +
+            '          <target>ababab</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '    <group id="group_2" name="x-json">\n' +
+            '      <unit id="2" name="asdf" type="res:string" l:datatype="x-json" l:context="asdfasdf">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">this is a different comment</note>\n' +
+            '        </notes>\n' +
+            '        <segment>\n' +
+            '          <source>bababa</source>\n' +
+            '          <target>ababab</target>\n' +
+            '        </segment>\n' +
+            '      </unit>\n' +
+            '    </group>\n' +
+            '  </file>\n' +
             '</xliff>';
 
 
