@@ -497,7 +497,9 @@ try {
             if (fs.existsSync(file)) {
                 logger.info("Merging " + file + " ...");
                 var data = fs.readFileSync(file, "utf-8");
-                var xliff = new Xliff();
+                var xliff = new Xliff({
+                    version: settings.xliffVersion
+                });
                 xliff.deserialize(data);
                 target.addTranslationUnits(xliff.getTranslationUnits());
             } else {
