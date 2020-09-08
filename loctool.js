@@ -80,12 +80,14 @@ function usage() {
         "  Write all output to the given target dir instead of in the source dir.\n" +
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
-        "-x or --xliffs\n" +
-        "  Specify the dir where the xliffs files live. Default: \".\"\n" +
         "--projectType\n" +
         "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
+        "--sourceLocale\n" +
+        "   Default locale of source string. (Default is en-US) \n" +
         "--plugins\n" +
         "  plugins to use that handle various file types in your project. \n" +
+        "--resourceFileTypes\n" +
+        "  Specifies the file type of the resource to be created. \n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "--xliffResRoot\n" +
@@ -166,6 +168,8 @@ for (var i = 0; i < argv.length; i++) {
                 settings.fileTypes[type] = true;
             });
         }
+    } else if (val === "--projectId") {
+        settings.id = argv[++i];
     } else if (val === "--projectType") {
         settings.projectType = argv[++i];
     } else if (val === "--plugins") {
@@ -173,6 +177,13 @@ for (var i = 0; i < argv.length; i++) {
             var types = argv[++i].split(",");
             settings.plugins = types;
         }
+    } else if (val === "--resourceFileTypes") {
+        settings.resourceFileTypes = {};
+        var key = argv[++i]
+        var value = argv[++i];
+        settings.resourceFileTypes[key] = value;
+    } else if (val === "--sourceLocale") {
+        settings.sourceLocale = argv[++i];
     } else if (val === "-t" || val === "--target") {
         if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
             settings.targetDir = argv[++i];
@@ -209,7 +220,7 @@ for (var i = 0; i < argv.length; i++) {
 }
 
 var command = options.length > 2 ? options[2] : "localize";
-
+settings.mode = command;
 switch (command) {
 case "localize":
     if (options.length > 3) {
@@ -534,11 +545,13 @@ try {
         if (project) {
             project.init(function() {
                 project.generateResource(function() {
-                    project.save(function() {
-                        project.close(function() {
-                            logger.info("Processing generate mode is done.");
+                    project.write(function(){
+                        project.save(function() {
+                            project.close(function() {
+                                logger.info("Processing generate mode is done.");
+                            });
                         });
-                    });
+                    })
                 });
             });
         };
