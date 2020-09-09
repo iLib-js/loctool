@@ -80,6 +80,8 @@ function usage() {
         "  Write all output to the given target dir instead of in the source dir.\n" +
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
+        "-x or --xliffs\n" +
+        "  Specify the dir where the xliffs files live. Default: \".\"\n" +
         "--projectType\n" +
         "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
         "--sourceLocale\n" +
@@ -88,6 +90,10 @@ function usage() {
         "  plugins to use that handle various file types in your project. \n" +
         "--resourceFileTypes\n" +
         "  Specifies the file type of the resource to be created. \n" +
+        "--resourceFileNames\n" +
+        "  Specify the resource filename used during resource file generation.\n" +
+        "--resourceDirs\n" +
+        "  Specify the dir where the generation output should go. \n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "--xliffResRoot\n" +
@@ -179,9 +185,31 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--resourceFileTypes") {
         settings.resourceFileTypes = {};
-        var key = argv[++i]
-        var value = argv[++i];
-        settings.resourceFileTypes[key] = value;
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceFileTypes[resType[0]] = resType[1];
+            });
+        }
+    } else if (val === "--resourceFileNames") {
+        settings.resourceFileNames = {};
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceFileNames[resType[0]] = resType[1];
+            });
+        }
+    } else if (val === "--resourceDirs") {
+        settings.resourceDirs = {};
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceDirs[resType[0]] = resType[1];
+            });
+        }
     } else if (val === "--sourceLocale") {
         settings.sourceLocale = argv[++i];
     } else if (val === "-t" || val === "--target") {
@@ -209,12 +237,7 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
-    } else if (val === "--xliffResRoot") {
-        settings.xliffResRoot = argv[++i];
-    } else if (val === "--xliffResName") {
-        settings.xliffResName = argv[++i];
-    }
-    else {
+    } else {
         options.push(val);
     }
 }
@@ -544,14 +567,14 @@ try {
         var project = ProjectFactory.newProject(settings, settings);
         if (project) {
             project.init(function() {
-                project.generateResource(function() {
+                project.generateMode(function() {
                     project.write(function(){
                         project.save(function() {
                             project.close(function() {
                                 logger.info("Processing generate mode is done.");
                             });
                         });
-                    })
+                    });
                 });
             });
         };

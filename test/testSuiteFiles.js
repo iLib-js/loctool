@@ -1,7 +1,7 @@
 /*
  * testSuiteFiles.js - list the test files in this directory
  *
- * Copyright © 2018-2019, Box, Inc.
+ * Copyright © 2018-2019, 2020 Box, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ module.exports.files = [
 //    "testCSV.js",
 //    "testCSVFile.js",
 //    "testDBTranslationSet.js",
-    "testGenerateResource.js",
+    "testGenerateMode.js",
     "testHTMLFile.js",
     "testHTMLFileType.js",
     "testHTMLTemplateFile.js",
