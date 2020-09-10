@@ -52,6 +52,10 @@
         "loctool.lib.GenerateMode": {
             "appenders": [ "default" ],
             "level": "info"
+		},
+        "loctool.lib.GenerateModeProcess": {
+            "appenders": [ "default" ],
+            "level": "info"
         },
         "loctool.lib.HamlFile": {
 			"appenders": [ "default" ],

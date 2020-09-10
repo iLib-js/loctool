@@ -28,6 +28,7 @@ var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
+var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var Xliff = require("./lib/Xliff.js");
 
 
@@ -565,19 +566,7 @@ try {
 
     case "generate":
         var project = ProjectFactory.newProject(settings, settings);
-        if (project) {
-            project.init(function() {
-                project.generateMode(function() {
-                    project.write(function(){
-                        project.save(function() {
-                            project.close(function() {
-                                logger.info("Processing generate mode is done.");
-                            });
-                        });
-                    });
-                });
-            });
-        };
+        GenerateModeProcess(project);
        break;
     }
 

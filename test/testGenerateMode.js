@@ -21,6 +21,9 @@ var fs = require('fs');
 if (!GenerateMode) {
     var GenerateMode = require("../lib/GenerateMode.js");
 }
+if (!GenerateModeProcess) {
+    var GenerateModeProcess = require("../lib/GenerateModeProcess.js");
+}
 if (!ProjectFactory) {
     var ProjectFactory = require("../lib/ProjectFactory.js");
 }
@@ -31,6 +34,23 @@ module.exports.genmodemode = {
 
         var genmode = new GenerateMode();
         test.ok(genmode);
+        test.done();
+    },
+    testGenerateModeProcessEmpty: function(test){
+        test.expect(1);
+        var process = GenerateModeProcess();
+        test.ok(!process);
+        test.done();
+    },
+    testGenerateModeProcess: function(test){
+        test.expect(1);
+        var settings = {
+            rootDir: ".",
+            projectType: "sample"
+        };
+        var project = ProjectFactory.newProject(settings);
+        var process = GenerateModeProcess(project);
+        test.ok(process);
         test.done();
     },
     testGenerateModeDefault: function(test) {
