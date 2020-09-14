@@ -21,36 +21,66 @@ if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
 }
 
+if (!XliffMerge) {
+    var XliffMerge = require("../lib/XliffMerge.js");
+}
+
+function diff(a, b) {
+    var min = Math.min(a.length, b.length);
+
+    for (var i = 0; i < min; i++) {
+        if (a[i] !== b[i]) {
+            console.log("Found difference at character " + i);
+            console.log("a: " + a.substring(i));
+            console.log("b: " + b.substring(i));
+            break;
+        }
+    }
+}
+
 module.exports.xliffmerge = {
-    testXliffMergeenUS: function(test) {
-        test.expect(2);
-        
-        var fs = require("fs");            
-        var target = new Xliff({
-            version: 2
-        });
+    testXliffMergenoParameter: function(test) {
+        test.expect(1);
 
-        test.ok(target);
+        var target = XliffMerge();
+        test.ok(!target);
+        test.done();
+    },
+    testXliffMergeWritenoParameter: function(test) {
+        test.expect(1);
 
-        var files = [
+        var target = XliffMerge.write();
+        test.ok(!target);
+        test.done();
+    },
+    testXliffMerge_en_US: function(test) {
+        test.expect(1);
+
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
             "testfiles/xliff20/app1/en-US.xliff",
             "testfiles/xliff20/app2/en-US.xliff",
         ];
 
-        files.forEach(function(file) {
-            if (fs.existsSync(file)){
-                var data = fs.readFileSync(file, "utf-8");
-                var xliff = new Xliff({
-                    version : 2
-                });
-                
-                xliff.deserialize(data);
-                target.addTranslationUnits(xliff.getTranslationUnits());
-            }
-        })
+        var target = XliffMerge(settings);
+        test.ok(target);
+        test.done();
+    },
+    testXliffMergeeWrite_en_US: function(test) {
+        test.expect(2);
+
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
+            "testfiles/xliff20/app1/en-US.xliff",
+            "testfiles/xliff20/app2/en-US.xliff",
+        ];
+
+        var target = XliffMerge(settings);
+        test.ok(target);
 
         var actual = target.serialize();
-
         var expected = 
         '<?xml version="1.0" encoding="utf-8"?>\n' +
         '<xliff version="2.0" srcLang="en-KR" trgLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
@@ -95,39 +125,37 @@ module.exports.xliffmerge = {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
-
         test.equal(actual, expected);
-        test.done();        
+        test.done();
     },
-    testXliffMergekoKR: function(test) {
-        test.expect(2);
-        
-        var fs = require("fs");            
-        var target = new Xliff({
-            version: 2
-        });
+    testXliffMerge_ko_KR: function(test) {
+        test.expect(1);
 
-        test.ok(target);
-
-        var files = [
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
             "testfiles/xliff20/app1/ko-KR.xliff",
             "testfiles/xliff20/app2/ko-KR.xliff",
-        ]
+        ];
 
-        files.forEach(function(file) {
-            if (fs.existsSync(file)){
-                var data = fs.readFileSync(file, "utf-8");
-                var xliff = new Xliff({
-                    version : 2
-                });
-                
-                xliff.deserialize(data);
-                target.addTranslationUnits(xliff.getTranslationUnits());
-            }
-        })
+        var target = XliffMerge(settings);
+        test.ok(target);
+        test.done();
+    },
+    testXliffMergeeWrite_ko_KR: function(test) {
+        test.expect(2);
+
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
+            "testfiles/xliff20/app1/ko-KR.xliff",
+            "testfiles/xliff20/app2/ko-KR.xliff",
+        ];
+
+        var target = XliffMerge(settings);
+        test.ok(target);
 
         var actual = target.serialize();
-
         var expected = 
         '<?xml version="1.0" encoding="utf-8"?>\n' +
         '<xliff version="2.0" srcLang="en-KR" trgLang="ko-KR" xmlns:l="http://ilib-js.com/loctool">\n' +
