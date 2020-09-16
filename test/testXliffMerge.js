@@ -16,6 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+var fs = require("fs");
 
 if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
@@ -25,16 +26,9 @@ if (!XliffMerge) {
     var XliffMerge = require("../lib/XliffMerge.js");
 }
 
-function diff(a, b) {
-    var min = Math.min(a.length, b.length);
-
-    for (var i = 0; i < min; i++) {
-        if (a[i] !== b[i]) {
-            console.log("Found difference at character " + i);
-            console.log("a: " + a.substring(i));
-            console.log("b: " + b.substring(i));
-            break;
-        }
+function rmrf(path) {
+if (fs.existsSync(path)) {
+    fs.unlinkSync(path);
     }
 }
 
@@ -67,7 +61,7 @@ module.exports.xliffmerge = {
         test.ok(target);
         test.done();
     },
-    testXliffMergeeWrite_en_US: function(test) {
+    testXliffMerge2_en_US: function(test) {
         test.expect(2);
 
         var settings = {};
@@ -128,6 +122,26 @@ module.exports.xliffmerge = {
         test.equal(actual, expected);
         test.done();
     },
+    testXliffMerge_write_en_US: function(test) {
+        test.expect(3);
+
+        rmrf("testfiles/xliff20/output-en-US.xliff");
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
+            "testfiles/xliff20/app1/en-US.xliff",
+            "testfiles/xliff20/app2/en-US.xliff",
+        ];
+        settings.outfile = "testfiles/xliff20/output-en-US.xliff";
+
+        var target = XliffMerge(settings);
+        test.ok(target);
+        var result = XliffMerge.write(target);
+        test.ok(result);
+        test.ok(fs.existsSync("./testfiles/xliff20/output-en-US.xliff"));
+        test.done();
+    },
+
     testXliffMerge_ko_KR: function(test) {
         test.expect(1);
 
@@ -142,7 +156,7 @@ module.exports.xliffmerge = {
         test.ok(target);
         test.done();
     },
-    testXliffMergeeWrite_ko_KR: function(test) {
+    testXliffMerge2_ko_KR: function(test) {
         test.expect(2);
 
         var settings = {};
@@ -195,5 +209,24 @@ module.exports.xliffmerge = {
 
         test.equal(actual, expected);
         test.done();        
-    }
+    },
+    testXliffMerge_write_ko_KR: function(test) {
+        test.expect(3);
+
+        rmrf("testfiles/xliff20/output-ko-KR.xliff");
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.infiles = [
+            "testfiles/xliff20/app1/ko-KR.xliff",
+            "testfiles/xliff20/app2/ko-KR.xliff",
+        ];
+        settings.outfile = "testfiles/xliff20/output-ko-KR.xliff";
+
+        var target = XliffMerge(settings);
+        test.ok(target);
+        var result = XliffMerge.write(target);
+        test.ok(result);
+        test.ok(fs.existsSync("./testfiles/xliff20/output-ko-KR.xliff"));
+        test.done();
+    },
 };
