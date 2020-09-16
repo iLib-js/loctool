@@ -74,6 +74,7 @@ module.exports.files = [
     "testWebProject.js",
     "testXliff.js",
     "testXliff20.js",
+    "testXliffMerge.js",
     "testYamlFile.js",
     "testYamlFileType.js",
     "testYamlResourceFile.js",

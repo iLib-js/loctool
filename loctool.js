@@ -31,6 +31,7 @@ var ProjectFactory = require("./lib/ProjectFactory.js");
 var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var Xliff = require("./lib/Xliff.js");
 
+var XliffMerge = require("./lib/XliffMerge.js");
 
 // var Git = require("simple-git");
 
@@ -544,24 +545,8 @@ try {
         break;
 
     case "merge":
-        var target = new Xliff({
-            path: settings.outfile,
-            version: settings.xliffVersion
-        });
-
-        settings.infiles.forEach(function (file) {
-            if (fs.existsSync(file)) {
-                logger.info("Merging " + file + " ...");
-                var data = fs.readFileSync(file, "utf-8");
-                var xliff = new Xliff();
-                xliff.deserialize(data);
-                target.addTranslationUnits(xliff.getTranslationUnits());
-            } else {
-                logger.warn("Could not open input file " + file);
-            }
-        });
-
-        fs.writeFileSync(target.getPath(), target.serialize(), "utf-8");
+        var mergedXliff = XliffMerge(settings);
+        XliffMerge.write(mergedXliff);
         break;
 
     case "generate":
