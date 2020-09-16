@@ -41,7 +41,11 @@ function diff(a, b) {
     }
 }
 
-module.exports.xliff = {
+module.exports.xliff20 = {
+    setUp: function(callback) {
+        ResourceFactory.unregisterDataType("x-android-resource");
+        callback();
+    },
     testXliff20Constructor: function(test) {
         test.expect(1);
 

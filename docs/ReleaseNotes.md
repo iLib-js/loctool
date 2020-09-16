@@ -7,6 +7,7 @@ Build 016
 Published as version 2.10.0
 New Features:
 - Added `group` element under the file element in Xliff format. it is categorized per datatype.
+- Added a generate mode for generating resource without scanning source files.
 
 Bug Fixes:
 - Updated to remove duplicate locales in a list

@@ -46,6 +46,14 @@
             "level": "info"
         },
         "loctool.lib.FileType": {
+			     "appenders": [ "default" ],
+			     "level": "info"
+		    },
+        "loctool.lib.GenerateMode": {
+            "appenders": [ "default" ],
+            "level": "info"
+		    },
+        "loctool.lib.GenerateModeProcess": {
             "appenders": [ "default" ],
             "level": "info"
         },

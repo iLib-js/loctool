@@ -231,6 +231,10 @@ limitations under the License.
 		<debug script="${build.test}/testAndroidResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+    <target name="test.generatemode" description="Run only the generate mode tests">
+        <run script="${build.test}/testGenerateMode.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
 	<target name="test.xliff" description="Run only the xliff tests">
         <run script="${build.test}/testXliff.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>

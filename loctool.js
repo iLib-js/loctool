@@ -28,6 +28,7 @@ var Queue = require("js-stl").Queue;
 var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
+var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var Xliff = require("./lib/Xliff.js");
 
 var XliffMerge = require("./lib/XliffMerge.js");
@@ -83,8 +84,24 @@ function usage() {
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
         "  Specify the dir where the xliffs files live. Default: \".\"\n" +
+        "--projectType\n" +
+        "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
+        "--sourceLocale\n" +
+        "   Default locale of source string. (Default is en-US) \n" +
+        "--plugins\n" +
+        "  plugins to use that handle various file types in your project. \n" +
+        "--resourceFileTypes\n" +
+        "  Specifies the file type of the resource to be created. \n" +
+        "--resourceFileNames\n" +
+        "  Specify the resource filename used during resource file generation.\n" +
+        "--resourceDirs\n" +
+        "  Specify the dir where the generation output should go. \n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
+        "--xliffResRoot\n" +
+        "  Specify the dir where the generation output should go. (Default is resources/) \n" +
+        "--xliffResName\n" +
+        "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -100,6 +117,7 @@ function usage() {
         "             language or project.\n" +
         "    merge outfile filename ... - merge the given xliff files to the named\n" +
         "             outfile.\n" +
+        "    generate ... - generate resources without scanning sources. \n " +
         "root dir\n" +
         "  directory containing the git projects with the source code. \n" +
         "  Default: current dir.\n");
@@ -122,7 +140,8 @@ var settings = {
     targetDir: ".",            // target directory for all output files
     xliffsDir: ".",
     xliffVersion: 1.2,
-    localizeOnly: false
+    localizeOnly: false,
+    projectType: "web"
 };
 
 var options = [];
@@ -157,6 +176,44 @@ for (var i = 0; i < argv.length; i++) {
                 settings.fileTypes[type] = true;
             });
         }
+    } else if (val === "--projectId") {
+        settings.id = argv[++i];
+    } else if (val === "--projectType") {
+        settings.projectType = argv[++i];
+    } else if (val === "--plugins") {
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            settings.plugins = types;
+        }
+    } else if (val === "--resourceFileTypes") {
+        settings.resourceFileTypes = {};
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceFileTypes[resType[0]] = resType[1];
+            });
+        }
+    } else if (val === "--resourceFileNames") {
+        settings.resourceFileNames = {};
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceFileNames[resType[0]] = resType[1];
+            });
+        }
+    } else if (val === "--resourceDirs") {
+        settings.resourceDirs = {};
+        if (i+1 < argv.length && argv[i+1]) {
+            var types = argv[++i].split(",");
+            types.forEach(function(type){
+                var resType = type.split("=");
+                settings.resourceDirs[resType[0]] = resType[1];
+            });
+        }
+    } else if (val === "--sourceLocale") {
+        settings.sourceLocale = argv[++i];
     } else if (val === "-t" || val === "--target") {
         if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
             settings.targetDir = argv[++i];
@@ -182,14 +239,13 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
-    }
-    else {
+    } else {
         options.push(val);
     }
 }
 
 var command = options.length > 2 ? options[2] : "localize";
-
+settings.mode = command;
 switch (command) {
 case "localize":
     if (options.length > 3) {
@@ -492,6 +548,11 @@ try {
         var mergedXliff = XliffMerge(settings);
         XliffMerge.write(mergedXliff);
         break;
+
+    case "generate":
+        var project = ProjectFactory.newProject(settings, settings);
+        GenerateModeProcess(project);
+       break;
     }
 
 } catch (e) {
