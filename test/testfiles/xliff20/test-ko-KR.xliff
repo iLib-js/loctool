@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="ko-KR">
+ <file id="home_f1" original="home">
+  <group id="home_g1" name="javascript">
+    <unit id="home_1">
+    <segment>
+     <source>App</source>
+     <target>앱</target>
+    </segment>
+   </unit>
+   <unit id="home_2">
+    <segment>
+     <source>Remove</source>
+     <target>삭제</target>
+    </segment>
+   </unit>
+     </group>
+</file>
+</xliff>
