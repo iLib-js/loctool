@@ -32,6 +32,7 @@ var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var Xliff = require("./lib/Xliff.js");
 
 var XliffMerge = require("./lib/XliffMerge.js");
+var XliffSplit = require("./lib/XliffSplit.js");
 
 // var Git = require("simple-git");
 
@@ -271,11 +272,11 @@ case "split":
         console.log("Error: must specify a split type and at least one input file.");
         usage();
     }
-    settings.splittype = options[3];
+    settings.splittype = options[3];/*
     if (settings.splittype !== "language" && settings.xliffVersion >= 2) {
         console.log("Error: you cannot split xliff 2.x files by project. They can only be split\nby language.\n\n");
         usage();
-    }
+    }*/
     settings.infiles = options.slice(4);
     settings.infiles.forEach(function (file) {
         if (!fs.existsSync(file)) {
@@ -500,48 +501,8 @@ try {
     case "split":
         settings.splittype = options[3];
         settings.infiles = options.slice(4);
-        var superset = [];
-
-        settings.infiles.forEach(function (file) {
-            logger.info("Reading " + file + " ...");
-            if (fs.existsSync(file)) {
-                var data = fs.readFileSync(file, "utf-8");
-                var xliff = new Xliff();
-                xliff.deserialize(data);
-                superset = superset.concat(xliff.getTranslationUnits());
-            } else {
-                logger.warn("Could not open input file " + file);
-            }
-        });
-
-        var cache = {};
-
-        var res, key, unit;
-        // var file, resources = superset.getAll();
-
-        logger.info("Distributing resources ...");
-        for (var i = 0; i < superset.length; i++) {
-            unit = superset[i];
-            logger.trace("unit to distribute is " + JSON.stringify(unit, undefined, 4));
-            key = (settings.splittype === "language") ? unit.targetLocale : unit.project;
-            logger.trace("key is " + key);
-            file = cache[key];
-            if (!file) {
-                file = cache[key] = new Xliff({
-                    path: "./" + key + ".xliff",
-                    version: settings.xliffVersion
-                });
-                logger.trace("new xliff is " + JSON.stringify(file, undefined, 4));
-            }
-            file.addTranslationUnit(unit);
-        }
-
-        for (key in cache) {
-            logger.info("Writing " + file.getPath() + " ...");
-            file = cache[key];
-
-            fs.writeFileSync(file.getPath(), file.serialize(), "utf-8");
-        }
+        var superset = XliffSplit(settings);
+        XliffSplit.write(XliffSplit.distribute(settings,superset));
         break;
 
     case "merge":
