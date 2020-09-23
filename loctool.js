@@ -272,11 +272,7 @@ case "split":
         console.log("Error: must specify a split type and at least one input file.");
         usage();
     }
-    settings.splittype = options[3];/*
-    if (settings.splittype !== "language" && settings.xliffVersion >= 2) {
-        console.log("Error: you cannot split xliff 2.x files by project. They can only be split\nby language.\n\n");
-        usage();
-    }*/
+    settings.splittype = options[3];
     settings.infiles = options.slice(4);
     settings.infiles.forEach(function (file) {
         if (!fs.existsSync(file)) {
@@ -502,7 +498,7 @@ try {
         settings.splittype = options[3];
         settings.infiles = options.slice(4);
         var superset = XliffSplit(settings);
-        XliffSplit.write(XliffSplit.distribute(settings,superset));
+        XliffSplit.write(XliffSplit.distribute(superset, settings));
         break;
 
     case "merge":
