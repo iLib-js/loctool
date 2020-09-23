@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" srcLang="en-KR" trgLang="ko-KR" xmlns:l="http://ilib-js.com/loctool">
+  <file original="app1" l:project="app1">
+    <group id="group_1" name="javascript">
+      <unit id="app1_1" name="String 2a" type="res:string" l:datatype="javascript">
+        <segment>
+          <source>app1: String 2a</source>
+          <target>app1:(ko) String 2a</target>
+        </segment>
+      </unit>
+      <unit id="app1_2" name="String 2b" type="res:string" l:datatype="javascript">
+        <segment>
+          <source>app1: String 2b</source>
+          <target>app1: (ko) String 2b</target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>

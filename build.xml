@@ -2,7 +2,7 @@
 <!--
 build.xml - build the localization tool app 
 
-Copyright © 2016-2017, 2019 JEDLSoft
+Copyright © 2016-2017, 2019-2020 JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -231,6 +231,10 @@ limitations under the License.
 		<debug script="${build.test}/testAndroidResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+    <target name="test.generatemode" description="Run only the generate mode tests">
+        <run script="${build.test}/testGenerateMode.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
 	<target name="test.xliff" description="Run only the xliff tests">
         <run script="${build.test}/testXliff.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -241,6 +245,10 @@ limitations under the License.
 
     <target name="test.xliff2" description="Run only the xliff 2.0 tests">
         <run script="${build.test}/testXliff20.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+    </target>
+
+    <target name="test.xliffmerge" description="Run only the xliff merge tests">
+        <run script="${build.test}/testXliffMerge.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.xliff2" description="Debug only the tests for the xliff 2.0 object">
@@ -599,7 +607,7 @@ limitations under the License.
         <debug script="${build.test}/testResourceFactory.js" dir="${build.test}"/>
     </target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype,test.markdownfiletype,test.markdownfile,test.resourcefactory,test.customproject,test.project">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.xliff2,test.xliffmerge,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype,test.markdownfiletype,test.markdownfile,test.resourcefactory,test.customproject,test.project">
 	</target>
 
 	<macrodef name="runsql">

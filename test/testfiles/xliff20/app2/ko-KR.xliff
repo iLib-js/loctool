@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="ko-KR">
+ <file id="app2_f1" original="app2">
+  <group id="app2_g1" name="javascript">
+   <unit id="app2_1">
+    <segment>
+     <source>app2: String 2a</source>
+     <target>app2: (ko)app2 String 2a</target>
+    </segment>
+   </unit>
+   <unit id="app2_2">
+    <segment>
+     <source>app2: String 2b</source>
+     <target>app2: (ko)app2 String 2b</target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>
