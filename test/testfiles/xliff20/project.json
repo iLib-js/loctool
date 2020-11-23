@@ -1,0 +1,9 @@
+{
+    "name": "TestSample",
+    "id": "TestSample",
+    "projectType": "web",
+    "pseudoLocale": "zxx-XX",
+    "resourceDirs": {
+        "json": "resources"
+    }
+}

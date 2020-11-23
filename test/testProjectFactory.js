@@ -140,6 +140,16 @@ module.exports.projectfactory = {
         // should be relative to the root of the project
         test.equal(project.xliffsOut, '/foo/asdf');
         test.done();
+    },
+    testProjectFactoryConfigFile: function(test){
+        test.expect(3);
+        var settings = {
+            configFile: './testfiles/xliff20/project.json'
+        };
+        var project = ProjectFactory('./testfiles', settings);
+        test.ok(project);
+        test.equal(project.options.id, 'loctest');
+        test.equal(project.options.projectType, 'web');
+        test.done();
     }
-
 };

@@ -60,6 +60,8 @@ function usage() {
         "  run only the parts of the loctool that are needed at the moment.\n" +
         "-h or --help\n" +
         "  this help\n" +
+        "-c or --config\n" +
+        "  Place a specific location for `project.json` instead of the project root.\n" +
         "-i or --identify\n" +
         "  Identify resources where possible by marking up the translated files with \n" +
         "  the resource key.\n" +
@@ -155,6 +157,8 @@ for (var i = 0; i < argv.length; i++) {
         settings.xliffVersion = 2;
     } else if (val === "-p" || val === "--pull") {
         settings.pull = true;
+    } else if (val === "-c" || val === "--config") {
+        settings.configFile = argv[++i];
     } else if (val === "-l" || val === "--locales") {
         if (i < argv.length && argv[i+1]) {
             settings.locales = argv[++i].split(",");
