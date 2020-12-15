@@ -40,10 +40,10 @@ Running the Tool
 ### Basic Operation
 
 1. Create a project.json configuration file for your project
-1. Run the loctool to produce a set of xliff files with new translations in them
+1. Run the loctool to produce a set of xliff files with new strings to translate in them
 1. Send the xliff files to your translators for translation and, some time
-later, receive the translations back from them
-1. Merge the various translations into a single xliff file
+later, receive the translations back
+1. Make the translations available into your project
 1. Run the loctool again to produce a set of translated files and a set
 of new xliff files. The new xliff files contain all the new or changed strings
 since the last time that the loctool was run.
@@ -51,10 +51,8 @@ since the last time that the loctool was run.
 ### Configuration
 
 To run the tool, you will need to create a project.json configuration file for
-each project and place it in the root of that project.
-The loctool will recursively search the given directory
-(current dir by default) for project.json files to find the roots of the
-projects. The root of each project will be recursively searched for localizable files.
+each project and place it in the root of that project. The presence of a project.json
+file indicates to the loctool that it has found the root of a project.
 
 The easiest way to create a new project.json file for a particular directory is
 to use the `loctool init` command. This will ask you a few questions and generate
@@ -139,11 +137,14 @@ All paths are relative to the root of the project.
 * includes - an array of dirs or files to localize. These override the
     excludes. This allows you to exclude an entire directory
     but localize particular files in that directory.
-* settings - other settings which configure this project. The most
-    important of these is "locales", which is an array of
-    target locales.
-* plugins - an array of plugins to use that handle various file types
-  in your project
+* settings - other settings which configure this project. Some important
+    settings:
+    * locales - an array of target locales
+    * xliffsDir - directory containing input translation xliff files
+    * xliffsOut - where to place the output xliff files, such as
+    the "new" strings files
+* plugins - an array of names of plugins to use that handle various file
+  types in your project
 
 Both the "includes" and "excludes" arrays may contain enhanced glob
 wildcard expressions using the [minimatch syntax](https://github.com/isaacs/minimatch):
@@ -154,21 +155,43 @@ wildcard expressions using the [minimatch syntax](https://github.com/isaacs/mini
 
 Example: `**/*.js` finds all javascript files, in whatever subdirectory.
 
-See the minimatch documentation for more details.
+This is a similar syntax to that used in ant's build.xml files. See the
+minimatch documentation for more details.
+
+### Making your Translations Available
+
+You will need to get the xliff files that contain the translations into
+your project so the loctool can find them. There are two ways to do this:
+
+1. If you are using xliff v1.2 format, you can have all your translations in
+a single file. Put this file into the root of your project. This file should
+have the same base name as your project id in the project.json file. For
+example, if your project is called "foo" in the project.json file, you should have
+a foo.xliff file in your root that contains all the translations.
+1. If you have multiple translation files, you can put them in a single
+directory, and update the settings in the project.json to point to that
+directory. The loctool will read all of the xliff files in that directory.
+This will allow you do things like keep each batch of translations in a separate
+set of xliff files from the old ones that don't need to be merged.
+
+Example settings for an xliffs directory:
+
+```json
+{
+    "name": "myproject",
+    "id": "myproject",
+    ...
+    "settings": {
+        "xliffsDir": "translations"
+    },
+}
+```
 
 ### Running the Loctool
 
 Running the tool is pretty straight-forward. Check out all the source code you
 would like to localize to a particular directory and make sure that the current
 branch is the one you would like to localize.
-
-Then, you will
-need to get the xliff file containing the translations for your
-project and copy or symbolically link it to the root of your project
-next to the project.json file. This file should have the same base
-name as your project id in the project.json file. For example, if
-your project is called "foo" in the project.json file, you should have
-a foo.xliff file in your root that contains all the translations.
 
 To run the tool:
 
@@ -199,17 +222,24 @@ One for each target locale.
 
 ### Translating the Strings
 
-You can hand these extracted xliff files to
+You can hand these new xliff files to
 your translation vendor. XLIFF is a localization industry standard
 and pretty much any reputable translation house will know
 what to do with xliff files.
 
-### Creating a Single Merged XLIFF
+Note that if your vendor requires xliff v2.0 format
+files instead of v1.2, you can generate them using the "-2"
+command-line parameter.
+
+### Re-integrating the Translated Files
 
 When you have the translations back from your translators, you can
-merge them all into one long xliff file named for the project, which
-is placed or symbolically linked into the root of the project. In
-our example above, it would be "foo.xliff".
+either merge them all together along with the existing
+translations into one long xliff file named for the project
+(only available for xliff v1.2 format files). Alternately, you can
+make sure the files names are unique, and place them into a single
+directory and use the xliffsDir setting in your project.json file
+to point the loctool at that dir.
 
 To merge a set of xliff files into one:
 
@@ -218,20 +248,30 @@ loctool merge <output-file> <input-file> ...
 ```
 
 That is, the arguments are the name the output file (eg. "foo.xml")
-and the list all the input files.
+and the list all the input files. Make sure to include your existing
+translations in the list of input files or else you will lose all
+your old translations! You want to merge all the old and new translations
+together into one file.
+
+```
+loctool merge temp.xliff foo.xliff foo-new-de-DE.xliff foo-new-fr-FR.xliff foo-new-ja-JP.xliff
+mv temp.xliff foo.xliff
+```
 
 ### Run the Loctool Again
 
 Now when you run the loctool, it will do two things. First,
-it will write out the newly translated strings into resource files
-and translated files that are
-appropriate to your app's programming language. Second, it will
-search for new strings that are not yet translated, and place those
+it will write out the newly translated strings into resource files (eg. Java
+properties files) or translated files (eg. translated copies of HTML files)
+that are appropriate to your app's programming languages. Second, it will
+search for any new or changed strings that have been added since you sent out
+your last batch of translations. It will place those
 in the foo-new-*.xliff files, which you can then send to the translators
 as your next batch.
 
-You can run this tool every time you receive translations to do
-a continuous translation cycle.
+Because it does both at the same time, you can use the loctool as the engine
+for continuous localization. As soon as you receive a batch of translations
+back from the vendor, you immediately make the next batch!
 
 ### When to Run the Loctool
 
@@ -239,11 +279,11 @@ The loctool can be used in one of a number of ways:
 
 1. In the build. The loctool can be run as a step in the build
 between the "get all the source code from your SCM" step, and
-the "compiled all the source code" step. In this case, you will
+the "compile all the source code" step. In this case, you will
 probably want to check in the translated XLIFF files to your
 SCM so that the loctool has the translations available as it
 runs. This has the advantage that you can get a reproducible,
-stable build.
+stable build because the xliffs are also under source control.
 
 1. Manually. The localization manager can run the loctool
 on-demand and then check in the results to the SCM. They can do this
@@ -251,12 +291,20 @@ on a regular basis to produce the new strings files each time.
 This method is good when the project is small and there is
 not a lot of reason to translate frequently and regularly.
 
-1. In a background job. If you use a CI systems like Jenkins
-or Travis, you can create a background task that runs the loctool
-on your source code repository, and creates a
-pull request/check-in/review for any newly localized files. This
-will make sure that the latest resource files are checked in
-to your SCM soon after the translated XLIFF are checked in.
+1. In a background job. If your project is large and there is a
+constant stream of new strings to translate, you can use a CI
+systems like Jenkins or Travis or CircleCI to automate things.
+First, check in the translated xliffs from your vendor into a
+separate SCM repository. Then create a CI task that runs on a regular
+basis and gets the latest xliffs from the xliffs repo, and the latest
+source code from your SCM repo, and then runs the loctool on it. The end
+result is that the task should create a pull request/check-in/review
+for any of the localized files that the loctool has generated.
+If it is set up correctly, this job can be triggered automatically
+any time a change is pushed into your xliffs repo. This will
+make sure that the latest localized files are always checked in to
+your SCM soon after you receive each batch of translations back
+from your vendor.
 
 Plugins
 -------
@@ -266,8 +314,8 @@ of files, and write out the appropriate localized output.
 
 Plugins can be loaded dynamically using the "custom" type of project
 and listing out the required plugins in the "plugins" section of
-the project.json config file. Plugins are written as separate node
-modules similar to the way Babel or Webpack plugins are written.
+the project.json config file. Plugins are implemented as separate node
+modules similar to the way Babel or Webpack plugins are implemented.
 
 If you encounter a file type that the loctool doesn't currently
 handle, or which it is handling in a way that you don't like, you can
@@ -429,14 +477,16 @@ Here is what your custom project.json might look like:
 }
 ```
 
-Running the Loctool
+Loctool in your Path
 -------------------
 
 If you have "node_modules/.bin" in your path, then you can run
 the loctool with just a simple `loctool` command. Otherwise,
-you will have to give the path to it explicitly.
+you will have to put "node_modules/.bin" in your path, or specify
+the path to the loctool explicitly on the command-line.
 
-If you are writing a script in npm, the "node_modules/.bin"
+You can avoid adding the .bin directory to your path if you
+are using scripts in the package.json. The "node_modules/.bin"
 directory is automatically added to the path, so you can create
 a script like this in your package.json without the explicit
 path:
@@ -445,6 +495,12 @@ path:
 "scripts": {
     "loc": "loctool"
 },
+```
+
+Then:
+
+```
+npm run loc
 ```
 
 Copyright and License
