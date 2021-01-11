@@ -10,6 +10,7 @@ New Features:
 Bug Fixes:
 - Fixed a problem to split xliff 2.0 files
 - Updated the documentation to be more clear and to add a description of the xliffsDir setting
+- Added guard code not to stop the process even though an xliff path is not valid.
 
 
 Build 016
