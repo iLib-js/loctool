@@ -10,7 +10,7 @@ jobs:
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
       - run:
-          name: Running in a Unique Container
+         name: Running in a Unique Container
           command: |
             node -v
-			npm -v
+            npm -v
