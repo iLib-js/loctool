@@ -2,15 +2,19 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:10-browsers
+      - image: circleci/node:12-browsers
     steps:
       - run:
-          name: The First Step
+          name: Setup
           command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+            ls -la
+            rm -rf node_modules package-lock.json
+            npm install
+            NODE=$(dirname $(dirname $(which node)))
+            sed "s@XXXX@$NODE@" build.properties.travis > build.properties
       - run:
-          name: Running in a Unique Container
+          name: Running all unit tests
           command: |
             node -v
             npm -v
+            npm run test
