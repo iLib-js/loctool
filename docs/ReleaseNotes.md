@@ -1,12 +1,25 @@
 Release Notes for Version 2
 ============================
 
+Build 017
+-------
+Published as version 2.10.1
+
+New Features:
+
+Bug Fixes:
+- Fixed a problem to split xliff 2.0 files
+- Updated the documentation to be more clear and to add a description of the xliffsDir setting
+- Added guard code not to stop the process even though an xliff path is not valid.
+
+
 Build 016
 -------
 
 Published as version 2.10.0
+
 New Features:
-- Added `group` element under the file element in Xliff format. it is categorized per datatype.
+- Added `group` element under the file element in Xliff format version 2. Each group contains one datatype.
 - Added a generate mode for generating resource without scanning source files.
 - If the "fullyTranslated" flag is turned on for markdown files, and the 
   file is fully translated, then the "fullyTranslated"  setting will be
@@ -17,6 +30,7 @@ Bug Fixes:
 - Updated to remove duplicate locales in a list
 - Fixed a problem to parse xliff 2.0 files
 - Fixed a problem to merge xliff 2.0 files
+
 
 Build 015
 -------

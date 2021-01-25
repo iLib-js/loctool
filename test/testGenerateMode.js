@@ -85,11 +85,11 @@ module.exports.genmodemode = {
         test.expect(2);
         
         var genmode = new GenerateMode({
-            xliffsDir: "./testfiles/xliff20",
+            xliffsDir: "./testfiles/xliff20/app1",
         });
         test.ok(genmode);
         genmode.init();
-        test.equal(genmode.getResSize(), 4);
+        test.equal(genmode.getResSize(), 5);
         
         test.done();
     }
