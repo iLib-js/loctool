@@ -380,7 +380,7 @@ function walk(dir, project) {
     var list = fs.readdirSync(dir);
     var pathName, relPath, included, stat;
 
-    if (list) {
+    if (list && list.length !== 0) {
         list.sort().forEach(function (file) {
             var root = project ? project.getRoot() : settings.rootDir;
             pathName = path.join(dir, file);
