@@ -1,6 +1,14 @@
 Release Notes for Version 2
 ============================
 
+Build 018
+-------
+Published as version 2.10.2
+New Features:
+
+Bug Fixes:
+- Added guard code to prevent an error when read directory list returns empty
+
 Build 017
 -------
 Published as version 2.10.1

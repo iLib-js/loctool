@@ -380,47 +380,49 @@ function walk(dir, project) {
     var list = fs.readdirSync(dir);
     var pathName, relPath, included, stat;
 
-    list.sort().forEach(function (file) {
-        var root = project ? project.getRoot() : settings.rootDir;
-        pathName = path.join(dir, file);
-        relPath = path.relative(root, pathName);
-        included = true;
+    if (list && list.length !== 0) {
+        list.sort().forEach(function (file) {
+            var root = project ? project.getRoot() : settings.rootDir;
+            pathName = path.join(dir, file);
+            relPath = path.relative(root, pathName);
+            included = true;
 
-        if (project) {
-            if (project.options.excludes) {
-                logger.trace("There are excludes. Relpath is " + relPath);
-                if (mm.any(relPath, project.options.excludes)) {
-                    included = false;
+            if (project) {
+                if (project.options.excludes) {
+                    logger.trace("There are excludes. Relpath is " + relPath);
+                    if (mm.any(relPath, project.options.excludes)) {
+                        included = false;
+                    }
+                }
+
+                // override the excludes
+                if (project.options.includes) {
+                    logger.trace("There are includes. Relpath is " + relPath);
+                    if (mm.any(relPath, project.options.includes)) {
+                        included = true;
+                    }
                 }
             }
 
-            // override the excludes
-            if (project.options.includes) {
-                logger.trace("There are includes. Relpath is " + relPath);
-                if (mm.any(relPath, project.options.includes)) {
-                    included = true;
-                }
-            }
-        }
-
-        if (included) {
-            logger.trace("Included.");
-            stat = fs.statSync(pathName);
-            if (stat && stat.isDirectory()) {
-                logger.info(pathName);
-                walk(pathName, project);
-            } else {
-                if (project) {
-                    logger.info(relPath);
-                    project.addPath(relPath);
+            if (included) {
+                logger.trace("Included.");
+                stat = fs.statSync(pathName);
+                if (stat && stat.isDirectory()) {
+                    logger.info(pathName);
+                    walk(pathName, project);
                 } else {
-                    logger.trace("Ignoring non-project file: " + relPath);
+                    if (project) {
+                        logger.info(relPath);
+                        project.addPath(relPath);
+                    } else {
+                        logger.trace("Ignoring non-project file: " + relPath);
+                    }
                 }
+            } else {
+                logger.trace("Excluded.");
             }
-        } else {
-            logger.trace("Excluded.");
-        }
-    });
+        });
+    }
 
     if (projectRoot) {
         logger.info('Project "' + project.options.name + '" is done.');
