@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 019
+-------
+Published as version 2.10.3
+New Features:
+Bug Fixes:
+- Added guard code to check if a file really exists in the given path before reading
+
 Build 018
 -------
 Published as version 2.10.2

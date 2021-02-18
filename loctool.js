@@ -406,17 +406,21 @@ function walk(dir, project) {
 
             if (included) {
                 logger.trace("Included.");
-                stat = fs.statSync(pathName);
-                if (stat && stat.isDirectory()) {
-                    logger.info(pathName);
-                    walk(pathName, project);
-                } else {
-                    if (project) {
-                        logger.info(relPath);
-                        project.addPath(relPath);
+                if (fs.existsSync(pathName)) {
+                    stat = fs.statSync(pathName);
+                    if (stat && stat.isDirectory()) {
+                        logger.info(pathName);
+                        walk(pathName, project);
                     } else {
-                        logger.trace("Ignoring non-project file: " + relPath);
+                        if (project) {
+                            logger.info(relPath);
+                            project.addPath(relPath);
+                        } else {
+                            logger.trace("Ignoring non-project file: " + relPath);
+                        }
                     }
+                } else {
+                    logger.warn("File " + pathName + " does not exist.");
                 }
             } else {
                 logger.trace("Excluded.");
