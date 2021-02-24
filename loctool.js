@@ -437,6 +437,8 @@ function walk(dir, project) {
                     } else {
                         logger.trace("Excluded.");
                     }
+                } else {
+                    logger.trace("Excluded directories.");
                 }
             }
         });
