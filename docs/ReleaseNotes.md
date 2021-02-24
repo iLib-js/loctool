@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 020
+-------
+Published as version 2.11.0
+New Features:
+* Added the --exclude flag which excludes a comma-separated list of directories while searching for project.json config files
+Bug Fixes:
+
 Build 019
 -------
 Published as version 2.10.3
