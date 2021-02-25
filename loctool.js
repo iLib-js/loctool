@@ -145,7 +145,7 @@ var settings = {
     xliffVersion: 1.2,
     localizeOnly: false,
     projectType: "web",
-    exclude: ["node_modules", ".git", ".svn"]
+    exclude: ["**/node_modules", "**/.git", "**/.svn"]
 };
 
 var options = [];
@@ -402,7 +402,7 @@ function walk(dir, project) {
             if (project) {
                 if (project.options.excludes) {
                     logger.trace("There are excludes. Relpath is " + relPath);
-                    if (mm.any(relPath, project.options.excludes)) {
+                    if (mm.isMatch(relPath, project.options.excludes)) {
                         included = false;
                     }
                 }
@@ -410,36 +410,36 @@ function walk(dir, project) {
                 // override the excludes
                 if (project.options.includes) {
                     logger.trace("There are includes. Relpath is " + relPath);
-                    if (mm.any(relPath, project.options.includes)) {
+                    if (mm.isMatch(relPath, project.options.includes)) {
                         included = true;
                     }
                 }
             } else {
-                if (!settings.exclude.includes(pathName)) {
-                    if (included) {
-                        logger.trace("Included.");
-                        if (fs.existsSync(pathName)) {
-                            stat = fs.statSync(pathName);
-                            if (stat && stat.isDirectory()) {
-                                logger.info(pathName);
-                                walk(pathName, project);
-                            } else {
-                                if (project) {
-                                    logger.info(relPath);
-                                    project.addPath(relPath);
-                                } else {
-                                    logger.trace("Ignoring non-project file: " + relPath);
-                                }
-                            }
-                        } else {
-                            logger.warn("File " + pathName + " does not exist.");
-                        }
+                if (mm.isMatch(relPath, settings.exclude)) {
+                    included = false;
+                }
+            }
+
+            if (included) {
+                logger.trace("Included.");
+                if (fs.existsSync(pathName)) {
+                    stat = fs.statSync(pathName);
+                    if (stat && stat.isDirectory()) {
+                        logger.info(pathName);
+                        walk(pathName, project);
                     } else {
-                        logger.trace("Excluded.");
+                        if (project) {
+                            logger.info(relPath);
+                            project.addPath(relPath);
+                        } else {
+                            logger.trace("Ignoring non-project file: " + relPath);
+                        }
                     }
                 } else {
-                    logger.trace("Excluded directories.");
+                    logger.warn("File " + pathName + " does not exist.");
                 }
+            } else {
+                logger.trace("Excluded.");
             }
         });
     }
