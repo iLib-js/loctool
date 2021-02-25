@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019-2020, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -103,6 +103,8 @@ function usage() {
         "  Specify the dir where the generation output should go. (Default is resources/) \n" +
         "--xliffResName\n" +
         "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
+        "--exclude\n" +
+        "  exclude a comma-separated list of directories while searching for project.json config files \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -142,7 +144,8 @@ var settings = {
     xliffsDir: ".",
     xliffVersion: 1.2,
     localizeOnly: false,
-    projectType: "web"
+    projectType: "web",
+    exclude: ["**/node_modules", "**/.git", "**/.svn"]
 };
 
 var options = [];
@@ -240,7 +243,16 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
-    } else {
+    } else if (val === "--exclude") {
+        if (i+1 < argv.length && argv[i+1]) {
+            var excludeList = argv[++i].split(",");
+            var temp = settings.exclude.concat(excludeList);
+            settings.exclude = temp.filter(function(item,index){
+                return temp.indexOf(item) === index;
+            })
+        }
+    }
+     else {
         options.push(val);
     }
 }
@@ -390,7 +402,7 @@ function walk(dir, project) {
             if (project) {
                 if (project.options.excludes) {
                     logger.trace("There are excludes. Relpath is " + relPath);
-                    if (mm.any(relPath, project.options.excludes)) {
+                    if (mm.isMatch(relPath, project.options.excludes)) {
                         included = false;
                     }
                 }
@@ -398,9 +410,13 @@ function walk(dir, project) {
                 // override the excludes
                 if (project.options.includes) {
                     logger.trace("There are includes. Relpath is " + relPath);
-                    if (mm.any(relPath, project.options.includes)) {
+                    if (mm.isMatch(relPath, project.options.includes)) {
                         included = true;
                     }
+                }
+            } else {
+                if (mm.isMatch(relPath, settings.exclude)) {
+                    included = false;
                 }
             }
 
