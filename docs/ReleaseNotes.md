@@ -4,20 +4,29 @@ Release Notes for Version 2
 Build 020
 -------
 Published as version 2.11.0
+
 New Features:
 * Added the --exclude flag which excludes a comma-separated list of directories while searching for project.json config files
+* Added support for file path template formatting which plugins can use to generate
+  output file paths for localized files
+
 Bug Fixes:
 
 Build 019
 -------
+
 Published as version 2.10.3
+
 New Features:
+
 Bug Fixes:
 - Added guard code to check if a file really exists in the given path before reading
 
 Build 018
 -------
+
 Published as version 2.10.2
+
 New Features:
 
 Bug Fixes:
@@ -25,6 +34,7 @@ Bug Fixes:
 
 Build 017
 -------
+
 Published as version 2.10.1
 
 New Features:

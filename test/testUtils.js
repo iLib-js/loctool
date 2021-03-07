@@ -190,6 +190,245 @@ module.exports.utils = {
         test.equal(utils.trimEscaped(undefined), undefined);
 
         test.done();
-    }
+    },
 
+    testGetLocalizedPathLocaleDir: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('resources/[localeDir]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "resources/de/DE/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathDir: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[localeDir]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "x/y/de/DE/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathBasename: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[localeDir]/tr-[basename].j', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "de/DE/tr-strings.j");
+
+        test.done();
+    },
+
+    testGetLocalizedPathFilename: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[localeDir]/tr-[filename]', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "de/DE/tr-strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathExtension: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[localeDir]/tr-foobar.[extension]', {
+            sourcepath: "x/y/strings.jsn",
+            locale: "de-DE"
+        }), "de/DE/tr-foobar.jsn");
+
+        test.done();
+    },
+
+    testGetLocalizedPathLocale: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[locale]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "x/y/de-DE/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathLanguage: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[language]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "x/y/de/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathRegion: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[region]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de-DE"
+        }), "x/y/DE/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathScript: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[script]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "zh-Hans-CN"
+        }), "x/y/Hans/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathLocaleUnder: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/strings_[localeUnder].json', {
+            sourcepath: "x/y/strings.json",
+            locale: "zh-Hans-CN"
+        }), "x/y/strings_zh_Hans_CN.json");
+
+        test.done();
+    },
+
+/*
+    testGetLocaleFromPathDir: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings.json', "x/y/strings.json"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasename: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[basename].json', "x/y/strings.json"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathFilename: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[filename]', "x/y/strings.json"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocale: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[locale]/strings.json', "x/y/de-DE/strings.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleLong: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[locale]/strings.json', "x/y/zh-Hans-CN/strings.json"), "zh-Hans-CN");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleShort: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[locale]/strings.json', "x/y/fr/strings.json"), "fr");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLanguage: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[language]/strings.json', "x/y/de/strings.json"), "de");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathScript: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[language]-[script]/strings.json', "x/y/zh-Hans/strings.json"), "zh-Hans");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathRegion: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[region]/strings.json', "x/y/JP/strings.json"), "JP");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleDir: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[localeDir]/strings.json', "x/y/de/DE/strings.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleDirShort: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[localeDir]/strings.json', "x/y/de/strings.json"), "de");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleDirLong: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[localeDir]/strings.json', "x/y/zh/Hans/CN/strings.json"), "zh-Hans-CN");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleDirStart: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[localeDir]/strings.json', "de/DE/strings.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleUnder: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeUnder].json', "x/y/strings_de_DE.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleUnderShort: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeUnder].json', "x/y/strings_de.json"), "de");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleUnderLong: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeUnder].json', "x/y/strings_zh_Hans_CN.json"), "zh-Hans-CN");
+
+        test.done();
+    }
+*/
 }
