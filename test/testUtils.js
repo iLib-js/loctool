@@ -302,7 +302,6 @@ module.exports.utils = {
         test.done();
     },
 
-/*
     testGetLocaleFromPathDir: function(test) {
         test.expect(1);
 
@@ -430,5 +429,4 @@ module.exports.utils = {
 
         test.done();
     }
-*/
 }
