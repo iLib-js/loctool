@@ -7,7 +7,7 @@ Published as version 2.11.0
 New Features:
 * Added the --exclude flag which excludes a comma-separated list of directories while searching for project.json config files
 Bug Fixes:
-- Updated code to be written in xliff only when source and key are different
+- Updated the code that the key value would be written in xliff only if it's different from the source
 
 Build 019
 -------
