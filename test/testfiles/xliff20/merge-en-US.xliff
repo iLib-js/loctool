@@ -8,7 +8,7 @@
           <target>app1:String 1a</target>
         </segment>
       </unit>
-      <unit id="app1_2" name="app1:String 1b" type="res:string" l:datatype="cpp">
+      <unit id="app1_2" name="String 1b: app1" type="res:string" l:datatype="cpp">
         <segment>
           <source>app1:String 1b</source>
           <target>app1:String 1b</target>
