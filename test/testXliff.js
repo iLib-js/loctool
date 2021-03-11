@@ -1,7 +1,7 @@
 /*
  * testXliff.js - test the Xliff object.
  *
- * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2021 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1028,6 +1028,63 @@ module.exports.xliff = {
                 '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target state="new">Da gibts {n} Objekten.</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>';
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testXliffSerializeWithPluralsToLangWithMorePluralsThanEnglish: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        res = new ResourcePlural({
+            sourceStrings: {
+                "one": "There is 1 object.",
+                "other": "There are {n} objects."
+            },
+            sourceLocale: "en-US",
+            targetStrings: {
+                "one": "Имеется {n} объект.",
+                "few": "Есть {n} объекта.",
+                "other": "Всего {n} объектов."
+            },
+            targetLocale: "ru-RU",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            resType: "plural",
+            origin: "target",
+            autoKey: true,
+            state: "new",
+            datatype: "ruby"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="ru-RU" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="ruby" extype="one">\n' +
+                '        <source>There is 1 object.</source>\n' +
+                '        <target state="new">Имеется {n} объект.</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="few">\n' +
+                '        <source>There are {n} objects.</source>\n' +
+                '        <target state="new">Есть {n} объекта.</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="3" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
+                '        <source>There are {n} objects.</source>\n' +
+                '        <target state="new">Всего {n} объектов.</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +

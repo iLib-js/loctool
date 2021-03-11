@@ -12,6 +12,9 @@ New Features:
 
 Bug Fixes:
 - Updated the code that the key value would be written in xliff only if it's different from the source
+- Fixed a bug where plural resources for a locale that has a different number of plural categories than
+  the source language would never show those plurals in the xliff output. Now the plurals output of
+  xliff files follows the plural categories available in the target language instead of the source language.
 
 Build 019
 -------
