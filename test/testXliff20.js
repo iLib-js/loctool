@@ -1,7 +1,7 @@
 /*
  * testXliff20.js - test the Xliff 2.0 object.
  *
- * Copyright © 2019 JEDLSoft
+ * Copyright © 2019,2021 JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1256,6 +1256,69 @@ module.exports.xliff20 = {
                 '        <segment>\n' +
                 '          <source>There are {n} objects.</source>\n' +
                 '          <target state="new">Da gibts {n} Objekten.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '</xliff>';
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testXliff20SerializeWithPluralsToLangWithMorePluralsThanEnglish: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        res = new ResourcePlural({
+            sourceStrings: {
+                "one": "There is 1 object.",
+                "other": "There are {n} objects."
+            },
+            sourceLocale: "en-US",
+            targetStrings: {
+                "one": "Имеется {n} объект.",
+                "few": "Есть {n} объекта.",
+                "other": "Всего {n} объектов."
+            },
+            targetLocale: "ru-RU",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            resType: "plural",
+            origin: "target",
+            autoKey: true,
+            state: "new",
+            datatype: "ruby"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="ru-RU" xmlns:l="http://ilib-js.com/loctool">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+                '    <group id="group_1" name="ruby">\n' +
+                '      <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
+                '        <segment>\n' +
+                '          <source>There is 1 object.</source>\n' +
+                '          <target state="new">Имеется {n} объект.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="few">\n' +
+                '        <segment>\n' +
+                '          <source>There are {n} objects.</source>\n' +
+                '          <target state="new">Есть {n} объекта.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '      <unit id="3" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
+                '        <segment>\n' +
+                '          <source>There are {n} objects.</source>\n' +
+                '          <target state="new">Всего {n} объектов.</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
                 '    </group>\n' +
