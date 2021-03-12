@@ -69,6 +69,7 @@ module.exports.files = [
     "testSet.js",
     "testSwiftFile.js",
     "testSwiftFileType.js",
+    "testTMX.js",
     "testTranslationSet.js",
     "testUtils.js",
     "testWebProject.js",

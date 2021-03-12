@@ -4,8 +4,13 @@ Release Notes for Version 2
 Build 021
 -------
 Published as version 2.12.0
+
 New Features:
-Added the --xliffStyle flag which specifies customized xliff format
+* Added the --xliffStyle flag which specifies customized xliff format
+* Added support for generating a TMX file out of a set of xliff files.
+    * Added a "tmx" action to the command-line: `loctool tmx output.tmx *.xliff`
+    * The TMX files are not segmented. That is, they contain the full strings
+      that appear in the input xliff files
 
 Bug Fixes:
 
