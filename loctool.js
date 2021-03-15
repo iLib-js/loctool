@@ -105,7 +105,7 @@ function usage() {
         "--exclude\n" +
         "  exclude a comma-separated list of directories while searching for project.json config files \n" +
         "--xliffStyle\n" +
-        "  Specify the Xliff format style. (Default is standard) \n" +
+        "  Specify the Xliff format style. It can have standard or custom. (Default is standard) \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -244,7 +244,10 @@ for (var i = 0; i < argv.length; i++) {
             usage();
         }
     } else if (val === "--xliffStyle") {
-        settings.xliffStyle = argv[++i];
+        var candidate = ["standard", "custom"];
+        if (candidate.indexOf(argv[++i]) !== -1) {
+            settings.xliffStyle = argv[++i];
+        }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
     } else if (val === "--exclude") {
