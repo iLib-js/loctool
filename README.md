@@ -390,7 +390,7 @@ files and produce translated YAML files
 format files and produce translated XLIFF files
 
 * `ilib-loctool-webos-appinfo-json` - extract strings webOS
-  appinfo.json files
+  appinfo.json files and produce translated appinfo.json files for webOS
 
 * `ilib-loctool-webos-c` - extract strings from C language
   files for webOS
@@ -401,14 +401,14 @@ format files and produce translated XLIFF files
 * `ilib-loctool-webos-javascript` - extract strings from Javascript language
   files for webOS
 
-* `ilib-loctool-webos-json-resource` - extract strings from
-webOS json resource files
+* `ilib-loctool-webos-json-resource` - extract strings from javascript, C/C++ files
+ and produce translated json files for webOS
 
 * `ilib-loctool-webos-qml` - extract strings from QML language
   files for webOS
 
-* `ilib-loctool-webos-ts` - extract strings from QT's TS format files
-  for webOS
+* `ilib-loctool-webos-ts-resource` - extract strings from webOS QML files
+ and produce translated QT's TS format files for webOS
 
 Configuring a Custom Project Type
 -----------------------------------------------
