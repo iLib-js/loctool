@@ -64,19 +64,24 @@ module.exports.tmx = {
     },
 
     testTmxConstructorFull: function(test) {
-        test.expect(7);
+        test.expect(5);
 
         var tmx = new Tmx({
-            creationtool: "loctool",
-            "tool-name": "Localization Tool",
-            creationtoolversion: "1.2.34",
+            properties: {
+	            creationtool: "loctool",
+	            "tool-name": "Localization Tool",
+	            creationtoolversion: "1.2.34",
+            },
             path: "a/b/c.tmx"
         });
         test.ok(tmx);
-
-        test.equal(tmx["creationtool"], "loctool");
-        test.equal(tmx["creationtoolversion"], "1.2.34"),
-        test.equal(tmx.path, "a/b/c.tmx");
+        var props = tmx.getProperties();
+        
+        test.equal(props["creationtool"], "loctool");
+        test.equal(props["creationtoolversion"], "1.2.34");
+        test.equal(props["tool-name"], "Localization Tool");
+        
+        test.equal(tmx.getPath(), "a/b/c.tmx");
 
         test.done();
     },
@@ -151,8 +156,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 1);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -169,7 +173,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceStringWithTranslation: function(test) {
-        test.expect(11);
+        test.expect(12);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -194,8 +198,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 1);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -214,7 +217,7 @@ module.exports.tmx = {
     },
 
     testTmxAddMultipleResourceString: function(test) {
-        test.expect(18);
+        test.expect(19);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -244,7 +247,7 @@ module.exports.tmx = {
         test.equal(units.length, 2);
 
         test.ok(!units[0].comment);
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
@@ -257,7 +260,7 @@ module.exports.tmx = {
         test.equal(variants[0].locale, "en-US");
 
         test.ok(!units[1].comment);
-        props = units[1].getProps();
+        props = units[1].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
@@ -273,7 +276,7 @@ module.exports.tmx = {
     },
 
     testTmxAddMultipleResourceStringWithTranslations: function(test) {
-        test.expect(18);
+        test.expect(23);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -307,7 +310,7 @@ module.exports.tmx = {
         test.equal(units.length, 2);
 
         test.ok(!units[0].comment);
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
@@ -323,7 +326,7 @@ module.exports.tmx = {
         test.equal(variants[1].locale, "de-DE");
 
         test.ok(!units[1].comment);
-        props = units[1].getProps();
+        props = units[1].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
@@ -342,7 +345,7 @@ module.exports.tmx = {
     },
 
     testTmxAddMultipleResourceStringSameSource: function(test) {
-        test.expect(18);
+        test.expect(15);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -376,7 +379,7 @@ module.exports.tmx = {
         test.equal(units.length, 1);
 
         test.ok(!units[0].comment);
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
@@ -400,7 +403,7 @@ module.exports.tmx = {
     },
 
     testTmxAddMultipleResourceStringSameSourceDifferentTranslation: function(test) {
-        test.expect(18);
+        test.expect(14);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -433,17 +436,16 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 2);
+        test.equal(units.length, 1);
 
-        test.ok(!units[0].comment);
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "a");
 
         var variants = units[0].getVariants();
         test.ok(variants);
-        test.equal(variants.length, 2);
+        test.equal(variants.length, 3);
 
         test.equal(variants[0].string, "Asdf asdf");
         test.equal(variants[0].locale, "en-US");
@@ -459,27 +461,17 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddMultipleResourceStringSameSourceDifferentSourceLocale: function(test) {
-        test.expect(18);
+    testTmxAddResourceStringNotSourceLocale: function(test) {
+        test.expect(3);
 
-        var tmx = new Tmx();
-        test.ok(tmx);
-
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            sourceLocale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "webapp",
-            targetLocale: "de-DE",
-            target: "eins zwei drei"
+        var tmx = new Tmx({
+            locale: "en-US"
         });
-
-        tmx.addResource(res);
+        test.ok(tmx);
 
         res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
+            sourceLocale: "de-DE",
             key: "foobar",
             pathName: "foo/bar/j.java",
             project: "webapp",
@@ -489,47 +481,17 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
+        // should reject it. Only units with the source
+        // locale of en-US go in this tmx
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 2);
-
-        test.ok(!units[0].comment);
-        var props = units[0].getProps();
-        test.ok(props);
-        test.equal(props["x-project"], "webapp");
-        test.ok(!props["x-context"]);
-
-        var variants = units[0].getVariants();
-        test.ok(variants);
-        test.equal(variants.length, 2);
-
-        test.equal(variants[0].string, "Asdf asdf");
-        test.equal(variants[0].locale, "en-US");
-
-        test.equal(variants[1].string, "eins zwei drei");
-        test.equal(variants[1].locale, "de-DE");
-
-        test.ok(!units[1].comment);
-        props = units[1].getProps();
-        test.ok(props);
-        test.equal(props["x-project"], "webapp");
-        test.ok(!props["x-context"]);
-
-        variants = units[1].getVariants();
-        test.ok(variants);
-        test.equal(variants.length, 2);
-
-        test.equal(variants[0].string, "Asdf asdf");
-        test.equal(variants[0].locale, "de-DE");
-
-        test.equal(variants[1].string, "vier fumpf sechs");
-        test.equal(variants[1].locale, "en-US");
+        test.equal(units.length, 0);
 
         test.done();
     },
 
     testTmxAddMultipleResourceStringHandleDups: function(test) {
-        test.expect(18);
+        test.expect(14);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -564,15 +526,16 @@ module.exports.tmx = {
 
         // should not duplicate the unit or the variants
 
-        test.ok(!units[0].comment);
-        var props = units[0].getProps();
+        test.equal(units[0].string, "Asdf asdf");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.ok(!props["x-context"]);
 
         var variants = units[0].getVariants();
         test.ok(variants);
-        test.equal(variants.length, 1);
+        test.equal(variants.length, 2);
 
         test.equal(variants[0].string, "Asdf asdf");
         test.equal(variants[0].locale, "en-US");
@@ -584,7 +547,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceArray: function(test) {
-        test.expect(11);
+        test.expect(25);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -612,8 +575,9 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 3);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].string, "a");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -626,6 +590,8 @@ module.exports.tmx = {
         test.equal(variants[0].string, "a");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[1].string, "b");
+        test.equal(units[1].locale, "en-US");
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -633,6 +599,8 @@ module.exports.tmx = {
         test.equal(variants[0].string, "b");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[2].string, "c");
+        test.equal(units[2].locale, "en-US");
         variants = units[2].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -644,7 +612,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceArrayWithTranslations: function(test) {
-        test.expect(26);
+        test.expect(31);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -678,8 +646,9 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 3);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].string, "a");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -695,6 +664,8 @@ module.exports.tmx = {
         test.equal(variants[1].string, "x");
         test.equal(variants[1].locale, "de-DE");
 
+        test.equal(units[1].string, "b");
+        test.equal(units[1].locale, "en-US");
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 2);
@@ -705,9 +676,11 @@ module.exports.tmx = {
         test.equal(variants[1].string, "y");
         test.equal(variants[1].locale, "de-DE");
 
+        test.equal(units[2].string, "c");
+        test.equal(units[2].locale, "en-US");
         variants = units[2].getVariants();
         test.ok(variants);
-        test.equal(variants.length, 1);
+        test.equal(variants.length, 2);
 
         test.equal(variants[0].string, "c");
         test.equal(variants[0].locale, "en-US");
@@ -719,7 +692,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceArrayMultiple: function(test) {
-        test.expect(32);
+        test.expect(31);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -766,8 +739,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 6);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -819,7 +791,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceArrayMultipleWithTranslations: function(test) {
-        test.expect(44);
+        test.expect(43);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -878,8 +850,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 6);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -949,7 +920,7 @@ module.exports.tmx = {
     },
 
     testTmxAddResourceArrayMultipleWithTranslationsAndOverlappingSources: function(test) {
-        test.expect(44);
+        test.expect(43);
 
         var tmx = new Tmx();
         test.ok(tmx);
@@ -1006,10 +977,11 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 6);
+        test.equal(units.length, 4);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].string, "a");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1028,6 +1000,8 @@ module.exports.tmx = {
         test.equal(variants[2].string, "p");
         test.equal(variants[2].locale, "de-DE");
 
+        test.equal(units[1].string, "b");
+        test.equal(units[1].locale, "en-US");
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 3);
@@ -1041,6 +1015,8 @@ module.exports.tmx = {
         test.equal(variants[2].string, "q");
         test.equal(variants[2].locale, "de-DE");
 
+        test.equal(units[2].string, "c");
+        test.equal(units[2].locale, "en-US");
         variants = units[2].getVariants();
         test.ok(variants);
         test.equal(variants.length, 2);
@@ -1051,6 +1027,8 @@ module.exports.tmx = {
         test.equal(variants[1].string, "z");
         test.equal(variants[1].locale, "de-DE");
 
+        test.equal(units[3].string, "o");
+        test.equal(units[3].locale, "en-US");
         variants = units[3].getVariants();
         test.ok(variants);
         test.equal(variants.length, 2);
@@ -1064,13 +1042,13 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddResourceString: function(test) {
-        test.expect(7);
+    testTmxAddResourcePlural: function(test) {
+        test.expect(19);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other string"
@@ -1090,10 +1068,11 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 3);
+        test.equal(units.length, 2);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].locale, "en-US");
+        test.equal(units[0].string, "one string");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1106,6 +1085,9 @@ module.exports.tmx = {
         test.equal(variants[0].string, "one string");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[1].locale, "en-US");
+        test.equal(units[1].string, "other string");
+
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -1116,13 +1098,13 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddResourceStringWithTranslations: function(test) {
-        test.expect(20);
+    testTmxAddResourcePluralWithTranslations: function(test) {
+        test.expect(23);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other string"
@@ -1147,10 +1129,11 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 3);
+        test.equal(units.length, 2);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].string, "one string");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1166,6 +1149,8 @@ module.exports.tmx = {
         test.equal(variants[1].string, "ein Zeichenfolge");
         test.equal(variants[1].locale, "de-DE");
 
+        test.equal(units[1].string, "other string");
+        test.equal(units[1].locale, "en-US");
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 2);
@@ -1179,13 +1164,13 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddResourceStringMultiple: function(test) {
-        test.expect(24);
+    testTmxAddResourcePluralMultiple: function(test) {
+        test.expect(31);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1203,7 +1188,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        res = new ResourceString({
+        res = new ResourcePlural({
             sourceStrings: {
                 one: "a string",
                 other: "some strings"
@@ -1223,10 +1208,11 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 6);
+        test.equal(units.length, 4);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        test.equal(units[0].string, "one string");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1239,6 +1225,8 @@ module.exports.tmx = {
         test.equal(variants[0].string, "one string");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[1].string, "other strings");
+        test.equal(units[1].locale, "en-US");
         variants = units[1].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -1246,6 +1234,8 @@ module.exports.tmx = {
         test.equal(variants[0].string, "other strings");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[2].string, "a string");
+        test.equal(units[2].locale, "en-US");
         variants = units[2].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -1253,6 +1243,8 @@ module.exports.tmx = {
         test.equal(variants[0].string, "a string");
         test.equal(variants[0].locale, "en-US");
 
+        test.equal(units[3].string, "some strings");
+        test.equal(units[3].locale, "en-US");
         variants = units[3].getVariants();
         test.ok(variants);
         test.equal(variants.length, 1);
@@ -1263,13 +1255,13 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddResourceStringMultipleWithMoreTranslations: function(test) {
-        test.expect(34);
+    testTmxAddResourcePluralMultipleWithMoreTranslations: function(test) {
+        test.expect(33);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1292,7 +1284,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        res = new ResourceString({
+        res = new ResourcePlural({
             sourceStrings: {
                 one: "a string",
                 other: "many strings"
@@ -1318,10 +1310,9 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 6);
+        test.equal(units.length, 4);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1364,22 +1355,22 @@ module.exports.tmx = {
         test.equal(variants[0].string, "many strings");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "несколько струны");
+        test.equal(variants[1].string, "много струн");
         test.equal(variants[1].locale, "ru-RU");
-
-        test.equal(variants[2].string, "много струн");
+        
+        test.equal(variants[2].string, "несколько струны");
         test.equal(variants[2].locale, "ru-RU");
 
         test.done();
     },
 
-    testTmxAddResourceStringMultipleWithLessTranslations: function(test) {
-        test.expect(34);
+    testTmxAddResourcePluralMultipleWithLessTranslations: function(test) {
+        test.expect(21);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1402,7 +1393,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        res = new ResourceString({
+        res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1426,10 +1417,9 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 6);
+        test.equal(units.length, 2);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1461,13 +1451,13 @@ module.exports.tmx = {
         test.done();
     },
 
-    testTmxAddResourceStringMultipleWithTranslationsAndOverlappingSources: function(test) {
-        test.expect(28);
+    testTmxAddResourcePluralMultipleWithTranslationsAndOverlappingSources: function(test) {
+        test.expect(27);
 
         var tmx = new Tmx();
         test.ok(tmx);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1490,7 +1480,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        res = new ResourceString({
+        res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "some other strings"
@@ -1515,10 +1505,9 @@ module.exports.tmx = {
 
         var units = tmx.getTranslationUnits();
         test.ok(units);
-        test.equal(units.length, 6);
+        test.equal(units.length, 3);
 
-        test.equal(units[0].comment, "this is a comment");
-        var props = units[0].getProps();
+        var props = units[0].getProperties();
         test.ok(props);
         test.equal(props["x-project"], "webapp");
         test.equal(props["x-context"], "asdf");
@@ -1564,8 +1553,8 @@ module.exports.tmx = {
     testTmxSerializeStringMultipleWithTranslations: function(test) {
         test.expect(2);
 
-        var x = new Tmx();
-        test.ok(x);
+        var tmx = new Tmx();
+        test.ok(tmx);
 
         var res = new ResourceString({
             source: "Asdf asdf",
@@ -1597,7 +1586,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        var actual = x.serialize();
+        var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
             '  <body>\n' +
@@ -1620,8 +1609,8 @@ module.exports.tmx = {
     testTmxSerializeString: function(test) {
         test.expect(2);
 
-        var x = new Tmx();
-        test.ok(x);
+        var tmx = new Tmx();
+        test.ok(tmx);
 
         var res = new ResourceString({
             source: "Asdf asdf",
@@ -1647,7 +1636,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        var actual = x.serialize();
+        var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
             '  <body>\n' +
@@ -1674,6 +1663,7 @@ module.exports.tmx = {
 
         diff(actual, expected);
         test.equal(actual, expected);
+
         test.done();
     },
 
@@ -1695,7 +1685,7 @@ module.exports.tmx = {
 
         tmx.addResource(res);
 
-        var res = new ResourceString({
+        var res = new ResourcePlural({
             sourceStrings: {
                 one: "one string",
                 other: "other strings"
@@ -1757,15 +1747,8 @@ module.exports.tmx = {
             '      </tuv>\n' +
             '    </tu>\n' +
             '    <tu srclang="en-US">\n' +
-            '      <prop type="x-project">webapp</prop>\n' +
-            '      <tuv xml:lang="en-US">\n' +
-            '        <seg>baby baby</seg>\n' +
-            '      </tuv>\n' +
-            '      <tuv xml:lang="de-DE">\n' +
-            '        <seg>vier fumpf sechs</seg>\n' +
-            '      </tuv>\n' +
-            '    </tu>\n' +
-            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>one string</seg>\n' +
@@ -1775,6 +1758,8 @@ module.exports.tmx = {
             '      </tuv>\n' +
             '    </tu>\n' +
             '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>other strings</seg>\n' +
@@ -1784,6 +1769,8 @@ module.exports.tmx = {
             '      </tuv>\n' +
             '    </tu>\n' +
             '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>a</seg>\n' +
@@ -1793,6 +1780,8 @@ module.exports.tmx = {
             '      </tuv>\n' +
             '    </tu>\n' +
             '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>b</seg>\n' +
@@ -1802,6 +1791,8 @@ module.exports.tmx = {
             '      </tuv>\n' +
             '    </tu>\n' +
             '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>c</seg>\n' +
@@ -1815,6 +1806,7 @@ module.exports.tmx = {
 
         diff(actual, expected);
         test.equal(actual, expected);
+
         test.done();
     }
 };
