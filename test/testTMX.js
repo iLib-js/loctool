@@ -42,6 +42,8 @@ function diff(a, b) {
     }
 }
 
+var loctoolVersion = require("../package.json").version;
+
 module.exports.tmx = {
     testTmxConstructor: function(test) {
         test.expect(1);
@@ -1589,7 +1591,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-context">asdf</prop>\n' +
@@ -1640,7 +1642,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -1738,7 +1740,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
