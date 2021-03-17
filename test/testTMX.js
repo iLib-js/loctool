@@ -68,19 +68,19 @@ module.exports.tmx = {
 
         var tmx = new Tmx({
             properties: {
-	            creationtool: "loctool",
-	            "tool-name": "Localization Tool",
-	            creationtoolversion: "1.2.34",
+                creationtool: "loctool",
+                "tool-name": "Localization Tool",
+                creationtoolversion: "1.2.34",
             },
             path: "a/b/c.tmx"
         });
         test.ok(tmx);
         var props = tmx.getProperties();
-        
+
         test.equal(props["creationtool"], "loctool");
         test.equal(props["creationtoolversion"], "1.2.34");
         test.equal(props["tool-name"], "Localization Tool");
-        
+
         test.equal(tmx.getPath(), "a/b/c.tmx");
 
         test.done();
@@ -1357,7 +1357,7 @@ module.exports.tmx = {
 
         test.equal(variants[1].string, "много струн");
         test.equal(variants[1].locale, "ru-RU");
-        
+
         test.equal(variants[2].string, "несколько струны");
         test.equal(variants[2].locale, "ru-RU");
 
@@ -1589,6 +1589,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-context">asdf</prop>\n' +
@@ -1639,6 +1640,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -1736,6 +1738,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="2.11.0" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -1808,5 +1811,1065 @@ module.exports.tmx = {
         test.equal(actual, expected);
 
         test.done();
-    }
+    },
+
+    testTmxAddResourceSegmentSentenceSource: function(test) {
+        test.expect(23);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "This is a test. This is only a test.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceSourceTricky: function(test) {
+        test.expect(23);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "I would like to see Dr. Smith in the U.S. not someone else. Please arrange that.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "I would like to see Dr. Smith in the U.S. not someone else. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "I would like to see Dr. Smith in the U.S. not someone else. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[1].string, "Please arrange that.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "Please arrange that.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceSourceOnlyOneSentence: function(test) {
+        test.expect(13);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "This is a test.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 1);
+
+        test.equal(units[0].string, "This is a test.");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTarget: function(test) {
+        test.expect(27);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "This is a test. This is only a test.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            target: "Dies ist eine Untersuchung. Dies ist nur eine Untersuchung.",
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetJapanese: function(test) {
+        test.expect(27);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "This is a test. This is only a test.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            target: "これはテストです。これは単なるテストです。",
+            targetLocale: "ja-JP"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "これはテストです。");
+        test.equal(variants[1].locale, "ja-JP");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "これは単なるテストです。");
+        test.equal(variants[1].locale, "ja-JP");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetOnlyOneSentence: function(test) {
+        test.expect(15);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "This is a test.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            target: "Dies ist eine Untersuchung.",
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 1);
+
+        test.equal(units[0].string, "This is a test.");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceArray: function(test) {
+        test.expect(23);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceArray({
+            sourceArray: [
+                "This is a test. This is only a test."
+            ],
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetArray: function(test) {
+        test.expect(27);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceArray({
+            sourceArray: [
+                "This is a test. This is only a test."
+            ],
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetArray: [
+                "Dies ist eine Untersuchung. Dies ist nur eine Untersuchung."
+            ],
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetArrayMultiple: function(test) {
+        test.expect(51);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceArray({
+            sourceArray: [
+                "This is a test. This is only a test.",
+                "Yet another test. Another test."
+            ],
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetArray: [
+                "Dies ist eine Untersuchung. Dies ist nur eine Untersuchung.",
+                "Jemals noch eine Untersuchung. Noch eine Untersuchung."
+            ],
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 4);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].locale, "en-US");
+        props = units[2].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[2].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Jemals noch eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[3].string, "Another test.");
+        test.equal(units[3].locale, "en-US");
+        props = units[3].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[3].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Another test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Noch eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentencePlural: function(test) {
+        test.expect(23);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourcePlural({
+            sourcePlurals: {
+                other: "This is a test. This is only a test."
+            },
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetPlural: function(test) {
+        test.expect(27);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourcePlural({
+            sourcePlurals: {
+                "other": "This is a test. This is only a test."
+            },
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetPlurals: {
+                "other": "Dies ist eine Untersuchung. Dies ist nur eine Untersuchung."
+            },
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetPluralMultiple: function(test) {
+        test.expect(51);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourcePlural({
+            sourcePlurals: {
+                one: "This is a test. This is only a test.",
+                other: "Yet another test. Another test."
+            },
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetPlurals: {
+                one: "Dies ist eine Untersuchung. Dies ist nur eine Untersuchung.",
+                other: "Jemals noch eine Untersuchung. Noch eine Untersuchung."
+            },
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 4);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].locale, "en-US");
+        props = units[2].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[2].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Jemals noch eine Untersuchung. ");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.equal(units[3].string, "Another test.");
+        test.equal(units[3].locale, "en-US");
+        props = units[3].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[3].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Another test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Noch eine Untersuchung.");
+        test.equal(variants[1].locale, "de-DE");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetPluralLessCategories: function(test) {
+        test.expect(47);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourcePlural({
+            sourcePlurals: {
+                one: "This is a test. This is only a test.",
+                other: "Yet another test. Another test."
+            },
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetPlurals: {
+                other: "さらに別のテスト。別のテスト。"
+            },
+            targetLocale: "ja-JP"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 4);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 1);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].locale, "en-US");
+        props = units[2].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[2].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "さらに別のテスト。");
+        test.equal(variants[1].locale, "ja-JP");
+
+        test.equal(units[3].string, "Another test.");
+        test.equal(units[3].locale, "en-US");
+        props = units[3].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[3].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "Another test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "別のテスト。");
+        test.equal(variants[1].locale, "ja-JP");
+
+        test.done();
+    },
+
+    testTmxAddResourceSegmentSentenceTargetPluralMoreCategories: function(test) {
+        test.expect(55);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourcePlural({
+            sourcePlurals: {
+                one: "This is a test. This is only a test.",
+                other: "These are some tests. These are only some tests."
+            },
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetPlurals: {
+                one: "Это тест. Это всего лишь тест.",
+                few: "Это некоторые теста. Это только некоторые теста.",
+                other: "Это некоторые тестов. Это только некоторые тестов."
+            },
+            targetLocale: "ru-RU"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 4);
+
+        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Это тест. ");
+        test.equal(variants[1].locale, "ru-RU");
+
+        test.equal(units[1].string, "This is only a test.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "This is only a test.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Это всего лишь тест.");
+        test.equal(variants[1].locale, "ru-RU");
+
+        test.equal(units[2].string, "These are some tests. ");
+        test.equal(units[2].locale, "en-US");
+        props = units[2].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[2].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 3);
+
+        test.equal(variants[0].string, "These are some tests. ");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Это некоторые тестов. ");
+        test.equal(variants[1].locale, "ru-RU");
+
+        test.equal(variants[2].string, "Это некоторые теста. ");
+        test.equal(variants[2].locale, "ru-RU");
+
+        test.equal(units[3].string, "These are only some tests.");
+        test.equal(units[3].locale, "en-US");
+        props = units[3].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        variants = units[3].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 3);
+
+        test.equal(variants[0].string, "These are only some tests.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Это только некоторые тестов.");
+        test.equal(variants[1].locale, "ru-RU");
+
+        test.equal(variants[2].string, "Это только некоторые теста.");
+        test.equal(variants[2].locale, "ru-RU");
+
+        test.done();
+    },
+
 };
