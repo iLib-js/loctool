@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 021
+-------
+Published as version 2.12.0
+New Features:
+Added the --xliffStyle flag which specifies customized xliff format
+
+Bug Fixes:
+
+
 Build 020
 -------
 Published as version 2.11.0

@@ -29,7 +29,6 @@ var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
-var Xliff = require("./lib/Xliff.js");
 
 var XliffMerge = require("./lib/XliffMerge.js");
 var XliffSplit = require("./lib/XliffSplit.js");
@@ -105,6 +104,8 @@ function usage() {
         "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
         "--exclude\n" +
         "  exclude a comma-separated list of directories while searching for project.json config files \n" +
+        "--xliffStyle\n" +
+        "  Specify the Xliff format style. It can have standard or custom. (Default is standard) \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -143,6 +144,7 @@ var settings = {
     targetDir: ".",            // target directory for all output files
     xliffsDir: ".",
     xliffVersion: 1.2,
+    xliffStyle: "standard",
     localizeOnly: false,
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"]
@@ -240,6 +242,11 @@ for (var i = 0; i < argv.length; i++) {
         } else {
             console.error("Error: -z (--xliffsOut) option requires a directory name argument to follow it.");
             usage();
+        }
+    } else if (val === "--xliffStyle") {
+        var candidate = ["standard", "custom"];
+        if (candidate.indexOf(argv[++i]) !== -1) {
+            settings.xliffStyle = argv[++i];
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
