@@ -406,7 +406,12 @@ format files and produce translated XLIFF files
 
 * `ilib-loctool-webos-ts-resource` - extract strings from webOS QML files
  and produce translated QT's TS format files for webOS
+
+* `ilib-loctool-salesforce-metaxml` - extract strings from -meta.xml files and produced translated
+  meta.xml files for Salesforce
+
 * `ilib-loctool-json` - extract strings json files and produce translated json files
+
 * `ilib-loctool-po` - extract strings from po files and produce translated po files
 
 Configuring a Custom Project Type
