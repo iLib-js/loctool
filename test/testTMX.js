@@ -18,6 +18,9 @@
  */
 
 if (!Tmx) {
+    var path = require("path");
+    var fs = require("fs");
+
     var Tmx = require("../lib/TMX.js");
     var TranslationUnit = Tmx.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
@@ -1842,7 +1845,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -1854,7 +1857,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 1);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(units[1].string, "This is only a test.");
@@ -1902,7 +1905,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "I would like to see Dr. Smith in the U.S. not someone else. ");
+        test.equal(units[0].string, "I would like to see Dr. Smith in the U.S. not someone else.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -1914,7 +1917,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 1);
 
-        test.equal(variants[0].string, "I would like to see Dr. Smith in the U.S. not someone else. ");
+        test.equal(variants[0].string, "I would like to see Dr. Smith in the U.S. not someone else.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(units[1].string, "Please arrange that.");
@@ -2009,7 +2012,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2021,10 +2024,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2077,7 +2080,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2089,7 +2092,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(variants[1].string, "これはテストです。");
@@ -2195,7 +2198,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2207,7 +2210,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 1);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2261,7 +2264,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2273,10 +2276,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2335,7 +2338,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 4);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2347,10 +2350,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2371,7 +2374,7 @@ module.exports.tmx = {
         test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
-        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].string, "Yet another test.");
         test.equal(units[2].locale, "en-US");
         props = units[2].getProperties();
         test.ok(props);
@@ -2383,10 +2386,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].string, "Yet another test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Jemals noch eine Untersuchung. ");
+        test.equal(variants[1].string, "Jemals noch eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[3].string, "Another test.");
@@ -2439,7 +2442,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2451,7 +2454,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 1);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2505,7 +2508,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 2);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2517,10 +2520,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2579,7 +2582,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 4);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2591,10 +2594,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Dies ist eine Untersuchung. ");
+        test.equal(variants[1].string, "Dies ist eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2615,7 +2618,7 @@ module.exports.tmx = {
         test.equal(variants[1].string, "Dies ist nur eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
-        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].string, "Yet another test.");
         test.equal(units[2].locale, "en-US");
         props = units[2].getProperties();
         test.ok(props);
@@ -2627,10 +2630,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].string, "Yet another test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Jemals noch eine Untersuchung. ");
+        test.equal(variants[1].string, "Jemals noch eine Untersuchung.");
         test.equal(variants[1].locale, "de-DE");
 
         test.equal(units[3].string, "Another test.");
@@ -2688,7 +2691,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 4);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2700,7 +2703,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 1);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2718,7 +2721,7 @@ module.exports.tmx = {
         test.equal(variants[0].string, "This is only a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(units[2].string, "Yet another test. ");
+        test.equal(units[2].string, "Yet another test.");
         test.equal(units[2].locale, "en-US");
         props = units[2].getProperties();
         test.ok(props);
@@ -2730,7 +2733,7 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "Yet another test. ");
+        test.equal(variants[0].string, "Yet another test.");
         test.equal(variants[0].locale, "en-US");
 
         test.equal(variants[1].string, "さらに別のテスト。");
@@ -2793,7 +2796,7 @@ module.exports.tmx = {
         test.ok(units);
         test.equal(units.length, 4);
 
-        test.equal(units[0].string, "This is a test. ");
+        test.equal(units[0].string, "This is a test.");
         test.equal(units[0].locale, "en-US");
         var props = units[0].getProperties();
         test.ok(props);
@@ -2805,10 +2808,10 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 2);
 
-        test.equal(variants[0].string, "This is a test. ");
+        test.equal(variants[0].string, "This is a test.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Это тест. ");
+        test.equal(variants[1].string, "Это тест.");
         test.equal(variants[1].locale, "ru-RU");
 
         test.equal(units[1].string, "This is only a test.");
@@ -2829,7 +2832,7 @@ module.exports.tmx = {
         test.equal(variants[1].string, "Это всего лишь тест.");
         test.equal(variants[1].locale, "ru-RU");
 
-        test.equal(units[2].string, "These are some tests. ");
+        test.equal(units[2].string, "These are some tests.");
         test.equal(units[2].locale, "en-US");
         props = units[2].getProperties();
         test.ok(props);
@@ -2841,13 +2844,13 @@ module.exports.tmx = {
         test.ok(variants);
         test.equal(variants.length, 3);
 
-        test.equal(variants[0].string, "These are some tests. ");
+        test.equal(variants[0].string, "These are some tests.");
         test.equal(variants[0].locale, "en-US");
 
-        test.equal(variants[1].string, "Это некоторые тестов. ");
+        test.equal(variants[1].string, "Это некоторые тестов.");
         test.equal(variants[1].locale, "ru-RU");
 
-        test.equal(variants[2].string, "Это некоторые теста. ");
+        test.equal(variants[2].string, "Это некоторые теста.");
         test.equal(variants[2].locale, "ru-RU");
 
         test.equal(units[3].string, "These are only some tests.");
@@ -2874,4 +2877,183 @@ module.exports.tmx = {
         test.done();
     },
 
+    testTmxWrite: function(test) {
+        test.expect(4);
+
+        var tmx = new Tmx({
+            path: "./test/output.tmx",
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "Asdf asdf. Foobar foo.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp",
+            targetLocale: "de-DE",
+            target: "Eins zwei drei. Vier fumpf sechs."
+        });
+
+        tmx.addResource(res);
+
+        var res = new ResourcePlural({
+            sourceStrings: {
+                one: "one string",
+                other: "other strings"
+            },
+            sourceLocale: "en-US",
+            key: "blah blah",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetLocale: "de-DE",
+            targetStrings: {
+                one: "eine Zeichenfolge",
+                other: "mehrere Zeichenfolge"
+            }
+        });
+
+        tmx.addResource(res);
+
+        var res = new ResourceArray({
+            sourceArray: [
+                "A b cee. E f g.",
+                "b",
+                "c"
+            ],
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            targetLocale: "de-DE",
+            targetArray: [
+                "X y zee. M n o.",
+                "y",
+                "z"
+            ]
+        });
+
+        tmx.addResource(res);
+
+        var base = path.dirname(module.id);
+
+        if (fs.existsSync(path.join(base, "testfiles/test/output.tmx"))) {
+            fs.unlinkSync(path.join(base, "testfiles/test/output.tmx"));
+        }
+
+        test.ok(!fs.existsSync(path.join(base, "testfiles/test/output.tmx")));
+
+        tmx.write(path.join(base, "testfiles"));
+
+        test.ok(fs.existsSync(path.join(base, "testfiles/test/output.tmx")));
+
+        var actual = fs.readFileSync(path.join(base, "testfiles/test/output.tmx"), "utf-8");
+        var expected = 
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<tmx version="1.4">\n' +
+            '  <header segtype="sentence" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <body>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>Asdf asdf.</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>Eins zwei drei.</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>Foobar foo.</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>Vier fumpf sechs.</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>one string</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>eine Zeichenfolge</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>other strings</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>mehrere Zeichenfolge</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>A b cee.</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>X y zee.</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>E f g.</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>M n o.</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>b</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>y</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-context">asdf</prop>\n' +
+            '      <prop type="x-flavor">chocolate</prop>\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>c</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>z</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '  </body>\n' +
+            '</tmx>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    }
 };
