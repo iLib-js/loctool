@@ -43,7 +43,7 @@ var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
-    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2020, HealthTap, Inc. and JEDLSoft";
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft";
 }
 
 function usage() {
