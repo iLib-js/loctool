@@ -354,7 +354,7 @@ files and produce translated HTML files
 * `ilib-loctool-jst` - extract strings from Javascript Template
 (JST) code files and produce translated JST files
 
-* `ilib-loctool-strings-resource` - extract strings from iOS
+* `ilib-loctool-strings` - extract strings from iOS
 .strings format resource files and produce other .strings files
 
 * `ilib-loctool-java` - extract strings from Java
@@ -373,9 +373,6 @@ code that uses ilib and react-ilib to do its translations
 
 * `ilib-loctool-jst` - extract strings from JavaScript Template
 (JST) format files
-
-* `ilib-loctool-markdown` - extract strings from Markdown format
-files and produce translated Markdown files
 
 * `ilib-loctool-objectivec` - extract strings from Objective-C
 code for iOS and produce .strings files
@@ -409,6 +406,13 @@ format files and produce translated XLIFF files
 
 * `ilib-loctool-webos-ts-resource` - extract strings from webOS QML files
  and produce translated QT's TS format files for webOS
+
+* `ilib-loctool-salesforce-metaxml` - extract strings from -meta.xml files and produced translated
+  meta.xml files for Salesforce
+
+* `ilib-loctool-json` - extract strings json files and produce translated json files
+
+* `ilib-loctool-po` - extract strings from po files and produce translated po files
 
 Configuring a Custom Project Type
 -----------------------------------------------
@@ -506,7 +510,7 @@ npm run loc
 Copyright and License
 -------
 
-Copyright &copy; 2016-2020, HealthTap, Inc. and JEDLSoft
+Copyright &copy; 2016-2021, HealthTap, Inc. and JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this tool except in compliance with the License.
