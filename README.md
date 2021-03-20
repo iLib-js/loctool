@@ -64,7 +64,7 @@ point for your project, and then edit it to customize any settings.
 22:52:56 INFO loctool.loctool: loctool - extract strings from source code.
 
 22:52:56 INFO loctool.loctool: Command: init
-loctool v2.8.2 Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
+loctool v2.12.0 Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
 Project Initialize
 Full name of this project: myproject
 Type of this project (web, swift, iosobjc, android, custom) [custom]:
