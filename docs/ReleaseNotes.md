@@ -7,10 +7,12 @@ Published as version 2.12.0
 
 New Features:
 * Added the --xliffStyle flag which specifies customized xliff format
-* Added support for generating a TMX file out of a set of xliff files.
-    * Added a "tmx" action to the command-line: `loctool tmx output.tmx *.xliff`
-    * The TMX files are not segmented. That is, they contain the full strings
-      that appear in the input xliff files
+* Added support for writing TMX files
+    * The TMX files are segmented by paragraph (whole strings) or sentence.
+* Added a "convert" action to the command-line. This converts files from one format to another:
+    * `loctool convert output.tmx input1.xliff input2.xliff ...`
+    * files types are recognized by extension
+    * you may need plugins to read/write some file types
 
 Bug Fixes:
 

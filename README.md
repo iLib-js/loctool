@@ -64,7 +64,7 @@ point for your project, and then edit it to customize any settings.
 22:52:56 INFO loctool.loctool: loctool - extract strings from source code.
 
 22:52:56 INFO loctool.loctool: Command: init
-loctool v2.8.2 Copyright (c) 2016-2017, 2019-2020, HealthTap, Inc. and JEDLSoft
+loctool v2.8.2 Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
 Project Initialize
 Full name of this project: myproject
 Type of this project (web, swift, iosobjc, android, custom) [custom]:
@@ -144,7 +144,9 @@ All paths are relative to the root of the project.
     * xliffsOut - where to place the output xliff files, such as
     the "new" strings files
 * plugins - an array of names of plugins to use that handle various file
-  types in your project
+  types in your project. Make sure you have put these plugins as dependencies
+  in your package.json. See the plugins section below for more information
+  about them.
 
 Both the "includes" and "excludes" arrays may contain enhanced glob
 wildcard expressions using the [minimatch syntax](https://github.com/isaacs/minimatch):
@@ -506,6 +508,41 @@ Then:
 ```
 npm run loc
 ```
+
+Other Actions the Loctool Can Do
+-------
+
+All of the above documentation is focussed on localization, which is the
+main function of the loctool and it is the default action. There are a
+few other things that the loctool can do as well, and these are specified
+on the command line as the 2nd parameter, similar to the way that
+actions are specified to git or npm.
+
+These are the actions which are available:
+
+- localize - localize any projects found in the current directory tree.
+  This is the default action.
+- init - create a new project.json file based on the answers to a few
+  questions. This makes it easy to set up a new project for localization.
+- merge - merge multiple xliff files together into one. There may be some
+  restrictions to this, as xliff v2.0 format files cannot contain translations
+  to multiple languages.
+- split - split a set of xliff files into multiple xliff files where each
+  output file contains one language or project.
+- generate - like the localize action, this generates a set of localized
+  files for the project. However, unlike the localize action, it does not
+  read the source files first to determine which strings are used nor does
+  it generate a new strings file.
+- convert - Converts one resource file format to another. Resource files
+  are files that contain a collection of translations for a product in a
+  particular programming language. Examples include xliff, po, json,
+  strings, or
+  properties files. Additionally, the convert action can transform the
+  input files into translation memory tmx files. Tmx files cannot be
+  input files, only output. Note that conversion of files is not guaranteed
+  to preserve all data. For example, strings files for iOS can contain
+  comments whereas json files cannot. If you convert a strings file into a
+  json file, any comments will be lost.
 
 Copyright and License
 -------
