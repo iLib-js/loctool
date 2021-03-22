@@ -260,7 +260,7 @@ for (var i = 0; i < argv.length; i++) {
     } else if (val === "--segmentation") {
         var candidate = ["paragraph", "sentence"];
         if (candidate.indexOf(argv[++i]) !== -1) {
-            settings.segmentation = argv[++i];
+            settings.segmentation = argv[i];
         }
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;

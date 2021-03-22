@@ -2959,7 +2959,7 @@ module.exports.tmx = {
         test.ok(fs.existsSync(path.join(base, "testfiles/test/output.tmx")));
 
         var actual = fs.readFileSync(path.join(base, "testfiles/test/output.tmx"), "utf-8");
-        var expected = 
+        var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
             '  <header segtype="sentence" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
@@ -3055,5 +3055,74 @@ module.exports.tmx = {
         test.equal(actual, expected);
 
         test.done();
-    }
+    },
+
+    testTmxAddResourceSegmentSentenceTargetSpecial: function(test) {
+        test.expect(27);
+
+        var tmx = new Tmx({
+            segmentation: "sentence"
+        });
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "The SignRequest subdomain cannot be changed. If you need a different domain you can create a new team.",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            flavor: "chocolate",
+            comment: "this is a comment",
+            project: "webapp",
+            target: "SignRequest domänen kan inte ändras. Om du behöver en annan domän kan du skapa en nya arbetsgrupp.",
+            targetLocale: "sv"
+        });
+
+        tmx.addResource(res);
+
+        var units = tmx.getTranslationUnits();
+        test.ok(units);
+        test.equal(units.length, 2);
+
+        test.equal(units[0].string, "The SignRequest subdomain cannot be changed.");
+        test.equal(units[0].locale, "en-US");
+        var props = units[0].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[0].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "The SignRequest subdomain cannot be changed.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "SignRequest domänen kan inte ändras.");
+        test.equal(variants[1].locale, "sv");
+
+        test.equal(units[1].string, "If you need a different domain you can create a new team.");
+        test.equal(units[1].locale, "en-US");
+        props = units[1].getProperties();
+        test.ok(props);
+        test.equal(props["x-project"], "webapp");
+        test.equal(props["x-context"], "asdf");
+        test.equal(props["x-flavor"], "chocolate");
+
+        var variants = units[1].getVariants();
+        test.ok(variants);
+        test.equal(variants.length, 2);
+
+        test.equal(variants[0].string, "If you need a different domain you can create a new team.");
+        test.equal(variants[0].locale, "en-US");
+
+        test.equal(variants[1].string, "Om du behöver en annan domän kan du skapa en nya arbetsgrupp.");
+        test.equal(variants[1].locale, "sv");
+
+        test.done();
+    },
+
 };
