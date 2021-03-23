@@ -33,6 +33,10 @@
             "appenders": [ "default" ],
             "level": "info"
         },
+        "loctool.lib.convert": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.ContextResourceString": {
             "appenders": [ "default" ],
             "level": "info"
@@ -186,6 +190,10 @@
             "level": "info"
         },
         "loctool.lib.SwiftProject": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.lib.Tmx": {
             "appenders": [ "default" ],
             "level": "info"
         },
