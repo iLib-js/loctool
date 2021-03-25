@@ -104,6 +104,9 @@ function usage() {
         "   Default locale of source string. (Default is en-US) \n" +
         "-t or --target\n" +
         "  Write all output to the given target dir instead of in the source dir.\n" +
+        "--targetLocale\n" +
+        "  Set the target locale for a convert action for those resource file types that\n" +
+        "  are single locale.\n" +
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
@@ -156,7 +159,8 @@ var settings = {
     localizeOnly: false,
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
-    segmentation: "paragraph"
+    segmentation: "paragraph",
+    targetLocale: null
 };
 
 var options = [];
@@ -262,6 +266,8 @@ for (var i = 0; i < argv.length; i++) {
         if (candidate.indexOf(argv[++i]) !== -1) {
             settings.segmentation = argv[i];
         }
+    } else if (val === "--targetLocale") {
+        settings.targetLocale = argv[++i];
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
     } else if (val === "--exclude") {
