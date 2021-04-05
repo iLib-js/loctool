@@ -78,8 +78,10 @@ function usage() {
         "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
         "-p or --pull\n" +
         "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+        "--project\n" +
+        "  Specify the name of the project to use for output files during a convert command.\n" +
         "--projectType\n" +
-        "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
+        "  The type of project, which affects how source files are read and resource files are written. Default: web \n" +
         "--plugins\n" +
         "  plugins to use that handle various file types in your project. The parameter should be a\n" +
         "  comma-separated list of plugin names.\n" +
@@ -160,7 +162,8 @@ var settings = {
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
     segmentation: "paragraph",
-    targetLocale: null
+    targetLocale: null,
+    projectName: "convert"
 };
 
 var options = [];
@@ -268,6 +271,8 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--targetLocale") {
         settings.targetLocale = argv[++i];
+    } else if (val === "--project") {
+        settings.projectName = argv[++i];
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
     } else if (val === "--exclude") {
