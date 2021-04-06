@@ -78,8 +78,10 @@ function usage() {
         "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
         "-p or --pull\n" +
         "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+        "--projectId\n" +
+        "  Specify the default name of the project if not specified otherwise.\n" +
         "--projectType\n" +
-        "  the type of project, which affects how source files are read and resource files are written. Default: web \n" +
+        "  The type of project, which affects how source files are read and resource files are written. Default: web \n" +
         "--plugins\n" +
         "  plugins to use that handle various file types in your project. The parameter should be a\n" +
         "  comma-separated list of plugin names.\n" +
@@ -571,6 +573,9 @@ try {
        break;
 
     case "convert":
+        if (!settings.id) {
+            settings.id = "convert";
+        }
         fileConvert(settings);
         break;
     }
