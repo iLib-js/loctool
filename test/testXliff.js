@@ -1199,6 +1199,65 @@ module.exports.xliff = {
         test.done();
     },
 
+    testXliffSerializeWithXMLEscapingInResname: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf <b>asdf</b>",
+            sourceLocale: "en-US",
+            target: "Asdf 'quotes'",
+            targetLocale: "de-DE",
+            key: 'foobar <i>asdf</i>',
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            origin: "target"
+        });
+
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "baby &lt;b&gt;baby&lt;/b&gt;",
+            sourceLocale: "en-US",
+            target: "baby #(test)",
+            targetLocale: "de-DE",
+            key: "huzzah <b>asdf</b> #(test)",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            origin: "target"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar &lt;i>asdf&lt;/i>" restype="string" datatype="plaintext">\n' +
+                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '        <target>Asdf \'quotes\'</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah &lt;b>asdf&lt;/b> #(test)" restype="string" datatype="plaintext">\n' +
+                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '        <target>baby #(test)</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testXliffSerializeWithXMLEscapingWithQuotes: function(test) {
         test.expect(2);
 
@@ -1426,6 +1485,58 @@ module.exports.xliff = {
         test.equal(reslist[1].getSource(), "baby &lt;b&gt;baby&lt;/b&gt;");
         test.equal(reslist[1].getSourceLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "webapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.ok(!reslist[1].getTarget());
+
+        test.done();
+    },
+
+    testXliffDeserializeWithXMLUnescapingInResname: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar &lt;a>link&lt;/a>" restype="string">\n' +
+                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="webapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="&lt;b>huzzah&lt;/b>" restype="string">\n' +
+                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 2);
+
+        test.equal(reslist[0].getSource(), "Asdf <b>asdf</b>");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar <a>link</a>");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+        test.ok(!reslist[0].getTarget());
+
+        test.equal(reslist[1].getSource(), "baby &lt;b&gt;baby&lt;/b&gt;");
+        test.equal(reslist[1].getSourceLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "<b>huzzah</b>");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
