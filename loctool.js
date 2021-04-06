@@ -69,6 +69,11 @@ function usage() {
         "  Restrict operation to only the given locales. Locales should be given as\n" +
         "  a comma-separated list of BCP-47 locale specs. By default, this tool\n" +
         "  will operate with all locales that are available in the translations.\n" +
+        "--localeMap\n" +
+        "  Map input locales to different ones in the output. The format of the parameter\n" +
+        "  is a comma-separated list of mappings where each mapping is a BCP-47 specifier\n" +
+        "  of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
+        "  eg. 'da:da-DK,no:nb-NO,en:en-GB'\n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "-n or --pseudo\n" +
@@ -162,7 +167,8 @@ var settings = {
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
     segmentation: "paragraph",
-    targetLocale: null
+    targetLocale: null,
+    localeMap: {}
 };
 
 var options = [];
@@ -178,6 +184,16 @@ for (var i = 0; i < argv.length; i++) {
     } else if (val === "-l" || val === "--locales") {
         if (i < argv.length && argv[i+1]) {
             settings.locales = argv[++i].split(",");
+        }
+    } else if (val.toLowerCase() === "--localemap") {
+        if (i < argv.length && argv[i+1]) {
+            var mappings = argv[++i].split(",");
+            mappings.forEach(function(mapping) {
+                var parts = mapping.split(":");
+                if (parts && parts.length > 1) {
+                    settings.localeMap[parts[0]] = parts[1];
+                }
+            });
         }
     } else if (val === "-n" || val === "--pseudo") {
         settings.nopseudo = false;
