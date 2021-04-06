@@ -167,6 +167,7 @@ var settings = {
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
     segmentation: "paragraph",
+    sourceLocale: "en-US",
     targetLocale: null,
     localeMap: {}
 };
