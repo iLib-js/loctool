@@ -15,7 +15,9 @@ New Features:
     * you may need plugins to read/write some file types
 
 Bug Fixes:
-
+- the locales to localize to were not set correctly if there are no translation files already.
+  This made it harder to start new projects.
+- Xliff output didn't work if the source locale was something other than "en-US"
 
 Build 020
 -------
