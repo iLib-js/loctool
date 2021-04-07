@@ -1571,7 +1571,9 @@ module.exports.tmx = {
             context: "asdf",
             flavor: "chocolate",
             comment: "this is a comment",
-            project: "webapp"
+            project: "webapp",
+            target: "foobar auf deutsch",
+            targetLocale: "de-DE"
         });
 
         tmx.addResource(res);
@@ -1586,7 +1588,9 @@ module.exports.tmx = {
             context: "asdf",
             flavor: "chocolate",
             comment: "this is a comment",
-            project: "webapp"
+            project: "webapp",
+            target: "foobar en francais",
+            targetLocale: "fr-FR"
         });
 
         tmx.addResource(res);
@@ -1602,6 +1606,12 @@ module.exports.tmx = {
             '      <prop type="x-project">webapp</prop>\n' +
             '      <tuv xml:lang="en-US">\n' +
             '        <seg>Asdf asdf</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>foobar auf deutsch</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="fr-FR">\n' +
+            '        <seg>foobar en francais</seg>\n' +
             '      </tuv>\n' +
             '    </tu>\n' +
             '  </body>\n' +
@@ -3125,4 +3135,77 @@ module.exports.tmx = {
         test.done();
     },
 
+    testTmxSerializeStringDontSerializeUnitsWithNoTranslations: function(test) {
+        test.expect(2);
+
+        var tmx = new Tmx();
+        test.ok(tmx);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "webapp",
+            targetLocale: "de-DE",
+            target: "eins zwei drei"
+        });
+
+        tmx.addResource(res);
+
+        res = new ResourceString({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            targetLocale: "de-DE",
+            target: "vier fumpf sechs"
+        });
+
+        tmx.addResource(res);
+
+        // source-only resource should not appear in the serialized output
+        res = new ResourceString({
+            source: "oh yeah!",
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            targetLocale: "de-DE"
+        });
+
+        tmx.addResource(res);
+
+        var actual = tmx.serialize();
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<tmx version="1.4">\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <body>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>Asdf asdf</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>eins zwei drei</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '    <tu srclang="en-US">\n' +
+            '      <prop type="x-project">webapp</prop>\n' +
+            '      <tuv xml:lang="en-US">\n' +
+            '        <seg>baby baby</seg>\n' +
+            '      </tuv>\n' +
+            '      <tuv xml:lang="de-DE">\n' +
+            '        <seg>vier fumpf sechs</seg>\n' +
+            '      </tuv>\n' +
+            '    </tu>\n' +
+            '  </body>\n' +
+            '</tmx>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    }
 };
