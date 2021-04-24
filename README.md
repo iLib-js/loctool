@@ -64,7 +64,7 @@ point for your project, and then edit it to customize any settings.
 22:52:56 INFO loctool.loctool: loctool - extract strings from source code.
 
 22:52:56 INFO loctool.loctool: Command: init
-loctool v2.8.2 Copyright (c) 2016-2017, 2019-2020, HealthTap, Inc. and JEDLSoft
+loctool v2.12.0 Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
 Project Initialize
 Full name of this project: myproject
 Type of this project (web, swift, iosobjc, android, custom) [custom]:
@@ -144,7 +144,9 @@ All paths are relative to the root of the project.
     * xliffsOut - where to place the output xliff files, such as
     the "new" strings files
 * plugins - an array of names of plugins to use that handle various file
-  types in your project
+  types in your project. Make sure you have put these plugins as dependencies
+  in your package.json. See the plugins section below for more information
+  about them.
 
 Both the "includes" and "excludes" arrays may contain enhanced glob
 wildcard expressions using the [minimatch syntax](https://github.com/isaacs/minimatch):
@@ -354,7 +356,7 @@ files and produce translated HTML files
 * `ilib-loctool-jst` - extract strings from Javascript Template
 (JST) code files and produce translated JST files
 
-* `ilib-loctool-strings-resource` - extract strings from iOS
+* `ilib-loctool-strings` - extract strings from iOS
 .strings format resource files and produce other .strings files
 
 * `ilib-loctool-java` - extract strings from Java
@@ -374,9 +376,6 @@ code that uses ilib and react-ilib to do its translations
 * `ilib-loctool-jst` - extract strings from JavaScript Template
 (JST) format files
 
-* `ilib-loctool-markdown` - extract strings from Markdown format
-files and produce translated Markdown files
-
 * `ilib-loctool-objectivec` - extract strings from Objective-C
 code for iOS and produce .strings files
 
@@ -390,7 +389,7 @@ files and produce translated YAML files
 format files and produce translated XLIFF files
 
 * `ilib-loctool-webos-appinfo-json` - extract strings webOS
-  appinfo.json files
+  appinfo.json files and produce translated appinfo.json files for webOS
 
 * `ilib-loctool-webos-c` - extract strings from C language
   files for webOS
@@ -401,14 +400,21 @@ format files and produce translated XLIFF files
 * `ilib-loctool-webos-javascript` - extract strings from Javascript language
   files for webOS
 
-* `ilib-loctool-webos-json-resource` - extract strings from
-webOS json resource files
+* `ilib-loctool-webos-json-resource` - extract strings from javascript, C/C++ files
+ and produce translated json files for webOS
 
 * `ilib-loctool-webos-qml` - extract strings from QML language
   files for webOS
 
-* `ilib-loctool-webos-ts` - extract strings from QT's TS format files
-  for webOS
+* `ilib-loctool-webos-ts-resource` - extract strings from webOS QML files
+ and produce translated QT's TS format files for webOS
+
+* `ilib-loctool-salesforce-metaxml` - extract strings from -meta.xml files and produced translated
+  meta.xml files for Salesforce
+
+* `ilib-loctool-json` - extract strings json files and produce translated json files
+
+* `ilib-loctool-po` - extract strings from po files and produce translated po files
 
 Configuring a Custom Project Type
 -----------------------------------------------
@@ -503,10 +509,45 @@ Then:
 npm run loc
 ```
 
+Other Actions the Loctool Can Do
+-------
+
+All of the above documentation is focussed on localization, which is the
+main function of the loctool and it is the default action. There are a
+few other things that the loctool can do as well, and these are specified
+on the command line as the 2nd parameter, similar to the way that
+actions are specified to git or npm.
+
+These are the actions which are available:
+
+- localize - localize any projects found in the current directory tree.
+  This is the default action.
+- init - create a new project.json file based on the answers to a few
+  questions. This makes it easy to set up a new project for localization.
+- merge - merge multiple xliff files together into one. There may be some
+  restrictions to this, as xliff v2.0 format files cannot contain translations
+  to multiple languages.
+- split - split a set of xliff files into multiple xliff files where each
+  output file contains one language or project.
+- generate - like the localize action, this generates a set of localized
+  files for the project. However, unlike the localize action, it does not
+  read the source files first to determine which strings are used nor does
+  it generate a new strings file.
+- convert - Converts one resource file format to another. Resource files
+  are files that contain a collection of translations for a product in a
+  particular programming language. Examples include xliff, po, json,
+  strings, or
+  properties files. Additionally, the convert action can transform the
+  input files into translation memory tmx files. Tmx files cannot be
+  input files, only output. Note that conversion of files is not guaranteed
+  to preserve all data. For example, strings files for iOS can contain
+  comments whereas json files cannot. If you convert a strings file into a
+  json file, any comments will be lost.
+
 Copyright and License
 -------
 
-Copyright &copy; 2016-2020, HealthTap, Inc. and JEDLSoft
+Copyright &copy; 2016-2021, HealthTap, Inc. and JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this tool except in compliance with the License.

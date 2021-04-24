@@ -1,6 +1,24 @@
 Release Notes for Version 2
 ============================
 
+Build 021
+-------
+Published as version 2.12.0
+
+New Features:
+* Added the --xliffStyle flag which specifies customized xliff format
+* Added support for writing TMX files
+    * The TMX files are segmented by paragraph (whole strings) or sentence.
+* Added a "convert" action to the command-line. This converts files from one format to another:
+    * `loctool convert output.tmx input1.xliff input2.xliff ...`
+    * files types are recognized by extension
+    * you may need plugins to read/write some file types
+
+Bug Fixes:
+- the locales to localize to were not set correctly if there are no translation files already.
+  This made it harder to start new projects.
+- Xliff output didn't work if the source locale was something other than "en-US"
+
 Build 020
 -------
 Published as version 2.11.0

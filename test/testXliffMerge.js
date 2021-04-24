@@ -229,4 +229,128 @@ module.exports.xliffmerge = {
         test.ok(fs.existsSync("./testfiles/xliff20/output-ko-KR.xliff"));
         test.done();
     },
+    testXliffMerge_write_en_US_CustomStyle: function(test) {
+        test.expect(2);
+
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.xliffStyle = "custom";
+        settings.infiles = [
+            "testfiles/xliff20/app1/en-US.xliff",
+            "testfiles/xliff20/app2/en-US.xliff",
+        ];
+
+        var target = XliffMerge(settings);
+        test.ok(target);
+
+        var actual = target.serialize();
+        var expected =
+        '<?xml version="1.0" encoding="utf-8"?>\n' +
+        '<xliff version="2.0" srcLang="en-KR" trgLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
+        '  <file id="app1_f1" original="app1">\n' +
+        '    <group id="app1_g1" name="cpp">\n' +
+        '      <unit id="app1_1">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1a</source>\n' +
+        '          <target>app1:String 1a</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '      <unit id="app1_2">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1b</source>\n' +
+        '          <target>app1:String 1b</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '    <group id="app1_g2" name="x-json">\n' +
+        '      <unit id="app1_3">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1c</source>\n' +
+        '          <target>app1:String 1c</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '  </file>\n' +
+        '  <file id="app2_f2" original="app2">\n' +
+        '    <group id="app2_g3" name="javascript">\n' +
+        '      <unit id="app2_1">\n' +
+        '        <segment>\n' +
+        '          <source>app2: String 2a</source>\n' +
+        '          <target>app2: String 2a</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '      <unit id="app2_2">\n' +
+        '        <segment>\n' +
+        '          <source>app2: String 2b</source>\n' +
+        '          <target>app2: String 2b</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '  </file>\n' +
+        '</xliff>';
+        test.equal(actual, expected);
+        test.done();
+    },
+    testXliffMerge_write_en_US_CustomStyle_wrongStyle: function(test) {
+        test.expect(2);
+
+        var settings = {};
+        settings.xliffVersion = 2;
+        settings.xliffStyle = "custommm";
+        settings.infiles = [
+            "testfiles/xliff20/app1/en-US.xliff",
+            "testfiles/xliff20/app2/en-US.xliff",
+        ];
+
+        var target = XliffMerge(settings);
+        test.ok(target);
+
+        var actual = target.serialize();
+        var expected =
+        '<?xml version="1.0" encoding="utf-8"?>\n' +
+        '<xliff version="2.0" srcLang="en-KR" trgLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
+        '  <file original="app1" l:project="app1">\n' +
+        '    <group id="group_1" name="cpp">\n' +
+        '      <unit id="app1_1" type="res:string" l:datatype="cpp">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1a</source>\n' +
+        '          <target>app1:String 1a</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '      <unit id="app1_2" type="res:string" l:datatype="cpp">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1b</source>\n' +
+        '          <target>app1:String 1b</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '    <group id="group_2" name="x-json">\n' +
+        '      <unit id="app1_3" type="res:string" l:datatype="x-json">\n' +
+        '        <segment>\n' +
+        '          <source>app1:String 1c</source>\n' +
+        '          <target>app1:String 1c</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '  </file>\n' +
+        '  <file original="app2" l:project="app2">\n' +
+        '    <group id="group_3" name="javascript">\n' +
+        '      <unit id="app2_1" type="res:string" l:datatype="javascript">\n' +
+        '        <segment>\n' +
+        '          <source>app2: String 2a</source>\n' +
+        '          <target>app2: String 2a</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '      <unit id="app2_2" type="res:string" l:datatype="javascript">\n' +
+        '        <segment>\n' +
+        '          <source>app2: String 2b</source>\n' +
+        '          <target>app2: String 2b</target>\n' +
+        '        </segment>\n' +
+        '      </unit>\n' +
+        '    </group>\n' +
+        '  </file>\n' +
+        '</xliff>';
+        test.equal(actual, expected);
+        test.done();
+    },
 };

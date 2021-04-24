@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" srcLang="en-KR" trgLang="en-US" xmlns:l="http://ilib-js.com/loctool">
+  <file original="app1" l:project="app1">
+    <group id="group_1" name="cpp">
+      <unit id="app1_1">
+        <segment>
+          <source>app1:String 1a</source>
+          <target>app1:String 1a</target>
+        </segment>
+      </unit>
+      <unit id="app1_2">
+        <segment>
+          <source>app1:String 1b</source>
+          <target>app1:String 1b</target>
+        </segment>
+      </unit>
+    </group>
+    <group id="group_2" name="x-json">
+      <unit id="app1_3">
+        <segment>
+          <source>app1:String 1c</source>
+          <target>app1:String 1c</target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+  <file original="app2" l:project="app2">
+    <group id="group_3" name="javascript">
+      <unit id="app2_1">
+        <segment>
+          <source>app2: String 2a</source>
+          <target>app2: String 2a</target>
+        </segment>
+      </unit>
+      <unit id="app2_2">
+        <segment>
+          <source>app2: String 2b</source>
+          <target>app2: String 2b</target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>
