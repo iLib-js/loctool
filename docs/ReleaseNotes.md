@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 022
+-------
+Published as version 2.12.1
+Bug Fixes:
+- Added guard code not to work if the object is empty when setting target locale for conversions
+
+
 Build 021
 -------
 Published as version 2.12.0
