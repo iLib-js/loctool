@@ -51,6 +51,20 @@ var p = new WebProject({
     flavors: ["CHOCOLATE", "VANILLA"]
 });
 
+var p2 = new WebProject({
+    id: "webapp",
+    sourceLocale: "en-US",
+    resourceDirs: {
+        yml: "a/b"
+    }
+}, "./testfiles", {
+    locales:["en-GB"],
+    nopseudo: true,
+    localeMap: {
+        "de-DE": "de"
+    }
+});
+
 var yft = new YamlFileType(p);
 
 module.exports.yamlfile = {
@@ -1635,6 +1649,20 @@ module.exports.yamlfile = {
         test.ok(y);
         y.extract();
         test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test2.yml');
+        test.done();
+    },
+
+    testYamlGetLocalizedPathDefault: function(test) {
+        test.expect(2);
+
+        var y = new YamlFile({
+            project: p2,
+            type: yft,
+            pathName: "./test2.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.equals(y.getLocalizedPath('de-DE'), 'de/test2.yml');
         test.done();
     },
 

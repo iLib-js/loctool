@@ -2365,6 +2365,27 @@ module.exports.htmlfile = {
         test.done();
     },
 
+    testHTMLFileGetLocalizedPathWithMapping: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            localeMap: {
+                "fr-FR": "fr"
+            }
+        });
+
+        var htf = new HTMLFile(p, "./asdf/bar/simple.html");
+        test.ok(htf);
+
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr.html");
+
+        test.done();
+    },
+
     testHTMLFileGetLocalizedPathRegularHTMLFileName: function(test) {
         test.expect(2);
 

@@ -51,6 +51,17 @@ var p = new WebProject({
     locales:["en-GB"]
 });
 
+var p2 = new WebProject({
+    name: "foo",
+    id: "foo",
+    sourceLocale: "en-US"
+}, "./testfiles", {
+    locales:["en-GB"],
+    localeMap: {
+        "fr-FR": "fr"
+    }
+});
+
 var mdft = new MarkdownFileType(p);
 var base = path.dirname(module.id);
 
@@ -2740,6 +2751,17 @@ module.exports.markdown = {
         test.ok(mf);
 
         test.equal(mf.getLocalizedPath("fr-FR"), "fr-FR/asdf/bar/simple.md");
+
+        test.done();
+    },
+
+    testMarkdownFileGetLocalizedPathWithLocaleMap: function(test) {
+        test.expect(2);
+
+        var mf = new MarkdownFile(p2, "./asdf/bar/simple.md");
+        test.ok(mf);
+
+        test.equal(mf.getLocalizedPath("fr-FR"), "fr/asdf/bar/simple.md");
 
         test.done();
     },
