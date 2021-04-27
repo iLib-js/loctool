@@ -2729,6 +2729,27 @@ module.exports.htmltemplatefile = {
         test.done();
     },
 
+    testHTMLTemplateFileGetLocalizedPathWithLocaleMap: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            id: "foo"
+        }, "./testfiles", {
+            locales:["en-GB"],
+            localeMap: {
+                "fr-FR": "fr"
+            }
+        });
+
+        var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
+        test.ok(htf);
+
+        test.equal(htf.getLocalizedPath("fr-FR"), "asdf/bar/simple.fr.tmpl.html");
+
+        test.done();
+    },
+
     testHTMLTemplateFileGetLocalizedPathRegularHTMLFileName: function(test) {
         test.expect(2);
 

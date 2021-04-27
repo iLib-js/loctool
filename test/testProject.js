@@ -164,5 +164,56 @@ module.exports.project = {
         test.ok(project.isResourcePath("js", "testfiles/public/localized_js/resources.json"));
 
         test.done();
-    }
+    },
+
+    testGetOutputLocaleMapped: function(test) {
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {
+            localeMap: {
+                "da-DK": "da",
+                "pt-BR": "pt"
+            }
+        });
+        test.ok(project.getOutputLocale("da-DK"), "da");
+
+        test.done();
+    },
+    testGetOutputLocaleNotMapped: function(test) {
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {
+            localeMap: {
+                "da-DK": "da",
+                "pt-BR": "pt"
+            }
+        });
+        test.ok(project.getOutputLocale("da-DE"), "da-DE");
+
+        test.done();
+    },
+    testGetOutputLocaleNoMap: function(test) {
+        test.expect(1);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.ok(project.getOutputLocale("da-DK"), "da-DK");
+
+        test.done();
+    },
+    testGetOutputLocaleBogusMap: function(test) {
+        test.expect(3);
+
+        var project = ProjectFactory('./testfiles', {
+            localeMap: {
+                "da-DK": undefined,
+                "pt-BR": null,
+                "de-DE": ""
+            }
+        });
+        test.ok(project.getOutputLocale("da-DK"), "da-DK");
+        test.ok(project.getOutputLocale("pt-BR"), "pt-BR");
+        test.ok(project.getOutputLocale("de-DE"), "de-DE");
+
+        test.done();
+    },
 };
