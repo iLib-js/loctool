@@ -62,6 +62,18 @@ var pi = new WebProject({
     identify: true
 });
 
+var p2 = new WebProject({
+    id: "webapp",
+    sourceLocale: "en-US"
+}, "./testfiles", {
+    nopseudo: true,
+    locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
+    localeMap: {
+        "fr-FR": "fr",
+        "zh-Hans-CN": "zh"
+    }
+});
+
 var hft = new HamlFileType(p);
 
 module.exports.hamlfile = {
@@ -5496,6 +5508,22 @@ module.exports.hamlfile = {
 
         // should attempt to read the file and not fail
         test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr-FR.html.haml");
+
+        test.done();
+    },
+
+    testHamlFileGetLocalizedPathWithLocaleMap: function(test) {
+        test.expect(2);
+
+        var h = new HamlFile({
+            project: p2,
+            pathName: "./ruby/foo.html.haml",
+            type: hft
+        });
+        test.ok(h);
+
+        // should attempt to read the file and not fail
+        test.equal(h.getLocalizedPath("fr-FR"), "ruby/foo.fr.html.haml");
 
         test.done();
     },

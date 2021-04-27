@@ -3,9 +3,14 @@ Release Notes for Version 2
 
 Build 022
 -------
-Published as version 2.12.1
+Published as version 2.13.0
+
+New Features:
+* Added the ability for the plugins to see the output locale map so that they can fix the
+  locales used to make the output files names.
+
 Bug Fixes:
-- Added guard code not to work if the object is empty when setting target locale for conversions
+* Added guard code not to work if the object is empty when setting target locale for conversions
 
 
 Build 021
