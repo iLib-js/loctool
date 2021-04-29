@@ -277,7 +277,7 @@ for (var i = 0; i < argv.length; i++) {
         }
     } else if (val === "--xliffStyle") {
         var candidate = ["standard", "custom"];
-        if (candidate.indexOf(argv[++i]) !== -1) {
+        if (candidate.indexOf(argv[i+1]) !== -1) {
             settings.xliffStyle = argv[++i];
         }
     } else if (val === "--segmentation") {
