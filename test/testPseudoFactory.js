@@ -47,7 +47,63 @@ var project2 = new WebProject({
 
 var project3 = new WebProject({
     sourceLocale: "en-US",
-    pseudoLocale: ["zxx-XX", "zxx-Hans-XX"],
+    pseudoLocale: ["en-GB", "zxx-XX", "zxx-Hans-XX"],
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-NZ", "es-US"]
+});
+
+var project4 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: {
+        "en-GB": "english-british",
+        "en-CA": "english-canadian"
+    },
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-CA", "en-NZ", "es-US"]
+});
+
+var project5 = new WebProject({
+    sourceLocale: "en-US",
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-AU", "en-CA", "en-NZ", "es-US"]
+});
+
+var project6 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: {
+        "en-GB": "english-british",
+        "zxx-XX": "debug",
+        "zxx-Hans-XX": "debug-asian"
+    },
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-NZ", "es-US"]
+});
+
+var project7 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: {},
+    resourceDirs: {
+        "yml": "config/locales"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-NZ", "es-US"]
+});
+
+var project8 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: [],
     resourceDirs: {
         "yml": "config/locales"
     }
@@ -56,11 +112,11 @@ var project3 = new WebProject({
 });
 
 module.exports.pseudofactory = {
-    testPseudoFactoryBritishEnglish: function(test) {
+    testPseudoFactoryDefaultBritishEnglish: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-GB",
             type: "text"
         });
@@ -70,11 +126,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishEnglishRightSourceLocale: function(test) {
+    testPseudoFactoryDefaultBritishEnglishRightSourceLocale: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-GB",
             type: "text"
         });
@@ -84,11 +140,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglish1: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglish1: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-AU",
             type: "text"
         });
@@ -98,11 +154,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglish2: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglish2: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-NZ",
             type: "text"
         });
@@ -112,11 +168,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglish3: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglish3: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-HK",
             type: "text"
         });
@@ -126,11 +182,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglish4: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglish4: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-ZA",
             type: "text"
         });
@@ -140,11 +196,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryOtherEnglish: function(test) {
+    testPseudoFactoryDefaultOtherEnglish: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-CA",
             type: "text"
         });
@@ -154,11 +210,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishEnglishWithFlavor: function(test) {
+    testPseudoFactoryDefaultBritishEnglishWithFlavor: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-GB-ASDF",
             type: "text"
         });
@@ -168,11 +224,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglishWithFlavor: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglishWithFlavor: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-NZ-ASDF",
             type: "text"
         });
@@ -182,11 +238,11 @@ module.exports.pseudofactory = {
         test.done();
     },
 
-    testPseudoFactoryBritishLikeEnglishWithFlavorRightSourceLocale: function(test) {
+    testPseudoFactoryDefaultBritishLikeEnglishWithFlavorRightSourceLocale: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "en-NZ-ASDF",
             type: "text"
         });
@@ -196,11 +252,219 @@ module.exports.pseudofactory = {
         test.done();
     },
 
+    testPseudoFactoryArrayBritishEnglish: function(test) {
+        test.expect(2);
+
+        // explicitly specified in array
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof WordBasedPseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryArrayBritishEnglishRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US");
+
+        test.done();
+    },
+
+    testPseudoFactoryArrayBritishLikeEnglish1: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "en-JM",
+            type: "text"
+        });
+
+        // Jamaica is not in the array
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryObjectBritishEnglish: function(test) {
+        test.expect(2);
+
+        // explicitly specified in array
+        var pseudo = PseudoFactory({
+            project: project6,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof WordBasedPseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryObjectBritishEnglishRightSourceLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project6,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.equal(pseudo.getSourceLocale(), "en-US");
+
+        test.done();
+    },
+
+    testPseudoFactoryObjectBritishLikeEnglish1: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project6,
+            targetLocale: "en-JM",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyArrayNoPseudos1: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project8,
+            targetLocale: "en-JM",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyArrayNoPseudos2: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project8,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyArrayNoPseudos3: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project8,
+            targetLocale: "zxx-XX",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyArrayNoPseudos4: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project8,
+            targetLocale: "zh-Hant-TW",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyObjectNoPseudos1: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project7,
+            targetLocale: "en-JM",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyObjectNoPseudos2: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project7,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyObjectNoPseudos3: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project7,
+            targetLocale: "zxx-XX",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryEmptyObjectNoPseudos4: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project7,
+            targetLocale: "zh-Hant-TW",
+            type: "text"
+        });
+
+        // Jamaica is not in the object
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
     testPseudoFactoryChineseTraditional: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "zh-Hant-HK",
             type: "text"
         });
@@ -214,7 +478,7 @@ module.exports.pseudofactory = {
         test.expect(3);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "zh-Hant-HK",
             type: "text"
         });
@@ -229,7 +493,7 @@ module.exports.pseudofactory = {
         test.expect(2);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "zh-Hant-HK-ASDF",
             type: "text"
         });
@@ -243,7 +507,7 @@ module.exports.pseudofactory = {
         test.expect(3);
 
         var pseudo = PseudoFactory({
-            project: project,
+            project: project5,
             targetLocale: "zh-Hant-HK-ASDF",
             type: "text"
         });
@@ -335,7 +599,7 @@ module.exports.pseudofactory = {
 
         test.done();
     },
-    testPseudoFactoryNormalzxx3: function(test) {
+    testPseudoFactoryNormalzxxWithVariant: function(test) {
         test.expect(2);
 
         var pseudo = PseudoFactory({
@@ -345,6 +609,33 @@ module.exports.pseudofactory = {
         });
         test.ok(pseudo);
         test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryNotListed: function(test) {
+        test.expect(1);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "en-AU",
+            type: "text"
+        });
+        test.ok(!pseudo);
+
+        test.done();
+    },
+
+    testPseudoFactoryListed: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project3,
+            targetLocale: "en-GB",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof WordBasedPseudo);
 
         test.done();
     },

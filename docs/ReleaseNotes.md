@@ -3,7 +3,20 @@ Release Notes for Version 2
 
 Build 023
 -------
-Published as version 2.13.1
+Published as version 2.14.0
+
+New Features:
+* Add the ability to redefine which style of pseudolocalization that each locale uses
+  by specifying an object in the pseudolocale setting in project.json.
+    * Defined a number of pseudo translation styles such as
+      "english-british" or "chinese-traditional-tw"
+    * When pseudolocale is an object, it maps a locale to a pseudo style
+    * When pseudolocale is set to a string or array, it works as before to
+      define which locales are pseudo locales, but locales not explicitly
+      listed are no longer considered pseudolocales
+    * When pseudolocale is set to an empty string, array, or object, all
+      pseudolocalization is turned off, similar to specifying the "nopseudo"
+      flag on the command-line
 
 Bug Fixes:
 * Fixed the part where the argument number was increased incorrectly

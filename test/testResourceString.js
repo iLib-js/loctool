@@ -484,8 +484,7 @@ module.exports.resourcestring = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
@@ -520,8 +519,7 @@ module.exports.resourcestring = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "en-ZA"]
         });
@@ -555,8 +553,7 @@ module.exports.resourcestring = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "en-CA"]
         });
@@ -593,8 +590,7 @@ module.exports.resourcestring = {
 
         var p = new WebProject({
             id: "foo",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });

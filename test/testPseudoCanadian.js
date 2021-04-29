@@ -26,7 +26,6 @@ if (!PseudoFactory) {
 
 var project = new WebProject({
     sourceLocale: "en-US",
-    pseudoLocale: "ps-DO",
     resourceDirs: {
         "yml": "config/locales"
     }

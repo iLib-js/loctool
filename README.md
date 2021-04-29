@@ -308,9 +308,276 @@ make sure that the latest localized files are always checked in to
 your SCM soon after you receive each batch of translations back
 from your vendor.
 
+Pseudotranslation
+-----------------
+
+The loctool has the ability to do pseudo-translation, which means
+automatically generating a set of translations as a transformation of
+the source strings. Currently, there are two types of pseudo-translations:
+
+1. Pseudo-translation for debugging. This transformation takes a source
+string and applies an algorithmic transformation to it for the purpose
+of debugging your app.
+1. Automatic translation. This applies an algorithmic translation to
+the source strings for actual use in your app.
+1. Transliterations. This applies an algorithm to transform one
+[manual] translation into another in a different script.
+
+### Debug Pseudo-translation
+
+The reasons you might use debug pseudo-translation are:
+
+1. To test whether all your strings have been extracted properly. If
+you rely on your engineers to either wrap their translatable strings
+in function calls, or for them to copy their strings into a source
+resource file, they may miss some of them. Using a pseudo locale
+in your UI will make that obvious. If you see a regular source
+string in your UI instead of a pseudo-localized one, then either:
+    1. The engineer missed it
+    1. It is a user-generated string
+    1. It comes from outside your app (ie. a 3rd party app,
+       library, file, or service.)
+If is it the first type, then you can submit a bug for the engineer
+to fix it.
+1. To test if long strings will fit in your UI. The source string
+is artificially lengthened to simulate "long" languages like
+German or French that tend to cause expansion from English source
+strings. Ideally, your UI is dynamically sized and can stretch
+appropriately to accommodate translations that are longer or
+shorter than the source string.
+1. To test fonts. Some pseudo translations can transform the
+source strings into strings of characters that require a different
+font. This allows you to test out whether or not the font works
+in your UI without having a real translation.
+
+### Automatic Translations
+
+Strings for some locales can be generated based on the source
+locale strings or based on previous translations. Here are
+the transformations that the loctool currently supports:
+
+1. US English -> British English. This is essentially a spell
+correction from US English to British English. For example,
+it will correct (color -> colour) and (localize -> localise).
+It will not take care of transforming vocabulary such as
+(truck -> lorry) or (sweater -> jumper).
+1. US English -> Canadian English. Similar to the British
+English, this is simply a spell correction without transforming
+vocabulary.
+1. US English -> Australian English. Similar to the British
+English, this is simply a spell correction without transforming
+vocabulary. This transformation is almost the same as
+British English except for a few slight differences.
+1. US English -> New Zealand English. Similar to the British
+English, this is simply a spell correction without transforming
+vocabulary. This transformation is almost the same as
+British English except for a few slight differences.
+1. US English -> another form of English not listed above.
+This applies the British English rules to generate the other
+locales. For example, en-JM (English for Jamaica) can be
+generated from US English using the British English spell
+corrections.
+
+Future versions of the loctool may contain automatic translations
+based on machine translation. For example, if your company
+has a license to use the Google Translate API, we could use
+that to generate translations automatically. The quality of
+machine translation is not sufficient to look "professional"
+in a regular UIs but could be of use to support locales that
+are not your core business or perhaps even for pre-testing
+locales before you spend money on real translation.
+
+One big problem with Google Translate and the reason that the
+Google Translate automatic pseudo-translation does not yet exist
+in the loctool is that Google Translate is not designed
+for UI strings. This causes a number of problems:
+
+1. Markup or HTML gets messed and the syntax is wrong.
+Sometimes even, the HTML tag names of attribute names
+get translated!
+1. Substitution parameter names get translated for those
+programming languages that name their parameters.
+1. The syntax of substitution parameters can get screwed
+up for those programming languages where the parameters
+are not named. Example: "%@1s" -> "%  @1 s" in some
+instances and the programming language no longer recognizes
+them as substitution parameters.
+1. The position of substitution parameters is not updated.
+Human translators realize that "%s" in a source string
+is substituted with a particular type of value, especially
+if this is explained in your extracted translator's
+comments. For example, "%s" may represent a person's
+name or a formatted date, and "%d" may represent a number
+of items. Google Translate will not move these around
+in the translation appropriately according to the grammar
+of the language, but a human translator will.
+
+### Transliterations
+
+Currently, only one type of transliteration is supported, but
+more are planned for future versions of the loctool.
+
+This type of pseudo-translation is
+is a little special in that it is not the source string that is
+transformed, but a previous translation of that source string.
+In order to use this
+pseudo-translation, you have to localize to both the
+locales in the same run of the
+localization tool. That is, both must be listed in the
+`locales` setting at the same time. If they are not done
+together, then the translation to the first locale is not
+available to be mapped into the translation for the second
+locale.
+
+Supported transliterations are:
+
+1. Simplified Chinese -> Traditional Chinese. This applies
+the open-source OpenCC transformation that is used in Wikimedia
+to automatically generate the traditional Chinese based on
+a previous simplified Chinese translation. Both the Taiwan and
+Hong Kong style of traditional Chinese are supported,
+based on the target locale.
+
+Other types of automatic translations are planned in
+future versions of the loctool:
+
+1. Serbian. Cyrillic <-> Latin
+1. Uzbek. Cyrillic <-> Latin <-> Arabic
+1. Kurdish. Cyrillic <-> Latin <-> Arabic
+1. Japanese Katakana <-> Romaji
+
+If you have a request for any other type of transliteration,
+please let us know!
+
+## Specifying Pseudo-translations
+
+Pseudo-translations can be specified in your project.json file.
+Currently, there are two properties of the project.json that
+are involved with pseudo-translation:
+
+1. pseudoLocale: This is either a string, an array of locale specs,
+or an object that maps locale specs to a pseudo-translation style.
+1. settings.locales: If you wish to perform a pseudo-translation,
+the target locale for that pseudo-translation must be listed in
+the settings.locales array. If you are doing a transliteration,
+for example, from simplified Chinese for China (zh-Hans-CN) to
+traditional Chinese for Taiwan (zh-Hant-TW), both of those locales
+should be listed in the settings.locales array.
+
+If pseudoLocales is specified as:
+
+* string: this specifies a single locale to use as the "debug"
+pseudo-translation
+* array: all of the locales listed in the array will be
+considered pseudo-locales and the default pseudo-translation style
+will be applied to generate them.
+Any locale not specified in the array will not be considered a
+pseudo-locale.
+* object: map locale specs to the style of pseudo-translation.
+* empty array or object: all pseudo-translations will be turned off.
+* not specfied at all: all available pseudo-translations listed above will
+be applied with their default style.
+
+Example project.json with a string pseudo locale:
+
+```
+{
+  "pseudoLocale": "mn-MN",
+  "settings": {
+    "locales": [ "de-DE", "en-CA", "en-GB", "mn-MN", "zh-Hans-CN", "zh-Hant-TW"]
+  }
+}
+```
+
+This uses "mn-MN" for the "debug" pseudo-translation. Note that "mn-MN" must be listed in
+the `settings.locales` for this to work.
+
+Example project.json with an array of pseudo locales:
+
+```
+{
+  "pseudoLocale": [
+    "en-CA",
+    "en-GB",
+    "zh-Hant-TW"
+  ],
+  "settings": {
+    "locales": [ "de-DE", "en-CA", "en-GB", "zh-Hans-CN", "zh-Hant-TW"]
+  }
+}
+```
+
+Note that both "zh-Hans-CN" and "zh-Hant-TW" are listed in the locales so that
+the Taiwan resources can be generated from the China resources.
+
+Example project with an object of pseudo locales:
+
+```
+{
+  "pseudoLocale": {
+    "pl-PL": "debug",
+    "en-CA": "english-canadian",
+    "en-GB": "english-british",
+    "zh-Hant-TW": "chinese-traditional-tw"
+  },
+  "settings": {
+    "locales": [ "de-DE", "en-CA", "en-GB", "pl-PL", "zh-Hans-CN", "zh-Hant-TW"]
+  }
+}
+```
+
+In the above example, we are co-opting the Polish locale
+as the "debug" pseudo-translation. Make sure Polish is also
+listed in the locales list!
+
+### Pseudo-translations Styles and Defaults
+
+The following is the list of styles supported:
+
+- debug: map Latin characters to accented versions of those
+  characters. This is readable in English still, albeit with some
+  difficulty, so that you can use the UI.
+- debug-rtl: map the Latin characters to right-to-left language
+  characters to test your app's readiness for right-to-left languages
+  like Arabic or Hebrew
+- debug-asian: map the Latin characters to Asian characters
+  to test your app's font support for Asian characters
+- english-british: map US spellings to British English spellings
+- english-canadian: map US spellings to Canadian English spellings
+- english-australian: map US spellings to Australian English spellings
+- english-new-zealand: map US spellings to New Zealand English spellings
+- chinese-traditional-tw: map simplified Chinese translations
+  to Taiwan-style traditional Chinese
+- chinese-traditional-hk: map simplified Chinese translations
+  to Hong Kong-style traditional Chinese
+
+The following is the default mapping between locales (pseudo-locales!)
+and the styles:
+
+- zxx-XX, und-XX: debug
+- zxx-Arab-XX: debug-rtl
+- zxx-Hans-XX, zxx-Hant-XX: debug-asian
+- en-CA: english-canadian
+- en-AU, en-CX, en-CC, en-NF, en-HM: english-australian
+- en-NZ, en-CK, en-NU, en-TK: english-new-zealand
+- en-*: english-british  (that is, any form of English other than
+  the ones listed above)
+- zh-Hant: chinese-traditional-tw
+- zh-Hant-TW: chinese-traditional-tw
+- zh-Hant-HK: chinese-traditional-hk
+
+Note that "zxx" means "unspecified language", and "und" means
+"undefined language", which are valid ISO codes that are never
+used in real locales so they
+make good candidates for debug pseudo-translations. However, there are
+many UI frameworks that do not allow you to set the locale
+to these locales. In that case, you might want to choose a locale
+that you are not currently officially supporting like "be-BE" or
+"fi-FI" but which are more common and which your UI framework
+will allow. Be very careful to not ship this locale!
+
 Plugins
 -------
-
 The loctool is driven by plugins that know how to parse various types
 of files, and write out the appropriate localized output.
 
@@ -412,7 +679,9 @@ format files and produce translated XLIFF files
 * `ilib-loctool-salesforce-metaxml` - extract strings from -meta.xml files and produced translated
   meta.xml files for Salesforce
 
-* `ilib-loctool-json` - extract strings json files and produce translated json files
+* `ilib-loctool-json` - extract strings from json files and produce translated json files. This
+specifies which strings to extract using a json schema file. Different json files can use different
+json schemas.
 
 * `ilib-loctool-po` - extract strings from po files and produce translated po files
 
