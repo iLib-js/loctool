@@ -1,6 +1,12 @@
 Release Notes for Version 2
 ============================
 
+Build 023
+-------
+Published as version 2.13.1
+Bug Fixes:
+* Fixed the part where the argument number was increased incorrectly
+
 Build 022
 -------
 Published as version 2.13.0
