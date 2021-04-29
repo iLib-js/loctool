@@ -7,6 +7,7 @@ Published as version 2.13.1
 
 Bug Fixes:
 * Fixed the part where the argument number was increased incorrectly
+* Make sure the xliffsOut dir exists before attempting to write files there
 * Make sure to pass in the target locale as specified on the command line when converting files
 * Corrected misspelled function name in ResourcePlural
 
