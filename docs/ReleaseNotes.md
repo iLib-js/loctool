@@ -4,8 +4,11 @@ Release Notes for Version 2
 Build 023
 -------
 Published as version 2.13.1
+
 Bug Fixes:
 * Fixed the part where the argument number was increased incorrectly
+* Make sure to pass in the target locale as specified on the command line when converting files
+* Corrected misspelled function name in ResourcePlural
 
 Build 022
 -------
