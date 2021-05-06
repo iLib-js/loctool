@@ -73,6 +73,13 @@ MockFileType.prototype.getDataType = function() {
     return this.datatype;
 };
 
+/**
+ * When doing pseudo-translation, what kind of escaping to use.
+ */
+MockFileType.prototype.getEscapeType = function() {
+    return "xml";
+};
+
 MockFileType.prototype.getResourceTypes = function() {
     return {};
 };

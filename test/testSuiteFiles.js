@@ -56,6 +56,7 @@ module.exports.files = [
     "testProjectFactory.js",
     "testPseudoBritish.js",
     "testPseudoCanadian.js",
+    "testPseudoDebug.js",
     "testPseudoFactory.js",
     "testPseudoHant.js",
     "testPseudoNewZealand.js",

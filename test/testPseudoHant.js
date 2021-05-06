@@ -472,5 +472,25 @@ module.exports.pseudohant = {
 
             test.done();
         });
+    },
+
+    testPseudoHantGetStringXML: function(test) {
+        test.expect(3);
+
+        var translations = new TranslationSet();
+
+        var ph = new PseudoHant({
+            set: translations,
+            targetLocale: "zh-Hant-HK",
+            type: "xml"
+        });
+
+        ph.init(function() {
+            test.equal(ph.getString('<span>你好吗</span>？'), "<span>你好嗎</span>？");
+            test.equal(ph.getString('燕子的巡航速度是多少？'), "燕子的巡航速度是多少？");
+            test.equal(ph.getString('<i>什么</i>？ 你是指欧洲的燕子还是非洲的燕子？'), "<i>什麼</i>？ 你是指歐洲的燕子還是非洲的燕子？");
+
+            test.done();
+        });
     }
 };

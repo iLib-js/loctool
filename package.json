@@ -67,7 +67,7 @@
         "cldr-segmentation": "^2.1.3",
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
-        "ilib": "^14.6.0",
+        "ilib": "^14.9.0",
         "ilib-tree-node": "^1.2.2",
         "js-stl": ">=0.0.6",
         "js-yaml": "^3.12.1",
