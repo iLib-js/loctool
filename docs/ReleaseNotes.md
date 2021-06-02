@@ -1,7 +1,7 @@
 Release Notes for Version 2
 ============================
 
-Build 023
+Build 024
 -------
 Published as version 2.13.2
 
