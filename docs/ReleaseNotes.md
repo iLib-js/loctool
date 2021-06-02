@@ -3,6 +3,16 @@ Release Notes for Version 2
 
 Build 023
 -------
+Published as version 2.13.2
+
+Bug Fixes:
+
+* Loctool crashed if some plugins don't implement the generatePseudo method
+  in the FileType class. Now it tests for the existence of the method before
+  attempting to call it.
+
+Build 023
+-------
 Published as version 2.13.1
 
 Bug Fixes:
