@@ -876,16 +876,25 @@ module.exports.xliff20 = {
             '  <file original="foo/bar/j.java" l:project="webapp">\n' +
             '    <group id="group_2" name="x-android-resource">\n' +
             '      <unit id="2" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="zero">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">{"pluralForm":"zero","pluralFormOther":"huzzah"}</note>\n' +
+            '        </notes>\n' +
             '        <segment>\n' +
             '          <source>0</source>\n' +
             '        </segment>\n' +
             '      </unit>\n' +
             '      <unit id="3" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"huzzah"}</note>\n' +
+            '        </notes>\n' +
             '        <segment>\n' +
             '          <source>1</source>\n' +
             '        </segment>\n' +
             '      </unit>\n' +
             '      <unit id="4" name="huzzah" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
+            '        <notes>\n' +
+            '          <note appliesTo="source">{"pluralForm":"few","pluralFormOther":"huzzah"}</note>\n' +
+            '        </notes>\n' +
             '        <segment>\n' +
             '          <source>few</source>\n' +
             '        </segment>\n' +
@@ -1247,12 +1256,18 @@ module.exports.xliff20 = {
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <group id="group_1" name="ruby">\n' +
                 '      <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
+                '        </notes>\n' +
                 '        <segment>\n' +
                 '          <source>There is 1 object.</source>\n' +
                 '          <target state="new">Da gibts 1 Objekt.</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
                 '      <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
+                '        </notes>\n' +
                 '        <segment>\n' +
                 '          <source>There are {n} objects.</source>\n' +
                 '          <target state="new">Da gibts {n} Objekten.</target>\n' +
@@ -1304,18 +1319,27 @@ module.exports.xliff20 = {
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <group id="group_1" name="ruby">\n' +
                 '      <unit id="1" name="foobar" type="res:plural" l:datatype="ruby" l:category="one">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
+                '        </notes>\n' +
                 '        <segment>\n' +
                 '          <source>There is 1 object.</source>\n' +
                 '          <target state="new">Имеется {n} объект.</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
                 '      <unit id="2" name="foobar" type="res:plural" l:datatype="ruby" l:category="few">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
+                '        </notes>\n' +
                 '        <segment>\n' +
                 '          <source>There are {n} objects.</source>\n' +
                 '          <target state="new">Есть {n} объекта.</target>\n' +
                 '        </segment>\n' +
                 '      </unit>\n' +
                 '      <unit id="3" name="foobar" type="res:plural" l:datatype="ruby" l:category="other">\n' +
+                '        <notes>\n' +
+                '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
+                '        </notes>\n' +
                 '        <segment>\n' +
                 '          <source>There are {n} objects.</source>\n' +
                 '          <target state="new">Всего {n} объектов.</target>\n' +

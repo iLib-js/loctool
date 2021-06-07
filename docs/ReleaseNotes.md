@@ -3,7 +3,11 @@ Release Notes for Version 2
 
 Build 024
 -------
-Published as version 2.13.2
+Published as version 2.14.0
+
+New Features:
+* Added xliff comments on translation units for [mojito](https://mojito.global) to
+  read so that it can recognize plural resources
 
 Bug Fixes:
 * Fixed some bugs in pseudo locale translation when called from a plugin

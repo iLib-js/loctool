@@ -667,12 +667,15 @@ module.exports.xliff = {
             '    <body>\n' +
             '      <trans-unit id="2" resname="huzzah" restype="plural" datatype="x-android-resource" extype="zero">\n' +
             '        <source>0</source>\n' +
+            '        <note>{"pluralForm":"zero","pluralFormOther":"huzzah"}</note>\n' +
             '      </trans-unit>\n' +
             '      <trans-unit id="3" resname="huzzah" restype="plural" datatype="x-android-resource" extype="one">\n' +
             '        <source>1</source>\n' +
+            '        <note>{"pluralForm":"one","pluralFormOther":"huzzah"}</note>\n' +
             '      </trans-unit>\n' +
             '      <trans-unit id="4" resname="huzzah" restype="plural" datatype="x-android-resource" extype="few">\n' +
             '        <source>few</source>\n' +
+            '        <note>{"pluralForm":"few","pluralFormOther":"huzzah"}</note>\n' +
             '      </trans-unit>\n' +
             '    </body>\n' +
             '  </file>\n' +
@@ -1024,10 +1027,12 @@ module.exports.xliff = {
                 '      <trans-unit id="1" resname="foobar" restype="plural" datatype="ruby" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '        <target state="new">Da gibts 1 Objekt.</target>\n' +
+                '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target state="new">Da gibts {n} Objekten.</target>\n' +
+                '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
@@ -1077,14 +1082,17 @@ module.exports.xliff = {
                 '      <trans-unit id="1" resname="foobar" restype="plural" datatype="ruby" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '        <target state="new">Имеется {n} объект.</target>\n' +
+                '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="few">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target state="new">Есть {n} объекта.</target>\n' +
+                '        <note>{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="3" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '        <target state="new">Всего {n} объектов.</target>\n' +
+                '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
