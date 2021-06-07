@@ -62,13 +62,11 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getString('你好吗？'), "你好嗎？");
-            test.equal(ph.getString('燕子的巡航速度是多少？'), "燕子的巡航速度是多少？");
-            test.equal(ph.getString('什么？ 你是指欧洲的燕子还是非洲的燕子？'), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        test.equal(ph.getString('你好吗？'), "你好嗎？");
+        test.equal(ph.getString('燕子的巡航速度是多少？'), "燕子的巡航速度是多少？");
+        test.equal(ph.getString('什么？ 你是指欧洲的燕子还是非洲的燕子？'), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringEnglish: function(test) {
@@ -81,12 +79,10 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getString('foo'), "foo");
-            test.equal(ph.getString('What is the cruising speed of a swallow?'), "What is the cruising speed of a swallow?");
+        test.equal(ph.getString('foo'), "foo");
+        test.equal(ph.getString('What is the cruising speed of a swallow?'), "What is the cruising speed of a swallow?");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceArray: function(test) {
@@ -117,13 +113,11 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getStringForResource(ra, 0), "你好嗎？");
-            test.equal(ph.getStringForResource(ra, 1), "燕子的巡航速度是多少？");
-            test.equal(ph.getStringForResource(ra, 2), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        test.equal(ph.getStringForResource(ra, 0), "你好嗎？");
+        test.equal(ph.getStringForResource(ra, 1), "燕子的巡航速度是多少？");
+        test.equal(ph.getStringForResource(ra, 2), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourcePlural: function(test) {
@@ -166,13 +160,11 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getStringForResource(rp, "one"), "你好嗎？");
-            test.equal(ph.getStringForResource(rp, "few"), "燕子的巡航速度是多少？");
-            test.equal(ph.getStringForResource(rp, "many"), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        test.equal(ph.getStringForResource(rp, "one"), "你好嗎？");
+        test.equal(ph.getStringForResource(rp, "few"), "燕子的巡航速度是多少？");
+        test.equal(ph.getStringForResource(rp, "many"), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceString: function(test) {
@@ -203,11 +195,9 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getStringForResource(rs), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
+        test.equal(ph.getStringForResource(rs), "什麼？ 你是指歐洲的燕子還是非洲的燕子？");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceArrayNoPreviousTranslation: function(test) {
@@ -229,14 +219,12 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            // no translation? Just return the source
-            test.equal(ph.getStringForResource(ra, 0), "How are you?");
-            test.equal(ph.getStringForResource(ra, 1), "What is the cruising speed of a swallow?");
-            test.equal(ph.getStringForResource(ra, 2), "What? Do you mean a European swallow or an African swallow?");
+        // no translation? Just return the source
+        test.equal(ph.getStringForResource(ra, 0), "How are you?");
+        test.equal(ph.getStringForResource(ra, 1), "What is the cruising speed of a swallow?");
+        test.equal(ph.getStringForResource(ra, 2), "What? Do you mean a European swallow or an African swallow?");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourcePluralNoPreviousTranslation: function(test) {
@@ -262,14 +250,12 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            // no translation? Just return the source
-            test.equal(ph.getStringForResource(rp, "one"), "How are you?");
-            test.equal(ph.getStringForResource(rp, "few"), "What is the cruising speed of a swallow?");
-            test.equal(ph.getStringForResource(rp, "many"), "What? Do you mean a European swallow or an African swallow?");
+        // no translation? Just return the source
+        test.equal(ph.getStringForResource(rp, "one"), "How are you?");
+        test.equal(ph.getStringForResource(rp, "few"), "What is the cruising speed of a swallow?");
+        test.equal(ph.getStringForResource(rp, "many"), "What? Do you mean a European swallow or an African swallow?");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceStringNoPreviousTranslation: function(test) {
@@ -291,11 +277,9 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getStringForResource(rs), "What? Do you mean a European swallow or an African swallow?");
+        test.equal(ph.getStringForResource(rs), "What? Do you mean a European swallow or an African swallow?");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceUndefined: function(test) {
@@ -308,11 +292,9 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.ok(!ph.getStringForResource(undefined, 0));
+        test.ok(!ph.getStringForResource(undefined, 0));
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringTW: function(test) {
@@ -327,14 +309,12 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-TW"
         });
 
-        ph.init(function() {
-            // TW specific
-            test.equal(ph.getString('卸載'), "解除安裝");
-            test.equal(ph.getString('城域網'), "都會網路");
-            test.equal(ph.getString('優先級'), "優先順序");
+        // TW specific
+        test.equal(ph.getString('卸載'), "解除安裝");
+        test.equal(ph.getString('城域網'), "都會網路");
+        test.equal(ph.getString('優先級'), "優先順序");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringTWGeneric: function(test) {
@@ -347,14 +327,12 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-TW"
         });
 
-        ph.init(function() {
-            // generic traditional should still work too
-            test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
-            test.equal(ph.getString('东荡西除？'), "東蕩西除？");
-            test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
+        // generic traditional should still work too
+        test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
+        test.equal(ph.getString('东荡西除？'), "東蕩西除？");
+        test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringHK: function(test) {
@@ -369,12 +347,10 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getString('鰂魚涌'), "鰂魚涌");
-            test.equal(ph.getString('深涌'), "深涌");
-            test.equal(ph.getString('蔥'), "葱");
-            test.done();
-        });
+        test.equal(ph.getString('鰂魚涌'), "鰂魚涌");
+        test.equal(ph.getString('深涌'), "深涌");
+        test.equal(ph.getString('蔥'), "葱");
+        test.done();
     },
 
     testPseudoHantGetStringHKGeneric: function(test) {
@@ -389,14 +365,12 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            // generic traditional should still work too
-            test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
-            test.equal(ph.getString('东荡西除？'), "東蕩西除？");
-            test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
+        // generic traditional should still work too
+        test.equal(ph.getString('与君一席话胜读十年书'), "與君一席話勝讀十年書");
+        test.equal(ph.getString('东荡西除？'), "東蕩西除？");
+        test.equal(ph.getString('云从龙风从虎'), "雲從龍風從虎");
 
-            test.done();
-        });
+        test.done();
     },
 
     testPseudoHantGetStringForResourceWithOverrideTranslation: function(test) {
@@ -466,11 +440,9 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        ph.init(function() {
-            test.equal(ph.getStringForResource(english1), "override string");  // looked up
-            test.equal(ph.getStringForResource(english2), "東蕩西除？");        // auto-generated
+        test.equal(ph.getStringForResource(english1), "override string");  // looked up
+        test.equal(ph.getStringForResource(english2), "東蕩西除？");        // auto-generated
 
-            test.done();
-        });
+        test.done();
     }
 };

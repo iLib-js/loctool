@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.13.1",
+    "version": "2.13.2",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -75,7 +75,7 @@
         "message-accumulator": "^2.2.1",
         "micromatch": "^3.1.0",
         "mysql2": "^1.7.0",
-        "opencc-js": "^0.2.2",
+        "opencc-js": "^1.0.3",
         "pretty-data": ">=0.40.0",
         "readline-sync": "^1.4.10",
         "rehype-raw": "^4.0.2",
