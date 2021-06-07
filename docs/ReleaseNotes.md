@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 024
+-------
+Published as version 2.13.2
+
+Bug Fixes:
+* Fixed some bugs in pseudo locale translation when called from a plugin
+* Fixed a bug where Hans pseudo translation crashed when called from a
+  plugin because the conversion data had not been loaded yet
+    * Upgraded to opencc-js 1.0.3 to get the latest mappings and so that
+      the data can be loaded synchronously
+
 Build 023
 -------
 Published as version 2.13.1
