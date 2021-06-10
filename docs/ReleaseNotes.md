@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 024
+-------
+Published as version 2.13.2
+
+Bug Fixes:
+* Fixed some bugs in pseudo locale translation when called from a plugin
+* Fixed a bug where Hans pseudo translation crashed when called from a
+  plugin because the conversion data had not been loaded yet
+    * Upgraded to opencc-js 1.0.3 to get the latest mappings and so that
+      the data can be loaded synchronously
+
 Build 023
 -------
 Published as version 2.14.0
@@ -23,6 +34,9 @@ Bug Fixes:
 * Make sure the xliffsOut dir exists before attempting to write files there
 * Make sure to pass in the target locale as specified on the command line when converting files
 * Corrected misspelled function name in ResourcePlural
+* Loctool crashed if some plugins don't implement the generatePseudo method
+  in the FileType class. Now it tests for the existence of the method before
+  attempting to call it.
 
 Build 022
 -------
