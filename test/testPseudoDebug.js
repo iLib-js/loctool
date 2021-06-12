@@ -170,7 +170,7 @@ module.exports.pseudodebug = {
             targetLocale: "es-US",
             type: "text"
         });
-        test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), 
+        test.equal(pb.getString("Skip the unflavored {estrogen} supplements."),
             'Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210');
 
         test.done();
