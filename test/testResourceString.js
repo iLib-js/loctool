@@ -486,7 +486,8 @@ module.exports.resourcestring = {
             id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles", {
-            locales:["en-GB"]
+            locales:["en-GB"],
+            nopseudo: false
         });
 
         var rb = new PseudoFactory({
