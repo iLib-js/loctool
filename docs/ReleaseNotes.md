@@ -3,7 +3,14 @@ Release Notes for Version 2
 
 Build 024
 -------
-Published as version 2.13.2
+Published as version 2.14.0
+
+New Features:
+* Changed the new strings xliff files to contain the correct plural categories
+  for the target language. If the target locale has more or less strings than
+  the source locale, that will come out in that xliff file.
+    * This way, translators just need to translate each string and
+      not worry about adding/subtracting categories for the language
 
 Bug Fixes:
 * Fixed some bugs in pseudo locale translation when called from a plugin
