@@ -1,0 +1,16 @@
+{
+    "name": "Loctool Test",
+    "id": "loctest",
+    "projectType": "android",
+    "pseudoLocale": "ps-DO",
+    "resourceDirs": {
+        "java": "."
+    },
+    "excludes": [
+    ],
+    "includes": [
+    ],
+    "settings": {
+        "locales": ["en-GB", "es-US", "ja-JP", "ru-RU"]
+    }
+}

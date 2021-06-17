@@ -56,8 +56,10 @@
         "node": ">=6.0.0"
     },
     "scripts": {
-        "test": "cd test; LANG=en-US node testSuite.js",
-        "clean": "ant clean"
+        "clean": "ant clean",
+        "dist": "npm run generate ; npm pack",
+        "generate": "node generate/genPluralCategories.js",
+        "test": "cd test; LANG=en-US node testSuite.js"
     },
     "dependencies": {
         "@babel/core": "^7.10.5",
@@ -93,6 +95,7 @@
         "xml-js": "^1.6.11"
     },
     "devDependencies": {
+        "cldr-core": "^39.0.0",
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
         "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
         "nodeunit": "^0.11.3"
