@@ -234,6 +234,118 @@ module.exports.project = {
         test.done();
     },
 
+    testProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs20: function(test){
+        test.expect(9);
+        // set up first
+        rmrf("./testfiles/project2/loctest-new-es-US.xliff");
+        rmrf("./testfiles/project2/loctest-new-ja-JP.xliff");
+        rmrf("./testfiles/project2/loctest-new-ru-RU.xliff");
+
+        test.ok(!fs.existsSync("./testfiles/project2/loctest-new-es-US.xliff"));
+        test.ok(!fs.existsSync("./testfiles/project2/loctest-new-ja-JP.xliff"));
+        test.ok(!fs.existsSync("./testfiles/project2/loctest-new-ru-RU.xliff"));
+
+        // adds Japanese and Russian to the list of locales to generate
+        var project = ProjectFactory('./testfiles/project2', {
+            xliffVersion: 2
+        });
+        project.addPath("res/values/strings.xml");
+        project.init(function() {
+            project.extract(function() {
+                project.generatePseudo();
+                project.write(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            var filename = "./testfiles/project2/loctest-new-es-US.xliff";
+                            test.ok(fs.existsSync(filename));
+                            var actual = fs.readFileSync(filename, "utf8");
+                            var expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friend commented</source>\n' +
+                                '          <target state="new">%d friend commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            test.equal(actual, expected);
+
+                            filename = "./testfiles/project2/loctest-new-ja-JP.xliff";
+                            test.ok(fs.existsSync(filename));
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="ja-JP" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            test.equal(actual, expected);
+
+                            filename = "./testfiles/project2/loctest-new-ru-RU.xliff";
+                            test.ok(fs.existsSync(filename));
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="ru-RU" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friend commented</source>\n' +
+                                '          <target state="new">%d friend commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            test.equal(actual, expected);
+                        });
+                    });
+                });
+            });
+        });
+        test.done();
+    },
+
     testProjectIsResourcePathYes: function(test){
         test.expect(1);
 
