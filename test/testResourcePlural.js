@@ -575,8 +575,7 @@ module.exports.resourceplural = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
@@ -622,8 +621,7 @@ module.exports.resourceplural = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "en-ZA"]
         });
@@ -669,8 +667,7 @@ module.exports.resourceplural = {
 
         var p = new WebProject({
             id: "webapp",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "en-CA"]
         });
@@ -718,8 +715,7 @@ module.exports.resourceplural = {
 
         var p = new WebProject({
             id: "foo",
-            sourceLocale: "en-US",
-            pseudoLocale: "ps-DO"
+            sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });
