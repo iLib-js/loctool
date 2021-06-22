@@ -351,7 +351,7 @@ module.exports.androidresourcefile = {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/strings.xml"
+            pathName: "./java/res/values/strings.xml"
         });
         test.ok(arf);
 
@@ -379,7 +379,7 @@ module.exports.androidresourcefile = {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/plurals.xml"
+            pathName: "./java/res/values/plurals.xml"
         });
         test.ok(arf);
 
@@ -409,7 +409,7 @@ module.exports.androidresourcefile = {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/arrays.xml"
+            pathName: "./java/res/values/arrays.xml"
         });
         test.ok(arf);
 

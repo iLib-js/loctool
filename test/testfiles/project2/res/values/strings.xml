@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="app_id" i18n="Do not translate">151779581544891</string>
+  <plurals name="foobar">
+    <item quantity="one">
+     %d friend commented
+    </item>
+    <item quantity="other">
+      %d friends commented
+    </item>
+  </plurals>
+</resources>
