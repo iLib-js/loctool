@@ -2,7 +2,7 @@
     "name": "Loctool Test",
     "id": "loctest2",
     "projectType": "web",
-    "pseudoLocale": "de-DE",
+    "pseudoLocale": "zxx-XX",
     "resourceDirs": {
         "yml": "config/locales",
         "js": "public/localized_js"

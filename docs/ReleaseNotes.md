@@ -1,6 +1,36 @@
 Release Notes for Version 2
 ============================
 
+Build 024
+-------
+Published as version 2.14.0
+
+New Features:
+* Changed the new strings xliff files to contain the correct plural categories
+  for the target language. If the target locale has more or less strings than
+  the source locale, that will come out in that xliff file.
+    * This way, translators just need to translate each string and
+      not worry about adding/subtracting categories for the language
+* Add the ability to redefine which style of pseudolocalization that each locale uses
+  by specifying an object in the pseudolocale setting in project.json.
+    * Defined a number of pseudo translation styles such as
+      "english-british" or "chinese-traditional-tw"
+    * When pseudolocale is an object, it maps a locale to a pseudo style
+    * When pseudolocale is set to a string or array, it works as before to
+      define which locales are pseudo locales, but locales not explicitly
+      listed are no longer considered pseudolocales
+    * When pseudolocale is set to an empty string, array, or object, all
+      pseudolocalization is turned off, similar to specifying the "nopseudo"
+      flag on the command-line
+
+
+Bug Fixes:
+* Fixed some bugs in pseudo locale translation when called from a plugin
+* Fixed a bug where Hans pseudo translation crashed when called from a
+  plugin because the conversion data had not been loaded yet
+    * Upgraded to opencc-js 1.0.3 to get the latest mappings and so that
+      the data can be loaded synchronously
+
 Build 023
 -------
 Published as version 2.13.1

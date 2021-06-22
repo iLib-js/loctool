@@ -26,7 +26,6 @@ if (!PseudoFactory) {
 
 var project = new WebProject({
     sourceLocale: "en-US",
-    pseudoLocale: "ps-DO",
     resourceDirs: {
         "yml": "config/locales"
     }
@@ -200,6 +199,19 @@ module.exports.pseudobritish = {
             type: "xml"
         });
         test.equal(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>."), "Skip the unflavoured <source id=\"estrogen\">supplements</source>.");
+
+        test.done();
+    },
+
+    testPseudoBritishSkipReplacementsMarkdown: function(test) {
+        test.expect(1);
+
+        var pb = PseudoFactory({
+            project: project,
+            targetLocale: "en-GB",
+            type: "markdown"
+        });
+        test.equal(pb.getString("Skip the unflavored <c0>supplements</c0>."), "Skip the unflavoured <c0>supplements</c0>.");
 
         test.done();
     },

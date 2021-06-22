@@ -56,6 +56,7 @@ var p2 = new WebProject({
     id: "foo",
     sourceLocale: "en-US"
 }, "./testfiles", {
+    nopseudo: true,
     locales:["en-GB"],
     localeMap: {
         "fr-FR": "fr"
@@ -3123,7 +3124,7 @@ module.exports.markdown = {
         test.expect(5);
 
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./testfiles/md/subproject", {nopseudo: true});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans2.md", mdft2);
         test.ok(mf);
