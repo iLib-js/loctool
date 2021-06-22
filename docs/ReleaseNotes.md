@@ -11,19 +11,6 @@ New Features:
   the source locale, that will come out in that xliff file.
     * This way, translators just need to translate each string and
       not worry about adding/subtracting categories for the language
-
-Bug Fixes:
-* Fixed some bugs in pseudo locale translation when called from a plugin
-* Fixed a bug where Hans pseudo translation crashed when called from a
-  plugin because the conversion data had not been loaded yet
-    * Upgraded to opencc-js 1.0.3 to get the latest mappings and so that
-      the data can be loaded synchronously
-
-Build 023
--------
-Published as version 2.14.0
-
-New Features:
 * Add the ability to redefine which style of pseudolocalization that each locale uses
   by specifying an object in the pseudolocale setting in project.json.
     * Defined a number of pseudo translation styles such as
@@ -35,6 +22,18 @@ New Features:
     * When pseudolocale is set to an empty string, array, or object, all
       pseudolocalization is turned off, similar to specifying the "nopseudo"
       flag on the command-line
+
+
+Bug Fixes:
+* Fixed some bugs in pseudo locale translation when called from a plugin
+* Fixed a bug where Hans pseudo translation crashed when called from a
+  plugin because the conversion data had not been loaded yet
+    * Upgraded to opencc-js 1.0.3 to get the latest mappings and so that
+      the data can be loaded synchronously
+
+Build 023
+-------
+Published as version 2.13.1
 
 Bug Fixes:
 * Fixed the part where the argument number was increased incorrectly
