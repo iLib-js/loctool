@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 025
+-------
+Published as version 2.14.1
+
+New Features:
+
+Bug Fixes:
+* Fixed a bug where it was not loading plugins correctly on Windows.
+  Switched from using process.env.PWD which does not work on Windows to
+  process.cwd() which should work everywhere.
+
 Build 024
 -------
 Published as version 2.14.0
