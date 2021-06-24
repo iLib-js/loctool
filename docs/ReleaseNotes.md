@@ -13,6 +13,9 @@ Bug Fixes:
   process.cwd() which should work everywhere.
 * Fixed exception when you put an unknown substitution parameter into
   an output path template. Now gives a warning instead.
+* Fixed a bug where the [basename] in a output file name template was
+  not calculated properly if the extension was not ".json". Now you can
+  use any extension.
 
 Build 024
 -------
