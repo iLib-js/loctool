@@ -225,6 +225,17 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocalizedPathBasenameAlternateExtension: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[localeDir]/tr-[basename].j', {
+            sourcepath: "x/y/strings.md",
+            locale: "de-DE"
+        }), "de/DE/tr-strings.j");
+
+        test.done();
+    },
+
     testGetLocalizedPathFilename: function(test) {
         test.expect(1);
 
@@ -314,6 +325,30 @@ module.exports.utils = {
         test.expect(1);
 
         test.equals(utils.getLocaleFromPath('[dir]/[basename].json', "x/y/strings.json"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasenameAlternateExtension: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[basename].md', "x/y/strings.md"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasenameWithLocale: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[locale]/[basename].json', "x/y/zh-Hans-CN/strings.json"), "zh-Hans-CN");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasenameWithLocaleAlternateExtension: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[locale]/[basename].md', "x/y/de-DE/strings.md"), "de-DE");
 
         test.done();
     },
