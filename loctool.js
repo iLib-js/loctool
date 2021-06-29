@@ -456,9 +456,10 @@ function walk(dir, project) {
             included = true;
 
             if (project) {
-                if (project.options.excludes) {
+                var excludes = project.options.excludes ? project.options.excludes.concat(project.settings.exclude) : project.settings.exclude;
+                if (excludes) {
                     logger.trace("There are excludes. Relpath is " + relPath);
-                    if (mm.isMatch(relPath, project.options.excludes)) {
+                    if (mm.isMatch(relPath, excludes)) {
                         included = false;
                     }
                 }

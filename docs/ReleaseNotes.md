@@ -1,5 +1,13 @@
 Release Notes for Version 2
 ============================
+Build 026
+-------
+Published as version 2.14.2
+
+New Features:
+
+Bug Fixes:
+* Fixed a bug where the default excluded directory is not exclude
 
 Build 025
 -------
