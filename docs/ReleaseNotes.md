@@ -5,9 +5,11 @@ Build 026
 Published as version 2.14.2
 
 New Features:
+* Added the --noxliffDups flag which is not allows duplicated strings in extracted xliff file
 
 Bug Fixes:
 * Fixed a bug where the default excluded directory is not exclude
+
 
 Build 025
 -------

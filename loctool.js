@@ -124,6 +124,8 @@ function usage() {
         "  Specify the dir where the generation output should go. (Default is resources/) \n" +
         "--xliffStyle\n" +
         "  Specify the Xliff format style. Style can be 'standard' or 'custom'. (Default is 'standard') \n" +
+        "--noxliffDups\n" +
+        "  Do not allow duplicated strings in extracted xliff file. (Default is 'true') \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -163,6 +165,7 @@ var settings = {
     xliffsDir: ".",
     xliffVersion: 1.2,
     xliffStyle: "standard",
+    allowDups: true,
     localizeOnly: false,
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
@@ -280,7 +283,10 @@ for (var i = 0; i < argv.length; i++) {
         if (candidate.indexOf(argv[i+1]) !== -1) {
             settings.xliffStyle = argv[++i];
         }
-    } else if (val === "--segmentation") {
+    } else if (val === "--noxliffDups") {
+        settings.allowDups = false;
+    }
+    else if (val === "--segmentation") {
         var candidate = ["paragraph", "sentence"];
         if (candidate.indexOf(argv[++i]) !== -1) {
             settings.segmentation = argv[i];
