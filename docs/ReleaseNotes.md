@@ -10,6 +10,8 @@ New Features:
   to only convert translated resources into the target file.
   Source-only resources will be skipped. By default, all resources
   are converted.
+* Added [localeLower] as a new template variable that uses lowercased 
+  BCP-47 locale, e.g. `zh-Hans-CN` => `zh-hans-cn`.
 
 Build 026
 -------
