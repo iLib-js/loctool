@@ -81,6 +81,9 @@ function usage() {
         "  not to do pseudo-localization.\n" +
         "-o or --oldhaml\n" +
         "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+        "--onlyTranslated\n" +
+        "  During the convert action, only convert fully translated resources to the target\n" +
+        "  file. Source-only resources will skipped. (Default: convert all resources.)\n" +
         "-p or --pull\n" +
         "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
         "--projectId\n" +
@@ -172,7 +175,8 @@ var settings = {
     segmentation: "paragraph",
     sourceLocale: "en-US",
     targetLocale: null,
-    localeMap: {}
+    localeMap: {},
+    onlyTranslated: false
 };
 
 var options = [];
@@ -295,6 +299,8 @@ for (var i = 0; i < argv.length; i++) {
         settings.targetLocale = argv[++i];
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
+    } else if (val === "--onlyTranslated") {
+        settings.onlyTranslated = true;
     } else if (val === "--exclude") {
         if (i+1 < argv.length && argv[i+1]) {
             var excludeList = argv[++i].split(",");
@@ -303,8 +309,7 @@ for (var i = 0; i < argv.length; i++) {
                 return temp.indexOf(item) === index;
             })
         }
-    }
-     else {
+    } else {
         options.push(val);
     }
 }
