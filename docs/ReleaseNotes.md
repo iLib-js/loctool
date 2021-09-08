@@ -3,7 +3,7 @@ Release Notes for Version 2
 
 Build 027
 -------
-Published as version 2.16.0
+Published as version 2.15.0
 
 New Features:
 * Added the --onlyTranslated flag which causes the convert action
