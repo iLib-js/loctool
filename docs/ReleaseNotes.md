@@ -11,6 +11,13 @@ New Features:
   Source-only resources will be skipped. By default, all resources
   are converted.
 
+Bug Fixes:
+* Fixed a bug where xliff files were not being read in properly when
+  the resource name attribute of translation units contained a
+  "slash n" sequence. Previously, it would convert "slash n"
+  into a newline. Now, it converts it into a "slash" character
+  followed by an "n" character.
+
 Build 026
 -------
 Published as version 2.14.2
