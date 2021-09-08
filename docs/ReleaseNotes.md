@@ -1,6 +1,35 @@
 Release Notes for Version 2
 ============================
 
+Build 027
+-------
+Published as version 2.15.0
+
+New Features:
+* Added the --onlyTranslated flag which causes the convert action
+  to only convert translated resources into the target file.
+  Source-only resources will be skipped. By default, all resources
+  are converted.
+* Added [localeLower] as a new template variable that uses lowercased 
+  BCP-47 locale, e.g. `zh-Hans-CN` => `zh-hans-cn`.
+
+Bug Fixes:
+* Fixed a bug where xliff files were not being read in properly when
+  the resource name attribute of translation units contained a
+  "slash n" sequence. Previously, it would convert "slash n"
+  into a newline. Now, it converts it into a "slash" character
+  followed by an "n" character.
+
+Build 026
+-------
+Published as version 2.14.2
+
+New Features:
+* Added the --noxliffDups flag which does not allow duplicated strings in extracted xliff file
+
+Bug Fixes:
+* Fixed a bug where the default excluded directory is not exclude
+
 Build 025
 -------
 Published as version 2.14.1

@@ -81,6 +81,9 @@ function usage() {
         "  not to do pseudo-localization.\n" +
         "-o or --oldhaml\n" +
         "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+        "--onlyTranslated\n" +
+        "  During the convert action, only convert fully translated resources to the target\n" +
+        "  file. Source-only resources will skipped. (Default: convert all resources.)\n" +
         "-p or --pull\n" +
         "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
         "--projectId\n" +
@@ -124,6 +127,8 @@ function usage() {
         "  Specify the dir where the generation output should go. (Default is resources/) \n" +
         "--xliffStyle\n" +
         "  Specify the Xliff format style. Style can be 'standard' or 'custom'. (Default is 'standard') \n" +
+        "--noxliffDups\n" +
+        "  Do not allow duplicated strings in extracted xliff file. (Default is 'true') \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
         "    init  [project-name] - initialize the current directory as a loctool project\n" +
@@ -163,13 +168,15 @@ var settings = {
     xliffsDir: ".",
     xliffVersion: 1.2,
     xliffStyle: "standard",
+    allowDups: true,
     localizeOnly: false,
     projectType: "web",
     exclude: ["**/node_modules", "**/.git", "**/.svn"],
     segmentation: "paragraph",
     sourceLocale: "en-US",
     targetLocale: null,
-    localeMap: {}
+    localeMap: {},
+    onlyTranslated: false
 };
 
 var options = [];
@@ -280,7 +287,10 @@ for (var i = 0; i < argv.length; i++) {
         if (candidate.indexOf(argv[i+1]) !== -1) {
             settings.xliffStyle = argv[++i];
         }
-    } else if (val === "--segmentation") {
+    } else if (val === "--noxliffDups") {
+        settings.allowDups = false;
+    }
+    else if (val === "--segmentation") {
         var candidate = ["paragraph", "sentence"];
         if (candidate.indexOf(argv[++i]) !== -1) {
             settings.segmentation = argv[i];
@@ -289,6 +299,8 @@ for (var i = 0; i < argv.length; i++) {
         settings.targetLocale = argv[++i];
     } else if (val === "--localizeOnly") {
         settings.localizeOnly = true;
+    } else if (val === "--onlyTranslated") {
+        settings.onlyTranslated = true;
     } else if (val === "--exclude") {
         if (i+1 < argv.length && argv[i+1]) {
             var excludeList = argv[++i].split(",");
@@ -297,8 +309,7 @@ for (var i = 0; i < argv.length; i++) {
                 return temp.indexOf(item) === index;
             })
         }
-    }
-     else {
+    } else {
         options.push(val);
     }
 }
@@ -456,9 +467,10 @@ function walk(dir, project) {
             included = true;
 
             if (project) {
-                if (project.options.excludes) {
+                var excludes = project.options.excludes ? project.options.excludes.concat(project.settings.exclude) : project.settings.exclude;
+                if (excludes) {
                     logger.trace("There are excludes. Relpath is " + relPath);
-                    if (mm.isMatch(relPath, project.options.excludes)) {
+                    if (mm.isMatch(relPath, excludes)) {
                         included = false;
                     }
                 }

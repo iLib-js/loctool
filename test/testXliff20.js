@@ -1481,6 +1481,43 @@ module.exports.xliff20 = {
         test.done();
     },
 
+    testXliff20SerializeWithEscapeCharsInResname: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({version: "2.0"});
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Here are \\ndouble\\n quotes.",
+            sourceLocale: "en-US",
+            target: "Hier zijn \\ndubbel\\n quotaties.",
+            targetLocale: "nl-NL",
+            key: 'Double \\ndouble\\n.',
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            origin: "target"
+        });
+
+        x.addResource(res);
+
+        test.equal(x.serialize(),
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+                '    <group id="group_1" name="plaintext">\n' +
+                '      <unit id="1" name="Double \\ndouble\\n." type="res:string" l:datatype="plaintext">\n' +
+                '        <segment>\n' +
+                '          <source>Here are \\ndouble\\n quotes.</source>\n' +
+                '          <target>Hier zijn \\ndubbel\\n quotaties.</target>\n' +
+                '        </segment>\n' +
+                '      </unit>\n' +
+                '    </group>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        test.done();
+    },
+
     testXliff20SerializeWithComments: function(test) {
         test.expect(2);
 
@@ -1730,6 +1767,57 @@ module.exports.xliff20 = {
         test.equal(reslist[1].getSource(), "e\\nh");
         test.equal(reslist[1].getSourceLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "webapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+
+        test.done();
+    },
+
+    testXliff20DeserializeWithEscapedNewLinesInResname: function(test) {
+        test.expect(17);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="2.0" srcLang="en-US" trgLang="en-CA" \n' +
+                '  xmlns:l="http://ilib-js.com/loctool">\n' +
+                '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
+                '    <unit id="1" name="foobar\\nbar\\t" type="res:string">\n' +
+                '      <segment>\n' +
+                '        <source>a\\nb</source>\n' +
+                '      </segment>\n' +
+                '    </unit>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" l:project="webapp">\n' +
+                '    <unit id="2" name="huzzah\\n\\na plague on both your houses" type="res:string">\n' +
+                '      <segment>\n' +
+                '        <source>e\\nh</source>\n' +
+                '      </segment>\n' +
+                '    </unit>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 2);
+
+        test.equal(reslist[0].getSource(), "a\\nb");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar\\nbar\\t");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+
+        test.equal(reslist[1].getSource(), "e\\nh");
+        test.equal(reslist[1].getSourceLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah\\n\\na plague on both your houses");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");

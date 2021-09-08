@@ -313,6 +313,17 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocalizedPathLocaleLower: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/strings_[localeLower].json', {
+            sourcepath: "x/y/strings.json",
+            locale: "zh-Hans-CN"
+        }), "x/y/strings_zh-hans-cn.json");
+
+        test.done();
+    },
+
     testGetLocaleFromPathDir: function(test) {
         test.expect(1);
 
@@ -461,6 +472,30 @@ module.exports.utils = {
         test.expect(1);
 
         test.equals(utils.getLocaleFromPath('[dir]/strings_[localeUnder].json', "x/y/strings_zh_Hans_CN.json"), "zh-Hans-CN");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleLower: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_de-de.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleLowerShort: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_de.json"), "de");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleLowerLong: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_zh-hans-cn.json"), "zh-Hans-CN");
 
         test.done();
     }

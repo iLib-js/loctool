@@ -1293,6 +1293,65 @@ module.exports.xliff = {
         test.done();
     },
 
+    testXliffSerializeWithEscapeCharsInResname: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            target: "Asdf translated",
+            targetLocale: "de-DE",
+            key: 'asdf \\n\\nasdf',
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            origin: "target"
+        });
+
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "asdf \\t\\n\\n asdf\\n",
+            sourceLocale: "en-US",
+            target: "fdsa \\t\\n\\n fdsa\\n",
+            targetLocale: "de-DE",
+            key: "asdf \\t\\n\\n asdf\\n",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            origin: "target"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="asdf \\n\\nasdf" restype="string" datatype="plaintext">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '        <target>Asdf translated</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="asdf \\t\\n\\n asdf\\n" restype="string" datatype="plaintext">\n' +
+                '        <source>asdf \\t\\n\\n asdf\\n</source>\n' +
+                '        <target>fdsa \\t\\n\\n fdsa\\n</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testXliffSerializeWithComments: function(test) {
         test.expect(2);
 
@@ -1588,6 +1647,56 @@ module.exports.xliff = {
         test.equal(reslist[1].getSource(), "e\\nh");
         test.equal(reslist[1].getSourceLocale(), "en-US");
         test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "webapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+
+        test.done();
+    },
+
+    testXliffDeserializeWithEscapedNewLinesInResname: function(test) {
+        test.expect(17);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="en-CA" product-name="androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar\\n\\nasdf" restype="string">\n' +
+                '        <source>a\\nb</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="en-CA" product-name="webapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah\\t\\n" restype="string">\n' +
+                '        <source>e\\nh</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+
+        test.ok(reslist);
+
+        test.equal(reslist.length, 2);
+
+        test.equal(reslist[0].getSource(), "a\\nb");
+        test.equal(reslist[0].getSourceLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar\\n\\nasdf");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+
+        test.equal(reslist[1].getSource(), "e\\nh");
+        test.equal(reslist[1].getSourceLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah\\t\\n");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "webapp");
         test.equal(reslist[1].resType, "string");
