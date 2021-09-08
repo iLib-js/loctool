@@ -1492,7 +1492,7 @@ module.exports.xliff20 = {
             sourceLocale: "en-US",
             target: "Hier zijn \\ndubbel\\n quotaties.",
             targetLocale: "nl-NL",
-            key: 'Here are \\ndouble\\n quotes.',
+            key: 'Double \\ndouble\\n.',
             pathName: "foo/bar/asdf.java",
             project: "androidapp",
             origin: "target"
@@ -1505,7 +1505,7 @@ module.exports.xliff20 = {
                 '<xliff version="2.0" srcLang="en-US" trgLang="nl-NL" xmlns:l="http://ilib-js.com/loctool">\n' +
                 '  <file original="foo/bar/asdf.java" l:project="androidapp">\n' +
                 '    <group id="group_1" name="plaintext">\n' +
-                '      <unit id="1" name="Here are \\ndouble\\n quotes." type="res:string" l:datatype="plaintext">\n' +
+                '      <unit id="1" name="Double \\ndouble\\n." type="res:string" l:datatype="plaintext">\n' +
                 '        <segment>\n' +
                 '          <source>Here are \\ndouble\\n quotes.</source>\n' +
                 '          <target>Hier zijn \\ndubbel\\n quotaties.</target>\n' +
