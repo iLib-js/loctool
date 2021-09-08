@@ -495,7 +495,7 @@ module.exports.utils = {
     testGetLocaleFromPathLocaleLowerLong: function(test) {
         test.expect(1);
 
-        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_zh-hans-cn.json"), "zh-hans-CN");
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_zh-hans-cn.json"), "zh-Hans-CN");
 
         test.done();
     }
