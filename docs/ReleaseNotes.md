@@ -3,23 +3,25 @@ Release Notes for Version 2
 
 Build 027
 -------
-Published as version 2.15.0
+Published as version 2.16.0
 
 New Features:
-* Added [localeLower] as a new template variable that uses lowercased
+* Added the --onlyTranslated flag which causes the convert action
+  to only convert translated resources into the target file.
+  Source-only resources will be skipped. By default, all resources
+  are converted.
+* Added [localeLower] as a new template variable that uses lowercased 
   BCP-47 locale, e.g. `zh-Hans-CN` => `zh-hans-cn`.
-
 
 Build 026
 -------
 Published as version 2.14.2
 
 New Features:
-* Added the --noxliffDups flag which is not allows duplicated strings in extracted xliff file
+* Added the --noxliffDups flag which does not allow duplicated strings in extracted xliff file
 
 Bug Fixes:
 * Fixed a bug where the default excluded directory is not exclude
-
 
 Build 025
 -------
