@@ -13,6 +13,7 @@ Bug Fixes:
   (for example, "de" has no region, and this template asks for a region:
   "dir/[region]/[filename]"), it should act as if that component is not
   there.
+* Updated package dependencies
 
 Build 027
 -------
