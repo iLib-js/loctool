@@ -258,6 +258,17 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocalizedPathExtensionNotThere: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[localeDir]/tr-foobar.[extension]', {
+            sourcepath: "x/y/strings",
+            locale: "de-DE"
+        }), "de/DE/tr-foobar.");
+
+        test.done();
+    },
+
     testGetLocalizedPathLocale: function(test) {
         test.expect(1);
 
@@ -280,6 +291,17 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocalizedPathLanguageNotThere: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[language]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "DE"
+        }), "x/y/strings.json");
+
+        test.done();
+    },
+
     testGetLocalizedPathRegion: function(test) {
         test.expect(1);
 
@@ -291,6 +313,17 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocalizedPathRegionNotThere: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[region]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "de"
+        }), "x/y/strings.json");
+
+        test.done();
+    },
+
     testGetLocalizedPathScript: function(test) {
         test.expect(1);
 
@@ -298,6 +331,17 @@ module.exports.utils = {
             sourcepath: "x/y/strings.json",
             locale: "zh-Hans-CN"
         }), "x/y/Hans/strings.json");
+
+        test.done();
+    },
+
+    testGetLocalizedPathScriptNotThere: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[script]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "zh-CN"
+        }), "x/y/strings.json");
 
         test.done();
     },
