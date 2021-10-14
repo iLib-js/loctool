@@ -1,6 +1,20 @@
 Release Notes for Version 2
 ============================
 
+Build 028
+-------
+Published as version 2.15.1
+
+New Features:
+
+Bug Fixes:
+* fixed an exception in utils.formatPath. When a locale does not contain
+  a component, and the path template calls for that particular component,
+  (for example, "de" has no region, and this template asks for a region:
+  "dir/[region]/[filename]"), it should act as if that component is not
+  there.
+* Updated package dependencies
+
 Build 027
 -------
 Published as version 2.15.0
