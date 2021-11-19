@@ -1,6 +1,18 @@
 Release Notes for Version 2
 ============================
 
+Build 029
+-------
+Published as version 2.16.0
+
+New Features:
+* added the ability for the plugins to get their own logger instance from
+  the loctool so that the plugin output comes with the regular output
+  from the loctool itself. This way, plugins do not need a separate
+  logging system of their own.
+
+Bug Fixes:
+
 Build 028
 -------
 Published as version 2.15.1
