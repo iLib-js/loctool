@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 029
+-------
+Published as version 2.16.0
+
+New Features:
+
+Bug Fixes:
+* Fixed a bug in the utility functions for cleaning strings where a bad
+  input would cause an exception. Now it checks for bad input and returns
+  undefined.
+
 Build 028
 -------
 Published as version 2.15.1
