@@ -12,6 +12,9 @@ New Features:
   logging system of their own.
 
 Bug Fixes:
+* Fixed a bug in the utility functions for cleaning strings where a bad
+  input would cause an exception. Now it checks for bad input and returns
+  undefined.
 
 Build 028
 -------
