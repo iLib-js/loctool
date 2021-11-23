@@ -542,5 +542,26 @@ module.exports.utils = {
         test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', "x/y/strings_zh-hans-cn.json"), "zh-Hans-CN");
 
         test.done();
+    },
+
+    testUtilsCleanString: function(test) {
+        test.expect(1);
+
+        test.equals(utils.cleanString(' \n \t \\    &quot;a    b&apos;s &lt;b&gt;&amp; c’s     '), "\"a b's <b>& c's");
+
+        test.done();
+    },
+
+    testUtilsCleanStringBadInput: function(test) {
+        test.expect(6);
+
+        test.equals(utils.cleanString(''), '');
+        test.ok(!utils.cleanString(null));
+        test.ok(!utils.cleanString(undefined));
+        test.ok(!utils.cleanString(345));
+        test.ok(!utils.cleanString(true));
+        test.ok(!utils.cleanString({'obj': 'foo'}));
+
+        test.done();
     }
 }

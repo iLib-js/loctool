@@ -685,6 +685,9 @@ json schemas.
 
 * `ilib-loctool-po` - extract strings from po files and produce translated po files
 
+* `ilib-loctool-xml` - extract strings from XML files and produce translated XML files. This
+specifies which strings to extract using a schema file. Different XML files can use different schemas.
+
 Configuring a Custom Project Type
 -----------------------------------------------
 
