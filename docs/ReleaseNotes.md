@@ -3,6 +3,17 @@ Release Notes for Version 2
 
 Build 029
 -------
+Published as version 2.16.1
+
+New Features:
+
+Bug Fixes:
+* Fixed a bug in the utility functions for detecting locales in file names.
+  If you had a mapping with a template of "[dir]/[basename]_[locale].[extension]",
+  then the locale was not detected properly.
+
+Build 029
+-------
 Published as version 2.16.0
 
 New Features:
