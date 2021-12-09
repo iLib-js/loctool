@@ -170,7 +170,11 @@ module.exports.project = {
                                 '        <source>%d friend commented</source>\n' +
                                 '        <target state="new">%d friend commented</target>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
+                                '        <source>%d friends commented</source>\n' +
+                                '        <target state="new">%d friends commented</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '      </trans-unit>\n' +
@@ -270,7 +274,13 @@ module.exports.project = {
                                 '          <target state="new">%d friend commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '        <segment>\n' +
+                                '          <source>%d friends commented</source>\n' +
+                                '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
