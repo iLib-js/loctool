@@ -392,7 +392,7 @@ module.exports.utils = {
         test.done();
     },
 
-    testGetLocaleFromPathBasenameWithLocale: function(test) {
+    testGetLocaleFromPathBasenameWithLocaleDir: function(test) {
         test.expect(1);
 
         test.equals(utils.getLocaleFromPath('[dir]/[locale]/[basename].json', "x/y/zh-Hans-CN/strings.json"), "zh-Hans-CN");
@@ -404,6 +404,22 @@ module.exports.utils = {
         test.expect(1);
 
         test.equals(utils.getLocaleFromPath('[dir]/[locale]/[basename].md', "x/y/de-DE/strings.md"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasenameAndLocaleTogether1: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[basename]_[locale].[extension]', "x/y/strings_de-DE.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathBasenameAndLocaleTogether2: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[basename]_[localeUnder].[extension]', "x/y/strings_de_DE.json"), "de-DE");
 
         test.done();
     },
