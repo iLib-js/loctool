@@ -29,7 +29,7 @@ workflows:
   test-all-node-versions:
     jobs:
       - test:
-          docker_image: circleci/node:6-browsers
+          docker_image: circleci/node:7-browsers
       - test:
           docker_image: circleci/node:8-browsers
       - test:

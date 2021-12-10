@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+
+Build 030
+-------
+Published as version 2.16.2
+
+New Features:
+
+Bug Fixes:
+* upgraded dependencies
+    * plural categories are now based on CLDR 40
+
 Build 029
 -------
 Published as version 2.16.1
