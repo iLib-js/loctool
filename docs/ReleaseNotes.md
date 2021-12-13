@@ -11,6 +11,8 @@ New Features:
 Bug Fixes:
 * upgraded dependencies
     * plural categories are now based on CLDR 40
+* fixed a bug where a resource with an zero-length source string caused the
+  xliff writer to throw exceptions
 
 Build 029
 -------
