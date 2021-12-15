@@ -4,6 +4,15 @@ Release Notes for Version 2
 
 Build 030
 -------
+Published as version 2.16.3
+
+New Features:
+
+Bug Fixes:
+* upgraded more dependencies
+
+Build 030
+-------
 Published as version 2.16.2
 
 New Features:
