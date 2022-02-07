@@ -7,6 +7,8 @@ Build 030
 Published as version 2.16.3
 
 New Features:
+* Minimum node version is now v10.0.0+. Older versions of node cannot support
+  the packages that loctool depends on.
 
 Bug Fixes:
 * upgraded more dependencies
