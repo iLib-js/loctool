@@ -4,7 +4,7 @@ jobs:
     parameters:
         docker_image:
           type: string
-          default: circleci/node:current-browsers
+          default: cimg/node:current-browsers
     docker:
       - image: << parameters.docker_image >>
     steps:
