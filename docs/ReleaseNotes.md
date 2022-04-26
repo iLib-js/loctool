@@ -12,6 +12,8 @@ New Features:
 
 Bug Fixes:
 * upgraded more dependencies
+* added more things to the default exclude list that do not include localizable
+  strings such as the project.json or package.json files
 
 Build 030
 -------
