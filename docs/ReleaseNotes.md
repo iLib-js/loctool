@@ -4,6 +4,19 @@ Release Notes for Version 2
 
 Build 030
 -------
+Published as version 2.16.3
+
+New Features:
+* Minimum node version is now v10.0.0+. Older versions of node cannot support
+  the packages that loctool depends on.
+
+Bug Fixes:
+* upgraded more dependencies
+* added more things to the default exclude list that do not include localizable
+  strings such as the project.json or package.json files
+
+Build 030
+-------
 Published as version 2.16.2
 
 New Features:

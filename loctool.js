@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft
+ * Copyright © 2016-2017, 2019-2022, HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
-    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2021, HealthTap, Inc. and JEDLSoft";
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2022, HealthTap, Inc. and JEDLSoft";
 }
 
 function usage() {
@@ -171,7 +171,25 @@ var settings = {
     allowDups: true,
     localizeOnly: false,
     projectType: "web",
-    exclude: ["**/node_modules", "**/.git", "**/.svn"],
+    exclude: [
+        "**/node_modules",
+        "**/bower_components",
+        "**/jspm_packages",
+        "**/.git",
+        "**/.svn",
+        "package.json",
+        "package-lock.json",
+        "project.json",
+        "log4js.json",
+        "yarn.lock",
+        ".gitignore",
+        ".project",
+        ".circleci",
+        ".travis.yml",
+        ".npm",
+        ".next",
+        ".eslintcache"
+    ],
     segmentation: "paragraph",
     sourceLocale: "en-US",
     targetLocale: null,

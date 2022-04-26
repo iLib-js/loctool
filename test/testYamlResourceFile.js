@@ -1,7 +1,7 @@
 /*
  * testYaml.js - test the Yaml resource file object.
  *
- * Copyright © 2016-2017, HealthTap, Inc.
+ * Copyright © 2016-2017, 2021 HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -511,7 +511,7 @@ module.exports.yamlresourcefile = {
         var expected =
             "zh:\n" +
             "  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n" +
-            "  '• &amp;nbsp; Hello, how are you': • &amp;nbsp; 你好吗\n";
+            "  • &amp;nbsp; Hello, how are you: • &amp;nbsp; 你好吗\n";
 
         diff(yml.getContent(), expected);
 
@@ -761,7 +761,7 @@ module.exports.yamlresourcefile = {
             "zh:\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +
-            "    other: 'There are %{count} tests'\n";
+            "    other: There are %{count} tests\n";
 
         diff(actual, expected);
         test.equal(actual, expected);
@@ -812,7 +812,7 @@ module.exports.yamlresourcefile = {
             "  r003425245: short text\n" +
             "  r186608186:\n" +
             "    one: This is 1 test\n" +
-            "    other: 'There are %{count} tests'\n";
+            "    other: There are %{count} tests\n";
 
         diff(actual, expected);
         test.equal(actual, expected);
