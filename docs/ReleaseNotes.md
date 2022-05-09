@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 031
+-------
+Published as version 2.17.0
+
+New Features:
+* Added xliff comments on translation units for [mojito](https://mojito.global) to
+  read so that it can recognize plural resources
 
 Build 030
 -------

@@ -169,14 +169,17 @@ module.exports.project = {
                                 '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                                 '        <source>%d friend commented</source>\n' +
                                 '        <target state="new">%d friend commented</target>\n' +
+                                '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '      <trans-unit id="3" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '    </body>\n' +
                                 '  </file>\n' +
@@ -195,6 +198,7 @@ module.exports.project = {
                                 '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '    </body>\n' +
                                 '  </file>\n' +
@@ -213,18 +217,22 @@ module.exports.project = {
                                 '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                                 '        <source>%d friend commented</source>\n' +
                                 '        <target state="new">%d friend commented</target>\n' +
+                                '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="few">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '      <trans-unit id="3" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '      <trans-unit id="4" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
+                                '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
                                 '    </body>\n' +
                                 '  </file>\n' +
@@ -269,18 +277,27 @@ module.exports.project = {
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
                                 '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friend commented</source>\n' +
                                 '          <target state="new">%d friend commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
@@ -301,6 +318,9 @@ module.exports.project = {
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
                                 '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
@@ -321,24 +341,36 @@ module.exports.project = {
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
                                 '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friend commented</source>\n' +
                                 '          <target state="new">%d friend commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
+                                '        </notes>\n' +
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
@@ -347,6 +379,7 @@ module.exports.project = {
                                 '    </group>\n' +
                                 '  </file>\n' +
                                 '</xliff>';
+                            diff(actual, expected);
                             test.equal(actual, expected);
                         });
                     });
