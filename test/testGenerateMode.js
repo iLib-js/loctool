@@ -65,7 +65,7 @@ module.exports.genmodemode = {
         test.expect(2);
 
         var genmode = new GenerateMode({
-           xliffsDir: "./xliffs",
+           xliffsDir: "./xliffs"
         });
         test.ok(genmode);
         test.equal(genmode.getXliffsDir(), "./xliffs");
@@ -78,19 +78,33 @@ module.exports.genmodemode = {
         test.ok(genmode);
         genmode.setXliffsDir("./testfiles");
         test.equal(genmode.getXliffsDir(), "./testfiles");
-        
+
         test.done();
     },
     testGenerateModeInit: function(test) {
         test.expect(2);
-        
+
         var genmode = new GenerateMode({
             xliffsDir: "./testfiles/xliff20/app1",
         });
         test.ok(genmode);
         genmode.init();
         test.equal(genmode.getResSize(), 5);
-        
+
+        test.done();
+    },
+
+    testGenerateModeInitMultipleXliffDirs: function(test) {
+        test.expect(2);
+
+        var genmode = new GenerateMode({
+            xliffsDir: ["./testfiles/xliff20/app1", "./testfiles/xliff20/app2"],
+        });
+        test.ok(genmode);
+        genmode.init();
+        test.equal(genmode.getResSize(), 9);
+
         test.done();
     }
+
 };
