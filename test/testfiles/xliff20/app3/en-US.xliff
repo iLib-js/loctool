@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="en-US">
- <file id="app1_f1" original="app3">
+ <file id="app3_f1" original="app3">
   <group id="app3_g1" name="cpp">
    <unit id="app3_1" name="String 1a" type="res:string" l:datatype="javascript">
     <segment>
