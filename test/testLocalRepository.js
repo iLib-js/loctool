@@ -199,25 +199,25 @@ module.exports.localrepository = {
                 });
 
                 test.equal(resources[0].getKey(), "String 1a");
-                test.equal(resources[0].getProject(), "app1");
+                test.equal(resources[0].getProject(), "app3");
                 test.equal(resources[0].getSourceLocale(), "en-KR");
-                test.equal(resources[0].getSource(), "app1:String 1a");
+                test.equal(resources[0].getSource(), "app3:String 1a");
                 test.equal(resources[0].getTargetLocale(), "de-DE");
-                test.equal(resources[0].getTarget(), "Das app1:String 1a");
+                test.equal(resources[0].getTarget(), "Das app3:String 1a");
 
                 test.equal(resources[1].getKey(), "String 1a");
-                test.equal(resources[1].getProject(), "app1");
+                test.equal(resources[1].getProject(), "app3");
                 test.equal(resources[1].getSourceLocale(), "en-KR");
-                test.equal(resources[1].getSource(), "app1:String 1a");
+                test.equal(resources[1].getSource(), "app3:String 1a");
                 test.equal(resources[1].getTargetLocale(), "en-US");
-                test.equal(resources[1].getTarget(), "app1:String 1a");
+                test.equal(resources[1].getTarget(), "app3:String 1a");
 
                 test.equal(resources[2].getKey(), "String 1a");
-                test.equal(resources[2].getProject(), "app1");
+                test.equal(resources[2].getProject(), "app3");
                 test.equal(resources[2].getSourceLocale(), "en-KR");
-                test.equal(resources[2].getSource(), "app1:String 1a");
+                test.equal(resources[2].getSource(), "app3:String 1a");
                 test.equal(resources[2].getTargetLocale(), "fr-FR");
-                test.equal(resources[2].getTarget(), "Le app1:String 1a");
+                test.equal(resources[2].getTarget(), "Le app3:String 1a");
 
                 repo.close(function() {
                     test.done();

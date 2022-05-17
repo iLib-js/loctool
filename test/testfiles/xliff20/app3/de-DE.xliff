@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="de-DE">
- <file id="app1_f1" original="app1">
-  <group id="app1_g1" name="cpp">
-   <unit id="app1_1" name="String 1a" type="res:string" l:datatype="javascript">
+ <file id="app3_f1" original="app3">
+  <group id="app3_g1" name="cpp">
+   <unit id="app3_1" name="String 1a" type="res:string" l:datatype="javascript">
     <segment>
-     <source>app1:String 1a</source>
-     <target>Das app1:String 1a</target>
+     <source>app3:String 1a</source>
+     <target>Das app3:String 1a</target>
     </segment>
    </unit>
-   <unit id="app1_2" name="String 1b" type="res:string" l:datatype="javascript">
+   <unit id="app3_2" name="String 1b" type="res:string" l:datatype="javascript">
     <segment>
-     <source>app1:String 1b</source>
-     <target>Der app1:String 1b</target>
+     <source>app3:String 1b</source>
+     <target>Der app3:String 1b</target>
     </segment>
    </unit>
   </group>
-  <group id="app1_g2" name="x-json">
-   <unit id="app1_3" name="String 1c" type="res:string" l:datatype="x-json">
+  <group id="app3_g2" name="x-json">
+   <unit id="app3_3" name="String 1c" type="res:string" l:datatype="x-json">
     <segment>
-     <source>app1:String 1c</source>
-     <target>Die app1:String 1c</target>
+     <source>app3:String 1c</source>
+     <target>Die app3:String 1c</target>
     </segment>
    </unit>
   </group>
