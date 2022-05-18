@@ -120,7 +120,7 @@ function usage() {
         "-v or --version\n" +
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
-        "  Specify the dir where the xliffs files live. Default: \".\"\n" +
+        "  Specify a dir or comma-separated array of dirs where the xliffs files live. Default: \".\"\n" +
         "--xliffResName\n" +
         "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
         "--xliffResRoot\n" +
@@ -165,7 +165,7 @@ var settings = {
     oldHamlLoc: false,
     nopseudo: true,
     targetDir: ".",            // target directory for all output files
-    xliffsDir: ".",
+    xliffsDir: ["."],
     xliffVersion: 1.2,
     xliffStyle: "standard",
     allowDups: true,
@@ -288,7 +288,7 @@ for (var i = 0; i < argv.length; i++) {
         printVersion();
     } else if (val === "-x" || val === "--xliffs") {
         if (i+1 < argv.length && argv[i+1] && argv[i+1][0] !== "-") {
-            settings.xliffsDir = argv[++i];
+            settings.xliffsDir = argv[++i].split(/,/g);
         } else {
             console.error("Error: -x (--xliffs) option requires a directory name argument to follow it.");
             usage();

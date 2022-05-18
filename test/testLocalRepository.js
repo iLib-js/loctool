@@ -174,6 +174,58 @@ module.exports.localrepository = {
         })
     },
 
+    testLocalRepositoryConstructorWithXliffsDirArray: function(test) {
+        test.expect(21);
+
+        // should read all xliffs from both directories
+        var repo = new LocalRepository({
+            sourceLocale: "en-US",
+            xliffsDir: ["./testfiles/xliff20/app3", "./testfiles/xliff20/app4"],
+        });
+
+        test.ok(repo);
+
+        repo.init(function(){
+            repo.getBy({
+                reskey: "String 1a"
+            }, function(err, resources) {
+                test.ok(resources);
+                test.equal(resources.length, 3);
+
+                resources.sort(function(left, right) {
+                    var leftLocale = left.getTargetLocale();
+                    var rightLocale = right.getTargetLocale();
+                    return leftLocale < rightLocale ? -1 : (leftLocale > rightLocale ? 1 : 0);
+                });
+
+                test.equal(resources[0].getKey(), "String 1a");
+                test.equal(resources[0].getProject(), "app3");
+                test.equal(resources[0].getSourceLocale(), "en-KR");
+                test.equal(resources[0].getSource(), "app3:String 1a");
+                test.equal(resources[0].getTargetLocale(), "de-DE");
+                test.equal(resources[0].getTarget(), "Das app3:String 1a");
+
+                test.equal(resources[1].getKey(), "String 1a");
+                test.equal(resources[1].getProject(), "app3");
+                test.equal(resources[1].getSourceLocale(), "en-KR");
+                test.equal(resources[1].getSource(), "app3:String 1a");
+                test.equal(resources[1].getTargetLocale(), "en-US");
+                test.equal(resources[1].getTarget(), "app3:String 1a");
+
+                test.equal(resources[2].getKey(), "String 1a");
+                test.equal(resources[2].getProject(), "app3");
+                test.equal(resources[2].getSourceLocale(), "en-KR");
+                test.equal(resources[2].getSource(), "app3:String 1a");
+                test.equal(resources[2].getTargetLocale(), "fr-FR");
+                test.equal(resources[2].getTarget(), "Le app3:String 1a");
+
+                repo.close(function() {
+                    test.done();
+                });
+            });
+        })
+    },
+
     testLocalRepositoryGetEmpty: function(test) {
         test.expect(2);
 
