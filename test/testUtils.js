@@ -588,4 +588,12 @@ module.exports.utils = {
 
         test.done();
     },
+    testgetBaseLocale: function(test) {
+        test.expect(3);
+        test.equals(utils.getBaseLocale("ko-KR"), "ko-KR");
+        test.equals(utils.getBaseLocale("fr-CA"), "fr-FR");
+        test.equals(utils.getBaseLocale(), undefined);
+
+        test.done();
+    },
 }
