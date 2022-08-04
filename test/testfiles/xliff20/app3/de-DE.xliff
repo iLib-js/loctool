@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-KR" trgLang="de-DE">
+ <file id="app3_f1" original="app3">
+  <group id="app3_g1" name="cpp">
+   <unit id="app3_1" name="String 1a" type="res:string" l:datatype="javascript">
+    <segment>
+     <source>app3:String 1a</source>
+     <target>Das app3:String 1a</target>
+    </segment>
+   </unit>
+   <unit id="app3_2" name="String 1b" type="res:string" l:datatype="javascript">
+    <segment>
+     <source>app3:String 1b</source>
+     <target>Der app3:String 1b</target>
+    </segment>
+   </unit>
+  </group>
+  <group id="app3_g2" name="x-json">
+   <unit id="app3_3" name="String 1c" type="res:string" l:datatype="x-json">
+    <segment>
+     <source>app3:String 1c</source>
+     <target>Die app3:String 1c</target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

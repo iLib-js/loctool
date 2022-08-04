@@ -1,6 +1,20 @@
 Release Notes for Version 2
 ============================
 
+Build 031
+-------
+Published as version 2.17.0
+
+New Features:
+* Added xliff comments on translation units for [mojito](https://mojito.global) to
+  read so that it can recognize plural resources
+* Added the ability to specify multiple xliff directories containing translations
+  to use. Translation units in the later xliff directories override those found in
+  the earlier ones. Xliff dirs found on the command-line override ones found in
+  the project.json file.
+* Added the utility function to check whether the current locale matches the language default locale.
+
+Bug Fixes:
 
 Build 030
 -------

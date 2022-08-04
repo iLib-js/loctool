@@ -248,6 +248,62 @@
         "loctool.plugin.JavaScriptFileType": {
             "appenders": [ "default" ],
             "level": "info"
+        },
+        "loctool.plugin.webOSJSFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSJSFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSQmlFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSQmlFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSCFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSCFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSCppFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSCppFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSJsonResourceFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSJsonResourceFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSTSResourceFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSTSResourceFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSAppinfoFile": {
+            "appenders": [ "default" ],
+            "level": "info"
+        },
+        "loctool.plugin.webOSAppinfoFileType": {
+            "appenders": [ "default" ],
+            "level": "info"
         }
     }
 }
