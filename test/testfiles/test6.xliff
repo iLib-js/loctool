@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" srcLang="en-KR" trgLang="ja-JP" xmlns:l="http://ilib-js.com/loctool">
+  <file original="app1" l:project="app1">
+    <group id="group_1" name="javascript">
+      <unit id="1">
+        <segment>
+          <source>Do you want to register a new scheduling?﻿</source>
+          <target>新しい予約を設定しますか？</target>
+        </segment>
+      </unit>
+    </group>
+  </file>
+</xliff>
