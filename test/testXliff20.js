@@ -3666,5 +3666,32 @@ module.exports.xliff20 = {
         test.equal(reslist[6].getId(), "settings_22");
 
         test.done();
+    },
+    testXliff20DeserializeKeyCompare: function(test) {
+        test.expect(12);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var fs = require("fs");
+
+        var str = fs.readFileSync("testfiles/test6.xliff", "utf-8");
+
+        x.deserialize(str);
+
+        var reslist = x.getResources();
+        test.ok(reslist);
+        test.equal(reslist.length, 1);
+
+        test.equal(reslist[0].getSource(), "Do you want to register a new scheduling?﻿");
+        test.equal(reslist[0].getSourceLocale(), "en-KR");
+        test.equal(reslist[0].getTarget(), "新しい予約を設定しますか？");
+        test.equal(reslist[0].getTargetLocale(), "ja-JP");
+        test.equal(reslist[0].getProject(), "app1");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].datatype, "javascript");
+        test.equal(reslist[0].getKey(), "Do you want to register a new scheduling?﻿");
+        test.notEqual(reslist[0].getKey(), "Do you want to register a new scheduling?");
+        test.done();
     }
 };

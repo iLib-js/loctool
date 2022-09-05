@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 032
+-------
+Published as version 2.17.1
+
+New Features:
+
+Bug Fixes:
+* updated not to trim when making key
+
 Build 031
 -------
 Published as version 2.17.0
