@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 032
+-------
+Published as version 2.18.0
+
+New Features:
+* Added the utility function to override language default locale.
+
+Bug Fixes:
+
 Build 031
 -------
 Published as version 2.17.0
