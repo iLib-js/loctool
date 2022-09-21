@@ -596,4 +596,17 @@ module.exports.utils = {
 
         test.done();
     },
+    testsetBaseLocale: function(test) {
+        test.expect(6);
+        utils.setBaseLocale("es-CO", "es");
+        test.equals(utils.isBaseLocale("es-ES"), false);
+        test.equals(utils.isBaseLocale("es-CO"), true);
+        test.equals(utils.getBaseLocale("es-ES"), "es-CO");
+        utils.clearOverrideBaseLocale();
+
+        test.equals(utils.isBaseLocale("es-ES"), true);
+        test.equals(utils.isBaseLocale("es-CO"), false);
+        test.equals(utils.getBaseLocale("es-ES"), "es-ES");
+        test.done();
+    },
 }
