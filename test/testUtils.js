@@ -602,6 +602,7 @@ module.exports.utils = {
         test.equals(utils.isBaseLocale("es-ES"), false);
         test.equals(utils.isBaseLocale("es-CO"), true);
         test.equals(utils.getBaseLocale("es-ES"), "es-CO");
+
         utils.clearOverrideBaseLocale();
 
         test.equals(utils.isBaseLocale("es-ES"), true);
