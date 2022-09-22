@@ -597,17 +597,28 @@ module.exports.utils = {
         test.done();
     },
     testsetBaseLocale: function(test) {
-        test.expect(6);
-        utils.setBaseLocale("es-CO", "es");
+        test.expect(12);
+        var localeMap = {
+            "es-CO": "es",
+            "fr-CA": "fr"
+        };
+
+        utils.setBaseLocale(localeMap);
         test.equals(utils.isBaseLocale("es-ES"), false);
         test.equals(utils.isBaseLocale("es-CO"), true);
+        test.equals(utils.isBaseLocale("fr-FR"), false);
+        test.equals(utils.isBaseLocale("fr-CA"), true);
         test.equals(utils.getBaseLocale("es-ES"), "es-CO");
+        test.equals(utils.getBaseLocale("fr-FR"), "fr-CA");
 
         utils.clearOverrideBaseLocale();
 
         test.equals(utils.isBaseLocale("es-ES"), true);
         test.equals(utils.isBaseLocale("es-CO"), false);
-        test.equals(utils.getBaseLocale("es-ES"), "es-ES");
+        test.equals(utils.isBaseLocale("fr-FR"), true);
+        test.equals(utils.isBaseLocale("fr-CA"), false);
+        test.equals(utils.getBaseLocale("es-CO"), "es-ES");
+        test.equals(utils.getBaseLocale("fr-FR"), "fr-FR");
         test.done();
     },
 }
