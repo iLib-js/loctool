@@ -7,6 +7,7 @@ Published as version 2.18.0
 
 New Features:
 * Added the utility function to override language default locale.
+* Added new `getTranslations()` method on the Project calss to get all of the translations.
 
 Bug Fixes:
 
