@@ -74,6 +74,11 @@ function usage() {
         "  is a comma-separated list of mappings where each mapping is a BCP-47 specifier\n" +
         "  of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
         "  eg. 'da:da-DK,no:nb-NO,en:en-GB'\n" +
+        "--localeInherit\n" +
+        "  Map input locales to follow different locale inherit than the default. The format of the parameter\n" +
+        "  is a comma-separated list of mappings where each mapping is a BCP-47 specifier\n" +
+        "  of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
+        "  eg. 'en-AU:en-GB' (en-AU inherits from en-GB )\n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "-n or --pseudo\n" +
@@ -194,6 +199,7 @@ var settings = {
     sourceLocale: "en-US",
     targetLocale: null,
     localeMap: {},
+    localeInherit: {},
     onlyTranslated: false
 };
 
@@ -218,6 +224,16 @@ for (var i = 0; i < argv.length; i++) {
                 var parts = mapping.split(":");
                 if (parts && parts.length > 1) {
                     settings.localeMap[parts[0]] = parts[1];
+                }
+            });
+        }
+    } else if (val.toLowerCase() === "--localeinherit") {
+        if (i < argv.length && argv[i+1]) {
+            var inheritList = argv[++i].split(",");
+            inheritList.forEach(function(list) {
+                var parts = list.split(":");
+                if (parts && parts.length > 1) {
+                    settings.localeInherit[parts[0]] = parts[1];
                 }
             });
         }
