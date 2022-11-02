@@ -8,6 +8,8 @@ Published as version 2.19.0
 New Features:
 * Added the --localeInherit flag which could define custom locale inheritance.
 
+Bug Fixes:
+* Fixed a bug where not correctly filtering pseudo locale.
 
 Build 032
 -------
