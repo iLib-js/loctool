@@ -508,4 +508,13 @@ module.exports.project = {
 
         test.done();
     },
+    testGetOutputLocaleInheritEmpty2: function(test) {
+        test.expect(2);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.equals(project.getLocaleInherit("ko-KR"), undefined);
+        test.equals(project.getLocaleInherit(), undefined);
+
+        test.done();
+    },
 };

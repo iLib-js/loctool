@@ -75,10 +75,12 @@ function usage() {
         "  of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
         "  eg. 'da:da-DK,no:nb-NO,en:en-GB'\n" +
         "--localeInherit\n" +
-        "  Map input locales to follow different locale inherit than the default. The format of the parameter\n" +
-        "  is a comma-separated list of mappings where each mapping is a BCP-47 specifier\n" +
-        "  of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
-        "  eg. 'en-AU:en-GB' (en-AU inherits from en-GB )\n" +
+        "  Map locales to follow different locale inheritance rules than the default. By default, a locale inherits\n" +
+        "  translations from the locale with the language only, and then from the root (en-US -> en -> root). With this\n" +
+        "  option, you can specify that a locale inherits from a different locale first.\n" +
+        "  The value of the parameter is a comma-separated list of mappings where each mapping is a BCP-47\n" +
+        "  specifier of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
+        "  eg. 'en-AU:en-GB' (en-AU inherits translations from en-GB)\n" +
         "--localizeOnly\n" +
         "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
         "-n or --pseudo\n" +
