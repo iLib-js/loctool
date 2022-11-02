@@ -480,4 +480,41 @@ module.exports.project = {
 
         test.done();
     },
+    testGetOutputLocaleInherit: function(test) {
+        test.expect(2);
+
+        var project = ProjectFactory('./testfiles', {
+            localeInherit: {
+                "en-AU": "en-GB",
+                "en-CN": "en-GB"
+            }
+        });
+        test.ok(project.getLocaleInherit("en-AU"), "en-GB");
+        test.ok(project.getLocaleInherit("en-CN"), "en-GB");
+
+        test.done();
+    },
+    testGetOutputLocaleInheritEmpty: function(test) {
+        test.expect(2);
+
+        var project = ProjectFactory('./testfiles', {
+            localeInherit: {
+                "en-AU": "en-GB",
+                "en-CN": "en-GB"
+            }
+        });
+        test.equals(project.getLocaleInherit("ko-KR"), undefined);
+        test.equals(project.getLocaleInherit(), undefined);
+
+        test.done();
+    },
+    testGetOutputLocaleInheritEmpty2: function(test) {
+        test.expect(2);
+
+        var project = ProjectFactory('./testfiles', {});
+        test.equals(project.getLocaleInherit("ko-KR"), undefined);
+        test.equals(project.getLocaleInherit(), undefined);
+
+        test.done();
+    },
 };
