@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 033
+-------
+Published as version 2.18.1
+
+Bug Fixes:
+* Fixed a bug where not correctly filtering pseudo locale.
+
 Build 032
 -------
 Published as version 2.18.0
