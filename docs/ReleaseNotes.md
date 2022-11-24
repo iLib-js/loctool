@@ -1,6 +1,14 @@
 Release Notes for Version 2
 ============================
 
+Build 034
+-------
+Published as version 2.20.0
+
+New Features:
+* Added a new `getRepository()` method on the Project class to get the local repository.
+* Added a new `getTranslationSet()` method on the LocalRepository class to get all of the translations.
+
 Build 033
 -------
 Published as version 2.19.0
