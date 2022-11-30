@@ -347,7 +347,7 @@ module.exports.pseudohant = {
             targetLocale: "zh-Hant-HK"
         });
 
-        test.equal(ph.getString('鰂魚涌'), "鰂魚涌");
+        test.equal(ph.getString('鰂魚涌'), "鰂魚湧");
         test.equal(ph.getString('深涌'), "深涌");
         test.equal(ph.getString('蔥'), "葱");
         test.done();
