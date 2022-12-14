@@ -9,7 +9,7 @@ New Features:
 
 Bug Fixes:
 * Updated to remove duplicate plugins from the list which can reduce duplication of work.
-
+* Fixed ternary operator bug in `getTranslations()` method on the Project class.
 
 Build 034
 -------
