@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 035
+-------
+Published as version 2.20.1
+
+New Features:
+
+Bug Fixes:
+* Updated to remove duplicate plugins from the list which can reduce duplication of work.
+* Fixed ternary operator bug in `getTranslations()` method on the Project class.
+
 Build 034
 -------
 Published as version 2.20.0
