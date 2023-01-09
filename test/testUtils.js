@@ -560,6 +560,22 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetLocaleFromPathNoTemplate: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath(undefined, "x/y/strings_zh-hans-cn.json"), "");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathNoPath: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/strings_[localeLower].json', undefined), "");
+
+        test.done();
+    },
+
     testUtilsCleanString: function(test) {
         test.expect(1);
 
