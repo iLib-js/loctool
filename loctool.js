@@ -33,6 +33,7 @@ var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var XliffMerge = require("./lib/XliffMerge.js");
 var XliffSplit = require("./lib/XliffSplit.js");
 var fileConvert = require("./lib/convert.js");
+var importPaths = require("./lib/importPaths.js");
 
 // var Git = require("simple-git");
 
@@ -145,15 +146,17 @@ function usage() {
 //        "    report - generate a loc report, but don't generate localized resource files.\n" +
         "    export [filename] - export all the new strings to an xliff or a set of xliff\n" +
         "             files. Default: a set of files named new-<locale>.xliff [not implemented yet]\n" +
-        "    import filename ... - import all the translated strings in the given\n" +
-        "             xliff files. [not implemented yet]\n" +
+        "    import pathname ... - import directories full of translated strings from resource\n" +
+        "             files in the given paths using the current project's settings. Output is\n" +
+        "             a set of xliff files that can be used as input for the localize or generate\n" +
+        "             commands.\n" +
         "    split (language|project) filename ... - split the given xliff files by\n" +
         "             language or project.\n" +
         "    merge outfile filename ... - merge the given xliff files to the named\n" +
         "             outfile.\n" +
         "    generate ... - generate resources without scanning sources.\n" +
         "    convert outfile filename ... - convert input files to the output file format.\n" +
-        "             All files must be resource file types such as xliff, po, or xliff.\n"
+        "             All files must be resource file types such as xliff, po, or properties.\n"
         );
     process.exit(0);
 }
@@ -368,7 +371,7 @@ case "import":
     if (options.length > 3) {
         settings.infiles = options.slice(3);
     } else {
-        console.log("Error: must specify at least one input file to import.");
+        console.log("Error: must specify at least one input path to import.");
         usage();
     }
     break;
@@ -618,6 +621,8 @@ try {
         break;
 
     case "import":
+        var project = ProjectFactory.newProject(".", settings);
+        importPaths(project, settings);
         break;
 
     case "split":
@@ -635,7 +640,7 @@ try {
     case "generate":
         var project = ProjectFactory.newProject(settings, settings);
         GenerateModeProcess(project);
-       break;
+        break;
 
     case "convert":
         if (!settings.id) {
