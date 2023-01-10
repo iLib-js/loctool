@@ -1,6 +1,19 @@
 Release Notes for Version 2
 ============================
 
+Build 035
+-------
+Published as version 2.20.1
+
+New Features:
+
+Bug Fixes:
+* Updated to remove duplicate plugins from the list which can reduce duplication of work.
+* Fixed ternary operator bug in `getTranslations()` method on the Project class.
+* Fixed a bug where attempting to glean the locale from a path using an undefined template
+  would cause an error. Instead, it should just return the empty string to indicate that
+  no locale was found.
+
 Build 034
 -------
 Published as version 2.20.0
