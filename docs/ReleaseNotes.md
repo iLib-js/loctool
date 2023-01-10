@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 036
+-------
+Published as version 2.20.2
+
+New Features:
+
+Bug Fixes:
+* convert would not read the local ./project.json which contains settings that could not
+  be specified on the command-line. Now, it does!
+
 Build 035
 -------
 Published as version 2.20.1
