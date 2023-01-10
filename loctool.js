@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019-2022, HealthTap, Inc. and JEDLSoft
+ * Copyright © 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,6 @@ var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 var XliffMerge = require("./lib/XliffMerge.js");
 var XliffSplit = require("./lib/XliffSplit.js");
 var fileConvert = require("./lib/convert.js");
-var importPaths = require("./lib/importPaths.js");
 
 // var Git = require("simple-git");
 
@@ -146,10 +145,8 @@ function usage() {
 //        "    report - generate a loc report, but don't generate localized resource files.\n" +
         "    export [filename] - export all the new strings to an xliff or a set of xliff\n" +
         "             files. Default: a set of files named new-<locale>.xliff [not implemented yet]\n" +
-        "    import pathname ... - import directories full of translated strings from resource\n" +
-        "             files in the given paths using the current project's settings. Output is\n" +
-        "             a set of xliff files that can be used as input for the localize or generate\n" +
-        "             commands.\n" +
+        "    import filename ... - import all the translated strings in the given\n" +
+        "             xliff files. [not implemented yet]\n" +
         "    split (language|project) filename ... - split the given xliff files by\n" +
         "             language or project.\n" +
         "    merge outfile filename ... - merge the given xliff files to the named\n" +
@@ -621,8 +618,6 @@ try {
         break;
 
     case "import":
-        var project = ProjectFactory.newProject(".", settings);
-        importPaths(project, settings);
         break;
 
     case "split":
