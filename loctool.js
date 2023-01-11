@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019-2022, HealthTap, Inc. and JEDLSoft
+ * Copyright © 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
-    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2022, HealthTap, Inc. and JEDLSoft";
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft";
 }
 
 function usage() {
@@ -153,7 +153,7 @@ function usage() {
         "             outfile.\n" +
         "    generate ... - generate resources without scanning sources.\n" +
         "    convert outfile filename ... - convert input files to the output file format.\n" +
-        "             All files must be resource file types such as xliff, po, or xliff.\n"
+        "             All files must be resource file types such as xliff, po, or properties.\n"
         );
     process.exit(0);
 }
@@ -368,7 +368,7 @@ case "import":
     if (options.length > 3) {
         settings.infiles = options.slice(3);
     } else {
-        console.log("Error: must specify at least one input file to import.");
+        console.log("Error: must specify at least one input path to import.");
         usage();
     }
     break;
@@ -635,7 +635,7 @@ try {
     case "generate":
         var project = ProjectFactory.newProject(settings, settings);
         GenerateModeProcess(project);
-       break;
+        break;
 
     case "convert":
         if (!settings.id) {

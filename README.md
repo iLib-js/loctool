@@ -819,7 +819,7 @@ These are the actions which are available:
 Copyright and License
 -------
 
-Copyright &copy; 2016-2022, HealthTap, Inc. and JEDLSoft
+Copyright &copy; 2016-2023, HealthTap, Inc. and JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this tool except in compliance with the License.
