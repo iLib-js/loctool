@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 037
+-------
+Published as version 2.20.3
+
+New Features:
+
+Bug Fixes:
+* added more explicit logging output in order to be able to debug problems
+
 Build 036
 -------
 Published as version 2.20.2
