@@ -437,6 +437,7 @@ function processNextProject() {
 
     logger.debug("Processing project " + (project && project.id));
     if (project) {
+        var startTime = new Date();
         project.init(function() {
             project.extract(function() {
                 project.generatePseudo();
@@ -449,6 +450,9 @@ function processNextProject() {
                 });
             });
         });
+        var endTime = new Date();
+        logger.info("-------------------------------------------------------------------------------------------");
+        logger.info("Project [" + project.getProjectId()+ "] Running time: " + (endTime.getTime() - startTime.getTime())/1000 + " s .....");
     }
 }
 
