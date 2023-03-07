@@ -9,7 +9,7 @@ New Features:
 
 Bug Fixes:
 * added more explicit logging output in order to be able to debug problems
-* added time log to check how much takes for each process
+* added time logs to check how much takes for each process
 
 Build 036
 -------
