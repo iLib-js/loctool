@@ -9,6 +9,8 @@ New Features:
 
 Bug Fixes:
 * added more explicit logging output in order to be able to debug problems
+* fixed a problem where tmx file output was not adding the srclang attribute
+  to the header of the tmx file
 
 Build 036
 -------

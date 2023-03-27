@@ -1598,7 +1598,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" srclang="en-US" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-context">asdf</prop>\n' +
@@ -1655,7 +1655,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" srclang="en-US" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -1753,7 +1753,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" srclang="en-US" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -2972,7 +2972,7 @@ module.exports.tmx = {
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="sentence" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="sentence" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" srclang="en-US" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
@@ -3180,7 +3180,7 @@ module.exports.tmx = {
         var actual = tmx.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +
-            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" adminlang="en-US" datatype="unknown"/>\n' +
+            '  <header segtype="paragraph" creationtool="loctool" creationtoolversion="' + loctoolVersion + '" srclang="en-US" adminlang="en-US" datatype="unknown"/>\n' +
             '  <body>\n' +
             '    <tu srclang="en-US">\n' +
             '      <prop type="x-project">webapp</prop>\n' +
