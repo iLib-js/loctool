@@ -1,6 +1,15 @@
 Release Notes for Version 2
 ============================
 
+Build 038
+-------
+Published as version 2.20.4
+
+New Features:
+
+Bug Fixes:
+* added new `resourceDir` parameter support to util's `formatPath()` which is for modifing the resource root path.
+
 Build 037
 -------
 Published as version 2.20.3

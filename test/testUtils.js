@@ -368,6 +368,41 @@ module.exports.utils = {
         test.done();
     },
 
+    testGetresourceDirPath: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[resourceDir]/[localeDir]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "ko",
+            resourceDir: "res"
+        }), "x/y/res/ko/strings.json");
+
+        test.done();
+    },
+
+    testGetresourceDirPath2: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[resourceDir]/[localeDir]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "fr-CA",
+            resourceDir: "resources"
+        }), "x/y/resources/fr/CA/strings.json");
+
+        test.done();
+    },
+
+    testGetresourceDirPath3: function(test) {
+        test.expect(1);
+
+        test.equals(utils.formatPath('[dir]/[resourceDir]/[localeDir]/strings.json', {
+            sourcepath: "x/y/strings.json",
+            locale: "es"
+        }), "x/y/es/strings.json");
+
+        test.done();
+    },
+
     testGetLocaleFromPathDir: function(test) {
         test.expect(1);
 
