@@ -1,7 +1,7 @@
 /*
  * testUtils.js - test the utils object.
  *
- * Copyright © 2016-2017, 2022 HealthTap, Inc.
+ * Copyright © 2016-2017, 2022-2023 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -519,6 +519,22 @@ module.exports.utils = {
         test.expect(1);
 
         test.equals(utils.getLocaleFromPath('[dir]/[localeDir]/strings.json', "x/y/de/DE/strings.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleResourceDir: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[resourceDir]/[localeDir]/strings.json', "x/y/res/de/DE/strings.json"), "de-DE");
+
+        test.done();
+    },
+
+    testGetLocaleFromPathLocaleResourceDir2: function(test) {
+        test.expect(1);
+
+        test.equals(utils.getLocaleFromPath('[dir]/[resourceDir]/[locale]/strings.json', "x/y/res/de-DE/strings.json"), "de-DE");
 
         test.done();
     },
