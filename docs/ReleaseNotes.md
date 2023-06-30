@@ -7,6 +7,7 @@ Published as version 2.21.0
 
 New Features:
 * added new `resourceDir` parameter support to util's `formatPath()` which is for modifying the resource root path.
+* added new `debug-font` pseudoLocale style for checking scripts and fonts.
 
 Bug Fixes:
 
