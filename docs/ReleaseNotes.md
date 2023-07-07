@@ -8,13 +8,13 @@ Published as version 2.21.1
 New Features:
 
 Bug Fixes:
-* Fixed a bug in the ResourceArray constructor where an undefined element
-  in the array would get stored as the string "undefined" in the resource array
-  instead of the undefined value. This caused all manner of bad things, including
-  translations units in the extracted and new xliff files that had a bad or
-  missing source tag and therefore no source string to translate. Now, undefined
-  elements do not show up in the output xliff files because there is nothing
-  to translate. They stay undefined in localized files.
+* Fixed bug where resources with no source would sometimes appear in the
+  extracted and new xliff files.
+    * in the ResourceArray constructor: an undefined element
+      in the array would get stored as the string "undefined" in the resource array
+      instead of the actual value undefined. This messed a lot of things up
+    * in projects, filter out any resources, from any plugin, where the
+      source is not defined. This goes for strings, arrays, or plurals.
 
 Build 038
 -------
