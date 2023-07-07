@@ -9,4 +9,10 @@
       %d friends commented
     </item>
   </plurals>
+  <string-array name="noSource">
+    <item>a</item>
+    <item>b</item>
+    <item></item>
+    <item>c</item>
+  </string-array>
 </resources>

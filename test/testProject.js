@@ -166,17 +166,29 @@ module.exports.project = {
                                 '<xliff version="1.2">\n' +
                                 '  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="loctest">\n' +
                                 '    <body>\n' +
-                                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                                 '        <source>%d friend commented</source>\n' +
                                 '        <target state="new">%d friend commented</target>\n' +
                                 '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
+                                '      <trans-unit id="5" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="3" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                                '      <trans-unit id="6" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
@@ -195,7 +207,19 @@ module.exports.project = {
                                 '<xliff version="1.2">\n' +
                                 '  <file original="res/values/strings.xml" source-language="en-US" target-language="ja-JP" product-name="loctest">\n' +
                                 '    <body>\n' +
-                                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
@@ -214,22 +238,34 @@ module.exports.project = {
                                 '<xliff version="1.2">\n' +
                                 '  <file original="res/values/strings.xml" source-language="en-US" target-language="ru-RU" product-name="loctest">\n' +
                                 '    <body>\n' +
-                                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                                 '        <source>%d friend commented</source>\n' +
                                 '        <target state="new">%d friend commented</target>\n' +
                                 '        <note>{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="few">\n' +
+                                '      <trans-unit id="5" resname="foobar" restype="plural" datatype="x-android-resource" extype="few">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="3" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
+                                '      <trans-unit id="6" resname="foobar" restype="plural" datatype="x-android-resource" extype="many">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '      </trans-unit>\n' +
-                                '      <trans-unit id="4" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                                '      <trans-unit id="7" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                                 '        <source>%d friends commented</source>\n' +
                                 '        <target state="new">%d friends commented</target>\n' +
                                 '        <note>{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
@@ -276,7 +312,25 @@ module.exports.project = {
                                 '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
-                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -285,7 +339,7 @@ module.exports.project = {
                                 '          <target state="new">%d friend commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '      <unit id="5" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -294,7 +348,7 @@ module.exports.project = {
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '      <unit id="6" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -317,7 +371,25 @@ module.exports.project = {
                                 '<xliff version="2.0" srcLang="en-US" trgLang="ja-JP" xmlns:l="http://ilib-js.com/loctool">\n' +
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
-                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -340,7 +412,25 @@ module.exports.project = {
                                 '<xliff version="2.0" srcLang="en-US" trgLang="ru-RU" xmlns:l="http://ilib-js.com/loctool">\n' +
                                 '  <file original="res/values/strings.xml" l:project="loctest">\n' +
                                 '    <group id="group_1" name="x-android-resource">\n' +
-                                '      <unit id="1" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="one">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"one","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -349,7 +439,7 @@ module.exports.project = {
                                 '          <target state="new">%d friend commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="2" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
+                                '      <unit id="5" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="few">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"few","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -358,7 +448,7 @@ module.exports.project = {
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="3" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
+                                '      <unit id="6" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="many">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"many","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +
@@ -367,7 +457,7 @@ module.exports.project = {
                                 '          <target state="new">%d friends commented</target>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
-                                '      <unit id="4" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
+                                '      <unit id="7" name="foobar" type="res:plural" l:datatype="x-android-resource" l:category="other">\n' +
                                 '        <notes>\n' +
                                 '          <note appliesTo="source">{"pluralForm":"other","pluralFormOther":"foobar"}</note>\n' +
                                 '        </notes>\n' +

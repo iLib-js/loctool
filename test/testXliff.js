@@ -745,6 +745,124 @@ module.exports.xliff = {
         test.done();
     },
 
+    testXliffSerializeWithSourceOnlyAndArrayWithMissingElement: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ResourceArray({
+            sourceArray: ["one", "two", undefined, "three"],
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            targetLocale: "fr-FR"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="androidapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="2" resname="huzzah" restype="array" datatype="x-android-resource" extype="0">\n' +
+            '        <source>one</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="3" resname="huzzah" restype="array" datatype="x-android-resource" extype="1">\n' +
+            '        <source>two</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="4" resname="huzzah" restype="array" datatype="x-android-resource" extype="3">\n' +
+            '        <source>three</source>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testXliffSerializeWithSourceOnlyAndArrayWithEmptyElement: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        var res = new ContextResourceString({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "androidapp",
+            targetLocale: "de-DE"
+        });
+
+        x.addResource(res);
+
+        res = new ResourceArray({
+            sourceArray: ["one", "two", "", "three"],
+            sourceLocale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "webapp",
+            targetLocale: "fr-FR"
+        });
+
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+            '<?xml version="1.0" encoding="utf-8"?>\n' +
+            '<xliff version="1.2">\n' +
+            '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="androidapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+            '        <source>Asdf asdf</source>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="webapp">\n' +
+            '    <body>\n' +
+            '      <trans-unit id="2" resname="huzzah" restype="array" datatype="x-android-resource" extype="0">\n' +
+            '        <source>one</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="3" resname="huzzah" restype="array" datatype="x-android-resource" extype="1">\n' +
+            '        <source>two</source>\n' +
+            '      </trans-unit>\n' +
+            '      <trans-unit id="4" resname="huzzah" restype="array" datatype="x-android-resource" extype="3">\n' +
+            '        <source>three</source>\n' +
+            '      </trans-unit>\n' +
+            '    </body>\n' +
+            '  </file>\n' +
+            '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
     testXliffSerializeWithExplicitIds: function(test) {
         test.expect(2);
 
