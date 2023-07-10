@@ -111,6 +111,19 @@ var project8 = new WebProject({
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 
+var project9 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: {
+        "as-XX": "debug-font",
+        "kn-XX": "debug-font"
+    },
+    resourceDirs: {
+        "json": "resources"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-US", "ko-KR"]
+});
+
 module.exports.pseudofactory = {
     testPseudoFactoryDefaultBritishEnglish: function(test) {
         test.expect(2);
@@ -364,7 +377,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -379,7 +391,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -394,7 +405,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -424,7 +434,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -439,7 +448,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -454,7 +462,6 @@ module.exports.pseudofactory = {
             type: "text"
         });
 
-        // Jamaica is not in the object
         test.ok(!pseudo);
 
         test.done();
@@ -605,6 +612,32 @@ module.exports.pseudofactory = {
         var pseudo = PseudoFactory({
             project: project3,
             targetLocale: "zxx-XX-ASDF",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+    testPseudoFactoryNormalasXXLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project9,
+            targetLocale: "as-XX",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
+    testPseudoFactoryNormalknXXLocale: function(test) {
+        test.expect(2);
+
+        var pseudo = PseudoFactory({
+            project: project9,
+            targetLocale: "kn-XX",
             type: "text"
         });
         test.ok(pseudo);
