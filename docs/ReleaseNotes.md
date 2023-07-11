@@ -4,21 +4,17 @@ Release Notes for Version 2
 Build 039
 -------
 Published as version 2.22.0
+
+New Features:
 * added new `debug-font` pseudoLocale style. It transform the source strings into strings of characters
   that require a different font. This allows you to test out whether or not the font works in your UI
-  without having a real translation.  
+  without having a real translation.
   e.g.
   ```
   "pseudoLocale": {
     "am-XX": "debug-font",
   },
   ```
-
-Build 038
--------
-Published as version 2.21.1
-
-New Features:
 
 Bug Fixes:
 * Fixed bug where resources with no source would sometimes appear in the

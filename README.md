@@ -543,7 +543,7 @@ The following is the list of styles supported:
   like Arabic or Hebrew
 - debug-asian: map the Latin characters to Asian characters
   to test your app's font support for Asian characters
-- debug-font: map the Latin characters to characters that 
+- debug-font: map the Latin characters to characters that
   require a different font.
 - english-british: map US spellings to British English spellings
 - english-canadian: map US spellings to Canadian English spellings
