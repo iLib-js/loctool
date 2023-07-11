@@ -16,6 +16,21 @@ Published as version 2.22.0
 
 Build 038
 -------
+Published as version 2.21.1
+
+New Features:
+
+Bug Fixes:
+* Fixed bug where resources with no source would sometimes appear in the
+  extracted and new xliff files.
+    * in the ResourceArray constructor: an undefined element
+      in the array would get stored as the string "undefined" in the resource array
+      instead of the actual value undefined. This messed a lot of things up
+    * in projects, filter out any resources, from any plugin, where the
+      source is not defined. This goes for strings, arrays, or plurals.
+
+Build 038
+-------
 Published as version 2.21.0
 
 New Features:

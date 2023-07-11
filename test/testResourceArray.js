@@ -103,6 +103,38 @@ module.exports.resourcearray = {
         test.done();
     },
 
+    testResourceArrayConstructorMissingElements: function(test) {
+        test.expect(1);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", undefined, "This is not"],
+            sourceLocale: "en-US",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", undefined, "Dies ist nicht."],
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+
+        test.done();
+    },
+
+    testResourceArrayConstructorEmptyElements: function(test) {
+        test.expect(1);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "", "This is not"],
+            sourceLocale: "en-US",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "", "Dies ist nicht."],
+            targetLocale: "de-DE",
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+
+        test.done();
+    },
+
     testResourceArrayConstructorFullRightContents: function(test) {
         test.expect(7);
 
@@ -163,6 +195,38 @@ module.exports.resourcearray = {
         test.ok(ra);
 
         test.equal(ra.size(), 3);
+
+        test.done();
+    },
+
+    testResourceArrayConstructorRightSizeMissingElements: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", undefined, "This is not"],
+            sourceLocale: "de-DE",
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 4);
+
+        test.done();
+    },
+
+    testResourceArrayConstructorRightSizeEmptyElements: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", "", "This is not"],
+            sourceLocale: "de-DE",
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 4);
 
         test.done();
     },
@@ -275,6 +339,42 @@ module.exports.resourcearray = {
         test.done();
     },
 
+    testResourceArrayGetSourceMissingElements: function(test) {
+        test.expect(5);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", undefined, "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.equal(ra.getSource(0), "This is a test");
+        test.equal(ra.getSource(1), "This is also a test");
+        test.ok(!ra.getSource(2));
+        test.equal(ra.getSource(3), "This is not");
+
+        test.done();
+    },
+
+    testResourceArrayGetSourceEmptyElements: function(test) {
+        test.expect(5);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", "", "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.equal(ra.getSource(0), "This is a test");
+        test.equal(ra.getSource(1), "This is also a test");
+        test.equal(ra.getSource(2), "");
+        test.equal(ra.getSource(3), "This is not");
+
+        test.done();
+    },
+
     testResourceArrayGetTarget: function(test) {
         test.expect(4);
 
@@ -290,6 +390,46 @@ module.exports.resourcearray = {
         test.equal(ra.getTarget(0), "Dies ist einen Test.");
         test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
         test.equal(ra.getTarget(2), "Dies ist nicht.");
+
+        test.done();
+    },
+
+    testResourceArrayGetTargetMissingElements: function(test) {
+        test.expect(5);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", undefined, "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "en-US",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", undefined, "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.equal(ra.getTarget(0), "Dies ist einen Test.");
+        test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
+        test.ok(!ra.getTarget(2));
+        test.equal(ra.getTarget(3), "Dies ist nicht.");
+
+        test.done();
+    },
+
+    testResourceArrayGetTargetEmptyElements: function(test) {
+        test.expect(5);
+
+        var ra = new ResourceArray({
+            key: "foo",
+            sourceArray: ["This is a test", "This is also a test", "", "This is not"],
+            pathName: "a/b/c.txt",
+            sourceLocale: "en-US",
+            targetArray: ["Dies ist einen Test.", "Dies ist auch einen Test.", "", "Dies ist nicht."],
+            targetLocale: "de-DE"
+        });
+        test.ok(ra);
+        test.equal(ra.getTarget(0), "Dies ist einen Test.");
+        test.equal(ra.getTarget(1), "Dies ist auch einen Test.");
+        test.equal(ra.getTarget(2), "");
+        test.equal(ra.getTarget(3), "Dies ist nicht.");
 
         test.done();
     },
@@ -425,6 +565,40 @@ module.exports.resourcearray = {
             test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
             test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
             test.equal(strings[2], "Ťĥíš íš ñõţ543210");
+
+            test.done();
+        });
+    },
+
+    testResourceArrayGeneratePseudoRightStringMissingOrEmptyElements: function(test) {
+        test.expect(10);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            sourceArray: ["This is a test", "This is also a test", undefined, "", "This is not"],
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+
+        var rb = new RegularPseudo({
+            type: "c"
+        });
+
+        rb.init(function() {
+            var ra2 = ra.generatePseudo("de-DE", rb);
+
+            test.ok(ra2);
+            test.ok(ra2.getTargetLocale(), "de-DE");
+
+            var strings = ra2.getTargetArray();
+
+            test.ok(strings);
+            test.equal(strings.length, 5);
+            test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
+            test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
+            test.ok(!strings[2]);
+            test.equal(strings[3], "");
+            test.equal(strings[4], "Ťĥíš íš ñõţ543210");
 
             test.done();
         });
