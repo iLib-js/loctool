@@ -516,6 +516,7 @@ Example project with an object of pseudo locales:
 {
   "pseudoLocale": {
     "pl-PL": "debug",
+    "am-XX": "debug-font,
     "en-CA": "english-canadian",
     "en-GB": "english-british",
     "zh-Hant-TW": "chinese-traditional-tw"
@@ -542,6 +543,8 @@ The following is the list of styles supported:
   like Arabic or Hebrew
 - debug-asian: map the Latin characters to Asian characters
   to test your app's font support for Asian characters
+- debug-font: map the Latin characters to characters that
+  require a different font.
 - english-british: map US spellings to British English spellings
 - english-canadian: map US spellings to Canadian English spellings
 - english-australian: map US spellings to Australian English spellings
