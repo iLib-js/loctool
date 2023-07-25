@@ -1,6 +1,12 @@
 Release Notes for Version 2
 ============================
 
+Build 040
+-------
+Published as version 2.23.0
+* Added new `paramContext` value for SourceContextResourceString.
+  * It is the first parameter of `qsTranslate()`. It is going to be used for generating ts translation resource.
+
 Build 039
 -------
 Published as version 2.22.0

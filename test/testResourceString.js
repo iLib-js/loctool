@@ -1092,7 +1092,6 @@ module.exports.resourcestring = {
 
         test.done();
     },
-
     testIosLayoutResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
@@ -1376,5 +1375,37 @@ module.exports.resourcestring = {
 
         test.done();
     },
+    testSourceContextResourceStringSourceParamContext: function(test) {
+        test.expect(2);
 
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml",
+            paramContext: "abc"
+        });
+        test.ok(rs);
+        test.equal(rs.getParamContext(), "abc");
+        test.done();
+    },
+    testSourceContextResourceStringSourceParamContextEmpty: function(test) {
+        test.expect(2);
+
+        var rs = new SourceContextResourceString({
+            project: "qmlqpp",
+            context: "foobar",
+            key: "This is a test",
+            source: "This is a test",
+            sourceLocale: "en-US",
+            pathName: "a/b/c.qml",
+            datatype: "x-qml"
+        });
+        test.ok(rs);
+        test.equal(rs.getParamContext(), undefined);
+        test.done();
+    }
 };
