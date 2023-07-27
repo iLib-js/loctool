@@ -541,8 +541,8 @@ The following is the list of styles supported:
 - debug-rtl: map the Latin characters to right-to-left language
   characters to test your app's readiness for right-to-left languages
   like Arabic or Hebrew
-- debug-asian: map the Latin characters to Asian characters
-  to test your app's font support for Asian characters
+- debug-han-simplified: map the Latin characters to Simplified Chinese characters
+  to test your app's font support for Chinese characters
 - debug-font: map the Latin characters to characters that
   require a different font.
 - english-british: map US spellings to British English spellings
@@ -559,7 +559,7 @@ and the styles:
 
 - zxx-XX, und-XX: debug
 - zxx-Arab-XX: debug-rtl
-- zxx-Hans-XX, zxx-Hant-XX: debug-asian
+- zxx-Hans-XX, zxx-Hant-XX: debug-chinese
 - en-CA: english-canadian
 - en-AU, en-CX, en-CC, en-NF, en-HM: english-australian
 - en-NZ, en-CK, en-NU, en-TK: english-new-zealand
