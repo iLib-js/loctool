@@ -82,7 +82,7 @@ var project6 = new WebProject({
     pseudoLocale: {
         "en-GB": "english-british",
         "zxx-XX": "debug",
-        "zxx-Hans-XX": "debug-asian"
+        "zxx-Hans-XX": "debug-han-simplified"
     },
     resourceDirs: {
         "yml": "config/locales"
