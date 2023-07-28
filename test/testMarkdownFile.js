@@ -3541,9 +3541,9 @@ module.exports.markdown = {
             '\n' +
             '<img src="http://foo.com/photo.png" height="86px" width="86px">\n' +
             '\n' +
-            'Ťëšţ þĥŕàšë543210\n' +
+            '\\[Ťëšţ þĥŕàšë543210]\n' +
             '\n' +
-            '## Ïñ Pëŕšõñ Mõðë6543210\n';
+            '## \\[Ïñ Pëŕšõñ Mõðë6543210]\n'
 
         diff(actual, expected);
         test.equal(actual, expected);

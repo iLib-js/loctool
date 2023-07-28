@@ -1,7 +1,7 @@
 /*
  * testHTMLTemplateFile.js - test the HTML template file handler object.
  *
- * Copyright © 2016-2017, 2019 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019, 2023HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -4274,7 +4274,7 @@ module.exports.htmltemplatefile = {
             '      <% $.each(supplementary_descriptions, function(index, desc) { %>\n' +
             '      <div class="addInfo"><%= desc %></div>\n' +
             '      <% }); %>\n' +
-            '      Ťëšţ þĥŕàšë543210\n' +
+            '      [Ťëšţ þĥŕàšë543210]\n' +
             '    </div>\n' +
             '    <div class="modeSelection">\n' +
             '      <% $.each(modes, function(index, mode) { %>\n' +

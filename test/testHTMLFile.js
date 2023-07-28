@@ -1,7 +1,7 @@
 /*
  * testHTMLFile.js - test the HTML file handler object.
  *
- * Copyright © 2018, Box, Inc.
+ * Copyright © 2018, 2023 Box, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -2950,11 +2950,11 @@ module.exports.htmlfile = {
             '      </div>\n' +
             '      <div class="name"></div>\n' +
             '      <div class="specialty"></div>\n' +
-            '      Ťëšţ þĥŕàšë543210\n' +
+            '      [Ťëšţ þĥŕàšë543210]\n' +
             '    </div>\n' +
             '    <div class="modeSelection">\n' +
             '      <div class="modeContents">\n' +
-            '        <h4>Ïñ Pëŕšõñ Mõðë6543210</h4>\n' +
+            '        <h4>[Ïñ Pëŕšõñ Mõðë6543210]</h4>\n' +
             '        <p class="description"></p>\n' +
             '      </div>\n' +
             '    </div><div class="divider"></div>\n' +
