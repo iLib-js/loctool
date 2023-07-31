@@ -124,6 +124,18 @@ var project9 = new WebProject({
     locales: ["en-GB", "en-US", "ko-KR"]
 });
 
+var project10 = new WebProject({
+    sourceLocale: "en-US",
+    pseudoLocale: {
+        "zxx-Hans-XX": "debug-han-simplified"
+    },
+    resourceDirs: {
+        "json": "resources"
+    }
+}, "./testfiles", {
+    locales: ["en-GB", "en-US", "ko-KR"]
+});
+
 module.exports.pseudofactory = {
     testPseudoFactoryDefaultBritishEnglish: function(test) {
         test.expect(2);
@@ -645,7 +657,19 @@ module.exports.pseudofactory = {
 
         test.done();
     },
+    testPseudoFactoryNormalzxxHasXXLocale: function(test) {
+        test.expect(2);
 
+        var pseudo = PseudoFactory({
+            project: project10,
+            targetLocale: "zxx-Hans-XX",
+            type: "text"
+        });
+        test.ok(pseudo);
+        test.ok(pseudo instanceof RegularPseudo);
+
+        test.done();
+    },
     testPseudoFactoryNotListed: function(test) {
         test.expect(1);
 

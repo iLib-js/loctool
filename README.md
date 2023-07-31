@@ -559,7 +559,7 @@ and the styles:
 
 - zxx-XX, und-XX: debug
 - zxx-Arab-XX: debug-rtl
-- zxx-Hans-XX, zxx-Hant-XX: debug-chinese
+- zxx-Hans-XX, zxx-Hant-XX: debug-han-simplified
 - en-CA: english-canadian
 - en-AU, en-CX, en-CC, en-NF, en-HM: english-australian
 - en-NZ, en-CK, en-NU, en-TK: english-new-zealand
