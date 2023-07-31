@@ -1,7 +1,7 @@
 /*
  * testResourceArray.js - test the resource array object.
  *
- * Copyright © 2016-2017, 2019-2020, HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020, 2023 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -562,9 +562,9 @@ module.exports.resourcearray = {
 
             test.ok(strings);
             test.equal(strings.length, 3);
-            test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
-            test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
-            test.equal(strings[2], "Ťĥíš íš ñõţ543210");
+            test.equal(strings[0], "[Ťĥíš íš à ţëšţ6543210]");
+            test.equal(strings[1], "[Ťĥíš íš àľšõ à ţëšţ9876543210]");
+            test.equal(strings[2], "[Ťĥíš íš ñõţ543210]");
 
             test.done();
         });
@@ -594,11 +594,11 @@ module.exports.resourcearray = {
 
             test.ok(strings);
             test.equal(strings.length, 5);
-            test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
-            test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
+            test.equal(strings[0], "[Ťĥíš íš à ţëšţ6543210]");
+            test.equal(strings[1], "[Ťĥíš íš àľšõ à ţëšţ9876543210]");
             test.ok(!strings[2]);
             test.equal(strings[3], "");
-            test.equal(strings[4], "Ťĥíš íš ñõţ543210");
+            test.equal(strings[4], "[Ťĥíš íš ñõţ543210]");
 
             test.done();
         });
@@ -628,9 +628,9 @@ module.exports.resourcearray = {
 
             test.ok(strings);
             test.equal(strings.length, 3);
-            test.equal(strings[0], "Ťĥíš íš à %s ţëšţ876543210");
-            test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ6543210");
-            test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d9876543210");
+            test.equal(strings[0], "[Ťĥíš íš à %s ţëšţ876543210]");
+            test.equal(strings[1], "[Ťĥíš íš àľšõ à %f ţëšţ6543210]");
+            test.equal(strings[2], "[Ťĥíš íš ñõţ %4$-2.2d9876543210]");
 
             test.done();
         });

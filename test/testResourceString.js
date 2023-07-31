@@ -1,7 +1,7 @@
 /*
  * testResourceString.js - test the resource string object.
  *
- * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020, 2023 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -329,7 +329,7 @@ module.exports.resourcestring = {
             test.ok(rs2);
             test.equal(rs2.getSource(), "This is a test");
             test.equal(rs2.sourceLocale, "en-US");
-            test.equal(rs2.getTarget(), "Ťĥíš íš à ţëšţ6543210");
+            test.equal(rs2.getTarget(), "[Ťĥíš íš à ţëšţ6543210]");
             test.equal(rs2.getTargetLocale(), "de-DE");
 
             test.done();
@@ -354,7 +354,7 @@ module.exports.resourcestring = {
             var rs2 = rs.generatePseudo("de-DE", rb);
 
             test.ok(rs2);
-            test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
+            test.equal(rs2.getTarget(), "[Ťĥíš %2$-2.2s íš à %s ţëšţ876543210]");
 
             test.done();
         });
@@ -378,7 +378,7 @@ module.exports.resourcestring = {
             var rs2 = rs.generatePseudo("de-DE", rb);
 
             test.ok(rs2);
-            test.equal(rs2.getTarget(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
+            test.equal(rs2.getTarget(), "[Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210]");
 
             test.done();
         });
@@ -402,7 +402,7 @@ module.exports.resourcestring = {
 
         rb.init(function() {
             test.ok(rs2);
-            test.equal(rs2.getTarget(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
+            test.equal(rs2.getTarget(), "[Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210]");
 
             test.done();
         });
@@ -426,7 +426,7 @@ module.exports.resourcestring = {
             var rs2 = rs.generatePseudo("de-DE", rb);
 
             test.ok(rs2);
-            test.equal(rs2.getTarget(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
+            test.equal(rs2.getTarget(), "[Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210]");
 
             test.done();
         });

@@ -1,7 +1,7 @@
 /*
  * testPseudoDebug.js - test the debug pseudo translation
  *
- * Copyright © 2021, JEDLSoft.
+ * Copyright © 2021, 2023 JEDLSoft.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ module.exports.pseudodebug = {
             targetLocale: "es-US",
             type: "text"
         });
-        test.equal(pb.getString("I am a Blues Traveler"), "Ï àm à ßľüëš Ťŕàvëľëŕ6543210");
+        test.equal(pb.getString("I am a Blues Traveler"), "[Ï àm à ßľüëš Ťŕàvëľëŕ6543210]");
 
         test.done();
     },
@@ -58,7 +58,7 @@ module.exports.pseudodebug = {
             targetLocale: "es-US",
             type: "text"
         });
-        test.equal(pb.getString("GLOBALIZATION"), "ĜĽØßÃĽÏŻÃŤÏØŇ6543210");
+        test.equal(pb.getString("GLOBALIZATION"), "[ĜĽØßÃĽÏŻÃŤÏØŇ6543210]");
 
         test.done();
     },
@@ -73,7 +73,7 @@ module.exports.pseudodebug = {
             type: "java"
         });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."),
-            "Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210");
+            "[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]");
 
         test.done();
     },
@@ -87,7 +87,7 @@ module.exports.pseudodebug = {
             type: "javascript"
         });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."),
-            "Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210");
+            "[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]");
 
         test.done();
     },
@@ -101,7 +101,7 @@ module.exports.pseudodebug = {
             type: "html"
         });
         test.equal(pb.getString("Skip the unflavored <span name=\"estrogen\">supplements</a>."),
-            'Šķíþ ţĥë üñfľàvõŕëð <span name="estrogen">šüþþľëmëñţš</a>.109876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð <span name="estrogen">šüþþľëmëñţš</a>.109876543210]');
 
         test.done();
     },
@@ -115,7 +115,7 @@ module.exports.pseudodebug = {
             type: "xml"
         });
         test.equal(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>."),
-            'Šķíþ ţĥë üñfľàvõŕëð <source id="estrogen">šüþþľëmëñţš</source>.2109876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð <source id="estrogen">šüþþľëmëñţš</source>.2109876543210]');
 
         test.done();
     },
@@ -128,7 +128,7 @@ module.exports.pseudodebug = {
             targetLocale: "es-US",
             type: "markdown"
         });
-        test.equal(pb.getString("Skip the unflavored <c0>supplements</c0>."), 'Šķíþ ţĥë üñfľàvõŕëð <c0>šüþþľëmëñţš</c0>.76543210');
+        test.equal(pb.getString("Skip the unflavored <c0>supplements</c0>."), '[Šķíþ ţĥë üñfľàvõŕëð <c0>šüþþľëmëñţš</c0>.76543210]');
 
         test.done();
     },
@@ -143,7 +143,7 @@ module.exports.pseudodebug = {
         });
         test.equal(
             pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."),
-            'Šķíþ ţĥë üñfľàvõŕëð <%= (i > 4) ? RB.getString("estrogen") : RB.getString(\"%\") %> šüþþľëmëñţš.8765432109876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð <%= (i > 4) ? RB.getString("estrogen") : RB.getString(\"%\") %> šüþþľëmëñţš.8765432109876543210]');
 
         test.done();
     },
@@ -157,7 +157,7 @@ module.exports.pseudodebug = {
             type: "ruby"
         });
         test.equal(pb.getString("Skip the unflavored %{estrogen} #{estrogen} supplements."),
-            'Šķíþ ţĥë üñfľàvõŕëð %{estrogen} #{estrogen} šüþþľëmëñţš.09876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð %{estrogen} #{estrogen} šüþþľëmëñţš.09876543210]');
 
         test.done();
     },
@@ -171,7 +171,7 @@ module.exports.pseudodebug = {
             type: "text"
         });
         test.equal(pb.getString("Skip the unflavored {estrogen} supplements."),
-            'Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]');
 
         test.done();
     },
@@ -185,7 +185,7 @@ module.exports.pseudodebug = {
             type: "ruby"
         });
         test.equal(pb.getString("Skip the unflavored %ESTROGEN% supplements."),
-            'Šķíþ ţĥë üñfľàvõŕëð %ESTROGEN% šüþþľëmëñţš.876543210');
+            '[Šķíþ ţĥë üñfľàvõŕëð %ESTROGEN% šüþþľëmëñţš.876543210]');
 
         test.done();
     },
