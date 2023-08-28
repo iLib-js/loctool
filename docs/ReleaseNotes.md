@@ -1,6 +1,12 @@
 Release Notes for Version 2
 ============================
 
+Build 040
+-------
+Published as version 2.23.0
+New Features:
+* changed the `zxx-Hans-XX` pseudo style name to `debug-han-simplified`.
+
 Build 039
 -------
 Published as version 2.22.0

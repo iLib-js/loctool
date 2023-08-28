@@ -1,7 +1,7 @@
 /*
  * testResourcePlural.js - test the resource plural object.
  *
- * Copyright © 2016-2017, 2019-2020 HealthTap, Inc.
+ * Copyright © 2016-2017, 2019-2020, 2023 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -462,10 +462,10 @@ module.exports.resourceplural = {
 
             test.ok(t);
             test.deepEqual(t, {
-                "one": "Ťĥíš íš šíñğüľàŕ76543210",
-                "two": "Ťĥíš íš ðõübľë6543210",
-                "few": "Ťĥíš íš ţĥë fëŵ çàšë9876543210",
-                "many": "Ťĥíš íš ţĥë màñÿ çàšë6543210"
+                "one": "[Ťĥíš íš šíñğüľàŕ76543210]",
+                "two": "[Ťĥíš íš ðõübľë6543210]",
+                "few": "[Ťĥíš íš ţĥë fëŵ çàšë9876543210]",
+                "many": "[Ťĥíš íš ţĥë màñÿ çàšë6543210]"
             });
         });
 
@@ -500,10 +500,10 @@ module.exports.resourceplural = {
 
             test.ok(t);
             test.deepEqual(t, {
-                "one": "Ťĥíš íš %s šíñğüľàŕ9876543210",
-                "two": "Ťĥíš íš %d ðõübľë876543210",
-                "few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë9876543210",
-                "many": "Ťĥíš íš ţĥë màñÿ %7x çàšë76543210"
+                "one": "[Ťĥíš íš %s šíñğüľàŕ9876543210]",
+                "two": "[Ťĥíš íš %d ðõübľë876543210]",
+                "few": "[Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë9876543210]",
+                "many": "[Ťĥíš íš ţĥë màñÿ %7x çàšë76543210]"
             });
 
             test.done();
