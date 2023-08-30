@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.23.0",
+    "version": "2.23.1",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -41,7 +41,8 @@
         "loctool.js",
         "hashkey.js",
         "README.md",
-        "LICENSE.txt"
+        "LICENSE.txt",
+        "npm-shrinkwrap.json"
     ],
     "directories": {
         "doc": "./doc",
