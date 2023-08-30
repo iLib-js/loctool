@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 041
+-------
+Published as version 2.23.1
+Bug fixes:
+* forgot to include the npm-shrinkwrap.json in the published files
+  list with the last release. Now it is there.
+
 Build 040
 -------
 Published as version 2.23.0
