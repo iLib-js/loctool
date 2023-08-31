@@ -1,6 +1,13 @@
 Release Notes for Version 2
 ============================
 
+Build 042
+-------
+Published as version 2.23.2
+
+Bug fixes:
+* Removed unused dependencies
+
 Build 041
 -------
 Published as version 2.23.1

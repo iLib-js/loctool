@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.23.1",
+    "version": "2.23.2",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -79,7 +79,6 @@
         "micromatch": "^4.0.5",
         "mysql2": "^3.5.2",
         "opencc-js": "^1.0.5",
-        "pretty-data": "^0.40.0",
         "readline-sync": "^1.4.10",
         "rehype-raw": "^5.0.0",
         "remark-frontmatter": "^2.0.0",
@@ -90,7 +89,6 @@
         "unified": "^9.0.0",
         "unist-builder": "^2.0.3",
         "unist-util-filter": "^2.0.0",
-        "unist-util-map": "^3.0.1",
         "util.promisify": "^1.1.2",
         "xml-js": "^1.6.11"
     },
