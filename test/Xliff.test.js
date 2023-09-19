@@ -16,6 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
     var TranslationUnit = Xliff.TranslationUnit;
@@ -26,8 +27,10 @@ if (!Xliff) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var ResourceFactory = require("../lib/ResourceFactory.js");
 }
+
 function diff(a, b) {
     var min = Math.min(a.length, b.length);
+
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
             console.log("Found difference at character " + i);
@@ -37,20 +40,27 @@ function diff(a, b) {
         }
     });
 }
+
 describe("xliff", function() {
     test("XliffConstructor", function() {
         expect.assertions(1);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
     });
+
     test("XliffConstructorIsEmpty", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         expect(x.size()).toBe(0);
     });
+
     test("XliffConstructorFull", function() {
         expect.assertions(7);
+
         var x = new Xliff({
             "tool-id": "loctool",
             "tool-name": "Localization Tool",
@@ -60,41 +70,59 @@ describe("xliff", function() {
             path: "a/b/c.xliff"
         });
         expect(x).toBeTruthy();
+
         expect(x["tool-id"]).toBe("loctool");
         expect(x["tool-name"], "Localization Tool")).toBe(test.equal(x["tool-version"], "1.2.34"),
         expect(x["tool-company"], "My Company, Inc.")).toBe(test.equal(x.copyright, "Copyright 2016, My Company, Inc. All rights reserved."),
         expect(x.path).toBe("a/b/c.xliff");
     });
+
     test("XliffGetPath", function() {
         expect.assertions(2);
+
         var x = new Xliff({
             path: "foo/bar/x.xliff"
         });
         expect(x).toBeTruthy();
+
         expect(x.getPath()).toBe("foo/bar/x.xliff");
     });
+
+
     test("XliffSetPath", function() {
         expect.assertions(3);
+
         var x = new Xliff({
             path: "foo/bar/x.xliff"
         });
         expect(x).toBeTruthy();
+
         expect(x.getPath()).toBe("foo/bar/x.xliff");
+
         x.setPath("asdf/asdf/y.xliff");
+
         expect(x.getPath()).toBe("asdf/asdf/y.xliff");
     });
+
     test("XliffSetPathInitiallyEmpty", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         expect(!x.getPath()).toBeTruthy();
+
         x.setPath("asdf/asdf/y.xliff");
+
         expect(x.getPath()).toBe("asdf/asdf/y.xliff");
     });
+
     test("XliffAddResource", function() {
         expect.assertions(11);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -106,11 +134,15 @@ describe("xliff", function() {
             comment: "this is a comment",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
@@ -121,10 +153,13 @@ describe("xliff", function() {
         expect(reslist[0].getComment()).toBe("this is a comment");
         expect(reslist[0].getProject()).toBe("webapp");
     });
+
     test("XliffSize", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -136,14 +171,20 @@ describe("xliff", function() {
             comment: "this is a comment",
             project: "webapp"
         });
+
         expect(x.size()).toBe(0);
+
         x.addResource(res);
+
         expect(x.size()).toBe(1);
     });
+
     test("XliffAddMultipleResources", function() {
         expect.assertions(8);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -151,7 +192,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -159,11 +202,15 @@ describe("xliff", function() {
             pathName: "foo/bar/j.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
@@ -171,11 +218,14 @@ describe("xliff", function() {
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
         expect(reslist[0].getProject()).toBe("webapp");
     });
+
     test("XliffAddMultipleResourcesRightSize", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
         expect(x.size()).toBe(0);
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -183,7 +233,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -191,13 +243,18 @@ describe("xliff", function() {
             pathName: "foo/bar/j.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         expect(x.size()).toBe(2);
     });
+
     test("XliffAddMultipleResourcesOverwrite", function() {
         expect.assertions(9);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -205,7 +262,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         // this one has the same source, locale, key, and file
         // so it should overwrite the one above
         res = new ResourceString({
@@ -216,11 +275,15 @@ describe("xliff", function() {
             comment: "blah blah blah",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
@@ -229,11 +292,15 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(reslist[0].getComment()).toBe("blah blah blah");
     });
+
     test("XliffAddMultipleResourcesOverwriteRightSize", function() {
         expect.assertions(4);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         expect(x.size()).toBe(0);
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -241,8 +308,11 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         expect(x.size()).toBe(1);
+
         // this one has the same source, locale, key, and file
         // so it should overwrite the one above
         res = new ResourceString({
@@ -253,13 +323,18 @@ describe("xliff", function() {
             comment: "blah blah blah",
             project: "webapp"
         });
+
         x.addResource(res);
+
         expect(x.size()).toBe(1);
     });
+
     test("XliffAddMultipleResourcesNoOverwrite", function() {
         expect.assertions(13);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -267,7 +342,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         // this one has a different locale
         // so it should not overwrite the one above
         res = new ResourceString({
@@ -278,29 +355,38 @@ describe("xliff", function() {
             comment: "blah blah blah",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
         expect(!reslist[0].getComment()).toBeTruthy();
+
         expect(reslist[1].getSource()).toBe("Asdf asdf");
         expect(reslist[1].getSourceLocale()).toBe("fr-FR");
         expect(reslist[1].getKey()).toBe("foobar");
         expect(reslist[1].getPath()).toBe("foo/bar/asdf.java");
         expect(reslist[1].getComment()).toBe("blah blah blah");
     });
+
     test("XliffAddResourceDontAddSourceLocaleAsTarget", function() {
         expect.assertions(2);
+
         var x = new Xliff({
             sourceLocale: "en-US"
         });
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -308,7 +394,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         // should not add this one
         res = new ResourceString({
             source: "baby baby",
@@ -319,13 +407,18 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         expect(x.size()).toBe(1);
     });
+
     test("XliffGetResourcesMultiple", function() {
         expect.assertions(11);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -334,7 +427,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "source"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -343,25 +438,34 @@ describe("xliff", function() {
             project: "webapp",
             origin: "origin"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             sourceLocale: "en-US"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
         expect(reslist[1].getPath()).toBe("foo/bar/j.java");
     });
+
     test("XliffSerializeWithContext", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -372,7 +476,9 @@ describe("xliff", function() {
             project: "androidapp",
             context: "foobar"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -385,13 +491,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceOnly", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -400,7 +510,9 @@ describe("xliff", function() {
             project: "androidapp",
             targetLocale: "de-DE"
         });
+
         x.addResource(res);
+
         res = new ContextResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -409,7 +521,9 @@ describe("xliff", function() {
             project: "webapp",
             targetLocale: "fr-FR"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -429,13 +543,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithFlavors", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -447,7 +565,9 @@ describe("xliff", function() {
             origin: "source",
             flavor: "chocolate"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -460,13 +580,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceOnlyAndPlurals", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -475,7 +599,9 @@ describe("xliff", function() {
             project: "androidapp",
             targetLocale: "de-DE"
         });
+
         x.addResource(res);
+
         res = new ResourcePlural({
             sourceStrings: {
                 "zero": "0",
@@ -488,7 +614,9 @@ describe("xliff", function() {
             project: "webapp",
             targetLocale: "fr-FR"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -517,13 +645,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceOnlyAndArray", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -532,7 +664,9 @@ describe("xliff", function() {
             project: "androidapp",
             targetLocale: "de-DE"
         });
+
         x.addResource(res);
+
         res = new ResourceArray({
             sourceArray: ["one", "two", "three"],
             sourceLocale: "en-US",
@@ -541,7 +675,9 @@ describe("xliff", function() {
             project: "webapp",
             targetLocale: "fr-FR"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -567,13 +703,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceOnlyAndArrayWithMissingElement", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -582,7 +722,9 @@ describe("xliff", function() {
             project: "androidapp",
             targetLocale: "de-DE"
         });
+
         x.addResource(res);
+
         res = new ResourceArray({
             sourceArray: ["one", "two", undefined, "three"],
             sourceLocale: "en-US",
@@ -591,7 +733,9 @@ describe("xliff", function() {
             project: "webapp",
             targetLocale: "fr-FR"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -617,13 +761,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceOnlyAndArrayWithEmptyElement", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ContextResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -632,7 +780,9 @@ describe("xliff", function() {
             project: "androidapp",
             targetLocale: "de-DE"
         });
+
         x.addResource(res);
+
         res = new ResourceArray({
             sourceArray: ["one", "two", "", "three"],
             sourceLocale: "en-US",
@@ -641,7 +791,9 @@ describe("xliff", function() {
             project: "webapp",
             targetLocale: "fr-FR"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -667,13 +819,17 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithExplicitIds", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -685,7 +841,9 @@ describe("xliff", function() {
             origin: "target",
             id: 4444444
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "abcdef",
             sourceLocale: "en-US",
@@ -696,7 +854,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -717,10 +877,13 @@ describe("xliff", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithSourceAndTarget", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -731,7 +894,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -742,7 +907,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         diff(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -763,6 +930,7 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         expect(x.serialize()).toBe('<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="webapp">\n' +
@@ -783,10 +951,13 @@ describe("xliff", function() {
                 '  </file>\n' +
                 '</xliff>');
     });
+
     test("XliffSerializeWithSourceAndTargetAndComment", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -797,7 +968,9 @@ describe("xliff", function() {
             project: "webapp",
             comment: "foobar is where it's at!"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby baby",
             sourceLocale: "en-US",
@@ -808,7 +981,9 @@ describe("xliff", function() {
             project: "webapp",
             comment: "come & enjoy it with us"
         });
+
         x.addResource(res);
+
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -831,12 +1006,16 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         var actual = x.serialize();
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithHeader", function() {
         expect.assertions(2);
+
         var x = new Xliff({
             "tool-id": "loctool",
             "tool-name": "Localization Tool",
@@ -846,6 +1025,7 @@ describe("xliff", function() {
             path: "a/b/c.xliff"
         });
         expect(x).toBeTruthy();
+
         res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -856,7 +1036,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -873,13 +1055,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithPlurals", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         res = new ResourcePlural({
             sourceStrings: {
                 "one": "There is 1 object.",
@@ -900,7 +1086,9 @@ describe("xliff", function() {
             state: "new",
             datatype: "ruby"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -923,10 +1111,13 @@ describe("xliff", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithPluralsToLangWithMorePluralsThanEnglish", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         res = new ResourcePlural({
             sourceStrings: {
                 "one": "There is 1 object.",
@@ -948,7 +1139,9 @@ describe("xliff", function() {
             state: "new",
             datatype: "ruby"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -976,10 +1169,13 @@ describe("xliff", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithArrays", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         res = new ResourceArray({
             sourceArray: ["Zero", "One", "Two"],
             sourceLocale: "en-US",
@@ -990,7 +1186,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -1015,10 +1213,13 @@ describe("xliff", function() {
         diff(actual, expected)
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithXMLEscaping", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf <b>asdf</b>",
             sourceLocale: "en-US",
@@ -1029,7 +1230,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby &lt;b&gt;baby&lt;/b&gt;",
             sourceLocale: "en-US",
@@ -1040,7 +1243,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -1062,13 +1267,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithXMLEscapingInResname", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf <b>asdf</b>",
             sourceLocale: "en-US",
@@ -1079,7 +1288,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "baby &lt;b&gt;baby&lt;/b&gt;",
             sourceLocale: "en-US",
@@ -1090,7 +1301,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -1112,13 +1325,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithXMLEscapingWithQuotes", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Here are \"double\" and 'single' quotes.",
             sourceLocale: "en-US",
@@ -1129,7 +1346,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         expect(x.serialize()).toBe('<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="androidapp">\n' +
@@ -1142,10 +1361,13 @@ describe("xliff", function() {
                 '  </file>\n' +
                 '</xliff>');
     });
+
     test("XliffSerializeWithEscapeCharsInResname", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -1156,7 +1378,9 @@ describe("xliff", function() {
             project: "androidapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         res = new ResourceString({
             source: "asdf \\t\\n\\n asdf\\n",
             sourceLocale: "en-US",
@@ -1167,7 +1391,9 @@ describe("xliff", function() {
             project: "webapp",
             origin: "target"
         });
+
         x.addResource(res);
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -1189,13 +1415,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithComments", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -1207,7 +1437,9 @@ describe("xliff", function() {
             comment: "A very nice string",
             origin: "target"
         });
+
         x.addResource(res);
+
         expect(x.serialize()).toBe('<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="androidapp">\n' +
@@ -1221,10 +1453,13 @@ describe("xliff", function() {
                 '  </file>\n' +
                 '</xliff>');
     });
+
     test("XliffDeserializeWithSourceOnly", function() {
         expect.assertions(21);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1243,9 +1478,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(!reslist[0].getTarget()).toBeTruthy();
@@ -1255,6 +1494,7 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(!reslist[1].getTarget()).toBeTruthy();
@@ -1265,10 +1505,13 @@ describe("xliff", function() {
         expect(reslist[1].resType).toBe("string");
         expect(reslist[1].getId()).toBe("2");
     });
+
     test("XliffDeserializeWithSourceAndTarget", function() {
         expect.assertions(21);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1289,11 +1532,15 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         // console.log("x is " + JSON.stringify(x, undefined, 4));
         var reslist = x.getResources();
         // console.log("x is now " + JSON.stringify(x, undefined, 4));
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1303,6 +1550,7 @@ describe("xliff", function() {
         expect(reslist[0].getId()).toBe("1");
         expect(reslist[0].getTarget()).toBe("foobarfoo");
         expect(reslist[0].getTargetLocale()).toBe("de-DE");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1313,10 +1561,13 @@ describe("xliff", function() {
         expect(reslist[1].getTarget()).toBe("bebe bebe");
         expect(reslist[1].getTargetLocale()).toBe("fr-FR");
     });
+
     test("XliffDeserializeWithXMLUnescaping", function() {
         expect.assertions(19);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1335,9 +1586,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf <b>asdf</b>");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1346,6 +1601,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
         expect(!reslist[0].getTarget()).toBeTruthy();
+
         expect(reslist[1].getSource()).toBe("baby &lt;b&gt;baby&lt;/b&gt;");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1355,10 +1611,13 @@ describe("xliff", function() {
         expect(reslist[1].getId()).toBe("2");
         expect(!reslist[1].getTarget()).toBeTruthy();
     });
+
     test("XliffDeserializeWithXMLUnescapingInResname", function() {
         expect.assertions(19);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1377,9 +1636,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf <b>asdf</b>");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar <a>link</a>");
@@ -1388,6 +1651,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
         expect(!reslist[0].getTarget()).toBeTruthy();
+
         expect(reslist[1].getSource()).toBe("baby &lt;b&gt;baby&lt;/b&gt;");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("<b>huzzah</b>");
@@ -1397,10 +1661,13 @@ describe("xliff", function() {
         expect(reslist[1].getId()).toBe("2");
         expect(!reslist[1].getTarget()).toBeTruthy();
     });
+
     test("XliffDeserializeWithEscapedNewLines", function() {
         expect.assertions(17);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1419,9 +1686,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("a\\nb");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1429,6 +1700,7 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
+
         expect(reslist[1].getSource()).toBe("e\\nh");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1437,10 +1709,13 @@ describe("xliff", function() {
         expect(reslist[1].resType).toBe("string");
         expect(reslist[1].getId()).toBe("2");
     });
+
     test("XliffDeserializeWithEscapedNewLinesInResname", function() {
         expect.assertions(17);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1459,9 +1734,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("a\\nb");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar\\n\\nasdf");
@@ -1469,6 +1748,7 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
+
         expect(reslist[1].getSource()).toBe("e\\nh");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah\\t\\n");
@@ -1477,10 +1757,13 @@ describe("xliff", function() {
         expect(reslist[1].resType).toBe("string");
         expect(reslist[1].getId()).toBe("2");
     });
+
     test("XliffDeserializeWithPlurals", function() {
         expect.assertions(10);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1495,11 +1778,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         // console.log("x is " + JSON.stringify(x, undefined, 4));
+
         var reslist = x.getResources();
+
         // console.log("after get resources x is " + JSON.stringify(x, undefined, 4));
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourcePlurals()).toStrictEqual({
             one: "There is 1 object.",
             other: "There are {n} objects."
@@ -1511,10 +1800,13 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("plural");
         expect(reslist[0].getId()).toBe("1");
     });
+
     test("XliffDeserializeWithPluralsTranslated", function() {
         expect.assertions(13);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1531,11 +1823,17 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         // console.log("x is " + JSON.stringify(x, undefined, 4));
+
         var reslist = x.getResources();
+
         // console.log("after get resources x is " + JSON.stringify(x, undefined, 4));
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourcePlurals()).toStrictEqual({
             one: "There is 1 object.",
             other: "There are {n} objects."
@@ -1547,16 +1845,20 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("plural");
         expect(reslist[0].getId()).toBe("1");
         expect(reslist[0].getOrigin()).toBe("source");
+
         expect(reslist[0].getTargetPlurals()).toStrictEqual({
             one: "Hay 1 objeto.",
             other: "Hay {n} objetos."
         });
         expect(reslist[0].getTargetLocale()).toBe("es-US");
     });
+
     test("XliffDeserializeWithArrays", function() {
         expect.assertions(10);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1574,9 +1876,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1585,10 +1891,13 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("array");
         expect(!reslist[0].getTargetArray()).toBeTruthy();
     });
+
     test("XliffDeserializeWithArraysTranslated", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1609,9 +1918,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1622,10 +1935,13 @@ describe("xliff", function() {
         expect(reslist[0].getTargetArray(), ["Zero", "Eins").toStrictEqual("Zwei"]);
         expect(reslist[0].getTargetLocale()).toBe("de-DE");
     });
+
     test("XliffDeserializeWithArraysAndTranslations", function() {
         expect.assertions(20);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1650,9 +1966,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getTargetLocale()).toBe("es-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1660,23 +1980,30 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("array");
         expect(reslist[0].getOrigin()).toBe("source");
+
         var items = reslist[0].getSourceArray();
+
         expect(items.length).toBe(4);
         expect(items[0]).toBe("This is element 0");
         expect(items[1]).toBe("This is element 1");
         expect(items[2]).toBe("This is element 2");
         expect(items[3]).toBe("This is element 3");
+
         items = reslist[0].getTargetArray();
+
         expect(items.length).toBe(4);
         expect(items[0]).toBe("Este es 0");
         expect(items[1]).toBe("Este es 1");
         expect(items[2]).toBe("Este es 2");
         expect(items[3]).toBe("Este es 3");
     });
+
     test("XliffDeserializeWithArraysAndTranslationsPartial", function() {
         expect.assertions(20);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1689,9 +2016,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getTargetLocale()).toBe("es-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1699,23 +2030,30 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("array");
         expect(reslist[0].getOrigin()).toBe("source");
+
         var items = reslist[0].getSourceArray();
+
         expect(items.length).toBe(4);
         expect(items[0]).toBe(null);
         expect(items[1]).toBe(null);
         expect(items[2]).toBe(null);
         expect(items[3]).toBe("This is element 3");
+
         items = reslist[0].getTargetArray();
+
         expect(items.length).toBe(4);
         expect(items[0]).toBe(null);
         expect(items[1]).toBe(null);
         expect(items[2]).toBe(null);
         expect(items[3]).toBe("Este es 3");
     });
+
     test("XliffDeserializeWithComments", function() {
         expect.assertions(18);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1736,8 +2074,11 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1746,6 +2087,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getComment()).toBe("A very nice string");
         expect(reslist[0].getId()).toBe("1");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1755,10 +2097,13 @@ describe("xliff", function() {
         expect(reslist[1].getComment()).toBe("Totally awesome.");
         expect(reslist[1].getId()).toBe("2");
     });
+
     test("XliffDeserializeWithContext", function() {
         expect.assertions(19);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1777,9 +2122,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1788,6 +2137,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
         expect(reslist[0].getContext()).toBe("na na na");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1797,21 +2147,32 @@ describe("xliff", function() {
         expect(reslist[1].getId()).toBe("2");
         expect(reslist[1].getContext()).toBe("asdf");
     });
+
     test("XliffDeserializeRealFile", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         var fs = require("fs");
+
         var str = fs.readFileSync("testfiles/test.xliff", "utf-8");
+
         x.deserialize(str);
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(4);
     });
+
     test("XliffDeserializeEmptySource", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1832,9 +2193,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1842,13 +2207,17 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("2");
+
         expect(reslist[0].getTarget()).toBe("bebe bebe");
         expect(reslist[0].getTargetLocale()).toBe("fr-FR");
     });
+
     test("XliffDeserializeEmptyTarget", function() {
         expect.assertions(19);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1868,9 +2237,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -1879,6 +2252,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("1");
         expect(reslist[0].getOrigin()).toBe("source");
+
         expect(reslist[1].getSource()).toBe("baby baby");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getKey()).toBe("huzzah");
@@ -1888,10 +2262,13 @@ describe("xliff", function() {
         expect(reslist[1].getId()).toBe("2");
         expect(reslist[1].getOrigin()).toBe("source");
     });
+
     test("XliffDeserializeWithMrkTagInTarget", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1903,9 +2280,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1913,13 +2294,17 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("2");
+
         expect(reslist[0].getTarget()).toBe("bebe bebe");
         expect(reslist[0].getTargetLocale()).toBe("fr-FR");
     });
+
     test("XliffDeserializeWithEmptyMrkTagInTarget", function() {
         expect.assertions(11);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1931,9 +2316,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1943,10 +2332,13 @@ describe("xliff", function() {
         expect(reslist[0].getId()).toBe("2");
         expect(reslist[0].getOrigin()).toBe("source");
     });
+
     test("XliffDeserializeWithMultipleMrkTagsInTargetEuro", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1958,9 +2350,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1968,13 +2364,17 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("2");
+
         expect(reslist[0].getTarget()).toBe("This is segment 1. This is segment 2. This is segment 3.");
         expect(reslist[0].getTargetLocale()).toBe("fr-FR");
     });
+
     test("XliffDeserializeWithMultipleMrkTagsInTargetAsian", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -1986,9 +2386,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("baby baby");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("huzzah");
@@ -1996,13 +2400,17 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe("2");
+
         expect(reslist[0].getTarget()).toBe("This is segment 1.This is segment 2.This is segment 3.");
         expect(reslist[0].getTargetLocale()).toBe("zh-Hans-CN");
     });
+
     test("XliffDeserializePreserveSourceWhitespace", function() {
         expect.assertions(9);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -2015,9 +2423,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("      Add Another");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("      Add Another");
@@ -2025,10 +2437,13 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("iosapp");
         expect(reslist[0].resType).toBe("string");
     });
+
     test("XliffDeserializePreserveTargetWhitespace", function() {
         expect.assertions(9);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -2041,9 +2456,13 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getTarget()).toBe(" Añadir    Otro  ");
         expect(reslist[0].getTargetLocale()).toBe("es-US");
         expect(reslist[0].getKey()).toBe("      Add Another");
@@ -2051,8 +2470,11 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("iosapp");
         expect(reslist[0].resType).toBe("string");
     });
+
+
     test("XliffTranslationUnitConstructor", function() {
         expect.assertions(1);
+
         var tu = new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2060,10 +2482,13 @@ describe("xliff", function() {
             "file": "/a/b/asdf.js",
             "project": "iosapp"
         });
+
         expect(tu).toBeTruthy();
     });
+
     test("XliffTranslationUnitConstructorEverythingCopied", function() {
         expect.assertions(11);
+
         var tu = new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2076,7 +2501,9 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "flavor": "chocolate"
         });
+
         expect(tu).toBeTruthy();
+
         expect(tu.source).toBe("a");
         expect(tu.sourceLocale).toBe("en-US");
         expect(tu.key).toBe("foobar");
@@ -2088,8 +2515,10 @@ describe("xliff", function() {
         expect(tu.comment).toBe("this is a comment");
         expect(tu.flavor).toBe("chocolate");
     });
+
     test("XliffTranslationUnitConstructorMissingBasicProperties", function() {
         expect.assertions(1);
+
         expect(function() { // TODO add .toThrow() below
             var tu = new TranslationUnit({
                 "source": "a",
@@ -2103,10 +2532,13 @@ describe("xliff", function() {
             });
         });
     });
+
     test("XliffAddTranslationUnit", function() {
         expect.assertions(10);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2118,9 +2550,13 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("a");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
@@ -2129,10 +2565,13 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe(2334);
     });
+
     test("XliffAddTranslationUnitMergeResources", function() {
         expect.assertions(12);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2144,6 +2583,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2157,9 +2597,13 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getSource()).toBe("a");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getTarget()).toBe("b");
@@ -2170,10 +2614,13 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].getId()).toBe(2334);
     });
+
     test("XliffAddTranslationUnitAddMultipleUnits", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "bababa",
             "sourceLocale": "en-US",
@@ -2188,6 +2635,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2202,14 +2650,20 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         var units = x.getTranslationUnits();
+
         expect(units).toBeTruthy();
+
         expect(units.length).toBe(2);
     });
+
     test("XliffAddTranslationUnitReplacePreviousUnit", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2224,6 +2678,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "ab",
             "sourceLocale": "en-US",
@@ -2238,15 +2693,21 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a new comment"
         }));
+
         var units = x.getTranslationUnits();
+
         expect(units).toBeTruthy();
+
         // should have merged them into 1 unit because the signature was the same
         expect(units.length).toBe(1);
     });
+
     test("XliffAddTranslationUnitRightContents", function() {
         expect.assertions(15);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2261,6 +2722,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "ab",
             "sourceLocale": "en-US",
@@ -2275,9 +2737,13 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a new comment"
         }));
+
         var units = x.getTranslationUnits();
+
         expect(units).toBeTruthy();
+
         expect(units.length).toBe(1);
+
         expect(units[0].source).toBe("ab");
         expect(units[0].sourceLocale).toBe("en-US");
         expect(units[0].target).toBe("ba");
@@ -2291,10 +2757,13 @@ describe("xliff", function() {
         expect(units[0].context).toBe("asdfasdf");
         expect(units[0].comment).toBe("this is a new comment");
     });
+
     test("XliffAddTranslationUnitRightResourceTypesRegularString", function() {
         expect.assertions(4);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2310,16 +2779,24 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "datatype": "javascript"
         }));
+
         var resources = x.getResources();
+
         expect(resources).toBeTruthy();
+
         expect(resources.length).toBe(1);
+
         expect(resources[0] instanceof ResourceString).toBeTruthy();
     });
+
     test("XliffAddTranslationUnitRightResourceTypesContextString", function() {
         expect.assertions(5);
+
         ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2334,6 +2811,7 @@ describe("xliff", function() {
             "datatype": "x-android-resource",
             "flavor": "chocolate"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2349,16 +2827,23 @@ describe("xliff", function() {
             "datatype": "x-android-resource",
             "flavor": "chocolate"
         }));
+
         var resources = x.getResources();
+
         expect(resources).toBeTruthy();
+
         expect(resources.length).toBe(2);
+
         expect(resources[0] instanceof ContextResourceString).toBeTruthy();
         expect(resources[1] instanceof ContextResourceString).toBeTruthy();
     });
+
     test("XliffAddTranslationUnitReplaceSourceOnlyUnit", function() {
         expect.assertions(3);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2371,6 +2856,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2385,16 +2871,23 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         var units = x.getTranslationUnits();
+
         expect(units).toBeTruthy();
+
         // should have merged them into 1 unit because the signature was the same
         expect(units.length).toBe(1);
     });
+
     test("XliffAddTranslationUnitDifferentPathsRightTypes", function() {
         expect.assertions(5);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         ResourceFactory.registerDataType("x-xib", "string", IosLayoutResourceString);
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2409,6 +2902,7 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "datatype": "x-xib"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2423,17 +2917,25 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "datatype": "x-xib"
         }));
+
         var resources = x.getResources();
+
         expect(resources).toBeTruthy();
+
         expect(resources.length).toBe(2);
+
         expect(resources[0] instanceof IosLayoutResourceString).toBeTruthy();
         expect(resources[1] instanceof IosLayoutResourceString).toBeTruthy();
     });
+
     test("XliffAddTranslationUnitDifferentPaths", function() {
         expect.assertions(23);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         ResourceFactory.registerDataType("x-xib", "string", IosLayoutResourceString);
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2447,6 +2949,7 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "datatype": "x-xib"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2460,9 +2963,13 @@ describe("xliff", function() {
             "comment": "this is a comment",
             "datatype": "x-xib"
         }));
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(2);
+
         expect(reslist[0].getSource()).toBe("a");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getTarget()).toBe("foo");
@@ -2473,6 +2980,7 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].datatype).toBe("x-xib");
         expect(reslist[0].getId()).toBe(2334);
+
         expect(reslist[1].getSource()).toBe("a");
         expect(reslist[1].getSourceLocale()).toBe("en-US");
         expect(reslist[1].getTarget()).toBe("foo");
@@ -2484,10 +2992,13 @@ describe("xliff", function() {
         expect(reslist[1].datatype).toBe("x-xib");
         expect(reslist[1].getId()).toBe(2334);
     });
+
     test("XliffSerializeWithTranslationUnits", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "bababa",
             "sourceLocale": "en-US",
@@ -2502,6 +3013,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2516,6 +3028,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         diff(x.serialize(),
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -2534,6 +3047,7 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>');
+
         expect(x.serialize()).toBe('<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="iosapp">\n' +
@@ -2552,10 +3066,13 @@ describe("xliff", function() {
                 '  </file>\n' +
                 '</xliff>');
     });
+
     test("XliffSerializeWithTranslationUnitsDifferentLocales", function() {
         expect.assertions(2);
+
         var x = new Xliff();
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "bababa",
             "sourceLocale": "en-US",
@@ -2570,6 +3087,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "a",
             "sourceLocale": "en-US",
@@ -2584,6 +3102,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         var actual = x.serialize();
         var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -2607,15 +3126,19 @@ describe("xliff", function() {
                 '    </body>\n' +
                 '  </file>\n' +
                 '</xliff>';
+
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("XliffAddResourcesWithInstances", function() {
         expect.assertions(9);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2623,6 +3146,7 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         var res2 = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2632,11 +3156,15 @@ describe("xliff", function() {
             comment: "special translators note"
         });
         res.addInstance(res2);
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
@@ -2645,12 +3173,15 @@ describe("xliff", function() {
         expect(reslist[0].getProject()).toBe("webapp");
         expect(!reslist[0].getComment()).toBeTruthy();
     });
+
     test("XliffAddMultipleResourcesAddInstances", function() {
         expect.assertions(17);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2658,7 +3189,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         // this one has the same source, locale, key, and file
         // so it should create an instance of the first one
         res = new ResourceString({
@@ -2669,11 +3202,15 @@ describe("xliff", function() {
             comment: "blah blah blah",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var reslist = x.getResources({
             reskey: "foobar"
         });
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
         expect(reslist[0].getSource()).toBe("Asdf asdf");
         expect(reslist[0].getSourceLocale()).toBe("en-US");
@@ -2681,9 +3218,11 @@ describe("xliff", function() {
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
         expect(reslist[0].getProject()).toBe("webapp");
         expect(!reslist[0].getComment()).toBeTruthy();
+
         var instances = reslist[0].getInstances();
         expect(instances).toBeTruthy();
         expect(instances.length).toBe(1);
+
         expect(instances[0].getSource()).toBe("Asdf asdf");
         expect(instances[0].getSourceLocale()).toBe("en-US");
         expect(instances[0].getKey()).toBe("foobar");
@@ -2691,12 +3230,15 @@ describe("xliff", function() {
         expect(instances[0].getProject()).toBe("webapp");
         expect(instances[0].getComment()).toBe("blah blah blah");
     });
+
     test("XliffSerializeWithResourcesWithInstances", function() {
         expect.assertions(2);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         var res = new ResourceString({
             source: "Asdf asdf",
             sourceLocale: "en-US",
@@ -2704,7 +3246,9 @@ describe("xliff", function() {
             pathName: "foo/bar/asdf.java",
             project: "webapp"
         });
+
         x.addResource(res);
+
         // this one has the same source, locale, key, and file
         // so it should create an instance of the first one
         res = new ResourceString({
@@ -2715,7 +3259,9 @@ describe("xliff", function() {
             comment: "blah blah blah",
             project: "webapp"
         });
+
         x.addResource(res);
+
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -2731,16 +3277,21 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         var actual = x.serialize();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("XliffSerializeWithTranslationUnitsWithInstances", function() {
         expect.assertions(2);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "bababa",
             "sourceLocale": "en-US",
@@ -2755,6 +3306,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a comment"
         }));
+
         x.addTranslationUnit(new TranslationUnit({
             "source": "bababa",
             "sourceLocale": "en-US",
@@ -2769,6 +3321,7 @@ describe("xliff", function() {
             "context": "asdfasdf",
             "comment": "this is a different comment"
         }));
+
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -2787,16 +3340,21 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>';
+
         var actual = x.serialize();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("XliffDeserializeCreateInstances", function() {
         expect.assertions(21);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         x.deserialize(
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -2815,9 +3373,13 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getTarget()).toBe("ababab");
         expect(reslist[0].getTargetLocale()).toBe("fr-FR");
         expect(reslist[0].getKey()).toBe("asdf");
@@ -2826,9 +3388,11 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].context).toBe("asdfasdf");
         expect(reslist[0].comment).toBe("this is a comment");
+
         var instances = reslist[0].getInstances();
         expect(instances).toBeTruthy();
         expect(instances.length).toBe(1);
+
         expect(instances[0].getTarget()).toBe("ababab");
         expect(instances[0].getTargetLocale()).toBe("fr-FR");
         expect(instances[0].getKey()).toBe("asdf");
@@ -2838,12 +3402,15 @@ describe("xliff", function() {
         expect(instances[0].context).toBe("asdfasdf");
         expect(instances[0].comment).toBe("this is a different comment");
     });
+
     test("XliffDeserializeStillAcceptsAnnotatesAttr", function() {
         expect.assertions(21);
+
         var x = new Xliff({
             allowDups: true
         });
         expect(x).toBeTruthy();
+
         x.deserialize(
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<xliff version="1.2">\n' +
@@ -2862,9 +3429,13 @@ describe("xliff", function() {
             '    </body>\n' +
             '  </file>\n' +
             '</xliff>');
+
         var reslist = x.getResources();
+
         expect(reslist).toBeTruthy();
+
         expect(reslist.length).toBe(1);
+
         expect(reslist[0].getTarget()).toBe("ababab");
         expect(reslist[0].getTargetLocale()).toBe("fr-FR");
         expect(reslist[0].getKey()).toBe("asdf");
@@ -2873,9 +3444,11 @@ describe("xliff", function() {
         expect(reslist[0].resType).toBe("string");
         expect(reslist[0].context).toBe("asdfasdf");
         expect(reslist[0].comment).toBe("this is a comment");
+
         var instances = reslist[0].getInstances();
         expect(instances).toBeTruthy();
         expect(instances.length).toBe(1);
+
         expect(instances[0].getTarget()).toBe("ababab");
         expect(instances[0].getTargetLocale()).toBe("fr-FR");
         expect(instances[0].getKey()).toBe("asdf");

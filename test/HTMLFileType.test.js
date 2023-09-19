@@ -16,120 +16,161 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!HTMLFileType) {
     var HTMLFileType = require("../lib/HTMLFileType.js");
     var WebProject =  require("../lib/WebProject.js");
 }
+
 describe("htmlfiletype", function() {
     test("HTMLFileTypeConstructor", function() {
         expect.assertions(1);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
+
         expect(htf).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesTrue", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesFalseClose", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("foo.tml")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesTrue", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesAlternateExtensionTrue", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.htm")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesTrueWithDir", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("a/b/c/foo.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesAlreadyLocalizedGB", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("a/b/c/foo.en-GB.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesAlreadyLocalizedCN", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("a/b/c/foo.zh-Hans-CN.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandlesAlreadyLocalizedWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("a/b/c/foo.en-ZA-ASDF.html")).toBeTruthy();
     });
+
     test("HTMLFileTypeHandleszhHKAlreadyLocalizedWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
+
         var htf = new HTMLFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("a/b/c/foo.zh-Hant-HK-ASDF.html")).toBeTruthy();
     });
 });

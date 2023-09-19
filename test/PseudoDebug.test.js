@@ -16,12 +16,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!PseudoFactory) {
     var PseudoFactory = require("../lib/PseudoFactory.js");
     var WebProject = require("../lib/WebProject.js");
     var TranslationSet = require("../lib/TranslationSet.js");
     var ResourceString = require("../lib/ResourceString.js");
 }
+
 var project = new WebProject({
     sourceLocale: "en-US",
     pseudoLocale: {
@@ -33,9 +35,11 @@ var project = new WebProject({
 }, "./testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
+
 describe("pseudodebug", function() {
     test("PseudoDebugSimpleWord", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -43,8 +47,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("I am a Blues Traveler")).toBe("[Ï àm à ßľüëš Ťŕàvëľëŕ6543210]");
     });
+
     test("PseudoDebugAllCapitals", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -52,8 +58,11 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("GLOBALIZATION")).toBe("[ĜĽØßÃĽÏŻÃŤÏØŇ6543210]");
     });
+
+
     test("PseudoDebugSkipReplacementsJava", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -61,8 +70,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored {estrogen} supplements.")).toBe("[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]");
     });
+
     test("PseudoDebugSkipReplacementsJavascript", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -70,8 +81,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored {estrogen} supplements.")).toBe("[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]");
     });
+
     test("PseudoDebugSkipReplacementsHTML", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -79,8 +92,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored <span name=\"estrogen\">supplements</a>.")).toBe('[Šķíþ ţĥë üñfľàvõŕëð <span name="estrogen">šüþþľëmëñţš</a>.109876543210]');
     });
+
     test("PseudoDebugSkipReplacementsXML", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -88,8 +103,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>.")).toBe('[Šķíþ ţĥë üñfľàvõŕëð <source id="estrogen">šüþþľëmëñţš</source>.2109876543210]');
     });
+
     test("PseudoDebugSkipReplacementsMarkdown", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -97,8 +114,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored <c0>supplements</c0>.")).toBe('[Šķíþ ţĥë üñfľàvõŕëð <c0>šüþþľëmëñţš</c0>.76543210]');
     });
+
     test("PseudoDebugSkipReplacementsTemplate", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -108,8 +127,10 @@ describe("pseudodebug", function() {
             pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."),
             '[Šķíþ ţĥë üñfľàvõŕëð <%= (i > 4) ? RB.getString("estrogen") : RB.getString(\"%\") %> šüþþľëmëñţš.8765432109876543210]');
     });
+
     test("PseudoDebugSkipReplacementsRuby", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -117,8 +138,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored %{estrogen} #{estrogen} supplements.")).toBe('[Šķíþ ţĥë üñfľàvõŕëð %{estrogen} #{estrogen} šüþþľëmëñţš.09876543210]');
     });
+
     test("PseudoDebugSkipReplacementsPlaintext", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",
@@ -126,8 +149,10 @@ describe("pseudodebug", function() {
         });
         expect(pb.getString("Skip the unflavored {estrogen} supplements.")).toBe('[Šķíþ ţĥë üñfľàvõŕëð {estrogen} šüþþľëmëñţš.876543210]');
     });
+
     test("PseudoDebugSkipReplacementsYaml", function() {
         expect.assertions(1);
+
         var pb = PseudoFactory({
             project: project,
             targetLocale: "es-US",

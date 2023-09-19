@@ -16,62 +16,87 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!SwiftFileType) {
     var SwiftFileType = require("../lib/SwiftFileType.js");
     var SwiftProject =  require("../lib/SwiftProject.js");
 }
+
 describe("swiftfiletype", function() {
     test("SwiftFileTypeConstructor", function() {
         expect.assertions(1);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
+
         expect(stf).toBeTruthy();
     });
+
     test("SwiftFileTypeHandlesTrue", function() {
         expect.assertions(2);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
+
         expect(stf.handles("foo.swift")).toBeTruthy();
     });
+
     test("SwiftFileTypeHandlesHeaderFileTrue", function() {
         expect.assertions(2);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
+
         expect(stf.handles("foo.h")).toBeTruthy();
     });
+
     test("SwiftFileTypeHandlesFalseClose", function() {
         expect.assertions(2);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
+
         expect(!stf.handles("fooswift")).toBeTruthy();
     });
+
     test("SwiftFileTypeHandlesFalse", function() {
         expect.assertions(2);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
+
         expect(!stf.handles("foo.html")).toBeTruthy();
     });
+
     test("SwiftFileTypeHandlesTrueWithDir", function() {
         expect.assertions(2);
+
         var p = new SwiftProject({
             sourceLocale: "en-US"
         }, "./testfiles");
+
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
+
         expect(stf.handles("a/b/c/foo.swift")).toBeTruthy();
     });
 });

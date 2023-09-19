@@ -3,15 +3,18 @@
  *
  * Copyright © 2017, 2023 2020, 2023 Healthtap, Inc. All Rights Reserved.
  */
+
 if (!ProjectFactory) {
     var ProjectFactory= require("../lib/ProjectFactory.js");
 }
+
 describe("projectfactory", function() {
     test("ProjectFactoryCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
         test.equals(project, undefined);
     });
+
     test("ProjectFactoryCreationFromJsonNoSettings", function() {
         expect.assertions(5);
         var project = ProjectFactory('./testfiles', {});
@@ -21,6 +24,7 @@ describe("projectfactory", function() {
         test.equals(project.sourceLocale,'en-US');
         test.equals(project.pseudoLocale,'de-DE');
     });
+
     test("ProjectFactoryCreationFromJsonWithSettingsMerged", function() {
         expect.assertions(4);
         var project = ProjectFactory('./testfiles', {'abc': 'def'});
@@ -30,6 +34,7 @@ describe("projectfactory", function() {
         test.equal(set['abc'],'def');
         expect(set.locales).not.toBe(undefined);
     });
+
     test("ProjectFactoryCreationFromJsonWithSettingsOverwrite", function() {
         expect.assertions(4);
         var project = ProjectFactory('./testfiles', {'locales': ['def']});
@@ -40,12 +45,14 @@ describe("projectfactory", function() {
         var loc = set.locales;
         expect(loc.length).not.toBe(1);
     });
+
     test("ProjectFactoryCorrectRoot", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def']});
         expect(project).toBeTruthy();
         expect(project.root).toBe('./testfiles');
     });
+
     test("ProjectFactoryCorrectDefaultTarget", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def']});
@@ -53,6 +60,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.target).toBe('testfiles');
     });
+
     test("ProjectFactoryCorrectDefaultXliffsDir", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def']});
@@ -60,6 +68,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsDir).toBe('testfiles');
     });
+
     test("ProjectFactoryCorrectDefaultXliffsOut", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def']});
@@ -67,6 +76,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsOut).toBe('testfiles');
     });
+
     test("ProjectFactoryCorrectExplicitTarget", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def'], 'targetDir': 'foobar'});
@@ -74,6 +84,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.target).toBe('testfiles/foobar');
     });
+
     test("ProjectFactoryCorrectExplicitXliffsDir", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsDir': 'asdf'});
@@ -81,6 +92,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsDir).toBe('testfiles/asdf');
     });
+
     test("ProjectFactoryCorrectExplicitXliffsOut", function() {
         expect.assertions(2);
         var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsOut': 'blah'});
@@ -88,6 +100,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsOut).toBe('testfiles/blah');
     });
+
     test("ProjectFactoryAbsolutePathTargetDir", function() {
         expect.assertions(2);
         var targetAbsolutePath = '/foo/asdf';
@@ -96,6 +109,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.target).toBe('/foo/asdf');
     });
+
     test("ProjectFactoryAbsolutePathXliffsDir", function() {
         expect.assertions(2);
         var xliffAbsolutePath = '/foo/asdf';
@@ -104,6 +118,7 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsDir).toBe('/foo/asdf');
     });
+
     test("ProjectFactoryAbsolutePathxliffsOut", function() {
         expect.assertions(2);
         var xliffAbsolutePath = '/foo/asdf';
@@ -112,4 +127,5 @@ describe("projectfactory", function() {
         // should be relative to the root of the project
         expect(project.xliffsOut).toBe('/foo/asdf');
     });
+
 });

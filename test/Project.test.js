@@ -16,18 +16,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 var fs = require('fs');
+
 if (!Project) {
     var ProjectFactory = require("../lib/ProjectFactory.js");
     var Project = require("../lib/Project.js");
 }
+
 function rmrf(path) {
     if (fs.existsSync(path)) {
         fs.unlinkSync(path);
     });
 }
+
 function diff(a, b) {
     var min = Math.min(a.length, b.length);
+
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
             console.log("Found difference at character " + i);
@@ -37,17 +42,21 @@ function diff(a, b) {
         }
     });
 }
+
 describe("project", function() {
     test("ProjectCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
         test.equals(project, undefined);
     });
+
     test("ProjectGeneratesExtractedXliff", function() {
         expect.assertions(2);
         // set up first
         rmrf("./testfiles/loctest-extracted.xliff");
+
         expect(!fs.existsSync("./testfiles/loctest-extracted.xliff")).toBeTruthy();
+
         var project = ProjectFactory('./testfiles', {'locales': ['ja-JP']});
         project.addPath("md/test1.md");
         project.init(function() {
@@ -63,15 +72,18 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesNewStringsXliffs", function() {
         expect.assertions(6);
         // set up first
         rmrf("./testfiles/loctest-new-es-US.xliff");
         rmrf("./testfiles/loctest-new-ja-JP.xliff");
         rmrf("./testfiles/loctest-new-zh-Hans-CN.xliff");
+
         expect(!fs.existsSync("./testfiles/loctest-new-es-US.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/loctest-new-ja-JP.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/loctest-new-zh-Hans-CN.xliff")).toBeTruthy();
+
         var project = ProjectFactory('./testfiles', {'locales': ['ja-JP']});
         project.addPath("md/test1.md");
         project.init(function() {
@@ -89,6 +101,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectLocalizeOnlyGeneratesNoXliffs", function() {
         expect.assertions(8);
         // set up first
@@ -96,10 +109,12 @@ describe("project", function() {
         rmrf("./testfiles/loctest-new-es-US.xliff");
         rmrf("./testfiles/loctest-new-ja-JP.xliff");
         rmrf("./testfiles/loctest-new-zh-Hans-CN.xliff");
+
         expect(!fs.existsSync("./testfiles/loctest-extracted.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/loctest-new-es-US.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/loctest-new-ja-JP.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/loctest-new-zh-Hans-CN.xliff")).toBeTruthy();
+
         var project = ProjectFactory('./testfiles', {'localizeOnly': true, 'locales': ['ja-JP']});
         project.addPath("md/test1.md");
         project.init(function() {
@@ -118,15 +133,18 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs", function() {
         expect.assertions(9);
         // set up first
         rmrf("./testfiles/project2/loctest-new-es-US.xliff");
         rmrf("./testfiles/project2/loctest-new-ja-JP.xliff");
         rmrf("./testfiles/project2/loctest-new-ru-RU.xliff");
+
         expect(!fs.existsSync("./testfiles/project2/loctest-new-es-US.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/project2/loctest-new-ja-JP.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/project2/loctest-new-ru-RU.xliff")).toBeTruthy();
+
         // adds Japanese and Russian to the list of locales to generate
         var project = ProjectFactory('./testfiles/project2', {});
         project.addPath("res/values/strings.xml");
@@ -176,6 +194,7 @@ describe("project", function() {
                                 '</xliff>';
                             diff(actual, expected);
                             expect(actual).toBe(expected);
+
                             filename = "./testfiles/project2/loctest-new-ja-JP.xliff";
                             expect(fs.existsSync(filename)).toBeTruthy();
                             actual = fs.readFileSync(filename, "utf8");
@@ -206,6 +225,7 @@ describe("project", function() {
                                 '</xliff>';
                             diff(actual, expected);
                             expect(actual).toBe(expected);
+
                             filename = "./testfiles/project2/loctest-new-ru-RU.xliff";
                             expect(fs.existsSync(filename)).toBeTruthy();
                             actual = fs.readFileSync(filename, "utf8");
@@ -256,15 +276,18 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs20", function() {
         expect.assertions(9);
         // set up first
         rmrf("./testfiles/project2/loctest-new-es-US.xliff");
         rmrf("./testfiles/project2/loctest-new-ja-JP.xliff");
         rmrf("./testfiles/project2/loctest-new-ru-RU.xliff");
+
         expect(!fs.existsSync("./testfiles/project2/loctest-new-es-US.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/project2/loctest-new-ja-JP.xliff")).toBeTruthy();
         expect(!fs.existsSync("./testfiles/project2/loctest-new-ru-RU.xliff")).toBeTruthy();
+
         // adds Japanese and Russian to the list of locales to generate
         var project = ProjectFactory('./testfiles/project2', {
             xliffVersion: 2
@@ -334,6 +357,7 @@ describe("project", function() {
                                 '</xliff>';
                             diff(actual, expected);
                             expect(actual).toBe(expected);
+
                             filename = "./testfiles/project2/loctest-new-ja-JP.xliff";
                             expect(fs.existsSync(filename)).toBeTruthy();
                             actual = fs.readFileSync(filename, "utf8");
@@ -374,6 +398,7 @@ describe("project", function() {
                                 '</xliff>';
                             diff(actual, expected);
                             expect(actual).toBe(expected);
+
                             filename = "./testfiles/project2/loctest-new-ru-RU.xliff";
                             expect(fs.existsSync(filename)).toBeTruthy();
                             actual = fs.readFileSync(filename, "utf8");
@@ -447,33 +472,41 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectIsResourcePathYes", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(project.isResourcePath("js", "testfiles/public/localized_js/file.js")).toBeTruthy();
     });
     test("ProjectIsResourcePathNo", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(!project.isResourcePath("js", "testfiles/public/file.js")).toBeTruthy();
     });
     test("ProjectIsResourcePathNoTargetPath", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(!project.isResourcePath("js", "public/localized_js/file.js")).toBeTruthy();
     });
     test("ProjectIsResourcePathSubpath", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(project.isResourcePath("js", "testfiles/public/localized_js/zh/Hant/TW/file.js")).toBeTruthy();
     });
     test("ProjectIsResourcePathAnyFileName", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(project.isResourcePath("js", "testfiles/public/localized_js/resources.json")).toBeTruthy();
     });
+
     test("GetOutputLocaleMapped", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {
             localeMap: {
                 "da-DK": "da",
@@ -484,6 +517,7 @@ describe("project", function() {
     });
     test("GetOutputLocaleNotMapped", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {
             localeMap: {
                 "da-DK": "da",
@@ -494,11 +528,13 @@ describe("project", function() {
     });
     test("GetOutputLocaleNoMap", function() {
         expect.assertions(1);
+
         var project = ProjectFactory('./testfiles', {});
         expect(project.getOutputLocale("da-DK"), "da-DK").toBeTruthy();
     });
     test("GetOutputLocaleBogusMap", function() {
         expect.assertions(3);
+
         var project = ProjectFactory('./testfiles', {
             localeMap: {
                 "da-DK": undefined,
@@ -512,6 +548,7 @@ describe("project", function() {
     });
     test("GetOutputLocaleInherit", function() {
         expect.assertions(2);
+
         var project = ProjectFactory('./testfiles', {
             localeInherit: {
                 "en-AU": "en-GB",
@@ -523,6 +560,7 @@ describe("project", function() {
     });
     test("GetOutputLocaleInheritEmpty", function() {
         expect.assertions(2);
+
         var project = ProjectFactory('./testfiles', {
             localeInherit: {
                 "en-AU": "en-GB",
@@ -534,6 +572,7 @@ describe("project", function() {
     });
     test("GetOutputLocaleInheritEmpty2", function() {
         expect.assertions(2);
+
         var project = ProjectFactory('./testfiles', {});
         test.equals(project.getLocaleInherit("ko-KR"), undefined);
         test.equals(project.getLocaleInherit(), undefined);

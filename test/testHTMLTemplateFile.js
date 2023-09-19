@@ -573,8 +573,8 @@ module.exports.htmltemplatefile = {
         var r = set.get(ResourceString.hashKey(undefined, "en-US", "Uploaded", "html"));
         test.ok(r);
 
-        test.equal(r.getSource(), "Uploaded");
-        test.equal(r.getKey(), "Uploaded");
+        test.equal(r.getSource(), "Uploaded <%= dateString %>");
+        test.equal(r.getKey(), "Uploaded <%= dateString %>");
 
         test.done();
     },
@@ -3753,7 +3753,7 @@ module.exports.htmltemplatefile = {
         test.done();
     },
 
-    testHTMLTemplateFileLocalizeTextWithEmbeddedTemplateTag: function(test) {
+    testHTMLTemplateFileLocalizeTextWithEmbeddedTemplateEchoTag: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -4091,9 +4091,9 @@ module.exports.htmltemplatefile = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
             project: "foo",
-            key: 'Uploaded',
-            source: 'Uploaded',
-            target: 'Cargada',
+            key: 'Uploaded <%= dateString %>',
+            source: 'Uploaded <%= dateString %>',
+            target: 'Cargada <%= dateString %>',
             targetLocale: "es-US",
             datatype: "html"
         }));

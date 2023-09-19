@@ -16,48 +16,64 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!WebProject) {
     var WebProject = require("../lib/WebProject.js");
     var YamlResourceFileType = require("../lib/YamlResourceFileType.js");
     var JavaScriptResourceFileType = require("../lib/JavaScriptResourceFileType.js");
 }
+
 describe("webproject", function() {
     test("WebProjectConstructor", function() {
         expect.assertions(1);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
     });
+
     test("WebProjectRightResourceTypeRuby", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         var rt = p.getResourceFileType("ruby");
+
         expect(rt instanceof YamlResourceFileType).toBeTruthy();
     });
+
     test("WebProjectRightResourceTypeJS", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         var rt = p.getResourceFileType("js");
+
         expect(rt instanceof JavaScriptResourceFileType).toBeTruthy();
     });
+
     test("WebProjectGotFlavors", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
@@ -65,11 +81,15 @@ describe("webproject", function() {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.flavors).toBeTruthy();
     });
+
     test("WebProjectGotRightFlavors", function() {
         expect.assertions(3);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
@@ -77,12 +97,15 @@ describe("webproject", function() {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
+
         expect(p).toBeTruthy();
         expect(p.flavors).toBeTruthy();
         expect(p.flavors, ["VANILLA").toStrictEqual("CHOCOLATE"]);
     });
+
     test("WebProjectGetResourceDirsString", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -92,11 +115,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.getResourceDirs("yml")).toStrictEqual(["a/b/c"]);
     });
+
     test("WebProjectGetResourceDirsNotThere", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -106,22 +133,30 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.getResourceDirs("java")).toStrictEqual([]);
     });
+
     test("WebProjectGetResourceDirsNoneSpecified", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.getResourceDirs("java")).toStrictEqual([]);
     });
+
     test("WebProjectGetResourceDirsArray", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -131,11 +166,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.getResourceDirs("yml"), ["a/b/c").toStrictEqual("d/e/f"]);
     });
+
     test("WebProjectIsResourcePathPositive", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -145,11 +184,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.isResourcePath("yml", "testfiles/a/b/c/x.yml")).toBeTruthy();
     });
+
     test("WebProjectIsResourcePathNegative", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -159,11 +202,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(!p.isResourcePath("yml", "testfiles/a/c/x.yml")).toBeTruthy();
     });
+
     test("WebProjectIsResourcePathPositive2", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -173,11 +220,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.isResourcePath("yml", "testfiles/d/e/f/x.yml")).toBeTruthy();
     });
+
     test("WebProjectIsResourcePathSubdirectory", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -187,11 +238,15 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.isResourcePath("yml", "testfiles/d/e/f/m/n/o/x.yml")).toBeTruthy();
     });
+
     test("WebProjectIsResourcePathDirOnly", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US",
@@ -201,7 +256,9 @@ describe("webproject", function() {
         }, "./testfiles", {
             locales:["en-GB"]
         });
+
         expect(p).toBeTruthy();
+
         expect(p.isResourcePath("yml", "testfiles/d/e/f")).toBeTruthy();
     });
 });

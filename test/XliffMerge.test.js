@@ -17,49 +17,60 @@
  * limitations under the License.
  */
 var fs = require("fs");
+
 if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
 }
+
 if (!XliffMerge) {
     var XliffMerge = require("../lib/XliffMerge.js");
 }
+
 function rmrf(path) {
 if (fs.existsSync(path)) {
     fs.unlinkSync(path);
     });
 }
+
 describe("xliffmerge", function() {
     test("XliffMergenoParameter", function() {
         expect.assertions(1);
+
         var target = XliffMerge();
         expect(!target).toBeTruthy();
     });
     test("XliffMergeWritenoParameter", function() {
         expect.assertions(1);
+
         var target = XliffMerge.write();
         expect(!target).toBeTruthy();
     });
     test("XliffMerge_en_US", function() {
         expect.assertions(1);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "testfiles/xliff20/app1/en-US.xliff",
             "testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
     });
     test("XliffMerge2_en_US", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "testfiles/xliff20/app1/en-US.xliff",
             "testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -109,6 +120,7 @@ describe("xliffmerge", function() {
     });
     test("XliffMerge_write_en_US", function() {
         expect.assertions(3);
+
         rmrf("testfiles/xliff20/output-en-US.xliff");
         var settings = {};
         settings.xliffVersion = 2;
@@ -117,33 +129,40 @@ describe("xliffmerge", function() {
             "testfiles/xliff20/app2/en-US.xliff",
         ];
         settings.outfile = "testfiles/xliff20/output-en-US.xliff";
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
         var result = XliffMerge.write(target);
         expect(result).toBeTruthy();
         expect(fs.existsSync("./testfiles/xliff20/output-en-US.xliff")).toBeTruthy();
     });
+
     test("XliffMerge_ko_KR", function() {
         expect.assertions(1);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "testfiles/xliff20/app1/ko-KR.xliff",
             "testfiles/xliff20/app2/ko-KR.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
     });
     test("XliffMerge2_ko_KR", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "testfiles/xliff20/app1/ko-KR.xliff",
             "testfiles/xliff20/app2/ko-KR.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -181,10 +200,12 @@ describe("xliffmerge", function() {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
+
         expect(actual).toBe(expected);
     });
     test("XliffMerge_write_ko_KR", function() {
         expect.assertions(3);
+
         rmrf("testfiles/xliff20/output-ko-KR.xliff");
         var settings = {};
         settings.xliffVersion = 2;
@@ -193,6 +214,7 @@ describe("xliffmerge", function() {
             "testfiles/xliff20/app2/ko-KR.xliff",
         ];
         settings.outfile = "testfiles/xliff20/output-ko-KR.xliff";
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
         var result = XliffMerge.write(target);
@@ -201,6 +223,7 @@ describe("xliffmerge", function() {
     });
     test("XliffMerge_write_en_US_CustomStyle", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.xliffStyle = "custom";
@@ -208,8 +231,10 @@ describe("xliffmerge", function() {
             "testfiles/xliff20/app1/en-US.xliff",
             "testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -259,6 +284,7 @@ describe("xliffmerge", function() {
     });
     test("XliffMerge_write_en_US_CustomStyle_wrongStyle", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.xliffStyle = "custommm";
@@ -266,8 +292,10 @@ describe("xliffmerge", function() {
             "testfiles/xliff20/app1/en-US.xliff",
             "testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
