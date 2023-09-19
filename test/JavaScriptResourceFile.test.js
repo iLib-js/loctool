@@ -16,13 +16,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!JavaScriptResourceFile) {
     var JavaScriptResourceFile = require("../lib/JavaScriptResourceFile.js");
     var WebProject = require("../lib/WebProject.js");
     var ResourceString = require("../lib/ResourceString.js");
 }
+
 function diff(a, b) {
     var min = Math.min(a.length, b.length);
+
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
             console.log("Found difference at character " + i);
@@ -30,49 +33,60 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
+
 describe("scriptresourcefile", function() {
     test("JavaScriptResourceFileConstructor", function() {
         expect.assertions(1);
+
         var jsrf = new JavaScriptResourceFile();
         expect(jsrf).toBeTruthy();
     });
+
     test("JavaScriptResourceFileConstructorParams", function() {
         expect.assertions(1);
+
         var p = new WebProject({
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/en-US.js",
             locale: "en-US"
         });
+
         expect(jsrf).toBeTruthy();
     });
+
     test("JavaScriptResourceFileIsDirty", function() {
         expect.assertions(3);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
         expect(!jsrf.isDirty()).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -101,25 +115,31 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         expect(jsrf.isDirty()).toBeTruthy();
     });
+
     test("JavaScriptResourceFileRightContents", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -148,49 +168,56 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {\n' +
             '    "more source text": "mehr Quellentext",\n' +
             '    "source text": "Quellentext",\n' +
             '    "yet more source text": "noch mehr Quellentext"\n' +
-            '};\n'
-        );
+            '};\n');
     });
+
     test("JavaScriptResourceFileGetContentsNoContent", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
-        expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {};\n'
-        );
+        expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {};\n');
     });
+
     test("JavaScriptResourceFileEscapeDoubleQuotes", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
         [
             new ResourceString({
@@ -212,28 +239,33 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {\n' +
             '    "more source text": "mehr Quellen\\"text",\n' +
             '    "source text": "Quellen\\"text"\n' +
             '};\n'
         );
     });
+
     test("JavaScriptResourceFileDontEscapeSingleQuotes", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
         [
             new ResourceString({
@@ -255,30 +287,36 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {\n' +
             '    "more source text": "mehr Quellen\'text",\n' +
             '    "source text": "Quellen\'text"\n' +
             '};\n'
         );
     });
+
     test("JavaScriptResourceFileIdentifyResourceIds", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             pathName: "localized_js/de-DE.js",
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -307,25 +345,30 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         var expected =
             'ilib.data.strings_de_DE = {\n' +
             '    "more source text": "<span loclang=\\"javascript\\" locid=\\"more source text\\">mehr Quellentext</span>",\n' +
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguage", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -351,41 +394,51 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/de.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageNoDefaultAvailable", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/de-DE.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguage", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -411,22 +464,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-AT"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/de-AT.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -452,22 +510,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE-ASDF"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/de-DE-ASDF.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -493,22 +556,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-AT-ASDF"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/de-AT-ASDF.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZH", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -534,41 +602,51 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hans-CN"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/zh.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZHNoDefaultsAvailable", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hans-CN"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/zh-Hans-CN.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocaleForLanguageZH", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -594,22 +672,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hant-HK"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/zh-Hant.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageZH2", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -635,22 +718,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hans-SG"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/zh-Hans-SG.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathNonDefaultLocaleForLanguageZH3", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -676,22 +764,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hant-TW"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/zh-Hant-TW.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathDefaultLocale", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -717,22 +810,27 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         // should default to English/US
         var jsrf = new JavaScriptResourceFile({
             project: p
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/en.js");
     });
+
     test("JavaScriptResourceFileGetResourceFilePathAlreadyHasPath", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -758,23 +856,28 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-AT",
             pathName: "localized_js/foo.js"
         });
+
         expect(jsrf).toBeTruthy();
+
         expect(jsrf.getResourceFilePath()).toBe("localized_js/foo.js");
     });
+
     test("JavaScriptResourceFileGetContentDefaultLocale", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -800,11 +903,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -833,6 +939,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_de = {\n' +
@@ -840,27 +947,34 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentDefaultLocaleNoDefaultsAvailable", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -889,6 +1003,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the full locale spec in the first line
         var expected =
             'ilib.data.strings_de_DE = {\n' +
@@ -896,19 +1011,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentNonDefaultLocale", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -934,11 +1053,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-AT"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -967,6 +1089,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the full locale spec in the first line
         var expected =
             'ilib.data.strings_de_AT = {\n' +
@@ -974,19 +1097,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentDefaultLocaleZH", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1012,11 +1139,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hans-CN"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1045,6 +1175,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_zh = {\n' +
@@ -1052,19 +1183,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentDefaultLocaleZH2", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1090,11 +1225,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hant-HK"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1123,6 +1261,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_zh_Hant = {\n' +
@@ -1130,19 +1269,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentNonDefaultLocaleZH", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1168,11 +1311,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hans-SG"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1201,6 +1347,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_zh_Hans_SG = {\n' +
@@ -1208,19 +1355,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentNonDefaultLocaleZH2", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1246,11 +1397,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "zh-Hant-TW"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1279,6 +1433,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_zh_Hant_TW = {\n' +
@@ -1286,19 +1441,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentDefaultLocaleWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1324,11 +1483,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE-ASDF"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1357,6 +1519,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_de_DE_ASDF = {\n' +
@@ -1364,19 +1527,23 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
     test("JavaScriptResourceFileGetContentNonDefaultLocaleWithFlavor", function() {
         expect.assertions(2);
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US",
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1402,11 +1569,14 @@ describe("scriptresourcefile", function() {
             },
             identify: true
         });
+
         var jsrf = new JavaScriptResourceFile({
             project: p,
             locale: "de-DE-ASDF"
         });
+
         expect(jsrf).toBeTruthy();
+
         [
             new ResourceString({
                 project: "webapp",
@@ -1435,6 +1605,7 @@ describe("scriptresourcefile", function() {
         ].forEach(function(res) {
             jsrf.addResource(res);
         });
+
         // should use the default locale spec in the first line
         var expected =
             'ilib.data.strings_de_DE_ASDF = {\n' +
@@ -1442,8 +1613,11 @@ describe("scriptresourcefile", function() {
             '    "source text": "<span loclang=\\"javascript\\" locid=\\"source text\\">Quellentext</span>",\n' +
             '    "yet more source text": "<span loclang=\\"javascript\\" locid=\\"yet more source text\\">noch mehr Quellentext</span>"\n' +
             '};\n';
+
         var actual = jsrf.getContent();
         diff(actual, expected);
+
         expect(actual).toBe(expected);
     });
+
 });
