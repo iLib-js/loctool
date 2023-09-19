@@ -17,9 +17,6 @@
  * limitations under the License.
  */
 
-var nodeunit = require("nodeunit");
-require("./assertExtras.js");
-
 if (!CustomProject) {
     var CustomProject = require("../lib/CustomProject.js");
     var MockFileType = require("ilib-loctool-mock");

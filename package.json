@@ -98,7 +98,6 @@
         "cldr-core": "^43.1.0",
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
         "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
-        "jest": "^26.6.3",
-        "nodeunit": "^0.11.3"
+        "jest": "^26.6.3"
     }
 }
