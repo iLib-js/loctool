@@ -203,7 +203,7 @@ describe("translationset", function() {
         r = ts.get(ResourceArray.hashKey(undefined, undefined, res1.getSourceLocale(), "asdf"));
         expect(r.getKey()).toBe("asdf");
         expect(r.resType).toBe("array");
-        expect(r.getSourceArray(), ["This is a test").toStrictEqual("this too"]);
+        expect(r.getSourceArray()).toStrictEqual(["This is a test", "this too"]);
     });
     test("TranslationSetGetUndefined", function() {
         expect.assertions(1);
@@ -1649,12 +1649,12 @@ describe("translationset", function() {
             })
         ]);
         expect(ts.size()).toBe(10);
-        test.ok(ts.remove(new ResourceString({
+        expect(ts.remove(new ResourceString({
             project: "asdf",
             context: "bar",
             targetLocale: "ja-JP",
             key: "foobarfoo"
-        })));
+        }))).toBeTruthy();
         expect(ts.size()).toBe(9);
     });
     test("TranslationSetRemoveReallyGone", function() {
@@ -1747,12 +1747,12 @@ describe("translationset", function() {
         expect(res[0].getTargetLocale()).toBe("ja-JP");
         expect(res[0].getKey()).toBe("foobarfoo");
         expect(res[0].getSource()).toBe("test test blah");
-        test.ok(ts.remove(new ContextResourceString({
+        expect(ts.remove(new ContextResourceString({
             project: "asdf",
             context: "bar",
             targetLocale: "ja-JP",
             key: "foobarfoo"
-        })));
+        }))).toBeTruthy();
         res = ts.getBy({
             project: "asdf",
             context: "bar",
@@ -2387,7 +2387,7 @@ describe("translationset", function() {
         ts.add(orig);
         ts.add(squished);
         var allRes = ts.getAll();
-        test.equal(allRes.length,2);
+        expect(allRes.length).toBe(2);
         expect(orig).toBe(ts.get(orig.hashKey()));
         expect(squished).toBe(ts.get(squished.hashKey()));
         expect(orig).toBe(ts.getClean(orig.cleanHashKey()));

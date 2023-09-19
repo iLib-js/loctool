@@ -26,7 +26,7 @@ describe("androidproject", function() {
         var p = new AndroidProject({
             id: "android",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -36,7 +36,7 @@ describe("androidproject", function() {
         var p = new AndroidProject({
             id: "android",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -48,7 +48,7 @@ describe("androidproject", function() {
         var p = new AndroidProject({
             id: "android",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             "build.gradle": "./build1.gradle"
         });
@@ -60,7 +60,7 @@ describe("androidproject", function() {
         var p = new AndroidProject({
             id: "android",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             "build.gradle": "./build1.gradle"
         });

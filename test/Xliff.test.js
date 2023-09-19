@@ -35,7 +35,7 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 describe("xliff", function() {
     test("XliffConstructor", function() {
@@ -61,8 +61,10 @@ describe("xliff", function() {
         });
         expect(x).toBeTruthy();
         expect(x["tool-id"]).toBe("loctool");
-        expect(x["tool-name"], "Localization Tool")).toBe(test.equal(x["tool-version"], "1.2.34"),
-        expect(x["tool-company"], "My Company, Inc.")).toBe(test.equal(x.copyright, "Copyright 2016, My Company, Inc. All rights reserved."),
+        expect(x["tool-name"]).toBe("Localization Tool");
+        expect(x["tool-version"]).toBe("1.2.34");
+        expect(x["tool-company"]).toBe("My Company, Inc.");
+        expect(x.copyright).toBe("Copyright 2016, My Company, Inc. All rights reserved.");
         expect(x.path).toBe("a/b/c.xliff");
     });
     test("XliffGetPath", function() {
@@ -1577,7 +1579,7 @@ describe("xliff", function() {
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
         expect(reslist.length).toBe(1);
-        expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
+        expect(reslist[0].getSourceArray()).toStrictEqual(["Zero", "One", "Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
@@ -1612,14 +1614,14 @@ describe("xliff", function() {
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
         expect(reslist.length).toBe(1);
-        expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
+        expect(reslist[0].getSourceArray()).toStrictEqual(["Zero", "One", "Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("array");
         expect(reslist[0].getOrigin()).toBe("source");
-        expect(reslist[0].getTargetArray(), ["Zero", "Eins").toStrictEqual("Zwei"]);
+        expect(reslist[0].getTargetArray()).toStrictEqual(["Zero", "Eins", "Zwei"]);
         expect(reslist[0].getTargetLocale()).toBe("de-DE");
     });
     test("XliffDeserializeWithArraysAndTranslations", function() {
@@ -1701,15 +1703,15 @@ describe("xliff", function() {
         expect(reslist[0].getOrigin()).toBe("source");
         var items = reslist[0].getSourceArray();
         expect(items.length).toBe(4);
-        expect(items[0]).toBe(null);
-        expect(items[1]).toBe(null);
-        expect(items[2]).toBe(null);
+        expect(items[0]).toBeUndefined();
+        expect(items[1]).toBeUndefined();
+        expect(items[2]).toBeUndefined();
         expect(items[3]).toBe("This is element 3");
         items = reslist[0].getTargetArray();
         expect(items.length).toBe(4);
-        expect(items[0]).toBe(null);
-        expect(items[1]).toBe(null);
-        expect(items[2]).toBe(null);
+        expect(items[0]).toBeUndefined();
+        expect(items[1]).toBeUndefined();
+        expect(items[2]).toBeUndefined();
         expect(items[3]).toBe("Este es 3");
     });
     test("XliffDeserializeWithComments", function() {
@@ -1802,7 +1804,7 @@ describe("xliff", function() {
         var x = new Xliff();
         expect(x).toBeTruthy();
         var fs = require("fs");
-        var str = fs.readFileSync("testfiles/test.xliff", "utf-8");
+        var str = fs.readFileSync("test/testfiles/test.xliff", "utf-8");
         x.deserialize(str);
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
@@ -2090,7 +2092,7 @@ describe("xliff", function() {
     });
     test("XliffTranslationUnitConstructorMissingBasicProperties", function() {
         expect.assertions(1);
-        expect(function() { // TODO add .toThrow() below
+        expect(function() {
             var tu = new TranslationUnit({
                 "source": "a",
                 "sourceLocale": "en-US",
@@ -2101,7 +2103,7 @@ describe("xliff", function() {
                 "context": "asdfasdf",
                 "comment": "this is a comment"
             });
-        });
+        }).toThrow();
     });
     test("XliffAddTranslationUnit", function() {
         expect.assertions(10);

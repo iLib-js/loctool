@@ -25,7 +25,7 @@ describe("rubyfiletype", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -35,7 +35,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -46,7 +46,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -57,7 +57,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -68,7 +68,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -79,7 +79,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -90,7 +90,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -101,7 +101,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -112,7 +112,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -123,7 +123,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -134,7 +134,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -145,7 +145,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rf = new RubyFileType(p);
@@ -156,7 +156,7 @@ describe("rubyfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });

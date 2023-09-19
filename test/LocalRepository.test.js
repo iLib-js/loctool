@@ -53,7 +53,7 @@ describe("localrepository", function() {
         expect.assertions(10);
         var repo = new LocalRepository({
             sourceLocale: "en-US",
-            pathName: "./testfiles/test.xliff"
+            pathName: "./test/testfiles/test.xliff"
         });
         expect(repo).toBeTruthy();
         repo.init(function(){
@@ -78,7 +78,7 @@ describe("localrepository", function() {
         expect.assertions(24);
         var repo = new LocalRepository({
             sourceLocale: "en-US",
-            xliffsDir: "./testfiles/xliffs"
+            xliffsDir: "./test/testfiles/xliffs"
         });
         expect(repo).toBeTruthy();
         repo.init(function(){
@@ -122,7 +122,7 @@ describe("localrepository", function() {
         expect.assertions(3);
         var repo = new LocalRepository({
             sourceLocale: "en-US",
-            xliffsDir: "./testfiles/xliffs"
+            xliffsDir: "./test/testfiles/xliffs"
         });
         expect(repo).toBeTruthy();
         repo.init(function(){
@@ -142,7 +142,7 @@ describe("localrepository", function() {
         // should read all xliffs from both directories
         var repo = new LocalRepository({
             sourceLocale: "en-US",
-            xliffsDir: ["./testfiles/xliff20/app3", "./testfiles/xliff20/app4"],
+            xliffsDir: ["./test/testfiles/xliff20/app3", "./test/testfiles/xliff20/app4"],
         });
         expect(repo).toBeTruthy();
         repo.init(function(){
@@ -517,7 +517,7 @@ describe("localrepository", function() {
                 expect(resources[0].getContext()).toBe("b");
                 expect(resources[0].getSourceLocale()).toBe("nl-NL");
                 expect(resources[0].getKey()).toBe("sultansofswing");
-                expect(resources[0].getSourceArray(), ["a one", "a two", "a one two three four").toStrictEqual("hit it"]);
+                expect(resources[0].getSourceArray()).toStrictEqual(["a one", "a two", "a one two three four", "hit it"]);
                 repo.close(function() {
                 });
             });

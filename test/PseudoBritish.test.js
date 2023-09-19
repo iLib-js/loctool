@@ -26,8 +26,8 @@ var project = new WebProject({
     sourceLocale: "en-US",
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 describe("pseudobritish", function() {
@@ -56,7 +56,7 @@ describe("pseudobritish", function() {
             targetLocale: "en-GB",
             type: "text"
         });
-        expect(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part).toBe(of regions far and wide.");
+        expect(pb.getString("I am a traveler, for the most part, of regions far and wide.")).toBe("I am a traveller, for the most part, of regions far and wide.");
     });
     test("PseudoBritishPunctWordBoundaries", function() {
         expect.assertions(1);

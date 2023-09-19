@@ -24,7 +24,7 @@ if (!JavaScriptFile) {
 var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var jsft = new JavaScriptFileType(p);
@@ -36,7 +36,7 @@ describe("scriptfile", function() {
     });
     test("JavaScriptFileConstructorParams", function() {
         expect.assertions(1);
-        var j = new JavaScriptFile(p, "./testfiles/js/t1.js", jsft);
+        var j = new JavaScriptFile(p, "./test/testfiles/js/t1.js", jsft);
         expect(j).toBeTruthy();
     });
     test("JavaScriptFileConstructorNoFile", function() {

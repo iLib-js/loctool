@@ -23,7 +23,7 @@ if (!SwiftFile) {
 }
 var p = new SwiftProject({
     sourceLocale: "en-US"
-}, "./testfiles");
+}, "./test/testfiles");
 var sft = new SwiftFileType(p);
 describe("swiftfile", function() {
     test("SwiftFileConstructor", function() {
@@ -33,7 +33,7 @@ describe("swiftfile", function() {
     });
     test("SwiftFileConstructorParams", function() {
         expect.assertions(1);
-        var j = new SwiftFile(p, "./testfiles/swift/MyproductStrings.swift", sft);
+        var j = new SwiftFile(p, "./test/testfiles/swift/MyproductStrings.swift", sft);
         expect(j).toBeTruthy();
     });
     test("SwiftFileConstructorNoFile", function() {

@@ -32,15 +32,15 @@ var settings = {
             "es": "es-US",
             "zh": "zh-Hans-CN"
         }
-    });
+    },
     "build.gradle": "build1.gradle"
-});
+};
 describe("androidresourcefiletype", function() {
     test("AndroidResourceFileTypeConstructor", function() {
         expect.assertions(1);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
     });
@@ -48,7 +48,7 @@ describe("androidresourcefiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("foo.xml")).toBeTruthy();
@@ -60,7 +60,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(alf.handles("android/res/values/strings.xml")).toBeTruthy();
@@ -72,7 +72,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/menu/strings.xml")).toBeTruthy();
@@ -84,7 +84,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/xml/strings.xml")).toBeTruthy();
@@ -96,7 +96,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values/strings.html")).toBeTruthy();
@@ -108,7 +108,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-es/strings.xml")).toBeTruthy();
@@ -120,7 +120,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-zh/strings.xml")).toBeTruthy();
@@ -132,7 +132,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-en-rGB/strings.xml")).toBeTruthy();
@@ -144,7 +144,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-b+zh+Hans+CN/strings.xml")).toBeTruthy();
@@ -156,7 +156,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-b+zh+Hans+CN-hdmi/strings.xml")).toBeTruthy();
@@ -168,7 +168,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(alf.handles("android/res/values-foo/strings.xml")).toBeTruthy();
@@ -180,7 +180,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-es-foo/strings.xml")).toBeTruthy();
@@ -192,7 +192,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-zh-foo/strings.xml")).toBeTruthy();
@@ -204,7 +204,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alf = new AndroidResourceFileType(p);
         expect(alf).toBeTruthy();
         expect(!alf.handles("android/res/values-en-rGB-foo/strings.xml")).toBeTruthy();
@@ -216,7 +216,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "es-US", "strings", "src/java/com/myproduct/Test.java");
@@ -230,7 +230,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "es-US", "plurals", "src/java/com/myproduct/Test.java");
@@ -244,7 +244,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "es-US", "arrays", "src/java/com/myproduct/Test.java");
@@ -258,7 +258,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "en-US", "strings", "src/java/com/myproduct/Test.java");
@@ -272,7 +272,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "en-HK", "strings", "src/java/com/myproduct/Test.java");
@@ -286,7 +286,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "en-GB", "strings", "src/java/com/myproduct/Test.java");
@@ -300,7 +300,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "zh-Hans-CN", "strings", "src/java/com/myproduct/Test.java");
@@ -314,7 +314,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
@@ -328,7 +328,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "es-ES", "strings", "src/java/com/myproduct/Test.java");
@@ -342,7 +342,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("", "ko-KR", "strings", "src/java/com/myproduct/Test.java");
@@ -356,7 +356,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("context", "en-US", "strings", "src/java/com/myproduct/Test.java");
@@ -370,7 +370,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("context", "es-US", "strings", "src/java/com/myproduct/Test.java");
@@ -384,7 +384,7 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
         var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "src/java/com/myproduct/Test.java");
@@ -398,10 +398,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "test/testfiles/flavors/a/src/java/com/myproduct/Test.java");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("flavors/a/res/values/strings.xml")
     });
@@ -412,10 +412,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/bproj/src/java/com/myproduct/Test.java");
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "test/testfiles/flavors/bproj/src/java/com/myproduct/Test.java");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("flavors/bproj/res/values/strings.xml")
     });
@@ -426,10 +426,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/xXx/src/java/com/myproduct/Test.java");
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "test/testfiles/flavors/xXx/src/java/com/myproduct/Test.java");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("flavors/xXx/res/values/strings.xml")
     });
@@ -440,10 +440,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/a/res/layouts/testlayout.xml");
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "test/testfiles/flavors/a/res/layouts/testlayout.xml");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("flavors/a/res/values/strings.xml")
     });
@@ -454,10 +454,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile(undefined, "en-US", "strings", "testfiles/flavors/d/src/java/com/myproduct/Test.java");
+        var rf = alft.getResourceFile(undefined, "en-US", "strings", "test/testfiles/flavors/d/src/java/com/myproduct/Test.java");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("android/res/values/strings.xml")
     });
@@ -468,10 +468,10 @@ describe("androidresourcefiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", settings);
+        }, "./test/testfiles", settings);
         var alft = new AndroidResourceFileType(p);
         expect(alft).toBeTruthy();
-        var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "testfiles/flavors/a/src/java/com/myproduct/Test.java");
+        var rf = alft.getResourceFile("context", "zh-Hant-HK", "strings", "test/testfiles/flavors/a/src/java/com/myproduct/Test.java");
         expect(rf).toBeTruthy();
         expect(rf.getPath()).toBe("flavors/a/res/values-zh-rHK-context/strings.xml")
     });

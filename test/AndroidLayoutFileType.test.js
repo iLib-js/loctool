@@ -25,7 +25,7 @@ describe("androidlayoutfiletype", function() {
         expect.assertions(1);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -35,7 +35,7 @@ describe("androidlayoutfiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -49,7 +49,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -63,7 +63,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -77,7 +77,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -91,7 +91,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -105,7 +105,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -119,7 +119,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -133,7 +133,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -147,7 +147,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -161,7 +161,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -175,7 +175,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -189,7 +189,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -203,7 +203,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -217,7 +217,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);
@@ -231,7 +231,7 @@ describe("androidlayoutfiletype", function() {
             "resourceDirs": {
                 "java": "android/res"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var alf = new AndroidLayoutFileType(p);

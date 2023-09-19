@@ -25,7 +25,7 @@ describe("scriptresourcefiletype", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
@@ -35,7 +35,7 @@ describe("scriptresourcefiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
@@ -46,7 +46,7 @@ describe("scriptresourcefiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
@@ -57,7 +57,7 @@ describe("scriptresourcefiletype", function() {
         expect.assertions(4);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
@@ -71,28 +71,28 @@ describe("scriptresourcefiletype", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "de-DE"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
         expect(htf).toBeTruthy();
         var jsrf = htf.getResourceFile("fr-FR");
-        expect(jsrf.getLocale()).toBe("fr-FR");
+        expect(jsrf.getLocale().toString()).toBe("fr-FR");
     });
     test("JavaScriptResourceFileTypeGetResourceFileSameOneEachTime", function() {
         expect.assertions(4);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "de-DE"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaScriptResourceFileType(p);
         expect(htf).toBeTruthy();
         var jsrf1 = htf.getResourceFile("fr-FR");
-        expect(jsrf1.getLocale()).toBe("fr-FR");
+        expect(jsrf1.getLocale().toString()).toBe("fr-FR");
         var jsrf2 = htf.getResourceFile("fr-FR");
-        expect(jsrf2.getLocale()).toBe("fr-FR");
+        expect(jsrf2.getLocale().toString()).toBe("fr-FR");
         expect(jsrf1).toStrictEqual(jsrf2);
     });
 });

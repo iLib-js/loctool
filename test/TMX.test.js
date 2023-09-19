@@ -38,7 +38,7 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var loctoolVersion = require("../package.json").version;
 describe("tmx", function() {
@@ -2341,13 +2341,13 @@ describe("tmx", function() {
         });
         tmx.addResource(res);
         var base = path.dirname(module.id);
-        if (fs.existsSync(path.join(base, "testfiles/test/output.tmx"))) {
-            fs.unlinkSync(path.join(base, "testfiles/test/output.tmx"));
+        if (fs.existsSync(path.join(base, "test/testfiles/test/output.tmx"))) {
+            fs.unlinkSync(path.join(base, "test/testfiles/test/output.tmx"));
         }
-        expect(!fs.existsSync(path.join(base, "testfiles/test/output.tmx"))).toBeTruthy();
-        tmx.write(path.join(base, "testfiles"));
-        expect(fs.existsSync(path.join(base, "testfiles/test/output.tmx"))).toBeTruthy();
-        var actual = fs.readFileSync(path.join(base, "testfiles/test/output.tmx"), "utf-8");
+        expect(!fs.existsSync(path.join(base, "test/testfiles/test/output.tmx"))).toBeTruthy();
+        tmx.write(path.join(base, "test/testfiles"));
+        expect(fs.existsSync(path.join(base, "test/testfiles/test/output.tmx"))).toBeTruthy();
+        var actual = fs.readFileSync(path.join(base, "test/testfiles/test/output.tmx"), "utf-8");
         var expected =
             '<?xml version="1.0" encoding="utf-8"?>\n' +
             '<tmx version="1.4">\n' +

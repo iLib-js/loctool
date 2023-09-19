@@ -462,7 +462,7 @@ describe("resourceplural", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rb = new PseudoFactory({
@@ -473,7 +473,7 @@ describe("resourceplural", function() {
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-GB", rb);
             expect(rp2).toBeTruthy();
-            expect(rp2.getTargetLocale(), "en-GB").toBeTruthy();
+            expect(rp2.getTargetLocale()).toBe("en-GB");
             var t = rp2.getTargetPlurals();
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
@@ -498,7 +498,7 @@ describe("resourceplural", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-ZA"]
         });
         var rb = new PseudoFactory({
@@ -509,7 +509,7 @@ describe("resourceplural", function() {
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-ZA", rb);
             expect(rp2).toBeTruthy();
-            expect(rp2.getTargetLocale(), "en-ZA").toBeTruthy();
+            expect(rp2.getTargetLocale()).toBe("en-ZA");
             var t = rp2.getTargetPlurals();
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
@@ -534,7 +534,7 @@ describe("resourceplural", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-CA"]
         });
         var rb = new PseudoFactory({
@@ -545,7 +545,7 @@ describe("resourceplural", function() {
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-CA", rb);
             expect(rp2).toBeTruthy();
-            expect(rp2.getTargetLocale(), "en-CA").toBeTruthy();
+            expect(rp2.getTargetLocale()).toBe("en-CA");
             var t = rp2.getTargetPlurals();
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
@@ -572,7 +572,7 @@ describe("resourceplural", function() {
         var p = new WebProject({
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });
         var translations = new TranslationSet();
@@ -602,7 +602,7 @@ describe("resourceplural", function() {
         rb.init(function() {
             var rp2 = rp.generatePseudo("zh-Hant-TW", rb);
             expect(rp2).toBeTruthy();
-            expect(rp2.getTargetLocale(), "zh-Hant-TW").toBeTruthy();
+            expect(rp2.getTargetLocale()).toBe("zh-Hant-TW");
             var t = rp2.getTargetPlurals();
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({

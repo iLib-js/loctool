@@ -51,7 +51,7 @@ describe("genmodemode", function() {
         expect.assertions(2);
         var genmode = new GenerateMode();
         expect(genmode).toBeTruthy();
-        expect(genmode.getXliffsDir()).toBe(".");
+        expect(genmode.getXliffsDir()).toStrictEqual(["."]);
     });
     test("GenerateModeWithParams", function() {
         expect.assertions(2);
@@ -59,19 +59,19 @@ describe("genmodemode", function() {
            xliffsDir: "./xliffs"
         });
         expect(genmode).toBeTruthy();
-        expect(genmode.getXliffsDir()).toBe("./xliffs");
+        expect(genmode.getXliffsDir()).toStrictEqual(["./xliffs"]);
     });
     test("GenerateModeSetParams", function() {
         expect.assertions(2);
         var genmode = new GenerateMode();
         expect(genmode).toBeTruthy();
-        genmode.setXliffsDir("./testfiles");
-        expect(genmode.getXliffsDir()).toBe("./testfiles");
+        genmode.setXliffsDir("./test/testfiles");
+        expect(genmode.getXliffsDir()).toStrictEqual(["./test/testfiles"]);
     });
     test("GenerateModeInit", function() {
         expect.assertions(2);
         var genmode = new GenerateMode({
-            xliffsDir: "./testfiles/xliff20/app1",
+            xliffsDir: "./test/testfiles/xliff20/app1",
         });
         expect(genmode).toBeTruthy();
         genmode.init();
@@ -80,7 +80,7 @@ describe("genmodemode", function() {
     test("GenerateModeInitMultipleXliffDirs", function() {
         expect.assertions(2);
         var genmode = new GenerateMode({
-            xliffsDir: ["./testfiles/xliff20/app1", "./testfiles/xliff20/app2"],
+            xliffsDir: ["./test/testfiles/xliff20/app1", "./test/testfiles/xliff20/app2"],
         });
         expect(genmode).toBeTruthy();
         genmode.init();

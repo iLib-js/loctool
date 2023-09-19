@@ -27,7 +27,7 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -37,7 +37,7 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -49,7 +49,7 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -61,7 +61,7 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
@@ -73,13 +73,13 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
         expect(p).toBeTruthy();
         expect(p.flavors).toBeTruthy();
-        expect(p.flavors, ["VANILLA").toStrictEqual("CHOCOLATE"]);
+        expect(p.flavors).toStrictEqual(["VANILLA", "CHOCOLATE"]);
     });
     test("WebProjectGetResourceDirsString", function() {
         expect.assertions(2);
@@ -89,7 +89,7 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": "a/b/c"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -103,7 +103,7 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": "a/b/c"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -114,7 +114,7 @@ describe("webproject", function() {
         var p = new WebProject({
             id: "web",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -128,11 +128,11 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.getResourceDirs("yml"), ["a/b/c").toStrictEqual("d/e/f"]);
+        expect(p.getResourceDirs("yml")).toStrictEqual(["a/b/c", "d/e/f"]);
     });
     test("WebProjectIsResourcePathPositive", function() {
         expect.assertions(2);
@@ -142,11 +142,11 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/a/b/c/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/a/b/c/x.yml")).toBeTruthy();
     });
     test("WebProjectIsResourcePathNegative", function() {
         expect.assertions(2);
@@ -156,11 +156,11 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(!p.isResourcePath("yml", "testfiles/a/c/x.yml")).toBeTruthy();
+        expect(!p.isResourcePath("yml", "test/testfiles/a/c/x.yml")).toBeTruthy();
     });
     test("WebProjectIsResourcePathPositive2", function() {
         expect.assertions(2);
@@ -170,11 +170,11 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f/x.yml")).toBeTruthy();
     });
     test("WebProjectIsResourcePathSubdirectory", function() {
         expect.assertions(2);
@@ -184,11 +184,11 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f/m/n/o/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f/m/n/o/x.yml")).toBeTruthy();
     });
     test("WebProjectIsResourcePathDirOnly", function() {
         expect.assertions(2);
@@ -198,10 +198,10 @@ describe("webproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f")).toBeTruthy();
     });
 });

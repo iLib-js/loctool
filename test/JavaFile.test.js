@@ -27,7 +27,7 @@ var p = new AndroidProject({
     id: "webapp",
     sourceLocale: "en-US",
     pseudoLocale: "de-DE"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var jft = new JavaFileType(p);
@@ -39,7 +39,7 @@ describe("javafile", function() {
     });
     test("JavaFileConstructorParams", function() {
         expect.assertions(1);
-        var j = new JavaFile(p, "./testfiles/java/t1.java", jft);
+        var j = new JavaFile(p, "./test/testfiles/java/t1.java", jft);
         expect(j).toBeTruthy();
     });
     test("JavaFileConstructorNoFile", function() {
@@ -57,61 +57,61 @@ describe("javafile", function() {
         expect.assertions(5);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("Preferences in your profile"), "r372802078");
-        test.equals(j.makeKey("All settings"), "r725930887");
-        test.equals(j.makeKey("Colour scheme"), "r734599412");
-        test.equals(j.makeKey("Experts"), "r343852585");
+        expect(j.makeKey("Preferences in your profile")).toBe("r372802078");
+        expect(j.makeKey("All settings")).toBe("r725930887");
+        expect(j.makeKey("Colour scheme")).toBe("r734599412");
+        expect(j.makeKey("Experts")).toBe("r343852585");
     });
     test("JavaFileMakeKeyUnescaped", function() {
         expect.assertions(5);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("foo \\n \\t bar"), "r1056543475");
-        test.equals(j.makeKey("\\n \\t bar"), "r755240053");
-        test.equals(j.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
-        test.equals(j.makeKey("\\'Dude\\'"), "r6259609");
+        expect(j.makeKey("foo \\n \\t bar")).toBe("r1056543475");
+        expect(j.makeKey("\\n \\t bar")).toBe("r755240053");
+        expect(j.makeKey("The \\'Dude\\' played by Jeff Bridges")).toBe("r600298088");
+        expect(j.makeKey("\\'Dude\\'")).toBe("r6259609");
     });
     test("JavaFileMakeKeySimpleTexts2", function() {
         expect.assertions(6);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("Procedures"), "r807691021");
-        test.equals(j.makeKey("Mobile Apps"), "r898923204");
-        test.equals(j.makeKey("Settings in your profile"), "r618035987");
-        test.equals(j.makeKey("Product Reviews"), "r175350918");
-        test.equals(j.makeKey("Answers"), "r221604632");
+        expect(j.makeKey("Procedures")).toBe("r807691021");
+        expect(j.makeKey("Mobile Apps")).toBe("r898923204");
+        expect(j.makeKey("Settings in your profile")).toBe("r618035987");
+        expect(j.makeKey("Product Reviews")).toBe("r175350918");
+        expect(j.makeKey("Answers")).toBe("r221604632");
     });
     test("JavaFileMakeKeySimpleTexts3", function() {
         expect.assertions(9);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("Private Profile"), "r314592735");
-        test.equals(j.makeKey("People you are connected to"), "r711926199");
-        test.equals(j.makeKey("Notifications"), "r284964820");
-        test.equals(j.makeKey("News"), "r613036745");
-        test.equals(j.makeKey("More Tips"), "r216617786");
-        test.equals(j.makeKey("Filters"), "r81370429");
-        test.equals(j.makeKey("Referral Link"), "r140625167");
-        test.equals(j.makeKey("Questions"), "r256277957");
+        expect(j.makeKey("Private Profile")).toBe("r314592735");
+        expect(j.makeKey("People you are connected to")).toBe("r711926199");
+        expect(j.makeKey("Notifications")).toBe("r284964820");
+        expect(j.makeKey("News")).toBe("r613036745");
+        expect(j.makeKey("More Tips")).toBe("r216617786");
+        expect(j.makeKey("Filters")).toBe("r81370429");
+        expect(j.makeKey("Referral Link")).toBe("r140625167");
+        expect(j.makeKey("Questions")).toBe("r256277957");
     });
     test("JavaFileMakeKeyEscapes", function() {
         expect.assertions(3);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("Can\'t find id"), "r743945592");
-        test.equals(j.makeKey("Can\'t find an application for SMS"), "r909283218");
+        expect(j.makeKey("Can\'t find id")).toBe("r743945592");
+        expect(j.makeKey("Can\'t find an application for SMS")).toBe("r909283218");
     });
     test("JavaFileMakeKeyPunctuation", function() {
         expect.assertions(8);
         var j = new JavaFile(p, undefined, jft);
         expect(j).toBeTruthy();
-        test.equals(j.makeKey("{name}({generic_name})"), "r300446104");
-        test.equals(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
-        test.equals(j.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
-        test.equals(j.makeKey("Grow your Network"), "r895214324");
-        test.equals(j.makeKey("Failed to send connection request!"), "r1015770123");
-        test.equals(j.makeKey("{goal_name} Goals"), "r993422001");
-        test.equals(j.makeKey("Connection link copied!"), "r180897411");
+        expect(j.makeKey("{name}({generic_name})")).toBe("r300446104");
+        expect(j.makeKey("{name}, {sharer_name} {start}found this interesting{end}")).toBe("r8321889");
+        expect(j.makeKey("{sharer_name} {start}found this interesting{end}")).toBe("r639868344");
+        expect(j.makeKey("Grow your Network")).toBe("r895214324");
+        expect(j.makeKey("Failed to send connection request!")).toBe("r1015770123");
+        expect(j.makeKey("{goal_name} Goals")).toBe("r993422001");
+        expect(j.makeKey("Connection link copied!")).toBe("r180897411");
     });
     test("JavaFileMakeKeySameStringMeansSameKey", function() {
         expect.assertions(3);
@@ -143,73 +143,73 @@ describe("javafile", function() {
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(jf.makeKey("A \n B"), "r191336864");
+        expect(jf.makeKey("A \n B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyEscapeN", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(jf.makeKey("A \\n B"), "r191336864");
+        expect(jf.makeKey("A \\n B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyTabs", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("A \t B"), "r191336864");
+        expect(jf.makeKey("A \t B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyEscapeT", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("A \\t B"), "r191336864");
+        expect(jf.makeKey("A \\t B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyQuotes", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("A \\'B\\' C"), "r935639115");
+        expect(jf.makeKey("A \\'B\\' C")).toBe("r935639115");
     });
     test("JavaFileMakeKeyInterpretEscapedUnicodeChars", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("\\u00A0 \\u0023"), "r2293235");
+        expect(jf.makeKey("\\u00A0 \\u0023")).toBe("r2293235");
     });
     test("JavaFileMakeKeyInterpretEscapedSpecialChars2", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat"), "r969175354");
+        expect(jf.makeKey("Talk to a support representative live 24/7 via video or \u00a0 text\u00a0chat")).toBe("r969175354");
     });
     test("JavaFileMakeKeyInterpretEscapedOctalChars", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("A \\40 \\011 B"), "r191336864");
+        expect(jf.makeKey("A \\40 \\011 B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyJavaEscapeSequences", function() {
         expect.assertions(2);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
+        expect(jf.makeKey("A \\b\\t\\n\\f\\r B")).toBe("r191336864");
     });
     test("JavaFileMakeKeyCheckRubyCompatibility", function() {
         expect.assertions(13);
         var jf = new JavaFile(p);
         expect(jf).toBeTruthy();
-        test.equals(jf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
-        test.equals(jf.makeKey('This has \\\"double quotes\\\" in it.'), "r487572481");
-        test.equals(jf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
-        test.equals(jf.makeKey('This has \\\'single quotes\\\' in it.'), "r900797640");
-        test.equals(jf.makeKey("This is a double quoted string"), "r494590307");
-        test.equals(jf.makeKey('This is a single quoted string'), "r683276274");
-        test.equals(jf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
-        test.equals(jf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
-        test.equals(jf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
-        test.equals(jf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
-        test.equals(jf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
-        test.equals(jf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
+        expect(jf.makeKey("This has \\\"double quotes\\\" in it.")).toBe("r487572481");
+        expect(jf.makeKey('This has \\\"double quotes\\\" in it.')).toBe("r487572481");
+        expect(jf.makeKey("This has \\\'single quotes\\\' in it.")).toBe("r900797640");
+        expect(jf.makeKey('This has \\\'single quotes\\\' in it.')).toBe("r900797640");
+        expect(jf.makeKey("This is a double quoted string")).toBe("r494590307");
+        expect(jf.makeKey('This is a single quoted string')).toBe("r683276274");
+        expect(jf.makeKey("This is a double quoted string with \\\"quotes\\\" in it.")).toBe("r246354917");
+        expect(jf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.')).toBe("r248819747");
+        expect(jf.makeKey("This is a double quoted string with \\n return chars in it")).toBe("r1001831480");
+        expect(jf.makeKey('This is a single quoted string with \\n return chars in it')).toBe("r147719125");
+        expect(jf.makeKey("This is a double quoted string with \\t tab chars in it")).toBe("r276797171");
+        expect(jf.makeKey('This is a single quoted string with \\t tab chars in it')).toBe("r303137748");
     });
     test("JavaFileParseSimpleGetByKey", function() {
         expect.assertions(5);

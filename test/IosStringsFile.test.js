@@ -25,7 +25,7 @@ if (!IosStringsFile) {
 var p = new ObjectiveCProject({
     id: "iosapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"],
     flavors: ["chocolate", "vanilla"]
 });
@@ -41,7 +41,7 @@ describe("stringsfile", function() {
         var strings = new IosStringsFile({
             project: p,
             type: isft
-        }, "./testfiles/objc/Base.lproj/Localizable.strings");
+        }, "./test/testfiles/objc/Base.lproj/Localizable.strings");
         expect(strings).toBeTruthy();
     });
     test("IosStringsFileConstructorNoFile", function() {
@@ -209,9 +209,9 @@ describe("stringsfile", function() {
             reskey: "DWd-6J-lLt.text"
         });
         expect(r).toBeTruthy();
-        expect(r[0].getSource(), "free).toBe(private");
+        expect(r[0].getSource()).toBe("free, private");
         expect(r[0].getKey()).toBe("DWd-6J-lLt.text");
-        expect(r[0].getComment(), 'Class = "UILabel"; text = "free).toBe(private"; ObjectID = "DWd-6J-lLt";');
+        expect(r[0].getComment()).toBe('Class = "UILabel"; text = "free, private"; ObjectID = "DWd-6J-lLt";');
     });
     test("IosStringsFileExtractFileUnicodeFile", function() {
         expect.assertions(14);

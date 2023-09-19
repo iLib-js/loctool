@@ -26,7 +26,7 @@ describe("markdownfiletype", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -36,7 +36,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -47,7 +47,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -58,7 +58,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -69,7 +69,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -80,7 +80,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -91,7 +91,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -102,7 +102,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -113,7 +113,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -124,7 +124,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -135,7 +135,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mdft = new MarkdownFileType(p);
@@ -146,7 +146,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -158,7 +158,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -170,7 +170,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -182,7 +182,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -195,7 +195,7 @@ describe("markdownfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -208,7 +208,7 @@ describe("markdownfiletype", function() {
         expect.assertions(3);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"],
             markdown: {
@@ -229,8 +229,8 @@ describe("markdownfiletype", function() {
             mdft.addTranslationStatus(status);
         });
         mdft.projectClose();
-        expect(fs.existsSync("./testfiles/translation-status.json")).toBeTruthy();
-        var contents = fs.readFileSync("./testfiles/translation-status.json", "utf-8");
+        expect(fs.existsSync("./test/testfiles/translation-status.json")).toBeTruthy();
+        var contents = fs.readFileSync("./test/testfiles/translation-status.json", "utf-8");
         var actual = JSON.parse(contents);
         var expected = {
             translated: [
@@ -249,11 +249,11 @@ describe("markdownfiletype", function() {
     test("MarkdownFileTypeProjectCloseFullyTranslatedOff", function() {
         expect.assertions(3);
         // clean up first
-        fs.unlinkSync("./testfiles/translation-status.json");
-        expect(!fs.existsSync("./testfiles/translation-status.json")).toBeTruthy();
+        fs.unlinkSync("./test/testfiles/translation-status.json");
+        expect(!fs.existsSync("./test/testfiles/translation-status.json")).toBeTruthy();
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -271,6 +271,6 @@ describe("markdownfiletype", function() {
             mdft.addTranslationStatus(status);
         });
         mdft.projectClose();
-        expect(!fs.existsSync("./testfiles/translation-status.json")).toBeTruthy();
+        expect(!fs.existsSync("./test/testfiles/translation-status.json")).toBeTruthy();
     });
 });

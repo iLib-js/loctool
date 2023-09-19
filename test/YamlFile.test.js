@@ -33,15 +33,15 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US",
     resourceDirs: {
         yml: "a/b"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales:["en-GB"],
     nopseudo: true,
     flavors: ["CHOCOLATE", "VANILLA"]
@@ -51,13 +51,13 @@ var p2 = new WebProject({
     sourceLocale: "en-US",
     resourceDirs: {
         yml: "a/b"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales:["en-GB"],
     nopseudo: true,
     localeMap: {
         "de-DE": "de"
-    });
+    }
 });
 var yft = new YamlFileType(p);
 describe("yamlfile", function() {
@@ -608,7 +608,7 @@ describe("yamlfile", function() {
             reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         expect(r).toBeTruthy();
-        expect(r[0].getSource(), "Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure).toBe(soon be a household name.");
+        expect(r[0].getSource()).toBe("Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
         expect(r[0].getKey()).toBe("Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
         expect(!r[0].getComment()).toBeTruthy();
         var r = set.getBy({
@@ -804,7 +804,7 @@ describe("yamlfile", function() {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yml = new YamlFile({
@@ -855,7 +855,7 @@ describe("yamlfile", function() {
         expect(set).toBeTruthy();
         var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         expect(r).toBeTruthy();
-        expect(r.getSource(), "%1).toBe(%2 has answered a question you asked!");
+        expect(r.getSource()).toBe("%1, %2 has answered a question you asked!");
         expect(r.getKey()).toBe("email_subject");
         expect(r.getSourceLocale()).toBe("en-US");
         expect(r.getContext()).toBe("member_question_asked\\@answered");
@@ -1054,7 +1054,7 @@ describe("yamlfile", function() {
         expect(set).toBeTruthy();
         var r = set.getBySource('%1, you’re saving time!', "thanked_note_time_saved");
         expect(r).toBeTruthy();
-        expect(r.getSource(), '%1).toBe(you’re saving time!');
+        expect(r.getSource()).toBe('%1, you’re saving time!');
         expect(r.getSourceLocale()).toBe('en-US');
         expect(r.getKey()).toBe('email_subject');
         expect(r.getContext()).toBe("thanked_note_time_saved");
@@ -1104,7 +1104,7 @@ describe("yamlfile", function() {
         expect(set).toBeTruthy();
         var r = set.getBySource('%1, You\'re saving time!', "thanked_note_time_saved");
         expect(r).toBeTruthy();
-        expect(r.getSource(), '%1).toBe(You\'re saving time!');
+        expect(r.getSource()).toBe('%1, You\'re saving time!');
         expect(r.getKey()).toBe('email_subject');
         expect(r.getContext()).toBe("thanked_note_time_saved");
         r = set.getBySource('You’ve been thanked for saving a colleague\'s time!', "thanked_note_time_saved");
@@ -1259,7 +1259,7 @@ describe("yamlfile", function() {
         });
         expect(y).toBeTruthy();
         y.extract();
-        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test2.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('de-DE/test2.yml');
     });
     test("YamlGetLocalizedPathDefault", function() {
         expect.assertions(2);
@@ -1270,7 +1270,7 @@ describe("yamlfile", function() {
         });
         expect(y).toBeTruthy();
         y.extract();
-        test.equals(y.getLocalizedPath('de-DE'), 'de/test2.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('de/test2.yml');
     });
     test("YamlUseLocalizedDirectoriesFromSchema", function() {
         expect.assertions(2);
@@ -1306,7 +1306,7 @@ describe("yamlfile", function() {
         expect(y).toBeTruthy();
         y.extract();
         y.schema['useLocalizedDirectories'] = true;
-        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test3.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('de-DE/test3.yml');
     });
     test("YamlGetLocalizedPathWithoutLocalizedDirectories", function() {
         expect.assertions(2);
@@ -1318,7 +1318,7 @@ describe("yamlfile", function() {
         expect(y).toBeTruthy();
         y.extract();
         y.schema['useLocalizedDirectories'] = false;
-        test.equals(y.getLocalizedPath('de-DE'), 'test3.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('test3.yml');
     });
     test("YamlGetOutputFilenameForLocaleWithoutSchema", function() {
         expect.assertions(2);
@@ -1328,7 +1328,7 @@ describe("yamlfile", function() {
             pathName: "./test2.yml"
         });
         expect(y).toBeTruthy();
-        test.equals(y.getOutputFilenameForLocale('de-DE'), 'test2.yml');
+        expect(y.getOutputFilenameForLocale('de-DE')).toBe('test2.yml');
     });
     test("YamlGetOutputFilenameForLocaleWithSchema", function() {
         expect.assertions(2);
@@ -1342,7 +1342,7 @@ describe("yamlfile", function() {
         y.schema['outputFilenameMapping'] = {
             'de-DE': './de.yml'
         }
-        test.equals(y.getOutputFilenameForLocale('de-DE'), './de.yml');
+        expect(y.getOutputFilenameForLocale('de-DE')).toBe('./de.yml');
     });
     test("YamlGetLocalizedPathWithLocalizedDirs", function() {
         expect.assertions(2);
@@ -1355,7 +1355,7 @@ describe("yamlfile", function() {
         y.schema = {
             useLocalizedDirectories: true
         };
-        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/test2.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('de-DE/test2.yml');
     });
     test("YamlGetLocalizedPathWithLocalizedDirsAndOutputFilenameMapping", function() {
         expect.assertions(2);
@@ -1371,7 +1371,7 @@ describe("yamlfile", function() {
                 'de-DE': './de.yml'
             }
         };
-        test.equals(y.getLocalizedPath('de-DE'), 'de-DE/de.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('de-DE/de.yml');
     });
     test("YamlGetLocalizedPathWithOutputFilenameMappingAndWithoutLocalizedDirectories", function() {
         expect.assertions(2);
@@ -1387,7 +1387,7 @@ describe("yamlfile", function() {
             },
             'useLocalizedDirectories': false
         };
-        test.equals(y.getLocalizedPath('de-DE'), './de.yml');
+        expect(y.getLocalizedPath('de-DE')).toBe('./de.yml');
     });
     test("YamlFileGetContentPlural", function() {
         expect.assertions(2);

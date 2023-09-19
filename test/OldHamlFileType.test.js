@@ -25,7 +25,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -35,7 +35,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -46,7 +46,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -57,7 +57,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -68,7 +68,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -79,7 +79,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -90,7 +90,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -101,7 +101,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);
@@ -112,7 +112,7 @@ describe("oldhamlfiletype", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new OldHamlFileType(p);

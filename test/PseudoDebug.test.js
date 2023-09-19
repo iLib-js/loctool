@@ -26,11 +26,11 @@ var project = new WebProject({
     sourceLocale: "en-US",
     pseudoLocale: {
         "es-US": "debug"
-    });
+    },
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 describe("pseudodebug", function() {
@@ -104,9 +104,9 @@ describe("pseudodebug", function() {
             targetLocale: "es-US",
             type: "template"
         });
-        test.equal(
-            pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."),
-            '[Šķíþ ţĥë üñfľàvõŕëð <%= (i > 4) ? RB.getString("estrogen") : RB.getString(\"%\") %> šüþþľëmëñţš.8765432109876543210]');
+        expect(
+            pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements.")
+        ).toBe('[Šķíþ ţĥë üñfľàvõŕëð <%= (i > 4) ? RB.getString("estrogen") : RB.getString(\"%\") %> šüþþľëmëñţš.8765432109876543210]');
     });
     test("PseudoDebugSkipReplacementsRuby", function() {
         expect.assertions(1);

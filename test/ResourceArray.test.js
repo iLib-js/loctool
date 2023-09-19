@@ -60,7 +60,7 @@ describe("resourcearray", function() {
         });
         expect(ra).toBeTruthy();
         expect(ra.getKey()).toBe("asdf");
-        expect(ra.getSourceArray(), ["This is a test", "This is also a test").toStrictEqual("This is not"]);
+        expect(ra.getSourceArray()).toStrictEqual(["This is a test", "This is also a test", "This is not"]);
         expect(ra.getSourceLocale()).toBe("de-DE");
         expect(ra.pathName).toBe("a/b/c.java");
     });
@@ -112,9 +112,9 @@ describe("resourcearray", function() {
         });
         expect(ra).toBeTruthy();
         expect(ra.getKey()).toBe("asdf");
-        expect(ra.getSourceArray(), ["This is a test", "This is also a test").toStrictEqual("This is not"]);
+        expect(ra.getSourceArray()).toStrictEqual(["This is a test", "This is also a test", "This is not"]);
         expect(ra.getSourceLocale()).toBe("en-US");
-        expect(ra.getTargetArray(), ["Dies ist einen Test.", "Dies ist auch einen Test.").toStrictEqual("Dies ist nicht."]);
+        expect(ra.getTargetArray()).toStrictEqual(["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
         expect(ra.getTargetLocale()).toBe("de-DE");
         expect(ra.pathName).toBe("a/b/c.java");
     });
@@ -133,8 +133,8 @@ describe("resourcearray", function() {
         expect(ra.origin).toBe("source");
         expect(ra.datatype).toBe("x-android-resource");
         expect(ra.resType).toBe("array");
-        expect(!ra.getTargetLocale()).toBeTruthy();
-        expect(!ra.target).toBeTruthy();
+        expect(ra.getTargetLocale()).toBeFalsy();
+        expect(ra.target).toBeFalsy();
     });
     test("ResourceArrayConstructorRightSize", function() {
         expect.assertions(2);
@@ -218,7 +218,7 @@ describe("resourcearray", function() {
             sourceLocale: "de-DE"
         });
         expect(ra).toBeTruthy();
-        expect(ra.getSourceArray(), ["This is a test", "This is also a test").toStrictEqual("This is not"]);
+        expect(ra.getSourceArray()).toStrictEqual(["This is a test", "This is also a test", "This is not"]);
     });
     test("ResourceArrayGetSourceArrayEmpty", function() {
         expect.assertions(2);
@@ -393,8 +393,8 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("de-DE", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getSourceLocale(), "en-US").toBeTruthy();
-            expect(ra2.getTargetLocale(), "de-DE").toBeTruthy();
+            expect(ra2.getSourceLocale()).toBe("en-US");
+            expect(ra2.getTargetLocale()).toBe("de-DE");
         });
     });
     test("ResourceArrayGeneratePseudoRightString", function() {
@@ -411,7 +411,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("de-DE", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "de-DE").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("de-DE");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -434,7 +434,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("de-DE", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "de-DE").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("de-DE");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(5);
@@ -459,7 +459,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("de-DE", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "de-DE").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("de-DE");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -506,7 +506,7 @@ describe("resourcearray", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var rb = new PseudoFactory({
@@ -517,7 +517,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("en-GB", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "en-GB").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("en-GB");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -537,7 +537,7 @@ describe("resourcearray", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-ZA"]
         });
         var rb = new PseudoFactory({
@@ -548,7 +548,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("en-ZA", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "en-ZA").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("en-ZA");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -568,7 +568,7 @@ describe("resourcearray", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-CA"]
         });
         var rb = new PseudoFactory({
@@ -579,7 +579,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("en-CA", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "en-CA").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("en-CA");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -601,7 +601,7 @@ describe("resourcearray", function() {
         var p = new WebProject({
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });
         var translations = new TranslationSet();
@@ -623,7 +623,7 @@ describe("resourcearray", function() {
         rb.init(function() {
             var ra2 = ra.generatePseudo("zh-Hant-TW", rb);
             expect(ra2).toBeTruthy();
-            expect(ra2.getTargetLocale(), "zh-Hant-TW").toBeTruthy();
+            expect(ra2.getTargetLocale()).toBe("zh-Hant-TW");
             var strings = ra2.getTargetArray();
             expect(strings).toBeTruthy();
             expect(strings.length).toBe(3);
@@ -689,7 +689,7 @@ describe("resourcearray", function() {
         expect(ra2.comment).toBe(ra.comment);
         expect(ra2.state).toBe("asdfasdf");
         expect(ra2.getTargetLocale()).toBe("de-DE");
-        expect(ra2.targetArray, ["Dies ist einen Test.", "Dies ist auch einen Test.").toStrictEqual("Dies ist nicht."]);
+        expect(ra2.targetArray).toStrictEqual(["Dies ist einen Test.", "Dies ist auch einen Test.", "Dies ist nicht."]);
     });
     test("ResourceArrayAddSourceString", function() {
         expect.assertions(2);

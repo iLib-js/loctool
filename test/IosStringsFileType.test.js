@@ -30,7 +30,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -43,7 +43,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -57,7 +57,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -71,7 +71,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -85,7 +85,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -99,7 +99,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -114,7 +114,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -128,7 +128,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -142,7 +142,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -157,7 +157,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -171,7 +171,7 @@ describe("stringsfiletype", function() {
             resourceDirs: {
                 "objc": "feelgood"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -185,7 +185,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -199,7 +199,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -213,7 +213,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -227,7 +227,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -241,7 +241,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -255,7 +255,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -269,7 +269,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -283,7 +283,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new IosStringsFileType(p);
@@ -297,7 +297,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors:["QHC"]
         });
@@ -312,7 +312,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -334,7 +334,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -356,7 +356,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -378,7 +378,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -400,7 +400,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -422,7 +422,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -444,7 +444,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -466,7 +466,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -488,7 +488,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -510,7 +510,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -532,7 +532,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -554,7 +554,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);
@@ -577,7 +577,7 @@ describe("stringsfiletype", function() {
             "resourceDirs": {
                 "objc": "foo"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var istf = new IosStringsFileType(p);

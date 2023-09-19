@@ -83,8 +83,8 @@ describe("resourcestring", function() {
         expect(rs.getSource()).toBe("This is a test");
         expect(rs.getSourceLocale()).toBe("de-DE");
         expect(rs.pathName).toBe("a/b/c.java");
-        expect(!rs.getTarget()).toBeTruthy(); // source-only string
-        expect(!rs.getTargetLocale()).toBeTruthy();
+        expect(rs.getTarget()).toBeFalsy(); // source-only string
+        expect(rs.getTargetLocale()).toBeFalsy();
     });
     test("ResourceStringConstructorSourceTargetRightContents", function() {
         expect.assertions(7);
@@ -353,7 +353,7 @@ describe("resourcestring", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             nopseudo: false
         });
@@ -365,7 +365,7 @@ describe("resourcestring", function() {
         rb.init(function() {
             var rs2 = rs.generatePseudo("en-GB", rb);
             expect(rs2).toBeTruthy();
-            expect(rs2.getTargetLocale(), "en-GB").toBeTruthy();
+            expect(rs2.getTargetLocale()).toBe("en-GB");
             expect(rs2.getTarget()).toBe("I colour my chequebooks and localise them.");
         });
     });
@@ -380,7 +380,7 @@ describe("resourcestring", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-ZA"]
         });
         var rb = new PseudoFactory({
@@ -391,7 +391,7 @@ describe("resourcestring", function() {
         rb.init(function() {
             var rs2 = rs.generatePseudo("en-ZA", rb);
             expect(rs2).toBeTruthy();
-            expect(rs2.getTargetLocale(), "en-ZA").toBeTruthy();
+            expect(rs2.getTargetLocale()).toBe("en-ZA");
             expect(rs2.getTarget()).toBe("I colour my chequebooks and localise them.");
         });
     });
@@ -405,7 +405,7 @@ describe("resourcestring", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "en-CA"]
         });
         var rb = new PseudoFactory({
@@ -416,7 +416,7 @@ describe("resourcestring", function() {
         rb.init(function() {
             var rs2 = rs.generatePseudo("en-CA", rb);
             expect(rs2).toBeTruthy();
-            expect(rs2.getTargetLocale(), "en-CA").toBeTruthy();
+            expect(rs2.getTargetLocale()).toBe("en-CA");
             expect(rs2.getTarget()).toBe("I colour my chequebooks and localize them.");
         });
     });
@@ -433,7 +433,7 @@ describe("resourcestring", function() {
         var p = new WebProject({
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });
         var translations = new TranslationSet();
@@ -455,7 +455,7 @@ describe("resourcestring", function() {
         rb.init(function() {
             var rs2 = rs.generatePseudo("zh-Hant-TW", rb);
             expect(rs2).toBeTruthy();
-            expect(rs2.getTargetLocale(), "zh-Hant-TW").toBeTruthy();
+            expect(rs2.getTargetLocale()).toBe("zh-Hant-TW");
             expect(rs2.getTarget()).toBe("什麼？ 你是指歐洲的燕子還是非洲的燕子？");
         });
     });
@@ -513,8 +513,8 @@ describe("resourcestring", function() {
         expect(rs2.pathName).toBe(rs.pathName);
         expect(rs2.comment).toBe(rs.comment);
         expect(rs2.state).toBe("asdfasdf");
-        expect(rs2.getTargetLocale() !== rs.getTargetLocale()).toBeTruthy();
-        expect(rs2.getTarget() !== rs.getTarget()).toBeTruthy();
+        expect(rs2.getTargetLocale()).not.toBe(rs.getTargetLocale());
+        expect(rs2.getTarget()).not.toBe(rs.getTarget());
     });
     test("ResourceStringEquals", function() {
         expect.assertions(3);

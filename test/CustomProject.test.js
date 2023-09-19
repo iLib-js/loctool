@@ -23,13 +23,14 @@ if (!CustomProject) {
     var MockFileType = require("ilib-loctool-mock");
     var MockResourceFileType = require("ilib-loctool-mock-resource");
 }
+
 describe("customproject", function() {
     test("CustomProjectConstructor", function() {
         expect.assertions(1);
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -40,7 +41,7 @@ describe("customproject", function() {
             id: "custom",
             sourceLocale: "en-US",
             plugins: ["ilib-loctool-mock"]
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -55,7 +56,7 @@ describe("customproject", function() {
             id: "custom",
             sourceLocale: "en-US",
             plugins: ["mock"]
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -69,7 +70,7 @@ describe("customproject", function() {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -80,7 +81,7 @@ describe("customproject", function() {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -99,7 +100,7 @@ describe("customproject", function() {
                     "mock": "mock-resource"
                 }
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -114,7 +115,7 @@ describe("customproject", function() {
             id: "custom",
             sourceLocale: "en-US",
             plugins: ["mock"]
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -128,7 +129,7 @@ describe("customproject", function() {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
@@ -140,13 +141,13 @@ describe("customproject", function() {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["VANILLA", "CHOCOLATE"]
         });
         expect(p).toBeTruthy();
         expect(p.flavorList).toBeTruthy();
-        expect(p.flavorList, ["VANILLA").toStrictEqual("CHOCOLATE"]);
+        expect(p.flavorList).toStrictEqual(["VANILLA", "CHOCOLATE"]);
     });
     test("CustomProjectGetResourceDirsString", function() {
         expect.assertions(2);
@@ -156,7 +157,7 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": "a/b/c"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -170,7 +171,7 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": "a/b/c"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -181,7 +182,7 @@ describe("customproject", function() {
         var p = new CustomProject({
             id: "custom",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
@@ -195,11 +196,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.getResourceDirs("yml"), ["a/b/c").toStrictEqual("d/e/f"]);
+        expect(p.getResourceDirs("yml")).toStrictEqual(["a/b/c", "d/e/f"]);
     });
     test("CustomProjectIsResourcePathPositive", function() {
         expect.assertions(2);
@@ -209,11 +210,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/a/b/c/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/a/b/c/x.yml")).toBeTruthy();
     });
     test("CustomProjectIsResourcePathNegative", function() {
         expect.assertions(2);
@@ -223,11 +224,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(!p.isResourcePath("yml", "testfiles/a/c/x.yml")).toBeTruthy();
+        expect(!p.isResourcePath("yml", "test/testfiles/a/c/x.yml")).toBeTruthy();
     });
     test("CustomProjectIsResourcePathPositive2", function() {
         expect.assertions(2);
@@ -237,11 +238,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f/x.yml")).toBeTruthy();
     });
     test("CustomProjectIsResourcePathSubdirectory", function() {
         expect.assertions(2);
@@ -251,11 +252,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f/m/n/o/x.yml")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f/m/n/o/x.yml")).toBeTruthy();
     });
     test("CustomProjectIsResourcePathDirOnly", function() {
         expect.assertions(2);
@@ -265,11 +266,11 @@ describe("customproject", function() {
             resourceDirs: {
                 "yml": ["a/b/c", "d/e/f"]
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         expect(p).toBeTruthy();
-        expect(p.isResourcePath("yml", "testfiles/d/e/f")).toBeTruthy();
+        expect(p.isResourcePath("yml", "test/testfiles/d/e/f")).toBeTruthy();
     });
     test("CustomProjectLoadAndroidFlavors", function() {
         expect.assertions(3);
@@ -277,14 +278,15 @@ describe("customproject", function() {
             id: "custom",
             sourceLocale: "en-US",
             plugins: ["ilib-loctool-mock"]
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             "build.gradle": "build1.gradle"
         });
         expect(p).toBeTruthy();
+        p.defineFileTypes();
         p.init(function() {
             expect(p.flavors).toBeTruthy();
-            expect(p.flavors.getFlavorForPath("flavors/bproj/res"), "chocolate").toBeTruthy();
+            expect(p.flavors.getFlavorForPath("flavors/bproj/res")).toBe("b");
         });
     });
 });

@@ -30,7 +30,7 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 describe("scriptresourcefile", function() {
     test("JavaScriptResourceFileConstructor", function() {
@@ -45,7 +45,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -63,7 +63,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -111,7 +111,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -152,8 +152,7 @@ describe("scriptresourcefile", function() {
             '    "more source text": "mehr Quellentext",\n' +
             '    "source text": "Quellentext",\n' +
             '    "yet more source text": "noch mehr Quellentext"\n' +
-            '};\n'
-        );
+            '};\n');
     });
     test("JavaScriptResourceFileGetContentsNoContent", function() {
         expect.assertions(2);
@@ -163,7 +162,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -172,8 +171,7 @@ describe("scriptresourcefile", function() {
             locale: "de-DE"
         });
         expect(jsrf).toBeTruthy();
-        expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {};\n'
-        );
+        expect(jsrf.getContent()).toBe('ilib.data.strings_de_DE = {};\n');
     });
     test("JavaScriptResourceFileEscapeDoubleQuotes", function() {
         expect.assertions(2);
@@ -183,7 +181,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -226,7 +224,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var jsrf = new JavaScriptResourceFile({
@@ -269,7 +267,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -325,7 +323,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -366,7 +364,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             identify: true
         });
@@ -385,7 +383,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -426,7 +424,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -467,7 +465,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -508,7 +506,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             localeDefaults: {
                 "en": {
@@ -549,7 +547,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE"],
             identify: true
         });
@@ -568,7 +566,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -609,7 +607,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -650,7 +648,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -691,7 +689,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -732,7 +730,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -774,7 +772,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -852,7 +850,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             identify: true
         });
@@ -908,7 +906,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -986,7 +984,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1064,7 +1062,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1142,7 +1140,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1220,7 +1218,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1298,7 +1296,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {
@@ -1376,7 +1374,7 @@ describe("scriptresourcefile", function() {
             resourceDirs: {
                 "js": "localized_js"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB", "de-DE", "de-AT"],
             localeDefaults: {
                 "en": {

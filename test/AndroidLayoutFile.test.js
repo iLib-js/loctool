@@ -25,7 +25,7 @@ if (!AndroidLayoutFile) {
 var p = new AndroidProject({
     id: "android",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var alft = new AndroidLayoutFileType(p);
@@ -277,7 +277,7 @@ describe("androidlayoutfile", function() {
         var alf = new AndroidLayoutFile({
             project: p,
             type: alft,
-            pathName: "./testfiles/java/res/layout/t1.xml"
+            pathName: "./test/testfiles/java/res/layout/t1.xml"
         });
         expect(alf).toBeTruthy();
         // should read the file
@@ -345,7 +345,7 @@ describe("androidlayoutfile", function() {
         var alf = new AndroidLayoutFile({
             project: p,
             type: alft,
-            pathName: "./testfiles/java/res/layout/foo.xml"
+            pathName: "./test/testfiles/java/res/layout/foo.xml"
         });
         expect(alf).toBeTruthy();
         alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
@@ -382,7 +382,7 @@ describe("androidlayoutfile", function() {
         var alf = new AndroidLayoutFile({
             project: p,
             type: alft,
-            pathName: "./testfiles/java/res/layout/foo.xml"
+            pathName: "./test/testfiles/java/res/layout/foo.xml"
         });
         expect(alf).toBeTruthy();
         alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
@@ -530,7 +530,7 @@ describe("androidlayoutfile", function() {
         var alf = new AndroidLayoutFile({
             project: p,
             type: alft,
-            pathName: "./testfiles/java/res/layout/foo.xml"
+            pathName: "./test/testfiles/java/res/layout/foo.xml"
         });
         expect(alf).toBeTruthy();
         alf.parse('<?xml version="1.0" encoding="utf-8"?>' +

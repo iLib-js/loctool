@@ -25,7 +25,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(1);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);
@@ -35,7 +35,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(2);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);
@@ -46,7 +46,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(2);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);
@@ -57,7 +57,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(2);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);
@@ -68,7 +68,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(2);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);
@@ -79,7 +79,7 @@ describe("objectivecfiletype", function() {
         expect.assertions(2);
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new ObjectiveCFileType(p);

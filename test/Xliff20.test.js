@@ -35,13 +35,13 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 describe("xliff20", function() {
-    setUp: function(callback) {
+    beforeAll(function () {
         ResourceFactory.unregisterDataType("x-android-resource");
-        callback();
     });
+
     test("Xliff20Constructor", function() {
         expect.assertions(1);
         var x = new Xliff({version: "2.0"});
@@ -57,19 +57,19 @@ describe("xliff20", function() {
         expect.assertions(2);
         var x = new Xliff({version: "2.0"});
         expect(x).toBeTruthy();
-        expect(x.getVersion()).toBe("2.0");
+        expect(x.getVersion()).toBe(2);
     });
     test("Xliff20ConstructorNumericVersion12", function() {
         expect.assertions(2);
         var x = new Xliff({version: 1.2});
         expect(x).toBeTruthy();
-        expect(x.getVersion()).toBe("1.2");
+        expect(x.getVersion()).toBe(1.2);
     });
     test("Xliff20ConstructorNumericVersion20", function() {
         expect.assertions(2);
         var x = new Xliff({version: 2.0});
         expect(x).toBeTruthy();
-        expect(x.getVersion()).toBe("2.0");
+        expect(x.getVersion()).toBe(2);
     });
     test("Xliff20ConstructorFull", function() {
         expect.assertions(8);
@@ -83,10 +83,12 @@ describe("xliff20", function() {
             path: "a/b/c.xliff"
         });
         expect(x).toBeTruthy();
-        expect(x.getVersion()).toBe("2.0");
+        expect(x.getVersion()).toBe(2);
         expect(x["tool-id"]).toBe("loctool");
-        expect(x["tool-name"], "Localization Tool")).toBe(test.equal(x["tool-version"], "1.2.34"),
-        expect(x["tool-company"], "My Company, Inc.")).toBe(test.equal(x.copyright, "Copyright 2016, My Company, Inc. All rights reserved."),
+        expect(x["tool-name"]).toBe("Localization Tool");
+        expect(x["tool-version"]).toBe("1.2.34");
+        expect(x["tool-company"]).toBe("My Company, Inc.");
+        expect(x.copyright).toBe("Copyright 2016, My Company, Inc. All rights reserved.");
         expect(x.path).toBe("a/b/c.xliff");
     });
     test("Xliff20GetPath", function() {
@@ -1602,7 +1604,7 @@ describe("xliff20", function() {
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
         expect(reslist.length).toBe(1);
-        expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
+        expect(reslist[0].getSourceArray()).toStrictEqual(["Zero", "One", "Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
@@ -1641,14 +1643,14 @@ describe("xliff20", function() {
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
         expect(reslist.length).toBe(1);
-        expect(reslist[0].getSourceArray(), ["Zero", "One").toStrictEqual("Two"]);
+        expect(reslist[0].getSourceArray()).toStrictEqual(["Zero", "One", "Two"]);
         expect(reslist[0].getSourceLocale()).toBe("en-US");
         expect(reslist[0].getKey()).toBe("foobar");
         expect(reslist[0].getPath()).toBe("foo/bar/asdf.java");
         expect(reslist[0].getProject()).toBe("androidapp");
         expect(reslist[0].resType).toBe("array");
         expect(reslist[0].getOrigin()).toBe("source");
-        expect(reslist[0].getTargetArray(), ["Zero", "Eins").toStrictEqual("Zwei"]);
+        expect(reslist[0].getTargetArray()).toStrictEqual(["Zero", "Eins", "Zwei"]);
         expect(reslist[0].getTargetLocale()).toBe("de-DE");
     });
     test("Xliff20DeserializeWithArraysAndTranslations", function() {
@@ -1736,15 +1738,15 @@ describe("xliff20", function() {
         expect(reslist[0].getOrigin()).toBe("source");
         var items = reslist[0].getSourceArray();
         expect(items.length).toBe(4);
-        expect(items[0]).toBe(null);
-        expect(items[1]).toBe(null);
-        expect(items[2]).toBe(null);
+        expect(items[0]).toBeUndefined();
+        expect(items[1]).toBeUndefined();
+        expect(items[2]).toBeUndefined();
         expect(items[3]).toBe("This is element 3");
         items = reslist[0].getTargetArray();
         expect(items.length).toBe(4);
-        expect(items[0]).toBe(null);
-        expect(items[1]).toBe(null);
-        expect(items[2]).toBe(null);
+        expect(items[0]).toBeUndefined();
+        expect(items[1]).toBeUndefined();
+        expect(items[2]).toBeUndefined();
         expect(items[3]).toBe("Este es 3");
     });
     test("Xliff20DeserializeWithComments", function() {
@@ -1841,7 +1843,7 @@ describe("xliff20", function() {
         var x = new Xliff();
         expect(x).toBeTruthy();
         var fs = require("fs");
-        var str = fs.readFileSync("testfiles/test4.xliff", "utf-8");
+        var str = fs.readFileSync("test/testfiles/test4.xliff", "utf-8");
         x.deserialize(str);
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();
@@ -2921,7 +2923,7 @@ describe("xliff20", function() {
         var x = new Xliff();
         expect(x).toBeTruthy();
         var fs = require("fs");
-        var str = fs.readFileSync("testfiles/test5.xliff", "utf-8");
+        var str = fs.readFileSync("test/testfiles/test5.xliff", "utf-8");
         x.deserialize(str);
         var reslist = x.getResources();
         expect(reslist).toBeTruthy();

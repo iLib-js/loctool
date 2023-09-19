@@ -29,7 +29,7 @@ function diff(a, b) {
     if ((!a || !b) && (a || b)) {
         console.log("a is " + a + ", b is " + b);
         return;
-    });
+    }
     var min = Math.min(a.length, b.length);
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
@@ -38,19 +38,19 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     nopseudo: true,
     locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"]
 });
 var pi = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     nopseudo: true,
     locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
     identify: true
@@ -58,13 +58,13 @@ var pi = new WebProject({
 var p2 = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     nopseudo: true,
     locales: ["fr-FR", "es-US", "zh-Hans-CN", "zh-Hant-HK"],
     localeMap: {
         "fr-FR": "fr",
         "zh-Hans-CN": "zh"
-    });
+    }
 });
 var hft = new HamlFileType(p);
 describe("hamlfile", function() {
@@ -77,7 +77,7 @@ describe("hamlfile", function() {
         expect.assertions(1);
         var h = new HamlFile({
             project: p,
-            pathName: "./testfiles/ruby/t2.html.haml",
+            pathName: "./test/testfiles/ruby/t2.html.haml",
             type: hft
         });
         expect(h).toBeTruthy();
@@ -112,11 +112,11 @@ describe("hamlfile", function() {
     });
     test("HamlFileEscapeWithAndsAndEmbeddedRubyMultipleNoEscape", function() {
         expect.assertions(1);
-        expect(HamlFile.escape("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id} test"), "requested topic: #{@topic_requested&.id}).toBe(topic: #{@topic&.id} test");
+        expect(HamlFile.escape("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id} test")).toBe("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id} test");
     });
     test("HamlFileEscapeWithAndsAndEmbeddedRubyMultipleNoEscapeEndingInRuby", function() {
         expect.assertions(1);
-        expect(HamlFile.escape("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id}"), "requested topic: #{@topic_requested&.id}).toBe(topic: #{@topic&.id}");
+        expect(HamlFile.escape("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id}")).toBe("requested topic: #{@topic_requested&.id}, topic: #{@topic&.id}");
     });
     test("HamlFileMakeKey", function() {
         expect.assertions(2);
@@ -134,10 +134,10 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("Preferences in your profile"), "r372802078");
-        test.equals(h.makeKey("All settings"), "r725930887");
-        test.equals(h.makeKey("Colour scheme"), "r734599412");
-        test.equals(h.makeKey("Experts"), "r343852585");
+        expect(h.makeKey("Preferences in your profile")).toBe("r372802078");
+        expect(h.makeKey("All settings")).toBe("r725930887");
+        expect(h.makeKey("Colour scheme")).toBe("r734599412");
+        expect(h.makeKey("Experts")).toBe("r343852585");
     });
     test("HamlFileMakeKeyUnescaped", function() {
         expect.assertions(5);
@@ -146,10 +146,10 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("foo \\n \\t bar"), "r1056543475");
-        test.equals(h.makeKey("\\n \\t bar"), "r755240053");
-        test.equals(h.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
-        test.equals(h.makeKey("\\'Dude\\'"), "r6259609");
+        expect(h.makeKey("foo \\n \\t bar")).toBe("r1056543475");
+        expect(h.makeKey("\\n \\t bar")).toBe("r755240053");
+        expect(h.makeKey("The \\'Dude\\' played by Jeff Bridges")).toBe("r600298088");
+        expect(h.makeKey("\\'Dude\\'")).toBe("r6259609");
     });
     test("HamlFileMakeKeySimpleTexts2", function() {
         expect.assertions(6);
@@ -158,11 +158,11 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("Procedures"), "r807691021");
-        test.equals(h.makeKey("Mobile Apps"), "r898923204");
-        test.equals(h.makeKey("Settings in your profile"), "r618035987");
-        test.equals(h.makeKey("Product Reviews"), "r175350918");
-        test.equals(h.makeKey("Answers"), "r221604632");
+        expect(h.makeKey("Procedures")).toBe("r807691021");
+        expect(h.makeKey("Mobile Apps")).toBe("r898923204");
+        expect(h.makeKey("Settings in your profile")).toBe("r618035987");
+        expect(h.makeKey("Product Reviews")).toBe("r175350918");
+        expect(h.makeKey("Answers")).toBe("r221604632");
     });
     test("HamlFileMakeKeySimpleTexts3", function() {
         expect.assertions(9);
@@ -171,14 +171,14 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("Private Profile"), "r314592735");
-        test.equals(h.makeKey("People you are connected to"), "r711926199");
-        test.equals(h.makeKey("Notifications"), "r284964820");
-        test.equals(h.makeKey("News"), "r613036745");
-        test.equals(h.makeKey("More Tips"), "r216617786");
-        test.equals(h.makeKey("Filters"), "r81370429");
-        test.equals(h.makeKey("Referral Link"), "r140625167");
-        test.equals(h.makeKey("Questions"), "r256277957");
+        expect(h.makeKey("Private Profile")).toBe("r314592735");
+        expect(h.makeKey("People you are connected to")).toBe("r711926199");
+        expect(h.makeKey("Notifications")).toBe("r284964820");
+        expect(h.makeKey("News")).toBe("r613036745");
+        expect(h.makeKey("More Tips")).toBe("r216617786");
+        expect(h.makeKey("Filters")).toBe("r81370429");
+        expect(h.makeKey("Referral Link")).toBe("r140625167");
+        expect(h.makeKey("Questions")).toBe("r256277957");
     });
     test("HamlFileMakeKeyEscapes", function() {
         expect.assertions(3);
@@ -187,8 +187,8 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("Can\'t find id"), "r743945592");
-        test.equals(h.makeKey("Can\'t find an application for SMS"), "r909283218");
+        expect(h.makeKey("Can\'t find id")).toBe("r743945592");
+        expect(h.makeKey("Can\'t find an application for SMS")).toBe("r909283218");
     });
     test("HamlFileMakeKeyPunctuation", function() {
         expect.assertions(8);
@@ -197,13 +197,13 @@ describe("hamlfile", function() {
             type: hft
         });
         expect(h).toBeTruthy();
-        test.equals(h.makeKey("{name}({generic_name})"), "r300446104");
-        test.equals(h.makeKey("{name}, {sharer_name} {start}found this interesting{end}"), "r8321889");
-        test.equals(h.makeKey("{sharer_name} {start}found this interesting{end}"), "r639868344");
-        test.equals(h.makeKey("Grow your Network"), "r895214324");
-        test.equals(h.makeKey("Failed to send connection request!"), "r1015770123");
-        test.equals(h.makeKey("{goal_name} Goals"), "r993422001");
-        test.equals(h.makeKey("Connection link copied!"), "r180897411");
+        expect(h.makeKey("{name}({generic_name})")).toBe("r300446104");
+        expect(h.makeKey("{name}, {sharer_name} {start}found this interesting{end}")).toBe("r8321889");
+        expect(h.makeKey("{sharer_name} {start}found this interesting{end}")).toBe("r639868344");
+        expect(h.makeKey("Grow your Network")).toBe("r895214324");
+        expect(h.makeKey("Failed to send connection request!")).toBe("r1015770123");
+        expect(h.makeKey("{goal_name} Goals")).toBe("r993422001");
+        expect(h.makeKey("Connection link copied!")).toBe("r180897411");
     });
     test("HamlFileMakeKeySameStringMeansSameKey", function() {
         expect.assertions(3);
@@ -246,7 +246,7 @@ describe("hamlfile", function() {
         });
         expect(hf).toBeTruthy();
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(hf.makeKey("A \n B"), "r191336864");
+        expect(hf.makeKey("A \n B")).toBe("r191336864");
     });
     test("HamlFileMakeKeyEscapeN", function() {
         expect.assertions(2);
@@ -255,7 +255,7 @@ describe("hamlfile", function() {
         });
         expect(hf).toBeTruthy();
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(hf.makeKey("A \\n B"), "r191336864");
+        expect(hf.makeKey("A \\n B")).toBe("r191336864");
     });
     test("HamlFileMakeKeyTabs", function() {
         expect.assertions(2);
@@ -263,7 +263,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("A \t B"), "r191336864");
+        expect(hf.makeKey("A \t B")).toBe("r191336864");
     });
     test("HamlFileMakeKeyEscapeT", function() {
         expect.assertions(2);
@@ -271,7 +271,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("A \\t B"), "r191336864");
+        expect(hf.makeKey("A \\t B")).toBe("r191336864");
     });
     test("HamlFileMakeKeyQuotes", function() {
         expect.assertions(2);
@@ -279,7 +279,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("A \\'B\\' C"), "r935639115");
+        expect(hf.makeKey("A \\'B\\' C")).toBe("r935639115");
     });
     test("HamlFileMakeKeyInterpretEscapedUnicodeChars", function() {
         expect.assertions(2);
@@ -287,7 +287,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("\\u00A0 \\u0023"), "r2293235");
+        expect(hf.makeKey("\\u00A0 \\u0023")).toBe("r2293235");
     });
     test("HamlFileMakeKeyInterpretEscapedSpecialChars2", function() {
         expect.assertions(2);
@@ -295,7 +295,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("\u00a0 text\u00a0chat"), "r87956021");
+        expect(hf.makeKey("\u00a0 text\u00a0chat")).toBe("r87956021");
     });
     test("HamlFileMakeKeyCheckRubyCompatibility", function() {
         expect.assertions(13);
@@ -303,18 +303,18 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
-        test.equals(hf.makeKey('This has \\\"double quotes\\\" in it.'), "r487572481");
-        test.equals(hf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
-        test.equals(hf.makeKey('This has \\\'single quotes\\\' in it.'), "r900797640");
-        test.equals(hf.makeKey("This is a double quoted string"), "r494590307");
-        test.equals(hf.makeKey('This is a single quoted string'), "r683276274");
-        test.equals(hf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
-        test.equals(hf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
-        test.equals(hf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
-        test.equals(hf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
-        test.equals(hf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
-        test.equals(hf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
+        expect(hf.makeKey("This has \\\"double quotes\\\" in it.")).toBe("r487572481");
+        expect(hf.makeKey('This has \\\"double quotes\\\" in it.')).toBe("r487572481");
+        expect(hf.makeKey("This has \\\'single quotes\\\' in it.")).toBe("r900797640");
+        expect(hf.makeKey('This has \\\'single quotes\\\' in it.')).toBe("r900797640");
+        expect(hf.makeKey("This is a double quoted string")).toBe("r494590307");
+        expect(hf.makeKey('This is a single quoted string')).toBe("r683276274");
+        expect(hf.makeKey("This is a double quoted string with \\\"quotes\\\" in it.")).toBe("r246354917");
+        expect(hf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.')).toBe("r248819747");
+        expect(hf.makeKey("This is a double quoted string with \\n return chars in it")).toBe("r1001831480");
+        expect(hf.makeKey('This is a single quoted string with \\n return chars in it')).toBe("r147719125");
+        expect(hf.makeKey("This is a double quoted string with \\t tab chars in it")).toBe("r276797171");
+        expect(hf.makeKey('This is a single quoted string with \\t tab chars in it')).toBe("r303137748");
     });
     test("HamlFileMakeKeyCheckRubyCompatibilitySpecialChars", function() {
         expect.assertions(2);
@@ -322,7 +322,7 @@ describe("hamlfile", function() {
             project: p
         });
         expect(hf).toBeTruthy();
-        test.equals(hf.makeKey("Foo\u2028 24/7 bar"), "r102490768");
+        expect(hf.makeKey("Foo\u2028 24/7 bar")).toBe("r102490768");
     });
     test("HamlFileFindMatchingOneLine", function() {
         expect.assertions(2);
@@ -431,16 +431,16 @@ describe("hamlfile", function() {
     test("HamlFileIndentationTabs", function() {
         expect.assertions(1);
         var h = new HamlFile();
-        test.equal(h.indentation(
-            "\t\t%foo.bar{ {asdf{\n", 0), 2);
+        expect(h.indentation(
+            "\t\t%foo.bar{ {asdf{\n", 0)).toBe(2);
     });
     test("HamlFileIndentationSkipReturn", function() {
         expect.assertions(1);
         var h = new HamlFile();
-        test.equal(h.indentation(
+        expect(h.indentation(
             "   %foo.bar{ {asdf{\n" +
             "     asdf} asdf} asdf} trailing text\n" +
-            "   .class.otherclass {asdf} \n", 57), 3);
+            "   .class.otherclass {asdf} \n", 57)).toBe(3);
     });
     test("HamlFileFindMatchingIndentSame", function() {
         expect.assertions(1);
@@ -1115,7 +1115,7 @@ describe("hamlfile", function() {
         expect(r.getKey()).toBe("r238348915");
         r = resources[2];
         expect(r).toBeTruthy();
-        expect(r.getSource(), '&#8250; Thanks).toBe(Friend!');
+        expect(r.getSource()).toBe('&#8250; Thanks, Friend!');
         expect(r.getKey()).toBe("r88865504");
     });
     test("HamlFileParseTextWithHTMLBreakingTags", function() {
@@ -4186,6 +4186,6 @@ describe("hamlfile", function() {
         }));
         h.localize(translations, ["fr-FR"]);
         // now make sure the file was written out
-        expect(fs.existsSync("./testfiles/ruby/t2.fr-FR.html.haml")).toBeTruthy();
+        expect(fs.existsSync("./test/testfiles/ruby/t2.fr-FR.html.haml")).toBeTruthy();
     });
 });

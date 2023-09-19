@@ -27,7 +27,7 @@ if (!XliffSplit) {
 function rmrf(path) {
     if (fs.existsSync(path)) {
         fs.unlinkSync(path);
-    });
+    }
 }
 describe("xliffsplit", function() {
     test("XliffSplitnoParameter", function() {
@@ -40,7 +40,7 @@ describe("xliffsplit", function() {
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US.xliff",
+            "test/testfiles/xliff20/merge-en-US.xliff",
         ];
         var target = XliffSplit(settings);
         expect(target).toBeTruthy();
@@ -50,19 +50,19 @@ describe("xliffsplit", function() {
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US.xliff",
+            "test/testfiles/xliff20/merge-en-US.xliff",
         ];
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
-        expect(Object.keys(result).length, 2); //app1).toBe(app2
+        expect(Object.keys(result).length).toBe(2); //app1, app2
     });
     test("XliffSplitdistritueSerialize", function() {
         expect.assertions(2);
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US.xliff",
+            "test/testfiles/xliff20/merge-en-US.xliff",
         ];
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
@@ -103,7 +103,7 @@ describe("xliffsplit", function() {
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US.xliff",
+            "test/testfiles/xliff20/merge-en-US.xliff",
         ];
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
@@ -136,7 +136,7 @@ describe("xliffsplit", function() {
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US-style.xliff",
+            "test/testfiles/xliff20/merge-en-US-style.xliff",
         ];
         settings.xliffStyle = "custom"
         var superset = XliffSplit(settings);
@@ -167,19 +167,19 @@ describe("xliffsplit", function() {
     });
     test("XliffSplitWrite", function() {
         expect.assertions(3);
-        rmrf("testfiles/xliff20/splitTest/app1/en-US.xliff");
-        rmrf("testfiles/xliff20/splitTest/app2/en-US.xliff");
+        rmrf("test/testfiles/xliff20/splitTest/app1/en-US.xliff");
+        rmrf("test/testfiles/xliff20/splitTest/app2/en-US.xliff");
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
-            "testfiles/xliff20/merge-en-US.xliff",
+            "test/testfiles/xliff20/merge-en-US.xliff",
         ];
-        settings.targetDir = "testfiles/xliff20/splitTest";
+        settings.targetDir = "test/testfiles/xliff20/splitTest";
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
         XliffSplit.write(result);
-        expect(fs.existsSync("./testfiles/xliff20/splitTest/app1/en-US.xliff")).toBeTruthy();
-        expect(fs.existsSync("./testfiles/xliff20/splitTest/app2/en-US.xliff")).toBeTruthy();
+        expect(fs.existsSync("./test/testfiles/xliff20/splitTest/app1/en-US.xliff")).toBeTruthy();
+        expect(fs.existsSync("./test/testfiles/xliff20/splitTest/app2/en-US.xliff")).toBeTruthy();
     });
 });

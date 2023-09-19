@@ -25,7 +25,7 @@ describe("javafiletype", function() {
         expect.assertions(1);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaFileType(p);
@@ -35,7 +35,7 @@ describe("javafiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaFileType(p);
@@ -46,7 +46,7 @@ describe("javafiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaFileType(p);
@@ -57,7 +57,7 @@ describe("javafiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaFileType(p);
@@ -68,7 +68,7 @@ describe("javafiletype", function() {
         expect.assertions(2);
         var p = new AndroidProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new JavaFileType(p);

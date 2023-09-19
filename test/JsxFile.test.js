@@ -24,7 +24,7 @@ if (!JsxFile) {
 var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var jsft = new JsxFileType(p);
@@ -36,7 +36,7 @@ describe("jsxfile", function() {
     });
     test("JsxFileConstructorParams", function() {
         expect.assertions(1);
-        var j = new JsxFile(p, "./testfiles/js/t1.jsx", jsft);
+        var j = new JsxFile(p, "./test/testfiles/js/t1.jsx", jsft);
         expect(j).toBeTruthy();
     });
     test("JsxFileConstructorNoFile", function() {
@@ -279,9 +279,9 @@ describe("jsxfile", function() {
         expect.assertions(2);
         var j = new JsxFile(p, undefined, jsft);
         expect(j).toBeTruthy();
-        expect(function() { // TODO add .toThrow() below
+        expect(function() {
             j.parse('<Translate key="x">This is a test <Translate>This is another test</Translate> This is a test</Translate>');
-        });
+        }).toThrow();
     });
     test("JsxFileParseMultipleSameLine", function() {
         expect.assertions(12);
@@ -379,9 +379,9 @@ describe("jsxfile", function() {
         expect.assertions(3);
         var j = new JsxFile(p, undefined, jsft);
         expect(j).toBeTruthy();
-        expect(function() { // TODO add .toThrow() below
+        expect(function() {
             j.parse('<Translate>This is a {test} and this isnt</Translate>');
-        });
+        }).toThrow();
         var set = j.getTranslationSet();
         expect(set.size()).toBe(0);
     });
@@ -389,9 +389,9 @@ describe("jsxfile", function() {
         expect.assertions(3);
         var j = new JsxFile(p, undefined, jsft);
         expect(j).toBeTruthy();
-        expect(function() { // TODO add .toThrow() below
+        expect(function() {
             j.parse('<Translate>[[test]]</Translate>');
-        });
+        }).toThrow();
         var set = j.getTranslationSet();
         expect(set.size()).toBe(0);
     });

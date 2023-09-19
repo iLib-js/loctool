@@ -33,12 +33,12 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var p = new AndroidProject({
     id: "android",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var arft = new AndroidResourceFileType(p);
@@ -207,7 +207,7 @@ describe("androidresourcefile", function() {
         expect(r.getSource()).toBe("151779581544891");
         expect(r.getKey()).toBe("app_id");
         expect(r.getState()).toBe("new");
-        test.ok(r.dnt)
+        expect(r.dnt).toBeTruthy();
     });
     test("AndroidResourceFileParseStringWithComment", function() {
         expect.assertions(8);
@@ -349,7 +349,7 @@ describe("androidresourcefile", function() {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/foo.xml"
+            pathName: "./test/testfiles/java/res/values/foo.xml"
         });
         expect(arf).toBeTruthy();
         arf.parse(
@@ -388,7 +388,7 @@ describe("androidresourcefile", function() {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/foo.xml"
+            pathName: "./test/testfiles/java/res/values/foo.xml"
         });
         expect(arf).toBeTruthy();
         arf.parse(
@@ -418,7 +418,7 @@ describe("androidresourcefile", function() {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/foo.xml",
+            pathName: "./test/testfiles/java/res/values/foo.xml",
             locale: "en-US"
         });
         expect(arf).toBeTruthy();
@@ -465,7 +465,7 @@ describe("androidresourcefile", function() {
         var arf = new AndroidResourceFile({
             project: p,
             type: arft,
-            pathName: "./testfiles/java/res/values/foo.xml",
+            pathName: "./test/testfiles/java/res/values/foo.xml",
             locale: "en-US"
         });
         expect(arf).toBeTruthy();

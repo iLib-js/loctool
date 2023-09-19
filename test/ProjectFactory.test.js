@@ -10,29 +10,29 @@ describe("projectfactory", function() {
     test("ProjectFactoryCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
-        test.equals(project, undefined);
+        expect(project).not.toBeUndefined();
     });
     test("ProjectFactoryCreationFromJsonNoSettings", function() {
         expect.assertions(5);
-        var project = ProjectFactory('./testfiles', {});
+        var project = ProjectFactory('./test/testfiles', {});
         expect(project).not.toBe(undefined);
-        expect(project.settings).not.toBe(undefined);
-        test.equals(project.root,'./testfiles');
-        test.equals(project.sourceLocale,'en-US');
-        test.equals(project.pseudoLocale,'de-DE');
+        expect(project.settings).not.toBeUndefined();
+        expect(project.root).toBe('./test/testfiles');
+        expect(project.sourceLocale).toBe('en-US');
+        expect(project.pseudoLocale).toBe('de-DE');
     });
     test("ProjectFactoryCreationFromJsonWithSettingsMerged", function() {
         expect.assertions(4);
-        var project = ProjectFactory('./testfiles', {'abc': 'def'});
+        var project = ProjectFactory('./test/testfiles', {'abc': 'def'});
         expect(project).not.toBe(undefined);
         expect(project.settings).not.toBe(undefined);
         var set = project.settings;
-        test.equal(set['abc'],'def');
+        expect(set['abc']).toBe('def');
         expect(set.locales).not.toBe(undefined);
     });
     test("ProjectFactoryCreationFromJsonWithSettingsOverwrite", function() {
         expect.assertions(4);
-        var project = ProjectFactory('./testfiles', {'locales': ['def']});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def']});
         expect(project).not.toBe(undefined);
         expect(project.settings).not.toBe(undefined);
         var set = project.settings;
@@ -42,56 +42,56 @@ describe("projectfactory", function() {
     });
     test("ProjectFactoryCorrectRoot", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def']});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def']});
         expect(project).toBeTruthy();
-        expect(project.root).toBe('./testfiles');
+        expect(project.root).toBe('./test/testfiles');
     });
     test("ProjectFactoryCorrectDefaultTarget", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def']});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def']});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.target).toBe('testfiles');
+        expect(project.target).toBe('test/testfiles');
     });
     test("ProjectFactoryCorrectDefaultXliffsDir", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def']});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def']});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.xliffsDir).toBe('testfiles');
+        expect(project.xliffsDir).toStrictEqual(['test/testfiles']);
     });
     test("ProjectFactoryCorrectDefaultXliffsOut", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def']});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def']});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.xliffsOut).toBe('testfiles');
+        expect(project.xliffsOut).toBe('test/testfiles');
     });
     test("ProjectFactoryCorrectExplicitTarget", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'targetDir': 'foobar'});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'targetDir': 'foobar'});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.target).toBe('testfiles/foobar');
+        expect(project.target).toBe('test/testfiles/foobar');
     });
     test("ProjectFactoryCorrectExplicitXliffsDir", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsDir': 'asdf'});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'xliffsDir': 'asdf'});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.xliffsDir).toBe('testfiles/asdf');
+        expect(project.xliffsDir).toStrictEqual(['test/testfiles/asdf']);
     });
     test("ProjectFactoryCorrectExplicitXliffsOut", function() {
         expect.assertions(2);
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsOut': 'blah'});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'xliffsOut': 'blah'});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.xliffsOut).toBe('testfiles/blah');
+        expect(project.xliffsOut).toBe('test/testfiles/blah');
     });
     test("ProjectFactoryAbsolutePathTargetDir", function() {
         expect.assertions(2);
         var targetAbsolutePath = '/foo/asdf';
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'targetDir': targetAbsolutePath});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'targetDir': targetAbsolutePath});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
         expect(project.target).toBe('/foo/asdf');
@@ -99,15 +99,15 @@ describe("projectfactory", function() {
     test("ProjectFactoryAbsolutePathXliffsDir", function() {
         expect.assertions(2);
         var xliffAbsolutePath = '/foo/asdf';
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsDir': xliffAbsolutePath});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'xliffsDir': xliffAbsolutePath});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
-        expect(project.xliffsDir).toBe('/foo/asdf');
+        expect(project.xliffsDir).toStrictEqual(['/foo/asdf']);
     });
     test("ProjectFactoryAbsolutePathxliffsOut", function() {
         expect.assertions(2);
         var xliffAbsolutePath = '/foo/asdf';
-        var project = ProjectFactory('./testfiles', {'locales': ['def'], 'xliffsOut': xliffAbsolutePath});
+        var project = ProjectFactory('./test/testfiles', {'locales': ['def'], 'xliffsOut': xliffAbsolutePath});
         expect(project).toBeTruthy();
         // should be relative to the root of the project
         expect(project.xliffsOut).toBe('/foo/asdf');

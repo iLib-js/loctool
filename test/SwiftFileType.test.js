@@ -25,7 +25,7 @@ describe("swiftfiletype", function() {
         expect.assertions(1);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
     });
@@ -33,7 +33,7 @@ describe("swiftfiletype", function() {
         expect.assertions(2);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
         expect(stf.handles("foo.swift")).toBeTruthy();
@@ -42,7 +42,7 @@ describe("swiftfiletype", function() {
         expect.assertions(2);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
         expect(stf.handles("foo.h")).toBeTruthy();
@@ -51,7 +51,7 @@ describe("swiftfiletype", function() {
         expect.assertions(2);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
         expect(!stf.handles("fooswift")).toBeTruthy();
@@ -60,7 +60,7 @@ describe("swiftfiletype", function() {
         expect.assertions(2);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
         expect(!stf.handles("foo.html")).toBeTruthy();
@@ -69,7 +69,7 @@ describe("swiftfiletype", function() {
         expect.assertions(2);
         var p = new SwiftProject({
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./test/testfiles");
         var stf = new SwiftFileType(p);
         expect(stf).toBeTruthy();
         expect(stf.handles("a/b/c/foo.swift")).toBeTruthy();

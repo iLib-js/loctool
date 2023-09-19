@@ -34,7 +34,7 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var base = path.dirname(module.id);
 describe("htmlfile", function() {
@@ -47,17 +47,17 @@ describe("htmlfile", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
-        var htf = new HTMLFile(p, "./testfiles/html/CookieFlow.html");
+        var htf = new HTMLFile(p, "./test/testfiles/html/CookieFlow.html");
         expect(htf).toBeTruthy();
     });
     test("HTMLFileConstructorNoFile", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -67,7 +67,7 @@ describe("htmlfile", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -78,7 +78,7 @@ describe("htmlfile", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -89,7 +89,7 @@ describe("htmlfile", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -100,7 +100,7 @@ describe("htmlfile", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -111,7 +111,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -128,7 +128,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -145,7 +145,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -168,7 +168,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -185,7 +185,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -201,7 +201,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -215,7 +215,7 @@ describe("htmlfile", function() {
         expect.assertions(3);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -229,7 +229,7 @@ describe("htmlfile", function() {
         expect.assertions(4);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -244,7 +244,7 @@ describe("htmlfile", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -272,7 +272,7 @@ describe("htmlfile", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -298,7 +298,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -322,7 +322,7 @@ describe("htmlfile", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -350,7 +350,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -374,7 +374,7 @@ describe("htmlfile", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -408,7 +408,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -429,7 +429,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -452,7 +452,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -474,7 +474,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -497,7 +497,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -520,7 +520,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -543,7 +543,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -566,7 +566,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -589,7 +589,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -611,7 +611,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -633,7 +633,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -655,7 +655,7 @@ describe("htmlfile", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -678,7 +678,7 @@ describe("htmlfile", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -705,7 +705,7 @@ describe("htmlfile", function() {
         expect.assertions(11);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -736,7 +736,7 @@ describe("htmlfile", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -760,7 +760,7 @@ describe("htmlfile", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -785,7 +785,7 @@ describe("htmlfile", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -809,7 +809,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -835,7 +835,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -864,7 +864,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -982,7 +982,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1009,7 +1009,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1041,7 +1041,7 @@ describe("htmlfile", function() {
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1074,7 +1074,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1120,7 +1120,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1168,7 +1168,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1217,7 +1217,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1264,7 +1264,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1295,7 +1295,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1326,7 +1326,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1356,7 +1356,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1386,7 +1386,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1416,7 +1416,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1446,7 +1446,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1488,7 +1488,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1538,7 +1538,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1576,7 +1576,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -1608,7 +1608,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -1661,7 +1661,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -1720,7 +1720,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -1780,7 +1780,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p, "simple.html");
@@ -1792,7 +1792,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p, "./asdf/bar/simple.html");
@@ -1804,7 +1804,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             localeMap: {
                 "fr-FR": "fr"
@@ -1819,7 +1819,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p, "./asdf/bar/simple.html");
@@ -1831,7 +1831,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p, "./asdf/bar/simple");
@@ -1843,7 +1843,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p, "./asdf/bar/simple.en-US.html");
@@ -2018,7 +2018,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -2058,7 +2058,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -2084,7 +2084,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);
@@ -2121,7 +2121,7 @@ describe("htmlfile", function() {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLFile(p);

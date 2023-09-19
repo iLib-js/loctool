@@ -28,8 +28,8 @@ var project = new WebProject({
     pseudoLocale: "ps-DO",
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project2 = new WebProject({
@@ -37,8 +37,8 @@ var project2 = new WebProject({
     pseudoLocale: "zxx-XX",
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project3 = new WebProject({
@@ -46,8 +46,8 @@ var project3 = new WebProject({
     pseudoLocale: ["en-GB", "zxx-XX", "zxx-Hans-XX"],
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project4 = new WebProject({
@@ -55,19 +55,19 @@ var project4 = new WebProject({
     pseudoLocale: {
         "en-GB": "english-british",
         "en-CA": "english-canadian"
-    });
+    },
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-CA", "en-NZ", "es-US"]
 });
 var project5 = new WebProject({
     sourceLocale: "en-US",
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-AU", "en-CA", "en-NZ", "es-US"]
 });
 var project6 = new WebProject({
@@ -76,11 +76,11 @@ var project6 = new WebProject({
         "en-GB": "english-british",
         "zxx-XX": "debug",
         "zxx-Hans-XX": "debug-han-simplified"
-    });
+    },
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project7 = new WebProject({
@@ -88,8 +88,8 @@ var project7 = new WebProject({
     pseudoLocale: {},
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project8 = new WebProject({
@@ -97,8 +97,8 @@ var project8 = new WebProject({
     pseudoLocale: [],
     resourceDirs: {
         "yml": "config/locales"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-NZ", "es-US"]
 });
 var project9 = new WebProject({
@@ -106,22 +106,22 @@ var project9 = new WebProject({
     pseudoLocale: {
         "as-XX": "debug-font",
         "kn-XX": "debug-font"
-    });
+    },
     resourceDirs: {
         "json": "resources"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-US", "ko-KR"]
 });
 var project10 = new WebProject({
     sourceLocale: "en-US",
     pseudoLocale: {
         "zxx-Hans-XX": "debug-han-simplified"
-    });
+    },
     resourceDirs: {
         "json": "resources"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales: ["en-GB", "en-US", "ko-KR"]
 });
 describe("pseudofactory", function() {
@@ -557,7 +557,7 @@ describe("pseudofactory", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales: ["en-GB", "en-NZ", "es-US"],
             nopseudo: true
         });

@@ -28,7 +28,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -41,7 +41,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -55,7 +55,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -71,7 +71,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -85,7 +85,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -101,7 +101,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -116,7 +116,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -132,7 +132,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -147,7 +147,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -161,7 +161,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -175,7 +175,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             flavors: ["ASDF"]
         });
@@ -190,7 +190,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);
@@ -204,7 +204,7 @@ describe("yamlfiletype", function() {
             resourceDirs: {
                 "yml": "config/locales"
             }
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var yft = new YamlFileType(p);

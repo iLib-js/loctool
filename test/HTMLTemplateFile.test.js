@@ -16,17 +16,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 var path = require("path");
 var fs = require("fs");
+
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
     var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
+
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
 }
+
 function diff(a, b) {
     var min = Math.min(a.length, b.length);
+
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
             console.log("Found difference at character " + i);
@@ -34,7 +39,7 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 describe("htmltemplatefile", function() {
     test("HTMLTemplateFileConstructor", function() {
@@ -42,80 +47,94 @@ describe("htmltemplatefile", function() {
         var htf = new HTMLTemplateFile();
         expect(htf).toBeTruthy();
     });
+
     test("HTMLTemplateFileConstructorParams", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
-        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./test/testfiles/tmpl/CookieFlowTemplate.tmpl.html");
         expect(htf).toBeTruthy();
     });
+
     test("HTMLTemplateFileConstructorNoFile", function() {
         expect.assertions(1);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
     });
+
     test("HTMLTemplateFileMakeKey", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         expect(htf.makeKey("This is a test")).toBe("This is a test");
     });
+
     test("HTMLTemplateFileMakeKeyNoReturnChars", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         expect(htf.makeKey("This is\n a te\nst")).toBe("This is a te st");
     });
+
     test("HTMLTemplateFileMakeKeyCompressWhiteSpace", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         expect(htf.makeKey("This \t is\n \t a   test")).toBe("This is a test");
     });
+
     test("HTMLTemplateFileMakeKeyTrimWhiteSpace", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         expect(htf.makeKey("\n\t This \t is\n \t a   test\n\n\n")).toBe("This is a test");
     });
+
     test("HTMLTemplateFileParseSimpleGetByKey", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         htf.parse('<html><body>This is a test</body></html>');
+
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
         var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test", "html"));
@@ -123,16 +142,19 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a test");
         expect(r.getKey()).toBe("This is a test");
     });
+
     test("HTMLTemplateFileParseSimpleGetBySource", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         htf.parse('<html><body>This is a test</body></html>');
+
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
         var r = set.getBySource("This is a test");
@@ -140,13 +162,15 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a test");
         expect(r.getKey()).toBe("This is a test");
     });
+
     test("HTMLTemplateFileParseSimpleIgnoreWhitespace", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         htf.parse('<html>\n' +
@@ -154,6 +178,7 @@ describe("htmltemplatefile", function() {
                 '     This is a test    \n' +
                 '</body>\n' +
                 '</html>\n');
+
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
         var r = set.getBySource("This is a test");
@@ -161,46 +186,53 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a test");
         expect(r.getKey()).toBe("This is a test");
     });
+
     test("HTMLTemplateFileParseDontExtractUnicodeWhitespace", function() {
         expect.assertions(3);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         // contains U+00A0 non-breaking space and other Unicode space characters
         htf.parse('<div>            ​‌‍ ⁠⁡⁢⁣⁤</div>\n');
+
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
         expect(set.size()).toBe(0);
     });
+
     test("HTMLTemplateFileParseDontExtractNbspEntity", function() {
         expect.assertions(3);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p);
         expect(htf).toBeTruthy();
         htf.parse('<div>&nbsp; &nnbsp; &mmsp;</div>\n');
+
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
         expect(set.size()).toBe(0);
     });
+
     test("HTMLTemplateFileParseDoExtractOtherEntities", function() {
         expect.assertions(3);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -210,11 +242,12 @@ describe("htmltemplatefile", function() {
         expect(set).toBeTruthy();
         expect(set.size()).toBe(1);
     });
+
     test("HTMLTemplateFileParseNoStrings", function() {
         expect.assertions(3);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -224,11 +257,12 @@ describe("htmltemplatefile", function() {
         expect(set).toBeTruthy();
         expect(set.size()).toBe(0);
     });
+
     test("HTMLTemplateFileParseSimpleRightSize", function() {
         expect.assertions(4);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -239,11 +273,12 @@ describe("htmltemplatefile", function() {
         expect(set).toBeTruthy();
         expect(set.size()).toBe(1);
     });
+
     test("HTMLTemplateFileParseMultiple", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -267,11 +302,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is also a test");
         expect(r.getKey()).toBe("This is also a test");
     });
+
     test("HTMLTemplateFileParseWithDups", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -293,11 +329,12 @@ describe("htmltemplatefile", function() {
         expect(r.getKey()).toBe("This is a test");
         expect(set.size()).toBe(2);
     });
+
     test("HTMLTemplateFileParseEscapeInvalidChars", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -317,11 +354,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is also a &#3; test");
         expect(r.getKey()).toBe("This is also a &#3; test");
     });
+
     test("HTMLTemplateFileParseIgnoreDoctypeTag", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -347,11 +385,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is also a test");
         expect(r.getKey()).toBe("This is also a test");
     });
+
     test("HTMLTemplateFileParseDontEscapeWhitespaceChars", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -371,11 +410,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is also a \u000C test");
         expect(r.getKey()).toBe("This is also a test");
     });
+
     test("HTMLTemplateFileParseSkipTemplateEchoTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -412,16 +452,17 @@ describe("htmltemplatefile", function() {
             '</div>');
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
-        var r = set.get(ResourceString.hashKey(undefined, "en-US", "Uploaded", "html"));
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "Uploaded <%= dateString %>", "html"));
         expect(r).toBeTruthy();
         expect(r.getSource()).toBe("Uploaded <%= dateString %>");
         expect(r.getKey()).toBe("Uploaded <%= dateString %>");
     });
+
     test("HTMLTemplateFileParseSkipTemplateEchoEscapedTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -463,11 +504,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("Uploaded");
         expect(r.getKey()).toBe("Uploaded");
     });
+
     test("HTMLTemplateFileSkipScript", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -497,11 +539,12 @@ describe("htmltemplatefile", function() {
         expect(!r).toBeTruthy();
         expect(set.size()).toBe(1);
     });
+
     test("HTMLTemplateFileParseNonBreakingTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -518,11 +561,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a <em>test</em> of the emergency parsing system.");
         expect(r.getKey()).toBe("This is a<em>test</em>of the emergency parsing system.");
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsOutside", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -541,11 +585,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a test of the emergency parsing system.");
         expect(r.getKey()).toBe("This is a test of the emergency parsing system.");
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsInside", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -564,11 +609,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
         expect(r.getKey()).toBe('This is<span id="foo" class="bar">a test of the emergency parsing</span>system.');
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsInsideMultiple", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -586,11 +632,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
         expect(r.getKey()).toBe('This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.');
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsNotWellFormed", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -608,11 +655,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
         expect(r.getKey()).toBe('This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.');
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsNotWellFormedWithTerminatorTag", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -630,11 +678,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
         expect(r.getKey()).toBe('This is<span id="foo" class="bar">a test of the<em>emergency parsing');
     });
+
     test("HTMLTemplateFileParseNonBreakingTagsTagStackIsReset", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -653,11 +702,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('This is <b>another test</b> of the emergency parsing');
         expect(r.getKey()).toBe('This is<b>another test</b>of the emergency parsing');
     });
+
     test("HTMLTemplateFileParseLocalizableTitle", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -680,11 +730,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This value is localizable");
         expect(r.getKey()).toBe("This value is localizable");
     });
+
     test("HTMLTemplateFileParseLocalizableAttributes", function() {
         expect.assertions(11);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -711,11 +762,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("localizable placeholder here");
         expect(r.getKey()).toBe("localizable placeholder here");
     });
+
     test("HTMLTemplateFileParseLocalizableAttributesSkipEmpty", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -735,11 +787,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("This is a test");
         expect(r.getKey()).toBe("This is a test");
     });
+
     test("HTMLTemplateFileParseLocalizableAttributesAndNonBreakingTags", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -760,11 +813,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("localizable title");
         expect(r.getKey()).toBe("localizable title");
     });
+
     test("HTMLTemplateFileParseBreakBetweenTemplateTags", function() {
         expect.assertions(8);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -789,11 +843,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("Get insurance quotes for free!");
         expect(r.getKey()).toBe("Get insurance quotes for free!");
     });
+
     test("HTMLTemplateFileParseDontBreakBetweenTemplateEchoTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -810,11 +865,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Mr. <%= family_name %> is not available.');
         expect(r.getKey()).toBe('Mr. <%= family_name %> is not available.');
     });
+
     test("HTMLTemplateFileParseDontIncludeStartingTemplateEchoTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -831,11 +887,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Your friend is not available.');
         expect(r.getKey()).toBe('Your friend is not available.');
     });
+
     test("HTMLTemplateFileParseDontIncludeEndingTemplateEchoTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -847,16 +904,17 @@ describe("htmltemplatefile", function() {
                 '</html>\n');
         var set = htf.getTranslationSet();
         expect(set).toBeTruthy();
-        var r = set.getBySource('Your friend is not available.');
+        var r = set.getBySource('Your friend is not available. <%= until_when %>');
         expect(r).toBeTruthy();
-        expect(r.getSource()).toBe('Your friend is not available.');
-        expect(r.getKey()).toBe('Your friend is not available.');
+        expect(r.getSource()).toBe('Your friend is not available. <%= until_when %>');
+        expect(r.getKey()).toBe('Your friend is not available. <%= until_when %>');
     });
+
     test("HTMLTemplateFileParseTemplateEchoTagsInsideTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -873,11 +931,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Mr. <%= family_name %> is not available.');
         expect(r.getKey()).toBe('Mr. <%= family_name %> is not available.');
     });
+
     test("HTMLTemplateFileParseDontBreakBetweenTemplateEchoEscapedTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -894,11 +953,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Mr. <%- family_name %> is not available.');
         expect(r.getKey()).toBe('Mr. <%- family_name %> is not available.');
     });
+
     test("HTMLTemplateFileParseDontIncludeStartingTemplateEchoEscapedTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -915,11 +975,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Your friend is not available.');
         expect(r.getKey()).toBe('Your friend is not available.');
     });
+
     test("HTMLTemplateFileParseDontIncludeEndingTemplateEchoTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -936,11 +997,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Your friend is not available.');
         expect(r.getKey()).toBe('Your friend is not available.');
     });
+
     test("HTMLTemplateFileParseTemplateEchoEscapedTagsInsideTags", function() {
         expect.assertions(5);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -957,11 +1019,12 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('Mr. <%- family_name %> is not available.');
         expect(r.getKey()).toBe('Mr. <%- family_name %> is not available.');
     });
+
     test("HTMLTemplateFileParseI18NComments", function() {
         expect.assertions(6);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -980,12 +1043,13 @@ describe("htmltemplatefile", function() {
         expect(r.getKey()).toBe("This is a test of the emergency parsing system.");
         expect(r.getComment()).toBe("this describes the text below");
     });
+
     test("HTMLTemplateFileParseIgnoreScriptTags", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1006,12 +1070,13 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("foo");
         expect(r.getKey()).toBe("foo");
     });
+
     test("HTMLTemplateFileParseIgnoreStyleTags", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1035,12 +1100,13 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("foo");
         expect(r.getKey()).toBe("foo");
     });
+
     test("HTMLTemplateFileParseIgnoreCodeTags", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1060,6 +1126,7 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("foo");
         expect(r.getKey()).toBe("foo");
     });
+
     test("HTMLTemplateFileExtractFile", function() {
         expect.assertions(14);
         var base = path.dirname(module.id);
@@ -1091,6 +1158,7 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("Ask");
         expect(r.getKey()).toBe("Ask");
     });
+
     test("HTMLTemplateFileExtractFile2", function() {
         expect.assertions(17);
         var base = path.dirname(module.id);
@@ -1110,23 +1178,24 @@ describe("htmltemplatefile", function() {
         expect(r).toBeTruthy();
         expect(r.getSource()).toBe("Description");
         expect(r.getKey()).toBe("Description");
-        r = set.getBySource('Authored by');
+        r = set.getBySource('Authored by <%=val.author.full_name%>');
         expect(r).toBeTruthy();
-        expect(r.getSource()).toBe('Authored by');
-        expect(r.getKey()).toBe('Authored by');
+        expect(r.getSource()).toBe('Authored by <%=val.author.full_name%>');
+        expect(r.getKey()).toBe('Authored by <%=val.author.full_name%>');
         r = set.getBySource('Agreed');
         expect(r).toBeTruthy();
         expect(r.getSource()).toBe('Agreed');
         expect(r.getKey()).toBe('Agreed');
-        r = set.getBySource('and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
+        r = set.getBySource('and <%=val.desc_agrees.length%><a class="bold"><span class="friend_agree_count_h"></span> of your friends agree</a>');
         expect(r).toBeTruthy();
-        expect(r.getSource()).toBe('and <a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span> of your friends agree</a>');
-        expect(r.getKey()).toBe('and<a class="bold"><span class="friend_agree_count_h"><%=val.desc_agrees.length%></span>of your friends agree</a>');
+        expect(r.getSource()).toBe('and <%=val.desc_agrees.length%><a class="bold"><span class="friend_agree_count_h"></span> of your friends agree</a>');
+        expect(r.getKey()).toBe('and <%=val.desc_agrees.length%><a class="bold"><span class="friend_agree_count_h"></span>of your friends agree</a>');
         r = set.getBySource("Write a better description &raquo;");
         expect(r).toBeTruthy();
         expect(r.getSource()).toBe("Write a better description &raquo;");
         expect(r.getKey()).toBe("Write a better description &raquo;");
     });
+
     test("HTMLTemplateFileExtractUndefinedFile", function() {
         expect.assertions(2);
         var base = path.dirname(module.id);
@@ -1142,6 +1211,7 @@ describe("htmltemplatefile", function() {
         var set = htf.getTranslationSet();
         expect(set.size()).toBe(0);
     });
+
     test("HTMLTemplateFileExtractBogusFile", function() {
         expect.assertions(2);
         var base = path.dirname(module.id);
@@ -1157,13 +1227,14 @@ describe("htmltemplatefile", function() {
         var set = htf.getTranslationSet();
         expect(set.size()).toBe(0);
     });
+
     test("HTMLTemplateFileLocalizeText", function() {
         expect.assertions(2);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1184,13 +1255,14 @@ describe("htmltemplatefile", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextPreserveWhitespace", function() {
         expect.assertions(2);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1216,13 +1288,14 @@ describe("htmltemplatefile", function() {
             '</body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextPreserveSelfClosingTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             name: "foo",
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1250,12 +1323,13 @@ describe("htmltemplatefile", function() {
             '</body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextMultiple", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1296,12 +1370,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextWithDups", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1344,12 +1419,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextWithDoctypeTag", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1393,12 +1469,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextSkipScript", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1440,12 +1517,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1471,12 +1549,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTagsOutside", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1502,12 +1581,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTagsInside", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1532,12 +1612,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTagsInsideMultiple", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1562,12 +1643,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTagsNotWellFormed", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1592,12 +1674,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonBreakingTagsNotWellFormedWithTerminatorTag", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1622,12 +1705,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextLocalizableTitle", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1664,12 +1748,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextLocalizableAttributes", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1714,12 +1799,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextLocalizableAttributesAndNonBreakingTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1752,12 +1838,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextBreakBetweenTemplateTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1798,12 +1885,13 @@ describe("htmltemplatefile", function() {
             '   </body>\n' +
             '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextDontBreakBetweenTemplateEchoTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1828,12 +1916,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextDontBreakBetweenTemplateEchoEscapedTags", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1858,12 +1947,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextI18NComments", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -1890,12 +1980,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextIdentifyResourceIds", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -1943,12 +2034,13 @@ describe("htmltemplatefile", function() {
            diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextIdentifyResourceIdsWithAttributes", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -2002,12 +2094,13 @@ describe("htmltemplatefile", function() {
            diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextIdentifyResourceIdsWithEmbeddedAttributes", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -2062,36 +2155,39 @@ describe("htmltemplatefile", function() {
            diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileGetLocalizedPathSimple", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p, "simple.tmpl.html");
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("simple.fr-FR.tmpl.html");
     });
+
     test("HTMLTemplateFileGetLocalizedPathComplex", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("asdf/bar/simple.fr-FR.tmpl.html");
     });
+
     test("HTMLTemplateFileGetLocalizedPathWithLocaleMap", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             localeMap: {
                 "fr-FR": "fr"
@@ -2101,42 +2197,46 @@ describe("htmltemplatefile", function() {
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("asdf/bar/simple.fr.tmpl.html");
     });
+
     test("HTMLTemplateFileGetLocalizedPathRegularHTMLFileName", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.html");
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("asdf/bar/simple.fr-FR.html");
     });
+
     test("HTMLTemplateFileGetLocalizedPathNotEnoughParts", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple");
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("asdf/bar/simple.fr-FR");
     });
+
     test("HTMLTemplateFileGetLocalizedSourceLocale", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.en-US.tmpl.html");
         expect(htf).toBeTruthy();
         expect(htf.getLocalizedPath("fr-FR")).toBe("asdf/bar/simple.fr-FR.tmpl.html");
     });
+
     test("HTMLTemplateFileLocalize", function() {
         expect.assertions(5);
         var base = path.dirname(module.id);
@@ -2295,6 +2395,7 @@ describe("htmltemplatefile", function() {
             '</div>'
         );
     });
+
     test("HTMLTemplateFileLocalizeNoStrings", function() {
         expect.assertions(3);
         var base = path.dirname(module.id);
@@ -2330,12 +2431,13 @@ describe("htmltemplatefile", function() {
         expect(fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html"))).toBeTruthy();
         expect(fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html"))).toBeTruthy();
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2366,12 +2468,13 @@ describe("htmltemplatefile", function() {
                 '   </body>\n' +
                 '</html>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextNonTemplateTagsInsideTags", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2406,12 +2509,13 @@ describe("htmltemplatefile", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags2", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2437,12 +2541,13 @@ describe("htmltemplatefile", function() {
         expect(htf.localizeText(translations, "fr-FR")).toBe('<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(specialist.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
                 '<label for="entity_group" class="radio-label">Groupe</label>');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags3", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2470,12 +2575,13 @@ describe("htmltemplatefile", function() {
                 '      asdf\n' +
                 '    </select>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags4", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2503,12 +2609,13 @@ describe("htmltemplatefile", function() {
                 '    asdf\n' +
                 '</span>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags5", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2531,12 +2638,13 @@ describe("htmltemplatefile", function() {
         }));
         expect(htf.localizeText(translations, "fr-FR")).toBe('<a class="specialist-name" href=<%= val.specialist.url%>>asdf</a>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags5a", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2559,12 +2667,13 @@ describe("htmltemplatefile", function() {
         }));
         expect(htf.localizeText(translations, "fr-FR")).toBe('<a class="specialist-name" href=<%- val.specialist.url%>>asdf</a>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags6", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2640,12 +2749,13 @@ describe("htmltemplatefile", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags7", function() {
         expect.assertions(6);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2668,12 +2778,13 @@ describe("htmltemplatefile", function() {
         }));
         expect(htf.localizeText(translations, "fr-FR")).toBe('<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nasdf\n</div>');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags8", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2692,12 +2803,13 @@ describe("htmltemplatefile", function() {
         }));
         expect(htf.localizeText(translations, "fr-FR")).toBe('<div class="star <%= (score > 30) ? "filled-star" : (score > 20) ? "half-star" : "empty-star"%>">asdf</div>');
     });
+
     test("HTMLTemplateFileLocalizeTextTemplateTagsInsideTags9", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2734,12 +2846,13 @@ describe("htmltemplatefile", function() {
                 '    <div class="btn grey confirm-btn" style="width: 93%"><%= confirm_btn.text %></div>\n' +
                 '  <% } %>');
     });
+
     test("HTMLTemplateFileLocalizeTextEscapeDoubleQuotes", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2760,12 +2873,13 @@ describe("htmltemplatefile", function() {
                 '  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
         expect(htf.localizeText(translations, "fr-FR")).toBe('  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
     });
+
     test("HTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTags", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2786,12 +2900,13 @@ describe("htmltemplatefile", function() {
                 '  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>asdf</span>');
         expect(htf.localizeText(translations, "fr-FR")).toBe('  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>asdf</span>');
     });
+
     test("HTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTagsWithPercentInThem", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2812,12 +2927,13 @@ describe("htmltemplatefile", function() {
                 '  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>asdf</span>');
         expect(htf.localizeText(translations, "fr-FR")).toBe('  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>asdf</span>');
     });
+
     test("HTMLTemplateFileLocalizeTextIgnoreScriptTags", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2849,12 +2965,13 @@ describe("htmltemplatefile", function() {
         diff(htf.localizeText(translations, "fr-FR"), expected);
         expect(htf.localizeText(translations, "fr-FR")).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextIgnoreStyleTags", function() {
         expect.assertions(3);
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2886,12 +3003,13 @@ describe("htmltemplatefile", function() {
         diff(htf.localizeText(translations, "fr-FR"), expected);
         expect(htf.localizeText(translations, "fr-FR")).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextWithEmbeddedTemplateEchoTag", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -2966,11 +3084,12 @@ describe("htmltemplatefile", function() {
         diff(htf.localizeText(translations, "fr-FR"), expected);
         expect(htf.localizeText(translations, "fr-FR")).toBe(expected);
     });
+
     test("HTMLTemplateFileParseWithHTMLInTheTemplateTag", function() {
         expect.assertions(11);
         var p = new WebProject({
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -3012,12 +3131,13 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe('75% cost reduction for acquiring new customers');
         expect(r.getKey()).toBe('75% cost reduction for acquiring new customers');
     });
+
     test("HTMLTemplateFileLocalizeTextWithEmbeddedTemplateTag", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -3097,12 +3217,13 @@ describe("htmltemplatefile", function() {
                 '    </ul>         \n' +
                 '</div>\n');
     });
+
     test("HTMLTemplateFileLocalizeTextBug1", function() {
         expect.assertions(2);
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -3137,12 +3258,13 @@ describe("htmltemplatefile", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileLocalizeTextBug2", function() {
         expect.assertions(2);
         var p = new WebProject({
             id: "foo",
             sourceLocale: "en-US"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var htf = new HTMLTemplateFile(p);
@@ -3220,24 +3342,30 @@ describe("htmltemplatefile", function() {
         diff(actual, expected);
         expect(actual).toBe(expected);
     });
+
     test("HTMLTemplateFileExtractFileFullyExtracted", function() {
         expect.assertions(17);
         var base = path.dirname(module.id);
+
         var p = new WebProject({
             sourceLocale: "en-US"
         }, path.join(base, "testfiles"), {
             locales:["en-GB"]
         });
+
         var htf = new HTMLTemplateFile(p, "./tmpl/meeting_panel.tmpl.html");
         expect(htf).toBeTruthy();
         // should read the file
         htf.extract();
+
         var set = htf.getTranslationSet();
+
         expect(set.size()).toBe(5);
-        var r = set.getBySource("Upcoming Appointments");
+
+        var r = set.getBySource("Upcoming Appointments\n      <%= upcoming_meetings.length %>");
         expect(r).toBeTruthy();
-        expect(r.getSource()).toBe("Upcoming Appointments");
-        expect(r.getKey()).toBe("Upcoming Appointments");
+        expect(r.getSource()).toBe("Upcoming Appointments\n      <%= upcoming_meetings.length %>");
+        expect(r.getKey()).toBe("Upcoming Appointments <%= upcoming_meetings.length %>");
         r = set.getBySource("Completed Meetings");
         expect(r).toBeTruthy();
         expect(r.getSource()).toBe("Completed Meetings");
@@ -3255,6 +3383,7 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("Ask your co-workers now");
         expect(r.getKey()).toBe("Ask your co-workers now");
     });
+
     test("HTMLTemplateFileExtractFileFullyExtracted2", function() {
         expect.assertions(8);
         var base = path.dirname(module.id);
@@ -3278,6 +3407,7 @@ describe("htmltemplatefile", function() {
         expect(r.getSource()).toBe("Test phrase");
         expect(r.getKey()).toBe("Test phrase");
     });
+
     test("HTMLTemplateFileExtractFileNewResources", function() {
         expect.assertions(10);
         var base = path.dirname(module.id);
@@ -3352,7 +3482,7 @@ describe("htmltemplatefile", function() {
         var resources = set.getAll();
         expect(resources.length).toBe(1);
         var r = set.getBySource("Choose a meeting method");
-        expect(!r).toBeTruthy();
+        expect(r).toBeFalsy();
         r = set.getBySource("Test phrase");
         expect(r).toBeTruthy();
         expect(resources[0].getKey()).toBe("Test phrase");

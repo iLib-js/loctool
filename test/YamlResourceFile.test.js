@@ -32,15 +32,15 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var p = new WebProject({
     id: "webapp",
     sourceLocale: "en-US",
     resourceDirs: {
         "yml": "a/b"
-    });
-}, "./testfiles", {
+    }
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var yft = new YamlResourceFileType(p);
@@ -292,7 +292,7 @@ describe("yamlresourcefile", function() {
             reskey: "Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         expect(r).toBeTruthy();
-        expect(r[0].getSource(), "Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure).toBe(soon be a household name.");
+        expect(r[0].getSource()).toBe("Everyone at MyCompany has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
         expect(r[0].getKey()).toBe("Everyone_at_MyCompany_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
         expect(!r[0].getComment()).toBeTruthy();
         var r = set.getBy({
@@ -501,7 +501,7 @@ describe("yamlresourcefile", function() {
         expect(set).toBeTruthy();
         var r = set.get(ContextResourceString.hashKey("webapp", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         expect(r).toBeTruthy();
-        expect(r.getSource(), "%1).toBe(%2 has answered a question you asked!");
+        expect(r.getSource()).toBe("%1, %2 has answered a question you asked!");
         expect(r.getKey()).toBe("email_subject");
         expect(r.getSourceLocale()).toBe("en-US");
         expect(r.getContext()).toBe("member_question_asked\\@answered");

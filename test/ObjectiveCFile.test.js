@@ -24,7 +24,7 @@ if (!ObjectiveCFile) {
 var p = new ObjectiveCProject({
     id: "ios",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var ocft = new ObjectiveCFileType(p);
@@ -36,7 +36,7 @@ describe("objectivecfile", function() {
     });
     test("ObjectiveCFileConstructorParams", function() {
         expect.assertions(1);
-        var j = new ObjectiveCFile(p, "./testfiles/objc/t1.m", ocft, ocft);
+        var j = new ObjectiveCFile(p, "./test/testfiles/objc/t1.m", ocft, ocft);
         expect(j).toBeTruthy();
     });
     test("ObjectiveCFileConstructorNoFile", function() {

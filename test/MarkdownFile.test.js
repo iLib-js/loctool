@@ -35,25 +35,25 @@ function diff(a, b) {
             console.log("b: " + b.substring(i));
             break;
         }
-    });
+    }
 }
 var p = new WebProject({
     name: "foo",
     id: "foo",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     locales:["en-GB"]
 });
 var p2 = new WebProject({
     name: "foo",
     id: "foo",
     sourceLocale: "en-US"
-}, "./testfiles", {
+}, "./test/testfiles", {
     nopseudo: true,
     locales:["en-GB"],
     localeMap: {
         "fr-FR": "fr"
-    });
+    }
 });
 var mdft = new MarkdownFileType(p);
 var base = path.dirname(module.id);
@@ -65,7 +65,7 @@ describe("markdown", function() {
     });
     test("MarkdownFileConstructorParams", function() {
         expect.assertions(1);
-        var mf = new MarkdownFile(p, "./testfiles/md/test1.md");
+        var mf = new MarkdownFile(p, "./test/testfiles/md/test1.md");
         expect(mf).toBeTruthy();
     });
     test("MarkdownFileConstructorNoFile", function() {
@@ -757,7 +757,7 @@ describe("markdown", function() {
         expect(r.getKey()).toBe("r139148599");
         var r = set.getBySource("And finally, the last test.");
         expect(r).toBeTruthy();
-        expect(r.getSource(), "And finally).toBe(the last test.");
+        expect(r.getSource()).toBe("And finally, the last test.");
         expect(r.getKey()).toBe("r177500258");
     });
     test("MarkdownFileParseListWithTextBefore", function() {
@@ -811,7 +811,7 @@ describe("markdown", function() {
         expect(set.size()).toBe(2);
         var r = set.getBySource("The viewer can be embedded in an IFrame, or linked directly. The URL pattern for the viewer is:");
         expect(r).toBeTruthy();
-        expect(r.getSource(), "The viewer can be embedded in an IFrame).toBe(or linked directly. The URL pattern for the viewer is:");
+        expect(r.getSource()).toBe("The viewer can be embedded in an IFrame, or linked directly. The URL pattern for the viewer is:");
         expect(r.getKey()).toBe("r220720707");
         var r = set.getBySource("The File ID can be obtained from the API or from the web application user interface.");
         expect(r).toBeTruthy();
@@ -1130,7 +1130,7 @@ describe("markdown", function() {
         expect(r.getKey()).toBe("r548615397");
         r = set.getBySource("This is some text. This is more text. Pretty, pretty text.");
         expect(r).toBeTruthy();
-        expect(r.getSource(), "This is some text. This is more text. Pretty).toBe(pretty text.");
+        expect(r.getSource()).toBe("This is some text. This is more text. Pretty, pretty text.");
         expect(r.getKey()).toBe("r777006502");
         r = set.getBySource("This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.");
         expect(r).toBeTruthy();
@@ -1835,7 +1835,7 @@ describe("markdown", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"],
             identify: true
         });
@@ -1876,7 +1876,7 @@ describe("markdown", function() {
         var p = new WebProject({
             sourceLocale: "en-US",
             id: "foo"
-        }, "./testfiles", {
+        }, "./test/testfiles", {
             locales:["en-GB"]
         });
         var mf = new MarkdownFile(p);
@@ -2025,9 +2025,9 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
-        expect(fs.existsSync(path.join(base, p.root, "fr-FR/md/test1.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "de-DE/md/test1.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p.root, "fr-FR/md/test1.md"), "utf-8");
+        expect(fs.existsSync(path.join(p.root, "fr-FR/md/test1.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "de-DE/md/test1.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p.root, "fr-FR/md/test1.md"), "utf-8");
         var expected =
             '---\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
@@ -2065,7 +2065,7 @@ describe("markdown", function() {
             'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
         diff(content, expected);
         expect(content).toBe(expected);
-        var content = fs.readFileSync(path.join(base, p.root, "de-DE/md/test1.md"), "utf-8");
+        var content = fs.readFileSync(path.join(p.root, "de-DE/md/test1.md"), "utf-8");
         var expected =
             '---\n' +
             'title: "This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself."\n' +
@@ -2176,9 +2176,9 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
-        expect(fs.existsSync(path.join(base, p.root, "fr-FR/md/test3.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "de-DE/md/test3.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p.root, "fr-FR/md/test3.md"), "utf-8");
+        expect(fs.existsSync(path.join(p.root, "fr-FR/md/test3.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "de-DE/md/test3.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p.root, "fr-FR/md/test3.md"), "utf-8");
         var expected =
             '---\n' +
             'title: This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n' +
@@ -2212,7 +2212,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileWithFrontMatterNotFullyTranslated", function() {
         expect.assertions(5);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {nopseudo: true});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {nopseudo: true});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans2.md", mdft2);
         expect(mf).toBeTruthy();
@@ -2268,9 +2268,9 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/fr-FR/notrans2.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/de-DE/notrans2.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/fr-FR/notrans2.md"), "utf-8");
+        expect(fs.existsSync(path.join(p.root, "md/subproject/fr-FR/notrans2.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "md/subproject/de-DE/notrans2.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/fr-FR/notrans2.md"), "utf-8");
         var expected =
             '---\n' +
             'frontmatter: true\n' +
@@ -2287,7 +2287,7 @@ describe("markdown", function() {
             'This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n';
         diff(content, expected);
         expect(content).toBe(expected);
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/de-DE/notrans2.md"), "utf-8");
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/de-DE/notrans2.md"), "utf-8");
         var expected =
             '---\n' +
             'frontmatter: true\n' +
@@ -2308,7 +2308,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileWithFrontMatterFullyTranslated", function() {
         expect.assertions(5);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans2.md", mdft2);
         expect(mf).toBeTruthy();
@@ -2380,9 +2380,9 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/fr-FR/notrans2.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/de-DE/notrans2.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/fr-FR/notrans2.md"), "utf-8");
+        expect(fs.existsSync(path.join(p.root, "md/subproject/fr-FR/notrans2.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "md/subproject/de-DE/notrans2.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/fr-FR/notrans2.md"), "utf-8");
         var expected =
             '---\n' +
             'frontmatter: true\n' +
@@ -2398,7 +2398,7 @@ describe("markdown", function() {
             'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
         diff(content, expected);
         expect(content).toBe(expected);
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/de-DE/notrans2.md"), "utf-8");
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/de-DE/notrans2.md"), "utf-8");
         var expected =
             '---\n' +
             'frontmatter: true\n' +
@@ -2418,7 +2418,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileWithNoFrontMatterAlreadyFullyTranslated", function() {
         expect.assertions(5);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         expect(mf).toBeTruthy();
@@ -2490,9 +2490,9 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/fr-FR/notrans.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "md/subproject/de-DE/notrans.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/fr-FR/notrans.md"), "utf-8");
+        expect(fs.existsSync(path.join(p.root, "md/subproject/fr-FR/notrans.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "md/subproject/de-DE/notrans.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/fr-FR/notrans.md"), "utf-8");
         var expected =
             '---\n' +
             'fullyTranslated: true\n' +
@@ -2506,7 +2506,7 @@ describe("markdown", function() {
             'Ceci est le titre de ce document de teste qui apparaît plusiers fois dans le document lui-même.\n';
         diff(content, expected);
         expect(content).toBe(expected);
-        var content = fs.readFileSync(path.join(base, p.root, "md/subproject/de-DE/notrans.md"), "utf-8");
+        var content = fs.readFileSync(path.join(p.root, "md/subproject/de-DE/notrans.md"), "utf-8");
         var expected =
             '---\n' +
             'fullyTranslated: true\n' +
@@ -2546,8 +2546,8 @@ describe("markdown", function() {
         }));
         mf.localize(translations, ["fr-FR", "de-DE"]);
         // should produce the files, even if there is nothing to localize in them
-        expect(fs.existsSync(path.join(base, p.root, "fr-FR/md/nostrings.md"))).toBeTruthy();
-        expect(fs.existsSync(path.join(base, p.root, "de-DE/md/nostrings.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "fr-FR/md/nostrings.md"))).toBeTruthy();
+        expect(fs.existsSync(path.join(p.root, "de-DE/md/nostrings.md"))).toBeTruthy();
     });
     test("MarkdownFileExtractFileNewResources", function() {
         expect.assertions(16);
@@ -2750,7 +2750,7 @@ describe("markdown", function() {
         expect(set.size()).toBe(2);
         var resources = set.getAll();
         expect(resources.length).toBe(2);
-        expect(resources[0].getSource(), "For developer support).toBe(please reach out to us via one of our channels:");
+        expect(resources[0].getSource()).toBe("For developer support, please reach out to us via one of our channels:");
         expect(resources[1].getSource()).toBe("<c0>Ask on Twitter</c0>: For general questions and support.");
     });
     test("MarkdownFileParseWithLinkReferenceToExtractedURL", function() {
@@ -2838,7 +2838,7 @@ describe("markdown", function() {
         expect(set.size()).toBe(4);
         var resources = set.getAll();
         expect(resources.length).toBe(4);
-        expect(resources[0].getSource(), "For developer support).toBe(please reach out to us via one of our channels:");
+        expect(resources[0].getSource()).toBe("For developer support, please reach out to us via one of our channels:");
         expect(resources[1].getSource()).toBe("<c0>Ask on Twitter</c0>: For general questions and support.");
         expect(resources[2].getSource()).toBe("<c0>Ask in email</c0>: For specific questions and support.");
         expect(resources[3].getSource()).toBe("<c0>Ask on stack overflow</c0>: For community answers and support.");
@@ -3203,7 +3203,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileFullyTranslatedFlag", function() {
         expect.assertions(3);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         expect(mf).toBeTruthy();
@@ -3243,8 +3243,8 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR"]);
-        expect(fs.existsSync(path.join(base, p2.root, "fr-FR/notrans.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p2.root, "fr-FR/notrans.md"), "utf-8");
+        expect(fs.existsSync(path.join(p2.root, "fr-FR/notrans.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p2.root, "fr-FR/notrans.md"), "utf-8");
         var expected =
             '---\n' +
             'fullyTranslated: true\n' +
@@ -3261,7 +3261,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileFullyTranslatedFlagNoTranslations", function() {
         expect.assertions(3);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         expect(mf).toBeTruthy();
@@ -3269,8 +3269,8 @@ describe("markdown", function() {
         mf.extract();
         var translations = new TranslationSet();
         mf.localize(translations, ["fr-FR"]);
-        expect(fs.existsSync(path.join(base, p2.root, "fr-FR/notrans.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p2.root, "fr-FR/notrans.md"), "utf-8");
+        expect(fs.existsSync(path.join(p2.root, "fr-FR/notrans.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p2.root, "fr-FR/notrans.md"), "utf-8");
         // should not be translated because we didn't have translations for any strings
         var expected =
             '# This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n\n' +
@@ -3284,7 +3284,7 @@ describe("markdown", function() {
     test("MarkdownFileLocalizeFileFullyTranslatedFlagNotFullyTranslated", function() {
         expect.assertions(3);
         // this subproject has the "fullyTranslated" flag set to true
-        var p2 = ProjectFactory("./testfiles/md/subproject", {});
+        var p2 = ProjectFactory("./test/testfiles/md/subproject", {});
         var mdft2 = new MarkdownFileType(p2);
         var mf = new MarkdownFile(p2, "./notrans.md", mdft2);
         expect(mf).toBeTruthy();
@@ -3308,8 +3308,8 @@ describe("markdown", function() {
             datatype: "markdown"
         }));
         mf.localize(translations, ["fr-FR"]);
-        expect(fs.existsSync(path.join(base, p2.root, "fr-FR/notrans.md"))).toBeTruthy();
-        var content = fs.readFileSync(path.join(base, p2.root, "fr-FR/notrans.md"), "utf-8");
+        expect(fs.existsSync(path.join(p2.root, "fr-FR/notrans.md"))).toBeTruthy();
+        var content = fs.readFileSync(path.join(p2.root, "fr-FR/notrans.md"), "utf-8");
         // should not be translated because we didn't have translations for all strings
         var expected =
             '# This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.\n\n' +
