@@ -17,12 +17,15 @@
  * limitations under the License.
  */
 var fs = require("fs");
+
 if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
 }
+
 if (!XliffMerge) {
     var XliffMerge = require("../lib/XliffMerge.js");
 }
+
 function rmrf(path) {
     if (fs.existsSync(path)) {
         fs.unlinkSync(path);
@@ -32,35 +35,42 @@ function rmrf(path) {
 describe("xliffmerge", function() {
     test("XliffMergenoParameter", function() {
         expect.assertions(1);
+
         var target = XliffMerge();
         expect(!target).toBeTruthy();
     });
     test("XliffMergeWritenoParameter", function() {
         expect.assertions(1);
+
         var target = XliffMerge.write();
         expect(!target).toBeTruthy();
     });
     test("XliffMerge_en_US", function() {
         expect.assertions(1);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "test/testfiles/xliff20/app1/en-US.xliff",
             "test/testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
     });
     test("XliffMerge2_en_US", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "test/testfiles/xliff20/app1/en-US.xliff",
             "test/testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -124,27 +134,33 @@ describe("xliffmerge", function() {
         expect(result).toBeTruthy();
         expect(fs.existsSync("./test/testfiles/xliff20/output-en-US.xliff")).toBeTruthy();
     });
+
     test("XliffMerge_ko_KR", function() {
         expect.assertions(1);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "test/testfiles/xliff20/app1/ko-KR.xliff",
             "test/testfiles/xliff20/app2/ko-KR.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
     });
     test("XliffMerge2_ko_KR", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
             "test/testfiles/xliff20/app1/ko-KR.xliff",
             "test/testfiles/xliff20/app2/ko-KR.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -182,6 +198,7 @@ describe("xliffmerge", function() {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
+
         expect(actual).toBe(expected);
     });
     test("XliffMerge_write_ko_KR", function() {
@@ -202,6 +219,7 @@ describe("xliffmerge", function() {
     });
     test("XliffMerge_write_en_US_CustomStyle", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.xliffStyle = "custom";
@@ -209,8 +227,10 @@ describe("xliffmerge", function() {
             "test/testfiles/xliff20/app1/en-US.xliff",
             "test/testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -260,6 +280,7 @@ describe("xliffmerge", function() {
     });
     test("XliffMerge_write_en_US_CustomStyle_wrongStyle", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.xliffStyle = "custommm";
@@ -267,8 +288,10 @@ describe("xliffmerge", function() {
             "test/testfiles/xliff20/app1/en-US.xliff",
             "test/testfiles/xliff20/app2/en-US.xliff",
         ];
+
         var target = XliffMerge(settings);
         expect(target).toBeTruthy();
+
         var actual = target.serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +

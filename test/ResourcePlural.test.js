@@ -16,6 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!ResourcePlural) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var RegularPseudo = require("../lib/RegularPseudo.js");
@@ -23,19 +24,25 @@ if (!ResourcePlural) {
     var TranslationSet = require("../lib/TranslationSet.js");
     var WebProject = require("../lib/WebProject.js");
 }
+
 describe("resourceplural", function() {
     test("ResourcePluralConstructorEmpty", function() {
         expect.assertions(1);
+
         var rp = new ResourcePlural();
         expect(rp).toBeTruthy();
     });
+
     test("ResourcePluralConstructorNoProps", function() {
         expect.assertions(1);
+
         var rp = new ResourcePlural({});
         expect(rp).toBeTruthy();
     });
+
     test("ResourcePluralConstructor", function() {
         expect.assertions(1);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceLocale: "en-US",
@@ -49,8 +56,10 @@ describe("resourceplural", function() {
         });
         expect(rp).toBeTruthy();
     });
+
     test("ResourcePluralConstructorRightContents", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceLocale: "en-US",
@@ -63,6 +72,7 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getKey()).toBe("asdf");
         expect(rp.getSourcePlurals()).toStrictEqual({
             "one": "This is singular",
@@ -73,8 +83,10 @@ describe("resourceplural", function() {
         expect(rp.getSourceLocale()).toBe("en-US");
         expect(rp.pathName).toBe("a/b/c.java");
     });
+
     test("ResourcePluralConstructorFull", function() {
         expect.assertions(1);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceLocale: "en-US",
@@ -95,8 +107,10 @@ describe("resourceplural", function() {
         });
         expect(rp).toBeTruthy();
     });
+
     test("ResourcePluralConstructorRightContentsFull", function() {
         expect.assertions(7);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceLocale: "en-US",
@@ -116,6 +130,7 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getKey()).toBe("asdf");
         expect(rp.getSourcePlurals()).toStrictEqual({
             "one": "This is singular",
@@ -133,8 +148,10 @@ describe("resourceplural", function() {
             "many": "Dies ist der viele Fall"
         });
     });
+
     test("ResourcePluralConstructorDefaults", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -146,15 +163,19 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         // got the right one?
         expect(rp.getKey()).toBe("asdf");
+
         // now the defaults
         expect(rp.getSourceLocale()).toBe("en-US");
         expect(rp.datatype).toBe("x-android-resource");
         expect(rp.resType).toBe("plural");
     });
+
     test("ResourcePluralGetKey", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -169,8 +190,10 @@ describe("resourceplural", function() {
         expect(rp).toBeTruthy();
         expect(rp.getKey()).toBe("foo");
     });
+
     test("ResourcePluralGetSource", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -188,8 +211,10 @@ describe("resourceplural", function() {
         expect(rp.getSource("few")).toBe("This is the few case");
         expect(rp.getSource("many")).toBe("This is the many case");
     });
+
     test("ResourcePluralGetTarget", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -214,8 +239,10 @@ describe("resourceplural", function() {
         expect(rp.getTarget("few")).toBe("Dies ist der wenige Fall");
         expect(rp.getTarget("many")).toBe("Dies ist der viele Fall");
     });
+
     test("ResourcePluralGetNonExistent", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -231,14 +258,18 @@ describe("resourceplural", function() {
         expect(!rp.getSource("zero")).toBeTruthy();
         expect(!rp.getTarget("zero")).toBeTruthy();
     });
+
     test("ResourcePluralGetKeyEmpty", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural();
         expect(rp).toBeTruthy();
         expect(!rp.getKey()).toBeTruthy();
     });
+
     test("ResourcePluralGetContext", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -254,8 +285,10 @@ describe("resourceplural", function() {
         expect(rp).toBeTruthy();
         expect(rp.getContext()).toBe("landscape");
     });
+
     test("ResourcePluralGetContextEmpty", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -270,8 +303,10 @@ describe("resourceplural", function() {
         expect(rp).toBeTruthy();
         expect(!rp.getContext()).toBeTruthy();
     });
+
     test("ResourcePluralGetSourcePlurals", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -291,8 +326,10 @@ describe("resourceplural", function() {
             "many": "This is the many case"
         });
     });
+
     test("ResourcePluralGetTargetPlurals", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
@@ -319,8 +356,11 @@ describe("resourceplural", function() {
             "many": "Dies ist der viele Fall"
         });
     });
+
+
     test("ResourcePluralGetPluralsEmpty", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural();
         expect(rp).toBeTruthy();
         var plurals = rp.getSourcePlurals();
@@ -330,8 +370,10 @@ describe("resourceplural", function() {
         }
         expect(count).toBe(0);
     });
+
     test("ResourcePluralGeneratePseudo", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -343,17 +385,22 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         var rb = new RegularPseudo({
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("de-DE", rb);
+
             expect(rp2).toBeTruthy();
             expect(rp2.getTargetLocale()).toBe("de-DE");
         });
     });
+
     test("ResourcePluralGeneratePseudoRightString", function() {
         expect.assertions(4);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -365,13 +412,18 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         var rb = new RegularPseudo({
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("de-DE", rb);
+
             expect(rp2).toBeTruthy();
+
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 "one": "[Ťĥíš íš šíñğüľàŕ76543210]",
@@ -381,8 +433,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralGeneratePseudoSkipPercents", function() {
         expect.assertions(4);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -394,13 +448,18 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         var rb = new RegularPseudo({
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("de-DE", rb);
+
             expect(rp2).toBeTruthy();
+
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 "one": "[Ťĥíš íš %s šíñğüľàŕ9876543210]",
@@ -410,8 +469,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralGeneratePseudoBadLocale", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -423,16 +484,20 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         var rb = new RegularPseudo({
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo(undefined, rb);
             expect(!rp2).toBeTruthy();
         });
     });
+
     test("ResourcePluralGeneratePseudoBadBundle", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
@@ -444,11 +509,15 @@ describe("resourceplural", function() {
             }
         });
         expect(rp).toBeTruthy();
+
         var rp2 = rp.generatePseudo("de-DE", undefined);
+
         expect(!rp2).toBeTruthy();
     });
+
     test("ResourcePluralGeneratePseudoBritishRightString", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
@@ -459,22 +528,27 @@ describe("resourceplural", function() {
             pathName: "a/b/c.java"
         });
         expect(rp).toBeTruthy();
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var rb = new PseudoFactory({
             project: p,
             targetLocale: "en-GB",
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-GB", rb);
+
             expect(rp2).toBeTruthy();
             expect(rp2.getTargetLocale()).toBe("en-GB");
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 "one": "This is oestrogen",
@@ -483,8 +557,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralGeneratePseudoBritishLikeRightString", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
@@ -495,22 +571,27 @@ describe("resourceplural", function() {
             pathName: "a/b/c.java"
         });
         expect(rp).toBeTruthy();
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB", "en-ZA"]
         });
+
         var rb = new PseudoFactory({
             project: p,
             targetLocale: "en-ZA",
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-ZA", rb);
+
             expect(rp2).toBeTruthy();
             expect(rp2.getTargetLocale()).toBe("en-ZA");
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 "one": "This is oestrogen",
@@ -519,8 +600,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralGeneratePseudoCanadianRightString", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             key: "asdf",
             sourceStrings: {
@@ -531,22 +614,27 @@ describe("resourceplural", function() {
             pathName: "a/b/c.java"
         });
         expect(rp).toBeTruthy();
+
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB", "en-CA"]
         });
+
         var rb = new PseudoFactory({
             project: p,
             targetLocale: "en-CA",
             type: "c"
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("en-CA", rb);
+
             expect(rp2).toBeTruthy();
             expect(rp2.getTargetLocale()).toBe("en-CA");
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 "one": "This is estrogen",
@@ -555,8 +643,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralGeneratePseudoTraditionalChineseRightString", function() {
         expect.assertions(5);
+
         var rp = new ResourcePlural({
             project: "foo",
             key: "asdf",
@@ -569,12 +659,14 @@ describe("resourceplural", function() {
             sourceLocale: "en-US"
         });
         expect(rp).toBeTruthy();
+
         var p = new WebProject({
             id: "foo",
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB", "zh-Hans-CN", "zh-Hant-TW"]
         });
+
         var translations = new TranslationSet();
         translations.add(new ResourcePlural({
             project: "foo",
@@ -593,17 +685,21 @@ describe("resourceplural", function() {
             pathName: "a/b/c.java",
             targetLocale: "zh-Hans-CN"
         }));
+
         var rb = new PseudoFactory({
             project: p,
             targetLocale: "zh-Hant-TW",
             type: "c",
             set: translations
         });
+
         rb.init(function() {
             var rp2 = rp.generatePseudo("zh-Hant-TW", rb);
+
             expect(rp2).toBeTruthy();
             expect(rp2.getTargetLocale()).toBe("zh-Hant-TW");
             var t = rp2.getTargetPlurals();
+
             expect(t).toBeTruthy();
             expect(t).toStrictEqual({
                 one: "你好嗎？",
@@ -612,8 +708,10 @@ describe("resourceplural", function() {
             });
         });
     });
+
     test("ResourcePluralClone", function() {
         expect.assertions(10);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -630,7 +728,9 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         var rp2 = rp.clone();
+
         expect(rp2).toBeTruthy();
         expect(rp2.project).toBe(rp.project);
         expect(rp2.context).toBe(rp.context);
@@ -641,8 +741,10 @@ describe("resourceplural", function() {
         expect(rp2.comment).toBe(rp.comment);
         expect(rp2.state).toBe(rp.state);
     });
+
     test("ResourcePluralCloneWithOverrides", function() {
         expect.assertions(10);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -659,10 +761,12 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         var rp2 = rp.clone({
             sourceLocale: "fr-FR",
             state: "asdfasdf"
         });
+
         expect(rp2).toBeTruthy();
         expect(rp2.project).toBe(rp.project);
         expect(rp2.context).toBe(rp.context);
@@ -673,8 +777,10 @@ describe("resourceplural", function() {
         expect(rp2.comment).toBe(rp.comment);
         expect(rp2.state).toBe("asdfasdf");
     });
+
     test("ResourcePluralAddSource", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -691,12 +797,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(!rp.getSource("zero")).toBeTruthy();
+
         rp.addSource("zero", "This is the zero one")
+
         expect(rp.getSource("zero")).toBe("This is the zero one");
     });
+
     test("ResourcePluralAddSourceReplace", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -713,12 +824,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getSource("two")).toBe("This is double");
+
         rp.addSource("two", "This is two at a time")
+
         expect(rp.getSource("two")).toBe("This is two at a time");
     });
+
     test("ResourcePluralAddSourceSize", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -734,12 +850,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(3);
+
         rp.addSource("many", "This is the many one")
+
         expect(rp.size()).toBe(4);
     });
+
     test("ResourcePluralAddSourceUndefined", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -755,12 +876,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getSource("one")).toBe("This is singular");
+
         rp.addSource("one", undefined)
+
         expect(rp.getSource("one")).toBe("This is singular");
     });
+
     test("ResourcePluralAddSourceNoClass", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -776,12 +902,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(3);
+
         rp.addSource(undefined, "foobar")
+
         expect(rp.size()).toBe(3);
     });
+
     test("ResourcePluralAddSourceEmpty", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -792,12 +923,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(0);
+
         rp.addSource("one", "foobar")
+
         expect(rp.size()).toBe(1);
     });
+
     test("ResourcePluralAddSourceEmptyRightContents", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -808,12 +944,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(!rp.getSource("one")).toBeTruthy();
+
         rp.addSource("one", "foobar")
+
         expect(rp.getSource("one")).toBe("foobar");
     });
+
     test("ResourcePluralAddSourceMultiple", function() {
         expect.assertions(6);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -828,17 +969,22 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(rp).toBeTruthy();
+
         rp.addSource("one", "This is singular");
         rp.addSource("zero", "This is the zero one");
+
         expect(rp.getSource("zero")).toBe("This is the zero one");
         expect(rp.getSource("one")).toBe("This is singular");
         expect(rp.getSource("two")).toBe("This is double");
         expect(rp.getSource("few")).toBe("This is the few case");
         expect(rp.getSource("many")).toBe("This is the many case");
     });
+
     test("ResourcePluralAddTarget", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -862,12 +1008,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(!rp.getTarget("zero")).toBeTruthy();
+
         rp.addTarget("zero", "This is the zero one")
+
         expect(rp.getTarget("zero")).toBe("This is the zero one");
     });
+
     test("ResourcePluralAddTargetReplace", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -891,12 +1042,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getTarget("two")).toBe("Dies ist doppelt");
+
         rp.addTarget("two", "This is two at a time")
+
         expect(rp.getTarget("two")).toBe("This is two at a time");
     });
+
     test("ResourcePluralAddTargetSize", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -918,12 +1074,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(3);
+
         rp.addTarget("many", "This is the many one")
+
         expect(rp.size()).toBe(4);
     });
+
     test("ResourcePluralAddTargetUndefined", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -946,12 +1107,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.getTarget("one")).toBe("Dies ist einzigartig");
+
         rp.addTarget("one", undefined)
+
         expect(rp.getTarget("one")).toBe("Dies ist einzigartig");
     });
+
     test("ResourcePluralAddTargetNoClass", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -973,12 +1139,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(3);
+
         rp.addTarget(undefined, "foobar")
+
         expect(rp.size()).toBe(3);
     });
+
     test("ResourcePluralAddTargetEmpty", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -989,12 +1160,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.size()).toBe(0);
+
         rp.addTarget("one", "foobar")
+
         expect(rp.size()).toBe(1);
     });
+
     test("ResourcePluralAddTargetEmptyRightContents", function() {
         expect.assertions(3);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1005,12 +1181,17 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(!rp.getTarget("one")).toBeTruthy();
+
         rp.addTarget("one", "foobar")
+
         expect(rp.getTarget("one")).toBe("foobar");
     });
+
     test("ResourcePluralEqualsSourceOnly", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1025,6 +1206,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1039,12 +1221,16 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralEqualsFull", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1066,6 +1252,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1087,12 +1274,16 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralEqualsSourceOnlyNot", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "asdf",
@@ -1107,6 +1298,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1121,12 +1313,16 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(!ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralEqualsFullNot", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "asdf",
@@ -1148,6 +1344,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "asdf",
@@ -1169,12 +1366,16 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(!ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralEqualsIgnoreSomeFields", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1189,6 +1390,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1203,12 +1405,16 @@ describe("resourceplural", function() {
             comment: "asdf asdf asdf asdf asdf",
             state: "done"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralEqualsContentDifferent", function() {
         expect.assertions(3);
+
         var ra1 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1223,6 +1429,7 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         var ra2 = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1237,20 +1444,28 @@ describe("resourceplural", function() {
             comment: "foobar foo",
             state: "accepted"
         });
+
         expect(ra1).toBeTruthy();
         expect(ra2).toBeTruthy();
+
         expect(!ra1.equals(ra2)).toBeTruthy();
     });
+
     test("ResourcePluralStaticHashKey", function() {
         expect.assertions(1);
+
         expect(ResourcePlural.hashKey("androidapp", "foo", "de-DE", "This is a test")).toBe("rp_androidapp_foo_de-DE_This is a test");
     });
+
     test("ResourcePluralStaticHashKeyMissingParts", function() {
         expect.assertions(1);
+
         expect(ResourcePlural.hashKey(undefined, undefined, "de-DE", undefined)).toBe("rp___de-DE_");
     });
+
     test("ResourcePluralSourceOnlyHashKey", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1266,10 +1481,13 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.hashKey()).toBe("rp_foo_blah_en-US_asdf");
     });
+
     test("ResourcePluralFullHashKey", function() {
         expect.assertions(2);
+
         var rp = new ResourcePlural({
             project: "foo",
             context: "blah",
@@ -1292,10 +1510,13 @@ describe("resourceplural", function() {
             state: "accepted"
         });
         expect(rp).toBeTruthy();
+
         expect(rp.hashKey()).toBe("rp_foo_blah_de-DE_asdf");
     });
+
     test("ResourcePluralIsInstanceSame", function() {
         expect.assertions(3);
+
         var rs = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1312,6 +1533,7 @@ describe("resourceplural", function() {
             }
         });
         expect(rs).toBeTruthy();
+
         var dup = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1328,10 +1550,13 @@ describe("resourceplural", function() {
             }
         });
         expect(dup).toBeTruthy();
+
         expect(rs.isInstance(dup)).toBeTruthy();
     });
+
     test("ResourcePluralIsInstanceDifferingOnlyInWhitespace", function() {
         expect.assertions(3);
+
         var rs = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1348,6 +1573,7 @@ describe("resourceplural", function() {
             }
         });
         expect(rs).toBeTruthy();
+
         var dup = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1364,10 +1590,13 @@ describe("resourceplural", function() {
             }
         });
         expect(dup).toBeTruthy();
+
         expect(rs.isInstance(dup)).toBeTruthy();
     });
+
     test("ResourcePluralIsInstanceDifferingInSource", function() {
         expect.assertions(3);
+
         var rs = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1384,6 +1613,7 @@ describe("resourceplural", function() {
             }
         });
         expect(rs).toBeTruthy();
+
         var dup = new ResourcePlural({
             context: "a",
             datatype: "markdown",
@@ -1400,6 +1630,7 @@ describe("resourceplural", function() {
             }
         });
         expect(dup).toBeTruthy();
+
         expect(!rs.isInstance(dup)).toBeTruthy();
     });
 });

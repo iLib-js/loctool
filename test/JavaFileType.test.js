@@ -16,63 +16,84 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!JavaFileType) {
     var JavaFileType = require("../lib/JavaFileType.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
 }
+
 describe("javafiletype", function() {
     test("JavaFileTypeConstructor", function() {
         expect.assertions(1);
+
         var p = new AndroidProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new JavaFileType(p);
+
         expect(htf).toBeTruthy();
     });
+
     test("JavaFileTypeHandlesJavaTrue", function() {
         expect.assertions(2);
+
         var p = new AndroidProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new JavaFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.java")).toBeTruthy();
     });
+
     test("JavaFileTypeHandlesJavaFalseClose", function() {
         expect.assertions(2);
+
         var p = new AndroidProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new JavaFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("foojava")).toBeTruthy();
     });
+
     test("JavaFileTypeHandlesFalse", function() {
         expect.assertions(2);
+
         var p = new AndroidProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new JavaFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("foo.html")).toBeTruthy();
     });
+
     test("JavaFileTypeHandlesJavaTrueWithDir", function() {
         expect.assertions(2);
+
         var p = new AndroidProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new JavaFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("a/b/c/foo.java")).toBeTruthy();
     });
 });

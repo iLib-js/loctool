@@ -21,22 +21,27 @@ var Path = require("path");
 if (!Xliff) {
     var Xliff = require("../lib/Xliff.js");
 }
+
 if (!XliffSplit) {
     var XliffSplit = require("../lib/XliffSplit.js");
 }
+
 function rmrf(path) {
     if (fs.existsSync(path)) {
         fs.unlinkSync(path);
     }
 }
+
 describe("xliffsplit", function() {
     test("XliffSplitnoParameter", function() {
         expect.assertions(1);
+
         var target = XliffSplit();
         expect(!target).toBeTruthy();
     });
     test("XliffSplit", function() {
         expect.assertions(1);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
@@ -44,9 +49,11 @@ describe("xliffsplit", function() {
         ];
         var target = XliffSplit(settings);
         expect(target).toBeTruthy();
+
     });
     test("XliffSplitdistritue", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
@@ -59,6 +66,7 @@ describe("xliffsplit", function() {
     });
     test("XliffSplitdistritueSerialize", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
@@ -67,6 +75,7 @@ describe("xliffsplit", function() {
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
+
         var actual = result["app1"].serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -96,10 +105,12 @@ describe("xliffsplit", function() {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
+
         expect(actual).toBe(expected);
     });
     test("XliffSplitdistritueSerialize2", function() {
         expect.assertions(2);
+
         var settings = {};
         settings.xliffVersion = 2;
         settings.infiles = [
@@ -108,6 +119,7 @@ describe("xliffsplit", function() {
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
+
         var actual = result["app2"].serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -129,6 +141,7 @@ describe("xliffsplit", function() {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
+
         expect(actual).toBe(expected);
     });
     test("XliffSplitdistritueSerialize3_xliffStyle", function() {
@@ -142,6 +155,7 @@ describe("xliffsplit", function() {
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
+
         var actual = result["app2"].serialize();
         var expected =
         '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -163,6 +177,7 @@ describe("xliffsplit", function() {
         '    </group>\n' +
         '  </file>\n' +
         '</xliff>';
+
         expect(actual).toBe(expected);
     });
     test("XliffSplitWrite", function() {
@@ -178,8 +193,10 @@ describe("xliffsplit", function() {
         var superset = XliffSplit(settings);
         var result = XliffSplit.distribute(superset, settings);
         expect(result).toBeTruthy();
+
         XliffSplit.write(result);
         expect(fs.existsSync("./test/testfiles/xliff20/splitTest/app1/en-US.xliff")).toBeTruthy();
         expect(fs.existsSync("./test/testfiles/xliff20/splitTest/app2/en-US.xliff")).toBeTruthy();
     });
 });
+

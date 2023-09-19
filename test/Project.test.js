@@ -16,18 +16,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 var fs = require('fs');
+
 if (!Project) {
     var ProjectFactory = require("../lib/ProjectFactory.js");
     var Project = require("../lib/Project.js");
 }
+
 function rmrf(path) {
     if (fs.existsSync(path)) {
         fs.unlinkSync(path);
     }
 }
+
 function diff(a, b) {
     var min = Math.min(a.length, b.length);
+
     for (var i = 0; i < min; i++) {
         if (a[i] !== b[i]) {
             console.log("Found difference at character " + i);
@@ -37,12 +42,14 @@ function diff(a, b) {
         }
     }
 }
+
 describe("project", function() {
     test("ProjectCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
         expect(project).not.toBeUndefined();
     });
+
     test("ProjectGeneratesExtractedXliff", function() {
         expect.assertions(2);
         // set up first
@@ -63,6 +70,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesNewStringsXliffs", function() {
         expect.assertions(6);
         // set up first
@@ -89,6 +97,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectLocalizeOnlyGeneratesNoXliffs", function() {
         expect.assertions(8);
         // set up first
@@ -118,6 +127,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs", function() {
         expect.assertions(9);
         // set up first
@@ -256,6 +266,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs20", function() {
         expect.assertions(9);
         // set up first
@@ -447,6 +458,7 @@ describe("project", function() {
             });
         });
     });
+
     test("ProjectIsResourcePathYes", function() {
         expect.assertions(1);
         var project = ProjectFactory('./test/testfiles', {});
@@ -472,6 +484,7 @@ describe("project", function() {
         var project = ProjectFactory('./test/testfiles', {});
         expect(project.isResourcePath("js", "test/testfiles/public/localized_js/resources.json")).toBeTruthy();
     });
+
     test("GetOutputLocaleMapped", function() {
         expect.assertions(1);
         var project = ProjectFactory('./test/testfiles', {

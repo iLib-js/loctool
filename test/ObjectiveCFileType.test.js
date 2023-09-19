@@ -16,74 +16,99 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 if (!ObjectiveCFileType) {
     var ObjectiveCFileType = require("../lib/ObjectiveCFileType.js");
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
 }
+
 describe("objectivecfiletype", function() {
     test("ObjectiveCFileTypeConstructor", function() {
         expect.assertions(1);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
+
         expect(htf).toBeTruthy();
     });
+
     test("ObjectiveCFileTypeHandlesTrue", function() {
         expect.assertions(2);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.m")).toBeTruthy();
     });
+
     test("ObjectiveCFileTypeHandlesHeaderFileTrue", function() {
         expect.assertions(2);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("foo.h")).toBeTruthy();
     });
+
     test("ObjectiveCFileTypeHandlesFalseClose", function() {
         expect.assertions(2);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("foo.cm")).toBeTruthy();
     });
+
     test("ObjectiveCFileTypeHandlesFalse", function() {
         expect.assertions(2);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
         expect(htf).toBeTruthy();
+
         expect(!htf.handles("foo.html")).toBeTruthy();
     });
+
     test("ObjectiveCFileTypeHandlesTrueWithDir", function() {
         expect.assertions(2);
+
         var p = new ObjectiveCProject({
             sourceLocale: "en-US"
         }, "./test/testfiles", {
             locales:["en-GB"]
         });
+
         var htf = new ObjectiveCFileType(p);
         expect(htf).toBeTruthy();
+
         expect(htf.handles("a/b/c/foo.m")).toBeTruthy();
     });
 });
