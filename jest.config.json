@@ -1,0 +1,6 @@
+{
+    "testPathIgnorePatterns": [
+        "/tools/",
+        "/node_modules/"
+    ]
+}
