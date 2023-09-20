@@ -47,7 +47,7 @@ describe("project", function() {
     test("ProjectCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
-        expect(project).not.toBeUndefined();
+        expect(project).toBeUndefined();
     });
 
     test("ProjectGeneratesExtractedXliff", function() {

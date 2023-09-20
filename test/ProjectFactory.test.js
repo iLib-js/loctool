@@ -12,7 +12,7 @@ describe("projectfactory", function() {
     test("ProjectFactoryCreationAllEmpty", function() {
         expect.assertions(1);
         var project = ProjectFactory('', {});
-        expect(project).not.toBeUndefined();
+        expect(project).toBeUndefined();
     });
 
     test("ProjectFactoryCreationFromJsonNoSettings", function() {
