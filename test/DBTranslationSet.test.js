@@ -18,7 +18,7 @@
  */
 
 if (!DBTranslationSet) {
-    var DBTranslationSet = require("../lib/DBTranslationSet.js");
+    // var DBTranslationSet = require("../lib/DBTranslationSet.js");
     var ResourceString = require("../lib/ResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
