@@ -123,7 +123,7 @@ limitations under the License.
                 <env key="PATH" path="${node}/bin:${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
                 <arg line="--inspect-brk"/>
-                <arg line="${node_modules}/.bin/jest"/>
+                <arg line="${jest}"/>
             	<arg line="-i"/>
                 <arg line="@{script}"/>
             </exec>
@@ -131,7 +131,7 @@ limitations under the License.
                 <env key="PATH" path="${node}/bin;${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
                 <arg line="--inspect-brk"/>
-                <arg line="${node_modules}/.bin/jest"/>
+                <arg line="${jest}"/>
                 <arg line="@{script}"/>
             </exec>
         </sequential>
