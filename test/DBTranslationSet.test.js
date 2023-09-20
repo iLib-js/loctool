@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-if (!DBTranslationSet) {
+if (!TranslationSet) {
     // var DBTranslationSet = require("../lib/DBTranslationSet.js");
     var ResourceString = require("../lib/ResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
