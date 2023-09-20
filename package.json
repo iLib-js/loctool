@@ -65,9 +65,6 @@
         "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
     "dependencies": {
-        "@babel/core": "^7.22.20",
-        "@babel/preset-env": "^7.22.20",
-        "@babel/register": "^7.22.15",
         "build-gradle-reader": "*",
         "cldr-segmentation": "^2.2.0",
         "he": "^1.2.0",
