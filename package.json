@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.23.3",
+    "version": "2.23.2",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -65,9 +65,9 @@
         "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
     "dependencies": {
-        "@babel/core": "^7.22.9",
-        "@babel/preset-env": "^7.22.9",
-        "@babel/register": "^7.22.5",
+        "@babel/core": "^7.22.20",
+        "@babel/preset-env": "^7.22.20",
+        "@babel/register": "^7.22.15",
         "build-gradle-reader": "*",
         "cldr-segmentation": "^2.2.0",
         "he": "^1.2.0",
@@ -79,7 +79,7 @@
         "log4js": "^6.9.1",
         "message-accumulator": "^2.2.1",
         "micromatch": "^4.0.5",
-        "mysql2": "^3.5.2",
+        "mysql2": "^3.6.1",
         "opencc-js": "^1.0.5",
         "readline-sync": "^1.4.10",
         "rehype-raw": "^5.0.0",
@@ -98,6 +98,6 @@
         "cldr-core": "^43.1.0",
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
         "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
-        "jest": "^26.6.3"
+        "jest": "^29.7.0"
     }
 }

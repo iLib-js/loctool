@@ -7,6 +7,8 @@ Published as version 2.23.2
 
 Bug fixes:
 * Removed unused dependencies
+* Updated remaining dependencies
+* Converted all unit tests from nodeunit to jest
 
 Build 041
 -------
