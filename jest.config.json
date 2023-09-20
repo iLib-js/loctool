@@ -2,5 +2,6 @@
     "testPathIgnorePatterns": [
         "/tools/",
         "/node_modules/"
-    ]
+    ],
+    "globalSetup": "./test/setupTests.js"
 }
