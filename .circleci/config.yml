@@ -22,7 +22,7 @@ jobs:
           command: |
             node -v
             npm -v
-            npm run test
+            npm run test --detectOpenHandles
 
 workflows:
   version: 2

@@ -2,7 +2,7 @@
 <!--
 build.xml - build the localization tool app 
 
-Copyright © 2016-2017, 2019-2020 JEDLSoft
+Copyright © 2016-2017, 2019-2023 JEDLSoft
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -99,13 +99,14 @@ limitations under the License.
         <attribute name="args"/>
         <attribute name="dir"/>
         <sequential>
-            <exec osfamily="unix" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+            <exec osfamily="unix" executable="@{executable}" dir="@{dir}/.." failifexecutionfails="true" failonerror="true">
                 <env key="PATH" path="${node}/bin:${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
+                <arg line="--silent"/>
                 <arg line="@{args}"/>
                 <arg line="@{script}"/>
             </exec>
-            <exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
+            <exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}/.." failifexecutionfails="true"  failonerror="true">
                 <env key="PATH" path="${node}/bin;${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
                 <arg line="@{args}"/>
@@ -122,512 +123,514 @@ limitations under the License.
                 <env key="PATH" path="${node}/bin:${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
                 <arg line="--inspect-brk"/>
-                <arg line="${nodeunit}/bin/nodeunit"/>
+                <arg line="${jest}"/>
+            	<arg line="-i"/>
                 <arg line="@{script}"/>
             </exec>
             <exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
                 <env key="PATH" path="${node}/bin;${env.PATH}"/>
                 <env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
                 <arg line="--inspect-brk"/>
-                <arg line="${nodeunit}/bin/nodeunit"/>
+                <arg line="${jest}"/>
                 <arg line="@{script}"/>
             </exec>
         </sequential>
     </macrodef>
 
     <target name="test.resource" description="Run only the resource tests">
-        <run script="${build.test}/testResource.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="Resource" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="debug.resource" description="Debug only the resource tests">
-        <debug script="${build.test}/testResource.js" dir="${build.test}"/>
+        <debug script="Resource" dir="${build.test}"/>
     </target>
 
     <target name="test.resourcestring" description="Run only the resource string tests">
-        <run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="ResourceString" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="debug.resourcestring" description="Debug only the resource string tests">
-        <debug script="${build.test}/testResourceString.js" dir="${build.test}"/>
+        <debug script="ResourceString" dir="${build.test}"/>
     </target>
 
     <target name="test.resourcearray" description="Run only the resource array tests">
-        <run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="ResourceArray" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="debug.resourcearray" description="Debug only the resource array tests">
-        <debug script="${build.test}/testResourceArray.js" dir="${build.test}"/>
+        <debug script="ResourceArray" dir="${build.test}"/>
     </target>
 
     <target name="test.resourceplural" description="Run only the plural resource tests">
-        <run script="${build.test}/testResourcePlural.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="ResourcePlural" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="debug.resourceplural" description="Debug only the plural resource tests">
-        <debug script="${build.test}/testResourcePlural.js" dir="${build.test}"/>
+        <debug script="ResourcePlural" dir="${build.test}"/>
     </target>
 
     <target name="test.translationset" description="Run only the translation set tests">
-        <run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="TranslationSet" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="debug.translationset" description="Debug only the translation set tests">
-        <debug script="${build.test}/testTranslationSet.js" dir="${build.test}"/>
+        <debug script="TranslationSet" dir="${build.test}"/>
     </target>
 
     <target name="test.set" description="Run only the set tests">
-        <run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+        <run script="Set" executable="${jest}" dir="${build.base}" args="" />
     </target>
 
     <target name="test.javafile" description="Run only the java file tests">
-        <run script="${build.test}/testJavaFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javafile" description="Debug only the java file tests">
-        <debug script="${build.test}/testJavaFile.js" dir="${build.test}"/>
+        <debug script="JavaFile" dir="${build.test}"/>
     </target>
 
     <target name="test.javafiletype" description="Run only the java file type tests">
-        <run script="${build.test}/testJavaFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javafiletype" description="Debug only the java file type tests">
-        <debug script="${build.test}/testJavaFileType.js" dir="${build.test}"/>
+        <debug script="JavaFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.dbtranslationset" description="Run only the database translation set tests">
-        <run script="${build.test}/testDBTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="DBTranslationSet" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="test.androidlayoutfile" description="Run only the Android layout file tests">
-        <run script="${build.test}/testAndroidLayoutFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidLayoutFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidlayoutfile" description="Debug only the android layout file tests">
-        <debug script="${build.test}/testAndroidLayoutFile.js" dir="${build.test}"/>
+        <debug script="AndroidLayoutFile" dir="${build.test}"/>
     </target>
 
     <target name="test.androidlayoutfiletype" description="Run only the Android layout file type tests">
-        <run script="${build.test}/testAndroidLayoutFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidLayoutFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidlayoutfiletype" description="Debug only the android layout file type tests">
-        <debug script="${build.test}/testAndroidLayoutFileType.js" dir="${build.test}"/>
+        <debug script="AndroidLayoutFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.androidresourcefile" description="Run only the Android resource file tests">
-        <run script="${build.test}/testAndroidResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidResourceFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidresourcefile" description="Debug only the android resource file tests">
-        <debug script="${build.test}/testAndroidResourceFile.js" dir="${build.test}"/>
+        <debug script="AndroidResourceFile" dir="${build.test}"/>
     </target>
 
     <target name="test.androidresourcefiletype" description="Run only the Android resource file type tests">
-        <run script="${build.test}/testAndroidResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidResourceFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidresourcefiletype" description="Debug only the android resource file type tests">
-        <debug script="${build.test}/testAndroidResourceFileType.js" dir="${build.test}"/>
+        <debug script="AndroidResourceFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.generatemode" description="Run only the generate mode tests">
-        <run script="${build.test}/testGenerateMode.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="GenerateMode" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="test.xliff" description="Run only the xliff tests">
-        <run script="${build.test}/testXliff.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="Xliff" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.xliff" description="Debug only the tests for the xliff object">
-        <debug script="${build.test}/testXliff.js" dir="${build.test}"/>
+        <debug script="Xliff" dir="${build.test}"/>
     </target>
 
     <target name="test.xliff2" description="Run only the xliff 2.0 tests">
-        <run script="${build.test}/testXliff20.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="Xliff20" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.xliff2" description="Debug only the tests for the xliff 2.0 object">
-        <debug script="${build.test}/testXliff20.js" dir="${build.test}"/>
+        <debug script="Xliff20" dir="${build.test}"/>
     </target>
 
     <target name="test.xliffmerge" description="Run only the xliff merge tests">
-        <run script="${build.test}/testXliffMerge.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="XliffMerge" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="test.xliffsplit" description="Run only the xliff merge tests">
-        <run script="${build.test}/testXliffSplit.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="XliffSplit" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="test.tmx" description="Run only the tmx tests">
-        <run script="${build.test}/testTMX.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="TMX" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.tmx" description="Debug only the tests for the tmx object">
-        <debug script="${build.test}/testTMX.js" dir="${build.test}"/>
+        <debug script="TMX" dir="${build.test}"/>
     </target>
 
     <target name="test.localrepository" description="Run only the tests for the local repository">
-        <run script="${build.test}/testLocalRepository.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="LocalRepository" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.localrepository" description="Debug only the tests for the local repository">
-        <debug script="${build.test}/testLocalRepository.js" dir="${build.test}"/>
+        <debug script="LocalRepository" dir="${build.test}"/>
     </target>
 
     <target name="test.utils" description="Run only the tests for the utils">
-        <run script="${build.test}/testUtils.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="Utils" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.utils" description="Debug only the tests for the utils">
-        <debug script="${build.test}/testUtils.js" dir="${build.test}"/>
+        <debug script="Utils" dir="${build.test}"/>
     </target>
 
     <target name="test.javascriptfile" description="Run only the tests for the JavaScript file object">
-        <run script="${build.test}/testJavaScriptFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaScriptFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javascriptfile" description="Debug only the tests for the JavaScript file object">
-        <debug script="${build.test}/testJavaScriptFile.js" dir="${build.test}"/>
+        <debug script="JavaScriptFile" dir="${build.test}"/>
     </target>
 
     <target name="test.javascriptfiletype" description="Run only the tests for the JavaScript file type">
-        <run script="${build.test}/testJavaScriptFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaScriptFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javascriptfiletype" description="Debug only the tests for the JavaScript file type">
-        <debug script="${build.test}/testJavaScriptFileType.js" dir="${build.test}"/>
+        <debug script="JavaScriptFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.htmlfile" description="Run only the tests for the HTML file">
-        <run script="${build.test}/testHTMLFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HTMLFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.htmlfile" description="Debug only the tests for HTML files">
-        <debug script="${build.test}/testHTMLFile.js" dir="${build.test}"/>
+        <debug script="HTMLFile" dir="${build.test}"/>
     </target>
 
     <target name="test.htmlfiletype" description="Run only the tests for the HTML file type">
-        <run script="${build.test}/testHTMLFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HTMLFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.htmlfiletype" description="Debug only the tests for the HTML file type">
-        <debug script="${build.test}/testHTMLFileType.js" dir="${build.test}"/>
+        <debug script="HTMLFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.htmltemplatefile" description="Run only the tests for the HTML templates">
-        <run script="${build.test}/testHTMLTemplateFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HTMLTemplateFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.htmltemplatefile" description="Debug only the tests for the HTML templates">
-        <debug script="${build.test}/testHTMLTemplateFile.js" dir="${build.test}"/>
+        <debug script="HTMLTemplateFile" dir="${build.test}"/>
     </target>
 
     <target name="test.htmltemplatefiletype" description="Run only the tests for the HTML template file type">
-        <run script="${build.test}/testHTMLTemplateFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HTMLTemplateFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.htmltemplatefiletype" description="Debug only the tests for the HTML template file type">
-        <debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
+        <debug script="HTMLTemplateFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.markdownfile" description="Run only the tests for the Markdown file">
-        <run script="${build.test}/testMarkdownFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="MarkdownFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.markdownfile" description="Debug only the tests for Markdown files">
-        <debug script="${build.test}/testMarkdownFile.js" dir="${build.test}"/>
+        <debug script="MarkdownFile" dir="${build.test}"/>
     </target>
 
     <target name="test.markdownfiletype" description="Run only the tests for the Markdown file type">
-        <run script="${build.test}/testMarkdownFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="MarkdownFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.markdownfiletype" description="Debug only the tests for the Markdown file type">
-        <debug script="${build.test}/testMarkdownFileType.js" dir="${build.test}"/>
+        <debug script="MarkdownFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.objectivecfile" description="Run only the tests for the Objective C file">
-        <run script="${build.test}/testObjectiveCFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="ObjectiveCFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.objectivecfile" description="Debug only the tests for the Objective C file">
-        <debug script="${build.test}/testObjectiveCFile.js" dir="${build.test}"/>
+        <debug script="ObjectiveCFile" dir="${build.test}"/>
     </target>
 
     <target name="test.objectivecfiletype" description="Run only the tests for the Objective C file type">
-        <run script="${build.test}/testObjectiveCFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="ObjectiveCFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.objectivecfiletype" description="Debug only the tests for the Objective C file type">
-        <debug script="${build.test}/testObjectiveCFileType.js" dir="${build.test}"/>
+        <debug script="ObjectiveCFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.swiftfile" description="Run only the tests for the Swift file">
-        <run script="${build.test}/testSwiftFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="SwiftFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.swiftfile" description="Debug only the tests for the Swift file">
-        <debug script="${build.test}/testSwiftFile.js" dir="${build.test}"/>
+        <debug script="SwiftFile" dir="${build.test}"/>
     </target>
 
     <target name="test.swiftfiletype" description="Run only the tests for the Swift file type">
-        <run script="${build.test}/testSwiftFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="SwiftFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.swiftfiletype" description="Debug only the tests for the Swift file type">
-        <debug script="${build.test}/testSwiftFileType.js" dir="${build.test}"/>
+        <debug script="SwiftFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.iosstringsfile" description="Run only the tests for the strings resource file">
-        <run script="${build.test}/testIosStringsFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="IosStringsFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.iosstringsfile" description="Debug only the tests for the strings resource file">
-        <debug script="${build.test}/testIosStringsFile.js" dir="${build.test}"/>
+        <debug script="IosStringsFile" dir="${build.test}"/>
     </target>
 
     <target name="test.iosstringsfiletype" description="Run only the tests for the strings resource file type">
-        <run script="${build.test}/testIosStringsFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="IosStringsFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.iosstringsfiletype" description="Debug only the tests for the strings resource file type">
-        <debug script="${build.test}/testIosStringsFileType.js" dir="${build.test}"/>
+        <debug script="IosStringsFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.javascriptresourcefile" description="Run only the tests for the JavaScript resource file object">
-        <run script="${build.test}/testJavaScriptResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaScriptResourceFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javascriptresourcefile" description="Debug only the tests for the JavaScript resource file object">
-        <debug script="${build.test}/testJavaScriptResourceFile.js" dir="${build.test}"/>
+        <debug script="JavaScriptResourceFile" dir="${build.test}"/>
     </target>
 
     <target name="test.javascriptresourcefiletype" description="Run only the tests for the JavaScript resource file type object">
-        <run script="${build.test}/testJavaScriptResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JavaScriptResourceFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.javascriptresourcefiletype" description="Debug only the tests for the JavaScript resource file type object">
-        <debug script="${build.test}/testJavaScriptResourceFileType.js" dir="${build.test}"/>
+        <debug script="JavaScriptResourceFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.yamlfile" description="Run only the tests for the Yaml file object">
-        <run script="${build.test}/testYamlFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="YamlFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.yamlfile" description="Debug only the tests for the Yaml file object">
-        <debug script="${build.test}/testYamlFile.js" dir="${build.test}"/>
+        <debug script="YamlFile" dir="${build.test}"/>
     </target>
 
     <target name="test.yamlfiletype" description="Run only the tests for the Yaml file type object">
-        <run script="${build.test}/testYamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="YamlFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.yamlfiletype" description="Debug only the tests for the Yaml file type object">
-        <debug script="${build.test}/testYamlFileType.js" dir="${build.test}"/>
+        <debug script="YamlFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.yamlresourcefile" description="Run only the tests for the Yaml resource file object">
-        <run script="${build.test}/testYamlResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="YamlResourceFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.yamlresourcefile" description="Debug only the tests for the Yaml resource file object">
-        <debug script="${build.test}/testYamlResourceFile.js" dir="${build.test}"/>
+        <debug script="YamlResourceFile" dir="${build.test}"/>
     </target>
 
     <target name="test.yamlresourcefiletype" description="Run only the tests for the Yaml resource file type object">
-        <run script="${build.test}/testYamlResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="YamlResourceFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.yamlresourcefiletype" description="Debug only the tests for the Yaml resource file type object">
-        <debug script="${build.test}/testYamlResourceFileType.js" dir="${build.test}"/>
+        <debug script="YamlResourceFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.csv" description="Run only the tests for the csv object">
-        <run script="${build.test}/testCSV.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="CSV" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.csv" description="Debug only the tests for the csv object">
-        <debug script="${build.test}/testCSV.js" dir="${build.test}"/>
+        <debug script="CSV" dir="${build.test}"/>
     </target>
 
     <target name="test.csvfile" description="Run only the tests for the csv file object">
-        <run script="${build.test}/testCSVFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="CSVFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.csvfile" description="Debug only the tests for the csv file object">
-        <debug script="${build.test}/testCSVFile.js" dir="${build.test}"/>
+        <debug script="CSVFile" dir="${build.test}"/>
     </target>
 
     <target name="test.rubyfile" description="Run only the tests for the Ruby file object">
-        <run script="${build.test}/testRubyFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="RubyFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.rubyfile" description="Debug only the tests for the Ruby file object">
-        <debug script="${build.test}/testRubyFile.js" dir="${build.test}"/>
+        <debug script="RubyFile" dir="${build.test}"/>
     </target>
 
     <target name="test.rubyfiletype" description="Run only the tests for the Ruby file type object">
-        <run script="${build.test}/testRubyFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="RubyFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.rubyfiletype" description="Debug only the tests for the Ruby file type object">
-        <debug script="${build.test}/testRubyFileType.js" dir="${build.test}"/>
+        <debug script="RubyFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.hamlfile" description="Run only the haml file tests">
-        <run script="${build.test}/testHamlFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HamlFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.hamlfile" description="Debug only the haml file tests">
-        <debug script="${build.test}/testHamlFile.js" dir="${build.test}"/>
+        <debug script="HamlFile" dir="${build.test}"/>
     </target>
 
     <target name="test.hamlfiletype" description="Run only the tests for the haml file type">
-        <run script="${build.test}/testHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="HamlFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.hamlfiletype" description="Debug only the tests for the haml file type">
-        <debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
+        <debug script="HamlFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.oldhamlfiletype" description="Run only the tests for the old haml file type">
-        <run script="${build.test}/testOldHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="OldHamlFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.oldhamlfiletype" description="Debug only the tests for the old haml file type">
-        <debug script="${build.test}/testOldHamlFileType.js" dir="${build.test}"/>
+        <debug script="OldHamlFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudobritish" description="Run only the tests for the pseudo british localizer">
-        <run script="${build.test}/testPseudoBritish.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoBritish" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudobritish" description="Debug only the tests for the pseudo british localizer">
-        <debug script="${build.test}/testPseudoBritish.js" dir="${build.test}"/>
+        <debug script="PseudoBritish" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudocanadian" description="Run only the tests for the pseudo canadian localizer">
-        <run script="${build.test}/testPseudoCanadian.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoCanadian" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudocanadian" description="Debug only the tests for the pseudo canadian localizer">
-        <debug script="${build.test}/testPseudoCanadian.js" dir="${build.test}"/>
+        <debug script="PseudoCanadian" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudodebug" description="Run only the tests for the pseudo debug localizer">
-        <run script="${build.test}/testPseudoDebug.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoDebug" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudodebug" description="Debug only the tests for the pseudo debug localizer">
-        <debug script="${build.test}/testPseudoDebug.js" dir="${build.test}"/>
+        <debug script="PseudoDebug" dir="${build.test}"/>
     </target>
 
 	<target name="test.project" description="Run only the tests for the project object">
-        <run script="${build.test}/testProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="Project" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.project" description="Debug only the tests for the project object">
-        <debug script="${build.test}/testProject.js" dir="${build.test}"/>
+        <debug script="Project" dir="${build.test}"/>
     </target>
 
     <target name="test.projectfactory" description="Run only the tests for the project factory object">
-        <run script="${build.test}/testProjectFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="ProjectFactory" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.projectfactory" description="Debug only the tests for the project factory object">
-        <debug script="${build.test}/testProjectFactory.js" dir="${build.test}"/>
+        <debug script="ProjectFactory" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudonewzealand" description="Run only the tests for the pseudo New Zealand localizer">
-        <run script="${build.test}/testPseudoNewZealand.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoNewZealand" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudonewzealand" description="Debug only the tests for the pseudo New Zealand localizer">
-        <debug script="${build.test}/testPseudoNewZealand.js" dir="${build.test}"/>
+        <debug script="PseudoNewZealand" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudohant" description="Run only the tests for the pseudo Hant localizer">
-        <run script="${build.test}/testPseudoHant.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoHant" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudohant" description="Debug only the tests for the pseudo Hant localizer">
-        <debug script="${build.test}/testPseudoHant.js" dir="${build.test}"/>
+        <debug script="PseudoHant" dir="${build.test}"/>
     </target>
 
     <target name="test.buildgradle" description="Run only the tests for the build gradle object">
-        <run script="${build.test}/testBuildGradle.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="BuildGradle" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.buildgradle" description="Debug only the tests for the build gradle object">
-        <debug script="${build.test}/testBuildGradle.js" dir="${build.test}"/>
+        <debug script="BuildGradle" dir="${build.test}"/>
     </target>
 
     <target name="test.androidproject" description="Run only the tests for the Android project object">
-        <run script="${build.test}/testAndroidProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidProject" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidproject" description="Debug only the tests for the Android project object">
-        <debug script="${build.test}/testAndroidProject.js" dir="${build.test}"/>
+        <debug script="AndroidProject" dir="${build.test}"/>
     </target>
 
     <target name="test.androidflavors" description="Run only the tests for the Android flavors object">
-        <run script="${build.test}/testAndroidFlavors.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="AndroidFlavors" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.androidflavors" description="Debug only the tests for the Android flavors object">
-        <debug script="${build.test}/testAndroidFlavors.js" dir="${build.test}"/>
+        <debug script="AndroidFlavors" dir="${build.test}"/>
     </target>
 
     <target name="test.webproject" description="Run only the tests for the Web project object">
-        <run script="${build.test}/testWebProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="WebProject" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.webproject" description="Debug only the tests for the Web project object">
-        <debug script="${build.test}/testWebProject.js" dir="${build.test}"/>
+        <debug script="WebProject" dir="${build.test}"/>
     </target>
 
     <target name="test.pseudofactory" description="Run only the tests for the PseudoFactory object">
-        <run script="${build.test}/testPseudoFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="PseudoFactory" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.pseudofactory" description="Debug only the tests for the PseudoFactory object">
-        <debug script="${build.test}/testPseudoFactory.js" dir="${build.test}"/>
+        <debug script="PseudoFactory" dir="${build.test}"/>
     </target>
 
     <target name="test.jsxfile" description="Run only the jsx file tests">
-        <run script="${build.test}/testJsxFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JsxFile" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.jsxfile" description="Debug only the jsx file tests">
-        <debug script="${build.test}/testJsxFile.js" dir="${build.test}"/>
+        <debug script="JsxFile" dir="${build.test}"/>
     </target>
 
     <target name="test.jsxfiletype" description="Run only the jsx file type tests">
-        <run script="${build.test}/testJsxFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="JsxFileType" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.jsxfiletype" description="Debug only the jsx file type tests">
-        <debug script="${build.test}/testJsxFileType.js" dir="${build.test}"/>
+        <debug script="JsxFileType" dir="${build.test}"/>
     </target>
 
     <target name="test.customproject" description="Run only the tests for the custom project object">
-        <run script="${build.test}/testCustomProject.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="CustomProject" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.customproject" description="Debug only the tests for the custom project object">
-        <debug script="${build.test}/testCustomProject.js" dir="${build.test}"/>
+        <debug script="CustomProject" dir="${build.test}"/>
     </target>
 
     <target name="test.resourcefactory" description="Run only the tests for the resource factory object">
-        <run script="${build.test}/testResourceFactory.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+        <run script="ResourceFactory" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <target name="debug.resourcefactory" description="Debug only the tests for the resource factory object">
-        <debug script="${build.test}/testResourceFactory.js" dir="${build.test}"/>
+        <debug script="${build.test}/ResourceFactory.test.js" dir="${build.test}"/>
     </target>
 
-    <target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.xliff2,test.xliffmerge,test.xliffsplit,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmlfile,test.htmlfiletype,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.swiftfile,test.swiftfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfile,test.hamlfiletype,test.oldhamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish,test.pseudocanadian,test.pseudodebug,test.pseudonewzealand,test.pseudohant,test.buildgradle,test.androidproject,test.androidflavors,test.webproject,test.projectfactory,test.pseudofactory,test.jsxfile,test.jsxfiletype,test.markdownfiletype,test.markdownfile,test.resourcefactory,test.customproject,test.project,test.tmx">
+    <target name="test">
+        <run script="" executable="${jest}" dir="${build.test}" args="" />
     </target>
 
     <macrodef name="runsql">

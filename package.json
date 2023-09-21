@@ -60,12 +60,11 @@
         "clean": "ant clean",
         "dist": "npm run generate ; npm pack",
         "generate": "node generate/genPluralCategories.js",
-        "test": "cd test; LANG=en-US node testSuite.js"
+        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --detectOpenHandles",
+        "test:watch": "LANG=en-US jest --watch",
+        "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
     "dependencies": {
-        "@babel/core": "^7.22.9",
-        "@babel/preset-env": "^7.22.9",
-        "@babel/register": "^7.22.5",
         "build-gradle-reader": "*",
         "cldr-segmentation": "^2.2.0",
         "he": "^1.2.0",
@@ -77,7 +76,7 @@
         "log4js": "^6.9.1",
         "message-accumulator": "^2.2.1",
         "micromatch": "^4.0.5",
-        "mysql2": "^3.5.2",
+        "mysql2": "3.5.2",
         "opencc-js": "^1.0.5",
         "readline-sync": "^1.4.10",
         "rehype-raw": "^5.0.0",
@@ -96,6 +95,6 @@
         "cldr-core": "^43.1.0",
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
         "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
-        "nodeunit": "^0.11.3"
+        "jest": "^26.3.0"
     }
 }

@@ -50,13 +50,13 @@
             "level": "info"
         },
         "loctool.lib.FileType": {
-			     "appenders": [ "default" ],
-			     "level": "info"
-		    },
+            "appenders": [ "default" ],
+            "level": "info"
+        },
         "loctool.lib.GenerateMode": {
             "appenders": [ "default" ],
             "level": "info"
-		    },
+        },
         "loctool.lib.GenerateModeProcess": {
             "appenders": [ "default" ],
             "level": "info"
@@ -305,5 +305,6 @@
             "appenders": [ "default" ],
             "level": "info"
         }
-    }
+    },
+    "maxListeners": 100
 }
