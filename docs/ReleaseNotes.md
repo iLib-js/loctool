@@ -9,6 +9,7 @@ Bug fixes:
 * Removed unused dependencies
 * Updated remaining dependencies
 * Converted all unit tests from nodeunit to jest
+* Removed the npm-shrinkwrap.json in repository
 
 Build 041
 -------
