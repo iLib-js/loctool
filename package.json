@@ -41,8 +41,7 @@
         "loctool.js",
         "hashkey.js",
         "README.md",
-        "LICENSE.txt",
-        "npm-shrinkwrap.json"
+        "LICENSE.txt"
     ],
     "directories": {
         "doc": "./doc",
