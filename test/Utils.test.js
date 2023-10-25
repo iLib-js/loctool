@@ -313,10 +313,10 @@ describe("utils", function() {
 
     test("Formatting a path with multiple dots in it", function() {
         expect.assertions(1);
-        expect(utils.formatPath('[dir]/config-x.[locale].json', {
-            sourcepath: "x/y/config-x.en-US.json",
+        expect(utils.formatPath('[dir]/x-config.[locale].json', {
+            sourcepath: "x/y/x-config.en-US.json",
             locale: "es"
-        })).toBe("x/y/config-x.es.json");
+        })).toBe("x/y/x-config.es.json");
     });
 
     test("GetLocaleFromPathDir", function() {
@@ -466,22 +466,22 @@ describe("utils", function() {
 
     test("Getting the locale from the path where there are multiple dots in the file name with a dash", function() {
         expect.assertions(1);
-        expect(utils.getLocaleFromPath('[dir]/config-x.[locale].json', "x/y/config-x.en-US.json")).toBe("en-US");
+        expect(utils.getLocaleFromPath('[dir]/x-config.[locale].json', "x/y/x-config.en-US.json")).toBe("en-US");
     });
 
     test("Getting the locale from the path where there are multiple dots in the file name with a dash and a short locale", function() {
         expect.assertions(1);
-        expect(utils.getLocaleFromPath('[dir]/config-x.[locale].json', "x/y/config-x.en.json")).toBe("en");
+        expect(utils.getLocaleFromPath('[dir]/x-config.[locale].json', "x/y/x-config.en.json")).toBe("en");
     });
 
     test("Getting the locale from the path where there are multiple dots in the file name with a dash in Bengali", function() {
         expect.assertions(1);
-        expect(utils.getLocaleFromPath('[dir]/config-x.[locale].json', "x/y/config-x.bn-IN.json")).toBe("bn-IN");
+        expect(utils.getLocaleFromPath('[dir]/x-config.[locale].json', "x/y/x-config.bn-IN.json")).toBe("bn-IN");
     });
 
     test("Getting the locale from the path where there are multiple dots in the file name with a dash and a short locale in Bengali", function() {
         expect.assertions(1);
-        expect(utils.getLocaleFromPath('[dir]/config-x.[locale].json', "x/y/config-x.bn.json")).toBe("bn");
+        expect(utils.getLocaleFromPath('[dir]/x-config.[locale].json', "x/y/x-config.bn.json")).toBe("bn");
     });
 
     test("GetLocaleFromPathNoPath", function() {
