@@ -3,14 +3,17 @@ Release Notes for Version 2
 
 Build 042
 -------
-Published as version 2.23.2
+Published as version 2.24.0
+
+New Features:
+* Added a new `getProjectType()` method on the Project class.
 
 Bug fixes:
 * Removed unused dependencies.
 * Updated remaining dependencies.
 * Converted all unit tests from nodeunit to jest.
 * Removed the `npm-shrinkwrap.json` in repository.
-* Added a new `getProjectType()` method on the Project class.
+
 
 Build 041
 -------
