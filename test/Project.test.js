@@ -551,4 +551,9 @@ describe("project", function() {
         expect(project.getLocaleInherit("ko-KR")).toBeUndefined();
         expect(project.getLocaleInherit()).toBeUndefined();
     });
+    test("GetProjectType", function() {
+        expect.assertions(1);
+        var project = ProjectFactory('./test/testfiles', {});
+        expect(project.getProjectType().toString()).toBe("web");
+    });
 });
