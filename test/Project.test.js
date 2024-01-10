@@ -1,7 +1,7 @@
 /*
  * Project.test.js - test Project class
  *
- * Copyright © 2020-2021, 2023 JEDLSoft
+ * Copyright © 2020-2021, 2023-2024 JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -493,7 +493,7 @@ describe("project", function() {
                 "pt-BR": "pt"
             }
         });
-        expect(project.getOutputLocale("da-DK").toString()).toBe("da");
+        expect(project.getOutputLocale("da-DK")).toBe("da");
     });
     test("GetOutputLocaleNotMapped", function() {
         expect.assertions(1);
@@ -503,12 +503,12 @@ describe("project", function() {
                 "pt-BR": "pt"
             }
         });
-        expect(project.getOutputLocale("da-DE").toString()).toBe("da-DE");
+        expect(project.getOutputLocale("da-DE")).toBe("da-DE");
     });
     test("GetOutputLocaleNoMap", function() {
         expect.assertions(1);
         var project = ProjectFactory('./test/testfiles', {});
-        expect(project.getOutputLocale("da-DK").toString()).toBe("da-DK");
+        expect(project.getOutputLocale("da-DK")).toBe("da-DK");
     });
     test("GetOutputLocaleBogusMap", function() {
         expect.assertions(3);
@@ -519,9 +519,9 @@ describe("project", function() {
                 "de-DE": ""
             }
         });
-        expect(project.getOutputLocale("da-DK").toString()).toBe("da-DK");
-        expect(project.getOutputLocale("pt-BR").toString()).toBe("pt-BR");
-        expect(project.getOutputLocale("de-DE").toString()).toBe("de-DE");
+        expect(project.getOutputLocale("da-DK")).toBe("da-DK");
+        expect(project.getOutputLocale("pt-BR")).toBe("pt-BR");
+        expect(project.getOutputLocale("de-DE")).toBe("de-DE");
     });
     test("GetOutputLocaleInherit", function() {
         expect.assertions(2);
@@ -531,8 +531,8 @@ describe("project", function() {
                 "en-CN": "en-GB"
             }
         });
-        expect(project.getLocaleInherit("en-AU").toString()).toBe("en-GB");
-        expect(project.getLocaleInherit("en-CN").toString()).toBe("en-GB");
+        expect(project.getLocaleInherit("en-AU")).toBe("en-GB");
+        expect(project.getLocaleInherit("en-CN")).toBe("en-GB");
     });
     test("GetOutputLocaleInheritEmpty", function() {
         expect.assertions(2);
@@ -550,5 +550,19 @@ describe("project", function() {
         var project = ProjectFactory('./test/testfiles', {});
         expect(project.getLocaleInherit("ko-KR")).toBeUndefined();
         expect(project.getLocaleInherit()).toBeUndefined();
+    });
+    test("GetProjectType", function() {
+        expect.assertions(1);
+        var project = ProjectFactory('./test/testfiles', {});
+        expect(project.getProjectType()).toBe("web");
+    });
+    test("GetProjectTypeCustom", function() {
+        expect.assertions(1);
+        var settings = {
+            rootDir: ".",
+            projectType: "custom"
+        }
+        var project = ProjectFactory.newProject(settings);
+        expect(project.getProjectType()).toBe("custom");
     });
 });
