@@ -2,7 +2,7 @@
 /*
  * loctool.js - tool to extract resources from source code
  *
- * Copyright © 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft
+ * Copyright © 2016-2017, 2019-2024, HealthTap, Inc. and JEDLSoft
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ var GenerateModeProcess = require("./lib/GenerateModeProcess.js");
 
 var XliffMerge = require("./lib/XliffMerge.js");
 var XliffSplit = require("./lib/XliffSplit.js");
+var XliffSelect = require("./lib/XliffSelect.js");
 var fileConvert = require("./lib/convert.js");
 
 // var Git = require("simple-git");
@@ -47,6 +48,131 @@ function getVersion() {
     return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft";
 }
 
+var commandOptionHelp = {
+    init:
+        "init  [project-name]\n" +
+        "  Initialize the current directory as a loctool project and write out a project.json file.\n\n" +
+        "project-name (optional)\n" +
+        "  the name of the project to initialize",
+    localize:
+        "localize [root-dir-name]\n" +
+        "  Extract strings and generate localized resource files. This is the default command.\n\n" + 
+        "root-dir-name\n" +
+        "  the root directory to start looking for a localization project config file.\n" +
+        "  Default root dir name is '.'\n" +
+        "--exclude\n" +
+        "  exclude a comma-separated list of directories while searching for project.json config files \n" +
+        "-f or --filetype\n" +
+        "  Restrict operation to only the given list of file types. This allows you to\n" +
+        "  run only the parts of the loctool that are needed at the moment.\n" +
+        "--localizeOnly\n" +
+        "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
+        "-n or --pseudo\n" +
+        "  Do pseudo-localize missing strings and generate the pseudo-locale. (Default is\n" +
+        "  not to do pseudo-localization.\n" +
+        "-o or --oldhaml\n" +
+        "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
+        "--resourceDirs\n" +
+        "  Specify the dir where the generation output should go. \n" +
+        "--resourceFileNames\n" +
+        "  Specify the resource filename used during resource file generation.\n" +
+        "--resourceFileTypes\n" +
+        "  Specifies the file type of the resource to be created. \n" +
+        "--xliffResName\n" +
+        "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
+        "--xliffResRoot\n" +
+        "  Specify the dir where the generation output should go. (Default is resources/) \n" +
+        "--xliffStyle\n" +
+        "  Specify the Xliff format style. Style can be 'standard' or 'custom'. (Default is 'standard')",
+//  to be implemented
+//  report:
+//      "report\n" +
+//      "  generate a loc report, but don't generate localized resource files.\n",
+//    export:
+//        "export [filename]\n" +
+//        "  Export all the new strings to an xliff or a set of xliff files.\n\n" +
+//        "filename (optional)\n" +
+//        "  the path to the output file\n" +
+//        "  Default: a set of files named new-<locale>.xliff\n",
+//    import:
+//        "import filename ...\n" +
+//        "  import all the translated strings in the given xliff files.\n\n" +
+//        "filename\n" +
+//        "  the path to the file to import",
+    split:
+        "split type filename ...\n" +
+        "  Split the given xliff files\n\n" +
+        "type\n" +
+        "  When the type is 'language', create a new xliff file for each target language\n" +
+        "  and put translations unit for that language into the file.\n" +
+        "  When the type is 'project', create a new xliff file for each project and put\n" +
+        "  all translation units for that project into the file.\n" +
+        "filename\n" +
+        "  You may list as many input files as you like. These will be first merged together\n" +
+        "  and then split.",
+    merge:
+        "merge outfile filename ...\n" +
+        "  Merge the given xliff files together\n\n" +
+        "outfile\n" +
+        "  the path to the file to merge to\n" +
+        "filename\n" +
+        "  You may list as many input files as you like to merge together.",
+    generate:
+        "generate ...\n" +
+        "  Generate resources without scanning sources.\n" +
+        "  This is similar to the localize command, but will not first read the source files\n" +
+        "  to find the strings to localize. Instead, all translation units in the xliff files\n" +
+        "  that have translations will be output to the resource files regardless if they are\n" +
+        "  used or not.",
+    convert:
+        "convert outfile filename ...\n" +
+        "  Convert input files to the output file format. All files must be resource file types\n" +
+        "  such as xliff, po, or properties.\n\n" +
+        "--onlyTranslated\n" +
+        "  Only convert fully translated resources to the target file.\n" +
+        "  Source-only resources will skipped. (Default: convert all resources.)\n" +
+        "--segmentation\n" +
+        "  Style of segmentation to use when writing out TMX files. Style can be 'sentence'\n" +
+        "  or 'paragraph'. (Default is 'paragraph')",
+    select:
+        "select criteria outfile filename ...\n" +
+        "  Select translation units from the input files using the given criteria and write them\n" +
+        "  to the output file. All files must be xliff files.\n\n" +
+        "criteria\n" +
+        "  The selection criteria. The syntax is as follows:\n" +
+        "    [field]=[regexp]\n" +
+        "      Select any translation units where the given field name matches the regular expression.\n" +
+        "      Fields can be one of: project, context, sourceLocale, targetLocale, key, pathName, state,\n" +
+        "        comment, dnt, datatype, resType, flavor, source, or target\n" +
+        "      Additionally, the field name may be one of the following:\n" +
+        "         source.[category]  (eg. 'source.one')\n" +
+        "           Only select plural resources where the value of the given plural category matches the\n" +
+        "           regular expression\n" +
+        "         target.[category]\n" +
+        "           Only select plural resources where the value of the given plural category matches the\n" +
+        "           regular expression\n" +
+        "         source.[arrayindex]   (eg. 'source.3')\n" +
+        "         target.[arrayindex]\n" +
+        "           Only select array resources where the value at the given array index matches the\n" +
+        "           regular expression.\n" +
+        "      When matching against the source or target fields, a regular expression will match all types\n" +
+        "      of resources and will search the string, category strings, or array values as appropriate.\n" +
+        "    random\n" +
+        "      Select a random set of translation units.\n" +
+        "    maxunits:[number]\n" +
+        "      Select a the given maximum number of translation units.\n" +
+        "    maxsource:[number]\n" +
+        "      Select translation units until the given number of source words is reached.\n" +
+        "    maxtarget:[number]\n" +
+        "      Select translation units until the given number of target words is reached.\n" +
+        "  Selection criteria can be combined with a comma. All criteria must match, making the selection a\n" +
+        "  conjunction. eg. loctool select 'random,maxsource:100,project=myproject' outfile.xliff infile.xliff\n" +
+        "outfile\n" +
+        "  the path to the file where the selected translation units are written to\n" +
+        "filename\n" +
+        "  You may list as many input files to select from as you like",
+};
+
 function usage() {
     console.log(getVersion());
     console.log(
@@ -55,13 +181,8 @@ function usage() {
         "Extract localizable strings from the source code.\n\n" +
         "-2\n" +
         "  Use xliff 2.0 format files instead of the default xliff 1.2\n" +
-        "--exclude\n" +
-        "  exclude a comma-separated list of directories while searching for project.json config files \n" +
-        "-f or --filetype\n" +
-        "  Restrict operation to only the given list of file types. This allows you to\n" +
-        "  run only the parts of the loctool that are needed at the moment.\n" +
         "-h or --help\n" +
-        "  this help\n" +
+        "  this help. Use loctool [command] --help for help for a particular command.\n" +
         "-i or --identify\n" +
         "  Identify resources where possible by marking up the translated files with \n" +
         "  the resource key.\n" +
@@ -81,18 +202,8 @@ function usage() {
         "  The value of the parameter is a comma-separated list of mappings where each mapping is a BCP-47\n" +
         "  specifier of the source locale, a colon, and the BCP-47 specifier of the target locale.\n" +
         "  eg. 'en-AU:en-GB' (en-AU inherits translations from en-GB)\n" +
-        "--localizeOnly\n" +
-        "  Generate a localization resource only. Do not create any other files at all after running loctool. \n" +
-        "-n or --pseudo\n" +
-        "  Do pseudo-localize missing strings and generate the pseudo-locale. (Default is\n" +
-        "  not to do pseudo-localization.\n" +
-        "-o or --oldhaml\n" +
-        "  Use the old ruby-based haml localizer instead of the new javascript one.\n" +
-        "--onlyTranslated\n" +
-        "  During the convert action, only convert fully translated resources to the target\n" +
-        "  file. Source-only resources will skipped. (Default: convert all resources.)\n" +
-        "-p or --pull\n" +
-        "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+//        "-p or --pull\n" +
+//        "  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
         "--projectId\n" +
         "  Specify the default name of the project if not specified otherwise.\n" +
         "--projectType\n" +
@@ -102,21 +213,12 @@ function usage() {
         "  comma-separated list of plugin names.\n" +
         "-q or --quiet\n" +
         "  Quiet mode. Only print banners and any errors/warnings.\n" +
-        "--resourceDirs\n" +
-        "  Specify the dir where the generation output should go. \n" +
-        "--resourceFileNames\n" +
-        "  Specify the resource filename used during resource file generation.\n" +
-        "--resourceFileTypes\n" +
-        "  Specifies the file type of the resource to be created. \n" +
         "--root dir\n" +
         "  directory containing the git projects with the source code.\n" +
         "  Default: current dir.\n" +
         "-s or --silent\n" +
         "  Silent mode. Don't ever print anything on the stdout. Instead, just exit with\n" +
         "  the appropriate exit code.\n" +
-        "--segmentation\n" +
-        "  Style of segmentation to use when writing out TMX files. Style can be 'sentence'\n" +
-        "  or 'paragraph'. (Default is 'paragraph') \n" +
         "--sourceLocale\n" +
         "   Default locale of source string. (Default is en-US) \n" +
         "-t or --target\n" +
@@ -128,32 +230,12 @@ function usage() {
         "  Print the current loctool version and exit\n" +
         "-x or --xliffs\n" +
         "  Specify a dir or comma-separated array of dirs where the xliffs files live. Default: \".\"\n" +
-        "--xliffResName\n" +
-        "  Specify the resource filename used during resource file generation. (Default is strings.json) \n" +
-        "--xliffResRoot\n" +
-        "  Specify the dir where the generation output should go. (Default is resources/) \n" +
-        "--xliffStyle\n" +
-        "  Specify the Xliff format style. Style can be 'standard' or 'custom'. (Default is 'standard') \n" +
         "--noxliffDups\n" +
         "  Do not allow duplicated strings in extracted xliff file. (Default is 'true') \n" +
         "command\n" +
         "  a command to execute. This is one of:\n" +
-        "    init  [project-name] - initialize the current directory as a loctool project\n" +
-        "             and write out a project.json file.\n" +
-        "    localize [root-dir-name] - extract strings and generate localized resource\n" +
-        "             files. This is the default command. Default root dir name is '.'\n" +
-//        "    report - generate a loc report, but don't generate localized resource files.\n" +
-        "    export [filename] - export all the new strings to an xliff or a set of xliff\n" +
-        "             files. Default: a set of files named new-<locale>.xliff [not implemented yet]\n" +
-        "    import filename ... - import all the translated strings in the given\n" +
-        "             xliff files. [not implemented yet]\n" +
-        "    split (language|project) filename ... - split the given xliff files by\n" +
-        "             language or project.\n" +
-        "    merge outfile filename ... - merge the given xliff files to the named\n" +
-        "             outfile.\n" +
-        "    generate ... - generate resources without scanning sources.\n" +
-        "    convert outfile filename ... - convert input files to the output file format.\n" +
-        "             All files must be resource file types such as xliff, po, or properties.\n"
+        "    init, localize, split, merge, generate, convert, select\n" +
+        "    Use loctool [command] --help to see help for a particular command.\n"
         );
     process.exit(0);
 }
@@ -210,7 +292,7 @@ var argv = process.argv;
 for (var i = 0; i < argv.length; i++) {
     var val = argv[i];
     if (val === "-h" || val === "--help") {
-        usage();
+        settings.help = true;
     } else if (val === "-2") {
         settings.xliffVersion = 2;
     } else if (val === "-p" || val === "--pull") {
@@ -350,6 +432,15 @@ for (var i = 0; i < argv.length; i++) {
     }
 }
 
+
+if (settings.help) {
+    if (options.length > 2 && options[2] && commandOptionHelp[options[2]]) {
+        console.log("Usage: loctool " + commandOptionHelp[options[2]]);
+        process.exit(0);
+    }
+    usage();
+}
+
 var command = options.length > 2 ? options[2] : "localize";
 settings.mode = command;
 switch (command) {
@@ -404,6 +495,22 @@ case "convert":
     }
     settings.outfile = options[3]
     settings.infiles = options.slice(4);
+    break;
+
+case "select":
+    if (options.length < 5) {
+        console.log("Error: must specify selection criteria, an output file, and at least one input file.");
+        usage();
+    }
+    settings.criteria = options[3];
+    settings.outfile = options[4]
+    settings.infiles = options.slice(5);
+    settings.infiles.forEach(function (file) {
+        if (!fs.existsSync(file)) {
+            console.log("Error: could not access file " + file);
+            usage();
+        }
+    });
     break;
 }
 
@@ -642,6 +749,11 @@ try {
             settings.id = "convert";
         }
         fileConvert(settings);
+        break;
+
+    case "select":
+        var selected = XliffSelect(settings);
+        XliffSelect.write(selected);
         break;
     }
 } catch (e) {
