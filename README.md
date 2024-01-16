@@ -818,6 +818,13 @@ These are the actions which are available:
   to preserve all data. For example, strings files for iOS can contain
   comments whereas json files cannot. If you convert a strings file into a
   json file, any comments will be lost.
+- select - Select translation units from the input xliff files based on the
+  given criteria, and write them out to an output xliff file. The selection
+  criteria allow you to specify regular expressions to match against values
+  of specific fields. Also, you can limit the output by specifying the
+  maximum number of units, or the maximum number of source or target words.
+  It also allows you to randomize the selection so you can create a sample
+  of the input translations units.
 
 Copyright and License
 -------

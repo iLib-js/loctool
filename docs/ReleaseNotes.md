@@ -7,6 +7,15 @@ Published as version 2.24.0
 
 New Features:
 * Added a new `getProjectType()` method on the Project class.
+* Add a new "select" command to select translation units from some xliff
+  files and write them out to a new xliff file
+    * allows for the selection based on regular expressions that
+      match in certain field values
+        * can search for regular expressions in plural category values
+          or array values
+    * allows limitations like maximum unit count or maximum word
+      count in the source or target strings
+    * allows for random selection to create samples of the input files
 
 Bug fixes:
 * Removed unused dependencies.
