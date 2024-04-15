@@ -7,3 +7,4 @@ test/**/*.de-DE.*
 test/testfiles/de-DE/
 test/testfiles/fr-FR/
 /node_modules/
+/coverage/

@@ -1,6 +1,17 @@
 Release Notes for Version 2
 ============================
 
+Build 043
+-------
+Published as version 2.24.1
+
+New Features:
+
+Bug fixes:
+* Removed unused mysql dependencies to avoid mysql2 security
+  vulnerabilities
+
+
 Build 042
 -------
 Published as version 2.24.0
