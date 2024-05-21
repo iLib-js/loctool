@@ -92,7 +92,7 @@ describe("localrepository", function() {
     });
 
     test("LocalRepositoryConstructorWithXliffsDir", function() {
-        expect.assertions(24);
+        expect.assertions(31);
 
         var repo = new LocalRepository({
             sourceLocale: "en-US",
@@ -106,7 +106,7 @@ describe("localrepository", function() {
                 reskey: "foobar"
             }, function(err, resources) {
                 expect(resources).toBeTruthy();
-                expect(resources.length).toBe(3);
+                expect(resources.length).toBe(4);
 
                 resources.sort(function(left, right) {
                     var leftLocale = left.getTargetLocale();
@@ -126,17 +126,26 @@ describe("localrepository", function() {
                 expect(resources[1].getProject()).toBe("webapp");
                 expect(resources[1].getSourceLocale()).toBe("en-US");
                 expect(resources[1].getSource()).toBe("Asdf asdf");
-                expect(resources[1].getTargetLocale()).toBe("fr-FR");
-                expect(resources[1].getTarget()).toBe("La asdf");
+                expect(resources[1].getTargetLocale()).toBe("es-419");
+                expect(resources[1].getTarget()).toBe("El asdf");
                 expect(resources[1].getComment()).toBe("foobar is where it's at!");
 
                 expect(resources[2].getKey()).toBe("foobar");
                 expect(resources[2].getProject()).toBe("webapp");
                 expect(resources[2].getSourceLocale()).toBe("en-US");
                 expect(resources[2].getSource()).toBe("Asdf asdf");
-                expect(resources[2].getTargetLocale()).toBe("nl-NL");
-                expect(resources[2].getTarget()).toBe("Het asdf");
+                expect(resources[2].getTargetLocale()).toBe("fr-FR");
+                expect(resources[2].getTarget()).toBe("La asdf");
                 expect(resources[2].getComment()).toBe("foobar is where it's at!");
+
+                expect(resources[3].getKey()).toBe("foobar");
+                expect(resources[3].getProject()).toBe("webapp");
+                expect(resources[3].getSourceLocale()).toBe("en-US");
+                expect(resources[3].getSource()).toBe("Asdf asdf");
+                expect(resources[3].getTargetLocale()).toBe("nl-NL");
+                expect(resources[3].getTarget()).toBe("Het asdf");
+                expect(resources[3].getComment()).toBe("foobar is where it's at!");
+
 
                 repo.close(function() {
                 });
