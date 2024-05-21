@@ -10,6 +10,10 @@ New Features:
 Bug fixes:
 * Removed unused mysql dependencies to avoid mysql2 security
   vulnerabilities
+* Fixed a bug where xliff files in the xliffs dir which had a locale
+  that used numeric region codes were not being recognized and
+  therefore never read. This meant that no localization could happen
+  to locales with numeric region codes. (example locale spec: "es-419")
 
 
 Build 042
