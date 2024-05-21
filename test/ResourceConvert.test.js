@@ -173,9 +173,45 @@ describe("resource conversion functions", function() {
         expect(plural.getSourcePlurals()).toStrictEqual(expected);
     });
 
+    test("convert plural source to string preserves all other fields", function() {
+        expect.assertions(9);
+
+        var plural = new ResourcePlural({
+            sourceLocale: "en-US",
+            sourceStrings: {
+                one: "There is {n} string.",
+                other: "There are {n} strings."
+            },
+            targetLocale: "de-DE",
+            targetStrings: {
+                one: "Es gibt {n} Zeichenfolge.",
+                other: "Es gibt {n} Zeichenfolgen.",
+            },
+            key: "asdf",
+            project: "project",
+            pathName: "a/b/c.xliff",
+            datatype: "json",
+            flavor: "chocolate",
+            comment: "no comment",
+            state: "new"
+        });
+
+        var string = conv.convertPluralResToICU(plural);
+        var expected = "{count, plural, one {There is {n} string.} other {There are {n} strings.}}";
+        expect(string.getType()).toBe("string");
+        expect(string.getSource()).toBe(expected);
+        expect(string.getKey()).toBe("asdf");
+        expect(string.getProject()).toBe("project");
+        expect(string.getPath()).toBe("a/b/c.xliff");
+        expect(string.getDataType()).toBe("json");
+        expect(string.getFlavor()).toBe("chocolate");
+        expect(string.getComment()).toBe("no comment");
+        expect(string.getState()).toBe("new");
+    });
+
     test("convert string target to plural", function() {
         expect.assertions(2);
-debugger;
+
         var string = new ResourceString({
             sourceLocale: "en-US",
             source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
@@ -270,5 +306,38 @@ debugger;
         var plural = conv.convertICUToPluralRes(string);
         expect(plural.getType()).toBe("plural");
         expect(plural.getTargetPlurals()).toStrictEqual(expected);
+    });
+
+    test("convert string target to plural, preserving all other fields", function() {
+        expect.assertions(9);
+
+        var string = new ResourceString({
+            sourceLocale: "en-US",
+            source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+            targetLocale: "de-DE",
+            target: "{count, plural,  one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}",
+            key: "asdf",
+            project: "project",
+            pathName: "a/b/c.xliff",
+            datatype: "json",
+            flavor: "chocolate",
+            comment: "no comment",
+            state: "new"
+        });
+
+        var expected = {
+            one: "Es gibt {n} Zeichenfolge.",
+            other: "Es gibt {n} Zeichenfolgen.",
+        };
+        var plural = conv.convertICUToPluralRes(string);
+        expect(plural.getType()).toBe("plural");
+        expect(plural.getTargetPlurals()).toStrictEqual(expected);
+        expect(string.getKey()).toBe("asdf");
+        expect(string.getProject()).toBe("project");
+        expect(string.getPath()).toBe("a/b/c.xliff");
+        expect(string.getDataType()).toBe("json");
+        expect(string.getFlavor()).toBe("chocolate");
+        expect(string.getComment()).toBe("no comment");
+        expect(string.getState()).toBe("new");
     });
 });
