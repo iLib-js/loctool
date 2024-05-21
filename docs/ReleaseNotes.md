@@ -1,7 +1,7 @@
 Release Notes for Version 2
 ============================
 
-Build 043
+Build 044
 -------
 Published as version 2.25.0
 
@@ -15,6 +15,12 @@ New Features:
   extraction, the plurals are converted to strings. During localization,
   the strings are converted back into plurals again before they are
   sent to the plugins to write them out again in the resource file format.
+
+Build 043
+-------
+Published as version 2.24.1
+
+New Features:
 
 Bug fixes:
 * Removed unused mysql dependencies to avoid mysql2 security
