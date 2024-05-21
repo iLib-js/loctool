@@ -288,7 +288,8 @@ var settings = {
     targetLocale: null,
     localeMap: {},
     localeInherit: {},
-    onlyTranslated: false
+    onlyTranslated: false,
+    convertPlurals: false
 };
 
 var options = [];
@@ -431,6 +432,8 @@ for (var i = 0; i < argv.length; i++) {
                 return temp.indexOf(item) === index;
             })
         }
+    } else if (val === "--convertPlurals") {
+        settings.convertPlurals = true;
     } else {
         options.push(val);
     }
@@ -530,7 +533,6 @@ if (command === "localize") {
     }
 }
 
-var resources;
 var project;
 var fileTypes;
 
