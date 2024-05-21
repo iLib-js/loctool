@@ -59,11 +59,12 @@
         "clean": "ant clean",
         "dist": "npm run generate ; npm pack",
         "generate": "node generate/genPluralCategories.js",
-        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --detectOpenHandles",
+        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --testEnvironment node",
         "test:watch": "LANG=en-US jest --watch",
         "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
     "dependencies": {
+        "@formatjs/intl": "^2.10.4",
         "build-gradle-reader": "*",
         "cldr-segmentation": "^2.2.0",
         "he": "^1.2.0",
