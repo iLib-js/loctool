@@ -46,9 +46,30 @@ describe("resource conversion functions", function() {
         expect(string.getSource()).toBe(expected);
     });
 
+    test("convert plural source to string in a source-only resource", function() {
+        expect.assertions(5);
+
+        var plural = new ResourcePlural({
+            sourceLocale: "en-US",
+            sourceStrings: {
+                one: "There is {n} string.",
+                other: "There are {n} strings."
+            }
+        });
+
+        var string = conv.convertPluralResToICU(plural);
+        var expected = "{count, plural, one {There is {n} string.} other {There are {n} strings.}}";
+        expect(string.getType()).toBe("string");
+        expect(string.getSource()).toBe(expected);
+        expect(string.getSourceLocale()).toBe("en-US");
+
+        expect(string.getTarget()).toBeUndefined();
+        expect(string.getTargetLocale()).toBeUndefined();
+    });
+
     test("convert plural target to string", function() {
         expect.assertions(2);
-        
+
         var plural = new ResourcePlural({
             sourceLocale: "en-US",
             sourceStrings: {
@@ -209,6 +230,27 @@ describe("resource conversion functions", function() {
         var plural = conv.convertICUToPluralRes(string);
         expect(plural.getType()).toBe("plural");
         expect(plural.getSourcePlurals()).toStrictEqual(expected);
+    });
+
+    test("convert string source to plural in a source-only resource", function() {
+        expect.assertions(5);
+
+        var string = new ResourceString({
+            sourceLocale: "en-US",
+            source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}"
+        });
+
+        var expected = {
+            one: "There is {n} string.",
+            other: "There are {n} strings."
+        };
+        var plural = conv.convertICUToPluralRes(string);
+        expect(plural.getType()).toBe("plural");
+        expect(plural.getSourcePlurals()).toStrictEqual(expected);
+        expect(plural.getSourceLocale()).toBe("en-US");
+
+        expect(plural.getTargetPlurals()).toBeUndefined();
+        expect(plural.getTargetLocale()).toBeUndefined();
     });
 
     test("convert plural source to string preserves all other fields", function() {
