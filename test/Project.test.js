@@ -267,6 +267,170 @@ describe("project", function() {
         });
     });
 
+    test("Project generates correct plural strings in new strings files with convertPlural turned on", function() {
+        expect.assertions(9);
+        // set up first
+        rmrf("./test/testfiles/project2/loctest-new-es-US.xliff");
+        rmrf("./test/testfiles/project2/loctest-new-ja-JP.xliff");
+        rmrf("./test/testfiles/project2/loctest-new-ru-RU.xliff");
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-es-US.xliff")).toBeTruthy();
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-ja-JP.xliff")).toBeTruthy();
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-ru-RU.xliff")).toBeTruthy();
+        // adds Japanese and Russian to the list of locales to generate
+        var project = ProjectFactory('./test/testfiles/project2', {
+            convertPlurals: true
+        });
+        project.addPath("res/values/strings.xml");
+        project.init(function() {
+            project.extract(function() {
+                project.generatePseudo();
+                project.write(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            var filename = "./test/testfiles/project2/loctest-new-es-US.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            var actual = fs.readFileSync(filename, "utf8");
+                            var expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="1.2">\n' +
+                                '  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="loctest">\n' +
+                                '    <body>\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="string" datatype="x-android-resource">\n' +
+                                '        <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '        <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '      </trans-unit>\n' +
+                                '    </body>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                            filename = "./test/testfiles/project2/loctest-new-ja-JP.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="1.2">\n' +
+                                '  <file original="res/values/strings.xml" source-language="en-US" target-language="ja-JP" product-name="loctest">\n' +
+                                '    <body>\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="string" datatype="x-android-resource">\n' +
+                                '        <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '        <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '      </trans-unit>\n' +
+                                '    </body>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                            filename = "./test/testfiles/project2/loctest-new-ru-RU.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="1.2">\n' +
+                                '  <file original="res/values/strings.xml" source-language="en-US" target-language="ru-RU" product-name="loctest">\n' +
+                                '    <body>\n' +
+                                '      <trans-unit id="1" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '        <target state="new">a</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '        <target state="new">b</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '        <target state="new">c</target>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="foobar" restype="string" datatype="x-android-resource">\n' +
+                                '        <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '        <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '      </trans-unit>\n' +
+                                '    </body>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            expect(actual).toBe(expected);
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+    test("Project generates correct plural strings in the extracted strings files with convertPlural turned on", function() {
+        expect.assertions(3);
+        // set up first
+        rmrf("./test/testfiles/project2/loctest-extracted.xliff");
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-extracted.xliff")).toBeTruthy();
+        var project = ProjectFactory('./test/testfiles/project2', {
+            convertPlurals: true
+        });
+        project.addPath("res/values/strings.xml");
+        project.init(function() {
+            project.extract(function() {
+                project.generatePseudo();
+                project.write(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            var filename = "./test/testfiles/project2/loctest-extracted.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            var actual = fs.readFileSync(filename, "utf8");
+                            var expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="1.2">\n' +
+                                '  <file original="res/values/strings.xml" source-language="en-US" product-name="loctest">\n' +
+                                '    <body>\n' +
+                                '      <trans-unit id="1" resname="app_id" restype="string" datatype="x-android-resource">\n' +
+                                '        <source>151779581544891</source>\n' +
+                                '        <note>Do not translate</note>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="2" resname="noSource" restype="array" datatype="x-android-resource" extype="0">\n' +
+                                '        <source>a</source>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="3" resname="noSource" restype="array" datatype="x-android-resource" extype="1">\n' +
+                                '        <source>b</source>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="4" resname="noSource" restype="array" datatype="x-android-resource" extype="3">\n' +
+                                '        <source>c</source>\n' +
+                                '      </trans-unit>\n' +
+                                '      <trans-unit id="5" resname="foobar" restype="string" datatype="x-android-resource">\n' +
+                                '        <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '      </trans-unit>\n' +
+                                '    </body>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                        });
+                    });
+                });
+            });
+        });
+    });
+
     test("ProjectGeneratesCorrectPluralCategoriesInNewStringsXliffs20", function() {
         expect.assertions(9);
         // set up first
@@ -445,6 +609,210 @@ describe("project", function() {
                                 '        <segment>\n' +
                                 '          <source>%d friends commented</source>\n' +
                                 '          <target state="new">%d friends commented</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+    test("Project generates correct plural strings in new strings file after convert option is turned on", function() {
+        expect.assertions(9);
+        // set up first
+        rmrf("./test/testfiles/project2/loctest-new-es-US.xliff");
+        rmrf("./test/testfiles/project2/loctest-new-ja-JP.xliff");
+        rmrf("./test/testfiles/project2/loctest-new-ru-RU.xliff");
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-es-US.xliff")).toBeTruthy();
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-ja-JP.xliff")).toBeTruthy();
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-new-ru-RU.xliff")).toBeTruthy();
+        // adds Japanese and Russian to the list of locales to generate
+        var project = ProjectFactory('./test/testfiles/project2', {
+            xliffVersion: 2,
+            convertPlurals: true
+        });
+        project.addPath("res/values/strings.xml");
+        project.init(function() {
+            project.extract(function() {
+                project.generatePseudo();
+                project.write(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            var filename = "./test/testfiles/project2/loctest-new-es-US.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            var actual = fs.readFileSync(filename, "utf8");
+                            var expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="es-US" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:string" l:datatype="x-android-resource">\n' +
+                                '        <segment>\n' +
+                                '          <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '          <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                            filename = "./test/testfiles/project2/loctest-new-ja-JP.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="ja-JP" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:string" l:datatype="x-android-resource">\n' +
+                                '        <segment>\n' +
+                                '          <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '          <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                            filename = "./test/testfiles/project2/loctest-new-ru-RU.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            actual = fs.readFileSync(filename, "utf8");
+                            expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" trgLang="ru-RU" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '          <target state="new">a</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '          <target state="new">b</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '          <target state="new">c</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="foobar" type="res:string" l:datatype="x-android-resource">\n' +
+                                '        <segment>\n' +
+                                '          <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
+                                '          <target state="new">{count, plural, one {%d friend commented} other {%d friends commented}}</target>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '    </group>\n' +
+                                '  </file>\n' +
+                                '</xliff>';
+                            diff(actual, expected);
+                            expect(actual).toBe(expected);
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+    test("Project generates correct plural strings in new strings file after convert option is turned on", function() {
+        expect.assertions(3);
+        // set up first
+        rmrf("./test/testfiles/project2/loctest-extracted.xliff");
+        expect(!fs.existsSync("./test/testfiles/project2/loctest-extracted.xliff")).toBeTruthy();
+        // adds Japanese and Russian to the list of locales to generate
+        var project = ProjectFactory('./test/testfiles/project2', {
+            xliffVersion: 2,
+            convertPlurals: true
+        });
+        project.addPath("res/values/strings.xml");
+        project.init(function() {
+            project.extract(function() {
+                project.generatePseudo();
+                project.write(function() {
+                    project.save(function() {
+                        project.close(function() {
+                            var filename = "./test/testfiles/project2/loctest-extracted.xliff";
+                            expect(fs.existsSync(filename)).toBeTruthy();
+                            var actual = fs.readFileSync(filename, "utf8");
+                            var expected =
+                                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                                '<xliff version="2.0" srcLang="en-US" xmlns:l="http://ilib-js.com/loctool">\n' +
+                                '  <file original="res/values/strings.xml" l:project="loctest">\n' +
+                                '    <group id="group_1" name="x-android-resource">\n' +
+                                '      <unit id="1" name="app_id" type="res:string" l:datatype="x-android-resource">\n' +
+                                '        <notes>\n' +
+                                '          <note appliesTo="source">Do not translate</note>\n' +
+                                '        </notes>\n' +
+                                '        <segment>\n' +
+                                '          <source>151779581544891</source>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="2" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="0">\n' +
+                                '        <segment>\n' +
+                                '          <source>a</source>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="3" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="1">\n' +
+                                '        <segment>\n' +
+                                '          <source>b</source>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="4" name="noSource" type="res:array" l:datatype="x-android-resource" l:index="3">\n' +
+                                '        <segment>\n' +
+                                '          <source>c</source>\n' +
+                                '        </segment>\n' +
+                                '      </unit>\n' +
+                                '      <unit id="5" name="foobar" type="res:string" l:datatype="x-android-resource">\n' +
+                                '        <segment>\n' +
+                                '          <source>{count, plural, one {%d friend commented} other {%d friends commented}}</source>\n' +
                                 '        </segment>\n' +
                                 '      </unit>\n' +
                                 '    </group>\n' +
