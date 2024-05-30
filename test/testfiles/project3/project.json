@@ -13,5 +13,5 @@
     "settings": {
         "locales": ["es-US", "ja-JP", "zh-Hans-CN"]
     },
-	"plugins": ["ilib-loctool-mock-json"]
+    "plugins": ["ilib-loctool-mock-json"]
 }
