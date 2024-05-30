@@ -1,7 +1,7 @@
 /*
  * GenerateMode.test.js - test the GenerateMode object.
  *
- * Copyright © 2020, 2023 JEDLSoft.
+ * Copyright © 2020, 2023-2024 JEDLSoft.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,15 +18,10 @@
  */
 
 var fs = require('fs');
-if (!GenerateMode) {
-    var GenerateMode = require("../lib/GenerateMode.js");
-}
-if (!GenerateModeProcess) {
-    var GenerateModeProcess = require("../lib/GenerateModeProcess.js");
-}
-if (!ProjectFactory) {
-    var ProjectFactory = require("../lib/ProjectFactory.js");
-}
+
+var GenerateMode = require("../lib/GenerateMode.js");
+var GenerateModeProcess = require("../lib/GenerateModeProcess.js");
+var ProjectFactory = require("../lib/ProjectFactory.js");
 
 describe("genmodemode", function() {
     test("GenerateModeConstructor", function() {
@@ -46,7 +41,7 @@ describe("genmodemode", function() {
             rootDir: ".",
             projectType: "sample"
         };
-        var project = ProjectFactory.newProject(settings);
+        var project = ProjectFactory.newProject({}, settings);
         var process = GenerateModeProcess(project);
         expect(process).toBeTruthy();
     });
