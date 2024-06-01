@@ -59,7 +59,7 @@
         "clean": "ant clean",
         "dist": "npm run generate ; npm pack",
         "generate": "node generate/genPluralCategories.js",
-        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --testEnvironment node",
+        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --testEnvironment node --detectOpenHandles",
         "test:watch": "LANG=en-US jest --watch",
         "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
