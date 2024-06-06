@@ -1,0 +1,22 @@
+{
+    "arr1": [
+        "one",
+        "two",
+        "three"
+    ],
+    "arr2": [
+        "four",
+        "five",
+        "six"
+    ],
+    "foobar1": "This is a test string",
+    "foobar2": "This is a second test string",
+    "plu1": {
+        "one": "singular",
+        "other": "plural"
+    },
+    "plu2": {
+        "one": "There is {n} item.",
+        "other": "There are {n} items."
+    }
+}

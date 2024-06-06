@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="md/test1.md" source-language="en-US" target-language="zh-Hans-CN" product-name="loctest">
+    <body>
+      <trans-unit id="1" resname="r548615397" restype="string" datatype="markdown">
+        <source>This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.</source>
+        <target state="signed-off">这是此测试文档的标题，在文档本身中出现多次。</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r777006502" restype="string" datatype="markdown">
+        <source>This is some text. This is more text. Pretty, pretty text.</source>
+        <target state="signed-off">这是一些文本。这是更多文本。非常漂亮的文本。</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r112215756" restype="string" datatype="markdown">
+        <source>This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.</source>
+        <target state="signed-off">这是可本地化的文本。这是此测试文档的标题，在文档本身中出现多次。</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r260813817" restype="string" datatype="markdown">
+        <source>This is the last bit of localizable text.</source>
+        <target state="signed-off">这是最后一部分可本地化的文本。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

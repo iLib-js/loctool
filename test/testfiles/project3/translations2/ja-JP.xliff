@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="en-US.mock" source-language="en-US" target-language="ja-JP" product-name="loctest">
+    <body>
+      <trans-unit id="1" resname="foobar1" restype="string" datatype="mock">
+        <source>This is a test string</source>
+        <target state="signed-off">これはテスト文字列です</target>
+      </trans-unit>
+      <trans-unit id="2" resname="foobar2" restype="string" datatype="mock">
+        <source>This is a second test string</source>
+        <target state="signed-off">これは 2 番目のテスト文字列です</target>
+      </trans-unit>
+      <trans-unit id="3" resname="arr1" restype="array" datatype="mock" extype="0">
+        <source>one</source>
+        <target state="signed-off">1</target>
+      </trans-unit>
+      <trans-unit id="4" resname="arr1" restype="array" datatype="mock" extype="1">
+        <source>two</source>
+        <target state="signed-off">2</target>
+      </trans-unit>
+      <trans-unit id="5" resname="arr1" restype="array" datatype="mock" extype="2">
+        <source>three</source>
+        <target state="signed-off">3</target>
+      </trans-unit>
+      <trans-unit id="6" resname="arr2" restype="array" datatype="mock" extype="0">
+        <source>four</source>
+        <target state="signed-off">4</target>
+      </trans-unit>
+      <trans-unit id="7" resname="arr2" restype="array" datatype="mock" extype="1">
+        <source>five</source>
+        <target state="signed-off">5</target>
+      </trans-unit>
+      <trans-unit id="8" resname="arr2" restype="array" datatype="mock" extype="2">
+        <source>six</source>
+        <target state="signed-off">6</target>
+      </trans-unit>
+      <trans-unit id="9" resname="plu2" restype="string" datatype="mock">
+        <source>{count, plural, one {There is {n} item.} other {There are {n} items.}}</source>
+        <target state="signed-off">{count, plural, other {項目が {n} つあります。}}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

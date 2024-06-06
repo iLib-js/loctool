@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="md/test1.md" source-language="en-US" target-language="ja-JP" product-name="loctest">
+    <body>
+      <trans-unit id="1" resname="r548615397" restype="string" datatype="markdown">
+        <source>This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.</source>
+        <target state="signed-off">これは、このテスト ドキュメントのタイトルで、ドキュメント自体に複数回表示されます。</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r777006502" restype="string" datatype="markdown">
+        <source>This is some text. This is more text. Pretty, pretty text.</source>
+        <target state="signed-off">これはテキストです。これはさらにテキストです。とてもきれいなテキストです。</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r112215756" restype="string" datatype="markdown">
+        <source>This is localizable text. This is the TITLE of this Test Document Which Appears Several Times Within the Document Itself.</source>
+        <target state="signed-off">これはローカライズ可能なテキストです。これは、このテスト ドキュメントのタイトルで、ドキュメント自体に複数回表示されます。</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r260813817" restype="string" datatype="markdown">
+        <source>This is the last bit of localizable text.</source>
+        <target state="signed-off">これはローカライズ可能なテキストの最後の部分です。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

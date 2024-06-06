@@ -1,0 +1,32 @@
+{
+    "name": "ilib-loctool-mock-json",
+    "version": "1.0.0",
+    "main": "./MockJsonFileType.js",
+    "description": "A loctool plugin that pretends to read/write json files",
+    "license": "Apache-2.0",
+    "keywords": [
+        "internationalization",
+        "i18n",
+        "localization",
+        "l10n",
+        "globalization",
+        "g11n",
+        "strings",
+        "resources",
+        "locale",
+        "translation",
+        "webpack",
+        "loader",
+        "javascript"
+    ],
+    "files": [
+        "MockJsonFileType.js",
+        "MockJsonFile.js"
+    ],
+    "dependencies": {
+        "ilib": "^14.20.0"
+    },
+    "devDependencies": {
+        "loctool": "^2.25.0"
+    }
+}
