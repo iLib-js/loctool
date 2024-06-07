@@ -1,7 +1,7 @@
 /*
  * TranslationSet.test.js - test the Translation Set object.
  *
- * Copyright © 2016-2017, 2023 HealthTap, Inc.
+ * Copyright © 2016-2017, 2023-2024 HealthTap, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +17,11 @@
  * limitations under the License.
  */
 
-if (!TranslationSet) {
-    var TranslationSet = require("../lib/TranslationSet.js");
-    var ResourceString = require("../lib/ResourceString.js");
-    var ContextResourceString = require("../lib/ContextResourceString.js");
-    var ResourceArray = require("../lib/ResourceArray.js");
-}
+var TranslationSet = require("../lib/TranslationSet.js");
+var ResourceString = require("../lib/ResourceString.js");
+var ContextResourceString = require("../lib/ContextResourceString.js");
+var ResourceArray = require("../lib/ResourceArray.js");
+var ResourcePlural = require("../lib/ResourcePlural.js");
 
 describe("translationset", function() {
      test("TranslationSetConstructor", function() {
@@ -2808,5 +2807,517 @@ describe("translationset", function() {
         expect(squished).toBe(ts.get(squished.hashKey()));
         expect(orig).toBe(ts.getClean(orig.cleanHashKey()));
         expect(squished).toBe(ts.getClean(squished.cleanHashKey()));
+    });
+});
+
+describe("translation set conversion functions", function() {
+    test("for each resource in a set, convert plural source to string ", function() {
+        expect.assertions(8);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourcePlural({
+                key: "a",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "There is {n} string.",
+                    other: "There are {n} strings."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Es gibt {n} Zeichenfolge.",
+                    other: "Es gibt {n} Zeichenfolgen.",
+                }
+            }),
+            new ResourcePlural({
+                key: "b",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "This is a singular string.",
+                    other: "This is a plural string."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Dies ist eine einzelne Zeichenfolge.",
+                    other: "Dies ist eine Pluralzeichenfolgen.",
+                }
+            }),
+        ]);
+
+        var other = set.convertToICU();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(2);
+
+        expect(resources[0].getType()).toBe("string");
+        expect(resources[0].getSource()).toBe("{count, plural, one {There is {n} string.} other {There are {n} strings.}}");
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getSource()).toBe("{count, plural, one {This is a singular string.} other {This is a plural string.}}");
+    });
+
+    test("for each resource in a set, convert plural source to string but do not touch non-plural resources", function() {
+        expect.assertions(10);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourcePlural({
+                key: "a",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "There is {n} string.",
+                    other: "There are {n} strings."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Es gibt {n} Zeichenfolge.",
+                    other: "Es gibt {n} Zeichenfolgen.",
+                }
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "This is a singular string.",
+                targetLocale: "de-DE",
+                target: "Dies ist eine einzelne Zeichenfolge."
+            }),
+            new ResourceArray({
+                key: "c",
+                sourceLocale: "en-US",
+                sourceArray: [
+                    "one",
+                    "two",
+                    "three"
+                ],
+                targetLocale: "de-DE",
+                targetArray: [
+                    "eins",
+                    "zwei",
+                    "drei"
+                ]
+            })
+        ]);
+
+        var other = set.convertToICU();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(3);
+
+        expect(resources[0].getType()).toBe("string");
+        expect(resources[0].getSource()).toBe("{count, plural, one {There is {n} string.} other {There are {n} strings.}}");
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getSource()).toBe("This is a singular string.");
+
+        expect(resources[2].getType()).toBe("array");
+        expect(resources[2].getSourceArray()).toStrictEqual([
+            "one",
+            "two",
+            "three"
+        ]);
+    });
+
+    test("for each resource in a set, convert plural target to string ", function() {
+        expect.assertions(8);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourcePlural({
+                key: "a",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "There is {n} string.",
+                    other: "There are {n} strings."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Es gibt {n} Zeichenfolge.",
+                    other: "Es gibt {n} Zeichenfolgen.",
+                }
+            }),
+            new ResourcePlural({
+                key: "b",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "This is a singular string.",
+                    other: "This is a plural string."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Dies ist eine einzelne Zeichenfolge.",
+                    other: "Dies ist eine Pluralzeichenfolgen.",
+                }
+            }),
+        ]);
+
+        var other = set.convertToICU();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(2);
+
+        expect(resources[0].getType()).toBe("string");
+        expect(resources[0].getTarget()).toBe("{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}");
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getTarget()).toBe("{count, plural, one {Dies ist eine einzelne Zeichenfolge.} other {Dies ist eine Pluralzeichenfolgen.}}");
+    });
+
+    test("for each resource in a set, convert plural target to string but do not touch non-plural resources", function() {
+        expect.assertions(10);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourcePlural({
+                key: "a",
+                sourceLocale: "en-US",
+                sourceStrings: {
+                    one: "There is {n} string.",
+                    other: "There are {n} strings."
+                },
+                targetLocale: "de-DE",
+                targetStrings: {
+                    one: "Es gibt {n} Zeichenfolge.",
+                    other: "Es gibt {n} Zeichenfolgen.",
+                }
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "This is a singular string.",
+                targetLocale: "de-DE",
+                target: "Dies ist eine einzelne Zeichenfolge."
+            }),
+            new ResourceArray({
+                key: "c",
+                sourceLocale: "en-US",
+                sourceArray: [
+                    "one",
+                    "two",
+                    "three"
+                ],
+                targetLocale: "de-DE",
+                targetArray: [
+                    "eins",
+                    "zwei",
+                    "drei"
+                ]
+            })
+        ]);
+
+        var other = set.convertToICU();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(3);
+
+        expect(resources[0].getType()).toBe("string");
+        expect(resources[0].getTarget()).toBe("{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}");
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getTarget()).toBe("Dies ist eine einzelne Zeichenfolge.");
+
+        expect(resources[2].getType()).toBe("array");
+        expect(resources[2].getTargetArray()).toStrictEqual([
+            "eins",
+            "zwei",
+            "drei"
+        ]);
+    });
+
+    test("Do not crash when given an empty set to convert to ICU strings", function() {
+        expect.assertions(4);
+
+        var set = new TranslationSet("en-US");
+
+        var other = set.convertToICU();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(0);
+    });
+
+    test("for each resource in a set, convert string source to plural ", function() {
+        expect.assertions(8);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourceString({
+                key: "a",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}"
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {This is a singular string.} other {This is a plural string.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Dies ist eine einzelne Zeichenfolge.} other {Dies ist eine Pluralzeichenfolgen.}}"
+            }),
+        ]);
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(2);
+
+        expect(resources[0].getType()).toBe("plural");
+        expect(resources[0].getSourcePlurals()).toStrictEqual({
+            one: "There is {n} string.",
+            other: "There are {n} strings."
+        });
+
+        expect(resources[1].getType()).toBe("plural");
+        expect(resources[1].getSourcePlurals()).toStrictEqual({
+            one: "This is a singular string.",
+            other: "This is a plural string."
+        });
+    });
+
+    test("for each resource in a set, convert string source to plural but do not touch non-plural resources", function() {
+        expect.assertions(10);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourceString({
+                key: "a",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}"
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "This is a singular string.",
+                targetLocale: "de-DE",
+                target: "Dies ist eine einzelne Zeichenfolge."
+            }),
+            new ResourceArray({
+                key: "c",
+                sourceLocale: "en-US",
+                sourceArray: [
+                    "one",
+                    "two",
+                    "three"
+                ],
+                targetLocale: "de-DE",
+                targetArray: [
+                    "eins",
+                    "zwei",
+                    "drei"
+                ]
+            })
+        ]);
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(3);
+
+        expect(resources[0].getType()).toBe("plural");
+        expect(resources[0].getSourcePlurals()).toStrictEqual({
+            one: "There is {n} string.",
+            other: "There are {n} strings."
+        });
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getSource()).toBe("This is a singular string.");
+
+        expect(resources[2].getType()).toBe("array");
+        expect(resources[2].getSourceArray()).toStrictEqual([
+            "one",
+            "two",
+            "three"
+        ]);
+    });
+
+    test("for each resource in a set, convert string source to plural and check you can still get the resource by hashkey", function() {
+        expect.assertions(7);
+
+        var set = new TranslationSet("en-US");
+        var input = [
+            new ResourceString({
+                key: "a",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}"
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "This is a singular string.",
+                targetLocale: "de-DE",
+                target: "Dies ist eine einzelne Zeichenfolge."
+            }),
+            new ResourceArray({
+                key: "c",
+                sourceLocale: "en-US",
+                sourceArray: [
+                    "one",
+                    "two",
+                    "three"
+                ],
+                targetLocale: "de-DE",
+                targetArray: [
+                    "eins",
+                    "zwei",
+                    "drei"
+                ]
+            })
+        ];
+
+        set.addAll(input);
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(3);
+
+        for (var i = 0; i < resources.length; i++) {
+            var other = set.get(resources[i].hashKey());
+            expect(other).toStrictEqual(resources[i]);
+        }
+    });
+
+    test("for each resource in a set, convert string target to plural ", function() {
+        expect.assertions(8);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourceString({
+                key: "a",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}"
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {This is a singular string.} other {This is a plural string.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Dies ist eine einzelne Zeichenfolge.} other {Dies ist eine Pluralzeichenfolgen.}}"
+            }),
+        ]);
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(2);
+
+        expect(resources[0].getType()).toBe("plural");
+        expect(resources[0].getTargetPlurals()).toStrictEqual({
+            one: "Es gibt {n} Zeichenfolge.",
+            other: "Es gibt {n} Zeichenfolgen."
+        });
+
+        expect(resources[1].getType()).toBe("plural");
+        expect(resources[1].getTargetPlurals()).toStrictEqual({
+            one: "Dies ist eine einzelne Zeichenfolge.",
+            other: "Dies ist eine Pluralzeichenfolgen."
+        });
+    });
+
+    test("for each resource in a set, convert string target to plural but do not touch non-plural resources", function() {
+        expect.assertions(10);
+
+        var set = new TranslationSet("en-US");
+        set.addAll([
+            new ResourceString({
+                key: "a",
+                sourceLocale: "en-US",
+                source: "{count, plural, one {There is {n} string.} other {There are {n} strings.}}",
+                targetLocale: "de-DE",
+                target: "{count, plural, one {Es gibt {n} Zeichenfolge.} other {Es gibt {n} Zeichenfolgen.}}"
+            }),
+            new ResourceString({
+                key: "b",
+                sourceLocale: "en-US",
+                source: "This is a singular string.",
+                targetLocale: "de-DE",
+                target: "Dies ist eine einzelne Zeichenfolge."
+            }),
+            new ResourceArray({
+                key: "c",
+                sourceLocale: "en-US",
+                sourceArray: [
+                    "one",
+                    "two",
+                    "three"
+                ],
+                targetLocale: "de-DE",
+                targetArray: [
+                    "eins",
+                    "zwei",
+                    "drei"
+                ]
+            })
+        ]);
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(3);
+
+        expect(resources[0].getType()).toBe("plural");
+        expect(resources[0].getTargetPlurals()).toStrictEqual({
+            one: "Es gibt {n} Zeichenfolge.",
+            other: "Es gibt {n} Zeichenfolgen."
+        });
+
+        expect(resources[1].getType()).toBe("string");
+        expect(resources[1].getTarget()).toBe("Dies ist eine einzelne Zeichenfolge.");
+
+        expect(resources[2].getType()).toBe("array");
+        expect(resources[2].getTargetArray()).toStrictEqual([
+            "eins",
+            "zwei",
+            "drei"
+        ]);
+    });
+
+    test("Do not crash when given an empty set to convert to plural resources", function() {
+        expect.assertions(4);
+
+        var set = new TranslationSet("en-US");
+
+        var other = set.convertToPluralRes();
+        expect(other).toBe(set);
+
+        var resources = set.getAll();
+        expect(resources).toBeDefined();
+        expect(Array.isArray(resources)).toBeTruthy();
+        expect(resources.length).toBe(0);
     });
 });

@@ -1,6 +1,6 @@
 {
     "name": "loctool",
-    "version": "2.24.1",
+    "version": "2.25.0",
     "main": "./loctool.js",
     "bin": "./loctool.js",
     "description": "A string resource extractor for multiple files types and project types",
@@ -59,17 +59,19 @@
         "clean": "ant clean",
         "dist": "npm run generate ; npm pack",
         "generate": "node generate/genPluralCategories.js",
-        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --detectOpenHandles",
+        "test": "LANG=en-US node --trace-warnings node_modules/.bin/jest --testEnvironment node --detectOpenHandles",
         "test:watch": "LANG=en-US jest --watch",
         "debug": "LANG=en-US node --inspect-brk node_modules/.bin/jest -i"
     },
     "dependencies": {
+        "@formatjs/intl": "^2.10.4",
         "build-gradle-reader": "*",
         "cldr-segmentation": "^2.2.0",
         "he": "^1.2.0",
         "html-parser": "^0.11.0",
         "ilib": "^14.18.0",
         "ilib-tree-node": "^1.3.0",
+        "intl-messageformat": "^10.5.14",
         "js-stl": "^0.0.6",
         "js-yaml": "^4.1.0",
         "log4js": "^6.9.1",
@@ -92,6 +94,7 @@
     "devDependencies": {
         "cldr-core": "^43.1.0",
         "ilib-loctool-mock": "file:test/ilib-loctool-mock/ilib-loctool-mock-1.0.0.tgz",
+        "ilib-loctool-mock-json": "file:test/ilib-loctool-mock-json/ilib-loctool-mock-json-1.0.0.tgz",
         "ilib-loctool-mock-resource": "file:test/ilib-loctool-mock-resource/ilib-loctool-mock-resource-1.0.0.tgz",
         "jest": "^26.3.0"
     }

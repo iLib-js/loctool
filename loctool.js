@@ -45,7 +45,7 @@ var exitValue = 0;
 
 function getVersion() {
     var pkg = require("./package.json");
-    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2023, HealthTap, Inc. and JEDLSoft";
+    return "loctool v" + pkg.version + " Copyright (c) 2016-2017, 2019-2024, HealthTap, Inc. and JEDLSoft";
 }
 
 var commandOptionHelp = {
@@ -60,6 +60,10 @@ var commandOptionHelp = {
         "root-dir-name\n" +
         "  the root directory to start looking for a localization project config file.\n" +
         "  Default root dir name is '.'\n" +
+        "--convertPlurals\n" +
+        "  Convert plural resources into ICU-style string resources during extraction and back again\n" + 
+        "  during localization. This is intended for use with translation management systems that cannot\n" + 
+        "  handle plurals properly.\n" +
         "--exclude\n" +
         "  exclude a comma-separated list of directories while searching for project.json config files \n" +
         "-f or --filetype\n" +
@@ -284,7 +288,8 @@ var settings = {
     targetLocale: null,
     localeMap: {},
     localeInherit: {},
-    onlyTranslated: false
+    onlyTranslated: false,
+    convertPlurals: false
 };
 
 var options = [];
@@ -427,6 +432,8 @@ for (var i = 0; i < argv.length; i++) {
                 return temp.indexOf(item) === index;
             })
         }
+    } else if (val === "--convertPlurals") {
+        settings.convertPlurals = true;
     } else {
         options.push(val);
     }
@@ -526,7 +533,6 @@ if (command === "localize") {
     }
 }
 
-var resources;
 var project;
 var fileTypes;
 

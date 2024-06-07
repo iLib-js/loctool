@@ -1,6 +1,21 @@
 Release Notes for Version 2
 ============================
 
+Build 044
+-------
+Published as version 2.25.0
+
+New Features:
+* Added the --convertPlurals command line flag for the localize
+  action. This converts plural resources extracted from the plugins into
+  plural strings that use the ICU-style plural syntax. The reason
+  for this is to support translation management servers that cannot
+  read plurals from xliff files. Instead, we "shoehorn" the plurals
+  into the server using single plural strings. During source string
+  extraction, the plurals are converted to strings. During localization,
+  the strings are converted back into plurals again before they are
+  sent to the plugins to write them out again in the resource file format.
+
 Build 043
 -------
 Published as version 2.24.1
@@ -237,7 +252,7 @@ New Features:
   to only convert translated resources into the target file.
   Source-only resources will be skipped. By default, all resources
   are converted.
-* Added [localeLower] as a new template variable that uses lowercased 
+* Added [localeLower] as a new template variable that uses lowercased
   BCP-47 locale, e.g. `zh-Hans-CN` => `zh-hans-cn`.
 
 Bug Fixes:
@@ -402,7 +417,7 @@ Published as version 2.10.0
 New Features:
 - Added `group` element under the file element in Xliff format version 2. Each group contains one datatype.
 - Added a generate mode for generating resource without scanning source files.
-- If the "fullyTranslated" flag is turned on for markdown files, and the 
+- If the "fullyTranslated" flag is turned on for markdown files, and the
   file is fully translated, then the "fullyTranslated"  setting will be
   added to the front matter. If there is no front matter, it will create
   one.

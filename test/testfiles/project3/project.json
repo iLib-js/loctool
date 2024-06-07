@@ -1,16 +1,17 @@
 {
     "name": "Loctool Test",
     "id": "loctest",
-    "projectType": "android",
+    "projectType": "custom",
     "pseudoLocale": "ps-DO",
     "resourceDirs": {
-        "java": "./res"
+        "mock": "."
     },
     "excludes": [
     ],
     "includes": [
     ],
     "settings": {
-        "locales": ["en-GB", "es-US", "ja-JP", "ru-RU"]
-    }
+        "locales": ["es-US", "ja-JP", "zh-Hans-CN"]
+    },
+    "plugins": ["ilib-loctool-mock-json"]
 }
