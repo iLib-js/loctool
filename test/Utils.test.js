@@ -181,6 +181,14 @@ describe("utils", function() {
         })).toBe("de/DE/tr-strings.j");
     });
 
+    test("GetLocalizedPathBasename with no extension", function() {
+        expect.assertions(1);
+        expect(utils.formatPath('[localeDir]/tr-[basename].j', {
+            sourcepath: "x/y/strings",
+            locale: "de-DE"
+        })).toBe("de/DE/tr-strings.j");
+    });
+
     test("GetLocalizedPathBasenameAlternateExtension", function() {
         expect.assertions(1);
         expect(utils.formatPath('[localeDir]/tr-[basename].j', {

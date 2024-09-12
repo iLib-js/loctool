@@ -1,6 +1,16 @@
 Release Notes for Version 2
 ============================
 
+Build 046
+-------
+Published as version 2.25.2
+
+New Features:
+
+Bug fixes:
+* fixed a bug in Utils.formatPath where it did not format the correct
+  basename of a file if the file name did not have an extension on it
+
 Build 045
 -------
 Published as version 2.25.1
